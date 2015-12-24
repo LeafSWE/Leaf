@@ -1,0 +1,8 @@
+\standalonepreambles
+\subpreamble{sections/introduzione.tex}
+\usepackage [subpreambles=true]{standalone}\usepackage {import}
+\endsubpreamble
+\subpreamble{sections/organizzazione_interna.tex}
+\usepackage [subpreambles=true]{standalone}\usepackage {import}
+\endsubpreamble
+\endstandalonepreambles

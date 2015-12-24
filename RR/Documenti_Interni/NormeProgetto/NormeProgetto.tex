@@ -1,4 +1,10 @@
 \documentclass[a4paper,twoside,12pt]{article}
+
+\usepackage[subpreambles=true]{standalone} 
+
+\usepackage{import}
+
+
 \usepackage[T1]{fontenc}	% codifica dei font in uscita
 \usepackage[utf8]{inputenc} % codifica dei font in uscita
 
@@ -8,10 +14,6 @@
 
 \graphicspath{{images/}{../images/}}
 
-\usepackage{subfiles}
-
-\usepackage{blindtext}
-
 \title{Norme di progetto}
 \author{Oscar Elia Conti, Marco Zanella}
 \date{24/12/2015}
@@ -20,11 +22,13 @@
 
 \maketitle
 
-\section{Introduction}
-Testo dentro la sezione
+\section{Introduzione}
+\import{sections/}{introduzione}
 
 
-\section{Second section}
+
+\section{Organizzazione interna}
+\import{sections/}{organizzazione_interna}
 
 
 
