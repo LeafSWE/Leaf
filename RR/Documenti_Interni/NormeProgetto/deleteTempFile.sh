@@ -5,3 +5,4 @@ find . -name "*.dvi" -type f -delete
 find . -name "*.log" -type f -delete
 find . -name "*.sta" -type f -delete
 find . -name "*.aux" -type f -delete
+find . -name "*.toc" -type f -delete
