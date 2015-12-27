@@ -4,6 +4,19 @@
 \newcommand{\mailleaf}{\mail{leaf.gruppo@gmail.com}}
 \newcommand{\mailinglist}{\mail{nome@mailing.list}}
 \newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto}}
+\newcommand{\amministratore}{\textit{Amministratore}}
+\newcommand{\analista}{\textit{Analista}}
+\newcommand{\progettista}{\textit{Progettista}}
+\newcommand{\programmatore}{\textit{Programmatore}}
+\newcommand{\verificatore}{\textit{Verificatore}}
+\newcommand{\pianodiprogetto}{\textit{Piano di progetto}}
+\newcommand{\pianodiqualifica}{\textit{Piano di qualifica}}
+\newcommand{\normediprogetto}{\textit{Norme di progetto}}
+\newcommand{\studiodifattibilita}{\textit{Studio di fattibilità}}
+\newcommand{\analisideirequisiti}{\textit{Analisi dei requisiti}}
+\newcommand{\specificatecnica}{\textit{Specifica tecnica}}
+\newcommand{\definizionediprodotto}{\textit{Definizione di prodotto}}
+\newcommand{\manualeutente}{\textit{Manuale utente}}
 \newcommand{\g}{\tiny \ped{|G|} \normalsize}
 \usepackage[T1]{fontenc}				% codifica dei font in uscita
 \usepackage[utf8]{inputenc}				% lettere accentate da tastiera
@@ -90,16 +103,72 @@
 		\item Eventuali argomenti da trattare la prossima riunione.
 		\end{itemize}
 	\section{Ruoli di progetto}
-	Per lo sviluppo collaborativo del progetto, ai membri del gruppo saranno assegnati dei ruoli differenti che corrispondono a figure professionali. Ogni membro dovrà ricoprire ogni ruolo almeno una volta ed è necessario garantire che il ruolo di ciascun membro del gruppo non sia in conflitto con il ruolo che ha ricoperto in passato.
+	Per lo sviluppo collaborativo del progetto, ai membri del gruppo saranno assegnati dei ruoli differenti che corrispondono a figure professionali. Ogni membro dovrà ricoprire ogni ruolo almeno una volta ed è necessario garantire che il ruolo di ciascun membro del gruppo non sia in conflitto con il ruolo che ha ricoperto in passato. È compito del \verificatore\ controllare che siano rispettate queste condizioni, in caso contrario dovrà avvertire il \responsabilediprogetto\ che dovrà risolvere il problema.
 		\subsection{Responsabile di progetto}
-		
-		\subsection{Amministratore di progetto}
+		Il \responsabilediprogetto rappresenta il progetto presso il fornitore e presso il committente, accentrando, inoltre, su di sé la responsabilità di scelta e approvazione. Per questo motivo ha responsabilità su:
+		\begin{itemize}
+		\item Pianificazione, coordinamento e controllo delle attività;
+		\item Gestione delle risorse;
+		\item Analisi e gestione dei rischi;
+		\item Approvazione dei documenti;
+		\item Approvazione dell'offerta economica;
+		\item Convocazione delle riunioni interne;
+		\item Relazioni esterne;
+		\item Assegnazione delle attività a persone.
+		\end{itemize}
+		Per questi motivi ha il compito di:
+		\begin{itemize}
+		\item Assicurarsi che le attività di verifica e validazione siano svolte seguendo le \normediprogetto;
+		\item Garantire il rispetto dei ruoli e dei compiti assegnati nel \pianodiprogetto;
+		\end{itemize}
+		\subsection{Amministratore}
+		L'\amministratore\ è responsabile del controllo e della gestione dell'ambiente di lavoro. In particolare deve preoccuparsi di:
+		\begin{itemize}
+		\item Equipaggiare l'ambiente di lavoro con strumenti, procedure, infrastrutture e servizi a supporto dei processi che permettano di automatizzare il più possibile le attività o parti di esse;
+		\item Garantire che l'ambiente di lavoro sia completo, dotato di tutti gli strumenti necessari al progetto, ordinato e aggiornato;
+		\item Controllare le versioni e configurazioni del prodotto;
+		\item Gestire la documentazione, controllarne la diffusione, la disponibilità e l'archiviazione;
+		\item Fornire procedure e strumenti per il monitoraggio e segnalazione per il controllo qualità;
+		\item Risolvere problemi legati alla gestione dei processi tramite l'adozione di strumenti adatti.
+		\end{itemize}
+		L'\amministratore\ redige inoltre le \normediprogetto\ dove viene spiegato l'utilizzo degli strumenti e deve redigere la sezione del \pianodiqualifica\ dove vengono descritti gli strumenti e i metodi atti alla verifica. L'\amministratore\ non compie scelte gestionali, ma tecnologiche concordate con il \responsabilediprogetto.
 		\subsection{Analista}
+		L'\analista\ è il responsabile delle attività di analisi. Le mansioni che gli competono riguardano:
+		\begin{itemize}
+		\item Comprendere la natura e la complessità del problema tramite l'analisi dei bisogni e delle fonti;
+		\item Classificare i requisiti;
+		\item Stendere i diagrammi dei casi d'uso;
+		\item Assegnare i requisiti a parti distinte del sistema;
+		\item Assicurarsi che i requisiti trovati siano conformi alle richieste del committente.
+		\end{itemize}
+		L'\analista\ non si occupa di trovare una soluzione al problema, ma lo definisce redigendo lo \studiodifattibilita\ e l'\analisideirequisiti\. Partecipa alla definizione del \pianodiqualifica\ in quanto conosce a fondo il problema e deve avere chiari i livelli di qualità richiesti, oltre alle procedure per ottenerli. 
 		\subsection{Progettista}
+		Il \progettista\ è il responsabile delle attività di progettazione. I compiti a lui affidati comprendono:
+		\begin{itemize}
+		\item Produrre una soluzione attuabile e che sia comprensibile e soddisfacente per stackeholder;
+		\item Effettuare scelte su aspetti progettuali che applichino al prodotto soluzioni note ed ottimizzate;
+		\item Effettuare scelte su aspetti progettuali e tecnologici che rendano il prodotto facilmente manutenibile;
+		\item Effettuare scelte su aspetti progettuali e tecnologici che rendano il prodotto realizzabile con costi e scadenze prefissate;
+		\end{itemize}
+		Il \progettista\ redige i documenti di \specificatecnica, \definizionediprodotto e si occupa delle sezioni del \pianodiqualifica\ relative alle metriche di verifica della programmazione.
 		\subsection{Programmatore}
+		Il \programmatore\ è responsabile delle attività di codifica e delle componenti di ausilio necessarie per l'esecuzione delle prove di verifica e validazione. In particolare ha i seguenti compiti:
+		\begin{itemize}
+		\item Implementare in maniera rigorosa le soluzioni descritte dal \progettista;
+		\item Scrivere codice che sia documentato, manutenibile e che rispetti le metriche stabilite per la scrittura del codice;
+		\item Realizzare i test per la verifica e la validazione del codice stesso.
+		\end{itemize}
+		Il \programmatore\, infine, deve occuparsi di redigere il \manualeutente.
 		\subsection{Verificatore}
+		Il \verificatore\ è il responsabile delle attività di verifica. Le mansioni che gli competono sono:
+		\begin{itemize}
+		\item Garantire che l'attuazione delle attività sia conforme alle norme stabilite;
+		\item Verificare che le attività svolte non abbiano introdotti errori;
+		\item Controllare la conformità di ogni stadio del ciclo di vita del prodotto.
+		\end{itemize}
+		Il \verificatore\ deve redigere le sezioni del \pianodiqualifica\ riguardanti l'esito e la completezza delle verifiche effettuate.
 		\subsection{Rotazione dei ruoli}
-
+		Chiedere a chi fa il piano di progetto
 
 
 
