@@ -1,50 +1,17 @@
-\documentclass[float=false, crop=false]{standalone}
-\newcommand{\leaf}{\textit{Leaf}}
-\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
-\newcommand{\mailleaf}{\mail{leaf.gruppo@gmail.com}}
-\newcommand{\mailinglist}{\mail{nome@mailing.list}}
-\newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto}}
-\newcommand{\amministratore}{\textit{Amministratore}}
-\newcommand{\analista}{\textit{Analista}}
-\newcommand{\progettista}{\textit{Progettista}}
-\newcommand{\programmatore}{\textit{Programmatore}}
-\newcommand{\verificatore}{\textit{Verificatore}}
-\newcommand{\pianodiprogetto}{\textit{Piano di progetto}}
-\newcommand{\pianodiqualifica}{\textit{Piano di qualifica}}
-\newcommand{\normediprogetto}{\textit{Norme di progetto}}
-\newcommand{\studiodifattibilita}{\textit{Studio di fattibilità}}
-\newcommand{\analisideirequisiti}{\textit{Analisi dei requisiti}}
-\newcommand{\specificatecnica}{\textit{Specifica tecnica}}
-\newcommand{\definizionediprodotto}{\textit{Definizione di prodotto}}
-\newcommand{\manualeutente}{\textit{Manuale utente}}
-\newcommand{\g}{\tiny \ped{|G|} \normalsize}
-\usepackage[T1]{fontenc}				% codifica dei font in uscita
-\usepackage[utf8]{inputenc}				% lettere accentate da tastiera
-\usepackage[italian]{babel}				% lingua principale del documento
-\usepackage{url}						% per scrivere gli indirizzi Internet
-\usepackage[subpreambles=true]{standalone}
-\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
-\hypersetup{
-			colorlinks=true,
-			linkcolor=blue,
-			anchorcolor=black,
-			citecolor=black,
-			urlcolor=blue,
-}
-\usepackage{import}
+\documentclass[../NormeProgetto.tex]{subfiles}
 
 \begin{document}
-	\section{Comunicazione}
-		\subsection{Comunicazioni interne}
+	\subsection{Comunicazione}
+		\subsubsection{Comunicazioni interne}
 		Per le comunicazioni interne verrà utilizzata una mailing list appositamente creata: \mailinglist. \\
 		Il componente del gruppo che vuole inviare una email a tutti gli altri componenti deve inviare il messaggio dalla sua casella di posta elettronica all'indirizzo \mailinglist, in questo modo l'email verrà spedita a tutti i membri del team. Tale sistema deve essere utilizzato solo per questioni riguardanti il progetto. \\
 		Per facilitare la comunicazione il gruppo può avvalersi degli strumenti di messaggistica istantanea quali Slack e Telegram e per le videochiamate di Skype. \\
 		Quando i sistemi sopra elencati venissero utilizzati per decisioni rilevanti per lo sviluppo del progetto è necessario stilare un verbale.\\
 		I membri del gruppo sono tenuti a prestare attenzione al numero di messaggi diffusi per non creare difficoltà di comunicazione. 
-		\subsection{Comunicazioni esterne}
+		\subsubsection{Comunicazioni esterne}
 		Per la comunicazioni esterne è stato creato un apposito indirizzo di posta elettronica: \mailleaf. \\
 		Il \responsabilediprogetto ho l'incarico di mantenere i contatti tra il team e le componenti esterne utilizzando tale indirizzo di posta elettronica. Inoltre è suo compito informare i membri del gruppo delle discussioni avvenute con componenti esterne: questo può essere fatto riassumendo la conversazione in una email e inviandola alla mailing list del gruppo.
-		\subsection{Composizione delle email}
+		\subsubsection{Composizione delle email}
 		Questa sezione tratta le norme da rispettare nella composizione delle email, sia per la comunicazione interna che esterna.
 		\paragraph{Mittente}
 		Nel caso di comunicazione interna come il mittente dovrà essere l'indirizzo personale di posta elettronica del membro del gruppo che ha scritto l'email, mentre in caso di comunicazione esterna l'unico indirizzo che deve essere utilizzato è \mailleaf. \\ Nel caso in cui la comunicazione debba avvenire tra un gruppo ristretto di persone all'interno del gruppo, questi potranno utilizzare i loro indirizzi personali.
@@ -56,7 +23,7 @@
 		Il corpo del messaggio deve essere esaustivo, sintetico e deve essere comprensibile a tutti i destinatari del messaggi. \\ In caso di risposta o inoltro è preferibile aggiungere la nuova parte di testo all'inizio dell'email per permettere una più facile lettura del contenuto. \\ Nell'eventualità che nel contenuto di un'email ci si debba riferire a persone è preferibile utilizzare la sintassi: ``'Nome Cognome'', nel caso invece in cui si debba fare esplicito riferimento ad un ruolo di progetto è consigliabile riportarne per intero il nome.
 		\paragraph{Allegati}
 		È consigliato di non fare uso di allegati per lo scambio di documenti o file, a meno che non siano strettamente necessario. È preferibile, invece, caricare questi file in una cartella di Google Drive e inviare per email il link al documento o file desiderato. \\ Sia in caso di invio di allegati che di link a documenti o file è buona norma inserire una breve descrizione di presentazione dell'allegato in modo tale che sia possibile in modo semplice capire di cosa si tratta. \\ Infine si chiede di prestare attenzione al formato dei documenti e file.
-	\section{Riunioni}
+	\subsection{Riunioni}
 		Il \responsabilediprogetto ha il compito di indire le riunioni sia interne che esterne. Per ogni riunione il \responsabilediprogetto\ dovrà inviare un'email di convocazione strutturata in questo modo:
 		\begin{itemize}
 		\item \textbf{oggetto}: convocazione della riunione N per il giorno AAAA-mm-GG
@@ -71,7 +38,7 @@
 		\end{itemize}
 		Dove N rappresenta il numero della riunione e tipo indica se la riunione sia interna richiesta dal \responsabilediprogetto, interna richiesta da uno o più dai membri del gruppo oppure esterna. \\
 		Le informazioni sulle riunioni devono essere presentate con più preavviso possibile, almeno tre giorni prima in modo tale che i membri del gruppo possano organizzare i loro impegni in modo tale da essere presenti alla riunione.
-		\subsection{Riunioni interne}
+		\subsubsection{Riunioni interne}
 		\subsubsection{Convocazione di una riunione interna}
 		In generale, il compito di convocare le riunioni interne spetta al \responsabilediprogetto, che può indire le riunioni quando più lo ritiene opportuno. Gli altri componenti del gruppo possono richiedere una riunione interna straordinaria, presentando al \responsabilediprogetto\ le motivazioni per le quali si ritiene necessaria una riunione. In questi casi il \responsabilediprogetto\ può:
 		\begin{itemize}

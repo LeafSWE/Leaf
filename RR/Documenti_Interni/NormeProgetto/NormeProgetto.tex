@@ -1,8 +1,35 @@
 \documentclass[a4paper,twoside,12pt]{article}
 
-\usepackage[subpreambles=true]{standalone} 
+\usepackage{subfiles}
+\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
+\hypersetup{
+			colorlinks=true,
+			linkcolor=blue,
+			anchorcolor=black,
+			citecolor=black,
+			urlcolor=blue,
+}
 
-\usepackage{import}
+\newcommand{\leaf}{\textit{Leaf}}
+\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\mailleaf}{\mail{leaf.gruppo@gmail.com}}
+\newcommand{\mailinglist}{\mail{nome@mailing.list}}
+\newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto}}
+\newcommand{\amministratore}{\textit{Amministratore}}
+\newcommand{\analista}{\textit{Analista}}
+\newcommand{\progettista}{\textit{Progettista}}
+\newcommand{\programmatore}{\textit{Programmatore}}
+\newcommand{\verificatore}{\textit{Verificatore}}
+\newcommand{\pianodiprogetto}{\textit{Piano di progetto}}
+\newcommand{\pianodiqualifica}{\textit{Piano di qualifica}}
+\newcommand{\normediprogetto}{\textit{Norme di progetto}}
+\newcommand{\studiodifattibilita}{\textit{Studio di fattibilità}}
+\newcommand{\analisideirequisiti}{\textit{Analisi dei requisiti}}
+\newcommand{\specificatecnica}{\textit{Specifica tecnica}}
+\newcommand{\definizionediprodotto}{\textit{Definizione di prodotto}}
+\newcommand{\manualeutente}{\textit{Manuale utente}}
+\newcommand{\g}{\tiny \ped{|G|} \normalsize}
+
 
 \titlepage{}
 \usepackage[T1]{fontenc}	% codifica dei font in uscita
@@ -53,30 +80,11 @@
 	
 	\newpage
 	\section{Introduzione}
-		\import{sections/}{introduzione}
+		\subfile{sections/introduzione}
 
 
 	\newpage
 	\section{Organizzazione interna}
-		\import{sections/}{organizzazione_interna}
+		\subfile{sections/organizzazione_interna}
 	
-	\newpage
-	\section{Documentazione}
-		\import{sections/}{documentazione}
-
-	\newpage
-	\section{Configurazione}
-		\import{sections/}{configurazione}
-
-	\newpage
-	\section{Organizzazione interna}
-		\import{sections/}{organizzazione_interna}
-		
-	\newpage
-	\section{Sviluppo}
-		\import{sections/}{sviluppo}
-		
-	\newpage
-	\section{Verifica}
-		\import{sections/}{verifica}
 \end{document}
