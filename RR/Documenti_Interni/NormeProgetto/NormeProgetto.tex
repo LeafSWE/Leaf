@@ -1,6 +1,19 @@
 \documentclass[a4paper,twoside,12pt]{article}
 
+\usepackage[T1]{fontenc}	% codifica dei font in uscita
+\usepackage[utf8]{inputenc} % codifica dei font in uscita
+
+\usepackage[italian]{babel} % lingua del documento
+\usepackage{graphicx}		% pacchetto per la grafica
+\usepackage{url}			% per scrivere gli indirizzi Internet
+
+\setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
+\setcounter{tocdepth}{5} % aggiunge indice paragrafi
+
+\graphicspath{{images/}{../images/}}
+
 \usepackage{subfiles}
+
 \usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
 \hypersetup{
 			colorlinks=true,
@@ -32,14 +45,6 @@
 
 
 \titlepage{}
-\usepackage[T1]{fontenc}	% codifica dei font in uscita
-\usepackage[utf8]{inputenc} % codifica dei font in uscita
-
-\usepackage[italian]{babel} % lingua del documento
-\usepackage{graphicx}		% pacchetto per la grafica
-\usepackage{url}			% per scrivere gli indirizzi Internet
-
-\graphicspath{{images/}{../images/}}
 
 \author{Oscar Elia Conti, Marco Zanella}
 \date{24/12/2015}
