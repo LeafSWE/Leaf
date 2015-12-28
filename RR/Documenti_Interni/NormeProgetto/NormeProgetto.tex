@@ -7,6 +7,8 @@
 \usepackage{graphicx}		% pacchetto per la grafica
 \usepackage{url}			% per scrivere gli indirizzi Internet
 
+\usepackage{enumerate} % liste  lettere
+
 \setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
 \setcounter{tocdepth}{5} % aggiunge indice paragrafi
 
@@ -27,7 +29,7 @@
 \newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
 \newcommand{\mailleaf}{\mail{leaf.gruppo@gmail.com}}
 \newcommand{\mailinglist}{\mail{nome@mailing.list}}
-\newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto}}
+\newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto }}
 \newcommand{\amministratore}{\textit{Amministratore}}
 \newcommand{\analista}{\textit{Analista}}
 \newcommand{\progettista}{\textit{Progettista}}
@@ -88,5 +90,8 @@
 
 	\newpage
 		\subfile{sections/organizzazione_interna}
+	
+	\newpage
+		\subfile{sections/documentazione}
 	
 \end{document}
