@@ -194,38 +194,126 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			
 			
 			\paragraph{Descrizioni}
+			Serve?? 			
+			
 			\paragraph{Note a piè pagina}
+			Le note a piè pagina seguono le seguenti regole:
+			\begin{itemize}
+				\item la loro numerazione è progressiva all'interno di tutto il documento;
+				\item devono essere scritte una volta sola;
+				\item il primo carattere di ogni nota deve essere maiuscolo. Se la prima parola dovesse essere un acronimo allora bisogna seguire le regole di formattazione di tale acronimo.
+			\end{itemize}
+			Ogni nota a piè pagina deve iniziare con un carattere maiuscolo. Fanno eccezione i casi in cui la parola sia un acronimo, dove in quel caso si seguono le regole di formattazione della stessa. Non			
+			
 		\subsubsection{Formati}
-			\paragraph{Data e ora}
+			\paragraph{Date}
+			La formattazione delle date segue lo standard [ISO 8601]. Tale standard prevede che una data sia scritta secondo il seguente formalismo: AAAA-MM-GG. Questa rappresentazione va letta nel seguente modo:
+			\begin{itemize}
+				\item AAAA: numero a quattro cifre che rappresenta l'anno;
+				\item MM: numero a due cifre che rappresenta il mese;
+				\item GG: numero a due cifre che rappresenta il giorno.
+			\end{itemize}
+			Nei casi in cui risulti possibile esprimere i mesi o giorni omettendo una cifra, è necessario anteporre uno zero davanti a tale cifra.
+			
+			\paragraph{Orari}
+			La formattazione degli orari segue lo standard [ISO 8601]. Tale standard prevede che gli orari siano scritti secondo il seguente formalismo: hh:mm. Questa rappresentazione va letta nel seguente modo:
+			\begin{itemize}
+				\item hh: numero a due cifre che rappresenta il numero di ore trascorse dalla mezzanotte;
+				\item mm: numero a due cifre che rappresenta i minuti. 
+			\end{itemize}						
+			Nei casi in cui risulti possibile esprimere le ore o i minuti omettendo una cifra, è necessario anteporre uno zero davanti a tale cifra.
+			
 			\paragraph{URI}
+			La stile utilizzato per rappresentare un URI è il corsivo ed il testo deve essere di colore blu.
+			 
 			\paragraph{Sigle}
+			
+			Dobbiamo decidere le sigle??
+
 			\paragraph{Ruoli di progetto}
+			Quando si fa riferimento ad un ruolo di progetto bisogna adottare lo stile corsivo e la prima lettera deve essere maiuscola.			
+			
 			\paragraph{Fasi del progetto}
+			Quando si fa riferimento ad una fase del progetto bisogna adottare lo stile grassetto e la prima lettera deve essere maiuscola.		
+			
 			\paragraph{Revisioni}
+			Quando si fa riferimento ad una revisione bisogna adottare lo stile grassetto e la prima lettera deve essere maiuscola.
+			
 			\paragraph{Nomi}
 				\subparagraph{Nome del gruppo}
 				\subparagraph{Nome del progetto}
 				\subparagraph{Nome del proponente}
 				\subparagraph{Nome del committente}
+				
 				\subparagraph{Nome proprio}
+				I nomi proprio vanno scritti ponendo il cognome davanti al nome. L'ordine da seguire nel caso di elenchi è quello alfabetico.
+				
 				\subparagraph{Nome di un file}
+				I nomi dei file vanno formattati utilizzando lo stile monospace e devono essere racchiusi dalle doppie virgolette alte.
+				
 				\subparagraph{Nome di un documento}
+			Quando si fa riferimento ad un documento bisogna adottare lo stile corsivo e la prima lettera deve essere maiuscola. I  nomi dei documenti devono essere racchiusi dalle doppie virgolette alte.
+				
 		\subsubsection{Componenti grafiche}
 			\paragraph{Immagini}
+			L'utilizzo delle immagini all'interno di un documento è regolamentato secondo quanto segue:
+			\begin{itemize}
+				\item i formati ammessi per le immagini sono il PNG e il PDF;
+				\item devono essere numerate in ordine crescente;
+				\item devono essere seguite da una breve descrizione;
+				\item deve essere presente un riferimento all'immagine all'interno dell'indice immagini.
+			\end{itemize}
 			\paragraph{Tabelle}
+			L'utilizzo delle tabelle all'interno di un documento è regolamentato secondo quanto segue:
+			\begin{itemize}
+				\item devono essere numerate in ordine crescente;
+				\item devono essere seguite da una breva descrizione;
+				\item devono essere presente un riferimento alla tabella all'interno dell'indice delle tabelle.
+			\end{itemize}
+			
+			Valutare colori tabelle?????!!!! Vedi ProTech.			
+			
 	\subsection{Tipologie di documenti}
 		\subsubsection{Documenti formali}
+		I documenti formali possono essere descritti secondo quanto segue:
+		\begin{itemize}
+			\item sono documenti approvati dal responsabile di progetto;
+			\item eventuali modifiche ad un documento formale, lo rendono informale;
+			\item sono gli unici documenti che possono essere distribuiti all'esterno del team di progetto;
+		\end{itemize}
+		
 		\subsubsection{Documenti informali}
+		I documenti informali possono essere descritti secondo quanto segue:
+		\begin{itemize}
+			\item sono documenti non ancora approvati dal responsabile di progetto;
+			\item possono essere distribuiti solamente all'interno del team di progetto;
+			\item possono essere sottoposti a revisione; 
+		\end{itemize}
+		
 		\subsubsection{Glossario}
+		Il glossario nasce dall'esigenza di chiarire il significato ambiguo che possono avere certe parole all'interno di determinati contesti. Al suo interno saranno quindi presenti alcune parole, prese dai documenti, che hanno le seguenti caratteristiche:
+		\begin{itemize}
+			\item trattano argomenti tecnici;
+			\item trattano argomenti poco conosciuti o che possono scatenare ambiguità;
+			\item rappresentano delle sigle;
+		\end{itemize}
+		Il glossario deve essere strutturato secondo quanto segue:
+		\begin{itemize}
+			\item i termini devono seguire l'ordine lessicografico;
+			\item ogni termine deve essere seguito da una spiegazione chiara e concisa del significato del termine stesso. Questa spiegazione non deve essere in alcun modo ambigua.
+		\end{itemize}
+		Per evitare confusione, la stesura del glossario deve avvenire in maniera parallela alla stesura dei documenti . Al fine di evitare dimenticanze, è ammesso inserire un termine all'interno del glossario senza inserirne immediatamente la spiegazione. È comunque doveroso completare la spiegazione non appena possibile.
+		
 		\subsubsection{Verbali}
 			\paragraph{Verbali di riunioni interne}
+					
 			\paragraph{Verbali di riunioni esterne}
 	\subsection{Versionamento dei documenti} \label{sec:Versionamento dei documenti}
 	\subsection{Avanzamento di un documento} 
 	\subsection{Strumenti}
 		\subsubsection{Latex}
 			\paragraph{Template}
-			\paragraph{Comendi personalizzati}
+			\paragraph{Comandi personalizzati}
 			\paragraph{Rilevamento errori ortografici}
 			
 			
