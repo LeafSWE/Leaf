@@ -5,3 +5,5 @@
 5)Git
 6)GitHub
 7)Repository
+8)Ticket
+9)Gantt
