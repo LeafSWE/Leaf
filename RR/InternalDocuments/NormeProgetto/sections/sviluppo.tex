@@ -1,10 +1,90 @@
-\documentclass[float=false, crop=false]{standalone}
-
-\usepackage[subpreambles=true]{standalone}
-\usepackage{import}
+\documentclass[../NormeProgetto.tex]{subfiles}
 
 \begin{document}
-
-Questa è la sezione di sviluppo.
-
+\section{Sviluppo}
+	\subsection{Studio di fattibilità}
+	Il documento riguardante lo \studiodifattibilita deve essere redatto rapidamente ed in modo accurato dagli \analisti sulla base di ciò che è emerso nelle prime riunioni, nelle quali si deve discutere di temi riguardanti i capitolati, come:
+	\begin{itemize}
+		\item Rischi nell'affrontare ogni capitolato;
+		\item Rapporto tra i costi ed i benefici, sia in base al mercato attuale che futuro, sia in base al costo di produzione e alla possibile redditività futura;
+		\item Il dominio applicativo e tecnologico di ogni capitolato.
+	\end{itemize}
+	\subsection{Analisi dei requisiti}
+	L'\analisideirequisiti è il documento dove devono essere catalogati e descritti tutti i requisiti che il prodotto finale deve soddisfare. Ogni requisito deve emergere da una delle seguenti fonti:
+	\begin{itemize}
+		\item Capitolati d'appalto;
+		\item Incontri con il proponente;
+		\item Incontri con il committente;
+		\item Valutazioni effettuate durante riunioni interne al gruppo.
+	\end{itemize}
+	Tele documento deve inoltre riportare il modo in cui ogni requisito deve essere verificato.
+		\subsubsection{Classificazione dei casi d'uso}
+		È compito degli \analisti redigere una descrizione, dare una classificazione e fornire un diagramma conforme allo standard UML per ogni caso d'uso. Ogni caso d'uso dev'essere descritto con le seguenti informazioni, possibilmente in quest'ordine:
+		\begin{enumerate}
+			\item Codice identificativo del caso d'uso, nella forma \begin{center}\textbf{UCXY}\end{center} dove:
+				\begin{itemize}
+					\item \textbf{X} (da spiegare meglio quando messo giù cosa si fa nell'introduzione);
+					\item \textbf{Y} è un codice numerico gerarchico.
+				\end{itemize}
+			\item Titolo, che deve descrivere sinteticamente il caso d'uso;
+			\item Attori principali;
+			\item Attori secondari, se questi sono presenti;
+			\item Precondizioni, ovvero le condizioni che necessariamente devono verificarsi prima del caso d'uso;
+			\item Postcondizioni, ciò che deve essere verificato successivamente al caso d'uso;
+			\item Flusso principale degli eventi, dove si descrive il flusso dei casi d'uso figli. Per ogni evento va specificato:
+				\begin{itemize}
+					\item Una descrizione testuale dell'evento;
+					\item Gli attori coinvolti;
+					\item Se l'azione è descritta dettagliatamente da un altro caso d'uso.
+				\end{itemize}
+			\item Scenari alternativi, ovvero scenari in cui si verificano eccezioni o errori. Per ognuno di questi deve essere indicato:
+				\begin{itemize}
+					\item Una descrizione testuale dell'evento;
+					\item Gli attori coinvolti;
+					\item Se l'azione è descritta dettagliatamente da un altro caso d'uso.
+				\end{itemize}
+		\end{enumerate}
+		\subsubsection{Classificazione dei requisiti}
+		È compito degli \analisti redigere e classificare i requisiti del prodotto.  I requisiti devono essere classificati in base al tipo e alla priorità, utilizzando la seguente notazione:
+		\begin{center}\textbf{R[X][Y][Z]}\end{center} dove:
+			\begin{enumerate}
+				\item \textbf{X} indica l'importanza strategica del requisito. Deve assumere solo i seguenti valori:
+					\begin{itemize}
+						\item \textit{Obb}: Indica un requisito obbligatorio;
+						\item \textit{Des}: Indica un requisito desiderabile;
+						\item \textit{Opz}: Indica un requisito opzionale.
+					\end{itemize}
+				\item \textbf{Y} indica la tipologia del requisito. Deve assumere solo i seguenti valori:
+					\begin{itemize}
+						\item \textit{F}: Indica un requisito funzionale;
+						\item \textit{Q}: Indica un requisito qualità;
+						\item \textit{P}: Indica un requisito prestazionale;
+						\item \textit{V}: Indica un requisito vincolo;
+					\end{itemize}
+				\item \textbf{Z} rappresenta il codice univoco di ogni requisito in forma gerarchica.
+			\end{enumerate}
+		\subsubsection{Strumenti}
+			\paragraph{Software per la creazione di diagrammi UML}
+			\paragraph{Strumento per il tracciamento dei requisiti}
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
