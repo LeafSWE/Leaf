@@ -7,3 +7,10 @@
 7)Repository
 8)Ticket
 9)Gantt
+10)Monospace (stile per codici comandi etc..)
+11)PNG (immagini)
+12)Android
+13)Java
+14)Latex
+15)PDF
+16)Team
