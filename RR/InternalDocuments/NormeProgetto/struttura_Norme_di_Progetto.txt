@@ -122,8 +122,10 @@ Secondo me l'ultima parte non è molto buona, forse manca qualcosa riguardando l
 			5.2.3.2 Strumento per il tracciamento dei requisiti
 6 Verifica
 	6.1 Issue tracking
-		6.1.1 Sintassi di una Issue
-	6.2 Analisi ??
+		6.1.1 Sintassi di una issue
+	6.2 Analisi
+		6.2.1 Analisi statica
+		6.2.2 Analisi dinamica
 	6.3 Verifica dei documenti
 		6.3.1 Sintassi
 		6.3.2 Periodi

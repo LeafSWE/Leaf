@@ -1,10 +1,47 @@
-\documentclass[float=false, crop=false]{standalone}
-
-\usepackage[subpreambles=true]{standalone}
-\usepackage{import}
+\documentclass[../NormeProgetto.tex]{subfiles}
 
 \begin{document}
-
-Questa è la sezione di verifica.
-
+	\section{Verifica}
+		\subsection{Issue tracking}
+		L'issue tracking è un'attività di supporto per i \verificatori\ e permette, oltre a tracciare potenziali errori, di assegnare i compiti di correzione al \responsabilediprogetto.
+			\subsubsection{Sintassi di una Issue}
+			Ogni issue avrà un nome che dovrà seguire la seguente notazione: \begin{center}\textbf{[D]:[T]-[S]}\end{center} dove:
+			\begin{itemize} 
+				\item \textit{D} rappresenta la sigla del documento di interesse;
+				\item \textit{T} rappresenta la tipologia di issue;
+				\item \textit{S} rappresenta la sintesi della descrizione del problema.
+			\end{itemize}
+			Segue, poi, la descrizione della issue. Questa dovrà obbligatoriamente contenere:
+			\begin{itemize} 
+				\item Dove, nel documento, si trova il problema. Questo va specificato tramite sezione e, possibilmente, il numero di riga dove inizia il problema;
+				\item Una descrizione dettagliata del problema;
+				\item La motivazione per cui si è ritenuto necessario sollevare una issue.
+			\end{itemize}
+		\subsection{Analisi ??}
+		Al fine di determinare il livello di qualità del prodotto, il team deve utilizzare le tecniche di analisi statica e dinamica dei dati.
+			\subsubsection{Analisi statica} Per analisi statica si intende la valutazione di un sistema basata su struttura, contenuto e documentazione senza questo venga eseguito. Questa tecnica è applicabile sia al codice, che alla documentazione stessa. L'analisi statica può avvenire con due modalità:
+			\begin{itemize}
+				\item \textit{Walkthrough}: questa tecnica dev'essere applicata quando non si sa che errori o problematiche si stanno cercando. La tecnica consiste nel leggere il codice sorgente o il documento da cima in fondo per trovare anomalie  di qualsiasi tipo;
+				\item \textit{Inspection}: questa tecnica dev'essere applicata quando si ha idea della problematica che si sta cercando e consiste in una lettura mirata del documento/codice, sulla base di una lista degli errori precedentemente stilata.
+			\end{itemize}
+			La tecnica walkthrough è molto onerosa e deve essere utilizzata soprattutto nelle prime fasi del progetto, quando non è già presente una lista degli errori comuni, oppure non si è ancora sufficientemente preparati riguardo un aspetto del progetto. Avanzando nelle fasi del progetto sarà utile stilare una lista quanto più possibile completa di errori comuni, in modo tale da evitare la tecnica walkthrough e applicare l'ispection.
+			\subsubsection{Analisi dinamica}
+			L’analisi dinamica è una forma di valutazione di un sistema software, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.
+		\subsection{Verifica dei documenti}
+		Il \responsabilediprogetto\ ha il compito di dare inizio alla fase di verifica, assegnando i compiti ai \verificatori. Quest'ultimi, devono effettuare un'accurata verifica delle seguenti regole:
+		\begin{itemize}
+			\item Deve essere utilizzata una sintassi corretta e il più possibile semplice;
+			\item Devono essere utilizzati periodi brevi;
+			\item La struttura del documento deve essere semplice e intuitiva;
+			\item Devono essere rispettate le  \hyperref[sec:Norme tipografiche]{norme tipografiche};
+			\item Devono essere rispettate le \hyperref[sec:Glossario]{regole riguardanti il glossario}.
+		\end{itemize}
+		\subsubsection{Sintassi}
+		\subsubsection{Periodi}
+		\subsubsection{Struttura del documento}
+		\subsubsection{Parole nel Glossario}
+	\subsection{Verifica dei diagrammi UML}
+		\subsubsection{Diagrammi dei casi d'uso}
+		\subsubsection{Diagrammi delle attività}
+	\subsection{Strumenti}
 \end{document}
