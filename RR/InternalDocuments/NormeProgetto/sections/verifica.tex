@@ -37,12 +37,21 @@
 			\item Devono essere rispettate le  \hyperref[sec:Norme tipografiche]{norme tipografiche};
 			\item Devono essere rispettate le \hyperref[sec:Glossario]{regole riguardanti il glossario}.
 		\end{itemize}
-		\subsubsection{Sintassi}
-		\subsubsection{Periodi}
-		\subsubsection{Struttura del documento}
-		\subsubsection{Parole nel Glossario}
-	\subsection{Verifica dei diagrammi UML}
-		\subsubsection{Diagrammi dei casi d'uso}
-		\subsubsection{Diagrammi delle attività}
-	\subsection{Strumenti}
+		Durante l'intera attività di verifica i \verificatori\ dovranno utilizzare lo strumento del diario delle modifiche in modo tale da concentrare la loro attenzione sulle modifiche effettuate ad un documento e tenere traccia degli errori più comuni commessi nel redigere i documenti.
+			\subsubsection{Sintassi}
+			I \verificatori\ hanno il compito di identificare errori sintattici nei documenti. Ciò può essere fatto con l'ausilio di strumenti automatici, ma ogni documento deve essere sempre sottoposto a walkthrough in modo tale da individuare errori che non sono stati in grado di evidenziare. Inoltre hanno il compito di inserire nel \glossario\ tutte quelle parole che possono essere fonte di ambiguità.
+			\subsubsection{Periodi}
+			I \verificatori\ hanno il compito di calcolare l’indice Gulpease di ogni documento utilizzando lo strumento automatico preposto (vedi sezione \hyperref[sec:Strumenti]{Strumenti}). Qualora non si ottenga un risultato soddisfacente il \verificatore\ deve applicare la tecnica walkthrough con l'obiettivo di individuare periodi troppo lunghi, che possono essere di difficile comprensione o leggibilità.
+			\subsubsection{Struttura del documento}
+			I \verificatori\ devono verificare che la struttura di ogni documento rispetti i contenuti del documento stesso.
+			\subsection{Verifica dei diagrammi UML}
+			I \verificatori\ devono controllare tutti i diagrammi UML prodotti, sia che venga rispettato lo standard UML, sia che siano corretti semanticamente. I diagrammi utilizzati finora sono solamente i diagrammi dei casi d'uso.
+				\subsubsection{Diagrammi dei casi d'uso}
+				Le verifiche che devono essere effettuate ai diagrammi dei casi d'uso, innanzitutto, devono riguardare il rispetto dello standard UML, soprattutto riguardanti inclusioni, generalizzazioni e estensioni. Successivamente si deve verificare che verificare che ciò che descrive il diagramma sia effettivamente il sistema che vogliamo rappresentare. Per quest'ultimo punto bisogna porre particolare attenzione sull'identificazione degli attori. \\ Per identificare un attore può risultare utile seguire la seguente procedura:
+				\begin{enumerate}
+					\item Per prima cosa è utile chiedersi se ciò che vogliamo rappresentare come attore è una persona che interagisce col sistema. In caso affermativo è giusto rappresentarlo come attore, in caso negativo si deve andare al passo 2;
+					\item Se ciò che vogliamo rappresentare come attore non è una persona che interagisce col sistema bisogna chiedersi se questa ``cosa'' può cambiare insieme al design del sistema. In caso affermativo probabilmente ciò che vogliamo rappresentare non è un attore ma una parte del sistema stesso. In caso negativo, invece, è con buona probabilità un attore.
+				\end{enumerate}
+	\subsection{Strumenti} \label{sec:Strumenti}
+	Da fare
 \end{document}
