@@ -22,3 +22,6 @@
 22)skype
 23)teamwork
 24)UML
+25)bluetooth
+26)Unicode
+27)BOM
