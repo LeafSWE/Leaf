@@ -14,3 +14,11 @@
 14)Latex
 15)PDF
 16)Team
+17)CamelCase
+18)Beacon
+19)mailing list
+20)Slack
+21)telegram
+22)skype
+23)teamwork
+24)UML
