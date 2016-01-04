@@ -47,7 +47,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\item data di redazione;
 			\item cognome e nome di coloro che hanno redatto il documento (in ordine alfabetico)
 			\item cognome e nome di coloro che hanno verificato il documento (in ordine alfabetico)
-			\item ambito d'uso del documento (interno od esterno)
+			\item ambito d'uso del documento (interno oppure esterno)
 			\item cognome e nome di coloro ai quali è destinato il documento (in ordine alfabetico)
 		\end{enumerate}
 
@@ -62,7 +62,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\item sommario delle modifiche apportate
 		\end{enumerate}
 
-		Le righe della tabella sono ordinate a partire dalla data dell'ultima modifica effettuata.
+		Le righe della tabella sono ordinate a partire dalla data dell'ultima modifica effettuata, in ordine cronologico inverso.
 
 		\subsubsection{Indice delle sezioni}
 		L'indice delle sezioni contiene l'indice di tutti gli argomenti trattati all'interno del documento. La sua struttura è la seguente:
@@ -72,8 +72,8 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\item numero di pagina.
 		\end{enumerate}
 
-		\subsubsection{Indice delle tabele}
-		Questa sezione contiene l'indice delle tabele. Per ogni tabella deve essere specificato:
+		\subsubsection{Indice delle tabelle}
+		Questa sezione contiene l'indice delle tabelle. Per ogni tabella deve essere specificato:
 
 		\begin{enumerate}
 			\item titolo della tabella;
@@ -119,7 +119,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\item numero della pagina, posizionato al centro.
 			\end{itemize}
 			\paragraph{Orfani e vedove}
-			Si considerano vedova, la riga di un paragrafo che inizia alla fine di una pagina, mentre si considera orfana, la riga di un paragrafo che finisce all'inizio di una pagina. I documenti dovranno essere redatti cercando di evitare il più possibile queste due tipologie di righe poiché risultato essere poco gradevoli. 
+			Si considerano vedova, la riga di un paragrafo che inizia alla fine di una pagina, mentre si considera orfana, la riga di un paragrafo che finisce all'inizio di una pagina. I documenti dovranno essere redatti cercando di evitare il più possibile queste due tipologie di righe poiché risultano poco gradevoli. 
 		\subsubsection{Caratteri}
 			
 			\paragraph{Virgolette}
@@ -134,7 +134,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\paragraph{Parentesi}
 			
 			\begin{itemize}
-				\item \textbf{Tonde:} possono essere utilizzate per descrivere esempi o per fornire dei sinonimi. Sono le uniche parentesi ammesse all'interno di una frase.
+				\item \textbf{Tonde:} possono essere utilizzate per descrivere esempi, per fornire dei sinonimi oppure per dare delle precisazioni. Sono le uniche parentesi ammesse all'interno di una frase.
 				\item \textbf{Quadre:} possono rappresentare uno standard ISO oppure uno stato relativo ad un ticket. 
 			\end{itemize}
 			
@@ -201,9 +201,8 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			\begin{itemize}
 				\item la loro numerazione è progressiva all'interno di tutto il documento;
 				\item devono essere scritte una volta sola;
-				\item il primo carattere di ogni nota deve essere maiuscolo. Se la prima parola dovesse essere un acronimo allora bisogna seguire le regole di formattazione di tale acronimo.
+				\item il primo carattere di ogni nota deve essere maiuscolo. Fanno eccezione i casi in cui la parola sia un acronimo. In questo caso bisogna seguire le regole di formattazione di tale acronimo.
 			\end{itemize}
-			Ogni nota a piè pagina deve iniziare con un carattere maiuscolo. Fanno eccezione i casi in cui la parola sia un acronimo, dove in quel caso si seguono le regole di formattazione della stessa. Non			
 			
 		\subsubsection{Formati}
 			\paragraph{Date}
@@ -227,9 +226,35 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			La stile utilizzato per rappresentare un URI è il corsivo ed il testo deve essere di colore blu.
 			 
 			\paragraph{Sigle}
-			
-			Dobbiamo decidere le sigle??
-
+			È possibile fare riferimento a ruoli, documenti e revisioni pianificate utilizzando le seguenti sigle:
+			\begin{itemize}
+				\item Rdp (\responsabilediprogetto);
+				\item Amm (\amministratore);
+				\item Ana (\analista);
+				\item Ptt (\progettista);
+				\item Prm (\programmatore);
+				\item Ver (\verificatore).
+				
+				\item ADR (\analisideirequisiti);
+				\item GLS (\glossario);
+				\item NDP (\normediprogetto);
+				\item PDP (\pianodiprogetto);
+				\item PDQ (\pianodiqualifica);
+				\item SDF (\studiodifattibilita);
+				\item SPT (\specificatecnica);
+				
+				\item RR (\revisionedeirequisiti);
+				\item RA (\revisionediaccettazione);
+				\item RP (\revisionediprogettazione);
+				\item RQ (\revisionediqualifica);
+			\end{itemize}
+			L'utilizzo di tale sigle è permesso solo all'interno di:
+			\begin{itemize}
+				\item Tabelle;
+				\item Diagrammi (immagini);
+				\item Didascalie di tabelle e immagini;
+				\item Note a piè di pagina.
+			\end{itemize}
 			\paragraph{Ruoli di progetto}
 			Quando si fa riferimento ad un ruolo di progetto bisogna adottare lo stile corsivo e la prima lettera deve essere maiuscola.			
 			
