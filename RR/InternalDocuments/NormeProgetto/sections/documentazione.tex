@@ -330,16 +330,79 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		Per evitare confusione, la stesura del glossario deve avvenire in maniera parallela alla stesura dei documenti . Al fine di evitare dimenticanze, è ammesso inserire un termine all'interno del glossario senza inserirne immediatamente la spiegazione. È comunque doveroso completare la spiegazione non appena possibile. \\ All'interno dei documenti i termini presenti nel glossario devono essere marcati con il pedice \g (\hyperref[sec:Formattazione termini nel glossario]{Regole per la formattazione di termini nel Glossario}).
 		
 		\subsubsection{Verbali}
+		Lo scopo di un verbale è di riassumere, cercando di essere il più possibile fedeli, ciò che che è stato discusso durante un incontro. È previsto che ad ogni riunione tra i membri del gruppo e/o soggetti esterni sia redatto un verbale. Il verbale è soggetto ad un'unica stesura e non può subire modifiche.
+			
 			\paragraph{Verbali di riunioni interne}
-					
+			Si definisce interna una riunione che coinvolge solamente i membri del gruppo. Il verbale per questo tipo di incontro è da considerarsi di carattere informale. 
+			
+			Il verbale deve essere redatto seguendo la seguente struttura:
+			\begin{enumerate}
+				\item frontespizio;
+				\item una sezione ``Estremi del Verbale'' contente le seguenti informazioni:
+				\begin{enumerate}[a.]
+					\item data;
+					\item luogo, a meno di incontri telematici;
+					\item partecipanti.
+				\end{enumerate}
+				\item introduzione contenente le motivazioni per le quali è stato richiesto l'incontro;
+				\item ordine del giorno;
+				\item verbale della riunione.
+			\end{enumerate}
+
 			\paragraph{Verbali di riunioni esterne}
+			Si definisce esterna una riunione che avviene tra i membri del team e soggetti esterni. Il verbale redatto per questo tipo di incontro è da considerarsi come parte integrante della documentazione ufficiale e per questo motivo può avere un valore normativo o fornire nuovi requisiti. È previsto che ad ogni incontro venga nominata una persona che si occupi della sua stesura.
+			
+			Il verbale deve essere redatto seguendo la seguente struttura:
+			\begin{enumerate}
+				\item frontespizio;
+				\item indice;
+				\item una sezione ``Estremi del Verbale'' contente le seguenti informazioni:
+				\begin{enumerate}[a.]
+					\item data;
+					\item ora;
+					\item luogo, a meno di incontri telematici;
+					\item partecipanti.
+				\end{enumerate}
+				\item introduzione contenente le motivazioni per le quali è stato richiesto l'incontro;
+				\item una sezione dedicata alle domande poste e alle risposte ottenute durante l'incontro.
+			\end{enumerate}
+			
 	\subsection{Versionamento dei documenti} \label{sec:Versionamento dei documenti}
+	Tutti i documenti, ad eccezione dei verbali, sono sottoposti a versionamento. Il versionamento prevede che la versione di un documento venga incrementata ogniqualvolta avvengano delle modifiche all'interno del documento stesso.
+	
+	La sintassi che indica la versione di un documento è la seguente: vX.YY. La sua interpretazione è la seguente:
+	\begin{itemize}
+		\item 'v' è un carattere che si riferisce alla parola versione;
+		\item X è un numero che indica quante volte è stato formalizzato il documento;
+		\item YY è un numero a due cifre che indica quante modifiche sono state effettuate al documento dalla sua ultima formalizzazione.
+	\end{itemize}
 	\subsection{Avanzamento di un documento} 
+		\subsubsection{Regole di avanzamento di versione}
+		L'avanzamento di versione avviene secondo le seguenti regole:
+		\begin{itemize}
+			\item X inizia da 0 e viene incrementato di una unità nel momento in cui il \responsabilediprogetto\ formalizza il documento;
+			\item YY inizia da 00 e viene incrementato di una unità ad ogni modifica che viene effettua al documento. Ogni volta che il documento viene formalizzato riparte da 00.
+		\end{itemize}
+		La prima versione di ogni documento è indicata dalla versione v0.01.		
+		
+		\subsubsection{Procedura per la formalizzazione di un documento}
+		La formalizzazione di un documento segue la seguente procedura:
+		\begin{enumerate}
+			\item il documento viene redatto da coloro che sono incaricati della sua stesura ed eventuale correzione di errori;
+			\item il \responsabilediprogetto\ assegna uno o più Verificatori al documento i quali dovranno occuparsi di controllare la correttezza del documento stesso;
+			\item se i Verificatori riscontrano anomalie si ritorna al punto 1 altrimenti il documento viene consegnato al \responsabilediprogetto;
+			\item il \responsabilediprogetto\ decide se approvare il documento, e quindi formalizzarlo, oppure se rifiutarlo, e quindi ritornare al punto 1.
+		\end{enumerate}
 	\subsection{Strumenti}
 		\subsubsection{Latex}
+		La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup latex. È stato scelto questo strumento poiché permette una facile separazione tra formattazione e presentazione. La scelta dell'editor da utilizzare è lasciata libera ai membri del gruppo.
+		
 			\paragraph{Template}
+			Per poter creare omogeneità tra i documenti, è stato creato un template latex nel quale sono state definite tutte le regole tipografiche da applicare al documento. Questo permette di poter scrivere i documenti senza dover tener conto della loro formattazione.
 			\paragraph{Comandi personalizzati}
+			Sono stati definiti dei comandi latex personalizzati al fine di poter rendere più semplice ed immediata l'applicazione delle norme tipografiche. Questi comandi si occupano delle corretta formattazione del testo secondo le norme che sono state definite. La lista dei comandi è presente nella sezione formati. (DA VEDERE!!!)
 			\paragraph{Rilevamento errori ortografici}
+			(STRUMENTO DA SCEGLIERE)
 			
 			
 			
