@@ -25,5 +25,6 @@
 25)bluetooth
 26)Unicode
 27)BOM
-28)Teamwork
 29)UML
+30)Team
+31)Markup (latex è un linguaggio di markup)
