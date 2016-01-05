@@ -3,6 +3,18 @@
 
 \begin{document}
 	\section{Verifica}
+		\subsection{Analisi ??}
+		Per poter verificare la qualità del prodotto è stato scelto di applicare delle tecniche di analisi sui documenti e sul codice. 
+			\subsubsection{Analisi statica} Per analisi statica si intende la valutazione di un sistema basata su struttura, contenuto e documentazione senza che questo venga eseguito. Questa tecnica è applicabile sia al codice, che alla documentazione stessa. L'analisi statica può avvenire con due modalità:
+			\begin{itemize}
+				\item \textbf{Walkthrough}: questa tecnica dev'essere applicata quando non si sa che errori o problematiche si stanno cercando. La tecnica consiste nel leggere il codice sorgente o il documento da cima in fondo per trovare anomalie  di qualsiasi tipo;
+				\item \textbf{Inspection}: questa tecnica dev'essere applicata quando si ha idea della problematica che si sta cercando e consiste in una lettura mirata del documento/codice, sulla base di una lista degli errori precedentemente stilata.
+			\end{itemize}
+			La tecnica walkthrough è molto onerosa e deve essere utilizzata soprattutto nelle prime fasi del progetto, quando non è già presente una lista degli errori comuni, oppure non si è ancora sufficientemente preparati riguardo un aspetto del progetto. Avanzando nelle fasi del progetto sarà utile stilare una lista quanto più possibile completa di errori comuni, in modo tale da evitare la tecnica walkthrough e applicare l'ispection.
+			
+			\subsubsection{Analisi dinamica}
+			L’analisi dinamica è una forma di valutazione di un sistema software, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.
+			
 		\subsection{Issue tracking}
 		L'issue tracking è un'attività di supporto per i \verificatori\ e permette, oltre a tracciare potenziali errori, di assegnare i compiti di correzione al \responsabilediprogetto.
 			\subsubsection{Sintassi di una Issue}
@@ -18,16 +30,6 @@
 				\item Una descrizione dettagliata del problema;
 				\item La motivazione per cui si è ritenuto necessario sollevare una issue.
 			\end{itemize}
-		\subsection{Analisi ??}
-		Al fine di determinare il livello di qualità del prodotto, il team deve utilizzare le tecniche di analisi statica e dinamica dei dati.
-			\subsubsection{Analisi statica} Per analisi statica si intende la valutazione di un sistema basata su struttura, contenuto e documentazione senza che questo venga eseguito. Questa tecnica è applicabile sia al codice, che alla documentazione stessa. L'analisi statica può avvenire con due modalità:
-			\begin{itemize}
-				\item \textbf{Walkthrough}: questa tecnica dev'essere applicata quando non si sa che errori o problematiche si stanno cercando. La tecnica consiste nel leggere il codice sorgente o il documento da cima in fondo per trovare anomalie  di qualsiasi tipo;
-				\item \textbf{Inspection}: questa tecnica dev'essere applicata quando si ha idea della problematica che si sta cercando e consiste in una lettura mirata del documento/codice, sulla base di una lista degli errori precedentemente stilata.
-			\end{itemize}
-			La tecnica walkthrough è molto onerosa e deve essere utilizzata soprattutto nelle prime fasi del progetto, quando non è già presente una lista degli errori comuni, oppure non si è ancora sufficientemente preparati riguardo un aspetto del progetto. Avanzando nelle fasi del progetto sarà utile stilare una lista quanto più possibile completa di errori comuni, in modo tale da evitare la tecnica walkthrough e applicare l'ispection.
-			\subsubsection{Analisi dinamica}
-			L’analisi dinamica è una forma di valutazione di un sistema software, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.
 		\subsection{Verifica dei documenti}
 		Il \responsabilediprogetto\ ha il compito di dare inizio alla fase di verifica, assegnando i compiti ai \verificatori. Quest'ultimi, devono effettuare un'accurata verifica delle seguenti regole:
 		\begin{itemize}
