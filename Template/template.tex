@@ -1,0 +1,163 @@
+%ricordarsi di compilare più di una volta
+\documentclass[a4paper,12pt]{article}
+
+%-------------------INIZIO pacchetti utilizzati -----------------------------------------
+\usepackage[T1]{fontenc}	% codifica dei font in uscita
+\usepackage[utf8]{inputenc} % codifica dei font in uscita
+\usepackage[italian]{babel} % lingua del documento
+\usepackage{graphicx}		% pacchetto per la grafica
+\usepackage{url}			% per scrivere gli indirizzi Internet
+\usepackage{enumerate} % liste  lettere
+\usepackage{subfiles}
+\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
+%-------------------FINE pacchetti utilizzati -----------------------------------------
+
+%-------------------INIZIO comandi inizializzazione -----------------------------------------
+\setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
+\setcounter{tocdepth}{5} % aggiunge indice paragrafi
+
+\graphicspath{{images/}{../images/}}
+%-------------------FINE comandi inizializzazione -----------------------------------------
+
+%-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
+\usepackage{fancyhdr}
+\fancypagestyle{mymain}{
+	\hypersetup{
+			colorlinks=true,
+			linkcolor=blue,
+			anchorcolor=black,
+			citecolor=black,
+			urlcolor=blue,
+	}
+	\pagenumbering{arabic}
+	\fancyhf{}
+	\lhead{Leaf}
+	\rhead{Norme di progetto}
+	\cfoot{
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+		}
+		\thepage~di \pageref{LastPage}
+	}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+
+\fancypagestyle{myfront}{
+	\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+	}
+	\pagenumbering{Roman}
+	\fancyhf{}
+	\lhead{Leaf}
+	\rhead{Norme di progetto}
+	\cfoot{\thepage~di \pageref{LastFrontPage}}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+%-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
+
+%-------------------INIZIO comandi personalizzati-----------------------------------------
+\newcommand{\leaf}{\textit{Leaf}}
+\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\mailleaf}{\mail{leaf.gruppo@gmail.com}}
+\newcommand{\mailinglist}{\mail{nome@mailing.list}}
+\newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto}}
+\newcommand{\amministratore}{\textit{Amministratore}}
+\newcommand{\analista}{\textit{Analista}}
+\newcommand{\analisti}{\textit{Analisti}}
+\newcommand{\progettista}{\textit{Progettista}}
+\newcommand{\programmatore}{\textit{Programmatore}}
+\newcommand{\verificatore}{\textit{Verificatore}}
+\newcommand{\verificatori}{\textit{Verificatori}}
+\newcommand{\pianodiprogetto}{\textit{Piano di progetto}}
+\newcommand{\pianodiqualifica}{\textit{Piano di qualifica}}
+\newcommand{\normediprogetto}{\textit{Norme di progetto}}
+\newcommand{\studiodifattibilita}{\textit{Studio di fattibilità}}
+\newcommand{\analisideirequisiti}{\textit{Analisi dei requisiti}}
+\newcommand{\specificatecnica}{\textit{Specifica tecnica}}
+\newcommand{\definizionediprodotto}{\textit{Definizione di prodotto}}
+\newcommand{\manualeutente}{\textit{Manuale utente}}
+\newcommand{\glossario}{\textit{Glossario}}
+\newcommand{\revisionedeirequisiti}{\textbf{Revisione dei requisiti}}
+\newcommand{\revisionediaccettazione}{\textbf{Revisione di accettazione}}
+\newcommand{\revisionediprogettazione}{\textbf{Revisione di progettazione}}
+\newcommand{\revisionediqualifica}{\textbf{Revisione di qualifica}}
+\newcommand{\g}{\tiny \ped{|G|} \normalsize}
+%-------------------FINE comandi personalizzati-----------------------------------------
+
+\titlepage{}
+
+\author{Nome Autore}
+\date{05/01/2016}
+
+
+\pagestyle{myfront}
+
+
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries CLIPS\par}
+	Communication \& Localization with Indoor Positioning Systems \\*
+	\line(1,0){350} \\
+	%\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
+	{\scshape\LARGE Università di Padova \par}
+	\vspace{1cm}
+	%devono essere cambiato il titolo ogni volta
+	{\scshape\Large Norme di progetto\par}
+	\vspace{1.5cm}
+	
+	\vspace{2cm}
+	{\Large\itshape Qualcosa\par}
+	
+	\vfill \vfill
+	%devono essere compilati questi campi ogni volta
+	\begin{tabular}{c|c}
+		{\hfill \textbf{Versione}} 			& 1.00				\\ \\
+		{\hfill\textbf{Data Redazione}} 		& 24/12/2015  		\\ \\
+		{\hfill\textbf{Redazione}} 			&  					\\ \\
+		{\hfill\textbf{Verifica}} 				&  					\\ \\
+		{\hfill\textbf{Approvazione}} 		&  					\\ \\
+		{\hfill\textbf{Uso}} 					& 					\\ \\
+		{\hfill\textbf{Distribuzione}} 			& 					\\ \\
+	\end{tabular}
+\end{titlepage}
+	
+	\newpage
+
+	\tableofcontents
+	
+	\label{LastFrontPage}
+	
+
+	\newpage
+	
+	\pagestyle{mymain}
+	
+	%cambiare nomeFileSenzaEstensione con il nome del file
+	%questi file vanno messi in sections e ne deve esistere uno per ogni sezione
+	\newpage
+		\subfile{sections/nomeFileSenzaEstensione}
+
+	\newpage
+		\subfile{sections/nomeFileSenzaEstensione}
+	
+	\newpage
+		\subfile{sections/nomeFileSenzaEstensione}
+	
+	\newpage
+		\subfile{sections/nomeFileSenzaEstensione}
+		
+	\newpage
+		\subfile{sections/nomeFileSenzaEstensione}
+	
+	\newpage
+		\subfile{sections/nomeFileSenzaEstensione}
+		
+	\label{LastPage}
+
+\end{document}
