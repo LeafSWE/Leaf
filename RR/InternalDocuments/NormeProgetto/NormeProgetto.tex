@@ -1,30 +1,65 @@
+%ricordarsi di compilare più di una volta
 \documentclass[a4paper,12pt]{article}
 
+%-------------------INIZIO pacchetti utilizzati -----------------------------------------
 \usepackage[T1]{fontenc}	% codifica dei font in uscita
 \usepackage[utf8]{inputenc} % codifica dei font in uscita
-
 \usepackage[italian]{babel} % lingua del documento
 \usepackage{graphicx}		% pacchetto per la grafica
 \usepackage{url}			% per scrivere gli indirizzi Internet
-
 \usepackage{enumerate} % liste  lettere
+\usepackage{subfiles}
+\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
+%-------------------FINE pacchetti utilizzati -----------------------------------------
 
+%-------------------INIZIO comandi inizializzazione -----------------------------------------
 \setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
 \setcounter{tocdepth}{5} % aggiunge indice paragrafi
 
 \graphicspath{{images/}{../images/}}
+%-------------------FINE comandi inizializzazione -----------------------------------------
 
-\usepackage{subfiles}
-
-\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
-\hypersetup{
+%-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
+\usepackage{fancyhdr}
+\fancypagestyle{mymain}{
+	\hypersetup{
 			colorlinks=true,
 			linkcolor=blue,
 			anchorcolor=black,
 			citecolor=black,
 			urlcolor=blue,
+	}
+	\pagenumbering{arabic}
+	\fancyhf{}
+	\lhead{Leaf}
+	\rhead{Norme di progetto}
+	\cfoot{
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+		}
+		\thepage~di \pageref{LastPage}
+	}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
 }
 
+\fancypagestyle{myfront}{
+	\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+	}
+	\pagenumbering{Roman}
+	\fancyhf{}
+	\lhead{Leaf}
+	\rhead{Norme di progetto}
+	\cfoot{\thepage~di \pageref{LastFrontPage}}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+%-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
+
+%-------------------INIZIO comandi personalizzati-----------------------------------------
 \newcommand{\leaf}{\textit{Leaf}}
 \newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
 \newcommand{\mailleaf}{\mail{leaf.gruppo@gmail.com}}
@@ -51,12 +86,16 @@
 \newcommand{\revisionediprogettazione}{\textbf{Revisione di progettazione}}
 \newcommand{\revisionediqualifica}{\textbf{Revisione di qualifica}}
 \newcommand{\g}{\tiny \ped{|G|} \normalsize}
-
+%-------------------FINE comandi personalizzati-----------------------------------------
 
 \titlepage{}
 
 \author{Oscar Elia Conti, Marco Zanella}
 \date{24/12/2015}
+
+
+\pagestyle{myfront}
+
 
 
 \begin{document}
@@ -76,21 +115,26 @@
 	
 	\vfill \vfill
 	\begin{tabular}{c|c}
-	{\hfill \textbf{Versione}} & 1.00\\ \\
-	{\hfill\textbf{Data Redazione}} & 24/12/2015  \\ \\
-	{\hfill\textbf{Redazione}} &  \\ \\
-	{\hfill\textbf{Verifica}} &  \\ \\
-	{\hfill\textbf{Approvazione}} &  \\ \\
-	{\hfill\textbf{Uso}} & \\ \\
-	{\hfill\textbf{Distribuzione}} & \\ \\
+		{\hfill \textbf{Versione}} 			& 1.00				\\ \\
+		{\hfill\textbf{Data Redazione}} 		& 24/12/2015  		\\ \\
+		{\hfill\textbf{Redazione}} 			&  \\ \\
+		{\hfill\textbf{Verifica}} 				&  \\ \\
+		{\hfill\textbf{Approvazione}} 		&  \\ \\
+		{\hfill\textbf{Uso}} 					& \\ \\
+		{\hfill\textbf{Distribuzione}} 			& \\ \\
 	\end{tabular}
 \end{titlepage}
 	
 	\newpage
 
 	\tableofcontents
+	
+	\label{LastFrontPage}
+	
 
 	\newpage
+	
+	\pagestyle{mymain}
 	
 	\newpage
 		\subfile{sections/introduzione}
@@ -109,4 +153,6 @@
 	
 	\newpage
 		\subfile{sections/verifica}
+	\label{LastPage}
+
 \end{document}
