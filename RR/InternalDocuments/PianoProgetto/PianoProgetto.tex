@@ -10,6 +10,13 @@
 \usepackage{enumerate} % liste  lettere
 \usepackage{subfiles}
 \usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
+
+% pacchetti per tabelle
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup{tableposition=top,figureposition=bottom,font=small}
+\captionsetup{format=hang,labelfont={sf,bf}}
+
 %-------------------FINE pacchetti utilizzati -----------------------------------------
 
 %-------------------INIZIO comandi inizializzazione -----------------------------------------
@@ -32,7 +39,7 @@
 	\pagenumbering{arabic}
 	\fancyhf{}
 	\lhead{Leaf}
-	\rhead{Norme di progetto}
+	\rhead{Piano di progetto}
 	\cfoot{
 		\hypersetup{
 			colorlinks=true,
@@ -52,7 +59,7 @@
 	\pagenumbering{Roman}
 	\fancyhf{}
 	\lhead{Leaf}
-	\rhead{Norme di progetto}
+	\rhead{Piano di progetto}
 	\cfoot{\thepage~di \pageref{LastFrontPage}}
 	\renewcommand{\headrulewidth}{0.4pt}
 	\renewcommand{\footrulewidth}{0.4pt}
@@ -112,7 +119,7 @@
 	\vspace{1.5cm}
 	
 	\vspace{2cm}
-	{\Large\itshape Andrea Tombolato, Federico Tavella, Eduard Bicego\par}
+	{\Large\itshape Eduard Bicego, Federico Tavella, Andrea Tombolato\par}
 	
 	\vfill \vfill
 	%devono essere compilati questi campi ogni volta
@@ -120,16 +127,17 @@
 		{\hfill \textbf{Versione}} 			& 1.00				\\ \\
 		{\hfill\textbf{Data Redazione}} 		& 6/1/2016  		\\ \\
 		{\hfill\textbf{Redazione}} 			&  					\\ \\
-		{\hfill\textbf{Verifica}} 				&  					\\ \\
+		{\hfill\textbf{Verifica}} 			&  					\\ \\
 		{\hfill\textbf{Approvazione}} 		&  					\\ \\
-		{\hfill\textbf{Uso}} 					& 					\\ \\
-		{\hfill\textbf{Distribuzione}} 			& 					\\ \\
+		{\hfill\textbf{Uso}} 				& 					\\ \\
+		{\hfill\textbf{Distribuzione}} 		& 					\\ \\
 	\end{tabular}
 \end{titlepage}
 	
 	\newpage
 
-	\tableofcontents
+	\tableofcontents 	% produce l'indice delle sezioni del documento
+	\listoftables 		% produce l'indice delle tabelle del documento		
 	
 	\label{LastFrontPage}
 	
@@ -142,6 +150,9 @@
 	%questi file vanno messi in sections e ne deve esistere uno per ogni sezione
 	\newpage
 		\subfile{sections/introduzione}
+
+	\newpage
+		\subfile{sections/analisi_dei_rischi}
 
 	%\newpage
 		%\subfile{}
