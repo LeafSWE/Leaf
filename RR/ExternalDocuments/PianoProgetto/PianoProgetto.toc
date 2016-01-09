@@ -35,4 +35,32 @@
 \contentsline {subsubsection}{\numberline {4.1.1}Fase A}{13}{subsubsection.4.1.1}
 \contentsline {paragraph}{\numberline {4.1.1.1}Suddivisione del lavoro}{13}{paragraph.4.1.1.1}
 \contentsline {paragraph}{\numberline {4.1.1.2}Prospetto economico}{13}{paragraph.4.1.1.2}
-\contentsline {section}{\numberline {5}Organigramma}{14}{section.5}
+\contentsline {subsubsection}{\numberline {4.1.2}Fase AD}{14}{subsubsection.4.1.2}
+\contentsline {paragraph}{\numberline {4.1.2.1}Suddivisione del lavoro}{14}{paragraph.4.1.2.1}
+\contentsline {paragraph}{\numberline {4.1.2.2}Prospetto economico}{14}{paragraph.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Fase PA}{15}{subsubsection.4.1.3}
+\contentsline {paragraph}{\numberline {4.1.3.1}Suddivisione del lavoro}{15}{paragraph.4.1.3.1}
+\contentsline {paragraph}{\numberline {4.1.3.2}Prospetto economico}{15}{paragraph.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.4}Fase PDROB}{16}{subsubsection.4.1.4}
+\contentsline {paragraph}{\numberline {4.1.4.1}Suddivisione del lavoro}{16}{paragraph.4.1.4.1}
+\contentsline {paragraph}{\numberline {4.1.4.2}Prospetto economico}{16}{paragraph.4.1.4.2}
+\contentsline {subsubsection}{\numberline {4.1.5}Fase PDRD}{17}{subsubsection.4.1.5}
+\contentsline {paragraph}{\numberline {4.1.5.1}Suddivisione del lavoro}{17}{paragraph.4.1.5.1}
+\contentsline {paragraph}{\numberline {4.1.5.2}Prospetto economico}{17}{paragraph.4.1.5.2}
+\contentsline {subsubsection}{\numberline {4.1.6}Fase PDROP}{18}{subsubsection.4.1.6}
+\contentsline {paragraph}{\numberline {4.1.6.1}Suddivisione del lavoro}{18}{paragraph.4.1.6.1}
+\contentsline {paragraph}{\numberline {4.1.6.2}Prospetto economico}{18}{paragraph.4.1.6.2}
+\contentsline {subsubsection}{\numberline {4.1.7}Fase V}{19}{subsubsection.4.1.7}
+\contentsline {paragraph}{\numberline {4.1.7.1}Suddivisione del lavoro}{19}{paragraph.4.1.7.1}
+\contentsline {paragraph}{\numberline {4.1.7.2}Prospetto economico}{19}{paragraph.4.1.7.2}
+\contentsline {subsection}{\numberline {4.2}Riepilogo}{20}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Ore totali}{20}{subsubsection.4.2.1}
+\contentsline {paragraph}{\numberline {4.2.1.1}Suddivisione del lavoro}{20}{paragraph.4.2.1.1}
+\contentsline {paragraph}{\numberline {4.2.1.2}Prospetto economico}{20}{paragraph.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.2}Ore di investimento}{21}{subsubsection.4.2.2}
+\contentsline {paragraph}{\numberline {4.2.2.1}Suddivisione del lavoro}{21}{paragraph.4.2.2.1}
+\contentsline {paragraph}{\numberline {4.2.2.2}Prospetto economico}{21}{paragraph.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Ore rendicontate}{22}{subsubsection.4.2.3}
+\contentsline {paragraph}{\numberline {4.2.3.1}Suddivisione del lavoro}{22}{paragraph.4.2.3.1}
+\contentsline {paragraph}{\numberline {4.2.3.2}Prospetto economico}{22}{paragraph.4.2.3.2}
+\contentsline {section}{\numberline {5}Organigramma}{23}{section.5}
