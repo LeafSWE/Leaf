@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.6)  8 JAN 2016 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.6)  9 JAN 2016 13:40
 entering extended mode
 **./PianoProgetto.tex
 (PianoProgetto.tex
@@ -339,6 +339,10 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks19
 \verbatim@in@stream=\read1
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty"
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box26
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -499,32 +503,32 @@ Package caption Info: hyperref package is loaded.
 \f@ncyO@olf=\skip51
 \f@ncyO@orf=\skip52
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 104.
+Package hyperref Info: Option `colorlinks' set `true' on input line 106.
 
 (PianoProgetto.aux)
 \openout1 = `PianoProgetto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Info: Redefining \it@ocap on input line 108.
-LaTeX Info: Redefining \it@ccap on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Info: Redefining \it@ocap on input line 110.
+LaTeX Info: Redefining \it@ccap on input line 110.
  ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count107
 \scratchdimen=\dimen130
-\scratchbox=\box26
+\scratchbox=\box27
 \nofMPsegments=\count108
 \nofMParguments=\count109
 \everyMPshowfont=\toks20
@@ -534,7 +538,7 @@ LaTeX Info: Redefining \it@ccap on input line 108.
 \makeMPintoPDFobject=\count112
 \everyMPtoPDFconversion=\toks21
 )
-\AtBeginShipoutBox=\box27
+\AtBeginShipoutBox=\box28
  ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
@@ -543,7 +547,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-Package hyperref Info: Link coloring ON on input line 108.
+Package hyperref Info: Link coloring ON on input line 110.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -553,17 +557,17 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count113
 )
-LaTeX Info: Redefining \ref on input line 108.
-LaTeX Info: Redefining \pageref on input line 108.
-LaTeX Info: Redefining \nameref on input line 108.
+LaTeX Info: Redefining \ref on input line 110.
+LaTeX Info: Redefining \pageref on input line 110.
+LaTeX Info: Redefining \nameref on input line 110.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 126.
+(Font)              <12> on input line 128.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 126.
+(Font)              <8> on input line 128.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 126.
+(Font)              <6> on input line 128.
 
 [1
 
@@ -571,10 +575,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (PianoProgetto.toc)
 \tf@toc=\write3
 \openout3 = `PianoProgetto.toc'.
-
- (PianoProgetto.lot)
-\tf@lot=\write4
-\openout4 = `PianoProgetto.lot'.
 
 
 
@@ -587,11 +587,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 	\newpage
-                [1]
+l.142 	\listoftables
+                     		% produce l'indice delle tabelle del documento [1]
+(PianoProgetto.lot)
+\tf@lot=\write4
+\openout4 = `PianoProgetto.lot'.
+
+ [2]
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 147.
+(hyperref)                setting the option has no effect on input line 149.
 
 (sections/introduzione.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
@@ -623,7 +628,7 @@ Package hyperref Warning: Option `colorlinks' has already been used,
 [3])
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 154.
+(hyperref)                setting the option has no effect on input line 156.
 
 [4] (sections/analisi_dei_rischi.tex
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 16.
@@ -692,31 +697,41 @@ Package hyperref Warning: Option `colorlinks' has already been used,
 [10])
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 157.
+(hyperref)                setting the option has no effect on input line 159.
 
 [11] (sections/pianificazione.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
 
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 162.
+
+[12] (sections/preventivo.tex)
 
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 165.
 
-[12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
+[13] (sections/organigramma.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+
+
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 170.
+
+[14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (PianoProgetto.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 165.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 170.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 7571 strings out of 493634
- 110890 string characters out of 3143793
- 210181 words of memory out of 3000000
- 10779 multiletter control sequences out of 15000+200000
- 17893 words of font info for 39 fonts, out of 3000000 for 9000
+ 7652 strings out of 493634
+ 112061 string characters out of 3143793
+ 210682 words of memory out of 3000000
+ 10838 multiletter control sequences out of 15000+200000
+ 18010 words of font info for 40 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  36i,11n,43p,829b,543s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Andrea\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
@@ -732,10 +747,11 @@ ccc1728.pk> <C:\Users\Andrea\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\eccc2074.pk> <C:\Users\Andrea\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
 r\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Andrea\AppData\Local\MiKTeX\2.9\fon
 ts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on PianoProgetto.pdf (14 pages, 158862 bytes).
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/eurosym/feymr10.pfb>
+Output written on PianoProgetto.pdf (17 pages, 180883 bytes).
 PDF statistics:
- 519 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
+ 578 PDF objects out of 1000 (max. 8388607)
+ 86 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
