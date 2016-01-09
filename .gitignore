@@ -1,0 +1,8 @@
+#gedit temp files
+*.*~
+
+#latex
+*.aux
+*.log
+*.synctex.gz
+*.toc
