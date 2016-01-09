@@ -10,17 +10,16 @@
 \usepackage{enumerate} % liste  lettere
 \usepackage{subfiles}
 \usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
+\usepackage{fancyhdr}
 %-------------------FINE pacchetti utilizzati -----------------------------------------
 
-%-------------------INIZIO comandi inizializzazione -----------------------------------------
 \setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
 \setcounter{tocdepth}{5} % aggiunge indice paragrafi
 
 \graphicspath{{images/}{../images/}}
-%-------------------FINE comandi inizializzazione -----------------------------------------
+
 
 %-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
-\usepackage{fancyhdr}
 \fancypagestyle{mymain}{
 	\hypersetup{
 			colorlinks=true,
@@ -86,7 +85,32 @@
 \newcommand{\revisionediprogettazione}{\textbf{Revisione di progettazione}}
 \newcommand{\revisionediqualifica}{\textbf{Revisione di qualifica}}
 \newcommand{\g}{\tiny \ped{|G|} \normalsize}
+
+%-------------------INIZIO creazione subsubparagraph--------------------------------------
+\makeatletter
+	\setcounter{secnumdepth}{6}
+	\setcounter{tocdepth}{6}
+	\newcounter {subsubparagraph}[subparagraph]
+	\renewcommand{\thesubsubparagraph}{\thesubparagraph.\@arabic\c@subsubparagraph}
+	\newcommand{\subsubparagraph}{\@startsection
+                         {subsubparagraph}%
+                         {6}%
+                         {8mm}%
+                         {\baselineskip}%
+                         {0.5\baselineskip}%
+                         {\normalfont\normalsize\bfseries}}%
+	\newcommand*\l@subsubparagraph{\@dottedtocline{6}{13.5em}{5em}}
+	\newcommand{\subsubparagraphmark}[1]{}
+\makeatother
+%-------------------FINE creazione subsubparagraph--------------------------------------
+
 %-------------------FINE comandi personalizzati-----------------------------------------
+
+
+
+
+
+
 
 \titlepage{}
 
