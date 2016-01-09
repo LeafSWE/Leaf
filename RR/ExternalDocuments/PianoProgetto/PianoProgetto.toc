@@ -64,3 +64,8 @@
 \contentsline {paragraph}{\numberline {4.2.3.1}Suddivisione del lavoro}{22}{paragraph.4.2.3.1}
 \contentsline {paragraph}{\numberline {4.2.3.2}Prospetto economico}{22}{paragraph.4.2.3.2}
 \contentsline {section}{\numberline {5}Organigramma}{23}{section.5}
+\contentsline {subsection}{\numberline {5.1}Redazione}{23}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Approvazione}{23}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Accettazione dei componenti}{23}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Componenti}{24}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Definizione dei ruoli}{24}{subsection.5.5}
