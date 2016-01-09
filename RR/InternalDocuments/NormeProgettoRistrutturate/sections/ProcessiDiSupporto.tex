@@ -209,7 +209,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 				\item MM: numero a due cifre che rappresenta il mese;
 				\item GG: numero a due cifre che rappresenta il giorno.
 			\end{itemize}
-			Nei casi in cui risulti possibile esprimere i mesi o giorni omettendo una cifra, è necessario anteporre uno zero davanti a tale cifra.
+			Nei casi in cui risulti possibile esprimere i mesi o giorni omettendo una cifra, è necessario anteporre uno zero davanti a tale cifra. Per velocizzare la scrittura delle date è stato creato il comando \LaTeX\ \texttt{\textbackslash frmdate\{giorno\}\{mese\}\{anno\}}.
 			
 			\subparagraph{Orari}
 			La formattazione degli orari segue lo standard [ISO 8601]. Tale standard prevede che gli orari siano scritti secondo il seguente formalismo: hh:mm. Questa rappresentazione va letta nel seguente modo:
@@ -217,10 +217,10 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 				\item hh: numero a due cifre che rappresenta il numero di ore trascorse dalla mezzanotte;
 				\item mm: numero a due cifre che rappresenta i minuti. 
 			\end{itemize}						
-			Nei casi in cui risulti possibile esprimere le ore o i minuti omettendo una cifra, è necessario anteporre uno zero davanti a tale cifra.
+			Nei casi in cui risulti possibile esprimere le ore o i minuti omettendo una cifra, è necessario anteporre uno zero davanti a tale cifra. Per velocizzare la scrittura degli orari è stato creato il comando \LaTeX\ \texttt{\textbackslash frmtime\{ora\}\{minuti\}}.
 			
 			\subparagraph{URI}
-			La stile utilizzato per rappresentare un URI è il corsivo ed il testo deve essere di colore blu.
+			La stile utilizzato per rappresentare un URI è il corsivo ed il testo deve essere di colore blu. Per velocizzare la scrittura degli URI è stato creato il comando \LaTeX\ \texttt{\textbackslash frmURI\{URI\}}.
 			 
 			\subparagraph{Sigle}
 			È possibile fare riferimento a ruoli, documenti e revisioni pianificate utilizzando le seguenti sigle:
@@ -253,22 +253,22 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 				\item Note a piè di pagina.
 			\end{itemize}
 			\subparagraph{Ruoli di progetto}
-			Quando si fa riferimento ad un ruolo di progetto bisogna adottare lo stile corsivo e la prima lettera deve essere maiuscola.			
+			Quando si fa riferimento ad un ruolo di progetto bisogna adottare lo stile corsivo e la prima lettera deve essere maiuscola. 	 Per velocizzare la scrittura di un ruolo è stato creato il comando \LaTeX\ \texttt{\textbackslash frmrole\{Ruolo\}}. 
 			
 			\subparagraph{Fasi del progetto}
-			Quando si fa riferimento ad una fase del progetto bisogna adottare lo stile grassetto e la prima lettera deve essere maiuscola.		
-			
+			Quando si fa riferimento ad una fase del progetto bisogna adottare lo stile grassetto e la prima lettera deve essere maiuscola.	 Per velocizzare la scrittura di una fase è stato creato il comando \LaTeX\ \texttt{\textbackslash frmphase\{Fase\}}. 
 			\subparagraph{Revisioni}
-			Quando si fa riferimento ad una revisione bisogna adottare lo stile grassetto e la prima lettera deve essere maiuscola.
+			Quando si fa riferimento ad una revisione bisogna adottare lo stile grassetto e la prima lettera deve essere maiuscola. Per velocizzare la scrittura di una revisione è stato creato il comando \LaTeX\ \texttt{\textbackslash frmrev\{Revisione\}}.
 			
 
 			\subparagraph{Nomi}
 				
 				\subsubparagraph{Nome del gruppo}
+				Quando si fa riferimento al nome del gruppo bisogna adottare lo stile corsivo e la prima lettera deve essere maiuscola.	
 				Il nome del gruppo deve essere sempre indicato tramite il comando \LaTeX\ \texttt{\textbackslash leaf}, in modo tale da avere sempre la stessa formattazione.
 				
 				\subsubparagraph{Nome del progetto}
-				Il nome del progetto deve essere sempre indicato tramite il comando \LaTeX\ \texttt{\textbackslash progetto}, in modo tale da avere sempre la stessa formattazione.
+				Il nome del progetto deve essere sempre indicato tramite il comando \LaTeX\ \texttt{\textbackslash progetto}, in modo tale da avere sempre la stessa formattazione. Questo comando prevede che 
 
 				\subsubparagraph{Nome del proponente}
 				Il nome del proponente deve essere sempre indicato tramite il comando \LaTeX\ \texttt{\textbackslash proponente}, in modo tale da avere sempre la stessa formattazione.
@@ -280,10 +280,10 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 				Ogniqualvolta si intende utilizzare un nome proprio si deve scrivere prima il cognome e successivamente il nome. Quando si fa riferimento a disporre i nomi in ordine alfabetico l'ordine è dettato dalle lettere del cognome, a meno di ulteriori specificazioni.
 				
 				\subsubparagraph{Nome di un file}
-				I nomi dei file vanno formattati utilizzando lo stile monospace e devono essere racchiusi dalle doppie virgolette alte.
+				I nomi dei file vanno formattati utilizzando lo stile monospace e devono essere racchiusi dalle doppie virgolette alte.  Per velocizzare la scrittura del nome di un file è stato creato il comando \LaTeX\ \texttt{\textbackslash frmFile\{File\}}.
 				
 				\subsubparagraph{Nome di un documento}
-			Quando si fa riferimento ad un documento bisogna adottare lo stile corsivo e la prima lettera deve essere maiuscola. I  nomi dei documenti devono essere racchiusi dalle doppie virgolette alte.
+			Quando si fa riferimento ad un documento bisogna adottare lo stile corsivo e la prima lettera deve essere maiuscola. I  nomi dei documenti devono essere racchiusi dalle doppie virgolette alte. Per velocizzare la scrittura di un documento è stato creato il comando \LaTeX\ \texttt{\textbackslash frmdoc\{documento\}}.
 				
 		\paragraph{Componenti grafiche}
 			\subparagraph{Immagini}
