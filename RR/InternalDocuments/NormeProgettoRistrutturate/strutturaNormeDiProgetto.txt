@@ -1,0 +1,146 @@
+Secondo me l'ultima parte non è molto buona, forse manca qualcosa riguardando la progettazione e la WBS
+
+1 Introduzione
+	1.1 Scopo del documento
+	1.2 Scopo del progetto
+	1.3 Glossario
+	1.4 Riferimenti utili
+		1.4.1 Riferimenti normativi
+		1.4.2 Riferimenti informativi
+2 Processi Primari
+	2.1 Processi di sviluppo
+		2.1.1 Studio di fattibilità
+		2.1.2 Analisi dei Requisiti
+			2.1.2.1 Classificazione dei casi d’uso
+			2.1.2.2 Classificazione dei requisiti
+			2.1.2.3 Strumenti
+		2.1.3 Progettazione
+			2.1.3.1 Progettazione architetturale
+				2.1.3.1.1 Diagrammi UML
+				2.1.3.1.2 Strumenti
+		2.1.4 Codifica
+			2.1.4.1 Regole generali da seguire durante la codifica di un file
+			2.1.4.2 Strumenti
+3 Processi di supporto
+	3.1 Documentazione
+		3.1.1 Struttura dei documenti
+			3.1.1.1 Frontespizio
+			3.1.1.2 Informazioni sul documento
+			3.1.1.3 Diario delle modifiche
+			3.1.1.4 Indice
+			3.1.1.5 Indice delle tabelle
+			3.1.1.6 Indice delle figure
+			3.1.1.7 Introduzione
+			3.1.1.8 Contenuto
+		3.1.2 Norme tipografiche
+			3.1.2.1 Formattazione generale
+				3.1.2.1.1 Testatine
+				3.1.2.1.2 Piè di pagina
+				3.1.2.1.3 Orfani e vedove
+			3.1.3.2  Caratteri
+				3.1.3.2.1 Virgolette
+				3.1.3.2.2 Parentesi
+				3.1.3.2.3 Punteggiatura
+				3.1.3.2.4 Numeri
+			3.1.3.3 Stile del testo
+				3.1.3.3.2 Corsivo
+				3.1.3.3.1 Grassetto
+				3.1.3.3.3 Sottolineato
+				3.1.3.3.4 Glossario
+				3.1.3.3.5 Monospace
+			3.1.3.4 Composizione del testo
+				3.1.3.4.1 Elenchi
+				3.1.3.4.2 Descrizioni
+				3.1.3.4.3 Note a piè di pagina
+		3.1.3 Formati
+			3.1.3.1 Date
+			3.1.3.2 Orari
+			3.1.3.3 URI
+			3.1.3.4 Sigle
+			3.1.3.5 Ruoli di progetto
+			3.1.3.6 Fasi del progetto
+			3.1.3.7 Revisioni
+			3.1.3.8 Nomi
+				3.1.3.8.1 Nome del gruppo
+				3.1.3.8.2 Nome del progetto
+				3.1.3.8.3 Nome del proponente
+				3.1.3.8.4 Nome del committente
+				3.1.3.8.5 Nome proprio	
+				3.1.3.8.6 Nomi dei file
+				3.1.3.8.7 Nomi dei documenti
+		3.1.4 Componenti grafiche
+			3.1.4.1 Immagini
+			3.1.4.2 Tabelle
+			3.1.4.3 Diagrammi UML
+				3.1.4.3.1 Diagrammi dei casi d’uso
+				3.1.4.3.2 Diagrammi delle attività
+				3.1.4.3.3 Diagrammi dei package
+				3.1.4.3.4 Diagrammi delle classi
+		3.1.5 Tipologie dei documenti
+			3.1.1.5.1 Documenti informali
+			3.1.1.5.2 Documenti formali
+			3.1.1.5.3 Glossario
+			3.1.1.5.4 Verbali
+				3.1.1.5.4.1 Riunione esterna
+				3.1.1.5.4.2 Riunione interna
+		3.1.6 Versionamento dei documenti
+		3.1.7 Strumenti
+			3.1.7.1   Latex
+	3.2 Configurazione
+		3.2.1 Controllo di versione
+		3.2.1.2 Richiesta di modifica
+			3.2.1.2.1 Procedura di richiesta di modifica
+		3.2.2 Struttura del repository
+		3.2.3 Nomi dei file
+		3.2.4 Commit
+		3.2.5 Codifica dei file
+		3.2.6 Visibilità del repository		
+		3.2.7 Aggiornamento del repository
+		3.2.8 Strumenti
+			3.2.8.1 Git
+	3.3 Verifica
+		3.3.1   Tecniche di analisi
+			3.3.1.1   Analisi statica
+			3.3.1.2  Analisi dinamica
+		3.3.1 Verifica dei documenti
+			3.3.1.1 Sintassi
+			3.3.1.2 Periodi
+			3.3.1.3 Struttura del documento
+			3.3.1.4 Norme tipografiche
+			3.3.1.5 Parole nel glossario
+		3.3.2 Verifica dei diagrammi UML
+			3.3.2.1 Diagrammi dei casi d’uso
+			3.3.2.2 Diagrammi di attività
+		3.3.3 Issue tracking
+			3.3.3.1 Sintassi di una issue
+		3.3.3 Strumenti
+4 Processi organizzativi
+	4.1 Comunicazione
+		4.1.1 Comunicazioni interne
+		4.1.2 Comunicazioni esterne
+		4.1.3 Comunicazione tramite e-mail
+			4.1.3.1 Mittente 
+			4.1.3.2 Destinatario
+			4.1.3.3 Oggetto
+			4.1.3.4 Corpo
+			4.1.3.5 Allegati		
+	4.2 Riunioni
+		4.2.1 Riunioni interne
+			4.2.1.1 Convocazione di una riunione interna
+			4.2.1.2 Gestione di una riunione interna
+		4.2.2 Riunioni esterne
+			2.2.2.1 Convocazione di una riunione esterna
+			2.2.2.2 Gestione di una riunione esterna
+		4.2.3 Verbale di una riunione
+	4.3 Ruoli di progetto
+		4.3.1 Responsabile di progetto
+		4.3.2 Amministratore di sistema
+		4.3.3 Analista
+		4.3.4 Progettista
+		4.3.5 Programmatore
+		4.3.6 Verificatore
+		4.3.7 Rotazione dei ruoli
+	4.4 Strumenti
+		4.4.1 Pianificazione
+		4.4.2 Creazione dei grafici di Gantt
+		4.4.3 Repository
