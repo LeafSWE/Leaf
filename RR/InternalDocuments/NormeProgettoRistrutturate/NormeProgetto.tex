@@ -88,20 +88,21 @@
 
 %-------------------INIZIO creazione subsubparagraph--------------------------------------
 \makeatletter
-	\setcounter{secnumdepth}{6}
-	\setcounter{tocdepth}{6}
-	\newcounter {subsubparagraph}[subparagraph]
-	\renewcommand{\thesubsubparagraph}{\thesubparagraph.\@arabic\c@subsubparagraph}
-	\newcommand{\subsubparagraph}{\@startsection
-                         {subsubparagraph}%
-            
-             	             {6}%
-                         {8mm}%
-                         {\baselineskip}%
-                         {0.5\baselineskip}%
-                         {\normalfont\normalsize\bfseries}}%
-	\newcommand*\l@subsubparagraph{\@dottedtocline{6}{13.5em}{5em}}
-	\newcommand{\subsubparagraphmark}[1]{}
+\newcounter{subsubparagraph}[subparagraph]
+\def\toclevel@subsubparagraph{6}
+\renewcommand\thesubsubparagraph{%
+  \thesubparagraph.\@arabic\c@subsubparagraph}
+\newcommand\subsubparagraph{%
+  \@startsection{subsubparagraph}    % counter
+    {6}                              % level
+    {\parindent}                     % indent
+    {3.25ex \@plus 1ex \@minus .2ex} % beforeskip
+    {-1em}                           % afterskip
+    {\normalfont\normalsize\bfseries}}
+\newcommand\l@subsubparagraph{\@dottedtocline{6}{10em}{5em}}
+\newcommand{\subsubparagraphmark}[1]{}
+\setcounter{tocdepth}{6}
+\setcounter{secnumdepth}{6} % aggiunge contatore ai paragrafi
 \makeatother
 %-------------------FINE creazione subsubparagraph--------------------------------------
 
