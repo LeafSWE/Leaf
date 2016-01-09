@@ -28,3 +28,6 @@
 29)UML
 30)Team
 31)Markup (latex è un linguaggio di markup)
+32)PERT
+33)WBS
+34)GanttProject
