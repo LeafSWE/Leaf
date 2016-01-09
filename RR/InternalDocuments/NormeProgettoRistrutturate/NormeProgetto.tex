@@ -58,61 +58,7 @@
 }
 %-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
 
-%-------------------INIZIO comandi personalizzati-----------------------------------------
-\newcommand{\leaf}{\textit{Leaf}}
-\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
-\newcommand{\mailleaf}{\mail{leaf.gruppo@gmail.com}}
-\newcommand{\mailinglist}{\mail{nome@mailing.list}}
-\newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto}}
-\newcommand{\amministratore}{\textit{Amministratore}}
-\newcommand{\analista}{\textit{Analista}}
-\newcommand{\analisti}{\textit{Analisti}}
-\newcommand{\progettista}{\textit{Progettista}}
-\newcommand{\programmatore}{\textit{Programmatore}}
-\newcommand{\verificatore}{\textit{Verificatore}}
-\newcommand{\verificatori}{\textit{Verificatori}}
-\newcommand{\pianodiprogetto}{\textit{Piano di progetto}}
-\newcommand{\pianodiqualifica}{\textit{Piano di qualifica}}
-\newcommand{\normediprogetto}{\textit{Norme di progetto}}
-\newcommand{\studiodifattibilita}{\textit{Studio di fattibilità}}
-\newcommand{\analisideirequisiti}{\textit{Analisi dei requisiti}}
-\newcommand{\specificatecnica}{\textit{Specifica tecnica}}
-\newcommand{\definizionediprodotto}{\textit{Definizione di prodotto}}
-\newcommand{\manualeutente}{\textit{Manuale utente}}
-\newcommand{\glossario}{\textit{Glossario}}
-\newcommand{\revisionedeirequisiti}{\textbf{Revisione dei requisiti}}
-\newcommand{\revisionediaccettazione}{\textbf{Revisione di accettazione}}
-\newcommand{\revisionediprogettazione}{\textbf{Revisione di progettazione}}
-\newcommand{\revisionediqualifica}{\textbf{Revisione di qualifica}}
-\newcommand{\g}{\tiny \ped{|G|} \normalsize}
-
-%-------------------INIZIO creazione subsubparagraph--------------------------------------
-\makeatletter
-\newcounter{subsubparagraph}[subparagraph]
-\def\toclevel@subsubparagraph{6}
-\renewcommand\thesubsubparagraph{%
-  \thesubparagraph.\@arabic\c@subsubparagraph}
-\newcommand\subsubparagraph{%
-  \@startsection{subsubparagraph}    % counter
-    {6}                              % level
-    {\parindent}                     % indent
-    {3.25ex \@plus 1ex \@minus .2ex} % beforeskip
-    {-1em}                           % afterskip
-    {\normalfont\normalsize\bfseries}}
-\newcommand\l@subsubparagraph{\@dottedtocline{6}{10em}{5em}}
-\newcommand{\subsubparagraphmark}[1]{}
-\setcounter{tocdepth}{6}
-\setcounter{secnumdepth}{6} % aggiunge contatore ai paragrafi
-\makeatother
-%-------------------FINE creazione subsubparagraph--------------------------------------
-
-%-------------------FINE comandi personalizzati-----------------------------------------
-
-
-
-
-
-
+\input{../../../TemplateLatex/commands}
 
 \titlepage{}
 

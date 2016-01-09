@@ -58,53 +58,7 @@
 }
 %-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
 
-%-------------------INIZIO comandi personalizzati-----------------------------------------
-\newcommand{\leaf}{\textit{Leaf}}
-\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
-\newcommand{\mailleaf}{\mail{leaf.gruppo@gmail.com}}
-\newcommand{\mailinglist}{\mail{nome@mailing.list}}
-\newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto}}
-\newcommand{\amministratore}{\textit{Amministratore}}
-\newcommand{\analista}{\textit{Analista}}
-\newcommand{\analisti}{\textit{Analisti}}
-\newcommand{\progettista}{\textit{Progettista}}
-\newcommand{\programmatore}{\textit{Programmatore}}
-\newcommand{\verificatore}{\textit{Verificatore}}
-\newcommand{\verificatori}{\textit{Verificatori}}
-\newcommand{\pianodiprogetto}{\textit{Piano di progetto}}
-\newcommand{\pianodiqualifica}{\textit{Piano di qualifica}}
-\newcommand{\normediprogetto}{\textit{Norme di progetto}}
-\newcommand{\studiodifattibilita}{\textit{Studio di fattibilità}}
-\newcommand{\analisideirequisiti}{\textit{Analisi dei requisiti}}
-\newcommand{\specificatecnica}{\textit{Specifica tecnica}}
-\newcommand{\definizionediprodotto}{\textit{Definizione di prodotto}}
-\newcommand{\manualeutente}{\textit{Manuale utente}}
-\newcommand{\glossario}{\textit{Glossario}}
-\newcommand{\revisionedeirequisiti}{\textbf{Revisione dei requisiti}}
-\newcommand{\revisionediaccettazione}{\textbf{Revisione di accettazione}}
-\newcommand{\revisionediprogettazione}{\textbf{Revisione di progettazione}}
-\newcommand{\revisionediqualifica}{\textbf{Revisione di qualifica}}
-\newcommand{\g}{\tiny \ped{|G|} \normalsize}
-
-%-------------------INIZIO creazione subsubparagraph--------------------------------------
-\makeatletter
-	\setcounter{secnumdepth}{6}
-	\setcounter{tocdepth}{6}
-	\newcounter {subsubparagraph}[subparagraph]
-	\renewcommand{\thesubsubparagraph}{\thesubparagraph.\@arabic\c@subsubparagraph}
-	\newcommand{\subsubparagraph}{\@startsection
-                         {subsubparagraph}%
-                         {6}%
-                         {8mm}%
-                         {\baselineskip}%
-                         {0.5\baselineskip}%
-                         {\normalfont\normalsize\bfseries}}%
-	\newcommand*\l@subsubparagraph{\@dottedtocline{6}{13.5em}{5em}}
-	\newcommand{\subsubparagraphmark}[1]{}
-\makeatother
-%-------------------FINE creazione subsubparagraph--------------------------------------
-
-%-------------------FINE comandi personalizzati-----------------------------------------
+\input{percorso file commands.tex} %Inserire percorso relativo dei comandi rispetto al file nel quale vi trovate
 
 
 
