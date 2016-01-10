@@ -2,23 +2,59 @@
 \documentclass{article}
 \usepackage[latin1]{inputenc}
 \usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{longtable}
+\usepackage[T1]{fontenc}	% codifica dei font in uscita
+\usepackage{url}		% per scrivere gli indirizzi Internet
+\usepackage{enumerate} % liste  lettere
+\usepackage{subfiles}
+\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
+\usepackage{fancyhdr}
+
 \setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
 \setcounter{tocdepth}{5} % aggiunge indice paragrafi
 
-\graphicspath{{images/}{../images/}}
+\graphicspath{{images/}{../../../logo/}}
 
-\usepackage{subfiles}
-
-\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
-\hypersetup{
+\fancypagestyle{mymain}{
+	\hypersetup{
 			colorlinks=true,
 			linkcolor=blue,
 			anchorcolor=black,
 			citecolor=black,
 			urlcolor=blue,
+	}
+	\pagenumbering{arabic}
+	\fancyhf{}
+	\lhead{Leaf}
+	\rhead{Piano di Qualifica}
+	\cfoot{
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+		}
+		\thepage~di \pageref{LastPage}
+	}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+
+\fancypagestyle{myfront}{
+	\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+	}
+	\pagenumbering{Roman}
+	\fancyhf{}
+	\lhead{Leaf}
+	\rhead{Piano di Qualifica}
+	\cfoot{\thepage~di \pageref{LastFrontPage}}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
 }
 
 \begin{document}
+	\pagestyle{myfront}
 	\begin{titlepage}
 		\centering
 		{\huge\bfseries CLIPS\par}
@@ -50,11 +86,20 @@
 	\tableofcontents
 	
 	\newpage
+	
+	\listoftables
+	
+	\label{LastFrontPage}
+	\newpage
+	\pagestyle{mymain}
 \section{Introduzione}
 	\subsection{Scopo del documento}
 	Il documento ha l'obiettivo di definire un piano per conseguire la qualità di prodotto e di processo. Questo documento darà inoltre una visione di come il gruppo Leaf affronterà le varie fasi di verifica per poter conseguire il miglior risultato possibile in termini di qualità.
+	\subsection{Scopo del prodotto}
+	Lo scopo del prodotto è implementare un metodo di navigazione indoor che sia funzionale alla tecnologia BLE.
+	Il prodotto comprenderà un prototipo software che permetta la navigazione all'interno di un'area predefinita, basandosi sui concetti di IPS e smart places.
 	\subsection{Glossario}
-	Per evitare ambiguità e aiutare la comprensione del documento si è redatto un apposito glossario ("Glossario v1.00") che contiene la spiegazione degli acronimi e delle terminologie tecniche utilizzate. Per facilitare la lettura, i vocaboli in questione all'interno del presente documento sono marcati da una "G" maiuscola a pedice.
+	Per evitare ambiguità e aiutare la comprensione del documento si è redatto un apposito glossario (\textit{Glossario v1.00}) che contiene la spiegazione degli acronimi e delle terminologie tecniche utilizzate. Per facilitare la lettura, i vocaboli in questione all'interno del presente documento sono marcati da una "G" maiuscola a pedice.
 	\subsection{Riferimenti utili}
 		\subsubsection{Riferimenti normativi}
 		\begin{itemize}
@@ -97,18 +142,16 @@
 \newpage
 \section{Visione generale della strategia di verifica}
 		\subsection{Organizzazione}
-		 La verifica sarà un processo sempre presente all'interno delle varie fasi di lavoro. Per questo sarà molto importante specificare che tipo di verifiche effettuare per ogni fase.\\
-		 Le fasi di lavoro vengono riportate in dettaglio nel \textit{Piano di Progetto v1.00}. Di seguito sono riportate le varie fasi accompagnate dai loro momenti di verifica
+		 La verifica sarà un processo sempre presente all'interno delle varie fasi di lavoro. Per questo sarà molto importante specificare che tipo di verifiche effettuare per ogni fase.\\Le fasi di lavoro vengono riportate in dettaglio nel \textit{Piano di Progetto v1.00}. Di seguito sono riportate le fasi che coinvolgono momenti di verifica.
 		 \begin{description}
-		 	\item[Individuazione degli strumenti e analisi dei requisiti] In questa fase verranno individuati gli strumenti per redigere la documentazione ed effettuare l'analisi dei requisiti. Una volta individuati gli strumenti si procederà con la documentazione dove sistematicamente sarà sottoposta a verifica per migliorarne la qualità. Verrà affrontata anche l'Analisi dei Requisiti dove verranno individuati i requisiti minimi e opzionali che avrà il prodotto al suo rilascio. I requisiti saranno sottoposti costantemente a verifica per ottenere il massimo risultato.
-		 	\item[Analisi di dettaglio] In questa fase verrà affrontata un'analisi più approfondita che comprenderà un miglioramento della documentazione in base alle verifiche effettuate e una seconda analisi per determinare requisiti più specifici richiesti dal proponente dopo aver effettuato la \textit{Revisione dei Requisiti}. Dopo le eventuali analisi e miglioramenti apportati, la fase sarà sottoposta ad un'ulteriore fase di verifica.   
-		 	\item[Progettazione architetturale] Durante questa fase si procederà a progettare l'architettura del sistema. I Verificatori dovranno assicurarsi che ogni requisito rilevato nella fase di Analisi sia in corrispondenza con le varie parti del sistema progettate. Inoltre tutta la fase di Progettazione dovrà essere supportata dalla produzione di documenti e questi dovranno essere sottoposti a verifica per migliorarne la qualità. 
-		 	\item[Progettazione di dettaglio requisiti obbligatori e codifica] In questa fase si procederà alla progettazione di dettaglio e codifica dei requisiti obbligatori. I Verificatori dovranno assicurarsi che i requisiti vengano riportati in fase di Progettazione e dovranno preoccuparsi di effettuare i vari test di verifica.Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Il prodotto una volta codificato verrà presentato al proponente sottoforma di prototipo per avere un riscontro immediato delle effettive caratteristiche. Anche in questa fase verrà effettuato un incremento della documentazione e costante verifica.  
-		 	\item[Progettazione di dettaglio requisiti desiderabili e codifica] In questa fase si procederà alla progettazione di dettaglio e codifica dei requisiti desiderabili. I Verificatori dovranno assicurarsi che i requisiti vengano riportati in fase di Progettazione e dovranno preoccuparsi di effettuare i vari test di verifica.Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Il prodotto una volta codificato verrà presentato al proponente sottoforma di prototipo per avere un riscontro immediato delle effettive caratteristiche. Anche in questa fase verrà effettuato un incremento della documentazione e costante verifica.
-		 	\item[Progettazione di dettaglio requisiti opzionali e codifica] In questa fase si procederà alla progettazione di dettaglio e codifica dei requisiti opzionali. I Verificatori dovranno assicurarsi che i requisiti vengano riportati in fase di Progettazione e dovranno preoccuparsi di effettuare i vari test di verifica. Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Anche in questa fase verrà effettuato un incremento della documentazione e costante verifica.
+		 	\item[Fase A] In questa fase verranno individuati gli strumenti per redigere la documentazione ed effettuare l'analisi dei requisiti. Una volta individuati gli strumenti si procederà con la documentazione dove sistematicamente sarà sottoposta a verifica per migliorarne la qualità. Verrà affrontata anche l'Analisi dei Requisiti dove verranno individuati i requisiti che avrà il prodotto al suo rilascio. I requisiti saranno sottoposti costantemente a verifica per ottenere il massimo risultato.
+		 	\item[Fase AD] In questa fase verrà affrontata un'analisi più approfondita che comprenderà un miglioramento della documentazione in base alle verifiche effettuate e una seconda analisi per determinare requisiti più specifici richiesti dal proponente dopo aver effettuato la \textit{Revisione dei Requisiti}. Dopo le eventuali analisi e miglioramenti apportati, la fase sarà sottoposta ad un'ulteriore fase di verifica.   
+		 	\item[Fase PDROB] In questa fase si procederà alla progettazione di dettaglio e codifica dei requisiti obbligatori. I Verificatori dovranno assicurarsi che i requisiti vengano riportati in fase di Progettazione e dovranno preoccuparsi di effettuare i vari test di verifica. Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Il prodotto una volta codificato verrà presentato al proponente sotto forma di prototipo per avere un riscontro immediato delle effettive caratteristiche. Anche in questa fase verrà effettuato un incremento della documentazione e costante verifica.  
+		 	\item[Fase PDRD] In questa fase si procederà alla progettazione di dettaglio e codifica dei requisiti desiderabili. I Verificatori dovranno assicurarsi che i requisiti vengano riportati in fase di Progettazione e dovranno preoccuparsi di effettuare i vari test di verifica. Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Il prodotto una volta codificato verrà presentato al proponente sotto forma di prototipo per avere un riscontro immediato delle effettive caratteristiche. Anche in questa fase verrà effettuato un incremento della documentazione e costante verifica.
+		 	\item[Fase PDROP] In questa fase si procederà alla progettazione di dettaglio e codifica dei requisiti opzionali. I Verificatori dovranno assicurarsi che i requisiti vengano riportati in fase di Progettazione e dovranno preoccuparsi di effettuare i vari test di verifica. Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Il prodotto una volta codificato verrà presentato al proponente per verificarne i requisiti. Anche in questa fase verrà effettuato un incremento della documentazione e costante verifica.
 		\end{description}
 		\subsection{Pianificazione temporale}
-		Le scadenze che il gruppo Leaf ha deciso di rispettare sono riportate nel \textit{Piano di Progetto v1.00} 
+		Le scadenze che il gruppo Leaf ha deciso di rispettare sono riportate nel \textit{Piano di Progetto v1.00}.
 		\subsection{Responsabilità}
 		I processi di verifica saranno condotti dal Responsabile di Progetto e dai Verificatori. Ognuno dei quali avrà delle responsabilità da ricoprire in fase di verifica.\\
 		Per i vari ruoli saranno riportate le responsabilità:\\\\
@@ -173,9 +216,9 @@
 			Questo particolare indice si basa sulla lunghezza della parola e sulla lunghezza della frase rispetto
 			al numero di lettere.
 			La formula per il suo calcolo è la seguente:
-			\begin{center}
-			$ Indice \  Gulpease = 89 + \frac{300*numero\_frasi-10*numero\_lettere}{numero\_parole} $
-			\end{center}
+			\begin{equation}
+Indice \  Gulpease = 89 + \frac{300*numero\_frasi-10*numero\_lettere}{numero\_parole}
+\end{equation}
 			Il risultato di tale equazione tipicamente è compreso tra 0 e 100, dove valori alti indicano leggibilità
 			elevata e viceversa.\\
 			In generale, risulta che testi con un indice:
@@ -206,7 +249,7 @@
 			\item i valori 4 e 5 sono considerati ottimali.
 			\end{itemize}
 			\subsubsection{Metriche per il software}
-			Da discutere con il gruppo se siamo in grado di stabilirle.
+			Il gruppo ha deciso che non è ancora pronto per definire le metriche per il software e quindi si riserverà di riportarle in fase di progettazione.
 \newpage
 \section{Gestione della revisione}
 	\subsection{Definizione e comunicazione delle anomalie}
@@ -251,26 +294,87 @@
 						\item Semplifica l'integrazione;
 						\item Supporta la documentazione.
 					\end{itemize}
-					\item[Test di integrazione] consiste nella verifica dei componenti del sistema che sono formati dalla combinazione di più unità. Ha lo scopo di evidenziare gli eventuali errori residui, non individuati durante la realizzazione dei singoli moduli;
-					\item[Test di sistema] consiste nell'eseguire nuovamente i test di unità e integrazione per le componenti che hanno subito modifiche o per le nuove funzionalità. Lo scopo è verificare di avere un prodotto di alta qualità per ogni nuova funzionalità o modifica importante;
-					\item[Test di accettazione] è il collaudo del prodotto software che viene eseguito in presenza del proponente. Se tale collaudo viene superato positivamente si può procedere al rilascio ufficiale del prodotto
-					sviluppato. 
+					\item[Test di integrazione] consiste nella verifica dei componenti del sistema che sono formati dalla combinazione di più unità. Ha lo scopo di evidenziare gli eventuali errori residui, non individuati durante la realizzazione dei singoli moduli.
+					\item[Test di sistema] si preoccupa del comportamento di un sistema nel suo complesso. La maggior parte degli errori dovrebbe essere già stato identificato durante il testing unitario e di integrazione. Il test di sistema viene di solito considerato appropriato per verificare il sistema anche rispetto ai requisiti non funzionali, come quelli di sicurezza, velocità, accuratezza ed affidabilità. A questo livello, viene effettuata anche una serie di test in una struttura opportunamente mappata da beacon per verificare il corretto funzionamento del software ed evidenziare eventuali bug o mancanze a livello di performance e precisione.
+					\item[Test di accettazione] è il collaudo del prodotto software che viene eseguito in presenza del proponente. Se tale collaudo viene superato positivamente si può procedere al rilascio ufficiale del prodotto sviluppato. 
 				\end{description}
 			\paragraph{Validazione}
 			La validazione avviene nel momento in cui il prodotto ha superato i test di verifica ed è pronto al suo rilascio.
 			Il prodotto dopo aver superato la validazione ci conferma che è conforme alle aspettative e soddisfa tutti i requisiti, di conseguenza è pronto per essere rilasciato.
 \newpage
 \section{Resoconto delle attività di verifica}
+All'interno di questa prima fase, secondo quanto riportato dal \textit{Piano di Progetto v1.00}, sono previsti più momenti in cui viene attivato il processo di verifica. Si è cercato di riportare in questa sezione tutti i risultati che sono stati ottenuti durante questi momenti. Ove fosse necessario, si sono tratte anche delle conclusioni sui risultati ottenuti e su come essi possono essere migliorati.
+	\subsection{Resoconto verifica sui prodotti}
+	In questa sezione verranno riportati i dati emessi dalle procedure di controllo della qualità di prodotto.
+		\subsubsection{Documenti}
+		In questa sezione vengono riportati i risultati delle attività di verifica svolte sui documenti. Esse sono di due tipi:
+		\begin{itemize}
+			\item verifiche manuali;
+			\item verifiche automatizzate.
+		\end{itemize}
+			\paragraph{Verifiche manuali}
+			Le attività di verifica manuale della documentazione prodotta sono state svolte in base alle procedura riguardante la verifica dei documenti che è descritta del documento \textit{Norme di Progetto v1.00}. La verifica manuale ha permesso di individuare soprattutto errori che riguardano le seguenti tipologie:
+			\begin{itemize}
+				\item periodi troppo lunghi e complessi da capire e interpretare;
+				\item aggettivi o verbi utilizzati in modo non appropriato;
+				\item incongruenze tra parti diverse dello stesso documento o appartenenti a documenti diversi;
+				\item errori nei concetti esposti.
+			\end{itemize}
+			Di seguito è presentato un riassunto della quantità di errori trovati (e successivamente risolti) utilizzando la verifica manuale durante l'intera Fase A.
+\begin{longtable}{|l|c|c|}
+ \hline Periodi lunghi o complessi      &  0\\
+ \hline Parole non appropriate     &  0\\
+ \hline Incongruenze       &  0\\
+ \hline Errori concettuali      &  0\\
+\hline
+\caption{Errori trovati tramite verifica manuale dei documenti durante la Fase A}
+\end{longtable}
+			La verifica manuale, in aggiunta, ha permesso di individuare nuovi termini da aggiungere al \textit{Glossario}. Di seguito è presentato un riassunto della quantità di nuovi termini da aggiungere al \textit{Glossario} che sono stati individuati.
+\begin{longtable}{|l|c|c|}
+ \hline Termini candidati ad essere aggiunti      &  0\\
+ \hline Termini aggiunti al \textit{Glossario}     &  0\\
+\hline
+\caption{Nuovi termini da inserire nel \textit{Glossario} individuati tramite verifica manuale dei documenti durante la Fase A}
+\end{longtable}	
+			È stata infine verificata la correttezza dei diagrammi UML utilizzati all'interno dei vari documenti, sempre seguendo le procedure contenute nel documento \textit{Norme di Progetto v1.00}.
+			\paragraph{Verifiche automatiche}
+			Le attività di verifica automatizzate, oltre a rispettare le procedure descritte all'interno delle \textit{Norme di Progetto v1.00}, fanno uso degli strumenti automatici previsti all?interno dello stesso documento. Questi hanno permesso di individuare numerosi errori che riguardano le seguenti tipologie:
+			\begin{itemize}
+				\item ortografia errata;
+				\item utilizzo errato dei comandi \LaTeX\ previsti dalle \textit{Norme di Progetto v1.00};
+				\item norme tipografiche non rispettate (esempio: i ";" necessari alla fine degli elenchi puntati o numerati, fatta eccezione per l'ultimo elemento dell'elenco che richiede il ".").
+			\end{itemize}
+			Di seguito è presentato un riassunto della quantità di errori trovati (e successivamente risolti) utilizzando la verifica automatica. Si tenga in considerazione il fatto che alcuni degli strumenti automatici utilizzati non sono stati disponibili fin dall'inizio.
+\begin{longtable}{|l|c|c|}
+ \hline Errori ortografici      &  0\\
+ \hline Utilizzo errato \LaTeX     &  0\\
+ \hline Errori riguardanti norme tipografiche       &  0\\
+\hline
+\caption{Errori trovati tramite verifica automatica dei documenti durante la Fase A}
+\end{longtable}	
+			Merita un discorso a parte il calcolo dell'indice di leggibilità, per il quale sono stati imposti nel presente documento dei range che determinano se un documento è accettabile o meno. Di seguito sono stati riportati gli indici ottenuti (relativi ai documenti completi).
+\begin{longtable}{|l|c|c|}
+\hline
+ \multicolumn{1}{|c|}{\textbf{Documenti}}
+ & \multicolumn{1}{|c|}{\textbf{Gulpease}}
+ & \multicolumn{1}{|c|}{\textbf{Esito}}
+\\ \hline
+ \hline \textit{Piano di progetto v1.00}      &  0  & Negativo\\
+ \hline \textit{Norme di Progetto v1.00}     &  0  & Negativo\\
+ \hline \textit{Studio di Fattibilità v1.00}       &  0  & Negativo\\
+ \hline \textit{Analisi dei Requisiti v1.00}      &  0   & Negativo\\
+ \hline \textit{Piano di Qualifica v1.00}        &  0   & Negativo\\
+ \hline \textit{Glossario v1.00}     &  0   & Negativo\\
+\hline
+\caption{Esiti del calcolo dell'indice di leggibilità effettuato tramite strumenti automatici durante la Fase A}
+\end{longtable}
 	\subsection{Resoconto verifica sui processi}
 	In questa sezione verranno riportati i dati emessi dalle procedure di controllo della qualità di processo, suddivisi per singolo processo attivo.
 		\subsubsection{Processo di documentazione}
-		Commentare il processo ed assegnargli un valore secondo i criteri del CMM.
+			\paragraph{Livello CMM}
+			Commentare il processo ed assegnargli un valore secondo i criteri del CMM.
 		\subsubsection{Processo di verifica}
-		Commentare il processo ed assegnargli un valore secondo i criteri del CMM.
-	\subsection{Resoconto verifica sui prodotti}
-	In questa sezione verranno riportati i dati emessi dalle procedure di controllo della qualità di prodotto.
-		\subsubsection{Verifiche manuali}
-		Riportare il numero di errori trovati nella documentazione.
-		\subsubsection{Verifiche automatiche}
-		Riportare l'esito (negativo, accettabile o ottimale) della valutazione dell'indice Gulpease di ogni documento.
+			\paragraph{Livello CMM}
+			Commentare il processo ed assegnargli un valore secondo i criteri del CMM.
+\label{LastPage}
 \end{document}
