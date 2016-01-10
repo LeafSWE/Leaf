@@ -1,4 +1,4 @@
-﻿Astah
+Astah
 Strumento per la modellazione di diagrammi UML. Fra le varie funzionalità, questo software supporta la creazione di: diagrammi delle classi, diagrammi dei casi d’uso, diagrammi delle attività, diagrammi di sequenza e diagrammi dei componenti.
 
 Template Latex
@@ -117,3 +117,49 @@ Google Calendar
 Task
 
 Ticketing
+
+Capitolato
+
+Gruppo
+
+Processo
+
+Software
+
+Protocollo iBeacon
+
+Proximity marketing
+
+iOS
+
+Tecnologia BLE
+
+Sensore di localizzazione
+
+Scala
+
+Akka
+
+Internet of Things
+
+Algoritmo predittivo
+
+MongoDB
+
+Open source
+
+Modello CMM
+
+PDCA
+
+Indice Gulpease
+
+Anomalia
+
+Stub
+
+Driver
+
+Unit testing
+
+Bug
