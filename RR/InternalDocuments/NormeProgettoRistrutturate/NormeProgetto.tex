@@ -16,7 +16,7 @@
 \setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
 \setcounter{tocdepth}{5} % aggiunge indice paragrafi
 
-\graphicspath{{images/}{../images/}}
+\graphicspath{{images/}{../../../logo/}}
 
 
 %-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
@@ -30,7 +30,8 @@
 	}
 	\pagenumbering{arabic}
 	\fancyhf{}
-	\lhead{Leaf}
+	\lhead{\includegraphics[height=1.5em, width=3.3em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}}
+
 	\rhead{Norme di progetto}
 	\cfoot{
 		\hypersetup{
@@ -50,7 +51,7 @@
 	}
 	\pagenumbering{Roman}
 	\fancyhf{}
-	\lhead{Leaf}
+	\lhead{\includegraphics[height=1.5em, width=3.3em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}}
 	\rhead{Norme di progetto}
 	\cfoot{\thepage~di \pageref{LastFrontPage}}
 	\renewcommand{\headrulewidth}{0.4pt}
@@ -78,11 +79,10 @@
 	{\scshape\LARGE Università di Padova \par}
 	\vspace{1cm}
 	{\scshape\Large Norme di progetto\par}
-	\vspace{1.5cm}
-	
 	\vspace{2cm}
-	{\Large\itshape Oscar Elia Conti, Marco Zanella\par}
-	
+	\begin{center}
+	{\includegraphics[height=10em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}\par}
+	\end{center}
 	\vfill \vfill
 	\begin{tabular}{c|c}
 		{\hfill \textbf{Versione}} 			& 1.00				\\ \\
