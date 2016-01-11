@@ -1,0 +1,121 @@
+
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{leaf}[2016/01/10 Custom Package]
+
+
+%-------------------INIZIO pacchetti utilizzati -----------------------------------------
+\RequirePackage[T1]{fontenc}	% codifica dei font in uscita
+\RequirePackage[utf8]{inputenc} % codifica dei font in uscita
+\RequirePackage[italian]{babel} % lingua del documento
+\RequirePackage{graphicx}		% pacchetto per la grafica
+\RequirePackage{url}			% per scrivere gli indirizzi Internet
+\RequirePackage{enumerate} % liste  lettere
+\RequirePackage{subfiles}
+\RequirePackage[bookmarks=false,hyperfootnotes=false]{hyperref}
+\RequirePackage{fancyhdr}
+%-------------------FINE pacchetti utilizzati --------------------------------------------
+
+%-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
+\fancypagestyle{mymain}{
+	\hypersetup{
+			colorlinks=true,
+			linkcolor=blue,
+			anchorcolor=black,
+			citecolor=black,
+			urlcolor=blue,
+	}
+	\pagenumbering{arabic}
+	\fancyhf{}
+	\lhead{Leaf}
+	\rhead{Norme di progetto}
+	\cfoot{
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+		}
+		\thepage~di \pageref{LastPage}
+	}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+
+\fancypagestyle{myfront}{
+	\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+	}
+	\pagenumbering{Roman}
+	\fancyhf{}
+	\lhead{Leaf}
+	\rhead{Norme di progetto}
+	\cfoot{\thepage~di \pageref{LastFrontPage}}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+%-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
+
+
+%-------------------INIZIO comandi personalizzati-----------------------------------------
+\newcommand{\leaf}{\textit{Leaf}}
+\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\mailleaf}{\mail{leaf.gruppo@gmail.com}}
+\newcommand{\mailinglist}{\mail{nome@mailing.list}}
+\newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto}}
+\newcommand{\amministratore}{\textit{Amministratore}}
+\newcommand{\analista}{\textit{Analista}}
+\newcommand{\analisti}{\textit{Analisti}}
+\newcommand{\progettista}{\textit{Progettista}}
+\newcommand{\programmatore}{\textit{Programmatore}}
+\newcommand{\verificatore}{\textit{Verificatore}}
+\newcommand{\verificatori}{\textit{Verificatori}}
+\newcommand{\pianodiprogetto}{\textit{Piano di progetto}}
+\newcommand{\pianodiqualifica}{\textit{Piano di qualifica}}
+\newcommand{\normediprogetto}{\textit{Norme di progetto}}
+\newcommand{\studiodifattibilita}{\textit{Studio di fattibilità}}
+\newcommand{\analisideirequisiti}{\textit{Analisi dei requisiti}}
+\newcommand{\specificatecnica}{\textit{Specifica tecnica}}
+\newcommand{\definizionediprodotto}{\textit{Definizione di prodotto}}
+\newcommand{\manualeutente}{\textit{Manuale utente}}
+\newcommand{\glossario}{\textit{Glossario}}
+\newcommand{\revisionedeirequisiti}{\textbf{Revisione dei requisiti}}
+\newcommand{\revisionediaccettazione}{\textbf{Revisione di accettazione}}
+\newcommand{\revisionediprogettazione}{\textbf{Revisione di progettazione}}
+\newcommand{\revisionediqualifica}{\textbf{Revisione di qualifica}}
+\newcommand{\g}{\tiny \ped{|G|} \normalsize}
+
+\newcommand{\frmdate}[3]{#3-#2-#1}
+\newcommand{\frmtime}[2]{#1:#2}
+\newcommand{\frmURI}[1]{\color{blue}\textit{#1}}
+\newcommand{\frmspath}[1]{\texttt{#1}}
+\newcommand{\frmrole}[1]{\textit{#1}}
+\newcommand{\frmdoc}[1]{\textit{“#1”}}
+\newcommand{\frmfile}[1]{\texttt{“#1”}}
+\newcommand{\frmrev}[1]{\textbf{#1}}
+\newcommand{\frmphase}[1]{\textbf{#1}}
+
+\newcommand{\progetto}{Clips}
+
+%-------------------INIZIO creazione subsubparagraph--------------------------------------
+\makeatletter
+\newcounter{subsubparagraph}[subparagraph]
+\def\toclevel@subsubparagraph{6}
+\renewcommand\thesubsubparagraph{%
+  \thesubparagraph.\@arabic\c@subsubparagraph}
+\newcommand\subsubparagraph{%
+  \@startsection{subsubparagraph}    % counter
+    {6}                              % level
+    {\parindent}                     % indent
+    {3.25ex \@plus 1ex \@minus .2ex} % beforeskip
+    {-1em}                           % afterskip
+    {\normalfont\normalsize\bfseries}}
+\newcommand\l@subsubparagraph{\@dottedtocline{6}{13.5em}{5em}}
+\newcommand{\subsubparagraphmark}[1]{}
+\setcounter{tocdepth}{6}
+\setcounter{secnumdepth}{6} % aggiunge contatore ai paragrafi
+\makeatother
+%-------------------FINE creazione subsubparagraph--------------------------------------
+
+%-------------------FINE comandi personalizzati-----------------------------------------
+
+\endinput
