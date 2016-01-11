@@ -2,23 +2,60 @@
 \documentclass{article}
 \usepackage[latin1]{inputenc}
 \usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{longtable}
+\usepackage[T1]{fontenc}	% codifica dei font in uscita
+\usepackage{url}		% per scrivere gli indirizzi Internet
+\usepackage{enumerate} % liste  lettere
+\usepackage{subfiles}
+\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{appendix}
+
 \setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
 \setcounter{tocdepth}{5} % aggiunge indice paragrafi
 
-\graphicspath{{images/}{../images/}}
+\graphicspath{{images/}{../../../logo/}}
 
-\usepackage{subfiles}
-
-\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
-\hypersetup{
+\fancypagestyle{mymain}{
+	\hypersetup{
 			colorlinks=true,
 			linkcolor=blue,
 			anchorcolor=black,
 			citecolor=black,
 			urlcolor=blue,
+	}
+	\pagenumbering{arabic}
+	\fancyhf{}
+	\lhead{Leaf}
+	\rhead{Piano di Qualifica}
+	\cfoot{
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+		}
+		\thepage~di \pageref{LastPage}
+	}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+
+\fancypagestyle{myfront}{
+	\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+	}
+	\pagenumbering{Roman}
+	\fancyhf{}
+	\lhead{Leaf}
+	\rhead{Piano di Qualifica}
+	\cfoot{\thepage~di \pageref{LastFrontPage}}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
 }
 
 \begin{document}
+	\pagestyle{myfront}
 	\begin{titlepage}
 		\centering
 		{\huge\bfseries CLIPS\par}
@@ -50,227 +87,22 @@
 	\tableofcontents
 	
 	\newpage
-\section{Introduzione}
-	\subsection{Scopo del documento}
-	Il documento ha l'obiettivo di definire un piano per conseguire la qualità di prodotto e di processo. Questo documento darà inoltre una visione di come il gruppo Leaf affronterà le varie fasi di verifica per poter conseguire il miglior risultato possibile in termini di qualità.
-	\subsection{Glossario}
-	Per evitare ambiguità e aiutare la comprensione del documento si è redatto un apposito glossario ("Glossario v1.00") che contiene la spiegazione degli acronimi e delle terminologie tecniche utilizzate. Per facilitare la lettura, i vocaboli in questione all'interno del presente documento sono marcati da una "G" maiuscola a pedice.
-	\subsection{Riferimenti utili}
-		\subsubsection{Riferimenti normativi}
-		\begin{itemize}
-			\item \textbf{Norme di Progetto:} \textit{Norme di Progetto v1.00};
-			\item \textbf{Piano di Progetto:} \textit{Piano di Progetto v1.00};
-			\item \textbf{Standard 9126:2001:} \url{https://en.wikipedia.org/wiki/ISO/IEC\_9126};
-			\item \textbf{Standard 15504:2004:} \url{https://en.wikipedia.org/wiki/ISO/IEC\_15504};
-			\item \textbf{Capability Maturity Model (CMM):} \\\url{https://en.wikipedia.org/wiki/Capability\_Maturity\_Model};
-			\item \textbf{Plan-Do-Check-Act (PDCA):} \url{https://en.wikipedia.org/wiki/PDCA};
-		\end{itemize}
-		\subsubsection{Riferimenti informativi}
-		\begin{itemize}
-			\item \textbf{Indice Gulpease:} \url{https://it.wikipedia.org/wiki/Indice\_Gulpease};
-			\item \textbf{Materiale del corso di Ingegneria del Software:} \\\url{http://www.math.unipd.it/~tullio/IS-1/2015};
-		\end{itemize}
+	
+	\listoftables
+	
+	\label{LastFrontPage}
+	\newpage
+	\pagestyle{mymain}
+	\subfile{sections/introduzione}
 \newpage
-\section{Qualità}
-	\subsection{Qualità di processo}
-	Un processo per essere classificato ha bisogno di essere misurato tramite dei parametri. Uno di questi è la qualità di processo. Assicurare la qualità dei processi è indispensabile durante lo svolgimento del progetto per le seguenti
-	ragioni:
-	\begin{itemize}
-	\item aiuta ad ottimizzare l'uso delle risorse;
-	\item fa in modo che i costi siano maggiormente contenuti;
-	\item migliora la stima dei rischi e degli impegni
-	\end{itemize}
-	Per il gruppo avere qualità di processo significa avere processi che possono essere misurati tramite strumenti e continuamente migliorati con il fine di raggiungere il massimo livello di qualità. Ogni processo per essere misurato e migliorato ha bisogno di essere sottoposto a processi di verifica che hanno il compito di valutare il livello di qualità raggiunto e indicare gli aspetti critici da migliorare.\\
-	Il gruppo usa un modello per valutare il grado di maturità dei processi. Il modello in questione è il \textbf{Capability Maturity Model} che permette di dare una classificazione dei processi e fornire istruzioni su come migliorarli.
-	\subsection{Qualità di prodotto}
-	Il gruppo si prefigge di mantenere la stessa qualità sia nei processi che nei prodotti.\\
-	Per garantire la migliore qualità del prodotto anche il processo da cui proviene deve avere una buona qualità.
-	Il gruppo per mantenere la qualità del prodotto cercherà di seguire al meglio lo standard di qualità \textbf{ISO/IEC 9126}.\\
-	Il gruppo si impegna dunque a garantire le seguenti caratteristiche:
-	\begin{itemize}
-	\item il prodotto permette agli utenti di utilizzare le funzionalità in maniera semplice ed efficace;
-	\item il prodotto fornisce prestazioni accettabili;
-	\item il prodotto garantisce un funzionamento senza interruzioni;
-	\item il prodotto è facilmente installabile;
-	\item il prodotto possiede le funzionalità descritte all'interno dei requisiti minimi;
-	\end{itemize}
+	\subfile{sections/qualita}
 \newpage
-\section{Visione generale della strategia di verifica}
-		\subsection{Organizzazione}
-		 La verifica sarà un processo sempre presente all'interno delle varie fasi di lavoro. Per questo sarà molto importante specificare che tipo di verifiche effettuare per ogni fase.\\
-		 Le fasi di lavoro vengono riportate in dettaglio nel \textit{Piano di Progetto v1.00}. Di seguito sono riportate le varie fasi accompagnate dai loro momenti di verifica
-		 \begin{description}
-		 	\item[Individuazione degli strumenti e analisi dei requisiti] In questa fase verranno individuati gli strumenti per redigere la documentazione ed effettuare l'analisi dei requisiti. Una volta individuati gli strumenti si procederà con la documentazione dove sistematicamente sarà sottoposta a verifica per migliorarne la qualità. Verrà affrontata anche l'Analisi dei Requisiti dove verranno individuati i requisiti minimi e opzionali che avrà il prodotto al suo rilascio. I requisiti saranno sottoposti costantemente a verifica per ottenere il massimo risultato.
-		 	\item[Analisi di dettaglio] In questa fase verrà affrontata un'analisi più approfondita che comprenderà un miglioramento della documentazione in base alle verifiche effettuate e una seconda analisi per determinare requisiti più specifici richiesti dal proponente dopo aver effettuato la \textit{Revisione dei Requisiti}. Dopo le eventuali analisi e miglioramenti apportati, la fase sarà sottoposta ad un'ulteriore fase di verifica.   
-		 	\item[Progettazione architetturale] Durante questa fase si procederà a progettare l'architettura del sistema. I Verificatori dovranno assicurarsi che ogni requisito rilevato nella fase di Analisi sia in corrispondenza con le varie parti del sistema progettate. Inoltre tutta la fase di Progettazione dovrà essere supportata dalla produzione di documenti e questi dovranno essere sottoposti a verifica per migliorarne la qualità. 
-		 	\item[Progettazione di dettaglio requisiti obbligatori e codifica] In questa fase si procederà alla progettazione di dettaglio e codifica dei requisiti obbligatori. I Verificatori dovranno assicurarsi che i requisiti vengano riportati in fase di Progettazione e dovranno preoccuparsi di effettuare i vari test di verifica.Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Il prodotto una volta codificato verrà presentato al proponente sottoforma di prototipo per avere un riscontro immediato delle effettive caratteristiche. Anche in questa fase verrà effettuato un incremento della documentazione e costante verifica.  
-		 	\item[Progettazione di dettaglio requisiti desiderabili e codifica] In questa fase si procederà alla progettazione di dettaglio e codifica dei requisiti desiderabili. I Verificatori dovranno assicurarsi che i requisiti vengano riportati in fase di Progettazione e dovranno preoccuparsi di effettuare i vari test di verifica.Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Il prodotto una volta codificato verrà presentato al proponente sottoforma di prototipo per avere un riscontro immediato delle effettive caratteristiche. Anche in questa fase verrà effettuato un incremento della documentazione e costante verifica.
-		 	\item[Progettazione di dettaglio requisiti opzionali e codifica] In questa fase si procederà alla progettazione di dettaglio e codifica dei requisiti opzionali. I Verificatori dovranno assicurarsi che i requisiti vengano riportati in fase di Progettazione e dovranno preoccuparsi di effettuare i vari test di verifica. Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Anche in questa fase verrà effettuato un incremento della documentazione e costante verifica.
-		\end{description}
-		\subsection{Pianificazione temporale}
-		Le scadenze che il gruppo Leaf ha deciso di rispettare sono riportate nel \textit{Piano di Progetto v1.00} 
-		\subsection{Responsabilità}
-		I processi di verifica saranno condotti dal Responsabile di Progetto e dai Verificatori. Ognuno dei quali avrà delle responsabilità da ricoprire in fase di verifica.\\
-		Per i vari ruoli saranno riportate le responsabilità:\\\\
-		\textbf{Responsabile di Progetto}
-		\begin{itemize}
-			\item deve assicurarsi che i processi siano attentamente controllati e valutati in modo oggettivo
-			(in modo tale che essi siano migliorabili);
-			\item deve assegnare i compiti relativi alla verifica di prodotti a persone per quanto possibile
-			indipendenti dallo sviluppo di essi (e secondo quanto descritto nel \textit{Piano di Progetto
-			v1.00});
-			\item deve pianificare attentamente controlli sul processo di qualità stesso.
-		\end{itemize}
-		\textbf{Verificatore}	
-		\begin{itemize}
-			\item deve eseguire le procedure di verifica previste dal presente documento e descritte nelle
-			\textit{Norme di Progetto v1.00};
-			\item deve tracciare gli errori rilevati durante ciascuna fase del progetto affinché possano
-			essere risolti.
-		\end{itemize}
-		\subsection{Risorse}
-		Per garantire un buon funzionamento del processo di verifica verranno impiegate diverse risorse.\\
-		Le risorse si suddivideranno in:
-		\begin{itemize}
-			\item Risorse umane
-			\item Risorse hardware
-			\item Risorse software
-		\end{itemize}
-			\subsubsection{Risorse necessarie}
-				\paragraph{Risorse umane}
-				Le risorse umane di cui il processo di verifica avrà bisogno sono il Responsabile di Progetto e i Verificatori.
-				Informazioni più dettagliate sui ruoli sono riportate nelle \textit{Norme di Progetto v1.00}. Le responsabilità che ricadono su queste due figure sono riportate alla sezione 3.3 del presente documento.
-				\paragraph{Risorse hardware}
-				Per eseguire la verifica il gruppo dovrà avere a disposizione dei computer con un'adeguata potenza di calcolo in grado di sopportare il carico di lavoro.		    
-				\paragraph{Risorse software}
-			    Le Risorse software necessarie alla verifica sono gli strumenti software che permettono di eseguire controlli sui documenti e verificare che essi aderiscano alle \textit{Norme di Progetto v1.00}.\\
-			    Gli strumenti software dovranno avere le seguenti caratteristiche:
-			    \begin{itemize}
-			    \item capire se un documento possiede la struttura adatta oppure no;
-			    \item trovare parti di testo che non rispettino alcune delle norme tipografiche;
-			    \item rilevare (durante la scrittura) eventuali errori ortografici;
-			    \item costruire e visualizzare in real-time il documento scritto in \LaTeX (in modo che sia facile accorgersi di errori nell'utilizzo dei comandi);
-			    \end{itemize}
-			    Inoltre è necessario disporre di una piattaforma che raccolga i vari errori incontrati e li segnali ai componenti del gruppo che dovranno occuparsene. 
-		    \subsubsection{Risorse disponibili}
-			    \paragraph{Risorse umane}
-			    Il gruppo ha a disposizione tutti i membri per eseguire operazioni di verifica. A turno ognuno dei componenti ricoprirà il ruolo di Responsabile di Progetto o di Verificatore come definito nel \textit{Piano di Progetto v1.00}.
-			    \paragraph{Risorse hardware}
-			    Le Risorse hardware disponibili sono i vari computer dei componenti del gruppo incaricati di svolgere il ruolo di Responsabile di Progetto o Verificatore. Eventualmente sono disponibili anche i computer del Servizio Calcolo dell'Università di Padova.
-				\paragraph{Risorse software}
-				Le risorse software disponibili sono editor \LaTeX \ con controlli integrati e script per controllare la leggibilità e la complessità dei documenti in riferimento all'Indice Gulpease.\\
-				Sarà disponibile anche il sistema di sollevamento delle issue offerto dalla piattaforma \textit{GitHub}.
-		\subsection{Misure e metriche}
-			\subsubsection{Misure}
-			Ogni volta che viene effettuata una misura su processi o sui prodotti essa va rapportata in una scala. Di seguito vengono riportati i valori della scala:
-			\begin{description}
-			\item[Negativo] valore non accettabile, bisogna effettuare ulteriori verifiche e correggere gli errori presenti.
-			\item[Accettabile] valore accettabile, l'oggetto sottoposto a verifica ha raggiunto una soglia minima.
-			\item[Ottimale] valore accettabile, l'oggetto sottoposto a verifica ha raggiunto le massime aspettative del team. L'obiettivo dovrebbe essere quello di avere tutti i valori all'interno di tale range. 
-			\end{description}
-			\subsubsection{Metriche per la documentazione}
-			Il processo di verifica per effettuare controlli sulla documentazione si serve dell'Indice Gulpease che rileva la leggibilità dei documenti scritti in lingua italiana.
-			Questo particolare indice si basa sulla lunghezza della parola e sulla lunghezza della frase rispetto
-			al numero di lettere.
-			La formula per il suo calcolo è la seguente:
-			\begin{center}
-			$ Indice \  Gulpease = 89 + \frac{300*numero\_frasi-10*numero\_lettere}{numero\_parole} $
-			\end{center}
-			Il risultato di tale equazione tipicamente è compreso tra 0 e 100, dove valori alti indicano leggibilità
-			elevata e viceversa.\\
-			In generale, risulta che testi con un indice:
-			\begin{itemize}
-			\item inferiore a 80 risultano difficili da leggere per chi ha la licenza elementare;
-			\item inferiore a 60 risultano difficili da leggere per chi ha la licenza media;
-			\item inferiore a 40 risultano difficili da leggere per chi ha la licenza superiore;
-			\end{itemize}
-			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta. Si noti che viene
-			tenuto in considerazione il fatto che la documentazione è destinata a persone sufficientemente
-			preparate, competenti ed istruite.
-			\begin{itemize}
-			\item Valori minori di 35 sono considerati negativi.
-			\item Valori compresi tra 35 e 50 sono considerati accettabili.
-			\item Valori maggiori di 50 sono considerati ottimali. 
-			\end{itemize}
-			\subsubsection{Metriche per il processo}
-			Per controllare e verificare la qualità dei processi, il gruppo adotterà le metriche fornite dal
-			modello CMM dove per ogni fase di lavoro si andrà a fornire un indice che descriverà la
-			qualità della fase presa in esame. L'indice sarà relativo ad una scala già definita dal CMM.
-			Effettuando questo tipo di verifiche il team avrà subito un riscontro della qualità del processo
-			CMM ci consente di individuare la maturità di un processo: essa può assumere un valore da 1 (il
-			peggiore) a 5 (il migliore). Mettendo ora in relazione i risultati di tale modello con i range da noi
-			stabiliti otteniamo quanto segue:
-			\begin{itemize}
-			\item i valori 1 e 2 sono considerati negativi;
-			\item il valore 3 è considerato accettabile;
-			\item i valori 4 e 5 sono considerati ottimali.
-			\end{itemize}
-			\subsubsection{Metriche per il software}
-			Da discutere con il gruppo se siamo in grado di stabilirle.
+	\subfile{sections/visionegeneraledellastrategiadiverifica}
 \newpage
-\section{Gestione della revisione}
-	\subsection{Definizione e comunicazione delle anomalie}
-	Un'anomalia si genera nel momento in cui si verificano incongruenze o errori.  
-	Esempi di anomalie possono corrispondere a:
-	\begin{itemize}
-	\item un errore concettuale all'interno della documentazione di progetto;
-	\item un errore ortografico;
-	\item una violazione delle norme tipografiche riportate all'interno del documento \textit{Norme di Progetto v1.00};
-	\item un'uscita dai range di accettazione descritti nella sezione Misure e metriche del presente
-	documento;
-	\item un'incongruenza nel prodotto software rispetto alle funzionalità descritte all'interno del
-	documento \textit{Analisi dei Requisiti};
-	\item un'incongruenza del codice rispetto a quanto è stato progettato.
-	\end{itemize}
-	Per segnalare ogni anomalia va sollevata una issue tramite la piattaforma GitHub.
-	\subsection{Procedure di controllo della qualità}
-		\subsubsection{Procedure di controllo della qualità di processo}
-		Il gruppo intende misurare con continuità le caratteristiche di qualità dei vari processi,
-		al fine di poterli migliorare. Per mettere in atto ciò ci si basa su quanto descritto in seguito.
-		\begin{itemize}
-		\item Si adotta il modello CMM
-		\item Grazie all'uso del CMM è possibile valutare il processo durante il suo corso e nel tempo
-		\item Per misurare la qualità di un processo può essere utile verificare quella del suo
-		prodotto: se essa è scarsa, ciò implica che probabilmente anche il processo dal quale deriva
-		non è per nulla di qualità.
-		\item Per ottenere un miglioramento continuo si cerca di utilizzare la PDCA 
-		\end{itemize}
-		\subsubsection{Procedure di controllo della qualità di prodotto}
-			\paragraph{Verifica}
-			 Quando si effettuano delle verifiche si possono usare due tipi di analisi: analisi statica e analisi dinamica. L'analisi statica può essere applicata alla documentazione e al software invece l'analisi dinamica solo al software.
-				\subparagraph{Analisi statica} 
-				\begin{description}
-					\item[Inspection] questa tecnica di analisi presuppone l'esperienza da parte del verificatore nel individuare gli errori e le anomalie più frequenti. A tal scopo è stata stilata una lista di controllo nella quale sono elencate le sezioni critiche. Questo ci consente una verifica più rapida e meno risorse umane. Dopo aver terminato l'analisi, è necessario stilare un rapporto di verifica.
-					\item[Walkthrough] questa tecnica di analisi prevede una lettura critica del codice o del documento prodotto. Tale tecnica è molto dispendiosa in termini di risorse, poiché viene applicata all'intero documento, senza avere una precisa idea di quale sia il tipo di anomalia e di dove ricercarla;
-				\end{description}
-				\subparagraph{Analisi dinamica}
-				\begin{description}
-					\item [Test di unità] consiste nel verificare ogni singola unità del prodotto software attraverso 			l'utilizzo di strumenti come stub o driver. Lo scopo dello unit testing è di verificare il corretto funzionamento di parti di programma permettendo così una precoce individuazione dei bug. Uno unit testing accurato produce vari vantaggi come:
-					\begin{itemize}
-						\item Semplifica le modifiche;
-						\item Semplifica l'integrazione;
-						\item Supporta la documentazione.
-					\end{itemize}
-					\item[Test di integrazione] consiste nella verifica dei componenti del sistema che sono formati dalla combinazione di più unità. Ha lo scopo di evidenziare gli eventuali errori residui, non individuati durante la realizzazione dei singoli moduli;
-					\item[Test di sistema] consiste nell'eseguire nuovamente i test di unità e integrazione per le componenti che hanno subito modifiche o per le nuove funzionalità. Lo scopo è verificare di avere un prodotto di alta qualità per ogni nuova funzionalità o modifica importante;
-					\item[Test di accettazione] è il collaudo del prodotto software che viene eseguito in presenza del proponente. Se tale collaudo viene superato positivamente si può procedere al rilascio ufficiale del prodotto
-					sviluppato. 
-				\end{description}
-			\paragraph{Validazione}
-			La validazione avviene nel momento in cui il prodotto ha superato i test di verifica ed è pronto al suo rilascio.
-			Il prodotto dopo aver superato la validazione ci conferma che è conforme alle aspettative e soddisfa tutti i requisiti, di conseguenza è pronto per essere rilasciato.
+	\subfile{sections/gestionedellarevisione}
 \newpage
-\section{Resoconto delle attività di verifica}
-	\subsection{Resoconto verifica sui processi}
-	In questa sezione verranno riportati i dati emessi dalle procedure di controllo della qualità di processo, suddivisi per singolo processo attivo.
-		\subsubsection{Processo di documentazione}
-		Commentare il processo ed assegnargli un valore secondo i criteri del CMM.
-		\subsubsection{Processo di verifica}
-		Commentare il processo ed assegnargli un valore secondo i criteri del CMM.
-	\subsection{Resoconto verifica sui prodotti}
-	In questa sezione verranno riportati i dati emessi dalle procedure di controllo della qualità di prodotto.
-		\subsubsection{Verifiche manuali}
-		Riportare il numero di errori trovati nella documentazione.
-		\subsubsection{Verifiche automatiche}
-		Riportare l'esito (negativo, accettabile o ottimale) della valutazione dell'indice Gulpease di ogni documento.
+	\subfile{sections/resocontodelleattivitadiverifica}
+\newpage
+	\subfile{sections/appendice}
+\label{LastPage}
 \end{document}

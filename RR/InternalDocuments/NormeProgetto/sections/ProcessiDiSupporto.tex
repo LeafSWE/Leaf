@@ -277,7 +277,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 				Il nome del committente deve essere sempre indicato tramite il comando \LaTeX\ \texttt{\textbackslash committente}, in modo tale da avere sempre la stessa formattazione.
 
 				\subsubparagraph{Nome proprio}
-				Ogniqualvolta si intende utilizzare un nome proprio si deve scrivere prima il cognome e successivamente il nome. Quando si fa riferimento a disporre i nomi in ordine alfabetico l'ordine è dettato dalle lettere del cognome, a meno di ulteriori specificazioni.
+				Ogniqualvolta si intende utilizzare un nome proprio si deve scrivere prima il nome e successivamente il cognome. Quando si fa riferimento a disporre i nomi in ordine alfabetico, i nomi devono essere scritti mettendo il cognome davanti al nome e l'ordine è dettato dalle lettere del cognome, a meno di ulteriori specificazioni.
 				
 				\subsubparagraph{Nome di un file}
 				I nomi dei file vanno formattati utilizzando lo stile monospace e devono essere racchiusi dalle doppie virgolette alte.  Per velocizzare la scrittura del nome di un file è stato creato il comando \LaTeX\ \texttt{\textbackslash frmFile\{File\}}.
@@ -298,11 +298,17 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			L'utilizzo delle tabelle all'interno di un documento è regolamentato secondo quanto segue:
 			\begin{itemize}
 				\item devono essere numerate in ordine crescente;
-				\item devono essere seguite da una breva descrizione;
+				\item devono essere seguite da una breve descrizione;
 				\item devono essere presente un riferimento alla tabella all'interno dell'indice delle tabelle.
 			\end{itemize}
 			
-			Valutare colori tabelle?????!!!! Vedi ProTech.			
+			Al fine di uniformare lo stile delle tabelle, esse devono possedere le seguenti caratteristiche:
+			\begin{itemize}
+				\item ogni riga della tabella, comprese le intestazioni, deve essere limitata superiormente ed inferiormente da una linea continua orizzontale;
+				\item ogni colonna della tabella deve essere limitata nel suo lato sinistro e destro da una linea continua verticale;
+				\item i titoli delle colonne presenti all'interno dell'intestazione devono essere scritti in grassetto ed il primo carattere deve essere maiuscolo. Il testo deve essere centrato.
+				\item ogni elemento deve essere posizionato al centro della cella nella quale si trova.
+			\end{itemize}				
 			
 	\subsubsection{Tipologie di documenti}
 		\paragraph{Documenti formali}
@@ -413,7 +419,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 \subsection{Configurazione}
 	\subsubsection{Controllo di versione}
 
-	Il controllo di versione di documenti e file sorgente viene fatto utilizzando il software Gite e la piattaforma GitHub. Ad ogni modifica sostanziale ad un documento o ad un file sorgente impone che a quest'ultimo venga assegnatoun nuovo numero di versione. \\ Per quanto riguarda le norme di versionamento dei file inerenti alla documentazione si rimanda alla sezione \hyperref[sec:Versionamento dei documenti]{Versionamento dei documenti} del presente documento.
+	Il controllo di versione di documenti e file sorgente viene fatto utilizzando il software Gite e la piattaforma GitHub. Ad ogni modifica sostanziale ad un documento o ad un file sorgente impone che a quest'ultimo venga assegnato nuovo numero di versione. \\ Per quanto riguarda le norme di versionamento dei file inerenti alla documentazione si rimanda alla sezione \hyperref[sec:Versionamento dei documenti]{Versionamento dei documenti} del presente documento.
 	\subsubsection{Richieste di modifica}
 	Ogni componente del gruppo può avanzare una richiesta di modifica al \responsabilediprogetto, qualora lo ritenga necessario. Il \responsabilediprogetto\ ha il compito di analizzare tale richiesta e decidere se approvarla o meno. In caso affermativo, deve assegnare il compito di realizzare tale modifica ad un membro del gruppo, in base al ruolo da lui ricoperto in quel momento. Una volta effettuata la modifica questa deve essere sottoposta a verifica e dev'essere fatta mantenendo traccia dello stato precedente. In ogni caso, sia di accettazione della richiesta di modifica, sia in caso di rifiuto, il \responsabilediprogetto\ è tenuto a motivare la scelta.
 		\paragraph{Procedura di richiesta di modifica}
@@ -474,7 +480,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		\item Ad ogni commit è necessario specificare un messaggio nel quale si deve dare una descrizione sintetica e più possibile precisa delle modifiche effettuate;
 		\item Le modifiche apportate devono essere complete e testate con successo;
 		\item È vietato l'utilizzo del comando \texttt{git add *} prima di un comando commit per evitare di includere nel repository file nascosti, temporanei o non voluti;
-		\item È consigliato specificare il riassunto delle modifiche apportate ad ogni commit tramite il comando \texttt{git commit} rispetto al comando \texttt{git commit -m}, dove il messaggio deve essere scitto inline tra virgolette.
+		\item È consigliato specificare il riassunto delle modifiche apportate ad ogni commit tramite il comando \texttt{git commit} rispetto al comando \texttt{git commit -m}, dove il messaggio deve essere scritto inline tra virgolette.
 	\end{itemize}
 	\subsubsection{Codifica dei file}
 	I file contenenti codice oppure documentazione dovranno utilizzare la codifica UTF-8 senza BOM.
@@ -554,9 +560,9 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		Lo strumento utilizzato per l'issue tracking è lo strumento delle ``issue'' fornito da GitHub. Quando un \verificatore\ trova un errore all'interno di un documento o file sorgente ha il compito di aprire una nuova issue segnalando il problema. Ad ogni issue si consiglia di applicare una label. Le principali da utilizzare sono due:
 		\begin{itemize}
 			\item \textbf{bug}, nel caso in cui si trovi un errore;
-			\item \textbf{to-do}, nel caso in cui si trovino parti incomplete o mancanti.
+			\item \textbf{ToDo}, nel caso in cui si ritenga che ci siano parti incomplete o mancanti.
 		\end{itemize}
-		Nel caso in cui il \verificatore\ o il \responsabilediprogetto\ trovino un errore e vogliano suggerire una soluzione in più passi è consigliato l'utilizzo del comando \textbackslash{}\texttt{- [ ] Attività da svolgere}. Questo crea una to-do list dove è possibile segnare le attività svolte ed è possibile tener traccia dello stato di avanzamento della correzione.\\ Infine nel caso in cui si voglia trascrivere una porzione di codice nella descrizione di una issue è preferibile utilizzare il comando \textbackslash{}texttt\{nomelinguaggio\} codice da riportare \textbackslash{}texttt\{nomelinguaggio\}. Sostituendo ``nomelinguaggio'' al nome del linguaggio di programmazione utilizzato si vedrà la porzione di codice evidenziata secondo la sintassi del linguaggio stesso.
+		Nel caso in cui un \verificatore\ o il \responsabilediprogetto\ trovino un errore e vogliano suggerire una soluzione in più passi è consigliato l'utilizzo del comando \texttt{ - [ ] Attività da svolgere} per ogni attività indicata. In questo modo si crea una to-do list dove è possibile segnare le attività svolte, tenendo quindi traccia dello stato di avanzamento della correzione.\\ Infine nel caso in cui si voglia trascrivere una porzione di codice nella descrizione di una issue è preferibile utilizzare il comando \begin{center} \texttt {\`{}\`{}\`{}nomelinguaggio} codice da riportare \texttt{\`{}\`{}\`{}} .\end{center} Sostituendo ``nomelinguaggio'' al nome del linguaggio di programmazione utilizzato si vedrà la porzione di codice evidenziata secondo la sintassi del linguaggio stesso, aiutando la comprensione.
 \end{document}
 
 %\input{/sections/subsectionsProcessiDiSupporto/Documentazione}

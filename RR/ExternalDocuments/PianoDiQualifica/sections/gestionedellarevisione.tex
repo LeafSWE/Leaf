@@ -1,0 +1,54 @@
+\documentclass[../PianoDiQualifica.tex]{subfiles}
+
+\begin{document}
+\section{Gestione della revisione}
+	\subsection{Definizione e comunicazione delle anomalie}
+	Un'anomalia si genera nel momento in cui si verificano incongruenze o errori.  
+	Esempi di anomalie possono corrispondere a:
+	\begin{itemize}
+	\item un errore concettuale all'interno della documentazione di progetto;
+	\item un errore ortografico;
+	\item una violazione delle norme tipografiche riportate all'interno del documento \textit{Norme di Progetto v1.00};
+	\item un'uscita dai range di accettazione descritti nella sezione Misure e metriche del presente
+	documento;
+	\item un'incongruenza nel prodotto software rispetto alle funzionalità descritte all'interno del
+	documento \textit{Analisi dei Requisiti v1.00};
+	\item un'incongruenza del codice rispetto a quanto è stato progettato.
+	\end{itemize}
+	Per segnalare ogni anomalia va sollevata una issue tramite la piattaforma GitHub.
+	\subsection{Procedure di controllo della qualità}
+		\subsubsection{Procedure di controllo della qualità di processo}
+		Il gruppo intende misurare con continuità le caratteristiche di qualità dei vari processi,
+		al fine di poterli migliorare. Per mettere in atto ciò ci si basa su quanto descritto in seguito.
+		\begin{itemize}
+		\item Si adotta il modello CMM.
+		\item Grazie all'uso del CMM è possibile valutare il livello di qualità di un processo nello stato attuale.
+		\item Per misurare la qualità di un processo può essere utile verificare quella del suo
+		prodotto: se essa è scarsa, ciò implica che probabilmente anche il processo dal quale deriva
+		non è per nulla di qualità.
+		\item Per ottenere un miglioramento continuo si utilizza PDCA.
+		\end{itemize}
+		\subsubsection{Procedure di controllo della qualità di prodotto}
+			\paragraph{Verifica}
+			 Quando si effettuano delle verifiche si possono usare due tipi di analisi: analisi statica e analisi dinamica. L'analisi statica può essere applicata sia alla documentazione che al software, mentre l'analisi dinamica solo al software.
+				\subparagraph{Analisi statica} 
+				\begin{description}
+					\item[Inspection] Questa tecnica di analisi presuppone l'esperienza da parte del verificatore nel individuare gli errori e le anomalie più frequenti. A tal scopo è stata stilata una lista di controllo nella quale sono elencate le sezioni critiche. Questo ci consente una verifica più rapida e meno risorse umane. Dopo aver terminato l'analisi, è necessario stilare un rapporto di verifica.
+					\item[Walkthrough] Questa tecnica di analisi prevede una lettura critica del codice o del documento prodotto. Tale tecnica è molto dispendiosa in termini di risorse, poiché viene applicata all'intero documento, senza avere una precisa idea di quale sia il tipo di anomalia e di dove ricercarla;
+				\end{description}
+				\subparagraph{Analisi dinamica}
+				\begin{description}
+					\item [Test di unità] Consiste nel verificare ogni singola unità del prodotto software, ovvero sia la più piccola parte di software che conviene testare da sola, attraverso l'utilizzo di strumenti come logger, stub o driver. Data la sua natura, la dimensione dell'unità da testare verrà definita al momento del test. Lo scopo dello unit testing è di verificare il corretto funzionamento di un'unità per permettere una precoce individuazione dei bug. Uno unit testing accurato produce vari vantaggi, ad esempio:
+					\begin{itemize}
+						\item semplifica le modifiche;
+						\item semplifica l'integrazione;
+						\item supporta la documentazione.
+					\end{itemize}
+					\item[Test di integrazione] Consiste nella verifica dei componenti del sistema che sono formati dalla combinazione di più unità. Ha lo scopo di evidenziare gli eventuali errori residui, non individuati durante la realizzazione dei singoli moduli.
+					\item[Test di sistema] Consiste nell'eseguire nuovamente i test di unità e integrazione per le componenti che hanno subito modifiche o per le nuove funzionalità. Lo scopo è verificare di avere un prodotto di alta qualità per ogni nuova funzionalità o modifica importante.
+					\item[Test di accettazione] È il collaudo del prodotto software che viene eseguito in presenza del proponente. Se tale collaudo viene superato positivamente si può procedere al rilascio ufficiale del prodotto sviluppato. 
+				\end{description}
+			\paragraph{Validazione}
+			La validazione avviene nel momento in cui il prodotto ha superato i test di verifica ed è pronto al suo rilascio.
+			Il prodotto dopo aver superato la validazione ci conferma che è conforme alle aspettative e soddisfa tutti i requisiti, di conseguenza è pronto per essere rilasciato.
+\end{document}

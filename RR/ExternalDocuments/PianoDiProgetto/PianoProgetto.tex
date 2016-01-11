@@ -12,6 +12,7 @@
 \usepackage[official]{eurosym} % per riprodurre il simbolo €
 \usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{appendix}
 
 % pacchetti per tabelle
 \usepackage{booktabs}
@@ -100,7 +101,7 @@
 	%devono essere compilati questi campi ogni volta
 	\begin{tabular}{c|c}
 		{\hfill \textbf{Versione}} 			& 1.00				\\ \\
-		{\hfill\textbf{Data Redazione}} 	& 9/1/2016  		\\ \\
+		{\hfill\textbf{Data Redazione}} 	& 10/1/2016  		\\ \\
 		{\hfill\textbf{Redazione}} 			&  					\\ \\
 		{\hfill\textbf{Verifica}} 			&  					\\ \\
 		{\hfill\textbf{Approvazione}} 		&  					\\ \\
@@ -112,7 +113,10 @@
 	\newpage
 
 	\tableofcontents 	% produce l'indice delle sezioni del documento
-	\listoftables 		% produce l'indice delle tabelle del documento		
+	\newpage
+	\listoftables 		% produce l'indice delle tabelle del documento
+	\newpage	
+	\listoffigures		% produce l'indice delle figure del documento	
 	
 	\label{LastFrontPage}
 	
@@ -131,12 +135,20 @@
 		
 	\newpage
 		\subfile{sections/pianificazione}	
+		
+	\newpage
+		\subfile{sections/meccanismi_di_controllo}	
 
     \newpage
 		\subfile{sections/preventivo}
+		
+	\newpage
+		\subfile{sections/consuntivo}
         
     \newpage
 		\subfile{sections/organigramma}
+		
+	
 		
 	\label{LastPage}
 
