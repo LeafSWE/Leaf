@@ -367,7 +367,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 				\item introduzione contenente le motivazioni per le quali è stato richiesto l'incontro;
 				\item una sezione dedicata alle domande poste e alle risposte ottenute durante l'incontro.
 			\end{enumerate}
-			
+	\subsubsection{Procedure}		
 	\paragraph{Versionamento dei documenti} \label{sec:Versionamento dei documenti}
 	Tutti i documenti, ad eccezione dei verbali, sono sottoposti a versionamento. Il versionamento prevede che la versione di un documento venga incrementata ogniqualvolta avvengano delle modifiche all'interno del documento stesso.
 	
@@ -394,15 +394,15 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			\item se i Verificatori riscontrano anomalie si ritorna al punto 1 altrimenti il documento viene consegnato al \responsabilediprogetto;
 			\item il \responsabilediprogetto\ decide se approvare il documento, e quindi formalizzarlo, oppure se rifiutarlo, e quindi ritornare al punto 1.
 		\end{enumerate}
-	\paragraph{Strumenti}
-		\subparagraph{Latex}
+	\subsubsection{Strumenti}
+		\paragraph{Latex}
 		La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup latex. È stato scelto questo strumento poiché permette una facile separazione tra formattazione e presentazione. La scelta dell'editor da utilizzare è lasciata libera ai membri del gruppo.
 		
-			\subsubparagraph{Template}
+			\subparagraph{Template}
 			Per poter creare omogeneità tra i documenti, è stato creato un template latex nel quale sono state definite tutte le regole tipografiche da applicare al documento. Questo permette di poter scrivere i documenti senza dover tener conto della loro formattazione.
-			\subsubparagraph{Comandi personalizzati}
+			\subparagraph{Comandi personalizzati}
 			Sono stati definiti dei comandi latex personalizzati al fine di poter rendere più semplice ed immediata l'applicazione delle norme tipografiche. Questi comandi si occupano delle corretta formattazione del testo secondo le norme che sono state definite. La lista dei comandi è presente nella sezione formati. (DA VEDERE!!!)
-			\subsubparagraph{Rilevamento errori ortografici}
+			\subparagraph{Rilevamento errori ortografici}
 			(STRUMENTO DA SCEGLIERE)
 
 \subsection{Processo di configurazione}
@@ -412,8 +412,8 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 	Il controllo di versione di documenti e file sorgente viene fatto utilizzando il software Gite e la piattaforma GitHub. Ad ogni modifica sostanziale ad un documento o ad un file sorgente impone che a quest'ultimo venga assegnato nuovo numero di versione. \\ Per quanto riguarda le norme di versionamento dei file inerenti alla documentazione si rimanda alla sezione \hyperref[sec:Versionamento dei documenti]{Versionamento dei documenti} del presente documento.
 	\paragraph{Richieste di modifica}
 	Ogni componente del gruppo può avanzare una richiesta di modifica al \responsabilediprogetto, qualora lo ritenga necessario. Il \responsabilediprogetto\ ha il compito di analizzare tale richiesta e decidere se approvarla o meno. In caso affermativo, deve assegnare il compito di realizzare tale modifica ad un membro del gruppo, in base al ruolo da lui ricoperto in quel momento. Una volta effettuata la modifica questa deve essere sottoposta a verifica e dev'essere fatta mantenendo traccia dello stato precedente. In ogni caso, sia di accettazione della richiesta di modifica, sia in caso di rifiuto, il \responsabilediprogetto\ è tenuto a motivare la scelta.
-		
-	\paragraph{Struttura del repository}
+	\paragraph{Repository}	
+		\subparagraph{Struttura del repository}
 	I file all'interno del repository verranno organizzati secondo questa struttura:
 	\begin{itemize}
 		\item /Documents
@@ -429,15 +429,18 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		\item /Source
 	\end{itemize}
 	La struttura di /Source verrà decisa all'inizio della progettazione architetturale.
-	\paragraph{Commit}
+		\subparagraph{Commit}
 	L'esecuzione di ogni comando commit deve sottostare alle seguenti norme:
 	\begin{itemize}
 		\item Ad ogni commit è necessario specificare un messaggio nel quale si deve dare una descrizione sintetica e più possibile precisa delle modifiche effettuate;
 		\item Le modifiche apportate devono essere complete e testate con successo;
 		\item È vietato l'utilizzo del comando \texttt{git add *} prima di un comando commit per evitare di includere nel repository file nascosti, temporanei o non voluti;
 		\item È consigliato specificare il riassunto delle modifiche apportate ad ogni commit tramite il comando \texttt{git commit} rispetto al comando \texttt{git commit -m}, dove il messaggio deve essere scritto inline tra virgolette.
-	\end{itemize}	
-	\paragraph{Nomi dei file}
+	\end{itemize}
+		\subparagraph{Visibilità del repository}
+	Per la condivisione e il versionamento dei configuration item è stato creato un repository privato su GitHub, raggiungibile all'indirizzo \url{https://github.com/mzanella/Leaf}. L'accesso è consentito solo ai membri del gruppo.	
+	\paragraph{File}	
+		\subparagraph{Nomi dei file}
 	I nomi dei file interni al repository devono sottostare alle seguenti norme:
 	\begin{itemize}
 		\item Devono contenere solo lettere, numeri, il carattere `\_', il segno meno ed il punto;
@@ -452,11 +455,9 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		\item Utilizzare nomi né troppo lunghi, né troppo corti, indicativamente tra i 10 e i 25 caratteri, estensione compresa;
 		\item Specificare, quando possibile, l'estensione del file.
 	\end{itemize}
-	\paragraph{Codifica dei file}
+		\subparagraph{Codifica dei file}
 	I file contenenti codice oppure documentazione dovranno utilizzare la codifica UTF-8 senza BOM.
-	\paragraph{Visibilità del repository}
-	Per la condivisione e il versionamento dei configuration item è stato creato un repository privato su GitHub, raggiungibile all'indirizzo \url{https://github.com/mzanella/Leaf}. L'accesso è consentito solo ai membri del gruppo.	
-	\subsubsection{Procedura}
+	\subsubsection{Procedure}
 	\paragraph{Procedura di richiesta di modifica}
 		Il membro del gruppo che vuole effettuare una modifica deve presentare una richiesta formale al \responsabilediprogetto. La richiesta deve avere i seguenti campi:
 		\begin{enumerate}
