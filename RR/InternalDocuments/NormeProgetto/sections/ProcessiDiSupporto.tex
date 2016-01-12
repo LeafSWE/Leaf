@@ -535,9 +535,14 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		Segue, poi, la descrizione della issue. Questa dovrà obbligatoriamente contenere:
 		\begin{itemize} 
 			\item dove, nel documento, si trova il problema. Questo va specificato tramite sezione e, possibilmente, il numero di riga dove inizia il problema;
-			\item Una descrizione dettagliata del problema;
-			\item La motivazione per cui si è ritenuto necessario sollevare una issue.
-		\end{itemize}		
+			\item una descrizione dettagliata del problema che deve comprendere:
+			\begin{itemize}
+				\item tutte gli errori associati al problema. Questi devono essere riportati nella forma di checkbox. Per fare ciò è necessario premettere alla descrizione di ogni errore i caratteri \texttt{ - [ ]}. Questo permette di facilitare il tracciamento dello stato di avanzamento della issue.
+				\item una eventuale porzione di codice che potrebbe essere causa del problema. Per fare ciò è consigliabile utilizzare il comando: \begin{center} \texttt {\`{}\`{}\`{}nomelinguaggio\\ codice da riportare\\ \`{}\`{}\`{}} .\end{center} Sostituendo ``nomelinguaggio'' al nome del linguaggio di programmazione utilizzato, si potrà vedere la porzione di codice evidenziata secondo la sintassi del linguaggio stesso, facilitandone la lettura.
+			\end{itemize}
+			\item la motivazione per cui si è ritenuto necessario sollevare una issue.
+		\end{itemize}
+			
 	\subsubsection{Procedure}	
 	\paragraph{Tecniche di analisi}
 	Per poter verificare la qualità del prodotto è stato scelto di applicare delle tecniche di analisi sui documenti e sul codice. 
@@ -575,10 +580,6 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 	
 	\subsubsection{Strumenti} \label{sec:Strumenti}
 		\paragraph{Strumento per l'issue tracking}
-		Lo strumento utilizzato per l'issue tracking è lo strumento delle ``issue'' fornito da GitHub. Quando un \verificatore\ trova un errore all'interno di un documento o file sorgente ha il compito di aprire una nuova issue segnalando il problema. Ad ogni issue si consiglia di applicare una label. Le principali da utilizzare sono due:
-		\begin{itemize}
-			\item \textbf{bug}, nel caso in cui si trovi un errore;
-			\item \textbf{ToDo}, nel caso in cui si ritenga che ci siano parti incomplete o mancanti.
-		\end{itemize}
-		Nel caso in cui un \verificatore\ o il \responsabilediprogetto\ più errori in un documento e vogliano elencarli nella descrizione di una issue è consigliato fare un elenco delle anomalie riscontrate e premettere ad ogniuna di queste i caratteri \texttt{ - [ ]}. In questo modo verrà creata una checkbox per ogni elemento elencato, facilitando il tracciamento dello stato di avanzamento della correzione.\\ Nel caso in cui si voglia riportare una porzione di codice nella descrizione di una issue, è preferibile utilizzare il comando: \begin{center} \texttt {\`{}\`{}\`{}nomelinguaggio\\ codice da riportare\\ \`{}\`{}\`{}} .\end{center} Sostituendo ``nomelinguaggio'' al nome del linguaggio di programmazione utilizzato, si potrà vedere la porzione di codice evidenziata secondo la sintassi del linguaggio stesso, aiutando la comprensione.
+		Lo strumento utilizzato per l'issue tracking è lo strumento delle ``issue'' fornito da GitHub.
+		
 \end{document}
