@@ -3,8 +3,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
 
-\usepackage[acronym]{glossaries}
 
+\usepackage[toc]{glossaries}
 
 \newglossaryentry{Astah}{name=Astah,description={Strumento per la modellazione di diagrammi UML. Fra le varie funzionalità, questo software supporta la creazione di: diagrammi delle classi, diagrammi dei casi d’uso, diagrammi delle attività, diagrammi di sequenza e diagrammi dei componenti.}}
 
@@ -71,14 +71,17 @@
 
 %\newacronym{WBS}{Acronimo di Working Breakdown Structure, è l'elenco di tutte le attività di un progetto.}
 
-\newglossaryentry{GanttProject}{name=GanttProject,description={GanttProject è software open source multipiattaforma, implementato in Java, per la gestione dei progetti. Fra le sue funzioni principali rientrano la creazione dei diagrammi di Gantt e di Pert per la schedulazione dei compiti nei progetti. }}
-
-\newglossaryentry{To-do list}{name=To-do list,description={Lista di attività da svolgere.}}
-
-\addto\captionsitalian{\renewcommand{\glossaryname}{Glossario}}
 \makeglossaries
 
 \begin{document}
 
+
+\newglossaryentry{GanttProject}{name=GanttProject,description={GanttProject è software open source multipiattaforma, implementato in Java, per la gestione dei progetti. Fra le sue funzioni principali rientrano la creazione dei diagrammi di Gantt e di Pert per la schedulazione dei compiti nei progetti. }}
+
+\newglossaryentry{To-do list}{name=To-do list,description={Lista di attività da svolgere.}}
+
+
+
+\glsaddall
 \printglossary[style=indexgroup]
 \end{document}
