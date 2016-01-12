@@ -518,17 +518,26 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			\subparagraph{Diagrammi dei casi d'uso}
 			Le verifiche che devono essere effettuate ai diagrammi dei casi d'uso, innanzitutto, devono riguardare il rispetto dello standard UML, soprattutto riguardanti inclusioni, generalizzazioni e estensioni. Successivamente si deve verificare che verificare che ciò che descrive il diagramma sia effettivamente il sistema che vogliamo rappresentare. Per quest'ultimo punto bisogna porre particolare attenzione sull'identificazione degli attori. Per questo motivo è prevista una \hyperref[par:Procedura di verifica degli attori dei diagrammi UML]{procedura di verifica degli attori dei diagrammi UML} in questo documento.\\ 
 		\paragraph{Issue tracking}
-		L'issue tracking è un'attività di supporto per i \verificatori\ ai quali permette, oltre a tenere traccia potenziali errori, segnalandoli al \responsabilediprogetto. Questo strumento è utile anche al \responsabilediprogetto\ per assegnare i compiti di correzione degli errori.
-		\paragraph{Sintassi di una Issue}
+		L'issue tracking è un'attività di supporto per i \verificatori\ ai quali permette di tenere traccia potenziali errori, segnalandoli al \responsabilediprogetto. Questo strumento è utile anche al \responsabilediprogetto\ per assegnare i compiti di correzione degli errori. 
+		\subparagraph{Sintassi di una label}
+		Le label sono delle etichette che è possibile associare ad ogni issue. Ogni etichetta rappresenta lo stato nel quale si trova l'issue. Le uniche etichette che sono accettate sono le seguenti:
+		\begin{itemize}
+			\item \textbf{Request}: rappresenta la richiesta di una issue;
+			\item \textbf{Question}: identifica una issue nella quale si sta discutendo per risolvere il problema;
+			\item \textbf{ToDo}: identifica una issue per la quale è stata trovata la soluzione ma questa deve ancora essere applicata;
+			\item \textbf{Working}: identifica una issue alla quale un membro del gruppo sta lavorando per applicare la soluzione;
+			\item \textbf{Rejected}: identifica una issue che non è stata accettata poiché risulta essere futile o dannosa;
+			\item \textbf{Done}: identifica una issue che è stata completata.
+		\end{itemize}				
+		\subparagraph{Sintassi di una Issue}
 		Ogni issue avrà un nome che dovrà seguire la seguente notazione: \begin{center}\textbf{[D]:[S]}\end{center} dove:
 		\begin{itemize} 
 			\item \textbf{D} rappresenta la sigla del documento di interesse;
-			\item \textbf{T} rappresenta la tipologia di issue;
 			\item \textbf{S} rappresenta la sintesi della descrizione del problema.
 		\end{itemize}
 		Segue, poi, la descrizione della issue. Questa dovrà obbligatoriamente contenere:
 		\begin{itemize} 
-			\item Dove, nel documento, si trova il problema. Questo va specificato tramite sezione e, possibilmente, il numero di riga dove inizia il problema;
+			\item dove, nel documento, si trova il problema. Questo va specificato tramite sezione e, possibilmente, il numero di riga dove inizia il problema;
 			\item Una descrizione dettagliata del problema;
 			\item La motivazione per cui si è ritenuto necessario sollevare una issue.
 		\end{itemize}		
@@ -540,10 +549,25 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			\item \textbf{Walkthrough}: questa tecnica dev'essere applicata quando non si sa che errori o problematiche si stanno cercando. La tecnica consiste nel leggere il codice sorgente o il documento da cima in fondo per trovare anomalie  di qualsiasi tipo;
 			\item \textbf{Inspection}: questa tecnica dev'essere applicata quando si ha idea della problematica che si sta cercando e consiste in una lettura mirata del documento/codice, sulla base di una lista degli errori precedentemente stilata.
 		\end{itemize}
-		La tecnica walkthrough è molto onerosa e deve essere utilizzata soprattutto nelle prime fasi del progetto, quando non è già presente una lista degli errori comuni, oppure non si è ancora sufficientemente preparati riguardo un aspetto del progetto. Avanzando nelle fasi del progetto sarà utile stilare una lista quanto più possibile completa di errori comuni, in modo tale da evitare la tecnica walkthrough e applicare l'ispection.
+		La tecnica walkthrough è molto onerosa e deve essere utilizzata soprattutto nelle prime fasi del progetto, quando non è già presente una lista degli errori comuni, oppure non si è ancora sufficientemente preparati riguardo un aspetto del progetto. Avanzando nelle fasi del progetto sarà utile stilare una lista quanto più possibile completa di errori comuni, in modo tale da evitare la tecnica walkthrough e applicare l'inspection.
 		
 		\subparagraph{Analisi dinamica}
 		L’analisi dinamica è una forma di valutazione di un sistema software, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.
+		
+		\subparagraph{Procedura di gestione di una issue}
+		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura per la segnalazione e gestione di una issue è la seguente:
+		\begin{enumerate}
+			\item il \verificatore\ che ha riscontrato un'anomalia dovrà aprire una nuova issue assegnandole l'etichetta Request;
+			\item il \responsabilediprogetto\ dovrà valutare la issue e decidere se:			\begin{itemize}
+				\item la issue risulta essere futile o dannosa. In questo caso verrà rimossa l'etichetta Request ed assegnata l'etichetta Rejected. La issue verrà poi chiusa, terminando la procedura.
+				\item la issue risulta essere appropriata. In questo caso verrà rimossa l'etichetta Request ed assegnata l'etichetta Question. 
+			\end{itemize}
+			\item i membri del gruppo dovranno discutere e proporre nuove idee al fine di risolvere la issue. Questa discussione non dovrà protrarsi per più di tre giorni. Qualora non si dovesse essere trovata una soluzione ottimale, il \responsabilediprogetto\ dovrà decidere quale sia la soluzione migliore.
+			\item il \responsabilediprogetto, trovata la soluzione da applicare,  assegnerà al membro del gruppo da lui ritenuto opportuno, l'incarico di applicare la soluzione. Inoltre, il \responsabilediprogetto\ dovrà rimuovere dalla issue l'etichetta Question ed assegnare l'etichetta ToDo.
+			\item quando l'incaricato inizierà a lavorare sulla issue rimuoverà l'etichetta ToDo ed assegnarà l'etichetta Working. Ad ogni nuovo commit, l'incaricato dovrà riferire, nel messaggio del commit stesso, la issue sulla quale sta lavorando. Questo permettà di tener traccia delle modifiche effettuate per risolvere la issue.
+			\item una volta che l'incaricato avrà terminato le modifiche, queste dovranno essere caricate nel repository e l'etichetta della issue dovrà essere modificata da Working a Done. Dopo che sono state svolte queste operazioni, la issue verrà chiusa.
+		\end{enumerate}
+		
 		
 		\subparagraph{Procedura di verifica attori dei diagrammi UML}\label{par:Procedura di verifica degli attori dei diagrammi UML}
 		Per identificare un attore può risultare utile seguire la seguente procedura:
