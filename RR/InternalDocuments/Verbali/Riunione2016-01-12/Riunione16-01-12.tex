@@ -1,4 +1,3 @@
-%ricordarsi di compilare più di una volta
 \documentclass[a4paper,12pt]{article}
 
 %-------------------INIZIO pacchetti utilizzati -----------------------------------------
@@ -15,6 +14,8 @@
 
 \setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
 \setcounter{tocdepth}{5} % aggiunge indice paragrafi
+
+\graphicspath{{images/}{../../../../../logo/}}
 
 
 %-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
@@ -49,7 +50,7 @@
 	}
 	\pagenumbering{Roman}
 	\fancyhf{}
-	\lhead{\includegraphics[height=1.5em, width=3.3em]{./logoNoSfondo} \DeclareGraphicsExtensions{.png}}
+	\lhead{\includegraphics[height=1.5em, width=3.3em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}}
 	\rhead{Norme di progetto}
 	\cfoot{\thepage~di \pageref{LastFrontPage}}
 	\renewcommand{\headrulewidth}{0.4pt}
@@ -57,15 +58,15 @@
 }
 %-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
 
-\input{../../../TemplateLatex/commands} %inclusione comandi
+\input{commands} %inclusione comandi
 
-\titlepage{}
-
-\author{Oscar Elia Conti, Marco Zanella}
-\date{24/12/2015}
+\author{Nome Autore}
+\date{05/01/2016}
 
 
 \pagestyle{myfront}
+
+
 
 \begin{document}
 \begin{titlepage}
@@ -76,47 +77,47 @@
 	%\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
 	{\scshape\LARGE Università di Padova \par}
 	\vspace{1cm}
-	{\scshape\Large Norme di progetto\par}
+	%devono essere cambiato il titolo ogni volta
+	{\scshape\Large Verbale Riunione interna 2016-01-12\par}
+	\vspace{1.5cm}
+	
 	\vspace{2cm}
-	\begin{center}
-	{\includegraphics[height=10em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}\par}
-	\end{center}
+		
 	\vfill \vfill
+	%devono essere compilati questi campi ogni volta
 	\begin{tabular}{c|c}
 		{\hfill \textbf{Versione}} 			& 1.00				\\ \\
-		{\hfill\textbf{Data Redazione}} 		& 2015-12-24  		\\ \\
-		{\hfill\textbf{Redazione}} 			&  \\ \\
-		{\hfill\textbf{Verifica}} 				&  \\ \\
-		{\hfill\textbf{Approvazione}} 		&  \\ \\
-		{\hfill\textbf{Uso}} 					& \\ \\
-		{\hfill\textbf{Distribuzione}} 			& \\ \\
+		{\hfill\textbf{Data Redazione}} 	& 2016-01-12  		\\ \\
+		{\hfill\textbf{Redazione}} 			& Marco Zanella		\\ \\
+		{\hfill\textbf{Verifica}} 			&  					\\ \\
+		{\hfill\textbf{Approvazione}} 		&  					\\ \\
+		{\hfill\textbf{Uso}} 				& 					\\ \\
+		{\hfill\textbf{Distribuzione}} 		& Gruppo \leaf\		\\ \\
 	\end{tabular}
 \end{titlepage}
 	
 	\newpage
 
-	\tableofcontents
 	
 	\label{LastFrontPage}
 	
-		
 
 	\newpage
 	
 	\pagestyle{mymain}
 	
-	\newpage
-		\subfile{sections/introduzione}
+	
+		\subfile{sections/EstremiDellaRiunione}
 
-	\newpage
-		\subfile{sections/ProcessiPrimari}
 	
-	\newpage
-		\subfile{sections/ProcessiDiSupporto}
+		\subfile{sections/Motivazioni}
 	
-	\newpage
-		\subfile{sections/ProcessiOrganizzativi}
-		
+	
+		\subfile{sections/OrdineDelGiorno}
+	
+	
+		\subfile{sections/VerbaleDellaRiunione}
+				
 	\label{LastPage}
 
 \end{document}
