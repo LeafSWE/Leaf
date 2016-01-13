@@ -11,36 +11,37 @@
 	\item Pianificazione di controllo: definire una metodologia per il controllo dei rischi, in modo che possano essere evitati;
 	\item Mitigazione: nel caso in cui fossero inevitabili, definire un piano di contingenza per poter minimizzare i danni prodotti nel caso si verificasse. Questa sotto-fase non è obbligatoria per tutti i rischi (anche se consigliata), ma solo per quelli difficilmente controllabili e gestibili.
 	\end{enumerate}
-	Ogni rischio identificato avrà le seguenti caratteristiche: nome (possibilmente parlante), descrizione, probabilità di occorrenza, livello di rischio, possibili conseguenze e strategia di individuazione e gestione. Ciascun rischio verrà monitorato nel tempo e ne verrà indicato l’effettivo riscontro. A seguire si rappresentano i rischi individuati in una tabella riassuntiva, mentre nelle prossime sezioni viene fatta una descrizione dettagliata.	
+	Ogni rischio identificato avrà le seguenti caratteristiche: nome, descrizione, probabilità di occorrenza, livello di rischio, possibili conseguenze e strategia di individuazione e gestione. Ogni rischio verrà monitorato nel tempo e ne verrà indicato l’effettivo riscontro. A seguire i rischi individuati raccolti in una tabella riassuntiva, nelle prossime sezioni invece una descrizione dettagliata.	
 	
-	\begin{table}[h]
-		\centering
-
-		\begin{tabular}{l p{0.35\textwidth} p{0.15\textwidth} p{0.1\textwidth}}
-			\toprule
-			Livello 	& Tipologia 						& Probabilità di occorrenza & Livello di rischio \\
-			\midrule
+	\newpage	
+	
+	% tabella di rimpiazzo
+	\begin{center}
+	\begin{longtable}{|c|p{0.35\textwidth}|p{0.2\textwidth}|p{0.14\textwidth}|}
+		\hline
+		\textbf{Livello} &
+		\textbf{Tipologia} &
+		\textbf{Probabilità di occorrenza} &
+		\textbf{Livello di rischio}
+		 \\
+			\hline
 			Strumenti 	& Inesperienza nell'utilizzo 				& Alta 	& Alto \\
-			\midrule
+			\hline
 			Tecnologico	& Tecnologie adottate sconosciute 			& Media 	& Alto \\
-					\cmidrule{2-4}
+					\cline{2-4}
 					& Guasti hardware e malfunzionamenti software 	& Bassa 	& Basso \\
-			\midrule
+			\hline
 			Organizzativo& Valutazione delle risorse					& Media	& Alto \\
-			\midrule
+			\hline
 			Personale	& Problemi personali dei membri del team		& Media	& Medio \\
-					\cmidrule{2-4}
+					\cline{2-4}
 					& Problemi personali tra i membri del team		& Media	& Alto \\
-			\midrule
+			\hline
 			Requisiti	& Mancata comprensione					& Media	& Alto \\
-			\bottomrule
-		\end{tabular}
-		
-		\caption{Rischi individuati}
-		\label{tab:rischi}
-		
-	\end{table}
-
+			\hline
+	\caption{Rischi individuati}
+	\end{longtable}
+	\end{center}
 
 
 \subsection{Livello strumenti}
