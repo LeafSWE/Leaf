@@ -191,7 +191,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			
 			
 			\subsubparagraph{Descrizioni}
-			Nel caso in cui si voglia strutturare la descrizione di qualcosa sottoforma di elenco è necessario utilizzare il costrutto \LaTeX\ \texttt{ \textbackslash begin$\left\{description\right\}$ \textbackslash item[description] \textbackslash end$\left\{description\right\}$}.			
+			Nel caso in cui si voglia strutturare la descrizione di qualcosa nella forma di elenco è necessario utilizzare il costrutto \LaTeX\ \texttt{ \textbackslash begin$\left\{description\right\}$ \textbackslash item[description] \textbackslash end$\left\{description\right\}$}.			
 			
 			\subsubparagraph{Note a piè pagina}
 			Le note a piè pagina seguono le seguenti regole:
@@ -398,7 +398,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			\subparagraph{Template}
 			Per poter creare omogeneità tra i documenti, è stato creato un template latex nel quale sono state definite tutte le regole tipografiche da applicare al documento. Questo permette di poter scrivere i documenti senza dover tener conto della loro formattazione.
 			\subparagraph{Comandi personalizzati}
-			Sono stati definiti dei comandi latex personalizzati al fine di poter rendere più semplice ed immediata l'applicazione delle norme tipografiche. Questi comandi si occupano delle corretta formattazione del testo secondo le norme che sono state definite. La lista dei comandi è presente nella sezione formati. (DA VEDERE!!!)
+			Sono stati definiti dei comandi latex personalizzati al fine di poter rendere più semplice ed immediata l'applicazione delle norme tipografiche. Questi comandi si occupano delle corretta formattazione del testo secondo le norme che sono state definite. La lista dei comandi è presente nella sezione formati.
 			\subparagraph{Rilevamento errori ortografici}
 			(STRUMENTO DA SCEGLIERE)
 
@@ -507,7 +507,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		\subparagraph{Sintassi}
 		I \verificatori\ hanno il compito di identificare errori sintattici nei documenti. Ciò può essere fatto con l'ausilio di strumenti automatici, ma ogni documento deve essere sempre sottoposto a walkthrough in modo tale da individuare errori che non sono stati in grado di evidenziare. Inoltre hanno il compito di inserire nel \glossario\ tutte quelle parole che possono essere fonte di ambiguità.
 		\subparagraph{Periodi}
-		I \verificatori\ hanno il compito di calcolare l’indice Gulpease di ogni documento utilizzando lo strumento automatico preposto (vedi sezione \hyperref[sec:Strumenti]{Strumenti}). Qualora non si ottenga un risultato soddisfacente il \verificatore\ deve applicare la tecnica walkthrough con l'obiettivo di individuare periodi troppo lunghi, che possono essere di difficile comprensione o leggibilità.
+		I \verificatori\ hanno il compito di calcolare l'indice Gulpease di ogni documento utilizzando lo strumento automatico preposto (vedi sezione \hyperref[sec:Strumenti]{Strumenti}). Qualora non si ottenga un risultato soddisfacente il \verificatore\ deve applicare la tecnica walkthrough con l'obiettivo di individuare periodi troppo lunghi, che possono essere di difficile comprensione o leggibilità.
 		\subparagraph{Struttura del documento}
 		I \verificatori\ devono verificare che la struttura di ogni documento rispetti i contenuti del documento stesso.
 	\paragraph{Diagrammi UML}
@@ -515,7 +515,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			\subparagraph{Diagrammi dei casi d'uso}
 			Le verifiche che devono essere effettuate ai diagrammi dei casi d'uso, innanzitutto, devono riguardare il rispetto dello standard UML, soprattutto riguardanti inclusioni, generalizzazioni e estensioni. Successivamente si deve verificare che verificare che ciò che descrive il diagramma sia effettivamente il sistema che vogliamo rappresentare. Per quest'ultimo punto bisogna porre particolare attenzione sull'identificazione degli attori. Per questo motivo è prevista una \hyperref[par:Procedura di verifica degli attori dei diagrammi UML]{procedura di verifica degli attori dei diagrammi UML} in questo documento.\\ 
 		\paragraph{Issue tracking}
-		L'issue tracking è un'attività di supporto per i \verificatori\ ai quali permette di tenere traccia potenziali errori, segnalandoli al \responsabilediprogetto. Questo strumento è utile anche al \responsabilediprogetto\ per assegnare i compiti di correzione degli errori. 
+		L'issue tracking è un'attività di supporto per i \verificatori\ ai quali permette di tenere traccia potenziali errori, segnalandoli al \responsabilediprogetto. Lo strumento scelto per la gestione di qusta attività è GitHub(vedi sezione \hyperref[par:IssueTrk GitHub]{Strumenti})Questo strumento è utile anche al \responsabilediprogetto\ per assegnare i compiti di correzione degli errori. 
 		\subparagraph{Sintassi di una label}
 		Le label sono delle etichette che è possibile associare ad ogni issue. Ogni etichetta rappresenta lo stato nel quale si trova l'issue. Le uniche etichette che sono accettate sono le seguenti:
 		\begin{itemize}
@@ -534,7 +534,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		\end{itemize}
 		Segue, poi, la descrizione della issue. Questa dovrà obbligatoriamente contenere:
 		\begin{itemize} 
-			\item dove, nel documento, si trova il problema. Questo va specificato tramite sezione e, possibilmente, il numero di riga dove inizia il problema;
+			\item dove si trova il problema. Questo va specificato tramite sezione e, possibilmente, il numero di riga dove inizia il problema;
 			\item una descrizione dettagliata del problema che deve comprendere:
 			\begin{itemize}
 				\item tutte gli errori associati al problema. Questi devono essere riportati nella forma di checkbox. Per fare ciò è necessario premettere alla descrizione di ogni errore i caratteri \texttt{ - [ ]}. Questo permette di facilitare il tracciamento dello stato di avanzamento della issue.
@@ -579,7 +579,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			\end{enumerate}
 	
 	\subsubsection{Strumenti} \label{sec:Strumenti}
-		\paragraph{Strumento per l'issue tracking}
+		\paragraph{Strumento per l'issue tracking} \label{par:IssueTrk GitHub}
 		Lo strumento utilizzato per l'issue tracking è lo strumento delle ``issue'' fornito da GitHub.
 		
 \end{document}
