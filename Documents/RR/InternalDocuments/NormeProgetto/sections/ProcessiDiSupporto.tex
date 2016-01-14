@@ -546,16 +546,27 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		\paragraph{Resoconto attività di verifica sui documenti}
 			\subparagraph{Attività manuale di verifica}		
 		Ogni attività manuale di verifica sui documenti deve essere accompagnata da un resoconto. Il resoconto deve contenere il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
-		\begin{item}
+		\begin{itemize}
 			\item periodi troppo lunghi o complessi;
 			\item parole non appropriate;
 			\item incongruenze;
 			\item errori concettuali.		
-		\end{item}
-		Al fine di rendere più veloce e chiara l'analisi di queste voci, è consigliabile che questi dati vengano rappresentati in forma tabellare.
+		\end{itemize}
+		Al fine di rendere più veloce e chiara l'analisi di queste voci, è consigliabile che questi dati vengano rappresentati in forma tabellare.\\
+		Inoltre, deve essere sempre presente una tabella contenente il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
+			\begin{itemize}
+				\item termini candidati ad essere aggiunti al \glossario;
+				\item termini aggiunti al \glossario.
+			\end{itemize}
+			\subparagraph{Attività automatica di verifica}
+			Ogni attività automatica di verifica sui documenti deve essere accompagnata da un resoconto. Il resoconto deve contenere il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
+			\begin{itemize}
+			\item errori ortografici;
+			\item utilizzo errato \Latex;
+			\item errori riguardanti norme tipografiche;		
+		\end{itemize}
 		
-			\subsubparagraph{Glossario}
-			
+		Inoltre, devono essere riportarti gli indici Gulpease calcolati per ognuno dei documenti sui quali è stata effettuata attività di verifica.
 			
 	\subsubsection{Procedure}	
 	\paragraph{Tecniche di analisi}
@@ -570,8 +581,11 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		\subparagraph{Analisi dinamica}
 		L’analisi dinamica è una forma di valutazione di un sistema software, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.
 		
+		\subparagraph{Resoconto attività di verifica sui documenti}	
+		La stesura dell'attività del resoconto dell'attività manuale di verifica dovrà essere fatta al termine dell'attività di verifica. Il \verificatore\ dovrà riportare il numero di occorrenze per ognuna delle voci definite nella sezione norme. Qualora fossero stati trovati degli errori nelle attività di verifica precedenti, il numero di errori trovati andrà a sommarsi al numero di errori trovati nelle attività precedenti.
 		
-		
+		Inoltre, il verificatore, nel caso in cui dovesse trovare termini mancanti nel glossario, dovrà aggiornare la tabella definita nelle norme che regolano l'attività manuale di verifica.
+			
 		\subparagraph{Gestione di una issue}
 		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura per la segnalazione e gestione del ticketing di una issue è la seguente:
 		\begin{enumerate}
