@@ -23,11 +23,12 @@
 				\subparagraph{Classificazione dei casi d'uso}
 				È compito degli \analisti\ redigere una descrizione, dare una classificazione e fornire un diagramma conforme allo standard UML per ogni caso d'uso. Ogni caso d'uso dev'essere descritto con le seguenti informazioni, possibilmente in quest'ordine:
 				\begin{enumerate}
-					\item Codice identificativo del caso d'uso, nella forma \begin{center}\textbf{UCXY}\end{center} dove:
+					\item Codice identificativo del caso d'uso, nella forma \begin{center}\textbf{UC[X].[Y]}\end{center} dove:
 					\begin{itemize}
-						\item \textbf{X} (da spiegare meglio quando messo giù cosa si fa nell'introduzione);
-						\item \textbf{Y} è un codice numerico gerarchico.
+						\item \textbf{X} è il codice univoco del padre;
+						\item \textbf{Y} è un codice progressivo di livello.
 					\end{itemize}
+					Il codice progressivo può includere diversi livelli di gerarchia separati da un punto.
 					\item Titolo, che deve descrivere sinteticamente il caso d'uso;
 					\item Attori principali;
 					\item Attori secondari, se questi sono presenti;
