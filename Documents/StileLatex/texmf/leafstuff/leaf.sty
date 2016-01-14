@@ -27,11 +27,7 @@
 	}
 	\pagenumbering{arabic}
 	\fancyhf{}
-<<<<<<< HEAD
-	\lhead{Leaf}
-=======
 	\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
->>>>>>> fe2f293b1336af164dbc978c630a231aa085f380
 	\rhead{Norme di progetto}
 	\cfoot{
 		\hypersetup{
@@ -69,14 +65,27 @@
 \newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
 \newcommand{\mailleaf}{\mail{leaf.gruppo@gmail.com}}
 \newcommand{\mailinglist}{\mail{nome@mailing.list}}
+
+%-------------------INIZIO comandi personalizzati ruoli----------------------------------------------------------
 \newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto}}
+
 \newcommand{\amministratore}{\textit{Amministratore}}
+\newcommand{\amministratori}{\textit{Amministratori}}
+
 \newcommand{\analista}{\textit{Analista}}
 \newcommand{\analisti}{\textit{Analisti}}
+
 \newcommand{\progettista}{\textit{Progettista}}
+\newcommand{\progettisti}{\textit{Progettisti}}
+
 \newcommand{\programmatore}{\textit{Programmatore}}
+\newcommand{\programmatori}{\textit{Programmatori}}
+
 \newcommand{\verificatore}{\textit{Verificatore}}
 \newcommand{\verificatori}{\textit{Verificatori}}
+%-------------------FINE comandi personalizzati ruoli----------------------------------------------------------
+
+%----------------INIZIO comandi personalizzati documenti senza versione-------------------------------------------------
 \newcommand{\pianodiprogetto}{\textit{Piano di progetto}}
 \newcommand{\pianodiqualifica}{\textit{Piano di qualifica}}
 \newcommand{\normediprogetto}{\textit{Norme di progetto}}
@@ -86,11 +95,30 @@
 \newcommand{\definizionediprodotto}{\textit{Definizione di prodotto}}
 \newcommand{\manualeutente}{\textit{Manuale utente}}
 \newcommand{\glossario}{\textit{Glossario}}
+%----------------FINE comandi personalizzati documenti senza versione-------------------------------------------------
+
+
+%da modificare ad ogni avanzamento di versione
+%----------------INIZIO comandi personalizzati documenti con versione-------------------------------------------------
+\newcommand{\pianodiprogettov}{\textit{Piano di progetto v1.00}}
+\newcommand{\pianodiqualificav}{\textit{Piano di qualifica v1.00}}
+\newcommand{\normediprogettov}{\textit{Norme di progetto v1.00}}
+\newcommand{\studiodifattibilitav}{\textit{Studio di fattibilità v1.00}}
+\newcommand{\analisideirequisitiv}{\textit{Analisi dei requisiti v1.00}}
+\newcommand{\specificatecnicav}{\textit{Specifica tecnica v1.00}}
+\newcommand{\definizionediprodottov}{\textit{Definizione di prodotto v1.00}}
+\newcommand{\manualeutentev}{\textit{Manuale utente v1.00}}
+\newcommand{\glossariov}{\textit{Glossario v1.00}}
+%----------------FINE comandi personalizzati documenti con versione-------------------------------------------------
+
+%----------------INIZIO comandi personalizzati revisioni-------------------------------------------------
 \newcommand{\revisionedeirequisiti}{\textbf{Revisione dei requisiti}}
 \newcommand{\revisionediaccettazione}{\textbf{Revisione di accettazione}}
 \newcommand{\revisionediprogettazione}{\textbf{Revisione di progettazione}}
 \newcommand{\revisionediqualifica}{\textbf{Revisione di qualifica}}
-\newcommand{\g}{\tiny \ped{|G|} \normalsize}
+\newcommand{\g}{\tiny\textit{\ped{g}}\normalsize}
+%----------------FINE comandi personalizzati revisioni-------------------------------------------------
+
 
 \newcommand{\frmdate}[3]{#3-#2-#1}
 \newcommand{\frmtime}[2]{#1:#2}
@@ -123,6 +151,8 @@
 \setcounter{secnumdepth}{6} % aggiunge contatore ai paragrafi
 \makeatother
 %-------------------FINE creazione subsubparagraph--------------------------------------
+
+\newcommand{\logo}{ {\includegraphics[height=10em]{./logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}\par} }
 
 %-------------------FINE comandi personalizzati-----------------------------------------
 

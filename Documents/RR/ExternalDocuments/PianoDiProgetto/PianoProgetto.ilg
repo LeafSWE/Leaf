@@ -1,0 +1,163 @@
+This is makeindex, version 2.15 [TeX Live 2015] (kpathsea + Thai support).
+Scanning style file ./PianoProgetto.ist.............................done (29 attributes redefined, 0 ignored).
+Scanning input file PianoProgetto.glo....done (45 entries accepted, 0 rejected).
+Scanning input file PianoProgetto.glg...
+!! Input index error (file = PianoProgetto.glg, line = 1):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = PianoProgetto.glg, line = 2):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = PianoProgetto.glg, line = 3):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = PianoProgetto.glg, line = 4):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = PianoProgetto.glg, line = 5):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = PianoProgetto.glg, line = 6):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = PianoProgetto.glg, line = 7):
+   -- Missing arguments -- need two (premature LFD).
+done (0 entries accepted, 7 rejected).
+Scanning input file PianoProgetto.gls...!! Input index error (file = PianoProgetto.gls, line = 1):
+   -- Unknown index keyword \glossarysection[\glossarytoctitle].
+!! Input index error (file = PianoProgetto.gls, line = 2):
+   -- Unknown index keyword \begin.
+!! Input index error (file = PianoProgetto.gls, line = 3):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 4):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 5):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 6):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 7):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 8):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 9):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 10):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 11):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 12):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 13):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 14):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 15):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 16):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 17):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 18):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 19):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 20):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 21):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 22):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 23):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 24):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 25):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 26):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 27):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 28):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 29):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 30):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 31):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 32):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 33):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 34):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 35):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 36):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 37):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 38):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 39):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 40):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 41):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 42):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 43):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 44):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 45):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 46):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 47):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 48):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 49):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 50):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 51):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 52):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 53):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 54):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 55):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 56):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 57):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 58):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 59):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 60):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 61):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 62):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 63):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 64):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 65):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 66):
+   -- Unknown index keyword \glsgroupheading.
+!! Input index error (file = PianoProgetto.gls, line = 67):
+   -- Unknown index keyword \glossentry.
+!! Input index error (file = PianoProgetto.gls, line = 68):
+   -- Unknown index keyword \setentrycounter[].
+!! Input index error (file = PianoProgetto.gls, line = 69):
+   -- Unknown index keyword \end.
+done (0 entries accepted, 69 rejected).
+Overall 3 files read (45 entries accepted, 76 rejected).
+Sorting entries....done (258 comparisons).
+Generating output file PianoProgetto.ind....done (69 lines written, 0 warnings).
+Output written in PianoProgetto.ind.
+Transcript written in PianoProgetto.ilg.

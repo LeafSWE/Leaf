@@ -1,0 +1,7 @@
+This is makeindex, version 2.15 [TeX Live 2015] (kpathsea + Thai support).
+Scanning style file ./PianoProgetto.ist.............................done (29 attributes redefined, 0 ignored).
+Scanning input file PianoProgetto.glo....done (45 entries accepted, 0 rejected).
+Sorting entries....done (258 comparisons).
+Generating output file PianoProgetto.gls....done (69 lines written, 0 warnings).
+Output written in PianoProgetto.gls.
+Transcript written in PianoProgetto.glg.
