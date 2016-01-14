@@ -1,72 +1,8 @@
 \documentclass[a4paper,12pt]{article}
-
-%-------------------INIZIO pacchetti utilizzati -----------------------------------------
-\usepackage[T1]{fontenc}	% codifica dei font in uscita
-\usepackage[utf8]{inputenc} % codifica dei font in uscita
-\usepackage[italian]{babel} % lingua del documento
-\usepackage{graphicx}		% pacchetto per la grafica
-\usepackage{url}			% per scrivere gli indirizzi Internet
-\usepackage{enumerate} % liste  lettere
-\usepackage{subfiles}
-\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
-\usepackage{fancyhdr}
-%-------------------FINE pacchetti utilizzati -----------------------------------------
-
-\setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
-\setcounter{tocdepth}{5} % aggiunge indice paragrafi
-
-
-%-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
-\fancypagestyle{mymain}{
-	\hypersetup{
-			colorlinks=true,
-			linkcolor=blue,
-			anchorcolor=black,
-			citecolor=black,
-			urlcolor=blue,
-	}
-	\pagenumbering{arabic}
-	\fancyhf{}
-	\lhead{\includegraphics[height=1.5em, width=3.3em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-
-	\rhead{Norme di progetto}
-	\cfoot{
-		\hypersetup{
-			colorlinks=true,
-			linkcolor=black,
-		}
-		\thepage~di \pageref{LastPage}
-	}
-	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}
-}
-
-\fancypagestyle{myfront}{
-	\hypersetup{
-			colorlinks=true,
-			linkcolor=black,
-	}
-	\pagenumbering{Roman}
-	\fancyhf{}
-	\lhead{\includegraphics[height=1.5em, width=3.3em]{./logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-	\rhead{Norme di progetto}
-	\cfoot{\thepage~di \pageref{LastFrontPage}}
-	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}
-}
-%-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
-
-\input{commands} %inclusione comandi
-
-\author{Nome Autore}
-\date{05/01/2016}
-
-
-\pagestyle{myfront}
-
-
+\usepackage{leaf}
 
 \begin{document}
+\intestazioni{Verbale 2016-01-12}
 \begin{titlepage}
 	\centering
 	{\huge\bfseries CLIPS\par}
@@ -77,22 +13,19 @@
 	\vspace{1cm}
 	%devono essere cambiato il titolo ogni volta
 	{\scshape\Large Verbale Riunione interna 2016-01-12\par}
-	\vspace{2cm}
-	
-\begin{center}
-	{\includegraphics[height=10em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}\par}
-	\end{center}
-		
+	\vspace{1.5cm}
+	\logo
+	\vspace{2cm}	
 	\vfill \vfill
 	%devono essere compilati questi campi ogni volta
 	\begin{tabular}{c|c}
 		{\hfill \textbf{Versione}} 			& 1.00				\\ \\
-		{\hfill\textbf{Data Redazione}} 	& 2016-01-12  		\\ \\
+		{\hfill\textbf{Data Redazione}} 		& 2016-01-13  		\\ \\
 		{\hfill\textbf{Redazione}} 			& Marco Zanella		\\ \\
-		{\hfill\textbf{Verifica}} 			&  					\\ \\
+		{\hfill\textbf{Verifica}} 				&  					\\ \\
 		{\hfill\textbf{Approvazione}} 		&  					\\ \\
-		{\hfill\textbf{Uso}} 				& 					\\ \\
-		{\hfill\textbf{Distribuzione}} 		& Gruppo \leaf\		\\ \\
+		{\hfill\textbf{Uso}} 					& 					\\ \\
+		{\hfill\textbf{Distribuzione}} 			& Gruppo \leaf\		\\ \\
 	\end{tabular}
 \end{titlepage}
 	
