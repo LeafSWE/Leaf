@@ -556,8 +556,8 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		\subparagraph{Analisi dinamica}
 		L’analisi dinamica è una forma di valutazione di un sistema software, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.
 		
-		\subparagraph{Procedura di gestione di una issue}
-		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura per la segnalazione e gestione di una issue è la seguente:
+		\subparagraph{Gestione ticketing di una issue}
+		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura per la creazione di un ticket relativo ad una issue è la seguente:
 		\begin{enumerate}
 			\item il \verificatore\ che ha riscontrato un'anomalia dovrà aprire una nuova issue assegnandole l'etichetta Request;
 			\item il \responsabilediprogetto\ dovrà valutare la issue e decidere se:			\begin{itemize}
@@ -565,7 +565,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 				\item la issue risulta essere appropriata. In questo caso verrà rimossa l'etichetta Request ed assegnata l'etichetta Question. 
 			\end{itemize}
 			\item i membri del gruppo dovranno discutere e proporre nuove idee al fine di risolvere la issue. Questa discussione non dovrà protrarsi per più di tre giorni. Qualora non si dovesse essere trovata una soluzione ottimale, il \responsabilediprogetto\ dovrà decidere quale sia la soluzione migliore.
-			\item il \responsabilediprogetto, trovata la soluzione da applicare,  assegnerà al membro del gruppo da lui ritenuto opportuno, l'incarico di applicare la soluzione. Inoltre, il \responsabilediprogetto\ dovrà rimuovere dalla issue l'etichetta Question ed assegnare l'etichetta ToDo.
+			\item il \responsabilediprogetto, trovata la soluzione da applicare,  assegnerà, al membro del gruppo da lui ritenuto opportuno, un ticket. L'assegnatario del ticket è la persona incaricata all'applicazione della soluzione relativa alla issue. Inoltre, il \responsabilediprogetto\ dovrà rimuovere dalla issue l'etichetta Question ed assegnare l'etichetta ToDo.
 			\item quando l'incaricato inizierà a lavorare sulla issue rimuoverà l'etichetta ToDo ed assegnarà l'etichetta Working. Ad ogni nuovo commit, l'incaricato dovrà riferire, nel messaggio del commit stesso, la issue sulla quale sta lavorando. Questo permettà di tener traccia delle modifiche effettuate per risolvere la issue.
 			\item una volta che l'incaricato avrà terminato le modifiche, queste dovranno essere caricate nel repository e l'etichetta della issue dovrà essere modificata da Working a Done. Dopo che sono state svolte queste operazioni, la issue verrà chiusa.
 		\end{enumerate}
