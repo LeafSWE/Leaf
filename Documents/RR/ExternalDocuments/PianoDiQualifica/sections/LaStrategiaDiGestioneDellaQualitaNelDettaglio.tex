@@ -35,6 +35,7 @@
 				Le risorse software disponibili sono editor \LaTeX \ con controlli integrati e script per controllare la leggibilità e la complessità dei documenti in riferimento all'Indice Gulpease.\\
 				Sarà disponibile anche il sistema di sollevamento delle issue offerto dalla piattaforma GitHub.
 		\subsection{Standard, tecniche e principi utilizzati}
+		Aggiungere \textit{Tecniche di controllo della qualità di processo} da section 4.
 		\subsection{Organizzazione}
 		 La verifica sarà un processo sempre presente all'interno delle varie fasi di lavoro. Per questo sarà molto importante specificare che tipo di verifiche effettuare per ogni fase.
 \\Le fasi di lavoro vengono riportate in dettaglio nel \textit{Piano di Progetto v1.00}. Di seguito sono riportate le fasi che coinvolgono momenti di verifica.
@@ -53,30 +54,43 @@
 			\item[Accettabile] valore accettabile, l'oggetto sottoposto a verifica ha raggiunto una soglia minima.
 			\item[Ottimale] valore accettabile, l'oggetto sottoposto a verifica ha raggiunto le massime aspettative del team. L'obiettivo dovrebbe essere quello di avere tutti i valori all'interno di tale range. 
 			\end{description}
-			\subsubsection{Metriche per la documentazione}
-			Il processo di verifica per effettuare controlli sulla documentazione si serve dell'indice Gulpease che rileva la leggibilità dei documenti scritti in lingua italiana.
-			Questo particolare indice si basa sulla lunghezza della parola e sulla lunghezza della frase rispetto
-			al numero di lettere.
-			La formula per il suo calcolo è la seguente:
-			\begin{equation}
-Indice \  Gulpease = 89 + \frac{300*numero\_frasi-10*numero\_lettere}{numero\_parole}
-\end{equation}
-			Il risultato di tale equazione tipicamente è compreso tra 0 e 100, dove valori alti indicano leggibilità
-			elevata e viceversa.\\
-			In generale, risulta che testi con un indice:
-			\begin{itemize}
-			\item inferiore a 80 risultano difficili da leggere per chi ha la licenza elementare;
-			\item inferiore a 60 risultano difficili da leggere per chi ha la licenza media;
-			\item inferiore a 40 risultano difficili da leggere per chi ha la licenza superiore.
-			\end{itemize}
-			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta. Si noti che viene
-			tenuto in considerazione il fatto che la documentazione è destinata a persone sufficientemente
-			preparate, competenti ed istruite.
-			\begin{itemize}
-			\item Valori minori di 35 sono considerati negativi.
-			\item Valori compresi tra 35 e 50 sono considerati accettabili.
-			\item Valori maggiori di 50 sono considerati ottimali. 
-			\end{itemize}
+			\subsubsection{Metriche per i documenti}
+			La qualità di un documento dipende prima di tutto dai suoi contenuti. La loro qualità, tuttavia, è difficilmente quantificabile allo stato attuale del progetto a causa dell?esperienza pressoché nulla del team in quest'ambito. Si è deciso dunque di limitarsi a valutare parametri maggiormente oggettivi e soprattutto misurabili automaticamente attraverso strumenti software.
+				\paragraph{Indice di leggibilità}
+				Una metrica che si è deciso di utilizzare per poter stimare la qualità di un documento è l'indice di leggibilità. In particolare, è stato considerato l'indice Gulpease, studiato appositamente per la lingua italiana.				\\Questo particolare indice si basa sulla lunghezza della parola e sulla lunghezza della frase rispetto al numero di lettere. La formula per il suo calcolo è la seguente:
+				\begin{equation}
+					Indice \  Gulpease = 89 + \frac{300*numero\_frasi-10*numero\_lettere}{numero\_parole}
+				\end{equation}
+				Il risultato di tale equazione tipicamente è compreso tra 0 e 100, dove valori alti indicano leggibilità elevata e viceversa.\\
+				In generale, risulta che testi con un indice:
+				\begin{itemize}
+					\item inferiore a 80 risultano difficili da leggere per chi ha la licenza elementare;
+					\item inferiore a 60 risultano difficili da leggere per chi ha la licenza media;
+				\item inferiore a 40 risultano difficili da leggere per chi ha la licenza superiore.
+				\end{itemize}
+				Vengono di seguito riportati i range stabiliti per la metrica appena introdotta. Si noti che viene tenuto in considerazione il fatto che la documentazione è destinata a persone sufficientemente preparate, competenti ed istruite.
+				\begin{itemize}
+					\item Valori minori di 35 sono considerati negativi.
+					\item Valori compresi tra 35 e 50 sono considerati accettabili.
+					\item Valori maggiori di 50 sono considerati ottimali. 
+				\end{itemize}
+				\paragraph{Errori ortografici rinvenuti e non corretti}
+				Tale metrica è necessaria per capire quanto un documento sia corretto dal punto di vista ortografico. Infatti, supponendo che gli strumenti automatici siano in grado di trovare tutti (o perlomeno la maggior parte) degli errori ortografici all'interno di un testo, la correttezza ortografica non può che basarsi sul numero di errori rinvenuti ma non successivamente corretti. Notare che per errori corretti si intende un errore revisionato manualmente da parte di un verificatore. Le correzioni automatiche, infatti, non sono molto attendibili. \\
+				Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+				\begin{itemize}
+					\item una percentuale di errori non corretti maggiore allo 0\% è ritenuta negativa;
+					\item una percentuale di errori non corretti pari allo 0\% è ritenuta accettabile;
+					\item una percentuale di errori non corretti pari allo 0\% è ritenuta ottimale.
+				\end{itemize}
+				Notare che non è accettabile che vi siano errori rinvenuti ma non corretti da qualcuno.
+				\paragraph{Errori concettuali rinvenuti e non corretti}
+				Tale metrica è necessaria per capire quanto un documento sia corretto dal punto di vista concettuale. Infatti, supponendo che in seguito alle revisioni siano siano stati trovati tutti (o perlomeno la maggior parte) gli maggiori errori di questo tipo, la correttezza concettuale non può che basarsi sul numero di errori rinvenuti e fatti notare ma non successivamente corretti. Notare che per errori corretti si intende un errore fatto notare dal committente o da qualche verificatore (con relativa approvazione del Responsabile di Progetto) e successivamente corretto (sulla base di discussioni interne o con il committente).\\
+				Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+				\begin{itemize}
+					\item una percentuale di errori non corretti maggiore al 5\% è ritenuta negativa;
+					\item una percentuale di errori non corretti minore del 5\% è ritenuta accettabile;
+					\item una percentuale di errori non corretti pari allo 0\% è ritenuta ottimale;
+				\end{itemize}	
 			\subsubsection{Metriche per il processo}
 			Per controllare e verificare la qualità dei processi, il gruppo adotterà le metriche fornite dal
 			modello CMM dove per ogni fase di lavoro si andrà a fornire un indice che descriverà la
@@ -85,8 +99,8 @@ Indice \  Gulpease = 89 + \frac{300*numero\_frasi-10*numero\_lettere}{numero\_pa
 			peggiore) a 5 (il migliore). Mettendo ora in relazione i risultati di tale modello con i range da noi
 			stabiliti otteniamo quanto segue:
 			\begin{itemize}
-			\item i valori 1 e 2 sono considerati negativi;
-			\item il valore 3 è considerato accettabile;
+			\item il valore 1 è considerato negativo;
+			\item i valori 2 e 3 sono considerati accettabili;
 			\item i valori 4 e 5 sono considerati ottimali.
 			\end{itemize}
 			\subsubsection{Metriche per il software}
