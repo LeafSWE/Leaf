@@ -1,84 +1,16 @@
 %ricordarsi di compilare più di una volta
 \documentclass[a4paper,12pt]{article}
+\usepackage{leaf}
 
-%-------------------INIZIO pacchetti utilizzati -----------------------------------------
-\usepackage[T1]{fontenc}	% codifica dei font in uscita
-\usepackage[utf8]{inputenc} % codifica dei font in uscita
-\usepackage[italian]{babel} % lingua del documento
-\usepackage{graphicx}		% pacchetto per la grafica
-\usepackage{url}			% per scrivere gli indirizzi Internet
-\usepackage{enumerate} % liste  lettere
-\usepackage{subfiles}
-\usepackage[official]{eurosym} % per riprodurre il simbolo €
-\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
-\usepackage{fancyhdr}
-\usepackage{appendix}
-
-% pacchetti per tabelle
-\usepackage{longtable}
-\usepackage{booktabs}
-\usepackage{caption}
-\captionsetup{tableposition=top,figureposition=bottom,font=small}
-\captionsetup{format=hang,labelfont={sf,bf}}
-\captionsetup[table]{position=bottom}
-
-%-------------------FINE pacchetti utilizzati -----------------------------------------
-
-%-------------------INIZIO comandi inizializzazione -----------------------------------------
-\setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
-\setcounter{tocdepth}{5} % aggiunge indice paragrafi
-
-\graphicspath{{images/}{../images/}}
-%-------------------FINE comandi inizializzazione -----------------------------------------
-
-%-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
-\usepackage{fancyhdr}
-\fancypagestyle{mymain}{
-	\hypersetup{
-			colorlinks=true,
-			linkcolor=blue,
-			anchorcolor=black,
-			citecolor=black,
-			urlcolor=blue,
-	}
-	\pagenumbering{arabic}
-	\fancyhf{}
-	\lhead{Leaf}
-	\rhead{Piano di progetto}
-	\cfoot{
-		\hypersetup{
-			colorlinks=true,
-			linkcolor=black,
-		}
-		\thepage~di \pageref{LastPage}
-	}
-	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}
-}
-
-\fancypagestyle{myfront}{
-	\hypersetup{
-			colorlinks=true,
-			linkcolor=black,
-	}
-	\pagenumbering{Roman}
-	\fancyhf{}
-	\lhead{Leaf}
-	\rhead{Piano di progetto}
-	\cfoot{\thepage~di \pageref{LastFrontPage}}
-	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}
-}
-%-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
-\input{../../../TemplateLatex/commands} %Inserire percorso relativo dei comandi rispetto al file nel quale vi trovate
+% ATTENZIONE DA AGGIUNGERE SU package leaf
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\renewcommand{\arraystretch}{1.3}
 
 \titlepage{}
 
 \author{Eduard Bicego, Federico Tavella, Andrea Tombolato}
 \date{05/01/2016}
 
-
-\pagestyle{myfront}
 
 
 
@@ -94,7 +26,7 @@
 	%devono essere cambiato il titolo ogni volta
 	{\scshape\Large Piano di progetto\par}
 	\vspace{1.5cm}
-	
+	\logo
 	\vspace{2cm}
 	{\Large\itshape Eduard Bicego, Federico Tavella, Andrea Tombolato\par}
 	
@@ -146,8 +78,8 @@
     \newpage
 		\subfile{sections/Preventivo}
 		
-	\newpage
-		\subfile{sections/Consuntivo}
+	%\newpage
+		%\subfile{sections/Consuntivo}
         
     \newpage
 		\subfile{sections/Organigramma}

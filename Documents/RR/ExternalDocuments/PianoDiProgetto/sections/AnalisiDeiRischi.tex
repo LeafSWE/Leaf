@@ -1,8 +1,8 @@
 \documentclass[../PianoProgetto.tex]{subfiles}
 
-\section{Analisi dei rischi}
-
 \begin{document}
+
+\section{Analisi dei rischi}
 
 	Al fine di migliorare l’avanzamento del progetto è stata effettuata un’attenta analisi dei rischi per individuarli, comprenderli e prendere le contromisure necessarie. Essa è suddivisa in quattro sotto-fasi:
 	\begin{enumerate}
@@ -13,32 +13,35 @@
 	\end{enumerate}
 	Ogni rischio identificato avrà le seguenti caratteristiche: nome, descrizione, probabilità di occorrenza, livello di rischio, possibili conseguenze e strategia di individuazione e gestione. Ogni rischio verrà monitorato nel tempo e ne verrà indicato l’effettivo riscontro. A seguire i rischi individuati raccolti in una tabella riassuntiva, nelle prossime sezioni invece una descrizione dettagliata.	
 		
+	\newpage
 	
-	% tabella di rimpiazzo
-	\begin{longtable}{|c|p{0.35\textwidth}|p{0.2\textwidth}|p{0.14\textwidth}|}
-		\hline
-		\textbf{Livello} &
-		\textbf{Tipologia} &
-		\textbf{Probabilità di occorrenza} &
-		\textbf{Livello di rischio}
-		 \\
-			\hline
+	\begin{table}[h]
+		\centering
+		
+		\begin{tabularx}{\textwidth}{X X C C}
+			\toprule
+			\textbf{Livello} 	& \textbf{Tipologia} 						& \textbf{Probabilità di occorrenza} & \textbf{Livello di rischio} \\
+			\midrule
 			Strumenti 	& Inesperienza nell'utilizzo 				& Alta 	& Alto \\
-			\hline
+			\midrule
 			Tecnologico	& Tecnologie adottate sconosciute 			& Media 	& Alto \\
-					\cline{2-4}
+					%\cmidrule{2-4}
 					& Guasti hardware e malfunzionamenti software 	& Bassa 	& Basso \\
-			\hline
+			\midrule
 			Organizzativo& Valutazione delle risorse					& Media	& Alto \\
-			\hline
+			\midrule
 			Personale	& Problemi personali dei membri del team		& Media	& Medio \\
-					\cline{2-4}
+					%\cmidrule{2-4}
 					& Problemi personali tra i membri del team		& Media	& Alto \\
-			\hline
+			\midrule
 			Requisiti	& Mancata comprensione					& Media	& Alto \\
-			\hline
-	\caption{Rischi individuati}
-	\end{longtable}
+			\bottomrule
+		\end{tabularx}
+		
+		\caption{Rischi individuati}
+		\label{tab:rischi}
+		
+	\end{table}
 
 
 \subsection{Livello strumenti}
