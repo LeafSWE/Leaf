@@ -27,7 +27,23 @@
 %-------------------FINE pacchetti utilizzati --------------------------------------------
 
 %-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
-\newcommand{\intestazioni}[1]{
+\newcommand{\intestazioni}[1]{	
+	\fancypagestyle{myfront}{
+		\hypersetup{
+				colorlinks=true,
+				linkcolor=black,
+		}
+		\pagenumbering{Roman}
+		\fancyhf{}
+		\lhead{Leaf}
+		\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
+		\rhead{#1}
+		\cfoot{\thepage~di \pageref{LastFrontPage}}
+		\renewcommand{\headrulewidth}{0.4pt}
+		\renewcommand{\footrulewidth}{0.4pt}
+	}
+
+	
 	\fancypagestyle{mymain}{
 		\hypersetup{
 				colorlinks=true,
@@ -50,22 +66,9 @@
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
-
-	\fancypagestyle{myfront}{
-		\hypersetup{
-				colorlinks=true,
-				linkcolor=black,
-		}
-		\pagenumbering{Roman}
-		\fancyhf{}
-		\lhead{Leaf}
-		\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-		\rhead{#1}
-		\cfoot{\thepage~di \pageref{LastFrontPage}}
-		\renewcommand{\headrulewidth}{0.4pt}
-		\renewcommand{\footrulewidth}{0.4pt}
-	}
 }
+	
+
 %-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
 
 
