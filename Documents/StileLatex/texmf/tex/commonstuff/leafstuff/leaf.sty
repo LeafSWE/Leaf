@@ -10,7 +10,7 @@
 \RequirePackage{url}			% per scrivere gli indirizzi Internet
 \RequirePackage{enumerate} % liste  lettere
 \RequirePackage{subfiles}
-\RequirePackage[bookmarks=false,hyperfootnotes=false]{hyperref}
+\RequirePackage[bookmarks=false,hyperfootnotes=false,colorlinks=true]{hyperref}
 \RequirePackage{fancyhdr}
 
 \RequirePackage{longtable}
@@ -27,8 +27,8 @@
 %-------------------FINE pacchetti utilizzati --------------------------------------------
 
 %-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
-\newcommand{\intestazioni}[1]{	
-	\fancypagestyle{myfront}{
+\newcommand{\intestazioni}[1]{
+\fancypagestyle{myfront}{
 		\hypersetup{
 				colorlinks=true,
 				linkcolor=black,
@@ -66,9 +66,8 @@
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
-}
-	
 
+}
 %-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
 
 
