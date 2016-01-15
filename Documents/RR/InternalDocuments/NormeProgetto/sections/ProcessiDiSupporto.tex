@@ -288,13 +288,8 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 				\item devono essere presente un riferimento alla tabella all'interno dell'indice delle tabelle.
 			\end{itemize}
 			
-			Al fine di uniformare lo stile delle tabelle, esse devono possedere le seguenti caratteristiche:
-			\begin{itemize}
-				\item ogni riga della tabella, comprese le intestazioni, deve essere limitata superiormente ed inferiormente da una linea continua orizzontale;
-				\item ogni colonna della tabella deve essere limitata nel suo lato sinistro e destro da una linea continua verticale;
-				\item i titoli delle colonne presenti all'interno dell'intestazione devono essere scritti in grassetto ed il primo carattere deve essere maiuscolo. Il testo deve essere centrato.
-			\end{itemize}
-			La descrizione di una tabella deve essere posizionata sotto di essa.		
+			Al fine di uniformare lo stile delle tabelle in tutti i documenti, è stato creato un template \LaTeX contente lo stile predefinito di una tabella.
+	
 			
 	\paragraph{Tipologie di documenti}
 		\subparagraph{Documenti formali}
@@ -516,23 +511,23 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			Le verifiche che devono essere effettuate ai diagrammi dei casi d'uso, innanzitutto, devono riguardare il rispetto dello standard UML, soprattutto riguardanti inclusioni, generalizzazioni e estensioni. Successivamente si deve verificare che verificare che ciò che descrive il diagramma sia effettivamente il sistema che vogliamo rappresentare. Per quest'ultimo punto bisogna porre particolare attenzione sull'identificazione degli attori. Per questo motivo è prevista una \hyperref[par:Procedura di verifica degli attori dei diagrammi UML]{procedura di verifica degli attori dei diagrammi UML} in questo documento.\\ 
 		\paragraph{Issue tracking}
 		L'issue tracking è un'attività di supporto per i \verificatori\ ai quali permette di tenere traccia potenziali errori, segnalandoli al \responsabilediprogetto. Lo strumento scelto per la gestione di qusta attività è GitHub(vedi sezione \hyperref[par:IssueTrk GitHub]{Strumenti})Questo strumento è utile anche al \responsabilediprogetto\ per assegnare i compiti di correzione degli errori. 
-		\subparagraph{Sintassi di una label}
-		Le label sono delle etichette che è possibile associare ad ogni issue. Ogni etichetta rappresenta lo stato nel quale si trova l'issue. Le uniche etichette che sono accettate sono le seguenti:
-		\begin{itemize}
-			\item \textbf{Request}: rappresenta la richiesta di una issue;
-			\item \textbf{Question}: identifica una issue nella quale si sta discutendo per risolvere il problema;
-			\item \textbf{ToDo}: identifica una issue per la quale è stata trovata la soluzione ma questa deve ancora essere applicata;
-			\item \textbf{Working}: identifica una issue alla quale un membro del gruppo sta lavorando per applicare la soluzione;
-			\item \textbf{Rejected}: identifica una issue che non è stata accettata poiché risulta essere futile o dannosa;
-			\item \textbf{Done}: identifica una issue che è stata completata.
-		\end{itemize}				
-		\subparagraph{Sintassi di una Issue}
+			\subparagraph{Sintassi di una label}
+		Le label sono delle etichette che è possibile associare ad ogni issue. Ogni etichetta rappresenta lo stato nel quale si trova la issue. Le uniche etichette che sono accettate sono le seguenti:
+			\begin{itemize}
+				\item \textbf{Request}: rappresenta la richiesta di una issue;
+				\item \textbf{Question}: identifica una issue nella quale si sta discutendo per risolvere il problema;
+				\item \textbf{ToDo}: identifica una issue per la quale è stata trovata la soluzione ma questa deve ancora essere applicata;
+				\item \textbf{Working}: identifica una issue alla quale un membro del gruppo sta lavorando per applicare la soluzione;
+				\item \textbf{Rejected}: identifica una issue che non è stata accettata poiché risulta essere futile o dannosa;
+				\item \textbf{Done}: identifica una issue che è stata completata.
+			\end{itemize}				
+			\subparagraph{Sintassi di una Issue}
 		Ogni issue avrà un nome che dovrà seguire la seguente notazione: \begin{center}\textbf{[D]:[S]}\end{center} dove:
-		\begin{itemize} 
-			\item \textbf{D} rappresenta la sigla del documento di interesse;
-			\item \textbf{S} rappresenta la sintesi della descrizione del problema.
-		\end{itemize}
-		Segue, poi, la descrizione della issue. Questa dovrà obbligatoriamente contenere:
+			\begin{itemize} 
+				\item \textbf{D} rappresenta la sigla del documento di interesse;
+				\item \textbf{S} rappresenta la sintesi della descrizione del problema.
+			\end{itemize}
+			Segue, poi, la descrizione della issue. Questa dovrà obbligatoriamente contenere:
 		\begin{itemize} 
 			\item dove si trova il problema. Questo va specificato tramite sezione e, possibilmente, il numero di riga dove inizia il problema;
 			\item una descrizione dettagliata del problema che deve comprendere:
@@ -542,6 +537,31 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			\end{itemize}
 			\item la motivazione per cui si è ritenuto necessario sollevare una issue.
 		\end{itemize}
+		
+		\paragraph{Resoconto attività di verifica sui documenti}
+			\subparagraph{Attività manuale di verifica}		
+		Ogni attività manuale di verifica sui documenti deve essere accompagnata da un resoconto. Il resoconto deve contenere il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
+		\begin{itemize}
+			\item periodi troppo lunghi o complessi;
+			\item parole non appropriate;
+			\item incongruenze;
+			\item errori concettuali.		
+		\end{itemize}
+		Al fine di rendere più veloce e chiara l'analisi di queste voci, è consigliabile che questi dati vengano rappresentati in forma tabellare.\\
+		Inoltre, deve essere sempre presente una tabella contenente il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
+			\begin{itemize}
+				\item termini candidati ad essere aggiunti al \glossario;
+				\item termini aggiunti al \glossario.
+			\end{itemize}
+			\subparagraph{Attività automatica di verifica}
+			Ogni attività automatica di verifica sui documenti deve essere accompagnata da un resoconto. Il resoconto deve contenere il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
+			\begin{itemize}
+			\item errori ortografici;
+			\item utilizzo errato \LaTeX;
+			\item errori riguardanti norme tipografiche;		
+			\end{itemize}
+		
+		Inoltre, devono essere riportarti gli indici Gulpease calcolati per ognuno dei documenti sui quali è stata effettuata attività di verifica.
 			
 	\subsubsection{Procedure}	
 	\paragraph{Tecniche di analisi}
@@ -556,6 +576,11 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		\subparagraph{Analisi dinamica}
 		L’analisi dinamica è una forma di valutazione di un sistema software, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.
 		
+		\subparagraph{Resoconto attività di verifica sui documenti}	
+		La stesura dell'attività del resoconto dell'attività di verifica dovrà essere fatta al termine dell'attività di verifica. Il \verificatore\ dovrà riportare il numero di occorrenze per ognuna delle voci definite nella sezione norme. Qualora fossero stati trovati degli errori nelle attività di verifica precedenti, il numero di errori trovati andrà a sommarsi al numero di errori trovati nelle attività precedenti.
+		
+		Inoltre, il verificatore, nel caso in cui dovesse trovare termini mancanti nel glossario, dovrà aggiornare la tabella definita nelle norme che regolano l'attività manuale di verifica.
+			
 		\subparagraph{Gestione di una issue}
 		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura per la segnalazione e gestione del ticketing di una issue è la seguente:
 		\begin{enumerate}

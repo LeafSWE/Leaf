@@ -1,5 +1,3 @@
-
-
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{leaf}[2016/01/10 Custom Package]
 
@@ -29,46 +27,48 @@
 %-------------------FINE pacchetti utilizzati --------------------------------------------
 
 %-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
-\fancypagestyle{mymain}{
-	\hypersetup{
-			colorlinks=true,
-			linkcolor=blue,
-			anchorcolor=black,
-			citecolor=black,
-			urlcolor=blue,
-	}
-	\pagenumbering{arabic}
-	\fancyhf{}
-	\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-	\rhead{Norme di progetto}
-	\cfoot{
+\newcommand{\intestazioni}[1]{	
+	\fancypagestyle{myfront}{
 		\hypersetup{
-			colorlinks=true,
-			linkcolor=black,
+				colorlinks=true,
+				linkcolor=black,
 		}
-		\thepage~di \pageref{LastPage}
+		\pagenumbering{Roman}
+		\fancyhf{}
+		\lhead{Leaf}
+		\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
+		\rhead{#1}
+		\cfoot{\thepage~di \pageref{LastFrontPage}}
+		\renewcommand{\headrulewidth}{0.4pt}
+		\renewcommand{\footrulewidth}{0.4pt}
 	}
-	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}
-}
 
-\fancypagestyle{myfront}{
-	\hypersetup{
-			colorlinks=true,
-			linkcolor=black,
+	
+	\fancypagestyle{mymain}{
+		\hypersetup{
+				colorlinks=true,
+				linkcolor=blue,
+				anchorcolor=black,
+				citecolor=black,
+				urlcolor=blue,
+		}
+		\pagenumbering{arabic}
+		\fancyhf{}
+		\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
+		\rhead{#1}
+		\cfoot{
+			\hypersetup{
+				colorlinks=true,
+				linkcolor=black,
+			}
+			\thepage~di \pageref{LastPage}
+		}
+		\renewcommand{\headrulewidth}{0.4pt}
+		\renewcommand{\footrulewidth}{0.4pt}
 	}
-	\pagenumbering{Roman}
-	\fancyhf{}
-<<<<<<< HEAD
-	\lhead{Leaf}
-=======
-	\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
->>>>>>> fe2f293b1336af164dbc978c630a231aa085f380
-	\rhead{Norme di progetto}
-	\cfoot{\thepage~di \pageref{LastFrontPage}}
-	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}
 }
+	
+
 %-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
 
 
@@ -113,6 +113,10 @@
 %da modificare ad ogni avanzamento di versione
 %----------------INIZIO comandi personalizzati documenti con versione-------------------------------------------------
 \newcommand{\pianodiprogettov}{\textit{Piano di progetto v1.00}}
+
+\newcommand{\pdn}{\textit{Piano di progetto v1.00}}
+
+
 \newcommand{\pianodiqualificav}{\textit{Piano di qualifica v1.00}}
 \newcommand{\normediprogettov}{\textit{Norme di progetto v1.00}}
 \newcommand{\studiodifattibilitav}{\textit{Studio di fattibilità v1.00}}
@@ -165,6 +169,7 @@
 %-------------------FINE creazione subsubparagraph--------------------------------------
 
 \newcommand{\logo}{ {\includegraphics[height=10em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}\par} }
+
 
 %-------------------FINE comandi personalizzati-----------------------------------------
 
