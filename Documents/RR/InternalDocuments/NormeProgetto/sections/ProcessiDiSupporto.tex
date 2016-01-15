@@ -175,7 +175,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			Le norme che regolano un elenco sono le seguenti:
 			\begin{itemize}
 				\item la prima parola di un elenco deve essere maiuscola, fatta eccezione nel caso in cui l'elenco inizi con il carattere `:';
-				\item ogni elemento dell'elenco, tranne l'ultimo, deve terminare con il carattere `;'. È fatta eccezione nel caso in cui l'elemento sia composto da più frasi, allora è permesso il `.'.
+				\item ogni elemento dell'elenco, tranne l'ultimo, deve terminare con il carattere `;'. È fatta eccezione nel caso in cui l'elemento sia composto da molte frasi, allora è permesso il `.';
 				\item l'ultimo elemento di un elenco deve sempre terminare con il carattere `.'.
 			\end{itemize}
 È necessario usare elenchi numerato quando è l'ordine degli elementi è rilevante. Per gli elenchi numerati valgono le seguenti regole:
@@ -285,10 +285,11 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 			\begin{itemize}
 				\item devono essere numerate in ordine crescente;
 				\item devono essere seguite da una breve descrizione;
-				\item devono essere presente un riferimento alla tabella all'interno dell'indice delle tabelle.
+				\item devono essere presente un riferimento alla tabella all'interno dell'indice delle tabelle;
+				\item si consiglia le linee verticali all'interno delle tabelle, solo se queste ne dovessero aumentare la leggibilità.
 			\end{itemize}
 			
-			Al fine di uniformare lo stile delle tabelle in tutti i documenti, è stato creato un template \LaTeX contente lo stile predefinito di una tabella.
+			Al fine di uniformare lo stile delle tabelle in tutti i documenti, è stato creato un template \LaTeX\ contente lo stile predefinito di una tabella.
 	
 			
 	\paragraph{Tipologie di documenti}
@@ -391,11 +392,11 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup latex. È stato scelto questo strumento poiché permette una facile separazione tra formattazione e presentazione. La scelta dell'editor da utilizzare è lasciata libera ai membri del gruppo.
 		
 			\subparagraph{Template}
-			Per poter creare omogeneità tra i documenti, è stato creato un template latex nel quale sono state definite tutte le regole tipografiche da applicare al documento. Questo permette di poter scrivere i documenti senza dover tener conto della loro formattazione.
+			Per poter creare omogeneità tra i documenti, è stato creato un template \LaTeX\ nel quale sono state definite tutte le regole tipografiche da applicare al documento. Questo permette di poter scrivere i documenti senza dover tener conto della loro formattazione.
 			\subparagraph{Comandi personalizzati}
-			Sono stati definiti dei comandi latex personalizzati al fine di poter rendere più semplice ed immediata l'applicazione delle norme tipografiche. Questi comandi si occupano delle corretta formattazione del testo secondo le norme che sono state definite. La lista dei comandi è presente nella sezione formati.
+			Sono stati definiti dei comandi \LaTeX\ personalizzati al fine di poter rendere più semplice ed immediata l'applicazione delle norme tipografiche. Questi comandi si occupano delle corretta formattazione del testo secondo le norme che sono state definite. La lista dei comandi è presente nella sezione formati.
 			\subparagraph{Rilevamento errori ortografici}
-			(STRUMENTO DA SCEGLIERE)
+			Al fine di semplificare l'operazione di individuazione e correzione degli errori ortografici, è stato creato uno script bash \frmfile{OrtographicCheck.sh}.
 
 \subsection{Processo di configurazione}
 	\subsubsection{Norme}
@@ -579,7 +580,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 		\subparagraph{Resoconto attività di verifica sui documenti}	
 		La stesura dell'attività del resoconto dell'attività di verifica dovrà essere fatta al termine dell'attività di verifica. Il \verificatore\ dovrà riportare il numero di occorrenze per ognuna delle voci definite nella sezione norme. Qualora fossero stati trovati degli errori nelle attività di verifica precedenti, il numero di errori trovati andrà a sommarsi al numero di errori trovati nelle attività precedenti.
 		
-		Inoltre, il verificatore, nel caso in cui dovesse trovare termini mancanti nel glossario, dovrà aggiornare la tabella definita nelle norme che regolano l'attività manuale di verifica.
+		Inoltre, il \verificatore, nel caso in cui dovesse trovare termini mancanti nel glossario, dovrà aggiornare la tabella definita nelle norme che regolano l'attività manuale di verifica.
 			
 		\subparagraph{Gestione di una issue}
 		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura per la segnalazione e gestione del ticketing di una issue è la seguente:
