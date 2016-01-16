@@ -2,53 +2,91 @@
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
 \usepackage{graphicx}
+\usepackage[T1]{fontenc}	% codifica dei font in uscita
+\usepackage{url}		% per scrivere gli indirizzi Internet
+\usepackage{enumerate} % liste  lettere
+\usepackage{subfiles}
+\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{appendix}
+\newcommand{\g}{\tiny\textit{\ped{g}}\normalsize}
 \setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
 \setcounter{tocdepth}{5} % aggiunge indice paragrafi
 
-% \graphicspath{{images/}{../images/}}
+\graphicspath{{images/}{../../../StileLatex/texmf/tex/commonstuff/leafstuff/logo/}}
 
-\usepackage{subfiles}
-
-\usepackage[bookmarks=false,hyperfootnotes=false]{hyperref}
-\hypersetup{
+\fancypagestyle{mymain}{
+	\hypersetup{
 			colorlinks=true,
 			linkcolor=blue,
 			anchorcolor=black,
 			citecolor=black,
 			urlcolor=blue,
+	}
+	\pagenumbering{arabic}
+	\fancyhf{}
+	\lhead{\includegraphics[height=1.5em, width=3.3em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}}
+	\rhead{Studio di Fattibilità}
+	\cfoot{
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+		}
+		\thepage~di \pageref{LastPage}
+	}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
 }
+
+\fancypagestyle{myfront}{
+	\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+	}
+	\pagenumbering{Roman}
+	\fancyhf{}
+	\lhead{\includegraphics[height=1.5em, width=3.3em]{./logoNoSfondo} \DeclareGraphicsExtensions{.png}}
+	\rhead{Studio di Fattibilità}
+	\cfoot{\thepage~di \pageref{LastFrontPage}}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+
 \begin{document}
-\begin{titlepage}
-	\centering
-	{\huge\bfseries CLIPS\par}
-	Communication \& Localization with Indoor Positioning Systems \\*
-	\line(1,0){350} \\
-	%\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
-	{\scshape\LARGE Università di Padova \par}
-	\vspace{1cm}
-	{\scshape\Large Studio di fattibilità\par}
-	\vspace{1.5cm}
-	
-	\vspace{2cm}
-	{\Large\itshape Davide Castello, Cristian Andrighetto\par}
-	
-	\vfill \vfill
-	\begin{tabular}{c|c}
-	{\hfill \textbf{Versione}} & 1.00\\ \\
-	{\hfill\textbf{Data Redazione}} & 27/12/2015  \\ \\
-	{\hfill\textbf{Redazione}} &  \\ \\
-	{\hfill\textbf{Verifica}} &  \\ \\
-	{\hfill\textbf{Approvazione}} &  \\ \\
-	{\hfill\textbf{Uso}} & \\ \\
-	{\hfill\textbf{Distribuzione}} & \\ \\
-	\end{tabular}
-\end{titlepage}
+\pagestyle{myfront}
+	\begin{titlepage}
+		\centering
+		{\huge\bfseries CLIPS\par}
+		Communication \& Localization with Indoor Positioning Systems \\*
+		\line(1,0){350} \\
+		%\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
+		{\scshape\LARGE Università di Padova \par}
+		\vspace{1cm}
+		{\scshape\Large Studio di Fattibilità\par}
+		\vspace{2cm}
+		\begin{center}
+		{\includegraphics[height=10em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}\par}
+		\end{center}
+		\vfill \vfill
+		\begin{tabular}{c|c}
+			{\hfill \textbf{Versione}} & 1.00\\ \\
+			{\hfill\textbf{Data Redazione}} & 27/12/2015  \\ \\
+			{\hfill\textbf{Redazione}} &  \\ \\
+			{\hfill\textbf{Verifica}} &  \\ \\
+			{\hfill\textbf{Approvazione}} &  \\ \\
+			{\hfill\textbf{Uso}} & \\ \\
+			{\hfill\textbf{Distribuzione}} & \\ \\
+		\end{tabular}
+	\end{titlepage}
 	
 	\newpage
 
 	\tableofcontents
-
+	
+	\label{LastFrontPage}
+	
 	\newpage
+	\pagestyle{mymain}
 		\subfile{sections/Introduzione}
 	\newpage
 		\subfile{sections/StudioDiFattibilitaDelCapitolatoC2}
@@ -56,4 +94,5 @@
 		\subfile{sections/StudioDiFattibilitaDegliAltriCapitolati}
 	\newpage
 		\subfile{sections/Conclusione}
+\label{LastPage}
 \end{document}
