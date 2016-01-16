@@ -1,2 +1,2 @@
 # SWE
-progetto di ingegneria del softaware
+Progetto di Ingegneria del Software
