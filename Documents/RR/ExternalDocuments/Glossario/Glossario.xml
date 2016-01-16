@@ -1,50 +1,529 @@
 <glossario>
-    <voce>
-        <termine>Vagiolla</termine>
-        <descrizione>
-            Ed ama la vagiolla
-        </descrizione>
-    </voce>
-    <voce>
-        <termine>Bag</termine>
-        <descrizione>
-            Eorrore
-        </descrizione>
-    </voce>
-    <voce>
-        <termine>Bug</termine>
-        <descrizione>
-            Dizione errata di bag
-        </descrizione>
-    </voce>
-    <voce>
-        <termine>Sancio</termine>
-        <descrizione>
-            Guerriero
-        </descrizione>
-    </voce>
-    <voce>
-        <termine>Romano</termine>
-        <descrizione>
-            Abitante di napoli
-        </descrizione>
-    </voce>
-    <voce>
-        <termine>Amedeo</termine>
-        <descrizione>
-            Nome di nonno
-        </descrizione>
-    </voce>
-    <voce>
-        <termine>Nonno</termine>
-        <descrizione>
-            Vedi Gilf
-        </descrizione>
-    </voce>
-    <voce>
-        <termine>Gilf</termine>
-        <descrizione>
-            Milf troppo matura
-        </descrizione>
-    </voce>
+	<voce>
+		<termine>
+			Astah
+		</termine>
+		<descrizione>
+			Strumento per la modellazione di diagrammi UML. Fra le varie funzionalità, questo software supporta la creazione di: diagrammi delle classi, diagrammi dei casi d’uso, diagrammi delle attività, diagrammi di sequenza e diagrammi dei componenti
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Template Latex
+		</termine>
+		<descrizione>
+			Esempio di struttura da seguire per un documento in \LaTeX
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Latex
+		</termine>
+		<descrizione>
+			Linguaggio di markup, basato sul principio WYSIWYM (What You See Is What You Mean), e utilizzato per la composizione di testi. Si presta particolarmente alla stesura di documenti tecnici molto lunghi, in modo concorrente, da parte di persone diverse
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Google
+		</termine>
+		<descrizione>
+			Google Inc. è un'azienda statunitense che offre servizi online. Tra la grande quantità di prodotti offerti troviamo il motore di ricerca Google, il sistema operativo Android\\g e servizi web quali YouTube, Gmail, Google Maps e altri
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Google Drive
+		</termine>
+		<descrizione>
+			Google Drive è un servizio, in ambiente cloud computing, di memorizzazione e sincronizzazione online introdotto da Google il 24 aprile 2012. Il servizio comprende il file hosting, il file sharing e la modifica collaborativa di documenti inizialmente fino a 5 GB, da ottobre 2013 fino a 15 GB gratuiti (inclusivi dello spazio di memorizzazione di Gmail e delle foto di Google+) estendibili fino a 30 TB in totale
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Git
+		</termine>
+		<descrizione>
+			Sistema software di controllo di versione distribuito
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			GitHub
+		</termine>
+		<descrizione>
+			Servizio web di hosting per lo sviluppo di progetti software che usa il sistema di controllo di versione Git. GitHub offre diversi piani per repository privati sia a pagamento, sia gratuiti, molto utilizzati per lo sviluppo di progetti open source
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Repository
+		</termine>
+		<descrizione>
+			Ambiente di un sistema informativo in cui vengono gestiti metadati attraverso tabelle relazionali. Il repository utilizzato dal gruppo Leaf è fornito dalla piattaforma GitHub
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Ticket
+		</termine>
+		<descrizione>
+			Associazione tra una persona e un'attività ad essa assegnata
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Diagramma di Gantt
+		</termine>
+		<descrizione>
+			Il diagramma di Gantt è uno strumento di supporto alla gestione dei progetti. Usato principalmente nelle attività di gestione del progetto, è costruito partendo da un asse orizzontale, usato per rappresentare l’arco temporale totale del progetto, suddiviso in fasi incrementali, e da un asse verticale, usato per rappresentare delle mansioni o attività che costituiscono il progetto. Un diagramma di Gantt permette dunque la rappresentazione grafica di un calendario di attività, utile al fine di pianificare, coordinare e tracciare specifiche attività in un progetto dando una chiara illustrazione dello stato d’avanzamento del progetto rappresentato
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Monospace
+		</termine>
+		<descrizione>
+			Stile di scrittura che utilizza caratteri monospaziati, ovvero dove tutti i caratteri, indipendentemente dalla lettera, occupano la stessa larghezza
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			PNG
+		</termine>
+		<descrizione>
+			Acronimo di Portable Network Graphics, è un formato per memorizzare le immagini
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Android
+		</termine>
+		<descrizione>
+			Sistema operativo open source per dispositivi mobili sviluppato da Google
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Java
+		</termine>
+		<descrizione>
+			Linguaggio di programmazione orientato agli oggetti, specificatamente progettato per essere il più possibile indipendente dalla piattaforma di esecuzione
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			PDF
+		</termine>
+		<descrizione>
+			Acronimo di Portable Document Format, è un formato sviluppato da Adobe Systems per la rappresentazione di documenti in modo indipendente dall’hardware e dal software utilizzati per la visualizzazione o generazione
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			CamelCase
+		</termine>
+		<descrizione>
+			Pratica nata durante gli anni settanta di scrivere parole composte o frasi unendo tutte le parole tra loro, ma lasciando le loro iniziali maiuscole
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Beacon
+		</termine>
+		<descrizione>
+			Trasmettitore bluetooth
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Telegram
+		</termine>
+		<descrizione>
+			Servizio di messaggistica istantanea multipiattaforma, erogato dalla società Telegram LLC, utilizzato per l'invio e la ricezione di mesaggi tramite Internet
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Skype
+		</termine>
+		<descrizione>
+			Skype è un software proprietario freeware di messaggistica istantanea e VoIP
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Teamwork
+		</termine>
+		<descrizione>
+			Strumento per la gestione delle attività
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			UML
+		</termine>
+		<descrizione>
+			Acronimo di Unified Modelling Language, è un linguaggio di modellazione e specifica basato sul paradigma object-oriented. Attraverso tale linguaggio è possibile definire i diagrammi dei casi d’uso, delle attività e delle classi
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Bluetooth
+		</termine>
+		<descrizione>
+			Standard tecnico-industriale di trasmissione dati per reti personali senza fili attraverso una frequenza radio sicura a corto raggio
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Unicode
+		</termine>
+		<descrizione>
+			Sistema di codifica che assegna un numero univoco ad ogni carattere usato per la scrittura di testi, in maniera indipendente dalla lingua, dalla piattaforma informatica e dal programma utilizzato
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			BOM
+		</termine>
+		<descrizione>
+			Acronimo di Byte Order Mark, è una piccola sequenza di byte che viene posizionata all'inizio di un flusso di dati di puro testo (tipicamente un file) per indicarne il tipo di codifica Unicode
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Linguaggio di markup
+		</termine>
+		<descrizione>
+			Insieme di regole che descrivono i meccanismi di rappresentazione (strutturali, semantici o presentazionali) di un testo che, utilizzando convenzioni standardizzate, sono utilizzabili su più supporti. La tecnica di formattazione per mezzo di marcatori (o espressioni codificate) richiede quindi una serie di convenzioni, ovvero di un linguaggio a marcatori di documenti
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			PERT
+		</termine>
+		<descrizione>
+			Acronimo di Project Evaluation and Review Technique, è un metodo statistico di determinazione dei tempi delle attività di progetto (ma può essere applicato anche ai costi). Rispetto alla semplice stima a valore singolo, il metodo presuppone la determinazione di valori di stima ottimale, probabile e pessimistico che risultano più adeguati a valutare tempi e costi di attività di progetto che presentano incertezza o complessità
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			WBS
+		</termine>
+		<descrizione>
+			Acronimo di Working Breakdown Structure, è l'elenco di tutte le attività di un progetto
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Indice Gulpease
+		</termine>
+		<descrizione>
+			Indice di leggibilità di un testo tarato sulla lingua italiana. Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Navigazione indoor
+		</termine>
+		<descrizione>
+			Navigazione effettuata all'interno di un edificio o di una struttura
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			BLE
+		</termine>
+		<descrizione>
+			Acronimo di Bluetooth Low Energy, detto anche Bluetooth Smart è una tecnologia per reti personali wireless progettata e commercializzata dal Bluetooth Special Interest Group, finalizzata ad applicazioni nel settore sanitario, fitness, sicurezza, e intrattenimento domestico. Rispetto al classico Bluetooth\\g, Bluetooth smart è destinato a fornire il consumo di energia notevolmente ridotto e costi pur mantenendo un range di comunicazione simile 
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			IPS
+		</termine>
+		<descrizione>
+			Acronimo di Internal Positioning System, è un sistema per la localizzazione di oggetti o persone all'interno di un edificio utilizzando onde radio, campi magnetici, segnali acustici o altre informazioni sensoriali raccolti da dispositivi mobili
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Smart places
+		</termine>
+		<descrizione>
+			Luoghi che permettono in qualche modo l'interazione con le persone presenti
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Modello incrementale
+		</termine>
+		<descrizione>
+			Nell'ambito dell'ingegneria informatica è un modello di sviluppo di un progetto software basato su pianificazione ,analisi dei requisiti, item progettazione, implementazione, test, valutazione
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Fase
+		</termine>
+		<descrizione>
+			Nell’ambito dell’ingegneria del software si intende un segmento temporale che cattura stati o transizioni di un ciclo di vita
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Milestone
+		</termine>
+		<descrizione>
+			In italiano "Pietra miliare", indica importanti traguardi in termini di tempo o di attività, che sanciscono una metrica di avanzamento del progetto
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Freedcamp
+		</termine>
+		<descrizione>
+			Strumento opensource per la gestione delle attività
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Notebook
+		</termine>
+		<descrizione>
+			Nell'ambito dello strumento Teamwork\\g si intende uno strumento che permette di scrivere, modificare e salvare delle note
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Dashboard
+		</termine>
+		<descrizione>
+			Nell'ambito dello strumento Teamwork\\g si intende uno strumento che permette di verificare le attività segnate, il loro stato di avanzamento e di accedere ai vari strumenti offeri da Teamwork\\g
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Slack
+		</termine>
+		<descrizione>
+			Strumento per la collaborazione creato da Stewart Butterfield, Eric Costello, Cal Henderson, e Serguei Mourachov
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Google Calendar
+		</termine>
+		<descrizione>
+			Sistema di calendari concepito da Google\\g. Google\\g offre la possibilità di creare più calendari, di condividerli e importarli da altri servizi online(Yahoo! Calendar, MSN Calendar, ecc.) o sul computer(iCal, Outlook, ecc.). Google Calendar è parte integrante dell'account Google\\g e si integra con gli altri servizi
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Task
+		</termine>
+		<descrizione>
+			In italiano "attività", compito che può essere svolto da una singola persona o da un gruppo molto ristretto
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Capitolato
+		</termine>
+		<descrizione>
+			Documento tecnico, in genere allegato ad un contratto di appalto, che vi fa riferimento per definire in quella sede le specifiche tecniche delle opere che andranno ad eseguirsi per effetto del contratto stesso
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			iBeacon
+		</termine>
+		<descrizione>
+			Sistema di posizionamento indoor, descritto da Apple come “una nuova classe di trasmettitori, a bassa potenza e a basso costo, che possono notificare la propria presenza a dispositivi vicini con iOS7 e iOS8”. La tecnologia consente ad uno smartphone o ad un altro dispositivo di effettuare delle azioni quando sono nelle vicinanza di un iBeacon. La tecnologia iBeacon sfrutta la tecnologia Bluetooth Low Energy (BLE\\g), conosciuta anche come Bluetooth Smart. iBeacon usa la percezione di prossimità del Bluetooth Low Energy per trasmettere un identificativo unico universale (UUID), che sarà poi letto da una specifica app o sistema operativo. Una volta letto il segnale, l’app può svolgere varie azioni programmate come accedere ad un social network o inviare una notifica push
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Proximity marketing
+		</termine>
+		<descrizione>
+			Tecnica di marketing che opera su un'area geografica delimitata e precisa attraverso tecnologie di comunicazione di tipo visuale e mobile con lo scopo di promuovere la vendita di prodotti e servizi
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Open source
+		</termine>
+		<descrizione>
+			Software di cui gli autori (più precisamente i detentori dei diritti) rendono pubblico il codice sorgente, permettendo a programmatori indipendenti di apportarvi modifiche. Questa possibilità è regolata tramite l’applicazione di apposite licenze d’uso
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Software
+		</termine>
+		<descrizione>
+			In informatica, è l’informazione o le informazioni utilizzate da uno o più sistemi informatici e memorizzate su uno o più supporti informatici. Tali informazioni possono essere quindi rappresentate da uno o più programmi, oppure da uno o più dati, oppure da una combinazione delle due
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Prodotto
+		</termine>
+		<descrizione>
+			Nei documenti del progetto \progetto, il termine “prodotto” indica il risultato di una attività, sia esso un documento, del codice sorgente o un qualsiasi risultato verificabile
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Team
+		</termine>
+		<descrizione>
+			Col termine Team, o con la sua traduzione italiana (Gruppo), nei documenti del progetto \progetto\ si intendono le persone che fanno parte del gruppo \leaf
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Processo
+		</termine>
+		<descrizione>
+			Insieme di attività collegate tra loro
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Scala
+		</termine>
+		<descrizione>
+			Linguaggio di programmazione di tipo general-purpose multi-paradigma studiato per integrare le caratteristiche e funzionalità dei linguaggi orientati agli oggetti e dei linguaggi funzionali. La compilazione di codice sorgente Scala produce Java bytecode per l'esecuzione su una JVM
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Akka
+		</termine>
+		<descrizione>
+			Toolkit e runtime per la costruzione di altamente concorrenti, distribuita e resiliente applicazioni message-driven su una JVM
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Internet of Things
+		</termine>
+		<descrizione>
+			In italiano "Internet delle cose", è un neologismo riferito all'estensione di Internet al mondo degli oggetti e dei luoghi concreti. Introdotto da Kevin Ashton, co-fondatore e direttore esecutivo di Auto-ID Center (consorzio di ricerca con sede al MIT), durante una presentazione presso Procter and Gamble nel 1999. Il concetto fu in seguito sviluppato dall'agenzia di ricerca Gartner
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Algoritmo predittivo
+		</termine>
+		<descrizione>
+			Algoritmo che permette di fare delle previsioni sul futuro in base a dati statistici raccolti
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			MongoDB
+		</termine>
+		<descrizione>
+			 DBMS non relazionale, orientato ai documenti. Classificato come un database di tipo NoSQL, MongoDB si allontana dalla struttura tradizionale basata su tabelle dei database relazionali in favore di documenti in stile JSON con schema dinamico (MongoDB chiama il formato BSON), rendendo l'integrazione di dati di alcuni tipi di applicazioni più facile e veloce. Rilasciato sotto una combinazione della GNU Affero General Public License e dell'Apache License, MongoDB è un software libero e open source
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			iOS
+		</termine>
+		<descrizione>
+			Sistema operativo sviluppato da Apple per iPhone, iPod touch e iPad
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Sensore di localizzazione
+		</termine>
+		<descrizione>
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			CMM
+		</termine>
+		<descrizione>
+			Acronimo di Capability Maturity Model è un modello di sviluppo creato in seguito allo studio dei dati collezionati dalle organizzazioni di ricerca sovvenzionate dal Dipartimento della Difesa Statunitense. Il termine “capability” si riferisce alla misura dell’adeguatezza del processo rispetto agli scopi per cui è stato definito. Il termine “maturity”, invece, è legato al grado di formalità e ottimizzazione dei processi, proveniente da best practice, e riguarda in particolare la definizione formale delle fasi, la gestione dei risultati delle misure e l’ottimizzazione attiva dei processi
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			PDCA
+		</termine>
+		<descrizione>
+			Acronimo di Plan-Do-Check-Act, detto anche Ciclo di Deming o Ciclo di Miglioramento Continuo, è un metodo che permette di perseguire un continuo miglioramento della qualità nei processi
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Anomalia
+		</termine>
+		<descrizione>
+			Presenza di elementi non riconducibili al modello prototipo di una classificazione o al normale svolgimento di determinate funzioni
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Stub
+		</termine>
+		<descrizione>
+			Nell'Ingegneria del software è una porzione di codice utilizzata in sostituzione di altre funzionalità software. Uno stub può simulare il comportamento di codice esistente (come una Routine su un sistema remoto) o COM, e temporaneo sostituto di codice ancora da sviluppare. Gli stub sono perciò molto utili durante il porting di software, l'elaborazione distribuita e in generale durante lo sviluppo di software e il software testing
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Driver
+		</termine>
+		<descrizione>
+			Nell'Ingegneria del software è una porzione di codice utilizzata in sostituzione di altre funzionalità software. Un driver può simulare il comportamento di codice ancora da sviluppare. I driver sono molto utili nell'elaborazione distribuita e in generale durante lo sviluppo di software e il software testing
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Logger
+		</termine>
+		<descrizione>
+			Registrazione sequenziale e cronologica delle operazioni effettuate, da un utente, un amministratore o automatizzate, man mano che vengono eseguite dal sistema o applicazione
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Unit testing
+		</termine>
+		<descrizione>
+			Attività di testing(prova, collaudo) di singole unità software\\g. Per unità si intende normalmente il minimo componente di un programma dotato di una certa complessità e quindi che merita di essere testato
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Bug
+		</termine>
+		<descrizione>
+			In informatica identifica un errore nella scrittura di un programma software\\g. Meno comunemente, il termine bug può indicare un difetto di progettazione in un componente hardware, che ne causa un comportamento imprevisto o comunque diverso da quello specificato dal produttore
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Issue
+		</termine>
+		<descrizione>
+			In italiano "problema, questione", nei documenti riguardanti il progetto \progetto\ indica un qualche tipo di problema o errore
+		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			Tracy
+		</termine>
+		<descrizione>
+			Strumento sviluppato dal gruppo \textit{Don't Panic} per il tracciamento di requisiti e casi d'uso
+		</descrizione>			
+	</voce>
 </glossario>
