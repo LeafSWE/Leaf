@@ -1,0 +1,4 @@
+Quando si aggiunge una voce a Glossario.xml si deve eseguire lo script glossario.pl.
+Fatto questo verrà generato in automatico il codice latex necessario.
+Per compilare questo codice aprire l'ide preferito e fare Run, verrà prodotto un pdf vuoto, aprire il terminale e dare il comando makeglossaries Nomedelfile. questo genere dei file temporanei utile per il glossario. successivamente riaprire l'ide e rifare run.
+Dovrebbe essereci in questo modo il pdf con il glossario.
