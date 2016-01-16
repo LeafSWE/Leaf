@@ -1,0 +1,4 @@
+gulpease.pl e gulpeasepdf.pl sono due script perl per calcolare il gulpease di un file passato come argomento.
+gulpease.pl richiede un file di testo, mentre gulpeasepdf.pl un pdf. Entrambi sono stati testati solo su Ubuntu e non so come possano funzionare in Windows o Mac OS.
+Facendo dei test solitamente l'indice che viene restituito è di qualche punto inferiore rispetto a quello calcolato dallo strumento online disponibile alla pagina http://xoomer.virgilio.it/roberto-ricci/variabilialeatorie/esperimenti/leggibilita.htm
+
