@@ -9,7 +9,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Template Latex
+			template Latex
 		</termine>
 		<descrizione>
 			Esempio di struttura da seguire per un documento in \LaTeX
@@ -57,7 +57,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Repository
+			repository
 		</termine>
 		<descrizione>
 			Ambiente di un sistema informativo in cui vengono gestiti metadati attraverso tabelle relazionali. Il repository utilizzato dal gruppo Leaf è fornito dalla piattaforma GitHub
@@ -65,7 +65,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Ticket
+			ticket
 		</termine>
 		<descrizione>
 			Associazione tra una persona e un'attività ad essa assegnata
@@ -73,7 +73,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Diagramma di Gantt
+			diagramma di Gantt
 		</termine>
 		<descrizione>
 			Il diagramma di Gantt è uno strumento di supporto alla gestione dei progetti. Usato principalmente nelle attività di gestione del progetto, è costruito partendo da un asse orizzontale, usato per rappresentare l’arco temporale totale del progetto, suddiviso in fasi incrementali, e da un asse verticale, usato per rappresentare delle mansioni o attività che costituiscono il progetto. Un diagramma di Gantt permette dunque la rappresentazione grafica di un calendario di attività, utile al fine di pianificare, coordinare e tracciare specifiche attività in un progetto dando una chiara illustrazione dello stato d’avanzamento del progetto rappresentato
@@ -129,7 +129,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Beacon
+			beacon
 		</termine>
 		<descrizione>
 			Trasmettitore bluetooth
@@ -193,7 +193,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Linguaggio di markup
+			linguaggio di markup
 		</termine>
 		<descrizione>
 			Insieme di regole che descrivono i meccanismi di rappresentazione (strutturali, semantici o presentazionali) di un testo che, utilizzando convenzioni standardizzate, sono utilizzabili su più supporti. La tecnica di formattazione per mezzo di marcatori (o espressioni codificate) richiede quindi una serie di convenzioni, ovvero di un linguaggio a marcatori di documenti
@@ -217,7 +217,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Indice Gulpease
+			indice Gulpease
 		</termine>
 		<descrizione>
 			Indice di leggibilità di un testo tarato sulla lingua italiana. Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico
@@ -225,7 +225,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Navigazione indoor
+			navigazione indoor
 		</termine>
 		<descrizione>
 			Navigazione effettuata all'interno di un edificio o di una struttura
@@ -249,7 +249,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Smart places
+			smart places
 		</termine>
 		<descrizione>
 			Luoghi che permettono in qualche modo l'interazione con le persone presenti
@@ -257,7 +257,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Modello incrementale
+			modello incrementale
 		</termine>
 		<descrizione>
 			Nell'ambito dell'ingegneria informatica è un modello di sviluppo di un progetto software basato su pianificazione ,analisi dei requisiti, item progettazione, implementazione, test, valutazione
@@ -265,7 +265,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Fase
+			fase
 		</termine>
 		<descrizione>
 			Nell’ambito dell’ingegneria del software si intende un segmento temporale che cattura stati o transizioni di un ciclo di vita
@@ -273,7 +273,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Milestone
+			milestone
 		</termine>
 		<descrizione>
 			In italiano "Pietra miliare", indica importanti traguardi in termini di tempo o di attività, che sanciscono una metrica di avanzamento del progetto
@@ -321,7 +321,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Task
+			task
 		</termine>
 		<descrizione>
 			In italiano "attività", compito che può essere svolto da una singola persona o da un gruppo molto ristretto
@@ -329,7 +329,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Capitolato
+			capitolato
 		</termine>
 		<descrizione>
 			Documento tecnico, in genere allegato ad un contratto di appalto, che vi fa riferimento per definire in quella sede le specifiche tecniche delle opere che andranno ad eseguirsi per effetto del contratto stesso
@@ -345,7 +345,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Proximity marketing
+			proximity marketing
 		</termine>
 		<descrizione>
 			Tecnica di marketing che opera su un'area geografica delimitata e precisa attraverso tecnologie di comunicazione di tipo visuale e mobile con lo scopo di promuovere la vendita di prodotti e servizi
@@ -353,7 +353,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Open source
+			open source
 		</termine>
 		<descrizione>
 			Software di cui gli autori (più precisamente i detentori dei diritti) rendono pubblico il codice sorgente, permettendo a programmatori indipendenti di apportarvi modifiche. Questa possibilità è regolata tramite l’applicazione di apposite licenze d’uso
@@ -361,7 +361,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Software
+			software
 		</termine>
 		<descrizione>
 			In informatica, è l’informazione o le informazioni utilizzate da uno o più sistemi informatici e memorizzate su uno o più supporti informatici. Tali informazioni possono essere quindi rappresentate da uno o più programmi, oppure da uno o più dati, oppure da una combinazione delle due
@@ -369,7 +369,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Prodotto
+			prodotto
 		</termine>
 		<descrizione>
 			Nei documenti del progetto \progetto, il termine “prodotto” indica il risultato di una attività, sia esso un documento, del codice sorgente o un qualsiasi risultato verificabile
@@ -377,7 +377,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Team
+			team
 		</termine>
 		<descrizione>
 			Col termine Team, o con la sua traduzione italiana (Gruppo), nei documenti del progetto \progetto\ si intendono le persone che fanno parte del gruppo \leaf
@@ -385,7 +385,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Processo
+			processo
 		</termine>
 		<descrizione>
 			Insieme di attività collegate tra loro
@@ -417,7 +417,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Algoritmo predittivo
+			algoritmo predittivo
 		</termine>
 		<descrizione>
 			Algoritmo che permette di fare delle previsioni sul futuro in base a dati statistici raccolti
@@ -441,7 +441,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Sensore di localizzazione
+			sensore di localizzazione
 		</termine>
 		<descrizione>
 		</descrizione>			
@@ -464,7 +464,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Anomalia
+			anomalia
 		</termine>
 		<descrizione>
 			Presenza di elementi non riconducibili al modello prototipo di una classificazione o al normale svolgimento di determinate funzioni
@@ -472,7 +472,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Stub
+			stub
 		</termine>
 		<descrizione>
 			Nell'Ingegneria del software è una porzione di codice utilizzata in sostituzione di altre funzionalità software. Uno stub può simulare il comportamento di codice esistente (come una Routine su un sistema remoto) o COM, e temporaneo sostituto di codice ancora da sviluppare. Gli stub sono perciò molto utili durante il porting di software, l'elaborazione distribuita e in generale durante lo sviluppo di software e il software testing
@@ -480,7 +480,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Driver
+			driver
 		</termine>
 		<descrizione>
 			Nell'Ingegneria del software è una porzione di codice utilizzata in sostituzione di altre funzionalità software. Un driver può simulare il comportamento di codice ancora da sviluppare. I driver sono molto utili nell'elaborazione distribuita e in generale durante lo sviluppo di software e il software testing
@@ -488,7 +488,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Logger
+			logger
 		</termine>
 		<descrizione>
 			Registrazione sequenziale e cronologica delle operazioni effettuate, da un utente, un amministratore o automatizzate, man mano che vengono eseguite dal sistema o applicazione
@@ -496,7 +496,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Unit testing
+			unit testing
 		</termine>
 		<descrizione>
 			Attività di testing(prova, collaudo) di singole unità software\\g. Per unità si intende normalmente il minimo componente di un programma dotato di una certa complessità e quindi che merita di essere testato
@@ -504,7 +504,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Bug
+			bug
 		</termine>
 		<descrizione>
 			In informatica identifica un errore nella scrittura di un programma software\\g. Meno comunemente, il termine bug può indicare un difetto di progettazione in un componente hardware, che ne causa un comportamento imprevisto o comunque diverso da quello specificato dal produttore
@@ -512,7 +512,7 @@
 	</voce>
 	<voce>
 		<termine>
-			Issue
+			issue
 		</termine>
 		<descrizione>
 			In italiano "problema, questione", nei documenti riguardanti il progetto \progetto\ indica un qualche tipo di problema o errore
