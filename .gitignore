@@ -1,5 +1,6 @@
 #gedit temp files
 *.*~
+*~
 
 #latex
 *.aux
@@ -8,3 +9,6 @@
 *.synctex.gz(busy)
 *.toc
 *.lot
+*.glo
+*.ist
+*.out
