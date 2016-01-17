@@ -1,0 +1,53 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{leaf}
+
+\titlepage{}
+
+\author{Oscar Elia Conti, Marco Zanella}
+\date{24/12/2015}
+\intestazioni{Analisi dei requisiti}
+\pagestyle{myfront}
+\begin{document}
+	\begin{titlepage}
+		\centering
+		{\huge\bfseries CLIPS\par}
+		Communication \& Localization with Indoor Positioning Systems \\*
+		\line(1,0){350} \\
+		%\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
+		{\scshape\LARGE Università di Padova \par}
+		\vspace{1cm}
+		{\scshape\Large Analisi dei requisiti\par}
+		\vspace{2cm}
+		\begin{center}
+		{\includegraphics[height=10em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}\par}
+		\end{center}
+		\vfill \vfill
+		\begin{tabular}{c|c}
+			{\hfill \textbf{Versione}} 			& 1.00			\\
+			{\hfill\textbf{Data Redazione}} 		& 2015-12-28  		\\ 
+			{\hfill\textbf{Redazione}} 			&      \\
+			{\hfill\textbf{Verifica}} 				&  \\ 
+			{\hfill\textbf{Approvazione}} 		&  \\
+			{\hfill\textbf{Uso}} 					& Interno			\\
+			{\hfill\textbf{Distribuzione}} 			& \leaf			\\
+		\end{tabular}
+	\end{titlepage}
+	\newpage
+	\include{diarioModificheNP}
+	
+	\newpage
+	\label{LastFrontPage}
+	\newpage
+	\pagestyle{mymain}
+         
+         	\newpage
+		\subfile{sections/introduzione}
+	
+	%cambiare nomeFileSenzaEstensione con il nome del file
+	%questi file vanno messi in sections e ne deve esistere uno per ogni sezione
+
+		
+	\label{LastPage}
+
+\end{document}
