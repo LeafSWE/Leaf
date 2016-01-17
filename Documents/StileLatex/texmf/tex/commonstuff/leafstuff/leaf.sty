@@ -19,10 +19,15 @@
 \RequirePackage{appendix}
 \RequirePackage[official]{eurosym} % per riprodurre il simbolo €
 \RequirePackage{caption}
+\RequirePackage[table]{xcolor}
+\RequirePackage{tabu}
+
 
 \captionsetup{tableposition=top,figureposition=bottom,font=small}
 \captionsetup{format=hang,labelfont={sf,bf}}
 \captionsetup[table]{position=bottom}
+\newcolumntype{C}{>{\centering\arraybackslash}X} % nell'ambiente tabularx è possibile usare C invece di X per centrare
+\renewcommand{\arraystretch}{1.27}  % Aumenta il padding delle tabelle
 
 %-------------------FINE pacchetti utilizzati --------------------------------------------
 
