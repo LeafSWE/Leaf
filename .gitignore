@@ -12,3 +12,5 @@
 *.glo
 *.ist
 *.out
+*.glg
+*.gls
