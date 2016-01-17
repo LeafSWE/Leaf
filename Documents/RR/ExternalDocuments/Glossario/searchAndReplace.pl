@@ -1,5 +1,4 @@
 #!/usr/bin/perl -w
-#lo spazio è colpa del comando \g
 use XML::LibXML;
 use strict;
 
@@ -16,18 +15,19 @@ close(FILE);
 my @newlines;
 foreach my $x (@lines) {
     foreach my $voce (@voci) {
-    	my $word = $voce->findvalue("termine");
-    	print $word."\n";
-    	$word=~s/ //;
+        my $word = $voce->findvalue("termine");
+        $word =~ s/^\s+|\s+$//g;
         #$x =~ s/$word/\\gls{$word}\\g/g;
-        $x =~ s/$word[,]/$word\\g,/;
-        $x =~ s/$word[.]/$word\\g./;
-        $x =~ s/$word[;]/$word\\g;/;
-        $x =~ s/$word[\n]/$word\\g\n/;
-        $x =~ s/$word[ ]/$word\\g /;
-        $x =~ s/$word[\]]/$word\\g\]/;
+        $x =~ s/$word /$word\\g\\ /i;
+        $x =~ s/$word,/$word\\g,/i;
+        $x =~ s/$word\./$word\\g./i;
+        $x =~ s/$word;/$word\\g;/i;
+        $x =~ s/$word:/$word\\g:/i;
+        $x =~ s/$word\s/$word\\g\\ \n/i;
+        
+        $x =~ s/$word\]/$word\\g\]/i;
         #$x =~ s/$word[\}][^\\g]/\\gls{$word}\\g\}/g;
-        $x =~ s/$word[\)]/$word\\g\)/;
+        $x =~ s/$word\)/$word\\g\)/i;
     }
     push(@newlines,$x);
 }

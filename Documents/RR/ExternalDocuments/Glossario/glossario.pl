@@ -14,9 +14,11 @@ my $newfile = "\\documentclass[a4paper]{article}
 \\intestazioni{Glossario}\n";
 foreach my $voce (@voci) {
     my $termine = $voce->findvalue("termine");
-    $termine =~ s/\s+//;
+    $termine =~ s/^\s+|\s+$//g;
+    $termine = ucfirst($termine);
     my $descrizione = $voce->findvalue("descrizione");
-    $descrizione =~ s/\n//;
+    $descrizione =~ s/^\s+|\s+$//g;
+    $descrizione = ucfirst($descrizione);
     $newfile = $newfile."\\newglossaryentry{$termine}{name=$termine,description={$descrizione}}\n";
 }
 
