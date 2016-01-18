@@ -150,7 +150,7 @@
 \newcommand{\frmrev}[1]{\textbf{#1}}
 \newcommand{\frmphase}[1]{\textbf{#1}}
 
-\newcommand{\progetto}{\textif{CLIPS}}
+\newcommand{\progetto}{\textit{CLIPS}}
 
 %-------------------INIZIO creazione subsubparagraph--------------------------------------
 \makeatletter
@@ -172,7 +172,15 @@
 \makeatother
 %-------------------FINE creazione subsubparagraph--------------------------------------
 
-\newcommand{\logo}{ {\includegraphics[height=10em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}\par} }
+\newcommand{\logo}{ 
+	\vspace{1.5cm}
+	{\includegraphics[height=10em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}\par}
+	\vspace{2cm}
+	{\includegraphics[scale=0.7]{logoMiriade/miriade} \DeclareGraphicsExtensions{.png}\par}
+	\vspace{2cm}
+	\vfill \vfill
+	\texttt{leaf.gruppo@gmail.com}	 
+}
 
 
 %-------------------FINE comandi personalizzati-----------------------------------------
