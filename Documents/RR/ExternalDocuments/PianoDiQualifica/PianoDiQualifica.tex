@@ -1,102 +1,51 @@
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage[italian]{babel}
-\usepackage{longtable}
-\usepackage[T1]{fontenc}	% codifica dei font in uscita
-\usepackage{url}		% per scrivere gli indirizzi Internet
-\usepackage{enumerate} % liste  lettere
-\usepackage{subfiles}
-\usepackage[bookmarks=false,hyperfootnotes=false,colorlinks=true]{hyperref}
-\usepackage{fancyhdr}
-\usepackage{appendix}
-\usepackage{booktabs}
-\usepackage{caption}
-\usepackage{tabularx}
+\usepackage{leaf}
 \usepackage{float}
 \restylefloat{table}
-\newcommand{\g}{\tiny\textit{\ped{g}}\normalsize}
-
-\setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
-\setcounter{tocdepth}{5} % aggiunge indice paragrafi
 
 \graphicspath{{images/}{../../../StileLatex/texmf/tex/commonstuff/leafstuff/logo/}}
 
-\fancypagestyle{mymain}{
-	\hypersetup{
-			colorlinks=true,
-			linkcolor=blue,
-			anchorcolor=black,
-			citecolor=black,
-			urlcolor=blue,
-	}
-	\pagenumbering{arabic}
-	\fancyhf{}
-	\lhead{\includegraphics[height=1.5em, width=3.3em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-	\rhead{Piano di Qualifica}
-	\cfoot{
-		\hypersetup{
-			colorlinks=true,
-			linkcolor=black,
-		}
-		\thepage~di \pageref{LastPage}
-	}
-	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}
-}
+\titlepage{}
 
-\fancypagestyle{myfront}{
-	\hypersetup{
-			colorlinks=true,
-			linkcolor=black,
-	}
-	\pagenumbering{Roman}
-	\fancyhf{}
-	\lhead{\includegraphics[height=1.5em, width=3.3em]{./logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-	\rhead{Piano di Qualifica}
-	\cfoot{\thepage~di \pageref{LastFrontPage}}
-	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}
-}
-
+\author{Andrighetto Cristian, Castello Davide}
+\date{27/12/2015}
+\intestazioni{Piano di Qualifica}
+\pagestyle{myfront}
 \begin{document}
-	\pagestyle{myfront}
 	\begin{titlepage}
 		\centering
-		{\huge\bfseries CLIPS\par}
-		Communication \& Localization with Indoor Positioning Systems \\*
-		\line(1,0){350} \\
-		%\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
-		{\scshape\LARGE Università di Padova \par}
-		\vspace{1cm}
-		{\scshape\Large Piano di Qualifica\par}
-		\vspace{2cm}
-		\begin{center}
-		{\includegraphics[height=10em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}\par}
-		\end{center}
-		\vfill \vfill
+	{\huge\bfseries CLIPS\par}
+	Communication \& Localization with Indoor Positioning Systems \\*
+	\line(1,0){350} \\
+	{\scshape\LARGE Università di Padova \par}
+	\vspace{1cm}
+	{\scshape\Large Piano di Qualifica \par}
+	\logo
+	\newpage
 		\begin{tabular}{c|c}
-			{\hfill \textbf{Versione}} & 1.00\\ \\
-			{\hfill\textbf{Data Redazione}} & 27/12/2015  \\ \\
-			{\hfill\textbf{Redazione}} &  \\ \\
-			{\hfill\textbf{Verifica}} &  \\ \\
-			{\hfill\textbf{Approvazione}} &  \\ \\
-			{\hfill\textbf{Uso}} & \\ \\
-			{\hfill\textbf{Distribuzione}} & \\ \\
+			{\hfill \textbf{Versione}} 			& 1.00			\\
+			{\hfill\textbf{Data Redazione}} 		& 2015-12-27  		\\ 
+			{\hfill\textbf{Redazione}} 			&  Andrighetto Cristian \\ 
+											& Castello Davide       \\
+			{\hfill\textbf{Verifica}} 				&  Tavella Federico   \\
+			{\hfill\textbf{Approvazione}} 		&  \\
+			{\hfill\textbf{Uso}} 					& Esterno			\\
+			{\hfill\textbf{Distribuzione}} 			& \leaf			\\
 		\end{tabular}
 	\end{titlepage}
 	
+	%\newpage
+	%	\include{sectionsDiarioModifichePQ}
+	
 	\newpage
-	
-	\tableofcontents
+		\tableofcontents
 	
 	\newpage
-	
-	\listoftables
+		\listoftables
 	
 	\label{LastFrontPage}
 	\newpage
-	\pagestyle{mymain}
+		\pagestyle{mymain}
 	\subfile{sections/Introduzione}
 \newpage
 	\subfile{sections/VisioneGeneraleDellaStrategiaDiGestioneDellaQualita}
