@@ -6,7 +6,7 @@
 \author{Andrighetto Cristian, Castello Davide}
 \date{27/12/2015}
 \intestazioni{Studio di Fattibilità}
-\pagestyle{myfront}
+\pagenumbering{gobble}
 \begin{document}
 	\begin{titlepage}
 		\centering
@@ -31,9 +31,11 @@
     \end{titlepage}
 	
 	\newpage
-	\include{diarioModificheSF}
+		\pagestyle{myfront}
+		\include{diarioModificheSF}
 	
-	\tableofcontents
+	\newpage
+		\tableofcontents
 	
 	\label{LastFrontPage}
 	
