@@ -305,14 +305,6 @@
 	</voce>
 	<voce>
 		<termine>
-			Slack
-		</termine>
-		<descrizione>
-			Strumento per la collaborazione creato da Stewart Butterfield, Eric Costello, Cal Henderson, e Serguei Mourachov
-		</descrizione>			
-	</voce>
-	<voce>
-		<termine>
 			Google Calendar
 		</termine>
 		<descrizione>
@@ -525,5 +517,13 @@
 		<descrizione>
 			Strumento sviluppato dal gruppo \textit{Don't Panic} per il tracciamento di requisiti e casi d'uso
 		</descrizione>			
+	</voce>
+	<voce>
+		<termine>
+			slack
+		</termine>
+		<descrizione>
+			Margine temporale che definisce per quanto tempo si possa ritardare un'attività.
+		</descrizione>
 	</voce>
 </glossario>
