@@ -2,78 +2,25 @@
 
 %-------------------INIZIO pacchetti utilizzati -----------------------------------------
 \usepackage{leaf}
-%-------------------FINE pacchetti utilizzati -----------------------------------------
 
-\setcounter{secnumdepth}{5} % aggiunge contatore ai paragrafi
-\setcounter{tocdepth}{5} % aggiunge indice paragrafi
+\titlepage{}
 
-
-%-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
-\fancypagestyle{mymain}{
-	\hypersetup{
-			colorlinks=true,
-			linkcolor=blue,
-			anchorcolor=black,
-			citecolor=black,
-			urlcolor=blue,
-	}
-	\pagenumbering{arabic}
-	\fancyhf{}
-	\lhead{\includegraphics[height=1.5em, width=3.3em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-
-	\rhead{Norme di progetto}
-	\cfoot{
-		\hypersetup{
-			colorlinks=true,
-			linkcolor=black,
-		}
-		\thepage~di \pageref{LastPage}
-	}
-	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}
-}
-
-\fancypagestyle{myfront}{
-	\hypersetup{
-			colorlinks=true,
-			linkcolor=black,
-	}
-	\pagenumbering{Roman}
-	\fancyhf{}
-	\lhead{\includegraphics[height=1.5em, width=3.3em]{./logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-	\rhead{Norme di progetto}
-	\cfoot{\thepage~di \pageref{LastFrontPage}}
-	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}
-}
-%-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
 \author{Eduard Bicego}
 \date{19/01/2016}
-
-
+\intestazioni{Verbale 2016-01-19}
 \pagestyle{myfront}
-
-
-
 \begin{document}
 \begin{titlepage}
 	\centering
 	{\huge\bfseries CLIPS\par}
 	Communication \& Localization with Indoor Positioning Systems \\*
 	\line(1,0){350} \\
-	%\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
 	{\scshape\LARGE Università di Padova \par}
 	\vspace{1cm}
 	%devono essere cambiato il titolo ogni volta
-	{\scshape\Large Verbale Riunione interna 2016-01-19\par}
-	\vspace{2cm}
-	
-\begin{center}
-	{\includegraphics[height=10em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}\par}
-	\end{center}
-		
-	\vfill \vfill
-	%devono essere compilati questi campi ogni volta
+	{\scshape\Large Verbale Riunione esterna 2016-01-19 \par}
+	\logo
+	\newpage
 	\begin{tabular}{c|c}
 		{\hfill \textbf{Versione}} 			& 1.00				\\ \\
 		{\hfill\textbf{Data Redazione}} 	& 2016-01-13  		\\ \\

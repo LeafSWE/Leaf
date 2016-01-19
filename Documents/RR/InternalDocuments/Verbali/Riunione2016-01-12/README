@@ -1,8 +1,0 @@
-Al fine di eliminare tutti i file in più creati della compilazione dei file latex è stato creato lo script deleteTemFile.sh
-Questo script è da lanciare ogni qualvolta si vuole caricare il documento su github al fine di rendere l'azione più agevole e di non caricare file temporanei non voluti.
-Il template latex non è ancora terminato:
-	-la prima pagina va sistemata
-	-vanno sistemate le testatine
-In ogni caso è utilizzabile per chi volesse.
-All'interno dei file nei commenti sono presenti le cose che vanno cambiate.
-È stato deciso di creare un file per ogni sezione al fine di rendere la redazione e la correzione più agevoli.
