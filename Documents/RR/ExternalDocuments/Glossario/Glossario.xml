@@ -20,15 +20,31 @@
 			Latex
 		</termine>
 		<descrizione>
-			Linguaggio di markup, basato sul principio WYSIWYM (What You See Is What You Mean), e utilizzato per la composizione di testi. Si presta particolarmente alla stesura di documenti tecnici molto lunghi, in modo concorrente, da parte di persone diverse
+			Macroprocessore di \TeX che ne implementa un linguaggio di mark-up
 		</descrizione>
 	</voce>
+   <voce>
+      <termine>
+         Linguaggio di mark-up
+      </termine>
+      <descrizione>
+         Insieme di regole che descrivono i meccanismi di rappresentazione (strutturali, semantici o presentazionali) di un testo.
+      </descrizione>
+   </voce>
+   <voce>
+      <termine>
+         TeX
+      </termine>
+      <descrizione>
+         Sistema di composizione di testi dedicato alla scrittura ottimale principalmente di formule matematiche
+      </descrizione>
+   </voce>
 	<voce>
 		<termine>
 			Google
 		</termine>
 		<descrizione>
-			Google Inc. è un'azienda statunitense che offre servizi online. Tra la grande quantità di prodotti offerti troviamo il motore di ricerca Google, il sistema operativo Android\\g e servizi web quali YouTube, Gmail, Google Maps e altri
+			Google Inc. è un'azienda statunitense che offre servizi online. Tra la grande quantità di prodotti offerti troviamo il motore di ricerca Google, il sistema operativo Android e servizi web quali YouTube, Gmail, Google Maps e molti altri
 		</descrizione>
 	</voce>
 	<voce>
@@ -36,7 +52,7 @@
 			Google Drive
 		</termine>
 		<descrizione>
-			Google Drive è un servizio, in ambiente cloud computing, di memorizzazione e sincronizzazione online introdotto da Google il 24 aprile 2012. Il servizio comprende il file hosting, il file sharing e la modifica collaborativa di documenti inizialmente fino a 5 GB, da ottobre 2013 fino a 15 GB gratuiti (inclusivi dello spazio di memorizzazione di Gmail e delle foto di Google+) estendibili fino a 30 TB in totale
+			Google Drive è un servizio, in ambiente cloud computing, di memorizzazione e sincronizzazione di file online introdotto da Google il 24 aprile 2012. Il servizio comprende il file hosting, il file sharing e la modifica collaborativa di documenti inizialmente fino a 5 GB, da ottobre 2013 fino a 15 GB gratuiti (inclusivi dello spazio di memorizzazione di Gmail e delle foto di Google+) estendibili fino a 30 TB in totale
 		</descrizione>
 	</voce>
 	<voce>
@@ -76,7 +92,7 @@
 			diagramma di Gantt
 		</termine>
 		<descrizione>
-			Il diagramma di Gantt è uno strumento di supporto alla gestione dei progetti. Usato principalmente nelle attività di gestione del progetto, è costruito partendo da un asse orizzontale, usato per rappresentare l’arco temporale totale del progetto, suddiviso in fasi incrementali, e da un asse verticale, usato per rappresentare delle mansioni o attività che costituiscono il progetto. Un diagramma di Gantt permette dunque la rappresentazione grafica di un calendario di attività, utile al fine di pianificare, coordinare e tracciare specifiche attività in un progetto dando una chiara illustrazione dello stato d’avanzamento del progetto rappresentato
+			Il diagramma di Gantt è uno strumento che permette di modellizzare la pianificazione dei compiti necessari alla realizzazione di un progetto. È costruito partendo da un asse orizzontale, usato per rappresentare l’arco temporale totale del progetto, e da un asse verticale, usato per rappresentare delle mansioni o attività che costituiscono il progetto.
 		</descrizione>
 	</voce>
 	<voce>
@@ -140,7 +156,7 @@
 			Telegram
 		</termine>
 		<descrizione>
-			Servizio di messaggistica istantanea multipiattaforma, erogato dalla società Telegram LLC, utilizzato per l'invio e la ricezione di mesaggi tramite Internet
+			Servizio di messaggistica istantanea multipiattaforma, erogato dalla società Telegram LLC, utilizzato per l'invio e la ricezione di messaggi tramite Internet
 		</descrizione>
 	</voce>
 	<voce>
@@ -148,7 +164,7 @@
 			Skype
 		</termine>
 		<descrizione>
-			Skype è un software proprietario freeware di messaggistica istantanea e VoIP
+			Software proprietario freeware di messaggistica istantanea e VoIP
 		</descrizione>
 	</voce>
 	<voce>
@@ -156,7 +172,7 @@
 			Teamwork
 		</termine>
 		<descrizione>
-			Strumento per la gestione delle attività
+			Strumento per la gestione di progetto
 		</descrizione>
 	</voce>
 	<voce>
@@ -212,7 +228,7 @@
 			WBS
 		</termine>
 		<descrizione>
-			Acronimo di Working Breakdown Structure, è l'elenco di tutte le attività di un progetto
+			Acronimo di Working Breakdown Structure, è un albero gerarchico orientato al prodotto che viene suddiviso nel materiale, nel software, nei servizi, nei dati e nelle attrezzature che lo compongono da cui si ottiene l'elenco di tutte le attività di un progetto 
 		</descrizione>
 	</voce>
 	<voce>
@@ -236,7 +252,7 @@
 			BLE
 		</termine>
 		<descrizione>
-			Acronimo di Bluetooth Low Energy, detto anche Bluetooth Smart è una tecnologia per reti personali wireless progettata e commercializzata dal Bluetooth Special Interest Group, finalizzata ad applicazioni nel settore sanitario, fitness, sicurezza, e intrattenimento domestico. Rispetto al classico Bluetooth\\g, Bluetooth smart è destinato a fornire il consumo di energia notevolmente ridotto e costi pur mantenendo un range di comunicazione simile 
+			Acronimo di Bluetooth Low Energy, detto anche Bluetooth Smart è una tecnologia per reti personali wireless progettata e commercializzata dal Bluetooth Special Interest Group, finalizzata ad applicazioni nel settore sanitario, fitness, sicurezza, e intrattenimento domestico. Rispetto al classico Bluetooth, Bluetooth smart è destinato a fornire il consumo di energia notevolmente ridotto e costi pur mantenendo un range di comunicazione simile 
 		</descrizione>			
 	</voce>
 	<voce>
@@ -244,7 +260,7 @@
 			IPS
 		</termine>
 		<descrizione>
-			Acronimo di Internal Positioning System, è un sistema per la localizzazione di oggetti o persone all'interno di un edificio utilizzando onde radio, campi magnetici, segnali acustici o altre informazioni sensoriali raccolti da dispositivi mobili
+			Acronimo di Indoor Positioning System, è un sistema per la localizzazione di oggetti o persone all'interno di un edificio utilizzando onde radio, campi magnetici, segnali acustici o altre informazioni sensoriali raccolte da dispositivi mobili
 		</descrizione>			
 	</voce>
 	<voce>
@@ -260,7 +276,7 @@
 			modello incrementale
 		</termine>
 		<descrizione>
-			Nell'ambito dell'ingegneria informatica è un modello di sviluppo di un progetto software basato su pianificazione ,analisi dei requisiti, item progettazione, implementazione, test, valutazione
+			Nell'ambito dell'ingegneria informatica è un modello di sviluppo di un progetto software basato su pianificazione, analisi dei requisiti, progettazione, implementazione, test e valutazione
 		</descrizione>			
 	</voce>
 	<voce>
@@ -284,7 +300,7 @@
 			Freedcamp
 		</termine>
 		<descrizione>
-			Strumento opensource per la gestione delle attività
+			Strumento opensource per la gestione di progetto
 		</descrizione>			
 	</voce>
 	<voce>
@@ -292,7 +308,7 @@
 			Notebook
 		</termine>
 		<descrizione>
-			Nell'ambito dello strumento Teamwork\\g si intende uno strumento che permette di scrivere, modificare e salvare delle note
+			Nell'ambito dello strumento Teamwork si intende uno strumento che permette di scrivere, modificare e salvare delle note
 		</descrizione>			
 	</voce>
 	<voce>
@@ -300,7 +316,7 @@
 			Dashboard
 		</termine>
 		<descrizione>
-			Nell'ambito dello strumento Teamwork\\g si intende uno strumento che permette di verificare le attività segnate, il loro stato di avanzamento e di accedere ai vari strumenti offeri da Teamwork\\g
+			Nell'ambito dello strumento Teamwork si intende uno strumento che permette di verificare le attività segnate, il loro stato di avanzamento e di accedere ai vari strumenti offerti da Teamwork
 		</descrizione>			
 	</voce>
 	<voce>
@@ -308,7 +324,7 @@
 			Google Calendar
 		</termine>
 		<descrizione>
-			Sistema di calendari concepito da Google\\g. Google\\g offre la possibilità di creare più calendari, di condividerli e importarli da altri servizi online(Yahoo! Calendar, MSN Calendar, ecc.) o sul computer(iCal, Outlook, ecc.). Google Calendar è parte integrante dell'account Google\\g e si integra con gli altri servizi
+			Sistema di calendari concepito da Google. Google offre la possibilità di creare più calendari, di condividerli e importarli da altri servizi online(Yahoo! Calendar, MSN Calendar, ecc.) o sul computer(iCal, Outlook, ecc.). Google Calendar è parte integrante dell'account Google e si integra con gli altri servizi
 		</descrizione>			
 	</voce>
 	<voce>
@@ -324,7 +340,7 @@
 			capitolato
 		</termine>
 		<descrizione>
-			Documento tecnico, in genere allegato ad un contratto di appalto, che vi fa riferimento per definire in quella sede le specifiche tecniche delle opere che andranno ad eseguirsi per effetto del contratto stesso
+			Documento contrattuale che descrive cosa si attende il committente dall'appaltatore.
 		</descrizione>			
 	</voce>
 	<voce>
@@ -332,7 +348,7 @@
 			iBeacon
 		</termine>
 		<descrizione>
-			Sistema di posizionamento indoor, descritto da Apple come “una nuova classe di trasmettitori, a bassa potenza e a basso costo, che possono notificare la propria presenza a dispositivi vicini con iOS7 e iOS8”. La tecnologia consente ad uno smartphone o ad un altro dispositivo di effettuare delle azioni quando sono nelle vicinanza di un iBeacon. La tecnologia iBeacon sfrutta la tecnologia Bluetooth Low Energy (BLE\\g), conosciuta anche come Bluetooth Smart. iBeacon usa la percezione di prossimità del Bluetooth Low Energy per trasmettere un identificativo unico universale (UUID), che sarà poi letto da una specifica app o sistema operativo. Una volta letto il segnale, l’app può svolgere varie azioni programmate come accedere ad un social network o inviare una notifica push
+			Sistema di posizionamento indoor, descritto da Apple come «una nuova classe di trasmettitori, a bassa potenza e a basso costo, che possono notificare la propria presenza a dispositivi vicini con iOS7 e iOS8». La tecnologia consente ad uno smartphone o ad un altro dispositivo di effettuare delle azioni quando sono nelle vicinanza di un iBeacon. La tecnologia iBeacon sfrutta la tecnologia Bluetooth Low Energy (BLE), conosciuta anche come Bluetooth Smart. iBeacon usa la percezione di prossimità del Bluetooth Low Energy per trasmettere un identificativo unico universale (UUID), che sarà poi letto da una specifica app o sistema operativo. Una volta letto il segnale, l’app può svolgere varie azioni programmate come accedere ad un social network o inviare una notifica push
 		</descrizione>			
 	</voce>
 	<voce>
@@ -372,7 +388,7 @@
 			team
 		</termine>
 		<descrizione>
-			Col termine Team, o con la sua traduzione italiana (Gruppo), nei documenti del progetto \progetto\ si intendono le persone che fanno parte del gruppo \leaf
+			Col termine Team, o con la sua traduzione italiana 'gruppo', nei documenti del progetto \progetto\ si intendono le persone che fanno parte del gruppo \leaf
 		</descrizione>			
 	</voce>
 	<voce>
@@ -396,7 +412,7 @@
 			Akka
 		</termine>
 		<descrizione>
-			Toolkit e runtime per la costruzione di altamente concorrenti, distribuita e resiliente applicazioni message-driven su una JVM
+           È un toolkit per la creazione di applicazioni ad alta concorrenza, distribute, tolleranti a fallimenti a run-time, guidata da eventi eseguiti su Java Virtual Machine (JVM)
 		</descrizione>			
 	</voce>
 	<voce>
@@ -459,7 +475,7 @@
 			anomalia
 		</termine>
 		<descrizione>
-			Presenza di elementi non riconducibili al modello prototipo di una classificazione o al normale svolgimento di determinate funzioni
+			Deviazione dalla norma o situazione d'eccezione
 		</descrizione>			
 	</voce>
 	<voce>
@@ -467,7 +483,7 @@
 			stub
 		</termine>
 		<descrizione>
-			Nell'Ingegneria del software è una porzione di codice utilizzata in sostituzione di altre funzionalità software. Uno stub può simulare il comportamento di codice esistente (come una Routine su un sistema remoto) o COM, e temporaneo sostituto di codice ancora da sviluppare. Gli stub sono perciò molto utili durante il porting di software, l'elaborazione distribuita e in generale durante lo sviluppo di software e il software testing
+			Nell'Ingegneria del software è una porzione di codice utilizzata in sostituzione di altre funzionalità software. Uno stub può simulare il comportamento di codice esistente (come una Routine su un sistema remoto) o COM, e temporaneo sostituto da codice ancora da sviluppare. Gli stub sono perciò molto utili durante il porting di software, l'elaborazione distribuita e in generale durante lo sviluppo di software e il software testing
 		</descrizione>			
 	</voce>
 	<voce>
@@ -491,7 +507,7 @@
 			unit testing
 		</termine>
 		<descrizione>
-			Attività di testing(prova, collaudo) di singole unità software\\g. Per unità si intende normalmente il minimo componente di un programma dotato di una certa complessità e quindi che merita di essere testato
+			Attività di testing (prova, collaudo) di singole unità software. Per unità si intende normalmente il minimo componente di un programma dotato di una certa complessità e quindi che merita di essere testato
 		</descrizione>			
 	</voce>
 	<voce>
@@ -499,7 +515,7 @@
 			bug
 		</termine>
 		<descrizione>
-			In informatica identifica un errore nella scrittura di un programma software\\g. Meno comunemente, il termine bug può indicare un difetto di progettazione in un componente hardware, che ne causa un comportamento imprevisto o comunque diverso da quello specificato dal produttore
+			In informatica identifica un errore nella scrittura di un programma software. Meno comunemente, il termine bug può indicare un difetto di progettazione in un componente hardware, che ne causa un comportamento imprevisto o comunque diverso da quello specificato dal produttore
 		</descrizione>			
 	</voce>
 	<voce>

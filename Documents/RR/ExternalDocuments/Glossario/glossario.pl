@@ -25,32 +25,38 @@ foreach my $voce (@voci) {
 $newfile = $newfile."\\makeglossaries
 
 
+\\titlepage{}
+
+\\author{Zanella Marco}
+\\date{07/12/2015}
+\\intestazioni{Glossario}
+\\pagenumbering{gobble}
 \\begin{document}
-	\\begin{titlepage} 
-		\\centering
-		{\\huge\\bfseries CLIPS\\par}
-		Communication \\& Localization with Indoor Positioning Systems \\\\*
-		\\line(1,0){350} \\\\
-		%\\includegraphics[width=0.15\\textwidth]{example-image-1x1}\\par\\vspace{1cm}
-		{\\scshape\\LARGE Universit\\`a{} di Padova \\par}
-		\\vspace{1cm}
-		{\\scshape\\Large Norme di progetto\\par}
-		\\vspace{2cm}
-		\\begin{center}
-		{\\includegraphics[height=10em]{logoNoSfondo} \\DeclareGraphicsExtensions{.png}\\par}
-		\\end{center}
-		\\vfill \\vfill
+\\begin{titlepage}
+	\\centering
+	{\\huge\\bfseries CLIPS\\par}
+	Communication \\& Localization with Indoor Positioning Systems \\\\*
+	\\line(1,0){350} \\\\
+	{\\scshape\\LARGE Università di Padova \\par}
+	\\vspace{1cm}
+	%devono essere cambiato il titolo ogni volta
+	{\\scshape\\Large Glossario \\par}
+	\\logo
+	\\newpage
 		\\begin{tabular}{c|c}
-			{\\hfill \\textbf{Versione}} 			& 1.00			\\\\ \\\\
-			{\\hfill\\textbf{Data Redazione}} 		& 2015-12-24  		\\\\ \\\\
-			{\\hfill\\textbf{Redazione}} 			&  Marco Zanella      \\\\ \\\\
-			{\\hfill\\textbf{Verifica}} 				&  \\\\ \\\\
-			{\\hfill\\textbf{Approvazione}} 		&  \\\\ \\\\
-			{\\hfill\\textbf{Uso}} 					& \\\\ \\\\
-			{\\hfill\\textbf{Distribuzione}} 			& \\\\ \\\\
+			{\\hfill \\textbf{Versione}} 			& 1.00			\\\\[1ex]
+			{\\hfill\\textbf{Data Redazione}} 	& 2015-01-20  \\\\[1ex]
+			{\\hfill\\textbf{Redazione}} 			&  Marco Zanella      \\\\[1ex]
+			{\\hfill\\textbf{Verifica}} 			&  Eduard Bicego	\\\\[1ex]
+			{\\hfill\\textbf{Approvazione}} 		&  Federico Tavella	\\\\[1ex] 
+			{\\hfill\\textbf{Uso}} 				& Interno		\\\\[1ex] 
+			{\\hfill\\textbf{Distribuzione}} 		& \\leaf 	\\\\[1ex]
 		\\end{tabular}
 	\\end{titlepage}
 \\pagestyle{mymain}
+	
+		\\subfile{DiarioModificheG}
+	\\newpage
 
 \\glsaddall
 \\printglossary[style=indexgroup, nonumberlist]
