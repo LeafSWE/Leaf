@@ -14,50 +14,15 @@
 \usepackage{hyperref}
 
 
-\newcommand{\intestazioni}[1]{
-\fancypagestyle{myfront}{
-		\hypersetup{
-				colorlinks=true,
-				linkcolor=black,
-		}
-		\pagenumbering{Roman}
-		\fancyhf{}
-		\lhead{Leaf}
-		\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-	}
-		\fancypagestyle{mymain}{
-		\hypersetup{
-				colorlinks=true,
-				linkcolor=blue,
-				anchorcolor=black,
-				citecolor=black,
-				urlcolor=blue,
-		}
-		\pagenumbering{arabic}
-		\fancyhf{}
-		\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-		\rhead{#1}
-		\cfoot{
-			\hypersetup{
-				colorlinks=true,
-				linkcolor=black,
-			}
-			\thepage~di \pageref{LastPage}
-		}
-		\renewcommand{\headrulewidth}{0.4pt}
-		\renewcommand{\footrulewidth}{0.4pt}
-	}
-}
-
-
-\intestazioni{mymain}
 %\lhead{\includegraphics[height=1.5em, width=3.3em]{../../../StileLatex/texmf/tex/commonstuff/logo/leafstuff/logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
-
 
 \author{Federico Tavella}
 
 \address{
-	Gruppo Ingegneria del Software \textit{Leaf} \\
+	\includegraphics[scale=0.25]{logoNoSfondo} \\
+	\vspace{0.2cm}
+	Ingegneria del Software \\
+	Gruppo \textit{Leaf} \\
 }
 
 \signature{
@@ -68,8 +33,8 @@
 
 \date{22 gennaio 2016}
 
+
 \begin{document}
-\pagestyle{myfront}
 	\begin{letter}{
 		Alla C. Att.ne del committente: \\
 		Prof. Vardanega Tullio \\
@@ -106,7 +71,7 @@ Può trovare tutti i dettagli relativi all'offerta all'interno dei seguenti docu
 	
 \end{itemize}
 
-Come scritto nel \textit{Piano di progetto v1.00}, il gruppo ha stimato di riuscire a consegnare il prodotto richiesto entro la prima data fissata per la \textbf{Revisione di Accettazione}, preventivando costi per un importo totale di e 14 657,00 \euro. Di seguito si riporta l'elenco dei componenti del gruppo:
+Come scritto nel \textit{Piano di progetto v1.00}, il gruppo ha stimato di riuscire a consegnare il prodotto richiesto entro la prima data fissata per la \textbf{Revisione di Accettazione}, preventivando costi per un importo totale di e 14.925,00 \euro. Di seguito si riporta l'elenco dei componenti del gruppo:
 
 \begin{center}
 		\begin{tabular}{l c c}
