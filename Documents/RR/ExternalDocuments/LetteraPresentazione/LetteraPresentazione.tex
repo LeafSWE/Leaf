@@ -1,0 +1,137 @@
+%ricordarsi di compilare più di una volta
+\documentclass[a4paper,12pt]{letteracdp}
+
+%\usepackage{leaf}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{layaureo}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{eurosym}
+\usepackage{hyperref}
+
+
+\newcommand{\intestazioni}[1]{
+\fancypagestyle{myfront}{
+		\hypersetup{
+				colorlinks=true,
+				linkcolor=black,
+		}
+		\pagenumbering{Roman}
+		\fancyhf{}
+		\lhead{Leaf}
+		\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
+	}
+		\fancypagestyle{mymain}{
+		\hypersetup{
+				colorlinks=true,
+				linkcolor=blue,
+				anchorcolor=black,
+				citecolor=black,
+				urlcolor=blue,
+		}
+		\pagenumbering{arabic}
+		\fancyhf{}
+		\lhead{\includegraphics[height=1.5em, width=3.3em]{logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
+		\rhead{#1}
+		\cfoot{
+			\hypersetup{
+				colorlinks=true,
+				linkcolor=black,
+			}
+			\thepage~di \pageref{LastPage}
+		}
+		\renewcommand{\headrulewidth}{0.4pt}
+		\renewcommand{\footrulewidth}{0.4pt}
+	}
+}
+
+
+\intestazioni{mymain}
+%\lhead{\includegraphics[height=1.5em, width=3.3em]{../../../StileLatex/texmf/tex/commonstuff/logo/leafstuff/logo/logoNoSfondo} \DeclareGraphicsExtensions{.png}}
+
+
+\author{Federico Tavella}
+
+\address{
+	Gruppo Ingegneria del Software \textit{Leaf} \\
+}
+
+\signature{
+	il responsabile di progetto \par
+	\includegraphics[scale=0.6, trim=0 1cm 0 0cm]{../PianoDiProgetto/firme_componenti/ftavella_firma} \par
+	Federico Tavella
+	}
+
+\date{22 gennaio 2016}
+
+\begin{document}
+\pagestyle{myfront}
+	\begin{letter}{
+		Alla C. Att.ne del committente: \\
+		Prof. Vardanega Tullio \\
+		Prof. Cardin Riccardo \\
+		Dipartimento di Matematica \\
+		Università degli Studi di Padova \\
+		Via Trieste, 63 \\
+		35121 Padova}
+		
+		\opening{Egregio Prof.~Vardanega Tullio,}
+		Con la presente si comunica che il gruppo \textit{Leaf} intende comunicarLe ufficialmente il proprio impegno nel realizzare il prodotto da Lei commissionato, chiamato:
+\begin{center}
+	\textbf{CLIPS \\ Communication \& Localization with Indoor Positioning Systems}
+\end{center}
+proposto dall'azienda Miriade Spa, rappresentata dalla sig.ra Agnieszka Szambelan.
+Può trovare tutti i dettagli relativi all'offerta all'interno dei seguenti documenti, forniti in allegato:
+
+\begin{itemize}
+	\item \textit{Analisi dei requisiti v1.00} (\texttt{Esterni/AnalisiDeiRequisiti\_v1.00.pdf});
+
+	\item \textit{Piano di progetto v1.00} (\texttt{Esterni/PianoDiProgetto\_v1.00.pdf});
+
+	\item \textit{Piano di qualifica v1.00} (\texttt{Esterni/PianoDiQualifica\_v1.00.pdf});
+	
+	\item \textit{Glossario v1.00} (\texttt{Esterni/Glossario\_v1.00.pdf});
+	
+	\item \textit{Norme di progetto v1.00} (\texttt{Interni/NormeDiProgetto\_v1.00.pdf});
+
+	\item \textit{Studio di fattibilità v1.00} (\texttt{Interni/StudioDiFattibilita\_v1.00.pdf});
+
+	\item \textit{Verbali riunioni esterne}	(\texttt{Interni/Verbali});
+	
+	\item \textit{Verbali riunioni interne} (\texttt{Interni/Verbali}).
+	
+\end{itemize}
+
+Come scritto nel \textit{Piano di progetto v1.00}, il gruppo ha stimato di riuscire a consegnare il prodotto richiesto entro la prima data fissata per la \textbf{Revisione di Accettazione}, preventivando costi per un importo totale di e 14 657,00 \euro. Di seguito si riporta l'elenco dei componenti del gruppo:
+
+\begin{center}
+		\begin{tabular}{l c c}
+			\toprule
+			\textbf{Nominativo} & \textbf{Matricola} & \textbf{Email} \\
+			\midrule
+			Andrighetto Cristian & 1069882 & black.andrighetto94@gmail.com \\
+			%\midrule
+			Bicego Eduard & 1069767 & bic.studio@yahoo.it  \\
+			%\midrule
+			Castello Davide	& 1073151 &	 castel.davide@gmail.com\\
+			%\midrule
+			Conti Oscar Elia & 1071039 & conti.oscarelia@gmail.com \\
+			%\midrule
+			Tavella Federico & 1069038 & federicotavella.7@gmail.com\\
+			%\midrule
+			Tombolato Andrea & 1069144 & tombolato.andrea@gmail.com	 \\
+			%\midrule
+			Zanella Marco & 1074420 & zanna0150@gmail.com \\
+			\bottomrule
+		\end{tabular}
+\end{center}
+		
+		\closing{Rimango a Sua completa disposizione per qualsiasi chiarimento. RingraziandoLa anticipatamente per la Sua disponibilità, Le porgo distinti saluti,}
+		
+	\end{letter}
+
+\end{document}
