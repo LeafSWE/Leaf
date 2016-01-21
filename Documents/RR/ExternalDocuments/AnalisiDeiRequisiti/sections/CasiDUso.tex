@@ -44,7 +44,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter essere guidato dal sistema verso una destinazione scelta. Quando l'utente si trova in navigazione deve poter: interrompere la navigazione in corso, accedere ad indicazioni più dettagliate; 
-      \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla navigazione, ha attivato il Bluetooth, si trova all'interno di un edificio mappato, il dispositivo deve rilevare almeno un beacon
+      \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla navigazione, ha attivato il Bluetooth\g, si trova all'interno di un edificio mappato\g, il dispositivo deve rilevare almeno un beacon\g\ 
 ;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -63,7 +63,7 @@
     \item \textbf{Scenari Alternativi}:
       \begin{enumerate}
           \item Nel caso in cui l'utente non rispetti le indicazioni relative al percorso proposto viene visualizzato un errore (\hyperlink{UC1.6}{UC1.6});
-          \item Nel caso in cui l'utente si trovi in un luogo non coperto dal segnale di almeno un beacon viene visualizzato un errore (\hyperlink{UC1.7}{UC1.7});
+          \item Nel caso in cui l'utente si trovi in un luogo non coperto dal segnale di almeno un beacon\g\ viene visualizzato un errore (\hyperlink{UC1.7}{UC1.7});
 
       \end{enumerate}
     \item \textbf{Postcondizione}: l'utente ha raggiunto la destinazione scelta oppure ha interrotto la navigazione.
@@ -79,7 +79,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere ed inserire una destinazione da raggiungere, tra le destinazioni previste; 
-      \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla scelta della destinazione e il dispositivo rileva la presenza di un beacon;
+      \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla scelta della destinazione e il dispositivo rileva la presenza di un beacon\g;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -150,7 +150,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter avviare la navigazione in modo che il sistema calcoli il percorso e le relative indicazioni per guidare l'utente verso la destinazione scelta. Le indicazioni sono fornite in forma testuale; 
-      \item \textbf{Precondizione}: l'utente ha inserito una destinazione valida e il dispositivo rileva la presenza di un beacon;
+      \item \textbf{Precondizione}: l'utente ha inserito una destinazione valida e il dispositivo rileva la presenza di un beacon\g;
     \item \textbf{Inclusioni}:
       \begin{enumerate}
           \item Visualizzazione indicazioni (\hyperlink{UC1.5}{UC1.5});
@@ -167,12 +167,12 @@
     \item \textbf{Postcondizione}: la navigazione è stata interrotta e l'utente è stato riportato alla schermata principale dell'applicazione.
   \end{itemize}
 \hypertarget{UC1.4}{}
-\subsection{Caso d'uso UC1.4: Accesso a maggiori indicazioni}
+\subsection{Caso d'uso UC1.4: Accesso maggiori indicazioni}
 
         \begin{figure}[!h]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC1-4.png}
-            \caption{Caso d'uso UC1.4: Accesso a maggiori indicazioni}\label{fig:UC1.4} 
+            \caption{Caso d'uso UC1.4: Accesso maggiori indicazioni}\label{fig:UC1.4} 
         \end{figure}
 \begin{itemize}
 \item \textbf{Attori}: utente;
@@ -181,7 +181,7 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item L'utente può accede alle foto della prossima area (\hyperlink{UC1.4.1}{UC1.4.1});
+          \item L'utente può accedere alle foto della prossima area (\hyperlink{UC1.4.1}{UC1.4.1});
           \item L'utente può accedere alle indicazioni testuali estese (\hyperlink{UC1.4.2}{UC1.4.2});
           \item L'utente può accedere alla lista delle indicazioni utili per raggiungere, dall'area in cui si trova, la destinazione scelta (\hyperlink{UC1.4.3}{UC1.4.3});
 
@@ -221,7 +221,7 @@
     \item \textbf{Estensioni}:
       \begin{enumerate}
           \item Visualizzazione errore percorso (\hyperlink{UC1.6}{UC1.6});
-          \item Visualizzazione errore beacon (\hyperlink{UC1.7}{UC1.7});
+          \item Visualizzazione errore beacon\g\ (\hyperlink{UC1.7}{UC1.7});
 
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha presentato all'utente le indicazioni per raggiungere la destinazione scelta.
@@ -229,14 +229,14 @@
 \hypertarget{UC1.6}{}
 \subsection{Caso d'uso UC1.6: Visualizzazione errore percorso}
 \begin{itemize}
-    \item \textbf{Precondizione}: i beacon rilevati dal sistema non corrispondono a quelli previsti dal percorso calcolato;
+    \item \textbf{Precondizione}: i beacon\g\ rilevati dal sistema non corrispondono a quelli previsti dal percorso calcolato;
     \item \textbf{Postcondizione}: il sistema ha presentato all'utente un errore relativo al percorso errato.
   \end{itemize}
 \hypertarget{UC1.7}{}
 \subsection{Caso d'uso UC1.7: Visualizzazione errore beacon}
 \begin{itemize}
-    \item \textbf{Precondizione}: il dispositivo non è in grado di rilevare alcun beacon;
-    \item \textbf{Postcondizione}: il sistema ha presentato all'utente un errore relativo all'impossibilità di rilevare beacon.
+    \item \textbf{Precondizione}: il dispositivo non è in grado di rilevare alcun beacon\g;
+    \item \textbf{Postcondizione}: il sistema ha presentato all'utente un errore relativo all'impossibilità di rilevare beacon\g.
   \end{itemize}
 \hypertarget{UC2}{}
 \subsection{Caso d'uso UC2: Accesso alle informazioni}
@@ -249,7 +249,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter accedere alle informazioni riguardanti le aree vicine alla posizione in cui si trova e le informazioni relative all'edificio in cui si trova; 
-      \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alle informazioni, ha attivato il Bluetooth, si trova all'interno di un edificio mappato e il dispositivo deve rilevare almeno un beacon;
+      \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alle informazioni, ha attivato il Bluetooth\g, si trova all'interno di un edificio mappato\g\ e il dispositivo deve rilevare almeno un beacon\g;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -579,19 +579,19 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item Lo sviluppatore può accedere alle informazioni relative ai beacon circostanti (\hyperlink{UC5.1}{UC5.1});
+          \item Lo sviluppatore può accedere alle informazioni relative ai beacon\g\ circostanti (\hyperlink{UC5.1}{UC5.1});
           \item Lo sviluppatore può gestire i log (\hyperlink{UC5.2}{UC5.2});
 
       \end{enumerate}
     \item \textbf{Postcondizione}: lo sviluppatore ha usufruito delle funzionalità avanzate.
   \end{itemize}
 \hypertarget{UC5.1}{}
-\subsection{Caso d'uso UC5.1: Accesso informazioni beacon circostanti}
+\subsection{Caso d'uso UC5.1: Accesso informazioni beacon\g\ circostanti}
 \begin{itemize}
 \item \textbf{Attori}: sviluppatore;
-\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle informazioni relative ai beacon presenti nelle vicinanze. Tali informazioni riguardano: UUID, Major, Minor, livello di potenza del segnale, livello batteria, distanza approssimativa, formato del beacon, area coperta dal beacon; 
-      \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alle informazioni sui beacon circostanti ed ha il Bluetooth attivato;
-    \item \textbf{Postcondizione}: lo sviluppatore ha usufruito delle informazioni sui beacon circostanti.
+\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle informazioni relative ai beacon\g\ presenti nelle vicinanze. Tali informazioni riguardano: UUID, Major, Minor, livello di potenza del segnale, livello batteria, distanza approssimativa, formato del beacon\g, area coperta dal beacon\g; 
+      \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alle informazioni sui beacon\g\ circostanti ed ha il Bluetooth\g\ attivato;
+    \item \textbf{Postcondizione}: lo sviluppatore ha usufruito delle informazioni sui beacon\g\ circostanti.
   \end{itemize}
 \hypertarget{UC5.2}{}
 \subsection{Caso d'uso UC5.2: Gestione log}
@@ -603,7 +603,7 @@
         \end{figure}
 \begin{itemize}
 \item \textbf{Attori}: sviluppatore;
-\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alla gestione del log. Il log contiene tutte le informazioni indicate in \hyperlink{UC5.1}{UC5.1} e relative ai beacon rilevati durante la registrazione del log. Lo sviluppatore può decidere quando avviare e interrompere la registrazione del log; 
+\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alla gestione del log. Il log contiene tutte le informazioni indicate in \hyperlink{UC5.1}{UC5.1} e relative ai beacon\g\ rilevati durante la registrazione del log. Lo sviluppatore può decidere quando avviare e interrompere la registrazione del log; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alla gestione del log;
 
         \item \textbf{Flusso principale degli eventi}:
