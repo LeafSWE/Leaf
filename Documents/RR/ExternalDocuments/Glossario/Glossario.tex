@@ -2,7 +2,6 @@
 \usepackage{leaf}
 \usepackage[nonumberlist]{glossaries}
 \titlepage{}
-
 \newglossarystyle{myaltlistgroup}{%
 \setcounter{page}{0}
   \setglossarystyle{altlistgroup}%
@@ -14,7 +13,7 @@
   }%
 }
 \renewcommand{\glossarysection}[2][]{}
-
+\intestazioni{Glossario}
 \newglossaryentry{Astah}{name=Astah,description={Strumento per la modellazione di diagrammi UML. Fra le varie funzionalità, questo software supporta la creazione di: diagrammi delle classi, diagrammi dei casi d’uso, diagrammi delle attività, diagrammi di sequenza e diagrammi dei componenti}}
 \newglossaryentry{Template Latex}{name=Template Latex,description={Esempio di struttura da seguire per un documento in \LaTeX}}
 \newglossaryentry{Latex}{name=Latex,description={Macroprocessore di \TeX che ne implementa un linguaggio di mark-up}}
@@ -86,14 +85,9 @@
 \newglossaryentry{Scenario funzionale}{name=Scenario funzionale,description={Insieme delle funzionalità previste e ambito di utilizzo dell'applicazione}}
 \newglossaryentry{Edificio mappato}{name=Edificio mappato,description={Edificio nel quale sono stati installati dei beacon il cui fine è quello di supportare le funzionalità dell'applicazione}}
 \makeglossaries
-
-
-\titlepage{}
-
 \author{Zanella Marco}
 \date{07/12/2015}
 \intestazioni{Glossario}
-
 \pagenumbering{gobble}
 \begin{document}
 \begin{titlepage}
@@ -113,11 +107,12 @@
 			{\hfill\textbf{Redazione}} 			&  Marco Zanella      \\[1ex]
 			{\hfill\textbf{Verifica}} 			&  Eduard Bicego	\\[1ex]
 			{\hfill\textbf{Approvazione}} 		&  Federico Tavella	\\[1ex] 
-			{\hfill\textbf{Uso}} 				& Interno		\\[1ex] 
-			{\hfill\textbf{Distribuzione}} 		& \leaf 	\\[1ex]
+			{\hfill\textbf{Uso}} 				& Esterno		\\[1ex]
+			{\hfill\textbf{Distribuzione}} 		& Prof. Vardanega Tullio	\\[1ex]
+                                                    & Prof. Cardin Riccardo	\\[1ex]
+                                                    & Prof. Miriade S.p.A.	\\[1ex]
 		\end{tabular}
 	\end{titlepage}
-
 	\subfile{DiarioModificheG}
 
 	

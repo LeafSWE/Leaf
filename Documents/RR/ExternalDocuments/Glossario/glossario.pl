@@ -57,8 +57,10 @@ $newfile = $newfile."\\makeglossaries
 			{\\hfill\\textbf{Redazione}} 			&  Marco Zanella      \\\\[1ex]
 			{\\hfill\\textbf{Verifica}} 			&  Eduard Bicego	\\\\[1ex]
 			{\\hfill\\textbf{Approvazione}} 		&  Federico Tavella	\\\\[1ex] 
-			{\\hfill\\textbf{Uso}} 				& Interno		\\\\[1ex] 
-			{\\hfill\\textbf{Distribuzione}} 		& \\leaf 	\\\\[1ex]
+			{\\hfill\\textbf{Uso}} 				& Esterno		\\\\[1ex]
+			{\\hfill\\textbf{Distribuzione}} 		& Prof. Vardanega Tullio	\\\\[1ex]
+                                                    & Prof. Cardin Riccardo	\\\\[1ex]
+                                                    & Prof. Miriade S.p.A.	\\\\[1ex]
 		\\end{tabular}
 	\\end{titlepage}
 	\\subfile{DiarioModificheG}
