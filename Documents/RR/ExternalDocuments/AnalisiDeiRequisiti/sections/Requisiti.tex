@@ -4,7 +4,25 @@
 \begin{document}
 \section{Requisiti}
 	Di seguito sono riportati tutti i requisiti, i quali sono stati individuati dopo un'attenta analisi sulla base del capitolato, dei casi d’uso, degli incontri con il proponente e delle riunioni interne.
-I requisiti sono tutti identificati da un codice univoco. Per capire la sintassi alla quale fanno riferimento tali codici si consulti il documento \normediprogettov.
+
+I requisiti, come indica il documento \normediprogettov , sono classificati in base al tipo e alla priorità, utilizzando la seguente notazione:
+				\begin{center}\textbf{R[X][Y][Z]}\end{center} dove:
+					\begin{enumerate}
+						\item \textbf{X} indica l'importanza strategica del requisito. Deve assumere solo i seguenti valori:
+						\begin{itemize}
+							\item \textbf{Obb}: Indica un requisito obbligatorio;
+							\item \textbf{Des}: Indica un requisito desiderabile;
+							\item \textbf{Opz}: Indica un requisito opzionale.
+						\end{itemize}
+						\item \textbf{Y} indica la tipologia del requisito. Deve assumere solo i seguenti valori:
+						\begin{itemize}
+							\item \textbf{F}: Indica un requisito funzionale;
+							\item \textbf{Q}: Indica un requisito di qualità;
+							\item \textbf{P}: Indica un requisito prestazionale;
+							\item \textbf{V}: Indica un requisito vincolo.
+						\end{itemize}
+						\item \textbf{Z} rappresenta il codice univoco di ogni requisito in forma gerarchica.
+					\end{enumerate}
 	\subsection{Elenco dei requisiti}
 	\begin{longtabu} to \textwidth {X X[2] X}
 \toprule
@@ -366,7 +384,7 @@ UC5.2.4 & UC5.2.4 - Accesso log salvato & RDesF12.3.4 \\
 \end{longtabu}
 	\newpage
 	\subsection{Riepilogo}
-	\begin{longtabu} to \textwidth {X X X X}
+\begin{longtabu} to \textwidth {X X X X}
 \toprule
 \textbf{Categoria} & \textbf{Obbligatorio} & \textbf{Opzionale} & \textbf{Desiderabile}\\
 \midrule
