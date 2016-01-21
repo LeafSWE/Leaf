@@ -6,37 +6,35 @@
 \titlepage{}
 
 \author{Oscar Elia Conti, Marco Zanella}
-\date{24/12/2015}
+\date{9/12/2015}
 \intestazioni{Analisi dei requisiti}
 \pagenumbering{gobble}
 \begin{document}
 	\begin{titlepage}
 		\centering
 		{\huge\bfseries CLIPS\par}
-		Communication \& Localization with Indoor Positioning Systems \\*
-		\line(1,0){350} \\
-		%\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
-		{\scshape\LARGE Università di Padova \par}
-		\vspace{1cm}
-		{\scshape\Large Analisi dei requisiti\par}
-		\vspace{2cm}
-		\begin{center}
-		{\includegraphics[height=10em]{logoNoSfondo} \DeclareGraphicsExtensions{.png}\par}
-		\end{center}
-		\vfill \vfill
+	Communication \& Localization with Indoor Positioning Systems \\*
+	\line(1,0){350} \\
+	{\scshape\LARGE Università di Padova \par}
+	\vspace{1cm}
+	{\scshape\Large Piano di Qualifica \par}
+	\logo
+	\newpage
 		\begin{tabular}{c|c}
 			{\hfill \textbf{Versione}} 			& 1.00			\\
-			{\hfill\textbf{Data Redazione}} 		& 2015-12-28  		\\ 
+			{\hfill\textbf{Data Redazione}} 		& 2016-01-21  		\\ 
 			{\hfill\textbf{Redazione}} 			&      \\
 			{\hfill\textbf{Verifica}} 				&  \\ 
-			{\hfill\textbf{Approvazione}} 		&  \\
-			{\hfill\textbf{Uso}} 					& Interno			\\
-			{\hfill\textbf{Distribuzione}} 			& \leaf			\\
+			{\hfill\textbf{Approvazione}} 		& Federico Tavella \\
+			{\hfill\textbf{Uso}} 					& Esterno			\\
+			{\hfill\textbf{Distribuzione}} 			& Prof. Vardanega Tullio \\
+											& Prof. Cardin Riccardo \\
+											& Miriade S.p.A.
 		\end{tabular}
 	\end{titlepage}
 	\newpage
 		\pagestyle{myfront}
-		\include{diarioModificheNP}
+		\include{sections/diarioModificheAR}
 	
 	\newpage
 		\tableofcontents
@@ -44,12 +42,11 @@
 	
 	\newpage
 	\pagestyle{mymain}
-		\subfile{sections/introduzione}
+		\subfile{sections/Introduzione}
+	\newpage
+		\subfile{sections/DescrizioneGenerale}
 	
-	%cambiare nomeFileSenzaEstensione con il nome del file
-	%questi file vanno messi in sections e ne deve esistere uno per ogni sezione
-
-		
+			
 	\label{LastPage}
 
 \end{document}
