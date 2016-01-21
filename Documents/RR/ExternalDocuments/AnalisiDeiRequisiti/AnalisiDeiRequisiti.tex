@@ -2,6 +2,10 @@
 
 \usepackage{leaf}
 \setcounter{table}{-1}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
 
 \titlepage{}
 
@@ -17,19 +21,24 @@
 	\line(1,0){350} \\
 	{\scshape\LARGE Università di Padova \par}
 	\vspace{1cm}
-	{\scshape\Large Piano di Qualifica \par}
+	{\scshape\Large Analisi dei Requisiti \par}
 	\logo
 	\newpage
 		\begin{tabular}{c|c}
 			{\hfill \textbf{Versione}} 			& 1.00			\\
 			{\hfill\textbf{Data Redazione}} 		& 2016-01-21  		\\ 
-			{\hfill\textbf{Redazione}} 			&      \\
+			{\hfill\textbf{Redazione}} 			& Andrighetto Cristian \\
+										& Castello Davide \\
+										& Conti Oscar Elia \\
+										& Tavella Federico \\
+										& Tombolato Andrea \\
+										& Zanella Marco \\
 			{\hfill\textbf{Verifica}} 				&  \\ 
 			{\hfill\textbf{Approvazione}} 		& Federico Tavella \\
 			{\hfill\textbf{Uso}} 					& Esterno			\\
 			{\hfill\textbf{Distribuzione}} 			& Prof. Vardanega Tullio \\
 											& Prof. Cardin Riccardo \\
-											& Miriade S.p.A.
+											& Miriade S.p.A. \\
 		\end{tabular}
 	\end{titlepage}
 	\newpage
@@ -38,6 +47,10 @@
 	
 	\newpage
 		\tableofcontents
+	\newpage
+		\listoftables
+	\newpage
+		\listoffigures
 	\label{LastFrontPage}
 	
 	\newpage
@@ -49,12 +62,6 @@
 		\subfile{sections/CasiDUso}
 	\newpage
 		\subfile{sections/Requisiti}
-	\newpage
-		\subfile{sections/RequisitiFonti}
-	\newpage
-		\subfile{sections/FontiRequisiti}
-	\newpage
-		\subfile{sections/TabellaRiassuntivaRequisiti}
 	\label{LastPage}
 
 \end{document}
