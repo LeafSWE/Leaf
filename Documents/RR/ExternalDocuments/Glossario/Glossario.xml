@@ -20,7 +20,7 @@
 			Latex
 		</termine>
 		<descrizione>
-			Macroprocessore di \TeX che ne implementa un linguaggio di mark-up
+			Macroprocessore di \TeX\ che ne implementa un linguaggio di mark-up
 		</descrizione>
 	</voce>
    <voce>
@@ -92,7 +92,7 @@
 			diagramma di Gantt
 		</termine>
 		<descrizione>
-			Il diagramma di Gantt è uno strumento che permette di modellizzare la pianificazione dei compiti necessari alla realizzazione di un progetto. È costruito partendo da un asse orizzontale, usato per rappresentare l’arco temporale totale del progetto, e da un asse verticale, usato per rappresentare delle mansioni o attività che costituiscono il progetto.
+			Il diagramma di Gantt è uno strumento che permette di modellizzare la pianificazione dei compiti necessari alla realizzazione di un progetto. È costruito partendo da un asse orizzontale, usato per rappresentare l’arco temporale totale del progetto, e da un asse verticale, usato per rappresentare delle mansioni o attività che costituiscono il progetto
 		</descrizione>
 	</voce>
 	<voce>
@@ -324,7 +324,7 @@
 			Google Calendar
 		</termine>
 		<descrizione>
-			Sistema di calendari concepito da Google. Google offre la possibilità di creare più calendari, di condividerli e importarli da altri servizi online(Yahoo! Calendar, MSN Calendar, ecc.) o sul computer(iCal, Outlook, ecc.). Google Calendar è parte integrante dell'account Google e si integra con gli altri servizi
+			Sistema di calendari concepito da Google. Google offre la possibilità di creare più calendari, di condividerli e importarli da altri servizi online (Yahoo! Calendar, MSN Calendar, ecc.) o sul computer(iCal, Outlook, ecc.). Google Calendar è parte integrante dell'account Google e si integra con gli altri servizi
 		</descrizione>			
 	</voce>
 	<voce>
@@ -340,7 +340,7 @@
 			capitolato
 		</termine>
 		<descrizione>
-			Documento contrattuale che descrive cosa si attende il committente dall'appaltatore.
+			Documento contrattuale che descrive cosa si attende il committente dall'appaltatore
 		</descrizione>			
 	</voce>
 	<voce>
@@ -460,7 +460,7 @@
 			CMM
 		</termine>
 		<descrizione>
-			Acronimo di Capability Maturity Model è un modello di sviluppo creato in seguito allo studio dei dati collezionati dalle organizzazioni di ricerca sovvenzionate dal Dipartimento della Difesa Statunitense. Il termine “capability” si riferisce alla misura dell’adeguatezza del processo rispetto agli scopi per cui è stato definito. Il termine “maturity”, invece, è legato al grado di formalità e ottimizzazione dei processi, proveniente da best practice, e riguarda in particolare la definizione formale delle fasi, la gestione dei risultati delle misure e l’ottimizzazione attiva dei processi
+			Acronimo di Capability Maturity Model, è un modello di sviluppo creato in seguito allo studio dei dati collezionati dalle organizzazioni di ricerca sovvenzionate dal Dipartimento della Difesa Statunitense. Il termine “capability” si riferisce alla misura dell’adeguatezza del processo rispetto agli scopi per cui è stato definito. Il termine “maturity”, invece, è legato al grado di formalità e ottimizzazione dei processi, proveniente da best practice, e riguarda in particolare la definizione formale delle fasi, la gestione dei risultati delle misure e l’ottimizzazione attiva dei processi
 		</descrizione>			
 	</voce>
 	<voce>
