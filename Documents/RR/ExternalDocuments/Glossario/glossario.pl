@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w
 use XML::LibXML;
 use strict;
+use utf8;
 
 my $file = "Glossario.xml";
 my $parser=XML::LibXML->new();                      #creazione del parser
