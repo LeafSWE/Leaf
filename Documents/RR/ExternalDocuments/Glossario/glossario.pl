@@ -12,6 +12,17 @@ my $newfile = "\\documentclass[a4paper]{article}
 \\usepackage{leaf}
 \\usepackage[nonumberlist]{glossaries}
 \\titlepage{}
+\\newglossarystyle{myaltlistgroup}{%
+\\setcounter{page}{0}
+  \\setglossarystyle{altlistgroup}%
+  \\renewcommand*{\\glsgroupheading}[1]{%
+   \\newpage
+    \\item\\makebox[\\linewidth]{\\Large\\textbf{\\glsgetgrouptitle{##1}}}%
+    \\vspace*{-\\baselineskip}%
+    \\item\\makebox[\\linewidth]{\\hspace*{3cm}\\hrulefill\\hspace*{3cm}}%
+  }%
+}
+\\renewcommand{\\glossarysection}[2][]{}
 \\intestazioni{Glossario}\n";
 foreach my $voce (@voci) {
     my $termine = $voce->findvalue("termine");
@@ -24,10 +35,6 @@ foreach my $voce (@voci) {
 }
 
 $newfile = $newfile."\\makeglossaries
-
-
-\\titlepage{}
-
 \\author{Zanella Marco}
 \\date{07/12/2015}
 \\intestazioni{Glossario}
@@ -54,13 +61,13 @@ $newfile = $newfile."\\makeglossaries
 			{\\hfill\\textbf{Distribuzione}} 		& \\leaf 	\\\\[1ex]
 		\\end{tabular}
 	\\end{titlepage}
-\\pagestyle{mymain}
-	
-		\\subfile{DiarioModificheG}
-	\\newpage
+	\\subfile{DiarioModificheG}
 
-\\glsaddall
-\\printglossary[style=indexgroup, nonumberlist]
+	
+	\\pagestyle{mymain}
+	\\glsaddall
+	\\printglossary[style=myaltlistgroup, nonumberlist]
+
 \\label{LastPage}
 \\end{document}";
 

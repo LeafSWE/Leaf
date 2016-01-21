@@ -2,7 +2,19 @@
 \usepackage{leaf}
 \usepackage[nonumberlist]{glossaries}
 \titlepage{}
-\intestazioni{Glossario}
+
+\newglossarystyle{myaltlistgroup}{%
+\setcounter{page}{0}
+  \setglossarystyle{altlistgroup}%
+  \renewcommand*{\glsgroupheading}[1]{%
+   \newpage
+    \item\makebox[\linewidth]{\Large\textbf{\glsgetgrouptitle{##1}}}%
+    \vspace*{-\baselineskip}%
+    \item\makebox[\linewidth]{\hspace*{3cm}\hrulefill\hspace*{3cm}}%
+  }%
+}
+\renewcommand{\glossarysection}[2][]{}
+
 \newglossaryentry{Astah}{name=Astah,description={Strumento per la modellazione di diagrammi UML. Fra le varie funzionalità, questo software supporta la creazione di: diagrammi delle classi, diagrammi dei casi d’uso, diagrammi delle attività, diagrammi di sequenza e diagrammi dei componenti}}
 \newglossaryentry{Template Latex}{name=Template Latex,description={Esempio di struttura da seguire per un documento in \LaTeX}}
 \newglossaryentry{Latex}{name=Latex,description={Macroprocessore di \TeX che ne implementa un linguaggio di mark-up}}
@@ -81,6 +93,7 @@
 \author{Zanella Marco}
 \date{07/12/2015}
 \intestazioni{Glossario}
+
 \pagenumbering{gobble}
 \begin{document}
 \begin{titlepage}
@@ -104,12 +117,13 @@
 			{\hfill\textbf{Distribuzione}} 		& \leaf 	\\[1ex]
 		\end{tabular}
 	\end{titlepage}
-\pagestyle{mymain}
-	
-		\subfile{DiarioModificheG}
-	\newpage
 
-\glsaddall
-\printglossary[style=indexgroup, nonumberlist]
+	\subfile{DiarioModificheG}
+
+	
+	\pagestyle{mymain}
+	\glsaddall
+	\printglossary[style=myaltlistgroup, nonumberlist]
+
 \label{LastPage}
 \end{document}
