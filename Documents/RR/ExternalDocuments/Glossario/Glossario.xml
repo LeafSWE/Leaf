@@ -539,7 +539,23 @@
 			slack
 		</termine>
 		<descrizione>
-			Margine temporale che definisce per quanto tempo si possa ritardare un'attività.
+			Margine temporale che definisce per quanto tempo si possa ritardare un'attività
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			scenario funzionale
+		</termine>
+		<descrizione>
+			Insieme delle funzionalità previste e ambito di utilizzo dell'applicazione
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			edificio mappato
+		</termine>
+		<descrizione>
+			Edificio nel quale sono stati installati dei beacon il cui fine è quello di supportare le funzionalità dell'applicazione
 		</descrizione>
 	</voce>
 </glossario>
