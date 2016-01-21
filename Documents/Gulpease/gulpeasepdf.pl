@@ -22,6 +22,8 @@ for my $x (<FILE>) {
     	
     	$numberOfPoints = () = $x =~ /\.(?![0-9])/gi;
         $phrases += $numberOfPoints;
+        $numberOfPoints = () = $x =~ /\;\n/gi;
+        $phrases += $numberOfPoints;
         $numberOfPoints = () = $x =~ /\?/gi;
         $phrases += $numberOfPoints;
         $numberOfPoints = () = $x =~ /\!/gi;
