@@ -1,6 +1,6 @@
-Il gruppo, dall'inizio ha cercato di seguire delle regole ben precise per rendere il suo lavoro quanto più possibile disciplinato e quantofocabile. Le regole riguardano sia il modo di lavorare che gli strumenti da utilizzare per ogni processo che possiamo incontrare in questo progetto. Difatti in questa prima parte di progetto è emersa la necessità di cercare gli strumenti più adatti per portare avanti il progetto. Gli strumenti sono stati trovati cercando sul web, creati da zero oppure sono stati consigliati da studenti degli anni passati. Gli strumenti che utilizzeremo sono quindi:
+Il gruppo, dall'inizio ha cercato di seguire delle regole ben precise per rendere il suo lavoro quanto più possibile disciplinato e quantificabile. Le regole riguardano sia il modo di lavorare che gli strumenti da utilizzare per ogni processo che possiamo incontrare in questo progetto. Difatti in questa prima parte di progetto è emersa la necessità di cercare gli strumenti più adatti per portare avanti il progetto. Gli strumenti sono stati trovati cercando sul web, creati da zero oppure sono stati consigliati da studenti degli anni passati. Gli strumenti che utilizzeremo sono quindi:
 -git e github per il versionamento dei file
--latex per scrivere la documetazione
+-latex per scrivere la documentazione
 -astah per fare diagrammi UML
 -teamwork e telegram per le comunicazioni e l'organizzazione
 -tracy, strumento per il tracciamento dei requisiti creato dal gruppo don't panic e riadattato alle nostre esigenze
