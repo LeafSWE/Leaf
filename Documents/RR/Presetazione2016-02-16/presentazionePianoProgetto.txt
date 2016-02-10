@@ -1,0 +1,25 @@
+Per quanto riguarda la pianificazione del progetto...
+
+Ciclo di sviluppo
+Il gruppo Leaf si è impegnato e si impegna a seguire un modello incrementale. Il principali motivo per cui è stato scelto sono due:
+	1. requisiti molto laschi del capitolato.
+	2. necessità, come gruppo di lavoro principiante, di suddividere l'intero progetto in fasi di breve durata che comprendessero 3 principali componenti in un ciclo: 
+		idea - la creazione - test e validazione 
+In modo da avere un responso ad ogni fase del ciclo e poter correggere il percorso verso gli scopi prefissati.
+
+Strumenti 
+Gantt ???
+Teamwork ???
+
+Meccanismi di controllo e rendicontazione? (collegato a Teamwork)
+
+
+Obiettivi
+Il gruppo Leaf si è impegnato a rispettare le prime date di consegna. 
+	Con pianificata la consenga della definizione di prodotto alla revisione di progettazione e la conclusione del progetto a giugno.
+
+
+suddivisione del lavoro
+Per la suddivisione dei ruoli abbiamo voluto concentrare uno sforzo maggiore nelle attività di analisi e verifica a causa della natura sperimentale del capitolato che comprende anche prove da effettuare fisicamente come si può vedere dal seguente diagramma a torta (fig36 ore rendicontate - ore per ruolo) 
+
+
