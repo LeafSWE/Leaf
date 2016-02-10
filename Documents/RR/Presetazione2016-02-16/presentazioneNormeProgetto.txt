@@ -1,8 +1,8 @@
-Il gruppo, dall'inizio ha cercato di seguire delle regole ben precise per rendere il suo lavoro quanto più possibile disciplinato e quantificabile. Le regole riguardano sia il modo di lavorare che gli strumenti da utilizzare per ogni processo che possiamo incontrare in questo progetto. Difatti in questa prima parte di progetto è emersa la necessità di cercare gli strumenti più adatti per portare avanti il progetto. Gli strumenti sono stati trovati cercando sul web, creati da zero oppure sono stati consigliati da studenti degli anni passati. Gli strumenti che utilizzeremo sono quindi:
+Il gruppo dall'inizio ha cercato di seguire delle regole ben precise per rendere il suo lavoro quanto più possibile disciplinato e quantificabile e le norme di progetto sono il documento che le raccoglie e spiega. Le regole riguardano sia il modo di lavorare che gli strumenti da utilizzare nei vari processi che incontreremo in questo progetto. Difatti in questa prima parte di progetto il gruppo ha avuto la necessità di cercare gli strumenti più adatti per i vari compiti da svolgere. Gli strumenti sono stati trovati cercando sul web, creati da zero oppure sono stati consigliati da studenti degli anni passati. Gli strumenti che utilizzeremo sono:
 -git e github per il versionamento dei file
 -latex per scrivere la documentazione
 -astah per fare diagrammi UML
 -teamwork e telegram per le comunicazioni e l'organizzazione
--tracy, strumento per il tracciamento dei requisiti creato dal gruppo don't panic e riadattato alle nostre esigenze
--infine sono stati creati degli script utili per il controllo ortografico e per gestire il glossario
-Tempo:~1min7sec
+-tracy, strumento per il tracciamento dei requisiti (creato dal gruppo don't panic e riadattato alle nostre esigenze)
+-infine sono stati creati degli script utili per il controllo ortografico e per gestire il glossario che utilizzano xml, aspell e perl
+Tempo:~1min12sec
