@@ -1,0 +1,34 @@
+IDEA & FUNZIONALITA
+"Come possiamo usare la tecnologia Beacon per creare qualcosa di veramente utile?"
+
+[/images/image01.png]
+Ragionanando intorno a questa domanda siamo arrivati a prendere in considerazione la navigazione indoor, una tema fortemente attuale in quanto non si vedono ancora sul mercato soluzioni soddisfacenti.
+Vogliamo realizzare un sistema che fornisca all'utente informazioni interessanti ed indicazioni utili per muoversi all'interno di un edificio.
+Tale sistema sarà composto da due parti:
+- un insieme di sensori beacon utilizzati per mappare l'edificio;
+- un applicativo per smartphone che si interfacci con i sensori beacon per fornire informazioni ed indicazioni all'utente.
+
+Ma non vogliamo fermarci qui.
+
+[/images/image02.png]
+Vogliamo poter consigliare il percorso più adatto alle esigenze dell'utente:
+- all'utente con disabilità visive o motorie vogliamo consigliare il percorso con il minor numero (possibilmente nullo) di barriere architettoniche;
+- all'utente claustrofobico vogliamo consigliare il percorso con il minor numero (possibilmente nullo) di ascensori.
+L'utente sarà libero di modificare queste preferenze e quelle relative a come riceve le indicazioni per la navigazione, direttamente all'interno dell'applicativo.
+Sempre nell'ottica dell'accessibilità, l'utente potrà quindi scegliere di ricevere indicazioni vocali piuttosto che testuali.
+
+Questo è l'obiettivo ottimale che ci siamo posti: rendere più accessibili gli edifici; sia che accessibilità significhi raggiungere la propria destinazione più velocemente, sia che significhi raggiungerla con le proprie forze.
+
+[/images/image03.png]
+Naturalmente la navigazione indoor è già una grossa sfida di per sè, quindi ci concentreremo innanzitutto sull'individuazione di una sua implementazione ed, eventualmente, sull'espansione verso le funzionalità di accessibilità.
+Il tutto senza appoggiarci al concetto di triangolazione: preso in prestito dalla navigazione GPS e dimostratosi fallimentare nell'ambito degli ambienti indoor, specialmente se abbinato alla tecnologia Beacon.
+Utilizzeremo la Torre Archimede come ambiente di test ma, lo stesso applicativo, potrà essere utilizzato in edifici diversi a patto che, l'edificio in questione, sia stato preventivamente mappato e l'utente abbia effettuato il download della relativa mappa. 
+
+[/images/image04.jpg]
+Trattandosi di un capitolato fortemente orientato alla ricerca, ogni scelta effettuata e ed ogni problematica incontrata saranno documentate come richiesto dal proponente.
+
+ATTORI
+[/images/image05.png]
+Il bacino di utenti al quale l'applicativo smartphone è indirizzato può essere suddiviso in due categorie: 
+- Utente finale: interagisce con l'applicativo per ricevere indicazioni ed informazioni utili per muoversi all'interno di un edificio; 
+- Sviluppatore: oltre alle funzionalità esposte all' utente finale, può accedere a funzionalità avanzate per testare l'interazione tra l'applicativo ed i beacon usati per mappare l'edificio. Noi, gruppo Leaf, ci avvarremo in primo luogo di tali funzionalità per agevolare la disposizione dei sensori e ,quindi, la mappatura dell'edificio.
