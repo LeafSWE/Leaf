@@ -1,23 +1,38 @@
 Per quanto riguarda la pianificazione del progetto...
 
-Ciclo di sviluppo
-Il gruppo Leaf si √® impegnato e si impegna a seguire un modello incrementale. Il principali motivo per cui √® stato scelto sono due:
-	1. requisiti molto laschi del capitolato.
-	2. necessit√†, come gruppo di lavoro principiante, di suddividere l'intero progetto in fasi di breve durata che comprendessero 3 principali componenti in un ciclo:
-		idea - la creazione - test e validazione
-In modo da avere un responso ad ogni fase del ciclo e poter correggere il percorso verso gli scopi prefissati.
+Obiettivi (immagine di un calendario?)
+Il gruppo Leaf si Ë impegnato a rispettare le prime date di consegna. 
+Con pianificata la consenga della definizione di prodotto alla revisione di progettazione e la conclusione del progetto a giugno.
 
-Strumenti
-Gantt ???
-Teamwork ???
+Analisi dei rischi (slide con un esempio di rischio)
+-identificare il rischio
+-analizzarlo (stimare occorrenza e impatto sul progetto)
+-controllo (evitare il rischio)
+-mitigazione (mitigare il rischio nel caso si verifichi)
 
-Meccanismi di controllo e rendicontazione? (collegato a Teamwork)
+Ciclo di sviluppo (1 slide con modello incrementale, una con le varie fasi)
+Il gruppo Leaf si Ë impegnato e si impegna a seguire un modello incrementale. I principali motivi per cui Ë stato scelto sono due:
+	1. necessit‡ di coinvolgere il proponente il pi˘ possibile per ottenere un feedback sul lavoro fatto
+	2. necessit‡, come gruppo di lavoro principiante, di poter correggere i propri errori riducendoli a correzioni
+Identificate delle fasi per
+- analizzare i requisiti
+- progettare il software (logica e di dettaglio)
+- codificare i requisiti
+- testare il software (periodicamente essendo sperimentale)
+- validare il prodotto
 
+Strumenti di controllo e rendicontazione (slide con loghi dei vari strumenti)
+Gantt (per la pianificazione)
+Teamwork (per la gestione di progetto e la rendicontazione)
+Google Calendar (pianificazione)
+Teamwork & Github (assegnazione task e ticket)
+Riunioni interne
 
-Obiettivi
-Il gruppo Leaf si √® impegnato a rispettare le prime date di consegna.
-	Con pianificata la consenga della definizione di prodotto alla revisione di progettazione e la conclusione del progetto a giugno.
+Preventivo (slide con bar chart e pie chart)
+Sulla base di disponibilit‡ dei membri e della pianificazione, un preventivo
+per ogni fase stimando ore (e di conseguenza costi).
+Creati dei chart per dare un'idea immediata della suddivisione (anche meno "precisa")
 
-
-suddivisione del lavoro
-Per la suddivisione dei ruoli abbiamo voluto concentrare uno sforzo maggiore nelle attivit√† di analisi e verifica a causa della natura sperimentale del capitolato che comprende anche prove da effettuare fisicamente come si pu√≤ vedere dal seguente diagramma a torta (fig36 ore rendicontate - ore per ruolo)
+Consuntivo
+Permette di verificare l'avanzamento dei lavori, definendo quanto si sfora di ore e/o costi.
+Aggiornato alla fine di ogni fase.
