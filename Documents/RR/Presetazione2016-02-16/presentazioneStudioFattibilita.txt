@@ -1,0 +1,33 @@
+Buongiorno a tutti.
+
+Benvenuti alla presentazione del gruppo Leaf, composto da Cristian Andrighetto, Eduard Bicego, Davide Castello, Oscar Conti, Federico Tavella, Andrea Tombolato e Marco Zanella.
+
+Il capitolato scelto dal nostro gruppo è "CLIPS". Uno degli obbiettivi che il capitolato propone è la ricerca e sperimentazione di un nuovo sistema di navigazione indoor, attualmente non presente nel mercato, sfruttando la tecnologia Beacon.
+
+I motivi principali che hanno spinto i membri del nostro gruppo verso questa scelta, sono i seguenti:
+	
+	- Dominio tecnologico: 
+		1) La tecnologia Beacon, nata nel 2011, si è subito rilevata interessante per i membri del gruppo, che sono rimasti colpiti dalle potenzialità che essa offre.
+
+		2) Il capitolato prevede che l'applicativo sia sviluppato per una piattaforma mobile, dandoci la possibilità di lavorare con Android.
+
+	- Ambito applicativo: L'idea di implementare un nuovo sistema di navigazione indoor è molto stimolante e propone un alto livello di sfida.
+
+	- Impatto sociale: Qualora dovessimo raggiungere l'obbiettivo proposto, il prodotto finale potrebbe avere un forte impatto a livello sociale, andando a presentare sul mercato un prodotto che ancora non esiste. Rendendo più accessibili gli edifici, inoltre, diamo la possibilità a persone con determinate disabilità, di muoversi all'interno degli stessi con meno difficoltà, rendendo questo prodotto utile anche da un punto di vista "umano".
+
+Il gruppo è consapevole che l'obbiettivo finale è molto difficile da raggiungere e che ci sarà la necessità di cimentarsi con tecnologie di cui non ha esperienza, tuttavia questo risulta essere uno stimolo ulteriore più che un aspetto negativo.
+
+Il gruppo ha valutato attentamente gli altri capitolati, che sono stati scartati per i seguenti motivi:
+
+	1) Il capitolato 1 presenta delle specifiche molte chiare ed esaustive, e le tecnologie utilizzate sono molto interessanti, tuttavia, essendo lo scopo finale puramente di ricerca, questo non risulta essere abbastanza interessante per il gruppo.
+
+	2) Il capitolato 3 pone senza dubbio un alto livello di sfida ma le specifiche sono troppo generiche e le tecnologie da utilizzare troppo vaste.
+
+	3) Il capitolato 4 offre delle specifiche estremamente chiare e precise, e le tecnologie richieste allo sviluppo di MaaS suscitano parecchio interesse nella maggior parte dei membri del gruppo, tuttavia il capitolato, basandosi su MaaP, offre poca libertà nello sviluppo, e questo è risultato essere un limite non apprezzato dal gruppo.
+
+	4) Il capitolato 5 ha presentato delle specifiche molto chiare ma le tecnologie ed il livello di sfida proposto, non sono risultati essere abbastanza interessanti e stimolanti per il gruppo.
+
+	5) Il capitolato 6 propone l'utilizzo di tecnologie che in un'ottica futura potrebbero essere molto utili, e l'idea di simulare le emozioni umane è piaciuta molto. Le specifiche però sono troppo generiche e questo potrebbe portare allo sviluppo di un prodotto senza alcuna utilità reale.
+
+
+Tempo: 2:38ma
