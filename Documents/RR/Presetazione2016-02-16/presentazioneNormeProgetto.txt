@@ -1,8 +1,12 @@
-Il gruppo dall'inizio ha cercato di seguire delle regole ben precise per rendere il suo lavoro quanto più possibile disciplinato e quantificabile e le norme di progetto sono il documento che le raccoglie e spiega. Le regole riguardano sia il modo di lavorare che gli strumenti da utilizzare nei vari processi che incontreremo in questo progetto. Difatti in questa prima parte di progetto il gruppo ha avuto la necessità di cercare gli strumenti più adatti per i vari compiti da svolgere. Gli strumenti sono stati trovati cercando sul web, creati da zero oppure sono stati consigliati da studenti degli anni passati. Gli strumenti che utilizzeremo sono:
--git e github per il versionamento dei file
--latex per scrivere la documentazione
+Le norme di progetto sono il documento che raccoglie e spiega le regole che il gruppo si è dato \\ SLIDE
+per rendere il lavoro disciplinato e quantificabile. \\SLIDE
+Queste regole riguardano sia il nostro modo di lavorare sia gli strumenti che utilizzeremo nei vari processi. Difatti in questa prima parte di progetto il gruppo ha avuto la necessità di cercare nel web, creare o farse consigliare dagli studenti degli anni precedenti gli strumenti più adatti per i vari compiti da svolgere. \\SLIDE
+Gli strumenti che utilizzeremo sono:
+-git e github per il versionamento dei file e per le issue
+-latex per scrivere la documentazione 
 -astah per fare diagrammi UML
--teamwork e telegram per le comunicazioni e l'organizzazione
--tracy, strumento per il tracciamento dei requisiti (creato dal gruppo don't panic e riadattato alle nostre esigenze)
--infine sono stati creati degli script utili per il controllo ortografico e per gestire il glossario che utilizzano xml, aspell e perl
-Tempo:~1min12sec
+-GanttProject e Google Calendar per la pianificazione del lavoro
+-Teamwork per organizzare il lavoro e, insieme a Telegram, per le comunicazioni
+-Tracy, per il tracciamento dei requisiti (creato dal gruppo don't panic e riadattato alle nostre esigenze)
+-infine sono stati creati degli script che utilizzano xml, aspell e perl utili per il controllo ortografico e per gestire il glossario 
+Tempo:~1min25sec
