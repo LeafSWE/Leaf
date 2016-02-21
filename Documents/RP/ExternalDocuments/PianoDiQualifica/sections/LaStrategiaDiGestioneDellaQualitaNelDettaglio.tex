@@ -1,0 +1,151 @@
+\documentclass[../PianoDiQualifica.tex]{subfiles}
+
+\begin{document}
+\section{La strategia di gestione della qualità nel dettaglio}
+		\subsection{Risorse}
+		Per garantire un buon funzionamento del processo\g\ di verifica verranno impiegate diverse risorse.\\
+		Le risorse si suddivideranno in:
+		\begin{itemize}
+			\item risorse umane;
+			\item risorse hardware;
+			\item risorse software\g.
+		\end{itemize}
+			\subsubsection{Risorse necessarie}
+				\paragraph{Risorse umane}
+				Le risorse umane di cui il processo\g\ di verifica avrà bisogno sono il \responsabilediprogetto\ e i \verificatori.
+				Informazioni più dettagliate sui ruoli sono riportate nelle \normediprogettov. Le responsabilità che ricadono su queste due figure sono riportate alla sezione 3.3 "Organizzazione" del presente documento.
+				\paragraph{Risorse hardware}
+				Per eseguire la verifica il gruppo dovrà avere a disposizione dei computer con un'adeguata potenza di calcolo in grado di sopportare il carico di lavoro.		    
+				\paragraph{Risorse software}
+			    Le risorse software\g\ necessarie alla verifica sono gli strumenti software\g\ 
+che permettono di eseguire controlli sui documenti e verificare che essi aderiscano alle \normediprogettov.\\
+			    Gli strumenti software\g\ dovranno avere le seguenti caratteristiche:
+			    \begin{itemize}
+			    	\item rilevare (durante la scrittura) eventuali errori ortografici;
+			    	\item costruire e visualizzare in tempo reale il documento scritto in \LaTeX\g\ (in modo che sia facile accorgersi di errori nell'utilizzo dei comandi).
+			    \end{itemize}
+			    Inoltre è necessario disporre di una piattaforma che raccolga i vari errori incontrati e li segnali ai componenti del gruppo che dovranno occuparsene. 
+		    \subsubsection{Risorse disponibili}
+			    \paragraph{Risorse umane}
+			    Il gruppo ha a disposizione tutti i membri per eseguire operazioni di verifica. A turno ognuno dei componenti ricoprirà il ruolo di \responsabilediprogetto\ o di \verificatore\ come definito nel \pianodiprogettov.
+			    \paragraph{Risorse hardware}
+			    Le risorse hardware disponibili sono i vari computer dei componenti del gruppo incaricati di svolgere il ruolo di \responsabilediprogetto\ o \verificatore. Eventualmente sono disponibili anche i computer del Servizio Calcolo dell'Università di Padova.
+				\paragraph{Risorse software}
+				Le risorse software\g\ disponibili sono editor \LaTeX\g\ con controlli integrati e script per controllare la leggibilità e la complessità dei documenti in riferimento all'indice Gulpease\g.\\
+				Sarà disponibile anche il sistema di sollevamento delle issue\g\ offerto dalla piattaforma GitHub\g: per maggiori informazioni sulla procedura di sollevamento e gestione delle issue\g\ 
+si veda il documento \normediprogettov.
+		\subsection{Tecniche di controllo della qualità}
+			\subsubsection{Tecniche di controllo della qualità di processo}
+			Il gruppo intende misurare con continuità le caratteristiche di qualità dei vari processi al fine di apportare miglioramenti in modo sistematico. Per mettere in atto ciò ci si basa su quanto descritto in seguito.
+			\begin{itemize}
+				\item Ci si basa innanzitutto sul modello CMM\g, quindi sui concetti di "capability" e "maturity" (vedi appendice A "Capability Maturity Model").
+				\item Grazie all'uso del modello CMM\g\ è possibile calcolare il livello di maturità di un processo\g\ per confrontare le performance dello stesso in momenti differenti: in questo modo si possono evidenziare eventuali miglioramenti raggiunti (secondo quanto descritto nel presente documento alla sezione 2 "Misure e metriche").
+				\item Per misurare la qualità di un processo\g\ può essere utile verificare quella del suo prodotto\g: se essa è scarsa, ciò implica che probabilmente anche il processo\g\ 
+dal quale deriva non è per nulla di qualità.
+				\item Per ottenere un miglioramento continuo dei processi si utilizza il modello del miglioramento continuo PDCA\g.
+			\end{itemize}
+			\subsubsection{Tecniche di controllo della qualità di prodotto}
+				\paragraph{Verifica}
+				 Quando si effettuano delle verifiche si usano tanto tecniche di analisi statica quanto di analisi dinamica. L'analisi statica può essere applicata sia alla documentazione che al software\g, mentre l'analisi dinamica solamente al software\g. Il gruppo ha deciso di adottare le tecniche di controllo della qualità descritte in seguito.
+				 \subparagraph{Analisi statica}
+					\begin{description}
+						\item[Inspection] Questa tecnica di analisi presuppone l'esperienza da parte del verificatore nell'individuare gli errori e le anomalie più frequenti. A tal scopo, quando il gruppo riterrà di avere l'esperienza necessaria verrà stilata una lista di controllo nella quale saranno elencati gli errori comuni. Questo ci consentirà una verifica più rapida, impegnando meno risorse umane.
+						\item[Walkthrough] Questa tecnica di analisi prevede una lettura critica del codice o del documento prodotto\g. Tale tecnica è molto dispendiosa in termini di risorse, poiché viene applicata all'intero documento senza avere una precisa idea di quale sia il tipo di anomalia\g\ e di dove ricercarla;
+					\end{description}
+					\subparagraph{Analisi dinamica}
+					\begin{description}
+						\item [Test di unità] Consiste nel verificare ogni singola unità del prodotto software\g, ovvero sia la più piccola parte di software\g\ che conviene testare da sola, attraverso l'utilizzo di strumenti come logger\g, stub\g\ o driver\g. Data la sua natura, la dimensione dell'unità da testare verrà definita al momento del test. Lo scopo dello unit testing\g\ è di verificare il corretto funzionamento di un'unità per permettere una precoce individuazione dei bug\g. Uno unit testing\g\ 
+accurato produce vari vantaggi, ad esempio:
+						\begin{itemize}
+							\item semplifica le modifiche;
+							\item semplifica l'integrazione;
+							\item supporta la documentazione.
+						\end{itemize}
+						\item[Test di integrazione] Consiste nella verifica dei componenti del sistema che sono formati dalla combinazione di più unità. Ha lo scopo di evidenziare gli eventuali errori residui non individuati durante la realizzazione dei singoli moduli.
+						\item[Test di sistema] Consiste nell'eseguire nuovamente i test di unità e integrazione per le componenti che hanno subito modifiche o per le nuove funzionalità. Lo scopo è verificare di avere un prodotto\g\ di alta qualità per ogni nuova funzionalità o modifica importante e di soddisfare tutti i requisiti software\g\ previsti.
+						\item[Test di accettazione] È il collaudo del prodotto software\g\ che viene eseguito in presenza del proponente a dimostrazione del fatto che il prodotto 
+software\g\ 
+soddisfa tutti i requisiti utente. Se tale collaudo viene superato positivamente si può procedere al rilascio ufficiale del prodotto sviluppato. 
+					\end{description}
+				\paragraph{Validazione}
+				La validazione avviene nel momento in cui il prodotto\g\ ha superato i test di verifica ed è pronto al suo rilascio. Il prodotto\g\ 
+dopo aver superato la validazione ci conferma che è conforme alle aspettative e soddisfa tutti i requisiti, di conseguenza è pronto per essere rilasciato.
+		\subsection{Organizzazione}
+		 La verifica sarà un processo\g\ sempre presente all'interno delle varie fasi di lavoro. Per questo sarà molto importante specificare che tipo di verifiche effettuare per ogni fase\g.
+\\Le fasi di lavoro vengono riportate in dettaglio nel \pianodiprogettov. Di seguito sono riportate le fasi che coinvolgono momenti di verifica.
+		 \begin{description}
+		 	\item[Fase A] In questa fase\g\ 
+verranno individuati gli strumenti per redigere la documentazione ed effettuare l'analisi dei requisiti. Una volta individuati gli strumenti si procederà con la documentazione dove sistematicamente sarà sottoposta a verifica per migliorarne la qualità. Verrà affrontata anche l'analisi dei requisiti dove verranno individuati i requisiti che avrà il prodotto\g\ al suo rilascio. I requisiti saranno sottoposti costantemente a verifica per ottenere il massimo risultato.
+		 	\item[Fase AD] In questa fase\g\ 
+verrà affrontata un'analisi più approfondita che comprenderà un miglioramento della documentazione in base alle verifiche effettuate e una seconda analisi per determinare requisiti più specifici richiesti dal proponente dopo aver effettuato la \revisionedeirequisiti. Dopo le eventuali analisi e miglioramenti apportati, la fase sarà sottoposta ad un'ulteriore fase di verifica.
+			\item[Fase PA] Durante questa fase\g\ 
+si procederà alla progettazione dell'architettura logica del sistema. I \verificatori\ dovranno assicurarsi che ogni requisito rilevato nella fase A e nella fase AD sia in corrispondenza con le varie parti del sistema progettate. Inoltre tutta la fase PA dovrà essere supportata dalla produzione di documenti e questi dovranno essere sottoposti a verifica per migliorarne la qualità.
+		 	\item[Fase PDROB] In questa fase\g\ 
+si procederà alla progettazione di dettaglio e codifica dei requisiti obbligatori. Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Il prodotto\g\ una volta codificato verrà presentato al proponente sotto forma di prototipo per avere un riscontro immediato delle effettive caratteristiche. Anche in questa fase verranno effettuati un incremento della documentazione e una costante verifica.  
+		 	\item[Fase PDRD] In questa fase\g\ 
+si procederà alla progettazione di dettaglio e codifica dei requisiti desiderabili. Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Il prodotto\g\ una volta codificato verrà presentato al proponente sotto forma di prototipo per avere un riscontro immediato delle effettive caratteristiche. Anche in questa fase verranno effettuati un incremento della documentazione e una costante verifica.
+		 	\item[Fase PDROP] In questa fase\g\ 
+si procederà alla progettazione di dettaglio e codifica dei requisiti opzionali. Tutti i requisiti implementati dovranno essere tracciati in modo che lo stato di completamento sia controllabile in ogni momento. Il prodotto\g\ una volta codificato verrà presentato al proponente per verificarne i requisiti. Anche in questa fase verranno effettuati un incremento della documentazione e una costante verifica.
+			\item[Fase V] In questa fase\g\ 
+si procederà all'esecuzione dei test di sistema previsti dal \pianodiqualifica\ ed alla correzione di eventuali bug\g\ rilevati. Successivamente, si procederà alla validazione del software\g\ e al collaudo dello stesso in presenza del proponente. Anche in questa fase verranno effettuati un incremento della documentazione e una costante verifica. Questa fase termina con la \revisionediaccettazione.
+		\end{description}
+		\subsection{Misure e metriche}
+			\subsubsection{Misure}
+			Ogni volta che viene effettuata una misura sui processi o sui prodotti essa va rapportata in una scala. Di seguito vengono riportati i valori della scala:
+			\begin{description}
+			\item[Negativo] valore non accettabile, bisogna effettuare ulteriori verifiche e correggere gli errori presenti.
+			\item[Accettabile] valore accettabile, l'oggetto sottoposto a verifica ha raggiunto una soglia minima.
+			\item[Ottimale] valore accettabile, l'oggetto sottoposto a verifica ha raggiunto le massime aspettative del team\g. L'obiettivo dovrebbe essere quello di avere tutti i valori all'interno di tale range. 
+			\end{description}
+			\subsubsection{Metriche per i documenti}
+			La qualità di un documento dipende prima di tutto dai suoi contenuti. La loro qualità, tuttavia, è difficilmente quantificabile allo stato attuale del progetto a causa dell'esperienza pressoché nulla del team\g\ in quest'ambito. Si è deciso dunque di limitarsi a valutare parametri maggiormente oggettivi e soprattutto misurabili automaticamente attraverso strumenti software\g.
+				\paragraph{Indice di leggibilità}
+				Una metrica che si è deciso di utilizzare per poter stimare la qualità di un documento è l'indice di leggibilità. In particolare, è stato considerato l'indice Gulpease\g, studiato appositamente per la lingua italiana.				\\Questo particolare indice si basa sulla lunghezza della parola e sulla lunghezza della frase rispetto al numero di lettere. La formula per il suo calcolo è la seguente:
+				\begin{equation}
+					Indice \  Gulpease = 89 + \frac{300*numeroFrasi-10*numeroLettere}{numeroParole}
+				\end{equation}
+				Il risultato di tale equazione tipicamente è compreso tra 0 e 100, dove valori alti indicano leggibilità elevata e viceversa.\\
+				In generale, risulta che testi con un indice:
+				\begin{itemize}
+					\item inferiore a 80 risultano difficili da leggere per chi ha la licenza elementare;
+					\item inferiore a 60 risultano difficili da leggere per chi ha la licenza media;
+				\item inferiore a 40 risultano difficili da leggere per chi ha la licenza superiore.
+				\end{itemize}
+				Vengono di seguito riportati i range stabiliti per la metrica appena introdotta. Si noti che viene tenuto in considerazione il fatto che la documentazione è destinata a persone sufficientemente preparate, competenti ed istruite.
+				\begin{itemize}
+					\item Valori minori di 35 sono considerati negativi.
+					\item Valori compresi tra 35 e 50 sono considerati accettabili.
+					\item Valori maggiori di 50 sono considerati ottimali. 
+				\end{itemize}
+				\paragraph{Errori ortografici rinvenuti e non corretti}
+				Tale metrica è necessaria per capire quanto un documento sia corretto dal punto di vista ortografico. Infatti, supponendo che gli strumenti automatici siano in grado di trovare tutti (o perlomeno la maggior parte) degli errori ortografici all'interno di un testo, la correttezza ortografica non può che basarsi sul numero di errori rinvenuti ma non successivamente corretti. Notare che per errori corretti si intende un errore revisionato manualmente da parte di un \verificatore. Le correzioni automatiche, infatti, non sono molto attendibili. \\
+				Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+				\begin{itemize}
+					\item una percentuale di errori non corretti maggiore allo 0\% è ritenuta negativa;
+					\item una percentuale di errori non corretti pari allo 0\% è ritenuta accettabile;
+					\item una percentuale di errori non corretti pari allo 0\% è ritenuta ottimale.
+				\end{itemize}
+				Notare che non è accettabile che vi siano errori rinvenuti e non corretti da qualche membro del gruppo.
+				\paragraph{Errori concettuali rinvenuti e non corretti}
+				Tale metrica è necessaria per capire quanto un documento sia corretto dal punto di vista concettuale. Infatti, supponendo che in seguito alle revisioni siano stati trovati tutti (o perlomeno la maggior parte) i maggiori errori di questo tipo, la correttezza concettuale non può che basarsi sul numero di errori rinvenuti e fatti notare ma non successivamente corretti. Notare che per errori corretti si intende un errore fatto notare dal committente o da qualche \verificatore\ (con relativa approvazione del \responsabilediprogetto) e successivamente corretto (sulla base di discussioni interne o con il committente).\\
+				Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+				\begin{itemize}
+					\item una percentuale di errori non corretti maggiore al 5\% è ritenuta negativa;
+					\item una percentuale di errori non corretti minore del 5\% è ritenuta accettabile;
+					\item una percentuale di errori non corretti pari allo 0\% è ritenuta ottimale;
+				\end{itemize}	
+			\subsubsection{Metriche per i processi}
+			Per controllare e verificare la qualità dei processi, il gruppo adotterà le metriche fornite dal
+			modello CMM\g\ dove per ogni fase\g\ di lavoro si andrà a fornire un indice che descriverà la
+			qualità della fase\g\ presa in esame. L'indice sarà relativo ad una scala già definita dal CMM\g.
+			Effettuando questo tipo di verifiche il team\g\ avrà subito un riscontro della qualità del processo\g. CMM\g\ ci consente di individuare la maturità di un processo\g: essa può assumere un valore da 1 (il
+			peggiore) a 5 (il migliore). Mettendo ora in relazione i risultati di tale modello con i range da noi
+			stabiliti otteniamo quanto segue:
+			\begin{itemize}
+			\item il valore 1 è considerato negativo;
+			\item i valori 2 e 3 sono considerati accettabili;
+			\item i valori 4 e 5 sono considerati ottimali.
+			\end{itemize}
+			\subsubsection{Metriche per il software}
+			Il gruppo ritiene di non essere ancora pronto per definire le metriche per il software\g\ e quindi si riserverà di riportarle durante la fase\g\ PA.
+\end{document}

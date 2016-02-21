@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{leaf}
+\setcounter{table}{-1}
+\usepackage{float}
+\restylefloat{table}
+
+\titlepage{}
+
+\author{Andrighetto Cristian, Castello Davide}
+\date{27/12/2015}
+\intestazioni{Piano di Qualifica}
+\pagenumbering{gobble}
+\begin{document}
+	\begin{titlepage}
+		\centering
+	{\huge\bfseries CLIPS\par}
+	Communication \& Localization with Indoor Positioning Systems \\*
+	\line(1,0){350} \\
+	{\scshape\LARGE Università di Padova \par}
+	\vspace{1cm}
+	{\scshape\Large Piano di Qualifica \par}
+	\logo
+	\newpage
+		\begin{tabular}{c|c}
+			{\hfill \textbf{Versione}} 			& 1.00			\\
+			{\hfill\textbf{Data Redazione}} 		& 2016-01-20  		\\ 
+			{\hfill\textbf{Redazione}} 			&  Andrighetto Cristian \\ 
+											& Castello Davide       \\
+			{\hfill\textbf{Verifica}} 				&  Federico Tavella   \\
+			{\hfill\textbf{Approvazione}} 		& Federico Tavella \\
+			{\hfill\textbf{Uso}} 					& Esterno			\\
+			{\hfill\textbf{Distribuzione}} 			& Prof. Vardanega Tullio \\
+											& Prof. Cardin Riccardo \\
+											& Miriade S.p.A.
+		\end{tabular}
+	\end{titlepage}
+	
+	\newpage
+	\pagestyle{myfront}
+		\include{sections/DiarioModifichePQ}
+	
+	\newpage
+		\tableofcontents
+	
+	\newpage
+		\listoftables
+	
+	\label{LastFrontPage}
+	\newpage
+		\pagestyle{mymain}
+	\subfile{sections/Introduzione}
+\newpage
+	\subfile{sections/VisioneGeneraleDellaStrategiaDiGestioneDellaQualita}
+\newpage
+	\subfile{sections/LaStrategiaDiGestioneDellaQualitaNelDettaglio}
+\newpage
+	\subfile{sections/CapabilityMaturityModel}
+\newpage
+	\subfile{sections/Test}
+\newpage
+	\subfile{sections/ResocontoDelleAttivitaDiVerificaFaseA}
+\label{LastPage}
+\end{document}
