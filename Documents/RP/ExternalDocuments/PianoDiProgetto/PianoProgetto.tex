@@ -1,0 +1,87 @@
+%ricordarsi di compilare più di una volta
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{leaf}
+\setcounter{table}{-1}
+
+\titlepage{}
+
+\author{Eduard Bicego, Federico Tavella, Andrea Tombolato}
+\date{20/01/2016}
+\intestazioni{Piano di Progetto}
+\pagenumbering{gobble}
+\begin{document}
+	\begin{titlepage}
+		\centering
+		{\huge\bfseries CLIPS\par}
+		Communication \& Localization with Indoor Positioning Systems \\
+		\line(1,0){350} \\
+		{\scshape\LARGE Università di Padova \par}
+		\vspace{1cm}
+		{\scshape\Large Piano di progetto\par}
+		\logo
+		%\vspace{2cm}
+		%{\Large\itshape Eduard Bicego, Federico Tavella, Andrea Tombolato\par}
+	
+		\vfill \vfill
+		% devono essere compilati questi campi ogni volta
+		\begin{tabular}{c|c}
+			{\hfill \textbf{Versione}} 			& 1.00				\\
+			{\hfill\textbf{Data Redazione}} 	& 2016-01-20 		\\
+			{\hfill\textbf{Redazione}} 			& Bicego Eduard  \\ 
+												& Tavella Federico	\\
+												& Tombolato Andrea		\\
+			{\hfill\textbf{Verifica}} 			& Davide Castello 	\\
+			{\hfill\textbf{Approvazione}} 		& Federico Tavella	\\
+			{\hfill\textbf{Uso}} 				& Esterno			\\
+			{\hfill\textbf{Distribuzione}} 		& Prof. Vardanega Tullio \\
+												& Prof. Cardin Riccardo \\
+												& Miriade S.p.A. \\
+	\end{tabular}
+\end{titlepage}
+
+	\pagestyle{myfront}	
+	
+	\newpage
+		\include{diarioModifichePP}	
+	\newpage
+		\tableofcontents 	% produce l'indice delle sezioni del documento
+	\newpage
+		\listoftables 		% produce l'indice delle tabelle del documento
+	\newpage	
+		\listoffigures		% produce l'indice delle figure del documento	
+	
+	\label{LastFrontPage}
+
+	\newpage
+		\pagestyle{mymain}
+	
+	\newpage
+		\subfile{sections/Introduzione}
+	\newpage
+		\subfile{sections/Scadenze}
+
+	\newpage
+		\subfile{sections/AnalisiDeiRischi}
+		
+	\newpage
+		\subfile{sections/ModelloDiSviluppo}
+		
+	\newpage
+		\subfile{sections/Pianificazione}	
+		
+	\newpage
+		\subfile{sections/MeccanismiDiControllo}	
+
+    \newpage
+		\subfile{sections/Preventivo}
+		
+	\newpage
+		\subfile{sections/Consuntivo}
+        
+    \newpage
+		\subfile{sections/Organigramma}
+		
+	\label{LastPage}
+
+\end{document}

@@ -1,0 +1,227 @@
+\documentclass[../PianoProgetto.tex]{subfiles}
+
+\begin{document}
+
+\section{Analisi dei rischi}
+
+	Al fine di migliorare l'avanzamento del progetto è stata effettuata un'attenta analisi dei rischi per individuarli, comprenderli e prendere le contromisure necessarie. Essa è suddivisa in quattro sottofasi:
+	\begin{enumerate}
+	\item identificazione: individuare i rischi che possono interessare il progetto, indicandone le cause e cercando di prevedere le conseguenze;
+	\item analisi: stimare la probabilità di occorrenza di un rischio e determinarne l'impatto sul progetto;
+	\item pianificazione di controllo: definire una metodologia per il controllo dei rischi, in modo che possano essere evitati;
+	\item mitigazione: nel caso in cui fossero inevitabili, definire un piano di contingenza per poter minimizzare i danni prodotti nel caso si verificassero. Questa sottofase non è obbligatoria per tutti i rischi (anche se consigliata), ma solo per quelli difficilmente controllabili e gestibili.
+	\end{enumerate}
+	Ogni rischio identificato avrà le seguenti caratteristiche: 
+		\begin{itemize}
+			\item nome;
+			\item descrizione; 
+			\item probabilità di occorrenza;
+			\item livello di rischio;
+			\item possibili conseguenze;
+			\item strategia di individuazione e gestione. 
+		\end{itemize}	
+	Ogni rischio verrà monitorato nel tempo e ne verrà indicato l'effettivo riscontro. A seguire una tabella riassuntiva con tutti i rischi individuati, mentre nelle prossime sezioni sarà disponibile una descrizione dettagliata per ogni rischio.
+		
+	\newpage
+	
+	\begin{table}[h]
+		\centering
+		
+		\begin{tabularx}{\textwidth}{X X C C}
+			\toprule
+			\textbf{Livello} 	& \textbf{Tipologia} 						& \textbf{Probabilità di occorrenza} & \textbf{Livello di rischio} \\
+			\midrule
+			Strumenti 	& Inesperienza nell'utilizzo 				& Alta 	& Alto \\
+			\arrayrulecolor{gray}
+			\midrule
+			Tecnologico	& Tecnologie adottate sconosciute 			& Media 	& Alto \\
+					\arrayrulecolor{lightgray}\cmidrule{2-4}
+					& Guasti hardware e malfunzionamenti software\g\ 	& Bassa 	& Basso \\
+			\midrule
+			Organizzativo& Valutazione delle risorse					& Media	& Alto \\
+			\midrule
+			Personale	& Problemi personali dei membri del team\g\ & Media	& Medio \\
+					\cmidrule{2-4}
+					& Problemi personali tra i membri del team\g\ 	& Media	& Alto \\
+			\arrayrulecolor{gray}\midrule
+			Requisiti	& Mancata comprensione					& Media	& Alto \\
+			\arrayrulecolor{black}
+			\bottomrule
+		\end{tabularx}
+		
+		\caption{Rischi individuati}
+		\label{tab:rischi}
+		
+	\end{table}
+
+
+\subsection{Livello strumenti}
+
+\subsubsection{Inesperienza nell'utilizzo}
+
+	\paragraph*{Descrizione:} per lo svolgimento del progetto didattico, il team\g\ dovrà utilizzare una serie di strumenti che nessun membro ha mai utilizzato.
+	
+	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a verificare periodicamente il livello di conoscenza dei singoli membri sulle tecnologie adottate.
+	
+	\paragraph*{Analisi:}
+	\begin{itemize}
+		\item probabilità: alta;
+		\item livello di rischio: alto;
+		\item possibili conseguenze: rallentamento delle attività che richiedono l'utilizzo dei suddetti strumenti e conseguente ritardo nella consegna.
+	\end{itemize}
+	
+	\paragraph*{Gestione:}
+	\begin{enumerate}
+		\item annullamento: il \responsabilediprogetto\ affiderà l'utilizzo dello strumento al membro che ritiene il più indicato a manovrarlo nel minor tempo possibile;
+		\item minimizzazione: se l'individuo a cui è stato assegnato lo strumento non riesce ad apprenderne le modalità di utilizzo, verrà sostituito da un altro membro;
+		\item contingenza: se nel periodo previsto nessuno riesce ad utilizzare lo strumento, verrà sostituito da un suo equivalente. 
+	\end{enumerate}	
+	
+	\paragraph*{Riscontro effettivo:} l'utilizzo dello strumento Freedcamp\g\ è stato giudicato dal team\g\ di difficile utilizzo, perciò si è passati ad un suo equivalente più intuitivo: Teamwork\g .
+	Qualche membro ha trovato difficoltà ad interfacciarsi con il linguaggio \LaTeX\  , perciò è stato creato un Notebook\g\ su Teamwork\g\ in cui ogni membro si impegna a riportare informazioni che ritiene utili al fine di velocizzare l'apprendimento di tale linguaggio all'interno del team\g .
+
+\subsection{Livello tecnologico}
+
+\subsubsection{Tecnologie adottate sconosciute}
+
+	\paragraph*{Descrizione:} per la progettazione e l'implementazione del software\g\ per il progetto, il team\g\ dovrà utilizzare una serie di tecnologie praticamente sconosciute.
+	
+	\paragraph*{Analisi:}
+	\begin{itemize}
+		\item probabilità: media;
+		\item livello di rischio: alto;
+		\item possibili conseguenze: l'utilizzo di tecnologie sconosciute richiede tempo per la scelta e l'apprendimento di quest'ultima, il che può portare ad un ritardo sulle date di consegna.
+	\end{itemize}
+	
+	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a monitorare costantemente il grado di conoscenza delle tecnologie adottate.
+	
+	\paragraph*{Gestione:}
+	\begin{enumerate}
+		\item annullamento: se possibile, il team\g\ ricorrerà a tecnologie di propria conoscenza;
+		\item minimizzazione: il piano di lavoro terrà conto dell'inesperienza del team\g : verranno previsti dei periodi di formazione mediante la documentazione fornita dall'\amministratore , che ogni membro del team\g\ si impegnerà a visionare in maniera autonoma;
+		\item contingenza: se il periodo previsto non risulterà essere sufficiente, il piano di lavoro verrà riadattato affinché i membri abbiano più tempo per approfondire lo studio della tecnologia. Questo porterà ad una riesecuzione della pianificazione, con probabile modifica delle scadenze.
+	\end{enumerate} 
+	
+	\paragraph*{Riscontro effettivo:} per ora non sono state adottate tecnologie, di conseguenza il team\g\ non ha ancora riscontrato il rischio.
+
+	\subsubsection{Guasti hardware e malfunzionamenti software}
+	
+	\paragraph*{Descrizione:} durante lo svolgimento del progetto didattico, è possibile che si verifichino guasti hardware e/o malfunzionamenti software\g\ che comportino la perdita di dati.
+	
+	\paragraph*{Analisi:}
+	\begin{itemize}
+		\item probabilità: bassa;
+		\item livello di rischio: basso;
+		\item conseguenze: il malfunzionamento di uno dispositivo può portare al rallentamento delle attività e alla perdita di dati, con una conseguente ripetizione del lavoro già svolto.
+	\end{itemize}
+	
+	\paragraph*{Identificazione:} ogni membro del team\g\ avrà cura della propria attrezzatura; ne verificherà inoltre giornalmente il completo funzionamento.
+	
+	\paragraph*{Gestione:}
+	\begin{enumerate}
+		\item annullamento: i membri del team\g\ si impegneranno ad impostare un backup automatico, con cadenza giornaliera, del materiale relativo al progetto su repository\g . Inoltre eseguiranno una copia in locale di eventuale materiale online che non è presente sulle proprie macchine;
+		\item minimizzazione: il backup giornaliero permetterà di perdere al più una giornata di lavoro, in questo modo le perdite verranno ridotte al minimo. In caso di guasto di una macchina, il membro colpito si impegna ad utilizzare una macchina messa a disposizione dai laboratori fino all'acquisto di una nuova;
+		\item contingenza: grazie al backup giornaliero, non si rende necessario un piano di contingenza.
+	\end{enumerate} 	
+	
+	\paragraph*{Riscontro effettivo:} al momento non si sono verificati guasti hardware o problemi software\g\ di nessun genere sulle macchine dei membri del team\g .
+
+\subsection{Livello organizzativo}
+
+\subsubsection{Valutazione delle risorse}
+
+	\paragraph*{Descrizione:} essendo al primo approccio con un progetto di questa dimensione, il team\g\ potrebbe andare incontro a stime errate di valutazione delle risorse.
+	
+	\paragraph*{Analisi:}
+	\begin{itemize}
+		\item probabilità: media;
+		\item livello di rischio: alto;
+		\item conseguenze: un'errata stima delle risorse può portare ad un ritardo nelle date di consegna (sottostima) o ad un eccessivo spreco d'esse per le attività di progetto (sovrastima).
+	\end{itemize}
+	
+	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a verificare, di giorno in giorno tramite l'utilizzo della Dashboard\g, lo stato di avanzamento delle attività.
+	
+	\paragraph*{Gestione:}
+	\begin{enumerate}
+		\item annullamento: il \responsabilediprogetto\ prevederà, per ogni attività, un periodo di slack\g, in modo che un eventuale ritardo non vada ad intaccare la durata totale di ogni fase\g ;
+		\item minimizzazione: nel caso in cui lo slack\g\ si rivelasse insufficiente, verrà rieseguita la pianificazione delle attività, tenendo conto del ritardo che dovrà essere in qualche modo recuperato;
+		\item contingenza: nel caso in cui un eventuale recupero si dimostri impossibile, verrà eseguita nuovamente la pianificazione, con conseguente ritardo nelle consegne.
+	\end{enumerate}	
+	
+	\paragraph*{Riscontro effettivo:} in un primo momento, era stato stimato un periodo ottimistico per la stesura della documentazione. Di conseguenza è stata rieffettuata una pianificazione delle attività tenendo conto dell'errore commesso, che non ha intaccato le date di consegna.
+
+
+\subsection{Livello personale}
+
+\subsubsection{Problemi personali dei membri del team}
+
+	\paragraph*{Descrizione:} ogni membro del team\g\ avrà le sue necessità e i suoi impegni personali lungo la durate del progetto. Di conseguenza è inevitabile prevedere che alcuni membri del team\g\ 
+non siano disponibili in certi momenti.
+	 
+	\paragraph*{Analisi:}
+	\begin{itemize}
+		\item probabilità: media;
+		\item livello di rischio: medio;
+		\item conseguenze: possibile ritardo nello svolgimento delle attività nel caso di impegni imprevisti di qualche membro del gruppo.
+	\end{itemize}	
+		
+	\paragraph*{Identificazione:} i membri del team\g\ comunicheranno, con il maggior anticipo possibile, i propri impegni al \responsabilediprogetto . Questo compito verrà reso più semplice dall'utilizzo di un calendario di gruppo. 
+	
+	\paragraph*{Gestione:}
+	\begin{enumerate}
+		\item annullamento: quotidianamente i membri del gruppo segnaleranno al \responsabilediprogetto\ eventuali impegni o indisponibilità, il quale ne terrà conto nella suddivisione delle attività;
+		\item minimizzazione: in caso di indisponibilità improvvisa ci si opererà al meglio per ridistribuire il lavoro in modo equo, con l'obiettivo di non rimandare la milestone\g\ prevista;
+		\item contingenza: nel caso in cui fosse impossibile rispettare le tempistiche, verrà effettuato uno spostamento in avanti della consegna.
+	\end{enumerate}
+			
+	\paragraph*{Riscontro effettivo:} i membri hanno fatto il possibile per comunicare con il maggior anticipo possibile i propri impegni. Nella distribuzione a monte del lavoro si è cercato di effettuare una pianificazione a lungo termine che rispettasse i vari impegni, mantenendo una distribuzione equa del lavoro.
+	
+\subsubsection{Problemi personali tra i membri del team}
+
+	\paragraph*{Descrizione:} i membri del team\g\ non hanno mai collaborato alla realizzazione di un progetto che richiedesse collaborazione a stretto contatto, il che può causare attriti tra essi.
+	
+	\paragraph*{Analisi:}
+	\begin{itemize}
+		\item probabilità: media;
+		\item livello di rischio: alto;
+		\item possibili conseguenze: problemi tra i membri del team\g\ possono causare un rallentamento delle attività.
+	\end{itemize}
+	
+	\paragraph*{Identificazione:} il \responsabilediprogetto\ avrà l'onere di verificare periodicamente i rapporti tra i vari membri del team\g. D'altro canto, ogni membro del team\g\ si impegnerà a riferire al \responsabilediprogetto\ eventuali problemi di cui non è a conoscenza.
+	
+	\paragraph*{Gestione:}
+	\begin{enumerate}
+		\item annullamento: in caso di dispute, il \responsabilediprogetto\ si impegnerà a fare il possibile per risolverle. In aggiunta, i membri del team\g\ si impegneranno a tenere i propri incontri e le proprie discussioni in un'ottica di critica costruttiva, consapevoli che un carico di lavoro elevato può portare a situazioni stressanti;
+		\item minimizzazione: nel caso di mancata risoluzione del contrasto, si effettuerà una pianificazione che preveda il minimo contatto tra le parti; 
+		\item contingenza: se il problema persiste, i membri coinvolti verranno costretti a svolgere i propri compiti in luoghi differenti (nel limite del possibile).
+	\end{enumerate}	
+	
+	\paragraph*{Riscontro effettivo:} al momento, non si sono verificati problemi a riguardo.
+
+
+\subsection{Livello requisiti}
+
+\subsubsection{Mancata comprensione}
+
+	\paragraph*{Descrizione:} è possibile che durante le varie attività di analisi dei requisiti del problema non vengano compresi o siano fraintesi.
+	
+	\paragraph*{Analisi:}
+	\begin{itemize}
+		\item probabilità: alta;
+		\item livello di rischio: alto;
+		\item conseguenze: possibili divergenze tra la visione del prodotto\g\ da parte del team\g\ e quella del proponente.
+	\end{itemize}	
+		
+	\paragraph*{Identificazione:} il team\g\ effettuerà una serie di incontri con il proponente per verificare la comprensione dei requisiti e la corrispondenza con le loro aspettative.
+	
+	\paragraph*{Gestione:}
+	\begin{enumerate}
+		\item annullamento: non si ritiene possibile annullare questo rischio;
+		\item minimizzazione: gli incontri verranno sfruttati al massimo per chiarire tutte le incomprensioni. I membri del team\g\ cercheranno di arrivare agli incontri con dei dubbi ben definiti e faranno tutto il possibile affinché l'eventuale problema sorto sia affrontato a livello di gruppo e risolto.
+		\item contingenza: nel caso in cui si verifichino delle divergenze a lavoro iniziato, verrà fatto il possibile per riadattarsi alle esigenze del proponente.
+	\end{enumerate}	
+	
+	\paragraph*{Riscontro effettivo:} i dubbi emersi durante l'analisi sono stati esposti al proponente per ottenere dei chiarimenti. Al momento i requisiti sono stati solamente presentati al proponente, quindi tale rischio non si è ancora verificato.
+
+			
+\end{document}
