@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Analisi di Dettaglio" company="" webLink="" view-date="2016-04-15" view-index="0" gantt-divider-location="419" resource-divider-location="300" version="2.7.1" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Analisi di Dettaglio" company="" webLink="" view-date="2016-04-18" view-index="0" gantt-divider-location="419" resource-divider-location="300" version="2.7.1" locale="it">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
+    <view zooming-state="default:4" id="gantt-chart">
         <field id="tpd3" name="Nome" width="58" order="0"/>
         <field id="tpd4" name="Data d'inizio" width="19" order="1"/>
         <field id="tpd5" name="Data di fine" width="22" order="2"/>
@@ -58,23 +58,51 @@
             </task>
             <task id="59" name="Verifica" color="#8cb6ce" meeting="false" start="2016-03-24" duration="2" complete="0" expand="true"/>
         </task>
-        <task id="43" name="Piano di Progetto" color="#8cb6ce" meeting="false" start="2016-04-19" duration="20" complete="0" expand="true">
+        <task id="43" name="Piano di Progetto" color="#8cb6ce" meeting="false" start="2016-04-19" duration="21" complete="0" expand="true">
             <depend id="168" type="2" difference="0" hardness="Strong"/>
             <task id="45" name="Incremento" color="#8cb6ce" meeting="false" start="2016-04-19" duration="3" complete="0" expand="true">
                 <depend id="47" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="47" name="Verifica" color="#8cb6ce" meeting="false" start="2016-04-22" duration="2" complete="0" expand="true"/>
-            <task id="61" name="Aggiornamento Consuntivo" color="#8cb6ce" meeting="false" start="2016-05-06" duration="2" complete="0" expand="true">
+            <task id="61" name="Aggiornamento Consuntivo" color="#8cb6ce" meeting="false" start="2016-05-07" duration="2" complete="0" expand="true">
                 <depend id="113" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="113" name="Verifica consuntivo" color="#8cb6ce" meeting="false" start="2016-05-08" duration="1" complete="0" expand="true"/>
+            <task id="113" name="Verifica consuntivo" color="#8cb6ce" meeting="false" start="2016-05-09" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="37" name="Glossario" color="#8cb6ce" meeting="false" start="2016-04-19" duration="21" complete="0" expand="true">
-            <depend id="168" type="2" difference="0" hardness="Strong"/>
-            <task id="39" name="Incremento" color="#8cb6ce" meeting="false" start="2016-04-19" duration="20" complete="0" expand="true">
-                <depend id="41" type="2" difference="0" hardness="Strong"/>
+        <task id="182" name="Codifica Requisiti obbligatori" color="#8cb6ce" meeting="false" start="2016-04-11" duration="4" complete="0" expand="true">
+            <depend id="169" type="2" difference="0" hardness="Strong"/>
+            <depend id="177" type="2" difference="0" hardness="Strong"/>
+            <depend id="185" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="185" name="Test" color="#8cb6ce" meeting="false" start="2016-04-15" duration="4" complete="0" expand="true">
+            <depend id="145" type="2" difference="0" hardness="Strong"/>
+            <task id="187" name="Test di unità" color="#8cb6ce" meeting="false" start="2016-04-15" duration="2" complete="0" expand="true">
+                <depend id="189" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="41" name="Verifica" color="#8cb6ce" meeting="false" start="2016-05-09" duration="1" complete="0" expand="true"/>
+            <task id="189" name="Test di integrazione" color="#8cb6ce" meeting="false" start="2016-04-17" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="145" name="Test di sistema" color="#8cb6ce" meeting="false" start="2016-04-19" duration="4" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="169" name="Manuale Utente" color="#8cb6ce" meeting="false" start="2016-04-15" duration="4" complete="0" expand="true">
+            <task id="170" name="Stesura" color="#8cb6ce" meeting="false" start="2016-04-15" duration="3" complete="0" expand="true">
+                <depend id="171" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="171" name="Verifica" color="#8cb6ce" meeting="false" start="2016-04-18" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="177" name="Manuale Sviluppatore" color="#8cb6ce" meeting="false" start="2016-04-15" duration="4" complete="0" expand="true">
+            <task id="179" name="Stesura" color="#8cb6ce" meeting="false" start="2016-04-15" duration="3" complete="0" expand="true">
+                <depend id="181" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="181" name="Verifica" color="#8cb6ce" meeting="false" start="2016-04-18" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="3" name="Incontro con il Proponente" color="#8cb6ce" meeting="true" start="2016-04-23" duration="0" complete="0" expand="true">
+            <depend id="123" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="123" name="Codifica Requisiti desiderabili" color="#8cb6ce" meeting="false" start="2016-04-24" duration="13" complete="0" expand="true">
+            <depend id="88" type="2" difference="0" hardness="Strong"/>
+            <depend id="91" type="2" difference="0" hardness="Strong"/>
+            <depend id="140" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="87" name="Definizione di Prodotto" color="#8cb6ce" meeting="false" start="2016-04-19" duration="5" complete="0" expand="true">
             <depend id="168" type="2" difference="0" hardness="Strong"/>
@@ -85,16 +113,6 @@
                 <depend id="123" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="123" name="Codifica Requisiti desiderabili" color="#8cb6ce" meeting="false" start="2016-04-24" duration="13" complete="0" expand="true">
-            <depend id="88" type="2" difference="0" hardness="Strong"/>
-            <depend id="91" type="2" difference="0" hardness="Strong"/>
-            <depend id="140" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="145" name="Test di sistema" color="#8cb6ce" meeting="false" start="2016-04-19" duration="5" complete="0" expand="true">
-            <depend id="3" type="2" difference="0" hardness="Strong"/>
-            <depend id="123" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="3" name="Incontro con il Proponente" color="#8cb6ce" meeting="true" start="2016-04-24" duration="0" complete="0" expand="true"/>
         <task id="140" name="Test" color="#8cb6ce" meeting="false" start="2016-05-07" duration="3" complete="0" expand="true">
             <depend id="168" type="2" difference="0" hardness="Strong"/>
             <task id="143" name="Test di unità" color="#8cb6ce" meeting="false" start="2016-05-07" duration="2" complete="0" expand="true">
@@ -115,6 +133,13 @@
                 <depend id="101" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="101" name="Verifica" color="#8cb6ce" meeting="false" start="2016-05-09" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="37" name="Glossario" color="#8cb6ce" meeting="false" start="2016-04-19" duration="21" complete="0" expand="true">
+            <depend id="168" type="2" difference="0" hardness="Strong"/>
+            <task id="39" name="Incremento" color="#8cb6ce" meeting="false" start="2016-04-19" duration="20" complete="0" expand="true">
+                <depend id="41" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="41" name="Verifica" color="#8cb6ce" meeting="false" start="2016-05-09" duration="1" complete="0" expand="true"/>
         </task>
         <task id="168" name="Fine PDRD" color="#8cb6ce" meeting="true" start="2016-05-10" duration="0" complete="0" expand="true"/>
     </tasks>
