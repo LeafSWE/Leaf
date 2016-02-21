@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Analisi di Dettaglio" company="" webLink="" view-date="2016-04-04" view-index="0" gantt-divider-location="419" resource-divider-location="300" version="2.7.1" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Analisi di Dettaglio" company="" webLink="" view-date="2016-03-21" view-index="0" gantt-divider-location="419" resource-divider-location="300" version="2.7.1" locale="it">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
         <field id="tpd3" name="Nome" width="58" order="0"/>
@@ -52,11 +52,11 @@
             </task>
             <task id="134" name="Verifica" meeting="false" start="2016-04-22" duration="2" complete="0" expand="true"/>
         </task>
-        <task id="55" name="Piano di Qualifica" color="#8cb6ce" meeting="false" start="2016-03-21" duration="5" complete="0" expand="true">
-            <task id="57" name="Incremento" color="#8cb6ce" meeting="false" start="2016-03-21" duration="3" complete="0" expand="true">
+        <task id="55" name="Piano di Qualifica" color="#8cb6ce" meeting="false" start="2016-04-19" duration="5" complete="0" expand="true">
+            <task id="57" name="Incremento" color="#8cb6ce" meeting="false" start="2016-04-19" duration="3" complete="0" expand="true">
                 <depend id="59" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="59" name="Verifica" color="#8cb6ce" meeting="false" start="2016-03-24" duration="2" complete="0" expand="true"/>
+            <task id="59" name="Verifica" color="#8cb6ce" meeting="false" start="2016-04-22" duration="2" complete="0" expand="true"/>
         </task>
         <task id="43" name="Piano di Progetto" color="#8cb6ce" meeting="false" start="2016-04-19" duration="21" complete="0" expand="true">
             <depend id="168" type="2" difference="0" hardness="Strong"/>
@@ -113,12 +113,15 @@
                 <depend id="123" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="140" name="Test" color="#8cb6ce" meeting="false" start="2016-05-07" duration="3" complete="0" expand="true">
+        <task id="140" name="Test" color="#8cb6ce" meeting="false" start="2016-05-07" duration="8" complete="0" expand="true">
             <depend id="168" type="2" difference="0" hardness="Strong"/>
             <task id="143" name="Test di unità" color="#8cb6ce" meeting="false" start="2016-05-07" duration="2" complete="0" expand="true">
                 <depend id="144" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="144" name="Test di integrazione" meeting="false" start="2016-05-09" duration="1" complete="0" expand="true"/>
+            <task id="144" name="Test di integrazione" meeting="false" start="2016-05-09" duration="1" complete="0" expand="true">
+                <depend id="190" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="190" name="Test di sistema" color="#8cb6ce" meeting="false" start="2016-05-10" duration="5" complete="0" expand="true"/>
         </task>
         <task id="88" name="Manuale Utente" color="#8cb6ce" meeting="false" start="2016-05-07" duration="3" complete="0" expand="true">
             <depend id="168" type="2" difference="0" hardness="Strong"/>
@@ -141,7 +144,7 @@
             </task>
             <task id="41" name="Verifica" color="#8cb6ce" meeting="false" start="2016-05-09" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="168" name="Fine PDRD" color="#8cb6ce" meeting="true" start="2016-05-10" duration="0" complete="0" expand="true"/>
+        <task id="168" name="Consegna RQ" color="#8cb6ce" meeting="true" start="2016-05-15" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
