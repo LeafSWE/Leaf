@@ -59,7 +59,7 @@
             </task>
             <task id="68" name="Verifica" color="#8cb6ce" meeting="false" start="2016-05-22" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="43" name="Consegna RA" color="#8cb6ce" meeting="true" start="2016-05-23" duration="0" complete="0" expand="true"/>
+        <task id="43" name="Fine fase PDROPZ" color="#8cb6ce" meeting="true" start="2016-05-23" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
