@@ -1,0 +1,404 @@
+\documentclass[../AnalisiDeiRequisiti.tex]{subfiles}
+\hyphenation{major}
+\hyphenation{beacon}
+\begin{document}
+\section{Requisiti}
+	Di seguito sono riportati tutti i requisiti, i quali sono stati individuati dopo un'attenta analisi sulla base del capitolato, dei casi d’uso, degli incontri con il proponente e delle riunioni interne.
+
+I requisiti, come indica il documento \normediprogettov , sono classificati in base al tipo e alla priorità, utilizzando la seguente notazione:
+				\begin{center}\textbf{R[X][Y][Z]}\end{center} dove:
+					\begin{enumerate}
+						\item \textbf{X} indica l'importanza strategica del requisito. Deve assumere solo i seguenti valori:
+						\begin{itemize}
+							\item \textbf{Obb}: Indica un requisito obbligatorio;
+							\item \textbf{Des}: Indica un requisito desiderabile;
+							\item \textbf{Opz}: Indica un requisito opzionale.
+						\end{itemize}
+						\item \textbf{Y} indica la tipologia del requisito. Deve assumere solo i seguenti valori:
+						\begin{itemize}
+							\item \textbf{F}: Indica un requisito funzionale;
+							\item \textbf{Q}: Indica un requisito di qualità;
+							\item \textbf{P}: Indica un requisito prestazionale;
+							\item \textbf{V}: Indica un requisito vincolo.
+						\end{itemize}
+						\item \textbf{Z} rappresenta il codice univoco di ogni requisito in forma gerarchica.
+					\end{enumerate}
+	\subsection{Elenco dei requisiti}
+	\begin{longtabu} to \textwidth {X X[2] X}
+\toprule
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonti}\\
+\midrule
+\endhead
+\arrayrulecolor{gray} 
+RObbV1 & Il sistema deve prevedere l'utilizzo della tecnologia Beacon & Capitolato \\ 
+\midrule 
+RObbV2 & Deve essere allestito un laboratorio & Capitolato \\ 
+\midrule 
+RObbV2.1 & Deve essere individuato lo scenario funzionale da sviluppare & Capitolato \\ 
+\midrule 
+RObbV2.2 & Deve essere definita un'area indoor che verrà coperta dal servizio & Capitolato \\ 
+\midrule 
+RObbV2.3 & Deve essere scelta la tipologia di beacon tra quelli forniti & Capitolato \\ 
+\midrule 
+RObbV2.4 & Devono essere scelti i componenti software & Capitolato \\ 
+\midrule 
+RObbV2.5 & Devono essere effettuati i test di fattibilità tecnica & Capitolato \\ 
+\midrule 
+RObbV2.6 & Devono essere documentate e motivate le scelte relative al laboratorio & Capitolato \\ 
+\midrule 
+RObbV3 & Deve essere sviluppato un prototipo software che operi all'interno dell'area indoor scelta & Capitolato \\ 
+\midrule 
+RObbV3.1 & Il prototipo deve permettere di indicare la posizione, anche approssimativa, di un utente all'interno di un edificio (IPS) & Capitolato \\ 
+\midrule 
+RObbV3.2 & Il prototipo deve permettere di fornire informazioni all'utente relative all'area mappata dal beacon (smart places) & Capitolato \\ 
+\midrule 
+RObbV3.3 & Il prototipo deve essere sviluppato per dispositivo mobile & Capitolato \\ 
+\midrule 
+RObbV3.3.1 & Il sistema operativo del dispositivo mobile deve essere Android o iOS & Capitolato \\ 
+\midrule 
+ROpzV3.3.1.1 & Il prototipo deve essere sviluppato sia per Android che per iOS & Capitolato \\ 
+\midrule 
+RObbV3.3.1.2 & La versione del sistema operativo Android deve essere compresa tra la versione 4.4 e la versione 5.1 & Riunione esterna (Verbale2016-01-18) \\ 
+\midrule 
+ROpzV3.3.1.3 & La versione del sistema operativo Android deve essere superiore alla versione 4.4 & Riunione esterna (Verbale2016-01-18) \\ 
+\midrule 
+RObbV4 & Devono essere effettuate delle sperimentazioni pratiche del prototipo sulla base delle scelte fatte & Capitolato \\ 
+\midrule 
+RObbV4.1 & Devono essere individuate le problematiche hardware & Capitolato \\ 
+\midrule 
+RObbV4.1.1 & Devono essere individuate le problematiche hardware riguardanti il dispositivo mobile & Capitolato \\ 
+\midrule 
+RObbV4.1.2 & Devono essere individuate le problematiche hardware riguardanti i beacon & Capitolato \\ 
+\midrule 
+RObbV4.2 & Devono essere individuate le problematiche software & Capitolato \\ 
+\midrule 
+RObbV4.2.1 & Devono essere individuate le problematiche software riguardanti la navigazione & Capitolato \\ 
+\midrule 
+RObbV4.3 & Devono essere individuate le problematiche lato user experience & Capitolato \\ 
+\midrule 
+RObbV4.3.1 & L'area indoor scelta deve essere presentata in modo intuitivo  & Capitolato \\ 
+\midrule 
+RObbV4.3.2 & L'applicazione deve proporre destinazioni verso le quali viaggiare & Capitolato \\ 
+\midrule 
+RObbV4.3.3 & L'applicazione deve presentare il percorso di navigazione in maniera intuitiva & Capitolato \\ 
+\midrule 
+RObbV4.4 & Devono essere eseguite almeno due sperimentazioni pratiche & Capitolato \\ 
+\midrule 
+RObbV4.5 & Devono essere documentate le scelte e le variazioni introdotte per ogni sperimentazione & Capitolato \\ 
+\midrule 
+RObbV4.6 & Devono essere simulate condizioni dell'ambiente il più possibili realistiche per quanto riguarda il numero di persone all'interno dell'area indoor scelta durante le sperimentazioni & Capitolato \\ 
+\midrule 
+RObbV5 & Deve essere prodotta la documentazione dello studio & Capitolato \\ 
+\midrule 
+RObbV5.1 & Devono essere documentate e motivate le scelte fatte & Capitolato \\ 
+\midrule 
+RObbV5.1.1 & Devono essere documentate e motivate le scelte fatte riguardo l'allestimento dell'impianto & Capitolato \\ 
+\midrule 
+RObbV5.1.2 & Devono essere documentate e motivate le scelte fatte riguardo il software sviluppato & Capitolato \\ 
+\midrule 
+RObbV5.1.3 & Devono essere documentate e motivate le scelte fatte riguardo l'interazione con l'utente & Capitolato \\ 
+\midrule 
+RObbV5.2 & Deve essere documentato un eventuale fallimento nella prova sperimentale & Capitolato \\ 
+\midrule 
+RObbV5.2.1 & Devono essere documentate le cause del fallimento & Capitolato \\ 
+\midrule 
+RObbV5.2.2 & Deve essere individuato un possibile scenario alternativo che eviti il verificarsi degli errori individuati & Capitolato \\ 
+\midrule 
+RObbV5.3 & Devono essere documentati eventuali punti deboli della soluzione & Capitolato \\ 
+\midrule 
+RObbV5.3.1 & Devono essere documentati eventuali punti deboli della soluzione riguardanti l'hardware & Capitolato \\ 
+\midrule 
+RObbV5.3.2 & Devono essere documentati eventuali punti deboli della soluzione riguardanti il software & Capitolato \\ 
+\midrule 
+RObbV5.3.3 & Devono essere documentati eventuali punti deboli della soluzione riguardanti l'user experience & Capitolato \\ 
+\midrule 
+RObbV5.4 & Deve essere prodotta la documentazione dell'impianto realizzato in varie versioni & Capitolato \\ 
+\midrule 
+RObbV5.4.1 & Deve essere prodotta la documentazione della mappa di distribuzione degli apparecchi beacon & Capitolato \\ 
+\midrule 
+RObbV5.4.2 & Deve essere prodotta la documentazione riguardante la densità dell'impianto & Capitolato \\ 
+\midrule 
+RObbV5.4.3 & Deve essere prodotta la documentazione riguardante le scelte nel posizionamento dei beacon & Capitolato \\ 
+\midrule 
+RObbV5.4.4 & Deve essere prodotta la documentazione riguardante le note operative dell'impianto & Capitolato \\ 
+\midrule 
+RObbV5.5 & Deve essere prodotta la documentazione relativa al percorso di ricerca e miglioramento & Capitolato \\ 
+\midrule 
+RObbV6 & I luoghi all'interno di un edificio devono essere raggruppati in insiemi disgiunti che ne indichino la categoria & Riunione interna (Verbale2016-01-07) \\ 
+\midrule 
+RObbF7 & L'applicazione deve fornire la funzionalità di navigazione & UC1 \\ 
+\midrule 
+RObbF7.1 & L'applicazione deve fornire la possibilità di ricercare una destinazione tra quelle possibili all'interno dell'edificio & UC1.1 \\ 
+\midrule 
+RDesF7.1.1 & L'applicazione deve permettere di ricercare la destinazione per nome & UC1.1.3 \\ 
+\midrule 
+RDesF7.1.1.1 & L'applicazione deve permettere di inserire il nome di una destinazione & UC1.1.3 \\ 
+\midrule 
+RObbF7.1.2 & L'applicazione deve permettere di ricercare la destinazione per categoria & UC1.1.4 \\ 
+\midrule 
+RObbF7.1.2.1 & L'applicazione deve permettere di selezionare una categoria di destinazioni & UC1.1.4 \\ 
+\midrule 
+RObbF7.1.3 & L'applicazione deve permettere di selezionare un'opzione tra i risultati della ricerca & UC1.1.1 \\ 
+\midrule 
+RObbF7.2 & L'applicazione deve permettere di confermare la destinazione scelta & UC1.1.2 \\ 
+\midrule 
+RObbF7.3 & Data una posizione di partenza A ed una destinazione da raggiungere B, l'applicazione deve calcolare un percorso da A a B & UC1.2 \\ 
+\midrule 
+RDesF7.3.1 & Data una posizione di partenza A ed una destinazione da raggiungere B, l'applicazione deve calcolare un percorso da A a B secondo le preferenze dell'utente & UC1.2 \par UC3.2.2 \\ 
+\midrule 
+RObbF7.4 & L'applicazione deve permettere di iniziare la navigazione & UC1 \\ 
+\midrule 
+RObbF7.4.1 & L'applicazione deve richiedere l'attivazione dei sensori & UC1 \\ 
+\midrule 
+RObbF7.4.1.1 & L'applicazione deve richiedere l'attivazione della modalità di geolocalizzazione & UC1 \\ 
+\midrule 
+RObbF7.4.1.2 & L'applicazione deve richiedere l'attivazione del sensore Bluetooth & UC1 \\ 
+\midrule 
+RObbF7.4.1.3 & L'applicazione deve richiedere l'attivazione del sensore GPS, se il dispositivo Android ha una versione del sistema operativo uguale o superiore alla 6.0 & Riunione esterna (Verbale2016-01-18) \\ 
+\midrule 
+RObbF7.4.2 & L'applicazione deve fornire all'utente le indicazioni utili alla navigazione a partire dalla posizione in cui si trova & UC1.5 \\ 
+\midrule 
+RObbF7.4.2.1 & L'applicazione deve fornire all'utente indicazioni basilari per raggiungere la destinazione scelta & UC1.5 \\ 
+\midrule 
+RDesF7.4.2.2 & L'applicazione deve fornire all'utente una lista contenente le indicazioni per raggiungere la destinazione scelta percorrendo tutte le aree che compongono il percorso previsto & UC1.5 \\ 
+\midrule 
+RDesF7.4.2.3 & L'applicazione deve avvisare l'utente nel caso rilevi in cui un beacon diverso da quelli previsti dal percorso calcolato & UC1.5 \\ 
+\midrule 
+ROpzF7.4.2.4 & L'applicazione deve fornire all'utente indicazioni per raggiungere il prossimo beacon & UC1.5 \\ 
+\midrule 
+ROpzF7.4.2.5 & L'applicazione deve avvisare l'utente nel caso in cui si allontani dal percorso ideale per raggiungere il prossimo beacon & UC1.5 \\ 
+\midrule 
+RDesF7.4.3 & L'applicazione deve fornire le indicazioni dettagliate che lo possano aiutare durante la navigazione & UC1.4 \\ 
+\midrule 
+RDesF7.4.3.1 & L'applicazione deve fornire la foto della prossima area prevista dal percorso & UC1.4.1 \\ 
+\midrule 
+ROpzF7.4.3.2 & L'applicazione deve fornire l'indicazione da seguire in maniera testuale, specificando più indicazioni e punti di riferimento possibili & UC1.4.2 \\ 
+\midrule 
+ROpzF7.4.3.3 & L'applicazione deve fornire la lista di tutte le prossime indicazioni da seguire per raggiungere la destinazione scelta & UC1.4.3 \\ 
+\midrule 
+RObbF7.5 & L'applicazione deve permettere di interrompere la navigazione & UC1.3 \\ 
+\midrule 
+RObbF8 & L'applicazione deve permettere di interagire coi beacon & Capitolato \par UC1 \par UC2 \par UC5 \\ 
+\midrule 
+RObbF8.1 & L'applicazione deve permettere di rilevare l'identificativo (UUID, major, minor) di un beacon & Capitolato \par UC1 \par UC2 \par UC5 \\ 
+\midrule 
+RObbF8.1.1 & L'applicazione deve, rilevato l'identificativo di un beacon, riuscire a reperire le informazioni riguardanti il luogo a cui è associato quel beacon & Capitolato \par UC1 \par UC2 \\ 
+\midrule 
+RObbF8.1.2 & L'applicazione deve, rilevato l'identificativo di un beacon, riuscire a reperire le informazioni riguardanti i luoghi circostanti quel beacon & UC2.1 \\ 
+\midrule 
+RObbF8.2 & L'applicazione deve permettere di rilevare il livello di potenza del segnale dei beacon rilevati & UC5 \\ 
+\midrule 
+RObbF8.3 & L'applicazione deve permettere di rilevare il livello di batteria dei beacon rilevati & UC5 \\ 
+\midrule 
+RObbF8.4 & L'applicazione deve permettere di rilevare la distanza approssimativa dell'utente dai beacon rilevati & UC5 \\ 
+\midrule 
+RObbF8.5 & L'applicazione deve permettere di rilevare la tipologia dei beacon rilevati & UC5 \\ 
+\midrule 
+RObbF8.6 & L'applicazione deve permettere di rilevare l'area coperta dai beacon rilevati & UC5 \\ 
+\midrule 
+RObbF9 & L'applicazione deve fornire informazioni sull'edificio in cui si trova l'utente & UC2.1 \\ 
+\midrule 
+RObbF9.1 & L'applicazione deve fornire un elenco delle destinazioni raggiungibili all'interno dell'edificio in cui si trova l'utente & Capitolato \par UC1.1 \\ 
+\midrule 
+ROpzF9.2 & L'applicazione deve fornire informazioni su tutti i luoghi interni all'edificio in cui si trova l'utente & UC2.1 \\ 
+\midrule 
+ROpzF9.2.1 & L'applicazione deve fornire informazioni solamente sui luoghi relativi ai beacon rilevati & UC2.2 \\ 
+\midrule 
+ROpzF10 & Deve essere possibile gestire gli aspetti relativi all'applicazione & UC3 \\ 
+\midrule 
+ROpzF10.1 & L'applicazione deve permettere di gestire le preferenze navigazione & UC3.2 \\ 
+\midrule 
+ROpzF10.1.1 & L'applicazione deve permettere di impostare le preferenze di percorso & UC3.2.2 \\ 
+\midrule 
+ROpzF10.1.1.1 & L'applicazione deve permettere di scegliere il percorso col minor numero di barriere architettoniche & UC3.2.2.1 \\ 
+\midrule 
+ROpzF10.1.1.2 & L'applicazione deve permettere di scegliere il percorso che presenta il minor numero di ascensori & UC3.2.2.2 \\ 
+\midrule 
+RDesF10.1.2 & L'applicazione deve permettere di impostare le preferenze di fruizione delle indicazioni & UC3.2.1 \\ 
+\midrule 
+RObbF10.1.2.1 & L'applicazione deve fornire informazioni testuali & UC1.2 \par UC1.5 \\ 
+\midrule 
+RDesF10.1.2.2 & L'applicazione deve permettere all'utente di ricevere indicazioni vocali durante la navigazione & UC3.2.1.1 \\ 
+\midrule 
+RDesF10.1.2.3 & L'applicazione deve permettere all'utente di ricevere indicazioni sonore in modo similare ad un sonar & UC3.2.1.2 \\ 
+\midrule 
+RDesF10.2 & L'applicazione deve permettere di gestire le mappe & UC3.1 \\ 
+\midrule 
+RDesF10.2.1 & L'applicazione deve permettere di aggiornare una mappa scaricata in precedenza & UC3.1.1 \\ 
+\midrule 
+RDesF10.2.2 & L'applicazione deve permettere di rimuovere una mappa scaricata in precedenza & UC3.1.2 \\ 
+\midrule 
+RDesF10.2.3 & L'applicazione deve permettere di scaricare una mappa & UC3.1.3 \par UC3.1.3.2 \\ 
+\midrule 
+RDesF10.2.4 & L'applicazione deve permettere di scegliere una mappa tra quelle disponibili & UC3.1.3.1 \\ 
+\midrule 
+RDesF10.2.5 & L'applicazione deve permettere di recuperare una mappa collegandosi ad un server & Riunione esterna (Verbale2016-01-18) \par UC3.1.3.3 \\ 
+\midrule 
+RObbF10.3 & L'applicazione deve permettere di sbloccare le funzionalità di sviluppatore & UC3.3 \\ 
+\midrule 
+RObbF10.3.1 & L'applicazione deve permettere di inserire un codice per sbloccare le funzionalità di sviluppatore & UC3.3.1 \\ 
+\midrule 
+RObbF10.3.2 & L'applicazione deve permettere di confermare il codice inserito & UC3.3.2 \\ 
+\midrule 
+ROpzF11 & L'applicazione deve fornire una guida che spieghi l'utilizzo della stessa & UC4 \\ 
+\midrule 
+RObbF12 & L'applicazione deve permettere di visualizzare le informazioni dei beacon rilevati & UC5 \\ 
+\midrule 
+RObbF12.1 & L'applicazione deve permettere di visualizzare l'identificativo (UUID, major, minor) di un beacon & UC5.1 \\ 
+\midrule 
+RObbF12.2 & L'applicazione deve permettere di visualizzare il livello di potenza del segnale dei beacon rilevati & UC5.1 \\ 
+\midrule 
+RObbF12.3 & L'applicazione deve permettere di gestire i log delle informazioni riguardanti i beacon rilevati & UC5.2 \\ 
+\midrule 
+RDesF12.3.1 & L'applicazione deve permettere di interrompere un log & UC5.2.2 \\ 
+\midrule 
+RDesF12.3.2 & L'applicazione deve permettere di avviare un nuovo log & UC5.2.1 \\ 
+\midrule 
+RDesF12.3.3 & L'applicazione deve permettere di salvare un log & UC5.2.2 \\ 
+\midrule 
+RDesF12.3.4 & L'applicazione deve permettere di visualizzare un log salvato & UC5.2.4 \\ 
+\midrule 
+RDesF12.3.5 & L'applicazione deve permettere di eliminare un log salvato & UC5.2.3 \\ 
+\midrule 
+ROpzF12.4 & L'applicazione deve permettere di visualizzare il livello di batteria dei beacon rilevati & UC5.1 \\ 
+\midrule 
+RObbF12.5 & L'applicazione deve permettere di visualizzare la distanza approssimativa dell'utente dai beacon rilevati & UC5.1 \\ 
+\midrule 
+RObbF12.6 & L'applicazione deve permettere di visualizzare la tipologia dei beacon rilevati & UC5.1 \\ 
+\midrule 
+RObbF12.7 & L'applicazione deve permettere di dare indicazioni sull'area coperta dai beacon rilevati & UC5.1 \\ 
+\midrule 
+ROpzQ13 & Devono essere utilizzate le issue di GitHub per la segnalazione dei bug & Riunione interna (Verbale2016-01-07) \\ 
+\midrule 
+RDesP14 & L'applicazione deve rilevare il beacon e le sue informazioni in un tempo minore di 15 secondi & Riunione interna (Verbale2016-01-13) \\ 
+\midrule 
+ROpzP15 & L'applicazione deve rilevare il beacon e le sue informazioni in un tempo minore di 5 secondi & Riunione interna (Verbale2016-01-13) \\ 
+\arrayrulecolor{black}
+\bottomrule
+\caption{Requisiti} \\
+\end{longtabu}
+	\newpage
+	\subsection{Tracciamento fonti-requisiti}
+	\begin{longtabu} to \textwidth {X X[2] X}
+\toprule
+\textbf{Codice} & \textbf{Dettaglio} & \textbf{Requisiti} \\ & & \textbf{Abbinati}\\
+\midrule
+\endhead
+\arrayrulecolor{gray} 
+C2 & Capitolato & RObbV1 \par RObbV2 \par RObbV2.1 \par RObbV2.2 \par RObbV2.3 \par RObbV2.4 \par RObbV2.5 \par RObbV2.6 \par RObbV3 \par RObbV3.1 \par RObbV3.2 \par RObbV3.3 \par RObbV3.3.1 \par ROpzV3.3.1.1 \par RObbV4 \par RObbV4.1 \par RObbV4.1.1 \par RObbV4.1.2 \par RObbV4.2 \par RObbV4.2.1 \par RObbV4.3 \par RObbV4.3.1 \par RObbV4.3.2 \par RObbV4.3.3 \par RObbV4.4 \par RObbV4.5 \par RObbV4.6 \par RObbV5 \par RObbV5.1 \par RObbV5.1.1 \par RObbV5.1.2 \par RObbV5.1.3 \par RObbV5.2 \par RObbV5.2.1 \par RObbV5.2.2 \\
+ \midrule
+C2 & Capitolato & RObbV5.3 \par RObbV5.3.1 \par RObbV5.3.2 \par RObbV5.3.3 \par RObbV5.4 \par RObbV5.4.1 \par RObbV5.4.2 \par RObbV5.4.3 \par RObbV5.4.4 \par RObbV5.5 \par RObbF8 \par RObbF8.1 \par RObbF8.1.1 \par RObbF9.1 \\ 
+\midrule 
+V2016-01-07 & Riunione interna (Verbale2016-01-07) & RObbV6 \par ROpzQ13 \\ 
+\midrule 
+V2016-01-13 & Riunione interna (Verbale2016-01-13) & RDesP14 \par ROpzP15 \\ 
+\midrule 
+V2016-01-18 & Riunione esterna (Verbale2016-01-18) & RObbV3.3.1.2 \par ROpzV3.3.1.3 \par RObbF7.4.1.3 \par RDesF10.2.5 \\
+\midrule 
+UC1 & UC1 - Navigazione & RObbF7 \par RObbF7.4 \par RObbF7.4.1 \par RObbF7.4.1.1 \par RObbF7.4.1.2 \par RObbF8 \par RObbF8.1 \par RObbF8.1.1 \\ 
+\midrule 
+UC1.1 & UC1.1 - Inserimento destinazione & RObbF7.1 \par RObbF9.1 \\ 
+\midrule 
+UC1.1.1 & UC1.1.1 - Scelta destinazione & RObbF7.1.3 \\ 
+\midrule 
+UC1.1.2 & UC1.1.2 - Conferma scelta & RObbF7.2 \\ 
+\midrule 
+UC1.1.3 & UC1.1.3 - Ricerca per nome & RDesF7.1.1 \par RDesF7.1.1.1 \\ 
+\midrule 
+UC1.1.4 & UC1.1.4 - Ricerca per categoria & RObbF7.1.2 \par RObbF7.1.2.1 \\ 
+\midrule 
+UC1.2 & UC1.2 - Avvio navigazione & RObbF7.3 \par RDesF7.3.1 \par RObbF10.1.2.1 \\ 
+\midrule 
+UC1.3 & UC1.3 - Interruzione navigazione & RObbF7.5 \\ 
+\midrule 
+UC1.4 & UC1.4 - Accesso a maggiori indicazioni & RDesF7.4.3 \\ 
+\midrule 
+UC1.4.1 & UC1.4.1 - Accesso foto della prossima area & RDesF7.4.3.1 \\ 
+\midrule 
+UC1.4.2 & UC1.4.2 - Accesso indicazione testuale estesa & ROpzF7.4.3.2 \\ 
+\midrule 
+UC1.4.3 & UC1.4.3 - Accesso lista indicazioni & ROpzF7.4.3.3 \\ 
+\midrule 
+UC1.5 & UC1.5 - Visualizzazione indicazioni & RObbF7.4.2 \par RObbF7.4.2.1 \par RDesF7.4.2.2 \par RDesF7.4.2.3 \par ROpzF7.4.2.4 \par ROpzF7.4.2.5 \par RObbF10.1.2.1 \\ 
+\midrule 
+UC2 & UC2 - Accesso alle informazioni & RObbF8 \par RObbF8.1 \par RObbF8.1.1 \\ 
+\midrule 
+UC2.1 & UC2.1 - Accesso alle informazioni dell'edificio & RObbF8.1.2 \par RObbF9 \par ROpzF9.2 \\ 
+\midrule 
+UC2.2 & UC2.2 - Esplorazione & ROpzF9.2.1 \\ 
+\midrule 
+UC3 & UC3 - Gestione dell'applicazione & ROpzF10 \\ 
+\midrule 
+UC3.1 & UC3.1 - Gestione mappe & RDesF10.2 \\ 
+\midrule 
+UC3.1.1 & UC3.1.1 - Aggiornamento mappa scaricata & RDesF10.2.1 \\ 
+\midrule 
+UC3.1.2 & UC3.1.2 - Rimozione mappa scaricata & RDesF10.2.2 \\ 
+\midrule 
+UC3.1.3 & UC3.1.3 - Aggiunta nuova mappa & RDesF10.2.3 \\ 
+\midrule 
+UC3.1.3.1 & UC3.1.3.1 - Scelta mappa & RDesF10.2.4 \\ 
+\midrule 
+UC3.1.3.2 & UC3.1.3.2 - Conferma mappa scelta & RDesF10.2.3 \\ 
+\midrule 
+UC3.1.3.3 & UC3.1.3.3 - Download mappa & RDesF10.2.5 \\ 
+\midrule 
+UC3.2 & UC3.2 - Gestione preferenze navigazione & ROpzF10.1 \\ 
+\midrule 
+UC3.2.1 & UC3.2.1 - Gestione fruizione indicazioni & RDesF10.1.2 \\ 
+\midrule 
+UC3.2.1.1 & UC3.2.1.1 - Scelta indicazioni vocali & RDesF10.1.2.2 \\ 
+\midrule 
+UC3.2.1.2 & UC3.2.1.2 - Scelta indicazioni sonore & RDesF10.1.2.3 \\ 
+\midrule 
+UC3.2.2 & UC3.2.2 - Gestione preferenze percorso & RDesF7.3.1 \par ROpzF10.1.1 \\ 
+\midrule 
+UC3.2.2.1 & UC3.2.2.1 - Scelta percorso più accessibile & ROpzF10.1.1.1 \\ 
+\midrule 
+UC3.2.2.2 & UC3.2.2.2 - Scelta evitare ascensori & ROpzF10.1.1.2 \\ 
+\midrule 
+UC3.3 & UC3.3 - Attivazione funzionalità sviluppatore & RObbF10.3 \\ 
+\midrule 
+UC3.3.1 & UC3.3.1 - Inserimento codice sviluppatore & RObbF10.3.1 \\ 
+\midrule 
+UC3.3.2 & UC3.3.2 - Conferma codice & RObbF10.3.2 \\ 
+\midrule 
+UC4 & UC4 - Accesso alla guida & ROpzF11 \\ 
+\midrule 
+UC5 & UC5 - Accesso funzionalità sviluppatore & RObbF8 \par RObbF8.1 \par RObbF8.2 \par RObbF8.3 \par RObbF8.4 \par RObbF8.5 \par RObbF8.6 \par RObbF12 \\ 
+\midrule 
+UC5.1 & UC5.1 - Accesso informazioni beacon circostanti & RObbF12.1 \par RObbF12.2 \par ROpzF12.4 \par RObbF12.5 \par RObbF12.6 \par RObbF12.7 \\ 
+\midrule 
+UC5.2 & UC5.2 - Gestione log & RObbF12.3 \\ 
+\midrule 
+UC5.2.1 & UC5.2.1 - Avvio nuovo log & RDesF12.3.2 \\ 
+\midrule 
+UC5.2.2 & UC5.2.2 - Interruzione log & RDesF12.3.1 \par RDesF12.3.3 \\ 
+\midrule 
+UC5.2.3 & UC5.2.3 - Rimozione log & RDesF12.3.5 \\ 
+\midrule 
+UC5.2.4 & UC5.2.4 - Accesso log salvato & RDesF12.3.4 \\ 
+\arrayrulecolor{black}
+\bottomrule
+\caption{Tracciamento fonti-requisiti} \\
+\end{longtabu}
+	\newpage
+	\subsection{Riepilogo}
+\begin{longtabu} to \textwidth {X X X X}
+\toprule
+\textbf{Categoria} & \textbf{Obbligatorio} & \textbf{Opzionale} & \textbf{Desiderabile}\\
+\midrule
+\endhead
+\arrayrulecolor{gray}
+Funzionale & 37 & 13 & 21 \\ 
+\midrule 
+Qualità & 0 & 1 & 0 \\ 
+\midrule 
+Prestazionali & 0 & 1 & 1 \\ 
+\midrule 
+Vincolo & 46 & 2 & 0 \\ 
+\arrayrulecolor{black}
+\bottomrule
+\caption{Riepilogo dei requisiti} \\
+\end{longtabu}
+\end{document}
