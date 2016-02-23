@@ -78,9 +78,44 @@ dopo aver superato la validazione ci conferma che è conforme alle aspettative e
 			\item[Accettabile] valore accettabile, l'oggetto sottoposto a verifica ha raggiunto una soglia minima.
 			\item[Ottimale] valore accettabile, l'oggetto sottoposto a verifica ha raggiunto le massime aspettative del team\g. L'obiettivo dovrebbe essere quello di avere tutti i valori all'interno di tale range. 
 			\end{description}
-			\subsubsection{Metriche per i documenti}
+			
+			\subsubsection{Metriche per i processi}
+			Le seguenti metriche sono identificate da un codice identificativo, al fine di rendere più semplice il tracciamento tra l'obiettivo di qualità da soddisfare e la metrica che permettere di verificarne il soddisfacimento.\\
+			La procedura di denominazione delle metriche è spiegata in dettaglio nel documento \normediprogettov.
+			
+			\paragraph{Capability Maturity Model - MPC1}
+			Per controllare e verificare la qualità dei processi, il gruppo adotterà le metriche fornite dal modello CMM\g\ dove per ogni fase\g\ di lavoro si andrà a fornire un indice che descriverà la qualità della fase\g\ presa in esame. L'indice sarà relativo ad una scala già definita dal CMM\g.\\
+			Effettuando questo tipo di verifiche il team\g\ avrà subito un riscontro della qualità del processo\g. CMM\g\ ci consente di individuare la maturità di un processo\g: essa può assumere un valore da 1 (il
+			peggiore) a 5 (il migliore).\\
+			Mettendo ora in relazione i risultati di tale modello con i range da noi stabiliti otteniamo quanto segue:
+			\begin{itemize}
+				\item il valore 1 è considerato negativo;
+				\item i valori 2 e 3 sono considerati accettabili;
+				\item i valori 4 e 5 sono considerati ottimali.
+			\end{itemize}
+			
+			\paragraph{Schedule Variance - MPC2}
+			La schedule variance indica se le attività di progetto sono in anticipo o in ritardo rispetto a quelle pianificate nel \pianodiprogetto. Costituisce un indicatore di efficacia dei processi e viene calcolata come la differenza fra la data pianificata di fine di un'attività e la data di fine reale dell'attività stessa. Se la schedule variance è maggiore di 0 significa che il progetto sta producendo con maggior velocità rispetto a quanto pianificato, viceversa se negativo. Se è pari a 0 significa che si è perfettamente in linea con la pianificazione.\\I range di accettazione per questa metrica sono:			\begin{itemize}
+				\item un deficit maggiore del 5\% del tempo pianificato per il processo è considerato negativo;
+				\item un deficit minore del 5\% del tempo pianificato per il processo è considerato accettabile;
+				\item valori maggiori o uguali a 0 sono considerati ottimali.
+			\end{itemize}
+					
+			\paragraph{Budget Variance - MPC3}
+			La budget variance indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto. Costituisce un indice di efficienza e si calcola confrontando il preventivo con il consuntivo.I range di accettazione per questa metrica sono:
+			\begin{itemize}
+				\item un deficit maggiore del 10\% delle risorse preventivate per il processo è considerato negativo;
+				\item un deficit minore del 10\% delle risorse preventivate per il processo è accettabile;
+				\item un valore maggiore o uguale a 0 è considerato ottimale.
+			\end{itemize}
+			
+			\subsubsection{Metriche per i prodotti}
+			Le seguenti metriche sono identificate da un codice identificativo, al fine di rendere più semplice il tracciamento tra l'obiettivo di qualità da soddisfare e la metrica che permettere di verificarne il soddisfacimento.\\
+			La procedura di denominazione delle metriche è spiegata in dettaglio nel documento \normediprogettov.
+			
+			\paragraph{Metriche per i documenti}
 			La qualità di un documento dipende prima di tutto dai suoi contenuti. La loro qualità, tuttavia, è difficilmente quantificabile allo stato attuale del progetto a causa dell'esperienza pressoché nulla del team\g\ in quest'ambito. Si è deciso dunque di limitarsi a valutare parametri maggiormente oggettivi e soprattutto misurabili automaticamente attraverso strumenti software\g.
-				\paragraph{Indice di leggibilità}
+				\subparagraph{Indice di leggibilità - MPRD1}
 				Una metrica che si è deciso di utilizzare per poter stimare la qualità di un documento è l'indice di leggibilità. In particolare, è stato considerato l'indice Gulpease\g, studiato appositamente per la lingua italiana.				\\Questo particolare indice si basa sulla lunghezza della parola e sulla lunghezza della frase rispetto al numero di lettere. La formula per il suo calcolo è la seguente:
 				\begin{equation}
 					Indice \  Gulpease = 89 + \frac{300*numeroFrasi-10*numeroLettere}{numeroParole}
@@ -98,7 +133,7 @@ dopo aver superato la validazione ci conferma che è conforme alle aspettative e
 					\item Valori compresi tra 35 e 50 sono considerati accettabili.
 					\item Valori maggiori di 50 sono considerati ottimali. 
 				\end{itemize}
-				\paragraph{Errori ortografici rinvenuti e non corretti}
+				\subparagraph{Errori ortografici rinvenuti e non corretti - MPRD2}
 				Tale metrica è necessaria per capire quanto un documento sia corretto dal punto di vista ortografico. Infatti, supponendo che gli strumenti automatici siano in grado di trovare tutti (o perlomeno la maggior parte) degli errori ortografici all'interno di un testo, la correttezza ortografica non può che basarsi sul numero di errori rinvenuti ma non successivamente corretti. Notare che per errori corretti si intende un errore revisionato manualmente da parte di un \verificatore. Le correzioni automatiche, infatti, non sono molto attendibili. \\
 				Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
 				\begin{itemize}
@@ -107,7 +142,7 @@ dopo aver superato la validazione ci conferma che è conforme alle aspettative e
 					\item una percentuale di errori non corretti pari allo 0\% è ritenuta ottimale.
 				\end{itemize}
 				Notare che non è accettabile che vi siano errori rinvenuti e non corretti da qualche membro del gruppo.
-				\paragraph{Errori concettuali rinvenuti e non corretti}
+				\subparagraph{Errori concettuali rinvenuti e non corretti - MPRD3}
 				Tale metrica è necessaria per capire quanto un documento sia corretto dal punto di vista concettuale. Infatti, supponendo che in seguito alle revisioni siano stati trovati tutti (o perlomeno la maggior parte) i maggiori errori di questo tipo, la correttezza concettuale non può che basarsi sul numero di errori rinvenuti e fatti notare ma non successivamente corretti. Notare che per errori corretti si intende un errore fatto notare dal committente o da qualche \verificatore\ (con relativa approvazione del \responsabilediprogetto) e successivamente corretto (sulla base di discussioni interne o con il committente).\\
 				Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
 				\begin{itemize}
@@ -115,18 +150,7 @@ dopo aver superato la validazione ci conferma che è conforme alle aspettative e
 					\item una percentuale di errori non corretti minore del 5\% è ritenuta accettabile;
 					\item una percentuale di errori non corretti pari allo 0\% è ritenuta ottimale;
 				\end{itemize}	
-			\subsubsection{Metriche per i processi}
-			Per controllare e verificare la qualità dei processi, il gruppo adotterà le metriche fornite dal
-			modello CMM\g\ dove per ogni fase\g\ di lavoro si andrà a fornire un indice che descriverà la
-			qualità della fase\g\ presa in esame. L'indice sarà relativo ad una scala già definita dal CMM\g.
-			Effettuando questo tipo di verifiche il team\g\ avrà subito un riscontro della qualità del processo\g. CMM\g\ ci consente di individuare la maturità di un processo\g: essa può assumere un valore da 1 (il
-			peggiore) a 5 (il migliore). Mettendo ora in relazione i risultati di tale modello con i range da noi
-			stabiliti otteniamo quanto segue:
-			\begin{itemize}
-			\item il valore 1 è considerato negativo;
-			\item i valori 2 e 3 sono considerati accettabili;
-			\item i valori 4 e 5 sono considerati ottimali.
-			\end{itemize}
-			\subsubsection{Metriche per il software}
+
+			\paragraph{Metriche per il software}
 			Il gruppo ritiene di non essere ancora pronto per definire le metriche per il software\g\ e quindi si riserverà di riportarle durante la fase\g\ PA.
 \end{document}
