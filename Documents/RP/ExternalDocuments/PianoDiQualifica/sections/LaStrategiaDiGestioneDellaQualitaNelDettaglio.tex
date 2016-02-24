@@ -121,7 +121,7 @@ dopo aver superato la validazione ci conferma che è conforme alle aspettative e
 			
 			\paragraph{Metriche per i documenti}
 			La qualità di un documento dipende prima di tutto dai suoi contenuti. La loro qualità, tuttavia, è difficilmente quantificabile allo stato attuale del progetto a causa dell'esperienza pressoché nulla del team\g\ in quest'ambito. Si è deciso dunque di limitarsi a valutare parametri maggiormente oggettivi e soprattutto misurabili automaticamente attraverso strumenti software\g.
-				\subparagraph{Indice di leggibilità - MPRD1}
+				\subparagraph{Indice di leggibilità - MPRD1}\label{MPRD1}
 				Una metrica che si è deciso di utilizzare per poter stimare la qualità di un documento è l'indice di leggibilità. In particolare, è stato considerato l'indice Gulpease\g, studiato appositamente per la lingua italiana.				\\Questo particolare indice si basa sulla lunghezza della parola e sulla lunghezza della frase rispetto al numero di lettere. La formula per il suo calcolo è la seguente:
 				\begin{equation}
 					Indice \  Gulpease = 89 + \frac{300*numeroFrasi-10*numeroLettere}{numeroParole}
@@ -139,7 +139,7 @@ dopo aver superato la validazione ci conferma che è conforme alle aspettative e
 					\item Valori compresi tra 40 e 60 sono considerati accettabili.
 					\item Valori maggiori di 60 sono considerati ottimali. 
 				\end{itemize}
-				\subparagraph{Errori ortografici rinvenuti e non corretti - MPRD2}
+				\subparagraph{Errori ortografici rinvenuti e non corretti - MPRD2}\label{MPRD2}
 				Tale metrica è necessaria per capire quanto un documento sia corretto dal punto di vista ortografico. Infatti, supponendo che gli strumenti automatici siano in grado di trovare tutti (o perlomeno la maggior parte) degli errori ortografici all'interno di un testo, la correttezza ortografica non può che basarsi sul numero di errori rinvenuti ma non successivamente corretti. Notare che per errori corretti si intende un errore revisionato manualmente da parte di un \verificatore. Le correzioni automatiche, infatti, non sono molto attendibili. \\
 				Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
 				\begin{itemize}
@@ -148,7 +148,7 @@ dopo aver superato la validazione ci conferma che è conforme alle aspettative e
 					\item una percentuale di errori non corretti pari allo 0\% è ritenuta ottimale.
 				\end{itemize}
 				Notare che non è accettabile che vi siano errori rinvenuti e non corretti da qualche membro del gruppo.
-				\subparagraph{Errori concettuali rinvenuti e non corretti - MPRD3}
+				\subparagraph{Errori concettuali rinvenuti e non corretti - MPRD3}\label{MPRD3}
 				Tale metrica è necessaria per capire quanto un documento sia corretto dal punto di vista concettuale. Infatti, supponendo che in seguito alle revisioni siano stati trovati tutti (o perlomeno la maggior parte) i maggiori errori di questo tipo, la correttezza concettuale non può che basarsi sul numero di errori rinvenuti e fatti notare ma non successivamente corretti. Notare che per errori corretti si intende un errore fatto notare dal committente o da qualche \verificatore\ (con relativa approvazione del \responsabilediprogetto) e successivamente corretto (sulla base di discussioni interne o con il committente).\\
 				Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
 				\begin{itemize}
