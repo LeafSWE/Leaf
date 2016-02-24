@@ -3,7 +3,10 @@
 \begin{document}
 \section{Visione generale della strategia di gestione della qualità}
 	\subsection{Obiettivi di qualità}
-	In questa sezione vengono riportati gli obiettivi di qualità che il gruppo \leaf\ si impegna a perseguire durante lo svolgimento dell'intero progetto. Per capire se un certo obiettivo è stato raggiunto oppure no, il gruppo fa uso di standard, modelli e metriche. Ognuno di questi fa uso di scale differenti e fissate a priori: qualunque sia il criterio utilizzato per misurare e dunque quantificare la vicinanza a un certo obiettivo abbiamo fissato dei valori minimi che intendiamo raggiungere nell'arco dell'intero progetto. Oltre a ciò abbiamo anche fissato dei valori che riteniamo ottimali e che devono essere sperabilmente (ma non obbligatoriamente) raggiunti.
+	In questa sezione vengono riportati gli obiettivi di qualità che il gruppo \leaf\ si impegna a perseguire durante lo svolgimento dell'intero progetto. Per capire se un certo obiettivo è stato raggiunto oppure no, il gruppo fa uso di standard, modelli e metriche. Ognuno di questi fa uso di scale differenti e fissate a priori: qualunque sia il criterio utilizzato per misurare e dunque quantificare la vicinanza a un certo obiettivo abbiamo fissato dei valori minimi che intendiamo raggiungere nell'arco dell'intero progetto. Oltre a ciò abbiamo anche fissato dei valori che riteniamo ottimali e che devono essere sperabilmente (ma non obbligatoriamente) raggiunti.\\
+	I seguenti obiettivi sono inoltre identificati da un codice identificativo, al fine di rendere più semplice il tracciamento tra l'obiettivo di qualità da soddisfare e la metrica che permettere di verificarne il soddisfacimento.\\
+	La procedura di denominazione degli obiettivi è spiegata in dettaglio nel documento \normediprogettov.
+	
 		\subsubsection{Qualità di processo}
 		Assicurare la qualità dei processi è indispensabile durante lo svolgimento del progetto per le seguenti ragioni:
 		\begin{itemize}
@@ -23,7 +26,7 @@
 			\item i costi effettivi di ogni processo dovrebbero essere in linea con quanto dichiarato nel documento \pianodiprogettov.
 		\end{itemize}
 		Nelle prossime sezioni si enunciano gli obiettivi che si intendono raggiungere. Per ognuno di essi vengono specificati i criteri con i quali si effettuano le misurazioni sulla qualità (per capire quanto si è vicini all’obiettivo).\\
-		Infine, per ogni criterio scelto vengono dichiarati i valori minimi che si intendono raggiungere, oltre a quelli ottimali.
+		Per ogni criterio scelto vengono inoltre dichiarati i valori minimi che si intendono raggiungere, oltre a quelli ottimali.\\
 			
 		\paragraph{Miglioramento costante - OQPC1}
 		Per misurare quanto si è vicini all’obiettivo di avere processi in grado di misurare le proprie performance e che sono quindi in grado di porsi obiettivi quantitativi di miglioramento si è deciso di adottare il modello CMM.\\
@@ -38,26 +41,75 @@
 		Per approfondire la scelta dei range di accettazione e ottimalità si consulti invece la metrica MPC1 "Capability Maturity Model".
 		
 		\paragraph{Rispetto della pianificazione - OQPC2}
+		Per capire se le attività di un processo sono oppure no in ritardo rispetto a quanto è stato pianificato all’interno del \pianodiprogetto\ viene utilizzata la seguente metrica: Schedule Variance.\\
+		Si desidera che il ritardo accumulato non sia maggiore del 5\% rispetto al totale pianificato. Sarebbe invece ottimale essere esattamente in linea con quanto prevede il \pianodiprogetto, o essere addirittura in anticipo.\\
+		Riassumendo:
+		\begin{description}
+			\item[Metrica utilizzata per quantificare l’obiettivo:] Schedule Variance;
+			\item[Soglia di accettabilità:] in ritardo al massimo del 5\% rispetto a quanto pianificato;
+			\item[Soglia di ottimalità:] essere in linea o in anticipo con quanto pianificato (minore o uguale a 0\%).
+		\end{description}
+		Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPC2 "Schedule Variance".
 		
 		\paragraph{Rispetto del budget - OQPC3}
-		
+		Per capire se i costi di un processo rientrano nel budget assegnato dal \pianodiprogetto\ oppure no viene utilizzata la seguente metrica: Budget Variance.\\
+		L’obiettivo minimo è quello di avere dei costi che non superano il budget a disposizione di una percentuale maggiore al 10\%. Sarebbe ottimale, invece, che i costi fossero esattamente in linea con il preventivo o che addirittura si fosse speso meno.\\
+		Riassumendo:
+		\begin{description}
+			\item[Metrica utilizzata per quantificare l’obiettivo:] Budget Variance;
+			\item[Soglia di accettabilità:] costi al massimo maggiori del 10\% rispetto al preventivo;
+			\item[Soglia di ottimalità:] costi in linea con il budget o addirittura minori (minore o uguale a 0\%).
+		\end{description}
+		Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPC3 "Budget Variance".
 		
 		\subsubsection{Qualità di prodotto}
-		Il gruppo si prefigge di mantenere la stessa qualità sia nei processi che nei prodotti: per garantire la migliore qualità del prodotto\g\ anche il processo\g\ da cui proviene deve avere una buona qualità. Il gruppo per mantenere la qualità del prodotto\g\ 
-cercherà di seguire al meglio lo standard di qualità [ISO/IEC 9126:2001].\\
-		I prodotti che vengono realizzati durante l'intero progetto sono sostanzialmente di due tipi: documenti e software\g. Nelle prossime sezioni, si enunciano gli obiettivi che si intendono raggiungere suddivisi per tipologia di prodotto\g.
+		Il gruppo si prefigge di mantenere la stessa qualità sia nei processi che nei prodotti: per garantire la migliore qualità del prodotto\g\ anche il processo\g\ da cui proviene deve avere una buona qualità. Il gruppo per mantenere la qualità del prodotto\g\ cercherà di seguire al meglio lo standard di qualità [ISO/IEC 9126:2001].\\
+		I prodotti che vengono realizzati durante l'intero progetto sono sostanzialmente di due tipi: documenti e software\g. Nelle prossime sezioni, si enunciano gli obiettivi che si intendono raggiungere suddivisi per tipologia di prodotto\g.\\
+		Per ogni obiettivo, poi, vengono specificati i criteri con i quali si effettuano le misurazioni sulla qualità (per capire quanto si è vicini all’obiettivo).\\
+		Per ogni criterio scelto vengono inoltre dichiarati i valori minimi che si intendono raggiungere, oltre a quelli ottimali.\\
+				
 			\paragraph{Qualità dei documenti}
 			Gli obiettivi di qualità riguardanti i documenti ai quali il gruppo \leaf\ desidera arrivare nell'arco dell'intero progetto sono i seguenti:
 			\begin{itemize}
-				\item i documenti devono essere comprensibili da individui dotati di un'istruzione media, caratteristica verificata attraverso l'utilizzo dell'indice Gulpease\g;
+				\item i documenti devono essere comprensibili da individui dotati di una licenza superiore;
 				\item i documenti devono essere corretti a livello ortografico;
 				\item i documenti non devono contenere concetti errati.
 			\end{itemize}
-			Abbiamo individuato le metriche e i criteri che si intendono utilizzare per quantificare la vicinanza a ognuno degli obiettivi sopra descritti e le soglie di accettabilità e ottimalità per questi obiettivi, per fissare quantitativamente i punti ai quali desideriamo arrivare. Queste metriche e soglie sono definite nel presente documento all'interno della sezione 3.4.2 "Metriche per i documenti".
+			Descriviamo ora quali sono le metriche o i criteri che si intendono utilizzare per quantificare la vicinanza a ognuno degli obiettivi sopra descritti. Individuiamo inoltre le soglie di accettabilità e ottimalità, per fissare quantitativamente i punti ai quali desideriamo arrivare.
 				
 				\subparagraph{Leggibilità e comprensibilità - OQPRD1}
+				Per cercare di capire quanto i documenti siano effettivamente leggibili e comprensibili da persone dotate di una licenza superiore viene utilizzato l’indice Gulpease\g.\\
+				Si desidera che i documenti posseggano costantemente un indice maggiore a 40 (soglia di accettabilità). Si dovrebbe tuttavia cercare di raggiungere un valore più alto, considerato ottimale, ovvero 60.\\
+				Riassumendo:
+				\begin{description}
+					\item[Metrica utilizzata per quantificare l’obiettivo:] indice Gulpease\g;
+					\item[Soglia di accettabilità:] valori almeno maggiori di 40;
+					\item[Soglia di ottimalità:] valori almeno maggiori di 60.
+				\end{description}
+				Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRD1 "Indice di leggibilità".
+				
 				\subparagraph{Correttezza ortografica - OQPRD2}
+				Per cercare di capire quanto i documenti siano effettivamente corretti a livello ortografico si utilizza la seguente metrica: percentuale di errori ortografici rinvenuti e non corretti.\\
+				Si desidera che tutti gli errori ortografici che sono stati trovati siano corretti manualmente (se fosse fatto in modo automatico non sarebbe molto sicuro).\\
+				In questo caso, dunque, l'obiettivo minimo coincide con l’obiettivo ottimale.\\
+				Riassumendo:
+				\begin{description}
+					\item[Metrica utilizzata per quantificare l’obiettivo:] percentuale di errori ortografici rinvenuti e non corretti;
+					\item[Soglia di accettabilità:] tutti gli errori trovati sono corretti manualmente;
+					\item[Soglia di ottimalità:] tutti gli errori trovati sono corretti manualmente.
+				\end{description}
+				Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRD2 "Errori ortografici rinvenuti e non corretti".
+				
 				\subparagraph{Correttezza concettuale - OQPRD3}
+				Per cercare di capire quanto i documenti siano effettivamente corretti a livello concettuale si utilizza la seguente metrica: percentuale di errori concettuali rinvenuti e non corretti.\\
+				Si desidera che al massimo il 5\% degli errori concettuali rinvenuti non siano corretti. L’obiettivo ottimale sarebbe quello di avere documenti senza alcun errore di questo tipo.\\
+				Riassumendo:
+				\begin{description}
+					\item[Metrica utilizzata per quantificare l’obiettivo:] percentuale di errori concettuali rinvenuti e non corretti;
+					\item[Soglia di accettabilità:] almeno il 95\% degli errori trovati è stato corretto;
+					\item[Soglia di ottimalità:] tutti gli errori trovati sono stati corretti.
+				\end{description}
+				Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRD3 "Errori concettuali rinvenuti e non corretti".
 			
 			\paragraph{Qualità del software}
 			Gli obiettivi di qualità del software\g\ ai quali il gruppo \leaf\ desidera arrivare nell'arco del progetto sono alcuni di quelli che sono enunciati all'interno dello standard [ISO/IEC 9126:2001]. Vengono riassunti in seguito:
