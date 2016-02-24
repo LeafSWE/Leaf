@@ -23,7 +23,9 @@
 			\item i costi effettivi di ogni processo dovrebbero essere in linea con quanto dichiarato nel documento \pianodiprogettov.
 		\end{itemize}
 		Nelle prossime sezioni si enunciano gli obiettivi che si intendono raggiungere. Per ognuno di essi vengono specificati i criteri con i quali si effettuano le misurazioni sulla qualità (per capire quanto si è vicini all’obiettivo).\\
-		Infine, per ogni criterio scelto vengono dichiarati i valori minimi che si intendono raggiungere, oltre a quelli ottimali.
+		Per ogni criterio scelto vengono inoltre dichiarati i valori minimi che si intendono raggiungere, oltre a quelli ottimali.\\
+		I seguenti obiettivi sono identificati da un codice identificativo, al fine di rendere più semplice il tracciamento tra l'obiettivo di qualità da soddisfare e la metrica che permettere di verificarne il soddisfacimento.\\
+		La procedura di denominazione degli obiettivi è spiegata in dettaglio nel documento \normediprogettov.
 			
 		\paragraph{Miglioramento costante - OQPC1}
 		Per misurare quanto si è vicini all’obiettivo di avere processi in grado di misurare le proprie performance e che sono quindi in grado di porsi obiettivi quantitativi di miglioramento si è deciso di adottare il modello CMM.\\
@@ -38,9 +40,26 @@
 		Per approfondire la scelta dei range di accettazione e ottimalità si consulti invece la metrica MPC1 "Capability Maturity Model".
 		
 		\paragraph{Rispetto della pianificazione - OQPC2}
+		Per capire se le attività di un processo sono oppure no in ritardo rispetto a quanto è stato pianificato all’interno del \pianodiprogetto\ viene utilizzata la seguente metrica: Schedule Variance.\\
+		Si desidera che il ritardo accumulato non sia maggiore del 5\% rispetto al totale pianificato. Sarebbe invece ottimale essere esattamente in linea con quanto prevede il \pianodiprogetto, o essere addirittura in anticipo.\\
+		Riassumendo:
+		\begin{description}
+			\item[Metrica utilizzata per quantificare l’obiettivo:] Schedule Variance;
+			\item[Soglia di accettabilità:] in ritardo al massimo del 5\% rispetto a quanto pianificato;
+			\item[Soglia di ottimalità:] essere in linea o in anticipo con quanto pianificato (minore o uguale a 0\%).
+		\end{description}
+		Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPC2 "Schedule Variance".
 		
 		\paragraph{Rispetto del budget - OQPC3}
-		
+		Per capire se i costi di un processo rientrano nel budget assegnato dal \pianodiprogetto\ oppure no viene utilizzata la seguente metrica: Budget Variance.\\
+		L’obiettivo minimo è quello di avere dei costi che non superano il budget a disposizione di una percentuale maggiore al 10\%. Sarebbe ottimale, invece, che i costi fossero esattamente in linea con il preventivo o che addirittura si fosse speso meno.\\
+		Riassumendo:
+		\begin{description}
+			\item[Metrica utilizzata per quantificare l’obiettivo:] Budget Variance;
+			\item[Soglia di accettabilità:] costi al massimo maggiori del 10\% rispetto al preventivo;
+			\item[Soglia di ottimalità:] costi in linea con il budget o addirittura minori (minore o uguale a 0\%).
+		\end{description}
+		Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPC3 "Budget Variance".
 		
 		\subsubsection{Qualità di prodotto}
 		Il gruppo si prefigge di mantenere la stessa qualità sia nei processi che nei prodotti: per garantire la migliore qualità del prodotto\g\ anche il processo\g\ da cui proviene deve avere una buona qualità. Il gruppo per mantenere la qualità del prodotto\g\ 
