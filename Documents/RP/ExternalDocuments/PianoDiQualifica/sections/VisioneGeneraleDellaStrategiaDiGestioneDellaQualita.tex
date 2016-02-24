@@ -3,7 +3,10 @@
 \begin{document}
 \section{Visione generale della strategia di gestione della qualità}
 	\subsection{Obiettivi di qualità}
-	In questa sezione vengono riportati gli obiettivi di qualità che il gruppo \leaf\ si impegna a perseguire durante lo svolgimento dell'intero progetto. Per capire se un certo obiettivo è stato raggiunto oppure no, il gruppo fa uso di standard, modelli e metriche. Ognuno di questi fa uso di scale differenti e fissate a priori: qualunque sia il criterio utilizzato per misurare e dunque quantificare la vicinanza a un certo obiettivo abbiamo fissato dei valori minimi che intendiamo raggiungere nell'arco dell'intero progetto. Oltre a ciò abbiamo anche fissato dei valori che riteniamo ottimali e che devono essere sperabilmente (ma non obbligatoriamente) raggiunti.
+	In questa sezione vengono riportati gli obiettivi di qualità che il gruppo \leaf\ si impegna a perseguire durante lo svolgimento dell'intero progetto. Per capire se un certo obiettivo è stato raggiunto oppure no, il gruppo fa uso di standard, modelli e metriche. Ognuno di questi fa uso di scale differenti e fissate a priori: qualunque sia il criterio utilizzato per misurare e dunque quantificare la vicinanza a un certo obiettivo abbiamo fissato dei valori minimi che intendiamo raggiungere nell'arco dell'intero progetto. Oltre a ciò abbiamo anche fissato dei valori che riteniamo ottimali e che devono essere sperabilmente (ma non obbligatoriamente) raggiunti.\\
+	I seguenti obiettivi sono inoltre identificati da un codice identificativo, al fine di rendere più semplice il tracciamento tra l'obiettivo di qualità da soddisfare e la metrica che permettere di verificarne il soddisfacimento.\\
+	La procedura di denominazione degli obiettivi è spiegata in dettaglio nel documento \normediprogettov.
+	
 		\subsubsection{Qualità di processo}
 		Assicurare la qualità dei processi è indispensabile durante lo svolgimento del progetto per le seguenti ragioni:
 		\begin{itemize}
@@ -24,8 +27,6 @@
 		\end{itemize}
 		Nelle prossime sezioni si enunciano gli obiettivi che si intendono raggiungere. Per ognuno di essi vengono specificati i criteri con i quali si effettuano le misurazioni sulla qualità (per capire quanto si è vicini all’obiettivo).\\
 		Per ogni criterio scelto vengono inoltre dichiarati i valori minimi che si intendono raggiungere, oltre a quelli ottimali.\\
-		I seguenti obiettivi sono identificati da un codice identificativo, al fine di rendere più semplice il tracciamento tra l'obiettivo di qualità da soddisfare e la metrica che permettere di verificarne il soddisfacimento.\\
-		La procedura di denominazione degli obiettivi è spiegata in dettaglio nel documento \normediprogettov.
 			
 		\paragraph{Miglioramento costante - OQPC1}
 		Per misurare quanto si è vicini all’obiettivo di avere processi in grado di misurare le proprie performance e che sono quindi in grado di porsi obiettivi quantitativi di miglioramento si è deciso di adottare il modello CMM.\\
@@ -62,19 +63,31 @@
 		Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPC3 "Budget Variance".
 		
 		\subsubsection{Qualità di prodotto}
-		Il gruppo si prefigge di mantenere la stessa qualità sia nei processi che nei prodotti: per garantire la migliore qualità del prodotto\g\ anche il processo\g\ da cui proviene deve avere una buona qualità. Il gruppo per mantenere la qualità del prodotto\g\ 
-cercherà di seguire al meglio lo standard di qualità [ISO/IEC 9126:2001].\\
-		I prodotti che vengono realizzati durante l'intero progetto sono sostanzialmente di due tipi: documenti e software\g. Nelle prossime sezioni, si enunciano gli obiettivi che si intendono raggiungere suddivisi per tipologia di prodotto\g.
+		Il gruppo si prefigge di mantenere la stessa qualità sia nei processi che nei prodotti: per garantire la migliore qualità del prodotto\g\ anche il processo\g\ da cui proviene deve avere una buona qualità. Il gruppo per mantenere la qualità del prodotto\g\ cercherà di seguire al meglio lo standard di qualità [ISO/IEC 9126:2001].\\
+		I prodotti che vengono realizzati durante l'intero progetto sono sostanzialmente di due tipi: documenti e software\g. Nelle prossime sezioni, si enunciano gli obiettivi che si intendono raggiungere suddivisi per tipologia di prodotto\g.\\
+		Per ogni obiettivo, poi, vengono specificati i criteri con i quali si effettuano le misurazioni sulla qualità (per capire quanto si è vicini all’obiettivo).\\
+		Per ogni criterio scelto vengono inoltre dichiarati i valori minimi che si intendono raggiungere, oltre a quelli ottimali.\\
+				
 			\paragraph{Qualità dei documenti}
 			Gli obiettivi di qualità riguardanti i documenti ai quali il gruppo \leaf\ desidera arrivare nell'arco dell'intero progetto sono i seguenti:
 			\begin{itemize}
-				\item i documenti devono essere comprensibili da individui dotati di un'istruzione media, caratteristica verificata attraverso l'utilizzo dell'indice Gulpease\g;
+				\item i documenti devono essere comprensibili da individui dotati di una licenza superiore;
 				\item i documenti devono essere corretti a livello ortografico;
 				\item i documenti non devono contenere concetti errati.
 			\end{itemize}
-			Abbiamo individuato le metriche e i criteri che si intendono utilizzare per quantificare la vicinanza a ognuno degli obiettivi sopra descritti e le soglie di accettabilità e ottimalità per questi obiettivi, per fissare quantitativamente i punti ai quali desideriamo arrivare. Queste metriche e soglie sono definite nel presente documento all'interno della sezione 3.4.2 "Metriche per i documenti".
+			Descriviamo ora quali sono le metriche o i criteri che si intendono utilizzare per quantificare la vicinanza a ognuno degli obiettivi sopra descritti. Individuiamo inoltre le soglie di accettabilità e ottimalità, per fissare quantitativamente i punti ai quali desideriamo arrivare.
 				
 				\subparagraph{Leggibilità e comprensibilità - OQPRD1}
+				Per cercare di capire quanto i documenti siano effettivamente leggibili e comprensibili da persone dotate di una licenza superiore viene utilizzato l’indice Gulpease\g.\\
+				Si desidera che i documenti posseggano costantemente un indice maggiore a 40 (soglia di accettabilità). Si dovrebbe tuttavia cercare di raggiungere un valore più alto, considerato ottimale, ovvero 60.\\
+				Riassumendo:
+				\begin{description}
+					\item[Metrica utilizzata per quantificare l’obiettivo:] indice Gulpease\g;
+					\item[Soglia di accettabilità:] valori almeno maggiori di 40;
+					\item[Soglia di ottimalità:] valori almeno maggiori di 60.
+				\end{description}
+				Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRD1 "Indice di leggibilità".
+				
 				\subparagraph{Correttezza ortografica - OQPRD2}
 				\subparagraph{Correttezza concettuale - OQPRD3}
 			
