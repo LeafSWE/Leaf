@@ -2,6 +2,7 @@
 \documentclass[a4paper,12pt]{article}
 
 \usepackage{leaf}
+\usepackage{float}
 
 \titlepage{}
 
@@ -35,8 +36,10 @@
 	\newpage
 	\pagestyle{myfront}
 	\include{diarioModificheNP}
-	\newpage
-	\tableofcontents	
+		\newpage
+			\tableofcontents
+		\newpage
+			\listoffigures	
 	\label{LastFrontPage}
 	\newpage
 	\pagestyle{mymain}

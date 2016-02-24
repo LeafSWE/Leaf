@@ -379,26 +379,26 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 	\end{itemize}
 	\paragraph{Avanzamento di un documento} 
 		\subparagraph{Regole di avanzamento di versione}
-		L'avanzamento di versione avviene secondo le seguenti regole:
-		\begin{itemize}
-			\item X inizia da 0 e viene incrementato di una unità nel momento in cui il \responsabilediprogetto\ formalizza il documento;
-			\item YY inizia da 00 e viene incrementato di una unità ad ogni modifica che viene effettua al documento. Ogni volta che il documento viene formalizzato riparte da 00.
-		\end{itemize}
-		La prima versione di ogni documento è indicata dalla versione v0.01.		
+			L'avanzamento di versione avviene secondo le seguenti regole:
+			\begin{itemize}
+				\item X inizia da 0 e viene incrementato di una unità nel momento in cui il \responsabilediprogetto\ formalizza il documento;
+				\item YY inizia da 00 e viene incrementato di una unità ad ogni modifica che viene effettua al documento. Ogni volta che il documento viene formalizzato riparte da 00.
+			\end{itemize}
+			La prima versione di ogni documento è indicata dalla versione v0.01.		
 		
 		\subparagraph{Procedura per la formalizzazione di un documento}
-		La formalizzazione di un documento segue la seguente procedura:
-		\begin{figure}[!h]
-            \centering
-            \includegraphics[scale=0.95, width=\textwidth]{img/proceduraFormalizzazioneDocumento.png}
-            \caption{Caso d'uso UCG: Utilizzo generale del prototipo}\label{fig:Procedura formalizzazione di un documento} 
-        \end{figure}
-		\begin{enumerate}
-			\item il documento viene redatto da coloro che sono incaricati della sua stesura ed eventuale correzione di errori;
-			\item il \responsabilediprogetto\ assegna uno o più \verificatori\ al documento i quali dovranno occuparsi di controllare la correttezza del documento stesso;
-			\item se i \verificatori\ riscontrano anomalie si ritorna al punto 1 altrimenti il documento viene consegnato al \responsabilediprogetto;
-			\item il \responsabilediprogetto\ decide se approvare il documento, e quindi formalizzarlo, oppure se rifiutarlo, e quindi ritornare al punto 1.
-		\end{enumerate}
+			La formalizzazione di un documento segue la seguente procedura:
+			\begin{enumerate}
+				\item il documento viene redatto da coloro che sono incaricati della sua stesura ed eventuale correzione di errori;
+				\item il \responsabilediprogetto\ assegna uno o più \verificatori\ al documento i quali dovranno occuparsi di controllare la correttezza del documento stesso;
+				\item se i \verificatori\ riscontrano anomalie si ritorna al punto 1 altrimenti il documento viene consegnato al \responsabilediprogetto;
+				\item il \responsabilediprogetto\ decide se approvare il documento, e quindi formalizzarlo, oppure se rifiutarlo, e quindi ritornare al punto 1.
+			\end{enumerate}
+			\begin{figure}[!ht]
+				\centering
+				\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraFormalizzazioneDocumento.png}
+				\caption{Procedura di formalizzazione di un documento}\label{fig:Procedura di formalizzazione di un documento} 
+			\end{figure}
 	\subsubsection{Strumenti}
 		\paragraph{Latex}
 		La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup\g\ \LaTeX\g. È stato scelto questo strumento poiché permette una facile separazione tra formattazione e presentazione. La scelta dell'editor da utilizzare è lasciata libera ai membri del gruppo.
@@ -462,6 +462,7 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 	\end{itemize}
 		\subparagraph{Codifica dei file}
 	I file contenenti codice oppure documentazione dovranno utilizzare la codifica UTF-8 senza BOM\g.
+	\newpage
 	\subsubsection{Procedure}
 	\paragraph{Procedura di richiesta di modifica}
 		Il membro del gruppo che vuole effettuare una modifica deve presentare una richiesta formale al \responsabilediprogetto. La richiesta deve avere i seguenti campi:
@@ -482,6 +483,12 @@ Gli elenchi puntati servono per descrivere elementi di cui non è importante l'o
 				\end{enumerate}
 			In caso lo ritenga necessario, il \responsabilediprogetto\ può aggiungere a questo campo la motivazione per cui ha approvato o meno la modifica.
 		\end{enumerate}
+		\newpage
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraRichiestaModifica.png}
+			\caption{Procedura di richiesta modifica di un documento}\label{fig:Procedura di richiesta modifica di un documento} 
+		\end{figure}
 	\paragraph{Aggiornamento del repository}
 	Per l'aggiornamento del repository\g\ è prevista la seguente procedura:
 	\begin{itemize}
@@ -496,7 +503,12 @@ remoto;
 		\item Dare il comando \texttt{git add NomeDelFile}, dove al posto di ``NomeDelFile'' si deve mettere il nome del file, o lista di nomi dei file, sul quale sono state effettuate delle modifiche;
 		\item Dare il comando \texttt{git commit}, e successivamente specificare sinteticamente il riassunto delle modifiche effettuate;
 		\item Dare il comando \texttt{git push}.
-	\end{itemize}	
+	\end{itemize}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraRichiestaModifica.png}
+			\caption{Procedura di aggiornamento del repository}\label{fig:Procedura di aggiornamento del repository} 
+		\end{figure}	
 	\subsubsection{Strumenti}
 	Lo strumento utilizzato per il versionamento di documenti e file sorgenti è Git\g. Nonostante siano presenti varie alternative, come Mercurial, Subversion e Bazaar, è stato scelto Git\g\ in quanto soddisfa appieno le necessità di versionamento dei file per questo progetto e, inoltre, permette di versionare i file localmente, senza bisogno di una connessione internet attiva. Come servizio di hosting per il repository\g\ è stato scelto, invece, GitHub\g. Entrambe le scelte sono state fatte anche perché più membri del gruppo avevano già avuto la possibilità di lavorare con tali servizi.
 	
@@ -524,7 +536,7 @@ remoto;
 			\subparagraph{Diagrammi dei casi d'uso}
 			Le verifiche che devono essere effettuate ai diagrammi dei casi d'uso, innanzitutto, devono riguardare il rispetto dello standard UML\g, soprattutto riguardanti inclusioni, generalizzazioni e estensioni. Successivamente si deve verificare che la semantica del diagramma sia corretta, ovvero che il diagramma rappresenti effettivamente ciò che si vorrebbe descrivere e modellare. Per quest'ultimo punto bisogna porre particolare attenzione sull'identificazione degli attori. Per questo motivo è prevista una \hyperref[par:Procedura di verifica degli attori dei diagrammi UML]{procedura di verifica degli attori dei diagrammi UML} in questo documento.\\ 
 		\paragraph{Issue tracking}
-		L'issue\g\ tracking è un'attività di supporto per i \verificatori\ ai quali permette di tenere traccia potenziali errori, segnalandoli al \responsabilediprogetto. Lo strumento scelto per la gestione di qusta attività è GitHub(vedi sezione \hyperref[par:IssueTrk GitHub]{Strumenti}). Questo strumento è utile anche al \responsabilediprogetto\ per assegnare i compiti di correzione degli errori. 
+		L'issue\g\ tracking è un'attività di supporto per i \verificatori\ ai quali permette di tenere traccia potenziali errori, segnalandoli al \responsabilediprogetto. Lo strumento scelto per la gestione di questa attività è GitHub(vedi sezione \hyperref[par:IssueTrk GitHub]{Strumenti}). Questo strumento è utile anche al \responsabilediprogetto\ per assegnare i compiti di correzione degli errori. 
 			\subparagraph{Sintassi di una label}
 		Le label sono delle etichette che è possibile associare ad ogni issue\g. Ogni etichetta rappresenta lo stato nel quale si trova la issue. Le uniche etichette che sono accettate sono le seguenti:
 			\begin{itemize}
@@ -588,7 +600,7 @@ remoto;
 		La tecnica walkthrough è molto onerosa e deve essere utilizzata soprattutto nelle prime fasi del progetto, quando non è già presente una lista degli errori comuni, oppure non si è ancora sufficientemente preparati riguardo un aspetto del progetto. Avanzando nelle fasi del progetto sarà utile stilare una lista quanto più possibile completa di errori comuni, in modo tale da evitare la tecnica walkthrough e applicare l'inspection.
 		
 		\subparagraph{Analisi dinamica}
-		L’analisi dinamica è una forma di valutazione di un sistema software\g, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.
+		L'analisi dinamica è una forma di valutazione di un sistema software\g, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.
 		
 		\subparagraph{Resoconto attività di verifica sui documenti}	
 		La stesura dell'attività del resoconto dell'attività di verifica dovrà essere fatta al termine dell'attività di verifica. Il \verificatore\ dovrà riportare il numero di occorrenze per ognuna delle voci definite nella sezione norme. Qualora fossero stati trovati degli errori nelle attività di verifica precedenti, il numero di errori trovati andrà a sommarsi al numero di errori trovati nelle attività precedenti.
@@ -606,20 +618,35 @@ verrà poi chiusa, terminando la procedura.
 			\end{itemize}
 			\item i membri del gruppo dovranno discutere e proporre nuove idee al fine di risolvere la issue\g. Questa discussione non dovrà protrarsi per più di tre giorni. Qualora non si dovesse essere trovata una soluzione ottimale, il \responsabilediprogetto\ dovrà decidere quale sia la soluzione migliore.
 			\item il \responsabilediprogetto, trovata la soluzione da applicare,  assegnerà, al membro del gruppo da lui ritenuto opportuno, un ticket\g. L'assegnatario del ticket\g\ è la persona incaricata all'applicazione della soluzione relativa alla issue\g. Inoltre, il \responsabilediprogetto\ dovrà rimuovere dalla issue\g\ l'etichetta Question ed assegnare l'etichetta ToDo.
-			\item quando l'incaricato inizierà a lavorare sulla issue\g\ rimuoverà l'etichetta ToDo ed assegnarà l'etichetta Working. Ad ogni nuovo commit, l'incaricato dovrà riferire, nel messaggio del commit stesso, la issue\g\ 
-sulla quale sta lavorando. Questo permettà di tener traccia delle modifiche effettuate per risolvere la issue\g.
-			\item una volta che l'incaricato avrà terminato le modifiche, queste dovranno essere caricate nel repository\g\ e l'etichetta della issue\g\ dovrà essere modificata da Working a Done. Dopo che sono state svolte queste operazioni, la issue\g\ 
-verrà chiusa.
+			\item quando l'incaricato inizierà a lavorare sulla issue\g\ rimuoverà l'etichetta ToDo ed assegnerà l'etichetta Working. Ad ogni nuovo commit, l'incaricato dovrà riferire, nel messaggio del commit stesso, la issue\g\ 
+sulla quale sta lavorando. Questo permetterà di tener traccia delle modifiche effettuate per risolvere la issue\g.
+			\item una volta che l'incaricato avrà terminato le modifiche, queste dovranno essere caricate nel repository\g\ e l'etichetta della issue\g\ dovrà essere modificata da Working a Done. Dopo che sono state svolte queste operazioni, la issue\g\ verrà chiusa.
 		\end{enumerate}
-		
-		
+		\newpage
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale= 0.75, width=\textwidth]{sections/img/gestioneIssueP1.png}
+			\caption{Procedura di gestione di una issue. Parte 1}\label{fig:Procedura di gestione di una issue parte 1} 
+		\end{figure}
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale= 0.75, width=\textwidth]{sections/img/gestioneIssueP2.png}
+			\caption{Procedura di gestione di una issue. Parte 2}\label{fig:Procedura di gestione di una issue parte 2} 
+		\end{figure}
+
 		\subparagraph{Procedura di verifica attori dei diagrammi UML}\label{par:Procedura di verifica degli attori dei diagrammi UML}
 		Per identificare un attore può risultare utile seguire la seguente procedura:
 			\begin{enumerate}
 				\item Per prima cosa è utile chiedersi se ciò che vogliamo rappresentare come attore è una persona che interagisce col sistema. In caso affermativo è giusto rappresentarlo come attore, in caso negativo si deve andare al passo 2;
 				\item Se ciò che vogliamo rappresentare come attore non è una persona che interagisce col sistema bisogna chiedersi se questa ``cosa'' può cambiare insieme al design del sistema. In caso affermativo probabilmente ciò che vogliamo rappresentare non è un attore ma una parte del sistema stesso. In caso negativo, invece, è con buona probabilità un attore.
 			\end{enumerate}
-	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraVerificaAttori.png}
+			\caption{Procedura di verifica di un attore}\label{fig:Procedura di verifica di un attore} 
+		\end{figure}
+	\newpage
 	\subsubsection{Strumenti} \label{sec:Strumenti}
 		\paragraph{Strumento per l'issue tracking} \label{par:IssueTrk GitHub}
 		Lo strumento scelto per fare il tracking delle issue\g\ è il servizio Issues messo a disposizione da GitHub\g. 
