@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Verifica" company="" webLink="http://" view-date="2016-05-17" view-index="0" gantt-divider-location="358" resource-divider-location="300" version="2.7.1" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Verifica" company="" webLink="http://" view-date="2016-05-13" view-index="0" gantt-divider-location="358" resource-divider-location="300" version="2.7.1" locale="it">
     <description/>
     <view zooming-state="default:3" id="gantt-chart">
         <field id="tpd3" name="Nome" width="56" order="0"/>
@@ -81,16 +81,16 @@
             </task>
             <task id="17" name="Verifica" meeting="false" start="2016-05-27" duration="2" complete="0" expand="true"/>
         </task>
-        <task id="19" name="Piano di Progetto" color="#8cb6ce" meeting="false" start="2016-05-23" duration="19" complete="0" expand="true">
+        <task id="19" name="Piano di Progetto" color="#8cb6ce" meeting="false" start="2016-05-23" duration="18" complete="0" expand="true">
             <depend id="43" type="2" difference="0" hardness="Strong"/>
             <task id="21" name="Incremento" color="#8cb6ce" meeting="false" start="2016-05-23" duration="4" complete="0" expand="true">
                 <depend id="23" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="23" name="Verifica" meeting="false" start="2016-05-27" duration="2" complete="0" expand="true"/>
-            <task id="49" name="Conclusione Consuntivo" color="#8cb6ce" meeting="false" start="2016-06-08" duration="2" complete="0" expand="true">
+            <task id="49" name="Conclusione Consuntivo" color="#8cb6ce" meeting="false" start="2016-06-07" duration="2" complete="0" expand="true">
                 <depend id="50" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="50" name="Verifica Consuntivo" color="#8cb6ce" meeting="false" start="2016-06-10" duration="1" complete="0" expand="true"/>
+            <task id="50" name="Verifica Consuntivo" color="#8cb6ce" meeting="false" start="2016-06-09" duration="1" complete="0" expand="true"/>
         </task>
         <task id="31" name="Manuali" color="#8cb6ce" meeting="false" start="2016-05-23" duration="6" complete="0" expand="true">
             <depend id="43" type="2" difference="0" hardness="Strong"/>
@@ -114,14 +114,14 @@
             <depend id="51" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="51" name="Incontro con il proponente" color="#8cb6ce" meeting="true" start="2016-06-03" duration="0" complete="0" expand="true"/>
-        <task id="40" name="Validazione e Collaudo" color="#8cb6ce" meeting="false" start="2016-06-03" duration="8" complete="0" expand="true">
+        <task id="40" name="Validazione e Collaudo" color="#8cb6ce" meeting="false" start="2016-06-03" duration="7" complete="0" expand="true">
             <depend id="43" type="2" difference="0" hardness="Strong"/>
             <task id="41" name="Validazione" color="#8cb6ce" meeting="false" start="2016-06-03" duration="4" complete="0" expand="true">
                 <depend id="42" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="42" name="Collaudo" meeting="false" start="2016-06-07" duration="4" complete="0" expand="true"/>
+            <task id="42" name="Collaudo" meeting="false" start="2016-06-07" duration="3" complete="0" expand="true"/>
         </task>
-        <task id="43" name="Consegna RA" color="#8cb6ce" meeting="true" start="2016-06-11" duration="0" complete="0" expand="true"/>
+        <task id="43" name="Consegna RA" color="#8cb6ce" meeting="true" start="2016-06-10" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
