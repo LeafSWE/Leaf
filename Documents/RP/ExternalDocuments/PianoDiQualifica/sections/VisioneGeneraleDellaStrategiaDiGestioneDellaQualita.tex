@@ -113,15 +113,155 @@
 			
 			\paragraph{Qualità del software}
 			Gli obiettivi di qualità del software\g\ ai quali il gruppo \leaf\ desidera arrivare nell'arco del progetto sono alcuni di quelli che sono enunciati all'interno dello standard [ISO/IEC 9126:2001]. Vengono riassunti in seguito:
-			\begin{itemize}
-				\item il prodotto\g\ possiede le funzionalità descritte all'interno dei requisiti obbligatori e desiderabili;
-				\item il prodotto\g\ permette agli utenti di utilizzare le funzionalità in maniera semplice ed efficace;
-				\item il codice risulta manutenibile e facilmente comprensibile;
-				\item il prodotto\g\ è robusto e non interrompe l'esecuzione in seguito a situazioni anomale;
-				\item il prodotto\g\ è testato in ogni sua parte e in ogni situazione nella quale si può trovare;
-				\item il prodotto\g\ garantisce un funzionamento senza interruzioni;
-				\item il prodotto\g\ è facilmente installabile.
-			\end{itemize}
+		\begin{itemize}
+			\item il prodotto\g\ possiede le funzionalità descritte all'interno dei requisiti obbligatori;
+			\item il prodotto\g\ possiede le funzionalità descritte all'interno dei requisiti desiderabili;
+			\item il prodotto\g\ permette agli utenti di utilizzare le funzionalità in maniera semplice;
+			\item il prodotto\g\ permette agli utenti di utilizzare le funzionalità in maniera efficace;
+			\item il codice risulta manutenibile e facilmente comprensibile;
+			\item il prodotto\g\ è testato in ogni sua parte e in ogni situazione nella quale si può trovare;
+			\item il prodotto\g\ è robusto e non interrompe l'esecuzione in seguito a situazioni anomale;
+			\item il prodotto\g\ garantisce un funzionamento senza interruzioni;
+			\item il prodotto\g\ è facilmente installabile.
+		\end{itemize}
+				\subparagraph{Funzionalità obbligatorie - OBPRS1}
+				Il prodotto deve ricoprire tutte le funzionalità descritte nei requisiti obbligatori. Per monitorare lo stato di completamento delle funzionalità richieste il gruppo ha pensato di rapportare i requisiti completati con quelli ancora da completare.
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Copertura Requisiti Obbligatori
+						\item [Soglia di accettabilità:] 100\% requisiti soddisfatti
+						\item [Soglia di ottimalità:] 100\% requisiti soddisfatti
+					\end{description}
+					Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS1 "Copertura Requisiti Obbligatori".
+				\subparagraph{Funzionalità desiderabili - OBPR2}	
+				Il prodotto deve ricoprire tutte le funzionalità descritte nei requisiti desiderabili. Per monitorare lo stato di completamento delle funzionalità richieste il gruppo ha pensato di rapportare i requisiti completati con quelli ancora da completare.
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Copertura Requisiti Desiderabili
+						\item [Soglia di accettabilità:] 100\% requisiti soddisfatti
+						\item [Soglia di ottimalità:] 100\% requisiti soddisfatti
+					\end{description}
+					Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS2 "Copertura Requisiti Desiderabili".
+				\subparagraph{Utilizzo delle funzionalità in modo semplice - OBPR3}
+				Il prodotto deve offrire delle funzionalità semplici all'utilizzo, quindi il numero di passaggi da compiere per completare un'operazione deve essere minimo. Il gruppo ritiene che dei valori abbastanza bassi possano soddisfare l'obiettivo.\\
+				Per fornire delle funzionalità da utilizzare in maniera semplice, il prodotto deve essere compreso in buona parte dall'utente.
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Numero di Passaggi per Operazione
+						\item [Soglia di Accettazione:] 5<X<8
+						\item [Soglia di Ottimalità:] X<5
+						\item X = numero di passaggi per effettuare un'operazione
+					\end{description}
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Function Understandability (9126-2)
+						\item [Soglia di accettabilità:] 70\%<X<80\%
+						\item [Soglia di ottimalità:] X>80\%
+						\item X = percentuale di funzioni capite correttamente su funzioni totali
+					\end{description}
+					Per una descrizione dettagliata delle metriche qui utilizzate e per una maggiore comprensione degli
+					indici di ottimalità e accettabilità presentati si faccia riferimento alle sezioni
+					\begin{itemize}
+					\item MPRS3 - Numero di Passaggi per Operazione
+					\item MPRS4 - Function Understandability
+					\end{itemize}
+				\subparagraph{Utilizzo delle funzionalità in modo efficace - OBPR4}
+					Il prodotto deve permettere di portare a termine correttamente buona parte delle azioni svolte dall'utente. 
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Task Completion (9126-4)
+						\item [Soglia di accettabilità:] 70\%<X<80\%
+						\item [Soglia di ottimalità:] X>80\%
+						\item X = percentuale media di task completati su task assegnati ad un utente
+					\end{description}
+					Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS5 "Task Completion".
+				\subparagraph{Manutenibilità e Comprensibilità del codice - OBPR5}	
+					Il prodotto deve avere codice manutenibile e non deve presentare incomprensioni al suo interno. Per questo si tiene conto della sua complessità e della sua lunghezza. Codice poco manutenibile può portare all'abbandono dello sviluppo del prodotto.
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Numero di statement per metodo
+						\item [Soglia di accettabilità:] 30<X<40
+						\item [Soglia di ottimalità:] X<30
+						\item X = numero di statement per metodo
+					\end{description}
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Numero di campi di una classe
+						\item [Soglia di accettabilità:] 10<X<15
+						\item [Soglia di ottimalità:] X<10
+						\item X = numero di campi per classe
+					\end{description}
+					\begin{description}
+					    \item [Metrica utilizzata per quantificare l'obiettivo:] Grado di Accoppiamento
+						\item [Soglia di accettabilità:] 3<X<7
+						\item [Soglia di ottimalità:] X<3
+						\item X = numero di dipendenze tra classi in un package\g 
+					\end{description}
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Cyclomatic Number (9126-3)
+						\item [Soglia di accettabilità] 4<X<10
+						\item [Soglia di ottimalità] X<4
+						\item X = numero di complessità ciclomatica
+					\end{description}
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Conditional Statement (9126-3)
+						\item [Soglia di accettabilità:] 100*N<X<200*N
+						\item [Soglia di ottimalità:] X<100*N
+						\item X = numero di condizioni in tutti i moduli
+						\item N = numero di moduli
+					\end{description}
+					\begin{description}
+					    \item [Metrica utilizzata per quantificare l'obiettivo:] Adequacy of variable names (9126-3)
+						\item [Soglia di accettabilità] 80\%<X<90\%
+						\item [Soglia di ottimalità] X>90\%
+						\item X = percentuale dei nomi delle variabili che corrispondono alla specifica 
+					\end{description}
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Adequacy module size (9126-3)
+						\item [Soglia di accettabilità:] 300<X<400
+						\item [Soglia di ottimalità:] 200<X<300
+						\item X = numero di linee di codice per modulo
+					\end{description}
+					Per una descrizione dettagliata delle metriche qui utilizzate e per una maggiore comprensione degli
+					indici di ottimalità e accettabilità presentati si faccia riferimento alle sezioni
+					\begin{itemize}
+						\item MPRS6 - Numero di statement per metodo
+						\item MPRS7 - Numero di campi di una classe
+						\item MPRS8 - Grado di Accoppiamento
+						\item MPRS9 - Cyclomatic Number
+						\item MPRS10 - Conditional Statement
+						\item MPRS11 - Adequacy of variable names
+						\item MPRS12 - Adequacy module size
+					\end{itemize}
+				\subparagraph{Copertura dei test richiesti - OBPRS6}
+				Il prodotto deve essere testato in ogni sua parte per garantirne il suo funzionamento. I test presi in considerazioni sono quelli che testano le funzionalità previste da i requisiti. 
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Test Passati Richiesti
+						\item [Soglia di accettabilità:] 80\%<X<90\%
+						\item [Soglia di ottimalità:] 90\%<X<98\%
+						\item X = percentuale di test passati su test ricavati dai requisti
+					\end{description}
+			    Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS13 "Test Passati Richiesti ".
+				\subparagraph{Robustezza -  OBPRS7}	
+				Il prodotto può interrompere la sua esecuzione durante una situazione anomala solo in minima parte. 
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Failure Avoidance (9126-2)
+						\item [Soglia di accettabilità:] 80\%<X<90\%
+						\item [Soglia di ottimalità:] X>90\%
+						\item X = percentuale di situazioni anomale evitate su situazioni anomale prese in considerazione
+					\end{description}
+					Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS14 "Failure Avoidance".
+				\subparagraph{Funzionamento senza interruzioni - OBPRS8}
+					Il prodotto deve garantire un funzionamento senza interruzioni. Questo livello è considerato ottimale ma sono accettati anche valori maggiori dell'80\%.  
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Breakdown Avoidance (9126-2)
+						\item [Soglia di accettabilità:] 80\%<X<90\%
+						\item [Soglia di ottimalità:] X>90\%
+						\item X = percentuale di interruzioni evitate in base a situazioni anomale presentate
+					\end{description}
+					Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS15 "Breakdown Avoidance".
+				\subparagraph{Installabilità - OBPRS9}	
+					Il prodotto\g\ per essere utilizzato deve essere facilmente installabile quindi è prevista una metrica che valuta l'installabilità del prodotto.
+					\begin{description}
+						\item [Metrica utilizzata per quantificare l'obiettivo:] Numero di installazioni completate
+						\item [Soglia di accettabilità:] 80\%<X<90\%
+						\item [Soglia di ottimalità:] X>90\%
+						\item X = percentuale di installazioni completate su installazioni provate 
+					\end{description}
+					Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS16 "Numero di installazioni completate".
 	\subsection{Scadenze temporali}
-	Le scadenze che il gruppo \leaf\ ha deciso di rispettare sono riportate nel \pianodiprogettov
+	Le scadenze che il gruppo \leaf\ ha deciso di rispettare sono riportate nel \pianodiprogettov.
 \end{document}
