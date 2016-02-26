@@ -3,8 +3,7 @@
 \begin{document}
 \section{Processi primari}
 	\subsection{Fornitura}
-		\subsection{Norme}
-			\paragraph{Studio di fattibilità}
+		\subsection{Studio di fattibilità}
 			Il documento riguardante lo \studiodifattibilita\ deve essere redatto rapidamente ed in modo accurato dagli \analisti\ sulla base di ciò che è emerso nelle prime riunioni, nelle quali si deve discutere di temi riguardanti i capitolati, come:
 			\begin{itemize}
 				\item Rischi nell'affrontare ogni capitolato\g;
@@ -12,8 +11,7 @@
 				\item Il dominio applicativo e tecnologico di ogni capitolato\g.
 			\end{itemize}
 	\subsection{Sviluppo}
-		\subsubsection{Norme}
-			\paragraph{Analisi dei requisiti}
+		\subsubsection{Analisi dei requisiti}
 			L'\analisideirequisiti\ è il documento dove devono essere catalogati e descritti tutti i requisiti che il prodotto\g\ finale deve soddisfare. Ogni requisito deve emergere da una delle seguenti fonti:
 			\begin{itemize}
 				\item Capitolati\g\ d'appalto;
@@ -22,59 +20,60 @@
 				\item Valutazioni effettuate durante riunioni interne al gruppo.
 			\end{itemize}
 			Tale documento deve inoltre riportare il modo in cui ogni requisito deve essere verificato.
-				\subparagraph{Classificazione dei casi d'uso}
-				È compito degli \analisti\ redigere una descrizione, dare una classificazione e fornire un diagramma conforme allo standard UML\g\ per ogni caso d'uso. Ogni caso d'uso dev'essere descritto con le seguenti informazioni, possibilmente in quest'ordine:
-				\begin{enumerate}
-					\item Codice identificativo del caso d'uso, nella forma \begin{center}\textbf{UC[X].[Y]}\end{center} dove:
-					\begin{itemize}
-						\item \textbf{X} è il codice univoco del padre;
-						\item \textbf{Y} è un codice progressivo di livello.
-					\end{itemize}
-					Il codice progressivo può includere diversi livelli di gerarchia separati da un punto.
-					\item Titolo, che deve descrivere sinteticamente il caso d'uso;
-					\item Attori principali;
-					\item Attori secondari, se questi sono presenti;
-					\item Precondizioni, ovvero le condizioni che necessariamente devono verificarsi prima del caso d'uso;
-					\item Postcondizioni, ciò che deve essere verificato successivamente al caso d'uso;
-					\item Flusso principale degli eventi, dove si descrive il flusso dei casi d'uso figli. Per ogni evento va specificato:
-					\begin{itemize}
-						\item Una descrizione testuale dell'evento;
-						\item Gli attori coinvolti;
-						\item Se l'azione è descritta dettagliatamente da un altro caso d'uso.
-					\end{itemize}
-					\item Scenari alternativi, ovvero scenari in cui si verificano eccezioni o errori. Per ognuno di questi deve essere indicato:
+				\paragraph{Classificazione dei casi d'uso}
+					È compito degli \analisti\ redigere una descrizione, dare una classificazione e fornire un diagramma conforme allo standard UML\g\ per ogni caso d'uso. Ogni caso d'uso dev'essere descritto con le seguenti informazioni, possibilmente in quest'ordine:
+					\begin{enumerate}
+						\item Codice identificativo del caso d'uso, nella forma \begin{center}\textbf{UC[X].[Y]}\end{center} dove:
+						\begin{itemize}
+							\item \textbf{X} è il codice univoco del padre;
+							\item \textbf{Y} è un codice progressivo di livello.
+						\end{itemize}
+						Il codice progressivo può includere diversi livelli di gerarchia separati da un punto.
+						\item Titolo, che deve descrivere sinteticamente il caso d'uso;
+						\item Attori principali;
+						\item Attori secondari, se questi sono presenti;
+						\item Precondizioni, ovvero le condizioni che necessariamente devono verificarsi prima del caso d'uso;
+						\item Postcondizioni, ciò che deve essere verificato successivamente al caso d'uso;
+						\item Flusso principale degli eventi, dove si descrive il flusso dei casi d'uso figli. Per ogni evento va specificato:
 						\begin{itemize}
 							\item Una descrizione testuale dell'evento;
 							\item Gli attori coinvolti;
 							\item Se l'azione è descritta dettagliatamente da un altro caso d'uso.
 						\end{itemize}
-				\end{enumerate}
-				\subparagraph{Classificazione dei requisiti}
-				È compito degli \analisti\ redigere e classificare i requisiti del prodotto\g.  I requisiti devono essere classificati in base al tipo e alla priorità, utilizzando la seguente notazione:
-				\begin{center}\textbf{R[X][Y][Z]}\end{center} dove:
-					\begin{enumerate}
-						\item \textbf{X} indica l'importanza strategica del requisito. Deve assumere solo i seguenti valori:
-						\begin{itemize}
-							\item \textbf{Obb}: Indica un requisito obbligatorio;
-							\item \textbf{Des}: Indica un requisito desiderabile;
-							\item \textbf{Opz}: Indica un requisito opzionale.
-						\end{itemize}
-						\item \textbf{Y} indica la tipologia del requisito. Deve assumere solo i seguenti valori:
-						\begin{itemize}
-							\item \textbf{F}: Indica un requisito funzionale;
-							\item \textbf{Q}: Indica un requisito di qualità;
-							\item \textbf{P}: Indica un requisito prestazionale;
-							\item \textbf{V}: Indica un requisito vincolo.
-						\end{itemize}
-						\item \textbf{Z} rappresenta il codice univoco di ogni requisito in forma gerarchica.
+						\item Scenari alternativi, ovvero scenari in cui si verificano eccezioni o errori. Per ognuno di questi deve essere indicato:
+							\begin{itemize}
+								\item Una descrizione testuale dell'evento;
+								\item Gli attori coinvolti;
+								\item Se l'azione è descritta dettagliatamente da un altro caso d'uso.
+							\end{itemize}
 					\end{enumerate}
-			\paragraph{Progettazione}
+				\paragraph{Classificazione dei requisiti}
+					È compito degli \analisti\ redigere e classificare i requisiti del prodotto\g.  I requisiti devono essere classificati in base al tipo e alla priorità, utilizzando la seguente notazione:
+					\begin{center}\textbf{R[X][Y][Z]}\end{center} dove:
+						\begin{enumerate}
+							\item \textbf{X} indica l'importanza strategica del requisito. Deve assumere solo i seguenti valori:
+							\begin{itemize}
+								\item \textbf{Obb}: Indica un requisito obbligatorio;
+								\item \textbf{Des}: Indica un requisito desiderabile;
+								\item \textbf{Opz}: Indica un requisito opzionale.
+							\end{itemize}
+							\item \textbf{Y} indica la tipologia del requisito. Deve assumere solo i seguenti valori:
+							\begin{itemize}
+								\item \textbf{F}: Indica un requisito funzionale;
+								\item \textbf{Q}: Indica un requisito di qualità;
+								\item \textbf{P}: Indica un requisito prestazionale;
+								\item \textbf{V}: Indica un requisito vincolo.
+							\end{itemize}
+							\item \textbf{Z} rappresenta il codice univoco di ogni requisito in forma gerarchica.
+						\end{enumerate}
+		\subsubsection{Progettazione}
 			Norme, procedure e strumenti riguardanti la progettazione verranno definiti nelle versioni successive di questo documento.
-			\paragraph{Codifica}
+		\subsubsection{Codifica}
 			Norme, procedure e strumenti riguardanti la codifica verranno definiti nelle versioni successive di questo documento.
+		
 		\subsubsection{Strumenti}
 			\paragraph{Strumento per la creazione dei diagrammi UML}
-			Lo strumento per la creazione dei diagrammi UML\g\ utilizzato è Astah\g.
+			Lo strumento per la creazione deAnalisi dei requisiti diagrammi UML\g\ utilizzato è Astah\g.
 			\paragraph{Strumento per il tracciamento dei requisiti}
 			Lo strumento scelto per la il tracciamento dei requisiti è Tracy\g. Questo software\g\ è stato sviluppato dal gruppo di Ingegneria del Software Don't Panic. Il software\g\ è stato scelto per le seguenti caratteristiche:
 			\begin{itemize}
