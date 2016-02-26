@@ -158,5 +158,205 @@ dopo aver superato la validazione ci conferma che è conforme alle aspettative e
 				\end{itemize}	
 
 			\paragraph{Metriche per il software}
-			Il gruppo ritiene di non essere ancora pronto per definire le metriche per il software\g\ e quindi si riserverà di riportarle durante la fase\g\ PA.
+			Il gruppo \leaf\ per garantire la qualità del software ha deciso di adottare delle metriche. Esse hanno il compito di monitorare la qualità interna, qualità esterna e la qualità in uso. In base alle risorse a disposizione e agli obiettivi di qualità del software preposti il gruppo ha deciso di adottare alcune metriche presenti all'interno dello standard [ISO/IEC 9126:2001].\\
+			Ogni metrica scelta viene associata ad una caratteristica di qualità presente all'interno dello standard:
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{l * {2}{c}}
+					\toprule
+					\textbf{Metriche scelte} & \textbf{Caratteristiche di Qualità} \\
+					\midrule
+					MPRS1 - Copertura Requisiti Obbligatori & Funzionabilità \\
+					MPRS2 - Copertura Requisiti Desiderabili &Funzionabilità\\
+					MPRS3 - Numero di Passaggi per Operazione & Usabilità\\
+					MPRS4 - Function Understandability & Usabilità\\
+					MPRS5 - Task Completion & Efficacia \\
+					MPRS6 - Numero di statement per metodo & Manutenibilità\\
+					MPRS7 - Numero di campi per classe & Manutenibilità\\
+					MPRS8 - Grado di Accoppiamento & Manutenibilità\\
+					MPRS9 - Cyclomatic Number & Manutenibilità\\
+					MPRS10 - Conditional Statement & Manutenibilità\\
+					MPRS11 - Adequacy of variable names & Manutenibilità\\
+					MPRS12 - Average Module Size & Manutenibilità\\
+					MPRS13 - Test Passati Richiesti & Affidabilità\\
+					MPRS14 - Failure Avoidance & Affidabilità\\
+					MPRS15 - Breakdown Avoidance & Affidabilità\\
+					MPRS16 - Numero di installazioni completate & Installabilità\\
+					\midrule
+				\end{tabular}
+				\caption{Mappa Metriche-Caratteristiche}
+				\label{tab:mappa_metriche_caratteristice}
+			\end{table}
+			\subparagraph{Copertura Requisiti Obbligatori - MPRS1}\label{MPRS1}
+			Questa metrica ci permette di verificare in ogni momento lo stato dei requisiti obbligatori coperti. Essa misura il rapporto tra requisiti obbligatori soddisfatti e il numero totale di requisiti obbligatori ricavati. Per una maggiore comprensione il risultato verrà riportato in percentuale.
+			\begin{equation}
+				Copertura \ Requisiti \ Obbligatori = \frac{\#\ requisiti\ obbligatori\ soddisfatti }{\#\ requisiti\ obbligatori\ totali}
+			\end{equation}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item una percentuale minore del 100\% è ritenuta negativa;
+				\item una percentuale uguale al 100\% è ritenuta accettabile;
+				\item una percentuale uguale al 100\% ottimale.
+			\end{itemize}
+			\subparagraph{Copertura Requisiti Desiderabili - MPRS2}\label{MPRS2}
+			Questa metrica ci permette di verificare in ogni momento lo stato dei requisiti coperti. Essa misura il rapporto tra requisiti desiderabili soddisfatti e il numero totale di requisiti desiderabili ricavati. Per una maggiore comprensione il risultato verrà riportato in percentuale.
+			\begin{equation}
+			Copertura \ Requisiti \ Desiderabili = \frac{\#\ requisiti\ desiderabili\ soddisfatti }{\#\ requisiti\ desiderabili\ totali}
+			\end{equation}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item una percentuale minore del 100\% è ritenuta negativa;
+				\item una percentuale uguale al 100\% è ritenuta accettabile;
+				\item una percentuale uguale al 100\% ottimale.
+			\end{itemize}
+			\subparagraph{Numero di Passaggi per Operazione - MPRS3}\label{MPRS3}
+			La metrica verifica che il numero di passaggi per effettuare un'operazione sia contenuto. Questa metrica assicura che il prodotto sia semplice da utilizzare e comporti poco sforzo all'utente nel compiere un'operazione.\\
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item un numero di passaggi maggiore di 8 è ritenuto negativo;
+				\item un numero di passaggi compreso tra 5 e 8 è ritenuto accettabile;
+				\item un numero di passaggi minore di 5 è ritenuto ottimale.
+			\end{itemize}
+			\subparagraph{Function Understandability - MPRS4}\label{MPRS4}
+			La metrica misura il rapporto tra le funzionalità capite dall'utente e le funzionalità offerte dal prodotto\g. Questo ci permette di capire se l'utente riesce a comprendere fin da subito 
+			le funzionalità offerte. Per una maggiore comprensione il risultato verrà riportato in percentuale.
+			\begin{equation}
+			Function \ Understandability = \frac{\#\ funzionalit\grave{a} \ capite\ }{\#\ funzionalit\grave{a} \ disponibili}
+			\end{equation}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item una percentuale minore del 70\% è ritenuta negativa;
+				\item una percentuale compresa tra 70\% e 80\% è ritenuta accettabile;
+				\item una percentuale maggiore del 80\% è ritenuta ottimale.
+			\end{itemize}
+			\subparagraph{Task Completion - MPRS5}\label{MPRS5}
+			La metrica misura la percentuale media di task completati da un'utente. Questo ci permette di valutare l'efficacia con cui gli utenti possano portare a termine determinate azioni.
+			\begin{equation}
+			Task \ Completion = \frac{1}{N} \sum_{1}^{N} \frac{\#\ task \ completati }{\#\ task \ assegnati}
+			\ N = numero \ di \ utenti
+			\end{equation}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item una percentuale del 70\% è ritenuta negativa;
+				\item una percentuale compresa tra 70\% e 80\% è ritenuta accettabile;
+				\item una percentuale maggiore di 80\% è ritenuta ottimale.
+			\end{itemize}
+			\subparagraph{Numero di statement per metodo - MPRS6}\label{MPRS6}
+			La metrica misura misura il numero di statement per metodo. Questo ci permette di tenere un grado di manutenibilità del codice accettabile.
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item un valore maggiore di 40 è ritenuto negativo;
+				\item un valore compreso tra 30 e 40 è ritenuto accettabile;
+				\item un valore minore di 30 è ritenuto ottimale.
+			\end{itemize}
+			\subparagraph{Numero di campi per classe - MPRS7}\label{MPRS7}
+			La metrica misura il numero di campi per classe. Questo ci permette di tenere un grado di manutenibilità e comprensibilità del codice accettabile.
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+			\item un valore maggiore di 15 è ritenuto negativo;
+			\item un valore tra 10 e 15 è ritenuto accettabile;
+			\item un valore minore di 10 è ritenuto ottimale.
+			\end{itemize}
+			\subparagraph{Grado di accoppiamento - MPRS8}\label{MPRS8}
+			La metrica misura il numero di dipendenze tra classi di un package\g. Avere poche dipendenze tra classi implica che ci sia un maggiore grado di disaccoppiamento. Questo aumenta molto la manutenibilità e la comprensibilità del codice.\\
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item un valore maggiore di 7 è ritenuto negativo;
+				\item un valore compreso tra 3 e 7 è ritenuto accettabile;
+				\item un valore minore di 3 è ritenuto ottimale.
+			\end{itemize}
+			\subparagraph{Cyclomatic Number - MPRS9}\label{MPRS9}
+			La metrica misura la complessità ciclomatica del codice. Essa ci permette di vedere il numero di cammini linearmente indipendenti presenti all'interno del codice. Il numero di cammini è direttamente proporzionale alla complessità ciclomatica del codice.
+			\begin{equation}
+			Cyclomatic \ Number = e - n + 2p 
+			\end{equation}
+			\begin{itemize}
+				\item e = numero di archi;
+				\item n = numero di nodi;
+				\item p = numero di componenti connesse.
+		    \end{itemize}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item un valore maggiore di 10 è ritenuto negativo;
+				\item un valore compreso tra 4 e 10 è ritenuto accettabile;
+				\item un valore minore di 4 è ritenuto ottimale.
+			\end{itemize}
+			\subparagraph{Conditional Statement - MPRS10}\label{MPRS10}
+			La metrica misura il numero di statement condizionali presenti per modulo. Questo ci permette di valutare la complessità del codice di un modulo.  
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item un valore maggiore di 50 è ritenuto negativo;
+				\item un valore compreso tra 20 e 50 è ritenuto accettabile;
+				\item un valore minore di 20 è ritenuto ottimale.
+			\end{itemize}
+			\subparagraph{Adequacy of variable names - MPRS11}\label{MPRS11}
+			La metrica misura la divergenza dei nomi delle variabili da quanto deciso nella \definizionediprodottov. Questo ci permette di mantenere una buona comprensibilità del codice. 
+			\begin{equation}
+			Adequacy \ of \ variable \ names=\frac{\#\ variabili \ con \ nomi \ corretti}{\# \ totale \ di \ variabili \ definite \ nella \ DP }
+			\end{equation}
+			\begin{itemize}
+				\item DP = \definizionediprodottov.
+			\end{itemize}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item un valore minore di 80\% è ritenuto negativo;
+				\item un valore compreso tra 80\% e 90\% è ritenuto accettabile;
+				\item un valore maggiore di 90\% è ritenuto ottimale.
+			\end{itemize}
+			\subparagraph{Average Module Size - MPRS12}\label{MPRS12}
+			La metrica misura la dimensione media di un modulo in termini di linee di codice. Avere moduli di grandi dimensioni compromette la manutenibilità del codice.
+			\begin{equation}
+			Average \ module \ size  = \frac{\# \ totale \ di \ linee \ di \ codice \ in \ tutti \ i \ moduli  }{\#\ moduli}
+			\end{equation}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item un valore maggiore di 400 è ritenuto negativo;
+				\item un valore compreso tra 300 e 400 è ritenuto accettabile;
+				\item un valore compreso tra 200 e 300 è ritenuto ottimale.
+			\end{itemize}
+			\subparagraph{Test Passati Richiesti - MPRS13}\label{MPRS13}
+			La metrica misura la percentuale di successo dei test ricavati dai requisiti. Questo ci permette di valutare se il prodotto supera la maggior parte dei test.
+			\begin{equation}
+			Test \ Passati \ Richiesti  = \frac{\# \ di \ test \ passati }{\#\ totale \ di \ test \ richiesti}
+			\end{equation}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item una percentuale minore del 80\% e maggiore del 98\% è ritenuta negativa;
+				\item una percentuale compresa tra 80\% e 90\% è ritenuta accettabile;
+				\item una percentuale compresa tra 90\% e 98\% è ritenuta ottimale.
+			\end{itemize}
+			Da notare che una percentuale maggiore del 98\% è ritenuta negativa, perchè lo scopo dei test è quello di trovare dei problemi. Nel momento del raggiungimento del 100\% dei test passati il set di test previsto verrà cambiato. 
+			\subparagraph{Failure Avoidance - MPRS14}\label{MPRS14}
+			La metrica misura la percentuale di situazioni anomale evitate dal prodotto in seguito ad un numero di situazioni anomale presentate. Questo ci permette di valutare se il prodotto è robusto e risponde bene ad eventuali situazioni anomale. 
+			\begin{equation}
+			Failure \ Avoidance  = \frac{\#\ situazioni \ anomale \ evitate }{\#\ totale \ di \ situazioni \ anomale \ presentate }
+			\end{equation}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item una percentuale minore del 80\% è ritenuta negativa;
+				\item una percentuale compresa tra 80\% e 90\% è ritenuta accettabile;
+				\item una percentuale maggiore di 90\% è ritenuta ottimale.
+			\end{itemize}
+			\subparagraph{Breakdown Avoidance - MPRS15}\label{MPRS15}
+			La metrica misura la percentuale di interruzioni evitate dal prodotto in seguito ad un numero di situazioni anomale presentate. Questo ci permette di valutare se il prodotto lavora senza interruzioni. 
+			\begin{equation}
+			Breakdown \ Avoidance  =1 - \frac{\#\ di \ interruzioni}{\#\ di \ situazioni \ anomale \ presentate }
+			\end{equation}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item una percentuale minore del 80\% è ritenuta negativa;
+				\item una percentuale compresa tra 80\% e 90\% è ritenuta accettabile;
+				\item una percentuale maggiore di 90\% è ritenuta ottimale.
+			\end{itemize}
+			\subparagraph{Numero di installazioni completate - MPRS15}\label{MPRS16}
+			La metrica misura la percentuale di installazioni avvenute con successo da parte degli utenti. Questo ci permette di valutare se il prodotto è facilmente installabile. 
+			\begin{equation}
+			 Numero \ di \ installazioni \ completate = \frac{\#\ installazioni \ avvenute \ con \ successo}{\#\ totale \ di \ installazioni  }
+			\end{equation}
+			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			\begin{itemize}
+				\item una percentuale minore del 80\% è ritenuta negativa;
+				\item una percentuale compresa tra 80\% e 90\% è ritenuta accettabile;
+				\item una percentuale maggiore di 90\% è ritenuta ottimale.
+			\end{itemize}
 \end{document}
