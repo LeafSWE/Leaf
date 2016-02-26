@@ -559,4 +559,12 @@
 			Edificio nel quale sono stati installati dei beacon il cui fine è quello di supportare le funzionalità dell'applicazione
 		</descrizione>
 	</voce>
+	<voce>
+		<termine>
+			POI
+		</termine>
+		<descrizione>
+			Acronimo di Point Of Interest, area o luogo in cui è presente un beacon
+		</descrizione>
+	</voce>
 </glossario>

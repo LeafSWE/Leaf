@@ -1,5 +1,9 @@
 \documentclass[../PianoProgetto.tex]{subfiles}
 
+	\newcolumntype{F}{>{\hsize=.225\hsize}X}
+	\newcolumntype{O}{>{\hsize=.19\hsize \centering}X}
+	\newcolumntype{P}{>{\hsize=.435\hsize}X}
+
 \begin{document}
 
 \section{Analisi dei rischi}
@@ -7,117 +11,188 @@
 	Al fine di migliorare l'avanzamento del progetto è stata effettuata un'attenta analisi dei rischi per individuarli, comprenderli e prendere le contromisure necessarie. Essa è suddivisa in quattro attività:
 	\begin{enumerate}
 	\item identificazione: individuare i rischi che possono interessare il progetto, indicandone le cause e cercando di prevedere le conseguenze;
-	\item analisi: stimare la probabilità di occorrenza di un rischio e determinarne l'impatto sul progetto;
+	\item analisi di fase: stimare la probabilità di occorrenza di un rischio e determinarne l'impatto sul progetto nella fase in corso. Sarà compito del \responsabilediprogetto\  all'inizio di ogni periodo effettuare una nuova analisi dei rischi presentati;
 	\item pianificazione di controllo: definire una metodologia per il controllo dei rischi, in modo che possano essere evitati;
 	\item mitigazione: nel caso in cui fossero inevitabili, definire un piano di contingenza per poter minimizzare i danni prodotti nel caso si verificassero. Questa sotto-attività non è obbligatoria per tutti i rischi (anche se consigliata), ma solo per quelli difficilmente controllabili e gestibili.
 	\end{enumerate}
-    Qualora il \responsabilediprogetto lo ritenesse necessario, l'analisi dei rischi potrà essere riveduta ed estesa attraverso la ripetizione delle quattro attività elencate.
+    Qualora il \responsabilediprogetto\ lo ritenesse necessario, l'analisi dei rischi potrà essere riveduta ed estesa attraverso la ripetizione delle quattro attività elencate.
 
 	Ogni rischio identificato avrà le seguenti caratteristiche: 
 		\begin{itemize}
 			\item nome;
 			\item descrizione; 
-			\item probabilità di occorrenza;
-			\item livello di rischio;
-			\item possibili conseguenze;
-			\item strategia di individuazione e gestione. 
+			\item risultati analisi:
+			\begin{itemize}
+				\item probabilità di occorrenza;
+				\item livello di rischio;
+				\item possibili conseguenze;
+			\end{itemize}
+			\item strategia di individuazione e gestione.
 		\end{itemize}	
-	Ogni rischio verrà monitorato nel tempo e ne verrà indicato l'effettivo riscontro.
-    A seguire una tabella riassuntiva con tutti i rischi individuati, mentre nelle prossime sezioni sarà disponibile una descrizione dettagliata per ogni rischio.
+	Ogni rischio verrà monitorato nel tempo e ne verrà indicato l'effettivo riscontro nella fase in corso.
+    A seguire il registro dei rischi con tutti i rischi individuati, mentre nelle prossime sezioni sarà disponibile una descrizione dettagliata per ogni rischio.
 		
 	\newpage
 	
+	\newcolumntype{S}{>{\hsize=.28\hsize}X}
+	\newcolumntype{B}{>{\hsize=.72\hsize}X}
+	
 	\begin{table}[h]
 		\centering
-		
-		\begin{tabularx}{\textwidth}{X X C C}
+		\begin{longtabu} to \textwidth {X[c 0.3cm]  X[c 0.2cm] X[l]}
 			\toprule
-			\textbf{Livello} 	& \textbf{Tipologia} 						& \textbf{Probabilità di occorrenza} & \textbf{Livello di rischio} \\
+			\textbf{Livello} & \textbf{Codice} & \multicolumn{1}{c}{\textbf{Tipologia}} \\
 			\midrule
-			Strumenti 	& Inesperienza nell'utilizzo 				& Alta 	& Alto \\
+			Strumenti & R1 & Inesperienza nell'utilizzo \\
 			\arrayrulecolor{gray}
 			\midrule
-			Tecnologico	& Tecnologie adottate sconosciute 			& Media 	& Alto \\
-					\arrayrulecolor{lightgray}\cmidrule{2-4}
-					& Guasti hardware e malfunzionamenti software\g\ 	& Bassa 	& Basso \\
+			Tecnologico	& R2 & Tecnologie adottate sconosciute \\
+					\arrayrulecolor{lightgray}
+					\cmidrule{2-3}
+					\arrayrulecolor{gray}
+					& R3 & Guasti hardware e malfunzionamenti software\g\ \\
 			\midrule
-			Organizzativo& Valutazione delle risorse					& Media	& Alto \\
+			Organizzativo & R4 & Valutazione delle risorse \\
 			\midrule
-			Personale	& Problemi personali dei membri del team\g\ & Media	& Medio \\
-					\cmidrule{2-4}
-					& Problemi personali tra i membri del team\g\ 	& Media	& Alto \\
-			\arrayrulecolor{gray}\midrule
-			Requisiti	& Mancata comprensione					& Media	& Alto \\
+			Personale	& R5 & Problemi personali dei membri del team\g\ \\
+					\arrayrulecolor{lightgray}
+					\cmidrule{2-3}
+					\arrayrulecolor{gray}
+					& R6 & Problemi personali tra i membri del team\g\ \\
+			
+			\midrule
+			Requisiti	& R7 & Mancata comprensione \\
 			\arrayrulecolor{black}
 			\bottomrule
-		\end{tabularx}
+		\end{longtabu}
 		
-		\caption{Rischi individuati}
+		\caption{Registro dei rischi}
 		\label{tab:rischi}
 		
 	\end{table}
 
-
+\newpage
 \subsection{Livello strumenti}
 
-\subsubsection{Inesperienza nell'utilizzo}
+\subsubsection{R1: Inesperienza nell'utilizzo}
 
 	\paragraph*{Descrizione:} per lo svolgimento del progetto didattico, il team\g\ dovrà utilizzare una serie di strumenti che nessun membro ha mai utilizzato.
 	
-	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a verificare periodicamente il livello di conoscenza dei singoli membri sulle tecnologie adottate.
+	%\paragraph*{Analisi:}
+
+	\begin{table} [h]
+		\centering
+		\begin{tabularx}{\textwidth}{F O O P}
+			\toprule
+			\textbf{Fase} & \textbf{Occorrenza} & \textbf{Impatto} & \textbf{Possibili conseguenze}\\
+			\midrule
+			\arrayrulecolor{gray}
+			Analisi & Alta & Alto & Rallentamento delle attività che richiedono l'utilizzo dei suddetti strumenti e conseguente ritardo nella consegna. \\
+			\midrule
+			Analisi di \par Dettaglio & & & \\
+			\midrule
+			Progettazione Architetturale & & & \\
+			%\midrule
+			%Progettazione \par di Dettaglio \par e codifica \par dei Requisiti \par Obbligatori & & & \\
+			\arrayrulecolor{black}
+			\bottomrule
+		\end{tabularx}
+		\caption{R1 - analisi}
+		\label{tab:R1-analisi}	
+	\end{table}	
 	
-	\paragraph*{Analisi:}
-	\begin{itemize}
-		\item probabilità: alta;
-		\item livello di rischio: alto;
-		\item possibili conseguenze: rallentamento delle attività che richiedono l'utilizzo dei suddetti strumenti e conseguente ritardo nella consegna.
-	\end{itemize}
+	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a verificare periodicamente il livello di conoscenza dei singoli membri sulle tecnologie adottate.
 	
 	\paragraph*{Gestione:}
 	\begin{enumerate}
 		\item annullamento: il \responsabilediprogetto\ affiderà l'utilizzo dello strumento al membro che ritiene il più indicato a manovrarlo nel minor tempo possibile;
 		\item minimizzazione: se l'individuo a cui è stato assegnato lo strumento non riesce ad apprenderne le modalità di utilizzo, verrà sostituito da un altro membro;
 		\item contingenza: se nel periodo previsto nessuno riesce ad utilizzare lo strumento, verrà sostituito da un suo equivalente. 
-	\end{enumerate}	
+	\end{enumerate}		
 	
-	\paragraph*{Riscontro effettivo:} l'utilizzo dello strumento Freedcamp\g\ è stato giudicato dal team\g\ di difficile utilizzo, perciò si è passati ad un suo equivalente più intuitivo: Teamwork\g .
+	\newpage
+	\paragraph*{Riscontro effettivo:} 
+		\begin{description}
+			\item[Fase A - Analisi] l'utilizzo dello strumento Freedcamp\g\ è stato giudicato dal team\g\ di difficile utilizzo, perciò si è passati ad un suo equivalente più intuitivo: Teamwork\g .
 	Qualche membro ha trovato difficoltà ad interfacciarsi con il linguaggio \LaTeX\  , perciò è stato creato un Notebook\g\ su Teamwork\g\ in cui ogni membro si impegna a riportare informazioni che ritiene utili al fine di velocizzare l'apprendimento di tale linguaggio all'interno del team\g .
-
+			\item[Fase AD - Analisi di Dettaglio] ???
+			\item[Fase PA - Progettazione Architetturale] ???
+		\end{description}
+		
+%\newpage
 \subsection{Livello tecnologico}
 
-\subsubsection{Tecnologie adottate sconosciute}
+\subsubsection{R2: Tecnologie adottate sconosciute}
 
 	\paragraph*{Descrizione:} per la progettazione e l'implementazione del software\g\ per il progetto, il team\g\ dovrà utilizzare una serie di tecnologie praticamente sconosciute.
 	
-	\paragraph*{Analisi:}
-	\begin{itemize}
-		\item probabilità: media;
-		\item livello di rischio: alto;
-		\item possibili conseguenze: l'utilizzo di tecnologie sconosciute richiede tempo per la scelta e l'apprendimento di quest'ultima, il che può portare ad un ritardo sulle date di consegna.
-	\end{itemize}
+	%\paragraph*{Analisi:}
+
+	\begin{table}[h]
+		\centering
+		\begin{tabularx}{\textwidth}{F O O P}
+			\toprule
+			\textbf{Fase} & \textbf{Occorrenza} & \textbf{Impatto} & \textbf{Possibili conseguenze}\\
+			\midrule
+			\arrayrulecolor{gray}
+			Analisi & Media & Alto & L'utilizzo di tecnologie sconosciute richiede tempo per la scelta e l'apprendimento di quest'ultima, il che può portare ad un ritardo sulle date di consegna. \\
+			\midrule
+			Analisi di \par Dettaglio & & & \\
+			\midrule
+			Progettazione Architetturale & & & \\
+			%\midrule
+			%Progettazione \par di Dettaglio \par e codifica \par dei Requisiti \par Obbligatori & & & \\
+			\arrayrulecolor{black}
+			\bottomrule
+		\end{tabularx}
+		\caption{R2 - analisi}
+		\label{tab:R2-analisi}	
+	\end{table} 
 	
-	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a monitorare costantemente il grado di conoscenza delle tecnologie adottate.
+	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a monitorare costantemente il grado di conoscenza delle tecnologie adottate.	
 	
 	\paragraph*{Gestione:}
 	\begin{enumerate}
 		\item annullamento: se possibile, il team\g\ ricorrerà a tecnologie di propria conoscenza;
 		\item minimizzazione: il piano di lavoro terrà conto dell'inesperienza del team\g : verranno previsti dei periodi di formazione mediante la documentazione fornita dall'\amministratore , che ogni membro del team\g\ si impegnerà a visionare in maniera autonoma;
 		\item contingenza: se il periodo previsto non risulterà essere sufficiente, il piano di lavoro verrà riadattato affinché i membri abbiano più tempo per approfondire lo studio della tecnologia. Questo porterà ad una riesecuzione della pianificazione, con probabile modifica delle scadenze.
-	\end{enumerate} 
+	\end{enumerate}
 	
-	\paragraph*{Riscontro effettivo:} per ora non sono state adottate tecnologie, di conseguenza il team\g\ non ha ancora riscontrato il rischio.
+	\paragraph*{Riscontro effettivo:} 
+		\begin{description}
+			\item[Fase A - Analisi] sono state adottate tecnologie, di conseguenza il team\g\ non ha ancora riscontrato il rischio.
+			\item[Fase AD - Analisi di Dettaglio] ???
+			\item[Fase PA - Progettazione Architetturale] ???
+		\end{description}
 
-	\subsubsection{Guasti hardware e malfunzionamenti software}
+
+	\subsubsection{R3: Guasti hardware e malfunzionamenti software}
 	
 	\paragraph*{Descrizione:} durante lo svolgimento del progetto didattico, è possibile che si verifichino guasti hardware e/o malfunzionamenti software\g\ che comportino la perdita di dati.
 	
-	\paragraph*{Analisi:}
-	\begin{itemize}
-		\item probabilità: bassa;
-		\item livello di rischio: basso;
-		\item conseguenze: il malfunzionamento di uno dispositivo può portare al rallentamento delle attività e alla perdita di dati, con una conseguente ripetizione del lavoro già svolto.
-	\end{itemize}
+	%\paragraph*{Analisi:}
 	
+	\begin{table}[h]
+		\centering
+		\begin{tabularx}{\textwidth}{F O O P}
+			\toprule
+			\textbf{Fase} & \textbf{Occorrenza} & \textbf{Impatto} & \textbf{Possibili conseguenze}\\
+			\midrule
+			\arrayrulecolor{gray}
+			Analisi & Bassa & Basso & Il malfunzionamento di uno dispositivo può portare al rallentamento delle attività e alla perdita di dati, con una conseguente ripetizione del lavoro già svolto. \\
+			\midrule
+			Analisi di \par Dettaglio & & & \\
+			\midrule
+			Progettazione Architetturale & & & \\
+			%\midrule
+			%Progettazione \par di Dettaglio \par e codifica \par dei Requisiti \par Obbligatori & & & \\
+			\arrayrulecolor{black}
+			\bottomrule
+		\end{tabularx}
+		\caption{R3 - analisi}
+		\label{tab:R3-analisi}	
+	\end{table} 
+		
 	\paragraph*{Identificazione:} ogni membro del team\g\ avrà cura della propria attrezzatura; ne verificherà inoltre giornalmente il completo funzionamento.
 	
 	\paragraph*{Gestione:}
@@ -127,20 +202,42 @@
 		\item contingenza: grazie al backup giornaliero, non si rende necessario un piano di contingenza.
 	\end{enumerate} 	
 	
-	\paragraph*{Riscontro effettivo:} al momento non si sono verificati guasti hardware o problemi software\g\ di nessun genere sulle macchine dei membri del team\g .
+	\paragraph*{Riscontro effettivo:}
+		\begin{description}
+			\item[Fase A - Analisi] non si sono verificati guasti hardware o problemi software\g\ di nessun genere sulle macchine dei membri del team\g .
+			\item[Fase AD - Analisi di Dettaglio] ???
+			\item[Fase PA - Progettazione Architetturale] ???
+		\end{description}
 
+%\newpage
 \subsection{Livello organizzativo}
 
-\subsubsection{Valutazione delle risorse}
+\subsubsection{R4: Valutazione delle risorse}
 
 	\paragraph*{Descrizione:} essendo al primo approccio con un progetto di questa dimensione, il team\g\ potrebbe andare incontro a stime errate di valutazione delle risorse.
 	
-	\paragraph*{Analisi:}
-	\begin{itemize}
-		\item probabilità: media;
-		\item livello di rischio: alto;
-		\item conseguenze: un'errata stima delle risorse può portare ad un ritardo nelle date di consegna (sottostima) o ad un eccessivo spreco d'esse per le attività di progetto (sovrastima).
-	\end{itemize}
+	%\paragraph*{Analisi:}
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabularx}{\textwidth}{F O O P}
+			\toprule
+			\textbf{Fase} & \textbf{Occorrenza} & \textbf{Impatto} & \textbf{Possibili conseguenze}\\
+			\midrule
+			\arrayrulecolor{gray}
+			Analisi & Media & Alto & Un'errata stima delle risorse può portare ad un ritardo nelle date di consegna (sottostima) o ad un eccessivo spreco d'esse per le attività di progetto (sovrastima). \\
+			\midrule
+			Analisi di \par Dettaglio & & & \\
+			\midrule
+			Progettazione Architetturale & & & \\
+			%\midrule
+			%Progettazione \par di Dettaglio \par e codifica \par dei Requisiti \par Obbligatori & & & \\
+			\arrayrulecolor{black}
+			\bottomrule
+		\end{tabularx}
+		\caption{R4 - analisi}
+		\label{tab:R4-analisi}	
+	\end{table}
 	
 	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a verificare, di giorno in giorno tramite l'utilizzo della Dashboard\g, lo stato di avanzamento delle attività.
 	
@@ -151,22 +248,43 @@
 		\item contingenza: nel caso in cui un eventuale recupero si dimostri impossibile, verrà eseguita nuovamente la pianificazione, con conseguente ritardo nelle consegne.
 	\end{enumerate}	
 	
-	\paragraph*{Riscontro effettivo:} in un primo momento, era stato stimato un periodo ottimistico per la stesura della documentazione. Di conseguenza è stata rieffettuata una pianificazione delle attività tenendo conto dell'errore commesso, che non ha intaccato le date di consegna.
+	\paragraph*{Riscontro effettivo:} 
+		\begin{description}
+			\item[Fase A - Analisi] in un primo momento, era stato stimato un periodo ottimistico per la stesura della documentazione, di conseguenza è stata rieffettuata una pianificazione delle attività tenendo conto dell'errore commesso, che non ha intaccato le date di consegna.
+			\item[Fase AD - Analisi di Dettaglio] ???
+			\item[Fase PA - Progettazione Architetturale] ???
+		\end{description}
+		
 
-
+%\newpage
 \subsection{Livello personale}
 
-\subsubsection{Problemi personali dei membri del team}
+\subsubsection{R5: Problemi personali dei membri del team}
 
-	\paragraph*{Descrizione:} ogni membro del team\g\ avrà le sue necessità e i suoi impegni personali lungo la durate del progetto. Di conseguenza è inevitabile prevedere che alcuni membri del team\g\ 
-non siano disponibili in certi momenti.
+	\paragraph*{Descrizione:} ogni membro del team\g\ avrà le sue necessità e i suoi impegni personali lungo la durate del progetto. Di conseguenza è inevitabile prevedere che alcuni membri del team\g\ non siano disponibili in certi momenti.
 	 
-	\paragraph*{Analisi:}
-	\begin{itemize}
-		\item probabilità: media;
-		\item livello di rischio: medio;
-		\item conseguenze: possibile ritardo nello svolgimento delle attività nel caso di impegni imprevisti di qualche membro del gruppo.
-	\end{itemize}	
+	%\paragraph*{Analisi:}
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabularx}{\textwidth}{F O O P}
+			\toprule
+			\textbf{Fase} & \textbf{Occorrenza} & \textbf{Impatto} & \textbf{Possibili conseguenze}\\
+			\midrule
+			\arrayrulecolor{gray}
+			Analisi & Media & Medio & Possibile ritardo nello svolgimento delle attività nel caso di impegni imprevisti di qualche membro del gruppo. \\
+			\midrule
+			Analisi di \par Dettaglio & & & \\
+			\midrule
+			Progettazione Architetturale & & & \\
+			%\midrule
+			%Progettazione \par di Dettaglio \par e codifica \par dei Requisiti \par Obbligatori & & & \\
+			\arrayrulecolor{black}
+			\bottomrule
+		\end{tabularx}
+		\caption{R5 - analisi}
+		\label{tab:R5-analisi}	
+	\end{table}
 		
 	\paragraph*{Identificazione:} i membri del team\g\ comunicheranno, con il maggior anticipo possibile, i propri impegni al \responsabilediprogetto . Questo compito verrà reso più semplice dall'utilizzo di un calendario di gruppo. 
 	
@@ -177,18 +295,39 @@ non siano disponibili in certi momenti.
 		\item contingenza: nel caso in cui fosse impossibile rispettare le tempistiche, verrà effettuato uno spostamento in avanti della consegna.
 	\end{enumerate}
 			
-	\paragraph*{Riscontro effettivo:} i membri hanno fatto il possibile per comunicare con il maggior anticipo possibile i propri impegni. Nella distribuzione a monte del lavoro si è cercato di effettuare una pianificazione a lungo termine che rispettasse i vari impegni, mantenendo una distribuzione equa del lavoro.
+	\paragraph*{Riscontro effettivo:}
+		\begin{description}
+			\item[Fase A - Analisi] i membri hanno fatto il possibile per comunicare con il maggior anticipo possibile i propri impegni. Nella distribuzione a monte del lavoro si è cercato di effettuare una pianificazione a lungo termine che rispettasse i vari impegni, mantenendo una distribuzione equa del lavoro.
+			\item[Fase AD - Analisi di Dettaglio] ???
+			\item[Fase PA - Progettazione Architetturale] ???
+		\end{description}
 	
-\subsubsection{Problemi personali tra i membri del team}
+\subsubsection{R6: Problemi personali tra i membri del team}
 
 	\paragraph*{Descrizione:} i membri del team\g\ non hanno mai collaborato alla realizzazione di un progetto che richiedesse collaborazione a stretto contatto, il che può causare attriti tra essi.
 	
-	\paragraph*{Analisi:}
-	\begin{itemize}
-		\item probabilità: media;
-		\item livello di rischio: alto;
-		\item possibili conseguenze: problemi tra i membri del team\g\ possono causare un rallentamento delle attività.
-	\end{itemize}
+	%\paragraph*{Analisi:}
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabularx}{\textwidth}{F O O P}
+			\toprule
+			\textbf{Fase} & \textbf{Occorrenza} & \textbf{Impatto} & \textbf{Possibili conseguenze}\\
+			\midrule
+			\arrayrulecolor{gray}
+			Analisi & Media & Alto & Problemi tra i membri del team\g\ possono causare un rallentamento delle attività. \\
+			\midrule
+			Analisi di \par Dettaglio & & & \\
+			\midrule
+			Progettazione Architetturale & & & \\
+			%\midrule
+			%Progettazione \par di Dettaglio \par e codifica \par dei Requisiti \par Obbligatori & & & \\
+			\arrayrulecolor{black}
+			\bottomrule
+		\end{tabularx}
+		\caption{R6 - analisi}
+		\label{tab:R6-analisi}	
+	\end{table}
 	
 	\paragraph*{Identificazione:} il \responsabilediprogetto\ avrà l'onere di verificare periodicamente i rapporti tra i vari membri del team\g. D'altro canto, ogni membro del team\g\ si impegnerà a riferire al \responsabilediprogetto\ eventuali problemi di cui non è a conoscenza.
 	
@@ -199,21 +338,42 @@ non siano disponibili in certi momenti.
 		\item contingenza: se il problema persiste, i membri coinvolti verranno costretti a svolgere i propri compiti in luoghi differenti (nel limite del possibile).
 	\end{enumerate}	
 	
-	\paragraph*{Riscontro effettivo:} al momento, non si sono verificati problemi a riguardo.
+	\paragraph*{Riscontro effettivo:}
+		\begin{description}
+			\item[Fase A - Analisi] non si sono verificati problemi a riguardo.
+			\item[Fase AD - Analisi di Dettaglio] ???
+			\item[Fase PA - Progettazione Architetturale] ???
+		\end{description}
 
-
+%\newpage
 \subsection{Livello requisiti}
 
-\subsubsection{Mancata comprensione}
+\subsubsection{R7: Mancata comprensione}
 
 	\paragraph*{Descrizione:} è possibile che durante le varie attività di analisi dei requisiti del problema non vengano compresi o siano fraintesi.
 	
-	\paragraph*{Analisi:}
-	\begin{itemize}
-		\item probabilità: alta;
-		\item livello di rischio: alto;
-		\item conseguenze: possibili divergenze tra la visione del prodotto\g\ da parte del team\g\ e quella del proponente.
-	\end{itemize}	
+	%\paragraph*{Analisi:}
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabularx}{\textwidth}{F O O P}
+			\toprule
+			\textbf{Fase} & \textbf{Occorrenza} & \textbf{Impatto} & \textbf{Possibili conseguenze}\\
+			\midrule
+			\arrayrulecolor{gray}
+			Analisi & Alta & Alto & Possibili divergenze tra la visione del prodotto\g\ da parte del team\g\ e quella del proponente. \\
+			\midrule
+			Analisi di \par Dettaglio & & & \\
+			\midrule
+			Progettazione Architetturale & & & \\
+			%\midrule
+			%Progettazione \par di Dettaglio \par e codifica \par dei Requisiti \par Obbligatori & & & \\
+			\arrayrulecolor{black}
+			\bottomrule
+		\end{tabularx}
+		\caption{R7 - analisi}
+		\label{tab:R7-analisi}	
+	\end{table}
 		
 	\paragraph*{Identificazione:} il team\g\ effettuerà una serie di incontri con il proponente per verificare la comprensione dei requisiti e la corrispondenza con le loro aspettative.
 	
@@ -224,7 +384,12 @@ non siano disponibili in certi momenti.
 		\item contingenza: nel caso in cui si verifichino delle divergenze a lavoro iniziato, verrà fatto il possibile per riadattarsi alle esigenze del proponente.
 	\end{enumerate}	
 	
-	\paragraph*{Riscontro effettivo:} i dubbi emersi durante l'analisi sono stati esposti al proponente per ottenere dei chiarimenti. Al momento i requisiti sono stati solamente presentati al proponente, quindi tale rischio non si è ancora verificato.
+	\paragraph*{Riscontro effettivo:}
+		\begin{description}
+			\item[Fase A - Analisi] i dubbi emersi durante l'analisi sono stati esposti al proponente per ottenere dei chiarimenti. Al momento i requisiti sono stati solamente presentati al proponente, quindi tale rischio non si è ancora verificato.
+			\item[Fase AD - Analisi di Dettaglio] ???
+			\item[Fase PA - Progettazione Architetturale] ???
+		\end{description}
 
 			
 \end{document}
