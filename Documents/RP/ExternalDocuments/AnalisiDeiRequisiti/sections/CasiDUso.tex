@@ -6,8 +6,8 @@
 \subsection{Gerarchia degli attori}
 \begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.95, width=\textwidth]{img/diagramma_attori.png}
-    \caption{Caso d'uso UCG: Utilizzo generale del prototipo}\label{fig:UCG} 
+    \includegraphics[scale=0.60]{img/diagramma_attori.png}
+    \caption{Attori e relazioni tra essi}\label{fig:attori} 
 \end{figure}
 \hypertarget{UCG}{}
 \subsection{Caso d'uso UCG: Utilizzo generale del prototipo}
@@ -19,26 +19,27 @@
         \end{figure}
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: un utente deve poter accedere alla navigazione, consultare informazioni relative all'edificio nel suo complesso o a singole aree, modificare le impostazioni utente ed accedere alla guida dell'applicazione. Un utente non sviluppatore deve poter attivare le funzionalità avanzate dell'applicazione. Un utente sviluppatore sviluppatore, oltre ad ereditare tutti i casi d'uso di utente, deve poter accedere alle funzionalità avanzate dell'applicazione; 
+\item \textbf{Descrizione}: un utente deve poter accedere alla navigazione, consultare informazioni relative all'edificio nel suo complesso o a singolo POI, modificare le impostazioni utente ed accedere alla guida dell'applicazione. Un utente non sviluppatore deve poter attivare le funzionalità avanzate dell'applicazione. Un utente sviluppatore, oltre ad ereditare tutti i casi d'uso di utente, deve poter accedere alle funzionalità avanzate dell'applicazione; 
       \item \textbf{Precondizione}: l'utente ha avviato l'applicazione installata nel proprio dispositivo;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item L'utente può accedere alla navigazione (\hyperlink{UC1}{UC1});
-          \item L'utente può accedere alle informazioni relative all'intero edificio o a singole aree dell'edificio (\hyperlink{UC2}{UC2});
+          \item L'utente può accedere alle informazioni relative all'intero edificio o a singolo POI dell'edificio (\hyperlink{UC2}{UC2});
           \item L'utente può accedere alla gestione dell'applicazione (\hyperlink{UC3}{UC3});
+          \item L'utente non sviluppatore può accedere alla sezione per lo sblocco delle finzionalità di sviluppatore (\hyperlink{UC4}{UC4});
           \item L'utente può accedere alla guida (\hyperlink{UC5}{UC5});
           \item Lo sviluppatore può accedere alle funzionalità avanzate (\hyperlink{UC6}{UC6});
 
       \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente;
     \item \textbf{Scenari Alternativi}:
       	\begin{itemize}
 			\item Nel caso in cui l'utente voglia accedere alla navigazione di un edificio la cui mappa non risulti aggiornata o presente nel dispositivo:
 			\begin{enumerate}
-				\item Viene presentato un errore (\hyperlink{UC7}{UC7});
+				\item Viene presentato un errore esplicativo (\hyperlink{UC7}{UC7}).
 			\end{enumerate}
       	\end{itemize}
-    \item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente.
   \end{itemize}
 \hypertarget{UC1}{}
 \subsection{Caso d'uso UC1: Navigazione}
@@ -62,19 +63,19 @@
           \item L'utente può accedere ad indicazioni più dettagliate  (\hyperlink{UC1.4}{UC1.4});
 
       \end{enumerate}
-
+	\item \textbf{Postcondizione}: l'utente ha raggiunto la destinazione scelta oppure ha interrotto la navigazione;
     \item \textbf{Scenari Alternativi}:
     	\begin{itemize}
-      		\item Nel caso in cui l'utente non rispetti le indicazioni relative al percorso proposto
+      		\item Nel caso in cui l'utente segua un percorso diverso da quello consigliato:
       		\begin{enumerate}
-         		\item Viene visualizzato un errore (\hyperlink{UC1.6}{UC1.6});
+         		\item Viene presentato un errore esplicativo (\hyperlink{UC1.6}{UC1.6});
       		\end{enumerate}
-      		\item Nel caso in cui l'utente non rispetti le indicazioni relative al percorso proposto
+      		\item Nel caso in cui l'utente si trovi in un area non coperta da beacon:
       		\begin{enumerate}
-         		\item Viene visualizzato un errore (\hyperlink{UC1.7}{UC1.7});
+         		\item Viene presentato un errore esplicativo (\hyperlink{UC1.7}{UC1.7}).
       		\end{enumerate}
       	\end{itemize}
-    \item \textbf{Postcondizione}: l'utente ha raggiunto la destinazione scelta oppure ha interrotto la navigazione.
+
   \end{itemize}
 \hypertarget{UC1.1}{}
 \subsection{Caso d'uso UC1.1: Inserimento destinazione}
@@ -86,7 +87,7 @@
         \end{figure}
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: l'utente deve poter scegliere ed inserire una destinazione da raggiungere, tra i POI previsti; 
+\item \textbf{Descrizione}: l'utente deve poter scegliere ed inserire una destinazione da raggiungere, tra i POI previsti dall'edificio in cui si trova; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla scelta della destinazione e il dispositivo rileva la presenza di un beacon;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -95,15 +96,17 @@
           \item L'utente conferma la destinazione scelta  (\hyperlink{UC1.1.2}{UC1.1.2});
 
       \end{enumerate}
-
+	 \item \textbf{Postcondizione}: la destinazione da raggiungere è stata impostata;
     \item \textbf{Scenari Alternativi}:
     	\begin{itemize}
-    		\item Nel caso in cui l'utente ricerca per nome una destinazione non prevista:
+    		\item Nel caso in cui l'utente ricerchi per nome un POI non appartenente all'edificio in cui si trova:
       		\begin{enumerate}
+      			\item la destinazione inserita dall'utente non è riconosciuta dal sistema;
           		\item Viene visualizzato un errore esplicativo (\hyperlink{UC1.1.5}{UC1.1.5});
+          		\item viene dato all'utente la possibilità di inserire una nuova destinazione.
       		\end{enumerate}
       	\end{itemize}
-    \item \textbf{Postcondizione}: la destinazione da raggiungere è stata impostata.
+   
   \end{itemize}
 \hypertarget{UC1.1.1}{}
 \subsection{Caso d'uso UC1.1.1: Scelta destinazione}
@@ -111,7 +114,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 
-        \item \textbf{Generalizzazione di:}:
+        \item \textbf{Generalizzazione di}:
           \begin{enumerate}
           \item l'utente deve poter inserire il nome di un POI che vuole raggiungere (\hyperlink{UC1.1.3}{UC1.1.3});
           \item l'utente deve poter cercare, tra le categorie proposte dal sistema, il POI che vuole raggiungere. Le categorie proposte sono relative all'edificio nel quale si trova l'utente (\hyperlink{UC1.1.4}{UC1.1.4});
@@ -122,8 +125,8 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente può eseguire la ricerca della destinazione per nome (\hyperlink{UC1.1.3}{UC1.1.3});
-          \item l'utente può eseguire la ricerca della destinazione per categoria (\hyperlink{UC1.1.4}{UC1.1.4});
+          \item UC1.1.3: Ricerca per nome (\hyperlink{UC1.1.3}{UC1.1.3});
+          \item UC1.1.4: Ricerca per categoria (\hyperlink{UC1.1.4}{UC1.1.4});
 
       \end{enumerate}
     \item \textbf{Postcondizione}: la destinazione è stata scelta.
@@ -181,9 +184,7 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item la destinazione inserita dall'utente non è riconosciuta dal sistema;
           \item viene visualizzato un errore esplicativo;
-          \item viene dato all'utente la possibilità di inserire una nuova destinazione;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: viene notificato all'utente che la destinazione indicata è sconosciuta al sistema.
@@ -198,8 +199,6 @@
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item l'utente avvia la navigazione;
-          \item l'utente riceve le indicazioni per raggiungere la destinazione scelta;
-
       \end{enumerate}
     \item \textbf{Inclusioni}:
       \begin{enumerate}
@@ -281,7 +280,7 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente consulta la lista completa delle istruzioni per raggiungere la propria destinazione (\hyperlink{UC1.5}{UC1.5});
+          \item l'utente consulta la lista completa delle istruzioni per raggiungere la propria destinazione;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha presentato all'utente la lista delle indicazioni richieste.
@@ -490,7 +489,7 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente accede al nome di uno specifico POI (\hyperlink{UC2.4.1}{UC2.4.1});
+          \item l'utente accede al nome di uno specifico POI;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha presentato all'utente il nome di uno specifico POI.
@@ -504,7 +503,7 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente accede alla descrizione di uno specifico POI (\hyperlink{UC2.4.2}{UC2.4.2});
+          \item l'utente accede alla descrizione di uno specifico POI;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha presentato all'utente la descrizione di uno specifico POI.
@@ -557,11 +556,6 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 
-        \item \textbf{Generalizzazione di:}:
-          \begin{enumerate}
-          \item l'utente aggiorna la mappa;
-
-      \end{enumerate}
 \item \textbf{Descrizione}: l'utente deve poter aggiornare la mappa di un edificio della quale ha effettuato precedentemente il download; 
       \item \textbf{Precondizione}: il dispositivo dell'utente è provvisto di una connessione Internet attiva ed ha abbastanza spazio di archiviazione per la mappa aggiornata;
     \item \textbf{Postcondizione}: la mappa è stata aggiornata.
@@ -600,14 +594,15 @@
           \item L'utente conferma la mappa scelta  (\hyperlink{UC3.1.3.2}{UC3.1.3.2});
 
       \end{enumerate}
+    \item \textbf{Postcondizione}: la mappa è stata scaricata sul dispositivo dell'utente ed il sistema può utilizzarla;
     \item \textbf{Scenari Alternativi}:
     	\begin{itemize}
 			\item Nel caso in cui l'utente richieda la mappa di un edificio sconosciuto al sistema:
 			\begin{enumerate}
 				\item Viene visualizzato un errore riguardante l'edificio scelto (\hyperlink{UC3.1.3.4}{UC3.1.3.4});
+				\item viene data la possibilità all'utente di scegliere un'altra mappa di cui effettuare il download.
 			\end{enumerate}
       	\end{itemize}
-    \item \textbf{Postcondizione}: la mappa è stata scaricata sul dispositivo dell'utente ed il sistema può utilizzarla.
   \end{itemize}
 \hypertarget{UC3.1.3.1}{}
 \subsection{Caso d'uso UC3.1.3.1: Scelta mappa}
@@ -640,13 +635,7 @@
           \item Download mappa (\hyperlink{UC3.1.3.3}{UC3.1.3.3});
 
       \end{enumerate}
-    \item \textbf{Scenari Alternativi}:
-      \begin{itemize}
-      	  \item Nel caso in cui un utente richieda la mappa di un edificio non riconosciuto dal sistema:
-	      \begin{enumerate}
-	          \item Viene visualizzato un errore esplicativo (\hyperlink{UC3.1.3.4}{UC3.1.3.4});
-	      \end{enumerate}
-	  \end{itemize}
+
     \item \textbf{Postcondizione}: l'utente ha scelto la mappa dell'edificio desiderato.
   \end{itemize}
 \hypertarget{UC3.1.3.3}{}
@@ -673,7 +662,6 @@
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item viene visualizzato un errore esplicativo;
-          \item viene data la possibilità di sceglie un'altra mappa di cui eseguire il download;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema visualizza un messaggio di errore riguardante l'impossibilità di scaricare la mappa relativa all'edificio scelto.
@@ -714,14 +702,15 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item L'utente può scegliere di ricevere indicazioni vocali (\hyperlink{UC3.2.1.1}{UC3.2.1.1});
-          \item L'utente può scegliere di ricevere indicazioni sonore (\hyperlink{UC3.2.1.2}{UC3.2.1.2});
-
+          \item L'utente può scegliere di attivare indicazioni vocali (\hyperlink{UC3.2.1.1}{UC3.2.1.1});
+          \item L'utente può scegliere di attivare indicazioni sonore (\hyperlink{UC3.2.1.2}{UC3.2.1.2});
+          \item L'utente può scegliere di disattivare le indicazioni vocali (\hyperlink{UC3.2.1.3}{UC3.2.1.3});
+          \item L'utente può scegliere di disattivare le indicazioni sonore (\hyperlink{UC3.2.1.4}{UC3.2.1.4});
       \end{enumerate}
     \item \textbf{Postcondizione}: le preferenze dell'utente rispetto alla fruizione delle indicazioni sono note al sistema e verranno applicate a partire dalla prossima volta che l'utente avvierà la navigazione.
   \end{itemize}
 \hypertarget{UC3.2.1.1}{}
-\subsection{Caso d'uso UC3.2.1.1: Attivazione indicazioni vocali}
+\subsection{Caso d'uso UC3.2.1.1: Scelta indicazioni vocali}
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di ricevere indicazioni vocali che lo guidino alla destinazione scelta; 
@@ -729,13 +718,13 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente può scegliere di attivare le indicazioni vocali;
+          \item l'utente attiva le indicazioni vocali;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema fornirà indicazioni vocali partire dalla prossima volta in cui l'utente avvierà la navigazione.
   \end{itemize}
 \hypertarget{UC3.2.1.2}{}
-\subsection{Caso d'uso UC3.2.1.2: Attivazione indicazioni sonore}
+\subsection{Caso d'uso UC3.2.1.2: Scelta indicazioni sonore}
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di ricevere indicazioni sonore che lo guidino alla destinazione scelta. Questo tipo di indicazioni consiste nell'emissione di un suono monotono continuo la cui frequenza varia con l'allontanamento dell'utente dal percorso previsto. Questo tipo di indicazioni è pensato per agevolare la navigazione di utenti che presentano disabilità visive; 
@@ -743,9 +732,7 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente può scegliere di attivare le indicazioni sonore;
-          \item l'utente può scegliere di disattivare le indicazioni sonore;
-
+          \item l'utente attiva le indicazioni sonore;
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema fornirà indicazioni sonore partire dalla prossima volta in cui l'utente avvierà la navigazione.
   \end{itemize}
@@ -755,6 +742,10 @@
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di disattivare le indicazioni vocali ; 
       \item \textbf{Precondizione}: le indicazioni vocali sono state precedentemente attivate;
+      \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item l'utente disattiva le indicazioni vocali;
+      \end{enumerate}
     \item \textbf{Postcondizione}: il sistema non fornirà le indicazioni vocali a partire dalla prossima volta che l'utente avvierà la navigazione.
   \end{itemize}
 \hypertarget{UC3.2.1.4}{}
@@ -763,6 +754,10 @@
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di disattivare le indicazioni sonore che lo guidino alla destinazione scelta; 
       \item \textbf{Precondizione}: le indicazioni sonore sono state precedentemente attivate;
+      \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item l'utente disattiva le indicazioni sonore;
+      \end{enumerate}
     \item \textbf{Postcondizione}: il sistema non fornirà le indicazioni sonore partire dalla prossima volta in cui l'utente avvierà la navigazione.
   \end{itemize}
 \hypertarget{UC3.2.2}{}
@@ -792,6 +787,10 @@
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di ricevere indicazioni per il percorso più accessibile. Il percorso più accessibile è quello che presenta meno barriere architettoniche. Questo tipo di indicazioni è pensato per agevolare la navigazione di utenti che presentano disabilità motorie; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla gestione delle preferenze di percorso;
+      \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item l'utente sceglie il percorso più accessibile;
+      \end{enumerate}
     \item \textbf{Postcondizione}: il sistema calcolerà il percorso più accessibile a partire dalla prossima volta che l'utente avvierà la navigazione.
   \end{itemize}
 \hypertarget{UC3.2.2.2}{}
@@ -800,6 +799,10 @@
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di ricevere indicazioni per il percorso che presenta il minor numero di ascensori. Questo tipo di indicazioni è pensato per agevolare la navigazione di utenti claustrofobici; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla gestione delle preferenze di percorso;
+      \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item l'utente sceglie il percorso che prevede il minor numero di ascensori;
+      \end{enumerate}
     \item \textbf{Postcondizione}: il sistema calcolerà il percorso col minor numero di ascensori a partire dalla prossima volta che l'utente avvierà la navigazione.
   \end{itemize}
 \hypertarget{UC4}{}
@@ -811,7 +814,7 @@
             \caption{Caso d'uso UC4: Attivazione funzionalità sviluppatore}\label{fig:UC4} 
         \end{figure}
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente non sviluppatore;
 \item \textbf{Descrizione}: un utente, se è in possesso di un codice sviluppatore valido, deve poter attivare le funzionalità avanzate dedicate agli sviluppatori offerte dall'applicazione; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata all'attivazione delle funzionalità sviluppatore e l'utente non è già sviluppatore;
 
@@ -821,21 +824,24 @@
           \item L'utente conferma il codice inserito (\hyperlink{UC4.2}{UC4.2});
 
       \end{enumerate}
+   \item \textbf{Postcondizione}: il sistema rende disponibili le funzionalità avanzate, riservate agli sviluppatori;
     \item \textbf{Scenari Alternativi}:
     	\begin{itemize}
     		\item Nel caso in cui l'utente inserisca un codice sviluppatore non valido:
     		\begin{enumerate}
-    			Viene visualizzato un errore riguardante il codice inserito (\hyperlink{UC4.3}{UC4.3}).
+    			\item Viene visualizzato un errore riguardante il codice inserito (\hyperlink{UC4.3}{UC4.3});
+    			\item viene data la possibilità di inserire nuovamente un codice.
+    			
     		\end{enumerate}
     	\end{itemize}
 
-    \item \textbf{Postcondizione}: il sistema rende disponibili le funzionalità avanzate, riservate agli sviluppatori.
+ 
   \end{itemize}
 \hypertarget{UC4.1}{}
 \subsection{Caso d'uso UC4.1: Inserimento codice sviluppatore}
 
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente non sviluppatore;
 \item \textbf{Descrizione}: l'utente deve poter inserire un codice così da accedere alle funzionalità sviluppatore; 
       \item \textbf{Precondizione}: l'utente non ha mai inserito un codice valido prima;
 
@@ -850,7 +856,7 @@
 \subsection{Caso d'uso UC4.2: Conferma codice}
 
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente non sviluppatore;
 \item \textbf{Descrizione}: l'utente deve poter confermare il codice sviluppatore inserito; 
       \item \textbf{Precondizione}: l'utente ha inserito un codice nell'apposita sezione;
 
@@ -859,39 +865,24 @@
           \item l'utente conferma il codice di attivazione inserito;
 
       \end{enumerate}
-    \item \textbf{Scenari Alternativi}:
-    	\begin{itemize}
-    		\item Nel caso in cui un utente inserisca un codice non riconosciuto come un codice valido per attivare le funzioni di sviluppatore;
-	      \begin{enumerate}
-	          \item viene visualizzato all'utente un errore esplicativo (\hyperlink{UC4.3}{UC4.3});
-
-	      \end{enumerate}
-	    \end{itemize}
+    
     \item \textbf{Postcondizione}: il sistema permette l'accesso alle funzionalità sviluppatore.
   \end{itemize}
 \hypertarget{UC4.3}{}
 \subsection{Caso d'uso UC4.3: Visualizzazione errore codice}
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente non sviluppatore;
 \item \textbf{Descrizione}: viene visualizzato un errore che spiega all'utente che il codice inserito non è riconosciuto come un codice valido per attivare le funzioni di sviluppatore; 
       \item \textbf{Precondizione}: l'utente ha inserito un codice sviluppatore non valido;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item viene visualizzato un errore esplicativo;
-          \item viene data la possibilità di inserire nuovamente un codice;
-
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema non permette l'accesso alle funzionalità sviluppatore.
   \end{itemize}
 \hypertarget{UC5}{}
 \subsection{Caso d'uso UC5: Accesso alla guida}
-
-        \begin{figure}[!h]
-            \centering
-            \includegraphics[scale=0.95, width=\textwidth]{img/UC5.png}
-            \caption{Caso d'uso UC5: Accesso alla guida}\label{fig:UC5} 
-        \end{figure}
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter accedere ad una guida che illustri l'utilizzo del prototipo; 
@@ -913,7 +904,7 @@
             \caption{Caso d'uso UC6: Accesso funzionalità sviluppatore}\label{fig:UC6} 
         \end{figure}
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle funzionalità avanzate messe a disposizione dall'applicazione. Tali funzionalità sono rivolte a testare e migliorare l'applicazione ed il sistema dei beacon con cui interagisce; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alle funzionalità avanzate dell'applicazione;
 
@@ -927,8 +918,13 @@
   \end{itemize}
 \hypertarget{UC6.1}{}
 \subsection{Caso d'uso UC6.1: Accesso informazioni beacon circostanti}
+\begin{figure}[!h]
+            \centering
+            \includegraphics[scale=0.95, width=\textwidth]{img/UC6-1.png}
+            \caption{Caso d'uso UC6: Accesso funzionalità sviluppatore}\label{fig:UC6} 
+        \end{figure}
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle informazioni relative ai beacon presenti nelle vicinanze. Tali informazioni riguardano: UUID, Major, Minor, livello di potenza del segnale, livello batteria, distanza approssimativa, formato del beacon, area coperta dal beacon; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alle informazioni sui beacon circostanti, ha il Bluetooth attivato ed il dispositivo rileva almeno un beacon;
     \item \textbf{Postcondizione}: lo sviluppatore ha avuto accesso alle informazioni relative ai beacon circostanti.
@@ -936,7 +932,7 @@
 \hypertarget{UC6.1.1}{}
 \subsection{Caso d'uso UC6.1.1: Accesso UUID}
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al UUID di un beacon nelle vicinanze; 
       \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti ;
 
@@ -951,7 +947,7 @@
 \subsection{Caso d'uso UC6.1.2: Accesso Major}
 
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al Major di un beacon nelle vicinanze; 
       \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
 
@@ -967,7 +963,7 @@
 
 
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al Minor di un beacon nelle vicinanze; 
       \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
 
@@ -981,7 +977,7 @@
 \hypertarget{UC6.1.4}{}
 \subsection{Caso d'uso UC6.1.4: Accesso livello di potenza del segnale}
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al livello di potenza del segnale di un beacon nelle vicinanze; 
       \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
 
@@ -996,7 +992,7 @@
 \subsection{Caso d'uso UC6.1.5: Accesso livello batteria}
 
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al livello della batteria di un beacon nelle vicinanze; 
       \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
 
@@ -1010,7 +1006,7 @@
 \hypertarget{UC6.1.6}{}
 \subsection{Caso d'uso UC6.1.6: Accesso distanza approssimativa}
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al valore della distanza approssimativa che esiste tra esso ed un beacon nelle vicinanze; 
       \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
 
@@ -1025,7 +1021,7 @@
 \subsection{Caso d'uso UC6.1.7: Accesso formato del beacon}
 
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al formato di un beacon nelle vicinanze; 
       \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
 
@@ -1039,16 +1035,16 @@
 \hypertarget{UC6.1.8}{}
 \subsection{Caso d'uso UC6.1.8: Accesso area coperta da beacon}
 \begin{itemize}
-\item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: Lo sviluppatore accede all'area di un beacon circostante; 
+\item \textbf{Attori}: utente sviluppatore;
+\item \textbf{Descrizione}: Lo sviluppatore deve potere accedere all’area di copertura di un beacon nelle vicinanze; 
       \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item Lo sviluppatore visualizza l'UUID di un beacon circostante;
+          \item Lo sviluppatore accede all’area di copertura di un beacon nelle vicinanze;
 
       \end{enumerate}
-    \item \textbf{Postcondizione}: Lo sviluppatore ha usufruito dell'informazione.
+    \item \textbf{Postcondizione}: Lo sviluppatore ha avuto accesso all’area di copertura di un beacon.
   \end{itemize}
 \hypertarget{UC6.2}{}
 \subsection{Caso d'uso UC6.2: Gestione log}
@@ -1059,8 +1055,8 @@
             \caption{Caso d'uso UC6.2: Gestione log}\label{fig:UC6.2} 
         \end{figure}
 \begin{itemize}
-\item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alla gestione del log. Il log contiene tutte le informazioni indicate in UC5.1 e relative ai beacon rilevati durante la registrazione del log. Lo sviluppatore può decidere quando avviare e interrompere la registrazione del log; 
+\item \textbf{Attori}: utente sviluppatore;
+\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alla gestione del log. Il log contiene tutte le informazioni indicate in UC6.1 e relative ai beacon rilevati durante la registrazione del log. Lo sviluppatore può decidere quando avviare e interrompere la registrazione del log; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alla gestione del log;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -1077,7 +1073,7 @@
 \subsection{Caso d'uso UC6.2.1: Avvio nuovo log}
 
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: lo sviluppatore deve poter avviare un nuovo log; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alla gestione dei log;
 
@@ -1091,7 +1087,7 @@
 \hypertarget{UC6.2.2}{}
 \subsection{Caso d'uso UC6.2.2: Interruzione log}
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: lo sviluppatore deve poter interrompere un log in corso; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alla gestione dei log;
 
@@ -1105,7 +1101,7 @@
 \hypertarget{UC6.2.3}{}
 \subsection{Caso d'uso UC6.2.3: Rimozione log}
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: lo sviluppatore deve poter rimuovere un log salvato; 
       \item \textbf{Precondizione}: è presente almeno un log;
 
@@ -1117,8 +1113,9 @@
     \item \textbf{Postcondizione}: il sistema ha cancellato il log da rimuovere.
   \end{itemize}
 \hypertarget{UC6.2.4}{}
+\subsection{Caso d'uso UC6.2.4: Accesso log salvato}
 \begin{itemize}
-\item \textbf{Attori}: utente;
+\item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: lo sviluppatore deve poter accedere ad un log salvato; 
       \item \textbf{Precondizione}: è presente almeno un log;
 
@@ -1130,7 +1127,7 @@
     \item \textbf{Postcondizione}: il sistema ha fornito le informazioni contenute nel log.
   \end{itemize}
 \hypertarget{UC7}{}
-\subsection{Caso d'uso UC7: Visualizzazione errore mappa}P
+\subsection{Caso d'uso UC7: Visualizzazione errore mappa}
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: viene visualizzato un errore che spiega all'utente che non possiede la mappa dell'edificio in cui sta utilizzando l'applicazione oppure che la mappa che è presente sul suo dispositivo non è aggiornata; 
