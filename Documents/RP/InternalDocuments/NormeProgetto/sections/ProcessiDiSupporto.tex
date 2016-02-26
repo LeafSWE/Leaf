@@ -363,9 +363,8 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 					\item introduzione contenente le motivazioni per le quali è stato richiesto l'incontro;
 					\item una sezione dedicata alle domande poste e alle risposte ottenute durante l'incontro.
 				\end{enumerate}
-	\subsubsection{Attività}
-		\paragraph{Procedure}	
-			\subparagraph{Versionamento dei documenti} \label{sec:Versionamento dei documenti}
+		\subsubsection{Procedure}	
+			\paragraph{Versionamento dei documenti} \label{sec:Versionamento dei documenti}
 				Tutti i documenti, ad eccezione dei verbali, sono sottoposti a versionamento. Il versionamento prevede che la versione di un documento venga incrementata ogniqualvolta avvengano delle modifiche all'interno del documento stesso.
 				La sintassi che indica la versione di un documento è la seguente: vX.YY. La sua interpretazione è la seguente:
 				\begin{itemize}
@@ -373,8 +372,8 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 					\item X è un numero che indica quante volte è stato formalizzato il documento;
 					\item YY è un numero a due cifre che indica quante modifiche sono state effettuate al documento dalla sua ultima formalizzazione.
 				\end{itemize}
-			\subparagraph{Avanzamento di un documento} 
-				\subsubparagraph{Regole di avanzamento di versione}
+			\paragraph{Avanzamento di un documento} 
+				\subparagraph{Regole di avanzamento di versione}
 					L'avanzamento di versione avviene secondo le seguenti regole:
 					\begin{itemize}
 						\item X inizia da 0 e viene incrementato di una unità nel momento in cui il \responsabilediprogetto\ formalizza il documento;
@@ -382,7 +381,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 					\end{itemize}
 					La prima versione di ogni documento è indicata dalla versione v0.01.		
 				
-				\subsubparagraph{Formalizzazione di un documento}
+				\subparagraph{Formalizzazione di un documento}
 					La formalizzazione di un documento segue la seguente procedura:
 					\begin{enumerate}
 						\item il documento viene redatto da coloro che sono incaricati della sua stesura ed eventuale correzione di errori;
@@ -395,14 +394,14 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 						\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraFormalizzazioneDocumento.png}
 						\caption{Procedura di formalizzazione di un documento}\label{fig:Procedura di formalizzazione di un documento} 
 					\end{figure}
-		\paragraph{Strumenti}
-			\subparagraph{Latex}
+		\subsubsection{Strumenti}
+			\paragraph{Latex}
 				La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup\g\ \LaTeX\g. È stato scelto questo strumento poiché permette una facile separazione tra formattazione e presentazione. La scelta dell'editor da utilizzare è lasciata libera ai membri del gruppo.
-				\subsubparagraph{Template}
+				\subparagraph{Template}
 					Per poter creare omogeneità tra i documenti, è stato creato un template \LaTeX\g\ nel quale sono state definite tutte le regole tipografiche da applicare al documento. Questo permette di poter scrivere i documenti senza dover tener conto della loro formattazione.
-				\subsubparagraph{Comandi personalizzati}
+				\subparagraph{Comandi personalizzati}
 					Sono stati definiti dei comandi \LaTeX\g\ personalizzati al fine di poter rendere più semplice ed immediata l'applicazione delle norme tipografiche. Questi comandi si occupano delle corretta formattazione del testo secondo le norme che sono state definite. La lista dei comandi è presente nella sezione formati.
-				\subsubparagraph{Rilevamento errori ortografici}
+				\subparagraph{Rilevamento errori ortografici}
 					Al fine di semplificare l'operazione di individuazione e correzione degli errori ortografici, è stato creato uno script bash \frmfile{OrtographicCheck.sh}.
 
 \subsection{Configurazione}
@@ -456,7 +455,6 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\subsubparagraph{Codifica dei file}
 					I file contenenti codice oppure documentazione dovranno utilizzare la codifica UTF-8 senza BOM\g.
 \newpage
-	\subsubsection{Attività}
 		\paragraph{Procedure}
 			\subparagraph{Procedura di richiesta di modifica}
 				Il membro del gruppo che vuole effettuare una modifica deve presentare una richiesta formale al \responsabilediprogetto. La richiesta deve avere i seguenti campi:
@@ -507,7 +505,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 	
 	
 \subsection{Verifica}
-	\subsubsection{Verifica dei documenti}
+	\subsubsection{Documenti}
 		Il \responsabilediprogetto\ ha il compito di dare inizio alla fase\g\ di verifica, assegnando i compiti ai \verificatori. Quest'ultimi, devono effettuare un'accurata verifica delle seguenti regole:
 		\begin{itemize}
 			\item Deve essere utilizzata una sintassi corretta e il più possibile semplice;
@@ -523,10 +521,49 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			I \verificatori\ hanno il compito di calcolare l'indice Gulpease\g\ di ogni documento utilizzando lo strumento automatico preposto (vedi sezione \hyperref[sec:Strumenti]{Strumenti}). Qualora non si ottenga un risultato soddisfacente il \verificatore\ deve applicare la tecnica walkthrough con l'obiettivo di individuare periodi troppo lunghi, che possono essere di difficile comprensione o leggibilità.
 		\paragraph{Struttura del documento}
 			I \verificatori\ devono verificare che la struttura di ogni documento rispetti i contenuti del documento stesso.
+		\paragraph{Procedure}
+		\subparagraph{Resoconto attività di verifica sui documenti}	
+				La stesura dell'attività del resoconto dell'attività di verifica dovrà essere fatta al termine dell'attività di verifica. Il \verificatore\ dovrà riportare il numero di occorrenze per ognuna delle voci definite nella sezione norme. Qualora fossero stati trovati degli errori nelle attività di verifica precedenti, il numero di errori trovati andrà a sommarsi al numero di errori trovati nelle attività precedenti.
+				Inoltre, il \verificatore, nel caso in cui dovesse trovare termini mancanti nel glossario, dovrà aggiornare la tabella definita nelle norme che regolano l'attività manuale di verifica.
+			\subsubparagraph{Attività manuale di verifica}		
+			Ogni attività manuale di verifica sui documenti deve essere accompagnata da un resoconto. Il resoconto deve contenere il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
+			\begin{itemize}
+				\item periodi troppo lunghi o complessi;
+				\item parole non appropriate;
+				\item incongruenze;
+				\item errori concettuali;
+				\item violazioni di quanto stabilito nelle norme tipografiche.		
+			\end{itemize}
+			Al fine di rendere più veloce e chiara l'analisi di queste voci, è consigliabile che questi dati vengano rappresentati in forma tabellare.\\
+			Inoltre, deve essere sempre presente una tabella contenente il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
+				\begin{itemize}
+					\item termini candidati ad essere aggiunti al \glossario;
+					\item termini aggiunti al \glossario.
+				\end{itemize}
+				\subsubparagraph{Attività automatica di verifica}
+				Ogni attività automatica di verifica sui documenti deve essere accompagnata da un resoconto. Il resoconto deve contenere il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
+				\begin{itemize}
+				\item errori ortografici;
+				\item utilizzo errato \LaTeX\g;	
+				\end{itemize}
+			
+			Inoltre, devono essere riportarti gli indici Gulpease calcolati per ognuno dei documenti sui quali è stata effettuata attività di verifica.
 	\subsubsection{Diagrammi UML}
 		I \verificatori\ devono controllare tutti i diagrammi UML\g\ prodotti, sia che venga rispettato lo standard UML\g, sia che siano corretti semanticamente. I diagrammi utilizzati finora sono solamente i diagrammi dei casi d'uso.
 			\paragraph{Diagrammi dei casi d'uso}
 				Le verifiche che devono essere effettuate ai diagrammi dei casi d'uso, innanzitutto, devono riguardare il rispetto dello standard UML\g, soprattutto riguardanti inclusioni, generalizzazioni e estensioni. Successivamente si deve verificare che la semantica del diagramma sia corretta, ovvero che il diagramma rappresenti effettivamente ciò che si vorrebbe descrivere e modellare. Per quest'ultimo punto bisogna porre particolare attenzione sull'identificazione degli attori. Per questo motivo è prevista una \hyperref[par:Procedura di verifica degli attori dei diagrammi UML]{procedura di verifica degli attori dei diagrammi UML} in questo documento.\\ 
+		\paragraph{Procedure}
+		\subparagraph{Procedura di verifica attori dei diagrammi UML}\label{par:Procedura di verifica degli attori dei diagrammi UML}
+			Per identificare un attore può risultare utile seguire la seguente procedura:
+			\begin{enumerate}
+				\item Per prima cosa è utile chiedersi se ciò che vogliamo rappresentare come attore è una persona che interagisce col sistema. In caso affermativo è giusto rappresentarlo come attore, in caso negativo si deve andare al passo 2;
+				\item Se ciò che vogliamo rappresentare come attore non è una persona che interagisce col sistema bisogna chiedersi se questa ``cosa'' può cambiare insieme al design del sistema. In caso affermativo probabilmente ciò che vogliamo rappresentare non è un attore ma una parte del sistema stesso. In caso negativo, invece, è con buona probabilità un attore.
+			\end{enumerate}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraVerificaAttori.png}
+				\caption{Procedura di verifica di un attore}\label{fig:Procedura di verifica di un attore} 
+			\end{figure}
 	\subsubsection{Issue tracking}
 		L'issue\g\ tracking è un'attività di supporto per i \verificatori\ ai quali permette di tenere traccia potenziali errori, segnalandoli al \responsabilediprogetto. Lo strumento scelto per la gestione di questa attività è GitHub(vedi sezione \hyperref[par:IssueTrk GitHub]{Strumenti}). Questo strumento è utile anche al \responsabilediprogetto\ per assegnare i compiti di correzione degli errori. 
 		\paragraph{Sintassi di una label}
@@ -556,51 +593,8 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\item la motivazione per cui si è ritenuto necessario sollevare una issue\g.
 			\end{itemize}
 		
-		\paragraph{Resoconto attività di verifica sui documenti}
-			\subparagraph{Attività manuale di verifica}		
-			Ogni attività manuale di verifica sui documenti deve essere accompagnata da un resoconto. Il resoconto deve contenere il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
-			\begin{itemize}
-				\item periodi troppo lunghi o complessi;
-				\item parole non appropriate;
-				\item incongruenze;
-				\item errori concettuali;
-				\item violazioni di quanto stabilito nelle norme tipografiche.		
-			\end{itemize}
-			Al fine di rendere più veloce e chiara l'analisi di queste voci, è consigliabile che questi dati vengano rappresentati in forma tabellare.\\
-			Inoltre, deve essere sempre presente una tabella contenente il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
-				\begin{itemize}
-					\item termini candidati ad essere aggiunti al \glossario;
-					\item termini aggiunti al \glossario.
-				\end{itemize}
-				\subparagraph{Attività automatica di verifica}
-				Ogni attività automatica di verifica sui documenti deve essere accompagnata da un resoconto. Il resoconto deve contenere il numero di occorrenze riscontrate durante la verifica per ognuna delle seguenti voci:
-				\begin{itemize}
-				\item errori ortografici;
-				\item utilizzo errato \LaTeX\g;	
-				\end{itemize}
-			
-			Inoltre, devono essere riportarti gli indici Gulpease calcolati per ognuno dei documenti sui quali è stata effettuata attività di verifica.
-			
-	\subsubsection{Attività}
-		\paragraph{Procedure}	
-			\subparagraph{Tecniche di analisi}
-				Per poter verificare la qualità del prodotto\g\ è stato scelto di applicare delle tecniche di analisi sui documenti e sul codice. 
-				\subsubparagraph{Analisi statica} 
-					Per analisi statica si intende la valutazione di un sistema basata su struttura, contenuto e documentazione senza che questo venga eseguito. Questa tecnica è applicabile sia al codice, che alla documentazione stessa. L'analisi statica può avvenire con due modalità:
-					\begin{itemize}
-						\item \textbf{Walkthrough}: questa tecnica dev'essere applicata quando non si sa che errori o problematiche si stanno cercando. La tecnica consiste nel leggere il codice sorgente o il documento da cima in fondo per trovare anomalie  di qualsiasi tipo;
-						\item \textbf{Inspection}: questa tecnica dev'essere applicata quando si ha idea della problematica che si sta cercando e consiste in una lettura mirata del documento/codice, sulla base di una lista degli errori precedentemente stilata.
-					\end{itemize}
-					La tecnica walkthrough è molto onerosa e deve essere utilizzata soprattutto nelle prime fasi del progetto, quando non è già presente una lista degli errori comuni, oppure non si è ancora sufficientemente preparati riguardo un aspetto del progetto. Avanzando nelle fasi del progetto sarà utile stilare una lista quanto più possibile completa di errori comuni, in modo tale da evitare la tecnica walkthrough e applicare l'inspection.
-				
-				\subsubparagraph{Analisi dinamica}
-					L'analisi dinamica è una forma di valutazione di un sistema software\g, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.
-		
-			\subparagraph{Resoconto attività di verifica sui documenti}	
-				La stesura dell'attività del resoconto dell'attività di verifica dovrà essere fatta al termine dell'attività di verifica. Il \verificatore\ dovrà riportare il numero di occorrenze per ognuna delle voci definite nella sezione norme. Qualora fossero stati trovati degli errori nelle attività di verifica precedenti, il numero di errori trovati andrà a sommarsi al numero di errori trovati nelle attività precedenti.
-				Inoltre, il \verificatore, nel caso in cui dovesse trovare termini mancanti nel glossario, dovrà aggiornare la tabella definita nelle norme che regolano l'attività manuale di verifica.
-			
-			\subparagraph{Gestione di una issue}
+	\paragraph{Procedure}
+	\subparagraph{Gestione di una issue}
 				Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura per la segnalazione e gestione del ticketing di una issue\g\ è la seguente:
 					\begin{enumerate}
 						\item il \verificatore\ che ha riscontrato un'anomalia\g\ dovrà aprire una nuova issue\g\ assegnandole l'etichetta Request;
@@ -626,23 +620,30 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 					\caption{Procedura di gestione di una issue. Parte 2}\label{fig:Procedura di gestione di una issue parte 2} 
 				\end{figure}
 
-		\subparagraph{Procedura di verifica attori dei diagrammi UML}\label{par:Procedura di verifica degli attori dei diagrammi UML}
-			Per identificare un attore può risultare utile seguire la seguente procedura:
-			\begin{enumerate}
-				\item Per prima cosa è utile chiedersi se ciò che vogliamo rappresentare come attore è una persona che interagisce col sistema. In caso affermativo è giusto rappresentarlo come attore, in caso negativo si deve andare al passo 2;
-				\item Se ciò che vogliamo rappresentare come attore non è una persona che interagisce col sistema bisogna chiedersi se questa ``cosa'' può cambiare insieme al design del sistema. In caso affermativo probabilmente ciò che vogliamo rappresentare non è un attore ma una parte del sistema stesso. In caso negativo, invece, è con buona probabilità un attore.
-			\end{enumerate}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraVerificaAttori.png}
-				\caption{Procedura di verifica di un attore}\label{fig:Procedura di verifica di un attore} 
-			\end{figure}
+		
 \newpage
-		\paragraph{Strumenti} \label{sec:Strumenti}
+	\paragraph{Strumenti} \label{sec:Strumenti}
 			\subparagraph{Strumento per l'issue tracking} \label{par:IssueTrk GitHub}
 				Lo strumento scelto per fare il tracking delle issue\g\ è il servizio Issues messo a disposizione da GitHub\g. 
+
+	\subsubsection{Analisi}
+				Per poter verificare la qualità del prodotto\g\ è stato scelto di applicare delle tecniche di analisi sui documenti e sul codice. 
+				\paragraph{Analisi statica} 
+					Per analisi statica si intende la valutazione di un sistema basata su struttura, contenuto e documentazione senza che questo venga eseguito. Questa tecnica è applicabile sia al codice, che alla documentazione stessa. L'analisi statica può avvenire con due modalità:
+					\begin{itemize}
+						\item \textbf{Walkthrough}: questa tecnica dev'essere applicata quando non si sa che errori o problematiche si stanno cercando. La tecnica consiste nel leggere il codice sorgente o il documento da cima in fondo per trovare anomalie  di qualsiasi tipo;
+						\item \textbf{Inspection}: questa tecnica dev'essere applicata quando si ha idea della problematica che si sta cercando e consiste in una lettura mirata del documento/codice, sulla base di una lista degli errori precedentemente stilata.
+					\end{itemize}
+					La tecnica walkthrough è molto onerosa e deve essere utilizzata soprattutto nelle prime fasi del progetto, quando non è già presente una lista degli errori comuni, oppure non si è ancora sufficientemente preparati riguardo un aspetto del progetto. Avanzando nelle fasi del progetto sarà utile stilare una lista quanto più possibile completa di errori comuni, in modo tale da evitare la tecnica walkthrough e applicare l'inspection.
+				
+				\paragraph{Analisi dinamica}
+					L'analisi dinamica è una forma di valutazione di un sistema software\g, oppure di qualche suo componente, basato sull'osservazione del suo comportamento durante l'esecuzione. Questa tecnica non è applicabile, quindi, per trovare errori nella documentazione. I test che devono essere implementati devono essere in numero relativamente ridotto e il più possibile di valore dimostrativo.	
+			
+			
+			
+		
 	
-\subsection{Processo di validazione}
+\subsection{Validazione}
 		Il processo di validazione ha l'obbiettivo di verificare che: 
 		\begin{itemize}
 			\item il prodotto finale sia conforme a quanto è stato pianificato;
@@ -655,9 +656,8 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\item i \verificatori\ hanno il compito di eseguire con attenzione i test, tracciandone i risultati che andranno poi valutati;
 				\item il \responsabilediprogetto\ revisiona i risultati dei test e decide se accettarli o ripeterli. Ha inoltre il compito di informare il committente dell'esecuzione e risultato dei test, fornendo indicazioni sulla possibilità di eseguirli in modo indipendente.
 			\end{itemize}
-		\subsubsection{Attività}
-			\paragraph{Procedure}
-				\subparagraph{Validazione}
+			\subsubsection{Procedure}
+				\paragraph{Procedura per la validazione}
 					I passi per eseguire l'attività di validazione sono i seguenti:
 					\begin{enumerate}
 						\item i \verificatori\ eseguono manualmente i test sul prodotto finale, tracciando accuratamente i risultati ottenuti;
