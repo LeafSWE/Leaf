@@ -53,7 +53,7 @@
             </task>
             <task id="62" name="Verifica" meeting="false" start="2016-05-22" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="64" name="Manuale Amministratore" color="#8cb6ce" meeting="false" start="2016-05-20" duration="3" complete="0" expand="true">
+        <task id="64" name="Manuale Sviluppatore" color="#8cb6ce" meeting="false" start="2016-05-20" duration="3" complete="0" expand="true">
             <task id="66" name="Stesura" color="#8cb6ce" meeting="false" start="2016-05-20" duration="2" complete="0" expand="true">
                 <depend id="68" type="2" difference="0" hardness="Strong"/>
             </task>
