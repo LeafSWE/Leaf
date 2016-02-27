@@ -252,10 +252,10 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\end{itemize}
 				L'utilizzo di tale sigle è permesso solo all'interno di:
 				\begin{itemize}
-					\item Tabelle;
-					\item Diagrammi (immagini);
-					\item Didascalie di tabelle e immagini;
-					\item Note a piè di pagina.
+					\item tabelle;
+					\item diagrammi (immagini);
+					\item didascalie di tabelle e immagini;
+					\item note a piè di pagina.
 				\end{itemize}
 			\subparagraph{Ruoli di progetto}
 				Quando si fa riferimento ad un ruolo di progetto bisogna adottare lo stile corsivo e la prima lettera deve essere maiuscola. 	 Per velocizzare la scrittura di un ruolo è stato creato il comando \LaTeX\ \texttt{\textbackslash frmrole\{Ruolo\}}. 
@@ -429,10 +429,10 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\subparagraph{Commit}
 				L'esecuzione di ogni comando commit deve sottostare alle seguenti norme:
 				\begin{itemize}
-					\item Ad ogni commit è necessario specificare un messaggio nel quale si deve dare una descrizione sintetica e più possibile precisa delle modifiche effettuate;
-					\item Le modifiche apportate devono essere complete e testate con successo;
-					\item È vietato l'utilizzo del comando \texttt{git add *} prima di un comando commit per evitare di includere nel repository\g\ file nascosti, temporanei o non voluti;
-					\item È consigliato specificare il riassunto delle modifiche apportate ad ogni commit tramite il comando \texttt{git commit} rispetto al comando \texttt{git commit -m}, dove il messaggio deve essere scritto inline tra virgolette.
+					\item ad ogni commit è necessario specificare un messaggio nel quale si deve dare una descrizione sintetica e più possibile precisa delle modifiche effettuate;
+					\item le modifiche apportate devono essere complete e testate con successo;
+					\item è vietato l'utilizzo del comando \texttt{git add *} prima di un comando commit per evitare di includere nel repository\g\ file nascosti, temporanei o non voluti;
+					\item è consigliato specificare il riassunto delle modifiche apportate ad ogni commit tramite il comando \texttt{git commit} rispetto al comando \texttt{git commit -m}, dove il messaggio deve essere scritto inline tra virgolette.
 				\end{itemize}
 			\subparagraph{Visibilità del repository}
 				Per la condivisione e il versionamento dei configuration item è stato creato un repository\g\ privato su GitHub\g, raggiungibile all'indirizzo \url{https://github.com/mzanella/Leaf}. L'accesso è consentito solo ai membri del gruppo.	
@@ -440,17 +440,17 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\subsubparagraph{Nomi dei file}
 					I nomi dei file interni al repository\g\ devono sottostare alle seguenti norme:
 					\begin{itemize}
-						\item Devono contenere solo lettere, numeri, il carattere `\_', il segno meno ed il punto;
-						\item Devono avere lunghezza minima di tre caratteri;
-						\item Devono identificare in modo non ambiguo i file;
-						\item Devono riportare le informazioni dal generale al particolare;
-						\item Devono, nel caso contengano date, rispettare il formato YYYY-MM-DD.
+						\item devono contenere solo lettere, numeri, il carattere `\_', il segno meno ed il punto;
+						\item devono avere lunghezza minima di tre caratteri;
+						\item devono identificare in modo non ambiguo i file;
+						\item devono riportare le informazioni dal generale al particolare;
+						\item devono, nel caso contengano date, rispettare il formato YYYY-MM-DD.
 					\end{itemize}
 					È consigliato invece:
 					\begin{itemize}
-						\item Utilizzare la notazione CamelCase\g, invece di caratteri `\_' e `-' qualora il nome di un file fosse composto da più parole;
-						\item Utilizzare nomi né troppo lunghi, né troppo corti, indicativamente tra i 10 e i 25 caratteri, estensione compresa;
-						\item Specificare, quando possibile, l'estensione del file.
+						\item utilizzare la notazione CamelCase\g, invece di caratteri `\_' e `-' qualora il nome di un file fosse composto da più parole;
+						\item utilizzare nomi né troppo lunghi, né troppo corti, indicativamente tra i 10 e i 25 caratteri, estensione compresa;
+						\item specificare, quando possibile, l'estensione del file.
 					\end{itemize}
 				\subsubparagraph{Codifica dei file}
 					I file contenenti codice oppure documentazione dovranno utilizzare la codifica UTF-8 senza BOM\g.
@@ -459,16 +459,16 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\subparagraph{Procedura di richiesta di modifica}
 				Il membro del gruppo che vuole effettuare una modifica deve presentare una richiesta formale al \responsabilediprogetto. La richiesta deve avere i seguenti campi:
 				\begin{enumerate}
-					\item Autore: contiene nome, cognome e ruolo del richiedente della modifica;
-					\item Documento: contiene il nome del documento di cui si ritiene andrebbe fatta tale modifica;
-					\item Urgenza: indica una misura di quanto il richiedente ritiene necessario fare una modifica, può assumere solamente tali valori:
+					\item autore: contiene nome, cognome e ruolo del richiedente della modifica;
+					\item documento: contiene il nome del documento di cui si ritiene andrebbe fatta tale modifica;
+					\item urgenza: indica una misura di quanto il richiedente ritiene necessario fare una modifica, può assumere solamente tali valori:
 						\begin{enumerate}
 							\item ``Alta'': in questo caso si ritiene che la modifica da fare sia importante, con pesanti conseguenza nell'organizzazione dello svolgimento delle attività future o che possa in qualche modo compromettere l'organizzazione delle attività future;
 							\item ``Media'': in questo caso il richiedente considera la modifica importante, ma non comporta forti conseguenza nell'organizzazione generale delle attività, ma può influenzare lo svolgimento di alcune di queste;
 							\item ``Bassa'': in questo caso la modifica proposta di modifica è di importanza secondaria, un suggerimento nell'effettuare alcune attività oppure che non influisce, o il suo peso è poco rilevante, nello svolgimento delle attività.
 						\end{enumerate}
-					\item Descrizione: una descrizione dettagliata e motivata delle modifiche che si vogliono apportare;
-					\item Decisione del \responsabilediprogetto. Questo campo va aggiunto successivamente alla decisione del \responsabilediprogetto. Questo campo può assumere due valori:
+					\item descrizione: una descrizione dettagliata e motivata delle modifiche che si vogliono apportare;
+					\item decisione del \responsabilediprogetto. Questo campo va aggiunto successivamente alla decisione del \responsabilediprogetto. Questo campo può assumere due valori:
 						\begin{enumerate}
 							\item ``Approvata'';
 							\item ``Respinta''.
@@ -484,16 +484,16 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\subparagraph{Aggiornamento del repository}
 				Per l'aggiornamento del repository\g\ è prevista la seguente procedura:
 				\begin{itemize}
-					\item Dare il comando \texttt{git pull}. Nel caso in cui si verifichino dei conflitti:
+					\item dare il comando \texttt{git pull}. Nel caso in cui si verifichino dei conflitti:
 						\begin{itemize}
-							\item Dare il comando \texttt{git stash} per accantonare momentaneamente le modifiche apportate;
-							\item Dare il comando \texttt{git pull};
-							\item Dare il comando \texttt{git stash apply} per ripristinare le modifiche.
+							\item dare il comando \texttt{git stash} per accantonare momentaneamente le modifiche apportate;
+							\item dare il comando \texttt{git pull};
+							\item dare il comando \texttt{git stash apply} per ripristinare le modifiche.
 						\end{itemize}
 					In questo modo il repository\g\ risulta aggiornato rispetto il repository\g\ remoto;
-					\item Dare il comando \texttt{git add NomeDelFile}, dove al posto di ``NomeDelFile'' si deve mettere il nome del file, o lista di nomi dei file, sul quale sono state effettuate delle modifiche;
-					\item Dare il comando \texttt{git commit}, e successivamente specificare sinteticamente il riassunto delle modifiche effettuate;
-					\item Dare il comando \texttt{git push}.
+					\item dare il comando \texttt{git add NomeDelFile}, dove al posto di ``NomeDelFile'' si deve mettere il nome del file, o lista di nomi dei file, sul quale sono state effettuate delle modifiche;
+					\item dare il comando \texttt{git commit}, e successivamente specificare sinteticamente il riassunto delle modifiche effettuate;
+					\item dare il comando \texttt{git push}.
 				\end{itemize}
 				\begin{figure}[H]
 					\centering
@@ -508,11 +508,11 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 	\subsubsection{Documenti}
 		Il \responsabilediprogetto\ ha il compito di dare inizio alla fase\g\ di verifica, assegnando i compiti ai \verificatori. Quest'ultimi, devono effettuare un'accurata verifica delle seguenti regole:
 		\begin{itemize}
-			\item Deve essere utilizzata una sintassi corretta e il più possibile semplice;
-			\item Devono essere utilizzati periodi brevi;
-			\item La struttura del documento deve essere semplice e intuitiva;
-			\item Devono essere rispettate le  \hyperref[sec:Norme tipografiche]{norme tipografiche};
-			\item Devono essere rispettate le \hyperref[sec:Glossario]{regole riguardanti il glossario}.
+			\item deve essere utilizzata una sintassi corretta e il più possibile semplice;
+			\item devono essere utilizzati periodi brevi;
+			\item la struttura del documento deve essere semplice e intuitiva;
+			\item devono essere rispettate le  \hyperref[sec:Norme tipografiche]{norme tipografiche};
+			\item devono essere rispettate le \hyperref[sec:Glossario]{regole riguardanti il glossario}.
 		\end{itemize}
 		Durante l'intera attività di verifica i \verificatori\ dovranno utilizzare lo strumento del diario delle modifiche in modo tale da concentrare la loro attenzione sulle modifiche effettuate ad un documento e tenere traccia degli errori più comuni commessi nel redigere i documenti.
 		\paragraph{Sintassi}
@@ -556,8 +556,8 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 		\subparagraph{Procedura di verifica attori dei diagrammi UML}\label{par:Procedura di verifica degli attori dei diagrammi UML}
 			Per identificare un attore può risultare utile seguire la seguente procedura:
 			\begin{enumerate}
-				\item Per prima cosa è utile chiedersi se ciò che vogliamo rappresentare come attore è una persona che interagisce col sistema. In caso affermativo è giusto rappresentarlo come attore, in caso negativo si deve andare al passo 2;
-				\item Se ciò che vogliamo rappresentare come attore non è una persona che interagisce col sistema bisogna chiedersi se questa ``cosa'' può cambiare insieme al design del sistema. In caso affermativo probabilmente ciò che vogliamo rappresentare non è un attore ma una parte del sistema stesso. In caso negativo, invece, è con buona probabilità un attore.
+				\item per prima cosa è utile chiedersi se ciò che vogliamo rappresentare come attore è una persona che interagisce col sistema. In caso affermativo è giusto rappresentarlo come attore, in caso negativo si deve andare al passo 2;
+				\item se ciò che vogliamo rappresentare come attore non è una persona che interagisce col sistema bisogna chiedersi se questa ``cosa'' può cambiare insieme al design del sistema. In caso affermativo probabilmente ciò che vogliamo rappresentare non è un attore ma una parte del sistema stesso. In caso negativo, invece, è con buona probabilità un attore.
 			\end{enumerate}
 			\begin{figure}[H]
 				\centering
@@ -631,8 +631,8 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\paragraph{Analisi statica} 
 					Per analisi statica si intende la valutazione di un sistema basata su struttura, contenuto e documentazione senza che questo venga eseguito. Questa tecnica è applicabile sia al codice, che alla documentazione stessa. L'analisi statica può avvenire con due modalità:
 					\begin{itemize}
-						\item \textbf{Walkthrough}: questa tecnica dev'essere applicata quando non si sa che errori o problematiche si stanno cercando. La tecnica consiste nel leggere il codice sorgente o il documento da cima in fondo per trovare anomalie  di qualsiasi tipo;
-						\item \textbf{Inspection}: questa tecnica dev'essere applicata quando si ha idea della problematica che si sta cercando e consiste in una lettura mirata del documento/codice, sulla base di una lista degli errori precedentemente stilata.
+						\item \textbf{walkthrough}: questa tecnica dev'essere applicata quando non si sa che errori o problematiche si stanno cercando. La tecnica consiste nel leggere il codice sorgente o il documento da cima in fondo per trovare anomalie  di qualsiasi tipo;
+						\item \textbf{inspection}: questa tecnica dev'essere applicata quando si ha idea della problematica che si sta cercando e consiste in una lettura mirata del documento/codice, sulla base di una lista degli errori precedentemente stilata.
 					\end{itemize}
 					La tecnica walkthrough è molto onerosa e deve essere utilizzata soprattutto nelle prime fasi del progetto, quando non è già presente una lista degli errori comuni, oppure non si è ancora sufficientemente preparati riguardo un aspetto del progetto. Avanzando nelle fasi del progetto sarà utile stilare una lista quanto più possibile completa di errori comuni, in modo tale da evitare la tecnica walkthrough e applicare l'inspection.
 				
