@@ -33,15 +33,17 @@
 
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente;
-    \item \textbf{Scenari Alternativi}:
+    \item \textbf{Scenari alternativi}:
       	\begin{itemize}
     			\item Nel caso in cui l'utente voglia accedere alla navigazione di un edificio la cui mappa non risulti aggiornata o presente nel dispositivo:
     			\begin{enumerate}
-    				\item Viene presentato un errore esplicativo (\hyperlink{UC7}{UC7}).
+    				\item Viene presentato un errore esplicativo (\hyperlink{UC7}{UC7});
+            \item Viene data la possibilità all'utente di scaricare la mappa dell'edificio (\hyperlink{UC3.1.3.2}{UC3.1.3.2}).
     			\end{enumerate}
           \item Nel caso in cui l'utente voglia accedere alle informazioni di un edificio la cui mappa non risulti aggiornata o presente nel dispositivo:
           \begin{enumerate}
-            \item Viene presentato un errore esplicativo (\hyperlink{UC7}{UC7}).
+            \item Viene presentato un errore esplicativo (\hyperlink{UC7}{UC7});
+            \item Viene data la possibilità all'utente di scaricare la mappa dell'edificio (\hyperlink{UC3.1.3.2}{UC3.1.3.2}).
           \end{enumerate}
       	\end{itemize}
   \end{itemize}
@@ -67,7 +69,7 @@
 
       \end{enumerate}
 	\item \textbf{Postcondizione}: l'utente ha raggiunto la destinazione scelta oppure ha interrotto la navigazione;
-    \item \textbf{Scenari Alternativi}:
+    \item \textbf{Scenari alternativi}:
     	\begin{itemize}
       		\item Nel caso in cui l'utente segua un percorso diverso da quello consigliato:
       		\begin{enumerate}
@@ -100,7 +102,7 @@
 
       \end{enumerate}
 	 \item \textbf{Postcondizione}: la destinazione da raggiungere è stata impostata e confermata;
-    \item \textbf{Scenari Alternativi}:
+    \item \textbf{Scenari alternativi}:
     	\begin{itemize}
     		\item Nel caso in cui l'utente ricerchi per nome un POI non appartenente all'edificio in cui si trova:
       		\begin{enumerate}
@@ -293,7 +295,7 @@
 
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: il sistema presenta all'utente le indicazioni utili alla navigazione. Tali indicazioni sono fondamentalmente istruzioni utili all'utente per seguire il percorso, proposto dall'applicativo, dal POI in cui si trova alla destinazione scelta; 
+\item \textbf{Descrizione}: il sistema presenta all'utente le indicazioni utili alla navigazione. Tali indicazioni sono istruzioni utili all'utente per seguire il percorso, proposto dall'applicativo, dal POI in cui si trova alla destinazione scelta; 
       \item \textbf{Precondizione}: l'utente ha avviato la navigazione;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -581,7 +583,7 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente rimuove la mappa;
+          \item l'utente rimuove la mappa dal proprio dispositivo;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: la mappa è stata rimossa.
@@ -601,12 +603,12 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item L'utente sceglie una mappa tra quelle disponibili (\hyperlink{UC3.1.3.1}{UC3.1.3.1});
+          \item L'utente sceglie una mappa (\hyperlink{UC3.1.3.1}{UC3.1.3.1});
           \item L'utente conferma la mappa scelta  (\hyperlink{UC3.1.3.2}{UC3.1.3.2});
 
       \end{enumerate}
     \item \textbf{Postcondizione}: la mappa è stata scaricata sul dispositivo dell'utente ed il sistema può utilizzarla;
-    \item \textbf{Scenari Alternativi}:
+    \item \textbf{Scenari alternativi}:
     	\begin{itemize}
 			\item Nel caso in cui l'utente richieda la mappa di un edificio sconosciuto al sistema:
 			\begin{enumerate}
@@ -624,7 +626,7 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente sceglie l'edificio del quale vuole scaricare la mappa;
+          \item l'utente sceglie la mappa dell'edificio del quale vuole scaricare la mappa;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: l'utente ha scelto la mappa dell'edificio desiderato.
@@ -633,7 +635,7 @@
 \subsection{Caso d'uso UC3.1.3.2: Conferma mappa scelta}
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: l'utente deve poter confermare la mappa scelta per poterne effettuare il download; 
+\item \textbf{Descrizione}: l'utente deve poter confermare la scelta della mappa per poterne effettuare il download; 
       \item \textbf{Precondizione}: l'utente è nella sezione dedicata alla scelta delle mappe;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -667,7 +669,7 @@
 \subsection{Caso d'uso UC3.1.3.4: Visualizzazione errore edificio}
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: all'utente viene presentato un errore che spiega che la mappa per l'edificio inserito non è presente oppure che il nome dell'edificio inserito non è corretto, dando la possibilità all'utente di inserire il nome di un altro edificio; 
+\item \textbf{Descrizione}: all'utente viene presentato un errore che spiega che la mappa per l'edificio ricercato non è presente oppure che il nome dell'edificio inserito non è corretto, dando la possibilità all'utente di inserire il nome di un altro edificio; 
       \item \textbf{Precondizione}: l'utente ha richiesto la mappa di un edificio non riconosciuto dal sistema;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -738,7 +740,7 @@
 \subsection{Caso d'uso UC3.2.1.2: Attivazione indicazioni sonore}
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: l'utente deve poter scegliere di attivare le indicazioni sonore che lo guidino alla destinazione scelta. Questo indicazioni consisteno nell'emissione di un suono monotono continuo quando l'utente segue il percorso previsto. Quando invece un utente si allontanerà dal percorso previsto, la cui frequenza del suono varierà. Questo tipo di indicazioni è pensato per agevolare la navigazione di utenti che presentano disabilità visive; 
+\item \textbf{Descrizione}: l'utente deve poter scegliere di attivare le indicazioni sonore che lo guidino alla destinazione scelta. Queste indicazioni consistono nell'emissione di un suono monotono continuo quando l'utente segue il percorso previsto. Quando invece un utente si allontana dal percorso previsto, la frequenza del suono varia. Questo tipo di indicazioni è pensato per agevolare la navigazione di utenti che presentano disabilità visive; 
       \item \textbf{Precondizione}: le indicazioni sonore sono disponibili e non sono state precedentemente attivate;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -808,7 +810,7 @@
 \subsection{Caso d'uso UC3.2.2.2: Scelta evitare ascensori}
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: l'utente deve poter scegliere di ricevere indicazioni per il percorso che presenta il minor numero di ascensori. Questo tipo di indicazioni è pensato per agevolare la navigazione di utenti claustrofobici; 
+\item \textbf{Descrizione}: l'utente deve poter scegliere di ricevere indicazioni per il percorso che presenta il minor numero di ascensori. Questo tipo di indicazioni è pensato per agevolare la navigazione di utenti claustrofobici. Il percorso presentato conterrà il minor numero di ascensori possibili poichè non è possibile avere la certezza, per ogni possibile edificio, di evitarli tutti; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla gestione delle preferenze di percorso;
       \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -836,11 +838,11 @@
 
       \end{enumerate}
    \item \textbf{Postcondizione}: il sistema rende disponibili le funzionalità avanzate, riservate agli sviluppatori;
-    \item \textbf{Scenari Alternativi}:
+    \item \textbf{Scenari alternativi}:
     	\begin{itemize}
     		\item Nel caso in cui l'utente inserisca un codice sviluppatore non valido:
     		\begin{enumerate}
-    			\item Viene visualizzato un errore riguardante il codice inserito (\hyperlink{UC4.3}{UC4.3});
+    			\item viene visualizzato un errore riguardante il codice inserito (\hyperlink{UC4.3}{UC4.3});
     			\item viene data la possibilità di inserire nuovamente un codice.
     			
     		\end{enumerate}
@@ -853,12 +855,12 @@
 
 \begin{itemize}
 \item \textbf{Attori}: utente non sviluppatore;
-\item \textbf{Descrizione}: l'utente deve poter inserire un codice così da accedere alle funzionalità sviluppatore; 
+\item \textbf{Descrizione}: l'utente deve poter inserire un codice così da attivare le funzionalità sviluppatore; 
       \item \textbf{Precondizione}: l'utente non ha mai inserito un codice valido prima;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente inserisce un codice di attivazione;
+          \item l'utente inserisce un codice sviluppatore;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: il codice sviluppatore è stato inserito.
@@ -883,7 +885,7 @@
 \subsection{Caso d'uso UC4.3: Visualizzazione errore codice}
 \begin{itemize}
 \item \textbf{Attori}: utente non sviluppatore;
-\item \textbf{Descrizione}: viene visualizzato un errore che spiega all'utente che il codice inserito non è riconosciuto come un codice valido per attivare le funzioni di sviluppatore; 
+\item \textbf{Descrizione}: viene visualizzato un errore che spiega all'utente che il codice inserito non è riconosciuto come un codice valido per attivare le funzionalità sviluppatore; 
       \item \textbf{Precondizione}: l'utente ha inserito un codice sviluppatore non valido;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -897,7 +899,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter accedere ad una guida che illustri l'utilizzo del prototipo; 
-      \item \textbf{Precondizione}: il sistema mette a disposizione una sezione che ospita la guida;
+      \item \textbf{Precondizione}: "L'utente è nella schermata principale dell'applicazione;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -916,7 +918,7 @@
         \end{figure}
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle funzionalità avanzate messe a disposizione dall'applicazione. Tali funzionalità sono rivolte a testare e migliorare l'applicazione ed il sistema dei beacon con cui interagisce; 
+\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle funzionalità avanzate messe a disposizione dall'applicazione. Tali funzionalità sono rivolte a testare e migliorare l'applicazione ed il sistema beacon con cui interagisce; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alle funzionalità avanzate dell'applicazione;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -936,20 +938,31 @@
         \end{figure}
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle informazioni relative ai beacon presenti nelle vicinanze. Tali informazioni riguardano: UUID, Major, Minor, livello di potenza del segnale, livello batteria, distanza approssimativa, formato del beacon, area coperta dal beacon; 
+\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle informazioni relative ai beacon presenti nelle vicinanze. Tali informazioni riguardano: UUID, Major, Minor, livello di potenza del segnale, livello batteria, distanza approssimativa del beacon dal dispositivo, formato del beacon, area coperta dal segnale di un beacon; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alle informazioni sui beacon circostanti, ha il Bluetooth attivato ed il dispositivo rileva almeno un beacon;
-    \item \textbf{Postcondizione}: lo sviluppatore ha avuto accesso alle informazioni relative ai beacon circostanti.
+      \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+            \item lo sviluppatore può accedere all'UUID di un beacon rilevato(\hyperlink{UC6.1.1}{UC6.1.1});
+            \item lo sviluppatore può accedere al Major di un beacon rilevato(\hyperlink{UC6.1.2}{UC6.1.2});
+            \item lo sviluppatore può accedere al Minor di un beacon rilevato(\hyperlink{UC6.1.3}{UC6.1.3});
+            \item lo sviluppatore può accedere al livello di potenza del segnale di un beacon rilevato(\hyperlink{UC6.1.4}{UC6.1.4});
+            \item lo sviluppatore può accedere al livello della batteria di un beacon rilevato(\hyperlink{UC6.1.5}{UC6.1.5});
+            \item lo sviluppatore può accedere alla distanza approssimativa del dispositivo che sta utilizzando da un beacon rilevato(\hyperlink{UC6.1.6}{UC6.1.6});
+            \item lo sviluppatore può accedere al formato di un beacon rilevato(\hyperlink{UC6.1.7}{UC6.1.7});
+            \item lo sviluppatore può accedere all'area coperta dal segnale di un beacon rilevato(\hyperlink{UC6.1.8}{UC6.1.8});
+          \end{enumerate}
+      \item \textbf{Postcondizione}: lo sviluppatore ha avuto accesso alle informazioni relative ai beacon circostanti.
   \end{itemize}
 \hypertarget{UC6.1.1}{}
 \subsection{Caso d'uso UC6.1.1: Accesso UUID}
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al UUID di un beacon nelle vicinanze; 
+\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al UUID di un beacon rilevato; 
       \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item lo sviluppatore accede all'UUID di un beacon circostante;
+          \item lo sviluppatore accede all'UUID di un beacon rilevato;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: Lo sviluppatore ha avuto accesso all'UUID.
@@ -959,12 +972,12 @@
 
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al Major di un beacon nelle vicinanze; 
-      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
+\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al Major di un beacon rilevato; 
+      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon rilevati;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item Lo sviluppatore accede al Major di un beacon nelle vicinanze;
+          \item Lo sviluppatore accede al Major di un beacon rilevato;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: Lo sviluppatore ha avuto accesso al Major.
@@ -975,12 +988,12 @@
 
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al Minor di un beacon nelle vicinanze; 
-      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
+\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al Minor di un beacon rilevato; 
+      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon rilevati;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item Lo sviluppatore accede al Minor di un beacon nelle vicinanze;
+          \item Lo sviluppatore accede al Minor di un beacon rilevato;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: Lo sviluppatore ha avuto accesso al Minor.
@@ -989,12 +1002,12 @@
 \subsection{Caso d'uso UC6.1.4: Accesso livello di potenza del segnale}
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al livello di potenza del segnale di un beacon nelle vicinanze; 
-      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
+\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al livello di potenza del segnale di un beacon rilevato; 
+      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon rilevati;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item Lo sviluppatore accede al livello di potenza del segnale di un beacon nelle vicinanze;
+          \item Lo sviluppatore accede al livello di potenza del segnale di un beacon rilevato;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: Lo sviluppatore ha avuto accesso al livello di potenza.
@@ -1004,12 +1017,12 @@
 
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al livello della batteria di un beacon nelle vicinanze; 
-      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
+\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al livello della batteria di un beacon rilevato; 
+      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon rilevati;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item Lo sviluppatore accede al livello della batteria di un beacon nelle vicinanze;
+          \item Lo sviluppatore accede al livello della batteria di un beacon rilevato;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: Lo sviluppatore ha avuto accesso al livello della batteria.
@@ -1018,8 +1031,8 @@
 \subsection{Caso d'uso UC6.1.6: Accesso distanza approssimativa}
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al valore della distanza approssimativa che esiste tra esso ed un beacon nelle vicinanze; 
-      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
+\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al valore della distanza approssimativa che esiste tra il dispositivo utilizzato ed un beacon rilevato; 
+      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon rilevati;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -1033,12 +1046,12 @@
 
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al formato di un beacon nelle vicinanze; 
-      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
+\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al formato di un beacon rilevato; 
+      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon rilevati;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item Lo sviluppatore accede al formato di un beacon nelle vicinanze;
+          \item Lo sviluppatore accede al formato di un beacon rilevato;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: Lo sviluppatore ha avuto accesso al formato di un beacon.
@@ -1047,12 +1060,12 @@
 \subsection{Caso d'uso UC6.1.8: Accesso area coperta da beacon}
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: Lo sviluppatore deve potere accedere all’area di copertura di un beacon nelle vicinanze; 
-      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
+\item \textbf{Descrizione}: Lo sviluppatore deve potere accedere all’area di copertura di un beacon rilevato; 
+      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon rilevati;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item Lo sviluppatore accede all’area di copertura di un beacon nelle vicinanze;
+          \item Lo sviluppatore accede all’area di copertura di un beacon rilevato;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: Lo sviluppatore ha avuto accesso all’area di copertura di un beacon.
