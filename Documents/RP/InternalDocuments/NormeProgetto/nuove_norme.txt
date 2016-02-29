@@ -48,6 +48,55 @@ Norme per il diario delle modifiche
 				viene aggiunta la modifica al diario_nomeDoc.xml e viene eseguito un secondo commit automatico per aggiungere le modifiche
 		
 Norme da aggiungere dal PQ
-	Metriche software
-
+	Metriche per i processi
+		definire norma per la denominazione delle metriche
+	Metriche per i prodotti
+		definire norma per la denominazione delle metriche
+	Metriche software (norme da definire)
+		definire norma per la denominazione delle metriche
+		
+		- copertura requisiti obbligatori
+		- copertura requisiti opzionali
+		- numero di passaggi per operazione
+		- function understandability
+		- task completion
+		- numero di statement per metodo
+		- numero di campi dati per classe
+		- grado di accoppiamento
+		- cyclomatic number
+		- conditional statement
+		- adequacy of variable names
+		- average module size
+		- test passati richiesti
+		- failure avoidance
+		- breakdown avoidance
+		- numero di installazioni completate
+		
 	Strumenti per applicarle
+		- copertura requisiti obbligatori
+			software per il tracciamento dei requisiti (tracy?)
+		- copertura requisiti opzionali
+			software per il tracciamento dei requisiti (tracy?)
+		- numero di passaggi per operazione
+			prove dell'app ed eventuali riadeguamenti e function understandability
+		- function understandability
+			- linguaggio semplice
+			- nomi parlanti
+			- no funzionalità nascoste (es. easter eggs)
+			- aiuti (guida + descrizioni testuali)
+		- task completion
+			- prove sul campo (laboratorio + test di sistema vari)
+		- numero di statement per metodo + numero di campi dati per classe + grado di accoppiamento + cyclomatic number + conditional statement + average module size
+			- https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis#Java
+		- adequacy of variable names
+			- programmatori prendono i nomi dalla DP (tramite tracy?)
+		- test passati richiesti
+			- esecuzione test e log degli esiti? O semplicemente trascrivo? (tracy?)
+		- failure avoidance
+			- test "anomali"?
+		- breakdown avoidance
+			- failure avoidance + test sul campo con interruzioni
+		- numero di installazioni completate
+			- test che installa e disinstalla l'app?
+			
+Norme per il software
