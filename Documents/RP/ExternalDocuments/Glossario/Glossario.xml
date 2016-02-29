@@ -567,4 +567,20 @@
 			Acronimo di Point Of Interest, area o luogo in cui è presente un beacon
 		</descrizione>
 	</voce>
+	<voce>
+		<termine>
+			Barriera architettonica
+		</termine>
+		<descrizione>
+			Qualunque elemento costruttivo che impedisca, limiti o renda difficoltosi gli spostamenti o la fruizione di servizi (specialmente per le persone con limitata capacità motoria o sensoriale)
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Formato di un beacon
+		</termine>
+		<descrizione>
+			Indica il protocollo utilizzato dal sensore beacon
+		</descrizione>
+	</voce>
 </glossario>
