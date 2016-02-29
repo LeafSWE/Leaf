@@ -9,13 +9,13 @@
 \section{Analisi dei rischi}
 
 	Al fine di migliorare l'avanzamento del progetto è stata effettuata un'attenta analisi dei rischi per individuarli, comprenderli e prendere le contromisure necessarie. Essa è suddivisa in quattro attività:
-	\begin{enumerate}
+	\begin{itemize}
 	\item identificazione: individuare i rischi che possono interessare il progetto, indicandone le cause e cercando di prevedere le conseguenze;
 	\item analisi di fase: stimare la probabilità di occorrenza di un rischio e determinarne l'impatto sul progetto nella fase in corso. Sarà compito del \responsabilediprogetto\  all'inizio di ogni periodo effettuare una nuova analisi dei rischi presentati;
 	\item pianificazione di controllo: definire una metodologia per il controllo dei rischi, in modo che possano essere evitati;
-	\item mitigazione: nel caso in cui fossero inevitabili, definire un piano di contingenza per poter minimizzare i danni prodotti nel caso si verificassero. Questa sotto-attività non è obbligatoria per tutti i rischi (anche se consigliata), ma solo per quelli difficilmente controllabili e gestibili.
-	\end{enumerate}
-    Qualora il \responsabilediprogetto\ lo ritenesse necessario, l'analisi dei rischi potrà essere riveduta ed estesa attraverso la ripetizione delle quattro attività elencate.
+	\item mitigazione: nel caso in cui fossero inevitabili, definire un piano di contingenza per poter minimizzare i danni prodotti nel caso si verificassero. Questa attività è obbligatoria per tutti i rischi difficilmente controllabili e gestibili mentre è consigliata per tutti gli altri.
+	\end{itemize}
+    Qualora il \responsabilediprogetto\ lo ritenesse necessario, l'analisi dei rischi potrà essere riveduta ed estesa attraverso la ripetizione delle attività elencate.
 
 	Ogni rischio identificato avrà le seguenti caratteristiche: 
 		\begin{itemize}
@@ -30,38 +30,35 @@
 			\item strategia di individuazione e gestione.
 		\end{itemize}	
 	Ogni rischio verrà monitorato nel tempo e ne verrà indicato l'effettivo riscontro nella fase in corso.
-    A seguire il registro dei rischi con tutti i rischi individuati, mentre nelle prossime sezioni sarà disponibile una descrizione dettagliata per ogni rischio.
+    Nel registro dei rischi (tabella ~\ref{tab:rischi}) si elencheranno tutti i rischi, suddivisi per livello, identificati durante tutto il periodo di progetto fino alla fase corrente.
 		
 	\newpage
 	
-	\newcolumntype{S}{>{\hsize=.28\hsize}X}
-	\newcolumntype{B}{>{\hsize=.72\hsize}X}
-	
 	\begin{table}[h]
 		\centering
-		\begin{longtabu} to \textwidth {X[c 0.3cm]  X[c 0.2cm] X[l]}
+		\begin{longtabu} to \textwidth {X[l 0.3cm] X[l]}
 			\toprule
-			\textbf{Livello} & \textbf{Codice} & \multicolumn{1}{c}{\textbf{Tipologia}} \\
+			\textbf{Livello} & \multicolumn{1}{c}{\textbf{Tipologia}} \\
 			\midrule
-			Strumenti & R1 & Inesperienza nell'utilizzo \\
+			Strumenti & Inesperienza nell'utilizzo (\ref{sec:Inesperienza nell'utilizzo})\\
 			\arrayrulecolor{gray}
 			\midrule
-			Tecnologico	& R2 & Tecnologie adottate sconosciute \\
+			Tecnologico	& Tecnologie adottate sconosciute (\ref{sec:Tecnologie adottate sconosciute})\\
 					\arrayrulecolor{lightgray}
-					\cmidrule{2-3}
+					\cmidrule{2-2}
 					\arrayrulecolor{gray}
-					& R3 & Guasti hardware e malfunzionamenti software\g\ \\
+					& Guasti hardware e malfunzionamenti software\g\ (\ref{sec:Guasti hardware e malfunzionamenti software}) \\
 			\midrule
-			Organizzativo & R4 & Valutazione delle risorse \\
+			Organizzativo & Valutazione delle risorse (\ref{sec:Valutazione delle risorse}) \\
 			\midrule
-			Personale	& R5 & Problemi personali dei membri del team\g\ \\
+			Personale	& Problemi personali dei membri del team\g\ (\ref{sec:Problemi personali dei membri del team}) \\
 					\arrayrulecolor{lightgray}
-					\cmidrule{2-3}
+					\cmidrule{2-2}
 					\arrayrulecolor{gray}
-					& R6 & Problemi personali tra i membri del team\g\ \\
+					& Problemi personali tra i membri del team\g\ (\ref{sec:Problemi personali tra i membri del team}) \\
 			
 			\midrule
-			Requisiti	& R7 & Mancata comprensione \\
+			Requisiti & Mancata comprensione (\ref{sec:Mancata comprensione}) \\
 			\arrayrulecolor{black}
 			\bottomrule
 		\end{longtabu}
@@ -74,7 +71,8 @@
 \newpage
 \subsection{Livello strumenti}
 
-\subsubsection{R1: Inesperienza nell'utilizzo}
+\subsubsection{Inesperienza nell'utilizzo}
+\label{sec:Inesperienza nell'utilizzo}
 
 	\paragraph*{Descrizione:} per lo svolgimento del progetto didattico, il team\g\ dovrà utilizzare una serie di strumenti che nessun membro ha mai utilizzato.
 	
@@ -97,8 +95,8 @@
 			\arrayrulecolor{black}
 			\bottomrule
 		\end{tabularx}
-		\caption{R1 - analisi}
-		\label{tab:R1-analisi}	
+		\caption{Inesperienza nell'utilizzo - Analisi}
+		\label{tab:Inesperienza nell'utilizzo - Analisi}	
 	\end{table}	
 	
 	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a verificare periodicamente il livello di conoscenza dei singoli membri sulle tecnologie adottate.
@@ -115,14 +113,15 @@
 		\begin{description}
 			\item[Fase A - Analisi] l'utilizzo dello strumento Freedcamp\g\ è stato giudicato dal team\g\ di difficile utilizzo, perciò si è passati ad un suo equivalente più intuitivo: Teamwork\g .
 	Qualche membro ha trovato difficoltà ad interfacciarsi con il linguaggio \LaTeX\  , perciò è stato creato un Notebook\g\ su Teamwork\g\ in cui ogni membro si impegna a riportare informazioni che ritiene utili al fine di velocizzare l'apprendimento di tale linguaggio all'interno del team\g .
-			\item[Fase AD - Analisi di Dettaglio] ???
-			\item[Fase PA - Progettazione Architetturale] ???
+			\item[Fase AD - Analisi di Dettaglio] da definire.
+			\item[Fase PA - Progettazione Architetturale] da definire.
 		\end{description}
 		
-%\newpage
+\newpage
 \subsection{Livello tecnologico}
 
-\subsubsection{R2: Tecnologie adottate sconosciute}
+\subsubsection{Tecnologie adottate sconosciute}
+\label{sec:Tecnologie adottate sconosciute}
 
 	\paragraph*{Descrizione:} per la progettazione e l'implementazione del software\g\ per il progetto, il team\g\ dovrà utilizzare una serie di tecnologie praticamente sconosciute.
 	
@@ -145,8 +144,8 @@
 			\arrayrulecolor{black}
 			\bottomrule
 		\end{tabularx}
-		\caption{R2 - analisi}
-		\label{tab:R2-analisi}	
+		\caption{Tecnologie adottate sconosciute - Analisi}
+		\label{tab:Tecnologie adottate sconosciute - Analisi}	
 	\end{table} 
 	
 	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a monitorare costantemente il grado di conoscenza delle tecnologie adottate.	
@@ -161,12 +160,13 @@
 	\paragraph*{Riscontro effettivo:} 
 		\begin{description}
 			\item[Fase A - Analisi] sono state adottate tecnologie, di conseguenza il team\g\ non ha ancora riscontrato il rischio.
-			\item[Fase AD - Analisi di Dettaglio] ???
-			\item[Fase PA - Progettazione Architetturale] ???
+			\item[Fase AD - Analisi di Dettaglio] da definire.
+			\item[Fase PA - Progettazione Architetturale] da definire.
 		\end{description}
 
 
-	\subsubsection{R3: Guasti hardware e malfunzionamenti software}
+	\subsubsection{Guasti hardware e malfunzionamenti software}
+	\label{sec:Guasti hardware e malfunzionamenti software}
 	
 	\paragraph*{Descrizione:} durante lo svolgimento del progetto didattico, è possibile che si verifichino guasti hardware e/o malfunzionamenti software\g\ che comportino la perdita di dati.
 	
@@ -189,8 +189,8 @@
 			\arrayrulecolor{black}
 			\bottomrule
 		\end{tabularx}
-		\caption{R3 - analisi}
-		\label{tab:R3-analisi}	
+		\caption{Guasti hardware e malfunzionamenti software - Analisi}
+		\label{tab:Guasti hardware e malfunzionamenti software - Analisi}	
 	\end{table} 
 		
 	\paragraph*{Identificazione:} ogni membro del team\g\ avrà cura della propria attrezzatura; ne verificherà inoltre giornalmente il completo funzionamento.
@@ -205,14 +205,15 @@
 	\paragraph*{Riscontro effettivo:}
 		\begin{description}
 			\item[Fase A - Analisi] non si sono verificati guasti hardware o problemi software\g\ di nessun genere sulle macchine dei membri del team\g .
-			\item[Fase AD - Analisi di Dettaglio] ???
-			\item[Fase PA - Progettazione Architetturale] ???
+			\item[Fase AD - Analisi di Dettaglio] da definire.
+			\item[Fase PA - Progettazione Architetturale] da definire.
 		\end{description}
 
-%\newpage
+\newpage
 \subsection{Livello organizzativo}
 
-\subsubsection{R4: Valutazione delle risorse}
+\subsubsection{Valutazione delle risorse}
+\label{sec:Valutazione delle risorse}
 
 	\paragraph*{Descrizione:} essendo al primo approccio con un progetto di questa dimensione, il team\g\ potrebbe andare incontro a stime errate di valutazione delle risorse.
 	
@@ -235,8 +236,8 @@
 			\arrayrulecolor{black}
 			\bottomrule
 		\end{tabularx}
-		\caption{R4 - analisi}
-		\label{tab:R4-analisi}	
+		\caption{Valutazione delle risorse - Analisi}
+		\label{tab:Valutazione delle risorse - Analisi}	
 	\end{table}
 	
 	\paragraph*{Identificazione:} il \responsabilediprogetto\ si impegnerà a verificare, di giorno in giorno tramite l'utilizzo della Dashboard\g, lo stato di avanzamento delle attività.
@@ -251,15 +252,16 @@
 	\paragraph*{Riscontro effettivo:} 
 		\begin{description}
 			\item[Fase A - Analisi] in un primo momento, era stato stimato un periodo ottimistico per la stesura della documentazione, di conseguenza è stata rieffettuata una pianificazione delle attività tenendo conto dell'errore commesso, che non ha intaccato le date di consegna.
-			\item[Fase AD - Analisi di Dettaglio] ???
-			\item[Fase PA - Progettazione Architetturale] ???
+			\item[Fase AD - Analisi di Dettaglio] da definire.
+			\item[Fase PA - Progettazione Architetturale] da definire.
 		\end{description}
 		
 
-%\newpage
+\newpage
 \subsection{Livello personale}
 
-\subsubsection{R5: Problemi personali dei membri del team}
+\subsubsection{Problemi personali dei membri del team}
+\label{sec:Problemi personali dei membri del team}
 
 	\paragraph*{Descrizione:} ogni membro del team\g\ avrà le sue necessità e i suoi impegni personali lungo la durata del progetto. Di conseguenza è inevitabile prevedere che alcuni membri del team\g\ non siano disponibili in certi momenti.
 	 
@@ -282,8 +284,8 @@
 			\arrayrulecolor{black}
 			\bottomrule
 		\end{tabularx}
-		\caption{R5 - analisi}
-		\label{tab:R5-analisi}	
+		\caption{Problemi personali dei membri del team - Analisi}
+		\label{tab:Problemi personali dei membri del team - Analisi}	
 	\end{table}
 		
 	\paragraph*{Identificazione:} i membri del team\g\ comunicheranno, con il maggior anticipo possibile, i propri impegni al \responsabilediprogetto . Questo compito verrà reso più semplice dall'utilizzo di un calendario di gruppo. 
@@ -298,11 +300,12 @@
 	\paragraph*{Riscontro effettivo:}
 		\begin{description}
 			\item[Fase A - Analisi] i membri hanno fatto il possibile per comunicare con il maggior anticipo possibile i propri impegni. Nella distribuzione a monte del lavoro si è cercato di effettuare una pianificazione a lungo termine che rispettasse i vari impegni, mantenendo una distribuzione equa del lavoro.
-			\item[Fase AD - Analisi di Dettaglio] ???
-			\item[Fase PA - Progettazione Architetturale] ???
+			\item[Fase AD - Analisi di Dettaglio] da definire.
+			\item[Fase PA - Progettazione Architetturale] da definire.
 		\end{description}
 	
-\subsubsection{R6: Problemi personali tra i membri del team}
+\subsubsection{Problemi personali tra i membri del team}
+\label{sec:Problemi personali tra i membri del team}
 
 	\paragraph*{Descrizione:} i membri del team\g\ non hanno mai collaborato alla realizzazione di un progetto che richiedesse collaborazione a stretto contatto, il che può causare attriti tra essi.
 	
@@ -325,8 +328,8 @@
 			\arrayrulecolor{black}
 			\bottomrule
 		\end{tabularx}
-		\caption{R6 - analisi}
-		\label{tab:R6-analisi}	
+		\caption{Problemi personali tra i membri del team - Analisi}
+		\label{tab:Problemi personali tra i membri del team - Analisi}	
 	\end{table}
 	
 	\paragraph*{Identificazione:} il \responsabilediprogetto\ avrà l'onere di verificare periodicamente i rapporti tra i vari membri del team\g. D'altro canto, ogni membro del team\g\ si impegnerà a riferire al \responsabilediprogetto\ eventuali problemi di cui non è a conoscenza.
@@ -341,14 +344,15 @@
 	\paragraph*{Riscontro effettivo:}
 		\begin{description}
 			\item[Fase A - Analisi] non si sono verificati problemi a riguardo.
-			\item[Fase AD - Analisi di Dettaglio] ???
-			\item[Fase PA - Progettazione Architetturale] ???
+			\item[Fase AD - Analisi di Dettaglio] da definire.
+			\item[Fase PA - Progettazione Architetturale] da definire.
 		\end{description}
 
-%\newpage
+\newpage
 \subsection{Livello requisiti}
 
-\subsubsection{R7: Mancata comprensione}
+\subsubsection{Mancata comprensione}
+\label{sec:Mancata comprensione}
 
 	\paragraph*{Descrizione:} è possibile che durante le varie attività di analisi dei requisiti del problema non vengano compresi o siano fraintesi.
 	
@@ -371,8 +375,8 @@
 			\arrayrulecolor{black}
 			\bottomrule
 		\end{tabularx}
-		\caption{R7 - analisi}
-		\label{tab:R7-analisi}	
+		\caption{Mancata comprensione - Analisi}
+		\label{tab:Mancata comprensione - Analisi}	
 	\end{table}
 		
 	\paragraph*{Identificazione:} il team\g\ effettuerà una serie di incontri con il proponente per verificare la comprensione dei requisiti e la corrispondenza con le loro aspettative.
@@ -387,8 +391,8 @@
 	\paragraph*{Riscontro effettivo:}
 		\begin{description}
 			\item[Fase A - Analisi] i dubbi emersi durante l'analisi sono stati esposti al proponente per ottenere dei chiarimenti. Al momento i requisiti sono stati solamente presentati al proponente, quindi tale rischio non si è ancora verificato.
-			\item[Fase AD - Analisi di Dettaglio] ???
-			\item[Fase PA - Progettazione Architetturale] ???
+			\item[Fase AD - Analisi di Dettaglio] da definire.
+			\item[Fase PA - Progettazione Architetturale] da definire.
 		\end{description}
 
 			

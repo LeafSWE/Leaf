@@ -1,0 +1,53 @@
+﻿Norma per utilizzo di teamwork e GitHub per i task
+	Teamwork:
+		utilizzato principalmente dal project manager, i task vengono creati per
+			- pianificare le attività (dare una data di inizio e di fine)
+			- assegnarle ai membri del gruppo
+			- dare una priorità?
+		
+		i restanti membri del gruppo possono utilizzarlo per
+			- discutere eventuali problemi relativi al task mediante i commenti
+			- dividere il task in sotto-task
+			- fornire una percentuale di avanzamento del lavoro al project manager
+			- aggiungere un reminder al calendario riguardo al task (es. completare la section X entro il DD-MM-YYYY)
+			- chiudere i task completati
+		
+	GitHub:
+		utilizzato dal project manager per
+			- assegnare la verifica a qualcuno di una issue (label toVerify)
+		
+		
+		utilizzato dai restanti membri del gruppo per
+			- creare delle to-do list per i task
+			- segnalare correzioni ad altri membri del gruppo (es. Verificatori)
+			- suggerire aggiunte per i documenti
+	
+Norma per label toVerify
+	quando un membro del gruppo completa una issue, aggiunge la label "Done" e crea un commento in cui tagga il responsabile
+	(es. @nomeResponsabile). A quel punto il project manager seleziona un verificatore, gli assegna la issue da verificare e mette
+	la label toVerify. Terminata la verifica, il verificatore commenta con l'esito (ok o da sistemare, con l'elenco delle cose da sistemare).
+	Se l'esito è ok, può chiudere la issue. Altrimenti rimette ToDo e lo assegna al membro che doveva completarla.
+
+Norma per ora da rendicontare e non
+	rendicontare se:
+		- produco incremento dei documenti
+		- produco linee di codice
+		- verifico documenti
+
+	non rendicontare se:
+		- formazione personale
+		- non produco (es. itero, scrivo ma cancello perché non andava bene)
+
+Norme per il diario delle modifiche
+	Ogni qual volta si esegue un commit, si attiva l'hook:
+		- richiesta se aggiungere la modifica al diario delle modifiche
+			- se no, esegue il commit
+			- se sì, si richiede se aumentare la versione (es. passare da 1.00 a 2.00)
+				- se sì, aumenta da X.YY a (X+1).00
+				- se no, aumenta da X.YY a X.(YY+1)
+				viene aggiunta la modifica al diario_nomeDoc.xml e viene eseguito un secondo commit automatico per aggiungere le modifiche
+		
+Norme da aggiungere dal PQ
+	Metriche software
+
+	Strumenti per applicarle
