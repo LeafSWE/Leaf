@@ -938,7 +938,18 @@
 \item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle informazioni relative ai beacon presenti nelle vicinanze. Tali informazioni riguardano: UUID, Major, Minor, livello di potenza del segnale, livello batteria, distanza approssimativa del beacon dal dispositivo, formato del beacon, area coperta dal beacon; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alle informazioni sui beacon circostanti, ha il Bluetooth attivato ed il dispositivo rileva almeno un beacon;
-    \item \textbf{Postcondizione}: lo sviluppatore ha avuto accesso alle informazioni relative ai beacon circostanti.
+      \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+            \item lo sviluppatore può accedere all'UUID di un beacon rilevato(\hyperlink{UC6.1.1}{UC6.1.1});
+            \item lo sviluppatore può accedere al Major di un beacon rilevato(\hyperlink{UC6.1.2}{UC6.1.2});
+            \item lo sviluppatore può accedere al Minor di un beacon rilevato(\hyperlink{UC6.1.3}{UC6.1.3});
+            \item lo sviluppatore può accedere al livello di potenza del segnale di un beacon rilevato(\hyperlink{UC6.1.4}{UC6.1.4});
+            \item lo sviluppatore può accedere al livello della batteria di un beacon rilevato(\hyperlink{UC6.1.5}{UC6.1.5});
+            \item lo sviluppatore può accedere alla distanza approssimativa del dispositivo che sta utilizzando da un beacon rilevato(\hyperlink{UC6.1.6}{UC6.1.6});
+            \item lo sviluppatore può accedere al formato di un beacon rilevato(\hyperlink{UC6.1.7}{UC6.1.7});
+            \item lo sviluppatore può accedere all'area coperta dal segnale di un beacon rilevato(\hyperlink{UC6.1.8}{UC6.1.8});
+          \end{enumerate}
+      \item \textbf{Postcondizione}: lo sviluppatore ha avuto accesso alle informazioni relative ai beacon circostanti.
   \end{itemize}
 \hypertarget{UC6.1.1}{}
 \subsection{Caso d'uso UC6.1.1: Accesso UUID}
