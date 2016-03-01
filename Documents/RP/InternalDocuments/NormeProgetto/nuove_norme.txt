@@ -6,11 +6,13 @@
 Norma per la struttura dei verbali?
 
 Norma per utilizzo di teamwork e GitHub per i task
+	Mettere "Not watching" sulla repo per non ricevere e-mail per ogni issue e commento.
+	
 	Teamwork:
 		utilizzato principalmente dal project manager, i task vengono creati per
 			- pianificare le attività (dare una data di inizio e di fine)
 			- assegnarle ai membri del gruppo
-			- dare una priorità?
+			- "splittare" task già esistenti -> sottotask
 		
 		i restanti membri del gruppo possono utilizzarlo per
 			- discutere eventuali problemi relativi al task mediante i commenti
@@ -61,7 +63,8 @@ Norme da aggiungere dal PQ (vedi issue #129)
 		definire norma per la denominazione delle metriche
 	Metriche software (norme da definire)
 		definire norma per la denominazione delle metriche
-		
+	
+	Procedure
 		- copertura requisiti obbligatori
 		- copertura requisiti opzionali
 		- numero di passaggi per operazione
