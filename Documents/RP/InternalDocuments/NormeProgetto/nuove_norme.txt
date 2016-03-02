@@ -111,5 +111,9 @@ Norme da aggiungere dal PQ (vedi issue #129)
 			- test che installa e disinstalla l'app?
 			
 Norme per il software
+	- 5.5 di ProTech
 
 Norme per l'IDE
+	- decidere l'IDE
+	- decidere la versione di riferimento
+Appendice per gli errori comuni
