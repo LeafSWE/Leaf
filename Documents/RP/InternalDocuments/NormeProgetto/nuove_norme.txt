@@ -3,7 +3,8 @@
 	 Le decisioni sono indicate come elenco numerato, quindi basterebbe riferirsi alla decisione
 	 3 della riunione del 2016-02-19 ad esempio."
 
-Norma per la struttura dei verbali?
+Norma per la struttura dei verbali
+	Vedi verbali già fatti
 
 Norma per utilizzo di teamwork e GitHub per i task
 	Mettere "Not watching" sulla repo per non ricevere e-mail per ogni issue e commento.
@@ -110,3 +111,5 @@ Norme da aggiungere dal PQ (vedi issue #129)
 			- test che installa e disinstalla l'app?
 			
 Norme per il software
+
+Norme per l'IDE
