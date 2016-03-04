@@ -30,7 +30,6 @@ I requisiti, come indica il documento \normediprogettov , sono classificati in b
 		\midrule
 		\endhead
 		\arrayrulecolor{gray}
-		\midrule 
 		RObbQ1 & Il sistema deve prevedere l'utilizzo della tecnologia Beacon & Capitolato \\ 
 		\midrule 
 		RObbQ2 & Deve essere allestito un laboratorio & Capitolato \\ 
@@ -140,6 +139,8 @@ I requisiti, come indica il documento \normediprogettov , sono classificati in b
 		RObbF7.1.2.1 & L'applicazione deve permettere di selezionare una categoria di POI dipendenti dell'edificio & UC1.1.4 \\ 
 		\midrule 
 		RObbF7.1.3 & L'applicazione deve permettere di selezionare un'opzione tra i risultati della ricerca & UC1.1.1 \\ 
+		\midrule
+		RObbF7.1.4 & L'applicazione deve segnalare un messaggio d'errore esplicito nel caso in cui venga ricercata una destinazione sconosciuta & UC1.1.5 \\
 		\midrule 
 		RObbF7.2 & L'applicazione deve permettere di confermare la destinazione scelta & UC1.1.2 \\ 
 		\midrule 
@@ -167,7 +168,7 @@ I requisiti, come indica il documento \normediprogettov , sono classificati in b
 		\midrule 
 		RDesF7.4.2.2 & L'applicazione deve fornire all'utente una lista contenente le indicazioni utili per raggiungere la destinazione scelta percorrendo tutti i POI che compongono il percorso previsto & UC1.5 \\ 
 		\midrule 
-		RDesF7.4.2.3 & L'applicazione deve avvisare l'utente nel caso rilevi in cui un beacon diverso da quelli previsti dal percorso calcolato & UC1.5 \\ 
+		RDesF7.4.2.3 & L'applicazione deve avvisare l'utente nel caso in cui rilevi un beacon diverso da quelli previsti nel percorso calcolato & UC1.5 \\ 
 		\midrule 
 		ROpzF7.4.2.4 & L'applicazione deve fornire all'utente indicazioni per raggiungere il prossimo POI & UC1.5 \\ 
 		\midrule 
@@ -182,6 +183,14 @@ I requisiti, come indica il documento \normediprogettov , sono classificati in b
 		ROpzF7.4.3.3 & L'applicazione deve fornire la lista di tutte le prossime indicazioni da seguire per raggiungere la destinazione scelta & UC1.4.3 \\ 
 		\midrule 
 		RObbF7.5 & L'applicazione deve permettere di interrompere la navigazione & UC1.3 \\ 
+		\midrule
+		RObbF7.6 & L'applicazione deve segnalare un messaggio d'errore esplicito nel caso in cui l'utente voglia avviare la navigazione all'interno di un'area dove non è presente il segnale di alcun beacon & UC1 \\
+		\midrule
+		RObbF7.7 & L'applicazione deve segnalare un messaggio d'errore esplicito nel caso in cui l'utente voglia avviare una navigazione con connessione Internet del dispositivo non attiva & UC7 \\
+		\midrule
+		RObbF7.8 & L'applicazione deve segnalare un messaggio d'errore esplicito nel caso in cui l'utente voglia avviare la navigazione in un edificio mappato e la mappa dell'edificio installata nel dispositivo differisce dall'ultima versione online & UC8 \\
+		\midrule
+		RObbF7.9 & L'applicazione deve segnalare un messaggio d'errore esplicito nel caso in cui l'utente voglia avviare la navigazione in un edificio mappato e la mappa dell'edificio non è installata nel dispositivo & UC9 \\
 		\midrule 
 		RObbF8 & L'applicazione deve permettere di interagire coi beacon & Capitolato \par UC1 \par UC2 \par UC6 \\ 
 		\midrule 
@@ -202,7 +211,7 @@ I requisiti, come indica il documento \normediprogettov , sono classificati in b
 		\midrule 
 		RObbF8.6 & L'applicazione deve permettere di rilevare l'area coperta dai beacon rilevati & UC6 \\ 
 		\midrule 
-		RObbF9 & L'applicazione deve fornire informazioni sull'edificio in cui si trova l'utente & UC2.1 \\ 
+		RObbF9 & L'applicazione deve fornire informazioni sull'edificio mappato in cui si trova l'utente & UC2.1 \\ 
 		\midrule 
 		RObbF9.1 & L'applicazione deve fornire un elenco dei POI raggiungibili all'interno dell'edificio in cui si trova l'utente & Capitolato \par UC1.1 \par UC2.2 \\ 
 		\midrule 
@@ -216,17 +225,23 @@ I requisiti, come indica il documento \normediprogettov , sono classificati in b
 		\midrule 
 		RObbF9.2.4 & L’applicazione deve fornire la descrizione di uno specifico POI & UC2.4.2 \\ 
 		\midrule 
-		RObbF9.3 & L’applicazione deve fornire l'orario di apertura dell’edificio in cui si trova l’utente & UC2.1.1 \\ 
+		RObbF9.3 & L'applicazione deve fornire l'orario di apertura dell’edificio in cui si trova l’utente & UC2.1.1 \\ 
 		\midrule 
-		RObbF9.4 & L’applicazione deve fornire l'indirizzo dell’edificio in cui si trova l’utente & UC2.1.2 \\ 
+		RObbF9.4 & L'applicazione deve fornire l'indirizzo dell’edificio in cui si trova l’utente & UC2.1.2 \\ 
 		\midrule 
-		RObbF9.5 & L’applicazione deve fornire il nome dell’edificio in cui si trova l’utente & UC2.1.3 \\ 
+		RObbF9.5 & L'applicazione deve fornire il nome dell’edificio in cui si trova l’utente & UC2.1.3 \\ 
 		\midrule 
-		RObbF9.6 & L’applicazione deve fornire la descrizione dell’edificio in cui si trova l’utente & UC2.1.4 \\ 
+		RObbF9.6 & L'applicazione deve fornire la descrizione dell’edificio in cui si trova l’utente & UC2.1.4 \\ 
 		\midrule 
 		RObbQ9.7 & Ad ogni edificio dotato del sistema CLIPS deve essere associato un nome & UC2.1.3 \\ 
 		\midrule 
-		RObbQ9.8 & Ad ogni POI interno ad un edificio dotato del sistema CLIPS deve essere associato un nome & UC2.4.1 \\ 
+		RObbQ9.8 & Ad ogni POI interno ad un edificio dotato del sistema CLIPS deve essere associato un nome & UC2.4.1 \\
+		\midrule
+		RObbF9.9 & L'applicazione deve segnalare un messaggio d'errore esplicito nel caso in cui l'utente voglia accedere alle informazioni dell'edificio mappato in cui si trova con connessione Internet del dispositivo non attiva & UC7 \\
+		\midrule
+		RObbF9.10 & L'applicazione deve segnalare un messaggio d'errore esplicito nel caso in cui l'utente voglia accedere alle informazioni dell'edificio mappato in cui si trova e la mappa dell'edificio, installata nel dispositivo, differisce dall'ultima versione online & UC8 \\
+		\midrule
+		RObbF9.11 & L'applicazione deve segnalare un messaggio d'errore esplicito nel caso in cui l'utente voglia accedere alle informazioni dell'edificio mappato in cui si trova e la mappa dell'edificio non è installata nel dispositivo & UC9 \\
 		\midrule 
 		ROpzF10 & Deve essere possibile gestire gli aspetti relativi all'applicazione & UC3 \\ 
 		\midrule 
@@ -242,19 +257,59 @@ I requisiti, come indica il documento \normediprogettov , sono classificati in b
 		\midrule 
 		RObbF10.1.2.1 & L'applicazione deve fornire informazioni testuali & UC1.2 \par UC1.5 \\ 
 		\midrule 
-		RDesF10.1.2.2 & L'applicazione deve permettere all'utente di ricevere indicazioni vocali durante la navigazione & UC3.2.1.1 \\ 
+		RDesF10.1.2.2 & L'applicazione deve permettere all'utente di attivare le indicazioni vocali per la prossima navigazione & UC3.2.1.1 \\ 
 		\midrule 
-		RDesF10.1.2.3 & L'applicazione deve permettere all'utente di ricevere indicazioni sonore in modo similare ad un sonar & UC3.2.1.2 \\ 
+		RDesF10.1.2.3 & L'applicazione deve permettere all'utente di attivare le indicazioni sonore per la prossima navigazione & UC3.2.1.2 \\
+		\midrule 
+		RDesF10.1.2.4 & L'applicazione deve permettere all'utente di disattivare le indicazioni vocali per la prossima navigazione & UC3.2.1.3 \\ 
+		\midrule 
+		RDesF10.1.2.5 & L'applicazione deve permettere all'utente di disattivare le indicazioni sonore per la prossima navigazione & UC3.2.1.4 \\ 
 		\midrule 
 		RDesF10.2 & L'applicazione deve permettere di gestire le mappe & UC3.1 \\ 
 		\midrule 
-		RDesF10.2.1 & L'applicazione deve permettere di aggiornare una mappa scaricata in precedenza & UC3.1.1 \\ 
-		\midrule 
-		RDesF10.2.2 & L'applicazione deve permettere di rimuovere una mappa scaricata in precedenza & UC3.1.2 \\ 
-		\midrule 
-		RDesF10.2.3 & L'applicazione deve permettere di scaricare una mappa & UC3.1.3 \par UC3.1.3.2 \\ 
-		\midrule 
-		RDesF10.2.4 & L'applicazione deve permettere di scegliere una mappa tra quelle disponibili & UC3.1.3.1 \\ 
+		RDesF10.2.1 & L'applicazione deve permettere di gestire le mappe installate nel dispositivo & UC3.1.1 \\ 
+		\midrule
+		RDesF10.2.1.1 & L'applicazione deve permettere di reperire le mappe installate nel dispositivo & UC3.1.1.1 \\
+		\midrule
+		RDesF10.2.1.2 & L'applicazione deve permettere di aggiornare ogni singola mappa installata nel dispositivo & UC3.1.1.2 \\
+		\midrule
+		RDesF10.2.1.3 & L'applicazione deve permettere di rimuovere ogni singola mappa installata nel dispositivo	& UC3.1.1.3 \\
+		\midrule
+		RDesF10.2.1.4 & L'applicazione deve permettere di reperire i dettagli informativi di ogni singola mappa installata nel dispositivo & UC3.1.1.4 \\
+		\midrule
+		RDesF10.2.1.4.1 & L'applicazione deve permettere l'accesso al nome di ogni singola mappa installata nel dispositivo & UC3.1.1.4 \\
+		\midrule
+		RDesF10.2.1.4.2 & L'applicazione deve permettere la visualizzazione della foto dell'edificio associato ad ogni singola mappa installata nel dispositivo & UC3.1.1.4 \\		
+		\midrule
+		RDesF10.2.1.4.3 & L'applicazione deve permettere l'accesso all'indirizzo dell'edificio associato ad ogni singola mappa installata nel dispositivo & UC3.1.1.4 \\
+		\midrule
+		RDesF10.2.1.4.4 & L'applicazione deve permettere l'accesso alla descrizione dell'edificio associato ad ogni singola mappa installata nel dispositivo & UC3.1.1.4 \\
+		\midrule
+		RDesF10.2.1.4.5 & L'applicazione deve permettere l'accesso alla dimensione in megabyte di ogni singola mappa installata nel dispositivo & UC3.1.1.4 \\
+		\midrule
+		RDesF10.2.1.4.6 & L'applicazione deve permettere l'accesso alla versione di ogni singola mappa installata nel dispositivo & UC3.1.1.4 \\
+		\midrule						 
+		RDesF10.2.2 & L'applicazione deve permettere di gestire le mappe non installate nel sistema & UC3.1.2 \\ 
+		\midrule
+		RDesF10.2.2.1 & L'applicazione deve permettere la ricerca per un nome tra le mappe disponibili online & UC3.1.2.1 \\
+		\midrule
+		RDesF10.2.2.2 & L'applicazione deve permettere l'installazione di una nuova mappa disponibile online non precedentemente installata & UC3.1.2.2 \\
+		\midrule
+		RDesF10.2.2.3 & L'applicazione deve permettere di reperire i dettagli informativi di ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\
+		\midrule
+		RDesF10.2.2.3.1 & L'applicazione deve permettere l'accesso al nome di ogni singola mappa installata nel dispositivo & UC3.1.2.3 \\
+		\midrule
+		RDesF10.2.2.3.2 & L'applicazione deve permettere la visualizzazione della foto dell'edificio associato ad ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\		
+		\midrule
+		RDesF10.2.2.3.3 & L'applicazione deve permettere l'accesso all'indirizzo dell'edificio associato ad ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\
+		\midrule
+		RDesF10.2.2.3.4 & L'applicazione deve permettere l'accesso alla descrizione dell'edificio associato ad ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\
+		\midrule
+		RDesF10.2.2.3.5 & L'applicazione deve permettere l'accesso alla dimensione in megabyte di ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\
+		\midrule
+		RDesF10.2.2.3.6 & L'applicazione deve permettere l'accesso alla versione di ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\
+		\midrule
+		RDesF10.2.2.4 & L'applicazione deve segnalare che la mappa non è stata trovata nel caso in cui la ricerca per nome non abbia trovato corrispondenze & UC3.1.2.4 \\						
 		\midrule 
 		RDesF10.2.5 & L'applicazione deve permettere di recuperare una mappa collegandosi ad un server & Riunione esterna(Verbale2016-01-18) \par UC3.1.3.3 \\ 
 		\midrule 
@@ -264,13 +319,14 @@ I requisiti, come indica il documento \normediprogettov , sono classificati in b
 		\midrule 
 		RObbF10.3.2 & L'applicazione deve permettere di confermare il codice inserito & UC4.2 \\ 
 		\midrule 
+		RObbF10.3.3 & L'applicazione deve segnalare un messaggio d'errore esplicito nel caso in cui il codice inserito non sia corretto & UC4.3 \\
 		ROpzF11 & L'applicazione deve fornire una guida che spieghi l'utilizzo della stessa & UC5 \\ 
 		\midrule 
-		RObbF12 & L'applicazione deve permettere di visualizzare le informazioni dei beacon rilevati & UC6 \\ 
+		RObbF12 & L'applicazione deve permettere di accedere alle informazioni dei beacon rilevati & UC6 \\ 
 		\midrule 
-		RObbF12.1 & L'applicazione deve permettere di visualizzare l'identificativo UUID di un beacon & UC6.1.1 \\ 
+		RObbF12.1 & L'applicazione deve permettere di accedere all'identificativo UUID di un beacon & UC6.1.1 \\ 
 		\midrule 
-		RObbF12.2 & L'applicazione deve permettere di visualizzare il livello di potenza del segnale dei beacon rilevati & UC6.1.4 \\ 
+		RObbF12.2 & L'applicazione deve permettere di accedere il livello di potenza del segnale dei beacon rilevati & UC6.1.4 \\ 
 		\midrule 
 		RObbF12.3 & L'applicazione deve permettere di gestire i log delle informazioni riguardanti i beacon rilevati & UC6.2 \\ 
 		\midrule 
@@ -288,7 +344,7 @@ I requisiti, come indica il documento \normediprogettov , sono classificati in b
 		\midrule 
 		RObbF12.5 & L'applicazione deve permettere di visualizzare la distanza approssimativa dell'utente dai beacon rilevati & UC6.1.6 \\ 
 		\midrule 
-		RObbF12.6 & L'applicazione deve permettere di visualizzare la tipologia dei beacon rilevati & UC6.1.7 \\ 
+		RObbF12.6 & L'applicazione deve permettere di visualizzare il formato dei beacon rilevati & UC6.1.7 \\ 
 		\midrule 
 		RObbF12.7 & L'applicazione deve permettere di dare indicazioni sull'area coperta dai beacon rilevati & UC6.1.8 \\ 
 		\midrule 
