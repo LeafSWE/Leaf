@@ -171,31 +171,30 @@
 
 		\subsubsection{Procedure}
 			\paragraph{Procedura di creazione e gestione di un ticket}
-				Per la creazione di un nuovo ticket\g\ il \responsabilediprogetto, deve accedere a Teamwork\g\ ed entrare nella sezione Tasks. Se il ticket\g\ deve essere associato ad una nuova attività allora la procedura da seguire è la seguente:
+				Per la creazione di un nuovo ticket\g\ il \responsabilediprogetto, deve accedere a Teamwork\g\ ed entrare nella sezione Tasks. Ogni task sarà associato ad una Task List, per cui nel caso non fosse presente dovrà essere creata. La procedura per la creazione di un task è la seguente:
 				\begin{enumerate}
-					\item creare un nuovo task\g\ impostando i parametri desiderati;
-					\item selezionare i membri del gruppo a cui associare il nuovo task\g;
-					\item confermare la creazione del nuovo task\g.
+					\item il \responsabilediprogetto\ crea un nuovo task;
+					\item nel caso in cui il task fosse fuori dalla portata di un singolo membro del gruppo, può suddividerlo il sotto-task, se ha le conoscenze per farlo;
+					\item i task e i sotto-task vengono assegnati ai membri del gruppo;
+					\item l'assegnatario del task può a sua volta suddividerlo in sotto-task per organizzare meglio l'attività, assegnandoli a se stesso e dotandoli di titolo e descrizione esplicativa, inserendovi le azioni per portare a termine il task sotto forma di checklist, in cui ogni azione corrisponde ad una checkbox \texttt{- [ ]}.
 				\end{enumerate}
-				Se il ticket\g\ invece deve essere associato ad un'attività già presente allora la procedura da seguire è la seguente:
-				\begin{enumerate}
-					\item selezionare il task\g\ a cui associare i nuovi ticket\g;
-					\item modificare il task\g\ e selezionando i membri del gruppo a cui associare il task\g;
-					\item confermare le modifiche effettuate.
-				\end{enumerate}
-				Al termine del punto 3 degli elenchi soprastanti, Teamwork\g\ provvederà ad inviare in automatico una email di notifica alle persone assegnatarie del task\g.
-				
-				Per riportare lo stato di avanzamento dell'attività, gli assegnatari del ticket\g\ dovranno:
-				\begin{enumerate}
-					\item accedere a Teamwork\g\ ed entrare nella sezione task\g;
-					\item selezionare il task\g\ di cui si vuole riportare l'avanzamento;
-					\item aggiornare la percentuale di avanzamento del task\g\ selezionato.
-				\end{enumerate}
-				Al termine dell'attività gli assegnatari dovranno ripetere la procedura sopra riportata ed infine selezionare il checkbox indicante il completamento dell'attività. Questo comporterà la chiusura del ticket\g.
 				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraTicket.png}
-					\caption{Procedura di creazione e gestione di un ticket}\label{fig:Procedura di creazione e gestione di un ticket} 
+					\includegraphics[scale=0.5, width=\textwidth]{sections/img/creazioneTask.png}
+					\caption{Procedura di creazione e gestione di un ticket}\label{fig:Procedura di creazione e gestione di un ticket - Parte 1} 
+				\end{figure}
+			Una volta creato il ticket su Teamwork, i passi da seguire sono i seguenti			
+				\begin{enumerate}
+					\item per ogni task aperto aperto al punto 1, l'assegnatario del task esegue lo script \textit{GitWork.java} che creerà, sul repository del gruppo \leaf\ una issue per ogni subtask del task selezionato, con la label ToDo;
+					\item quando il membro del gruppo inizierà effettivamente a lavorare sulla issue, modificherà la label da ToDo a Working;
+					\item ogni commit eseguito dovrà riferirsi ad una delle issue presenti sul repository, mediante \texttt{\# numeroIssue} all'interno del messaggio di commit. Inoltre, sarà necessario spuntare la relativa checkbox per indicare l'avanzamento del proprio lavoro;
+					\item completato il lavoro, inserire nel messaggio di commit la stringa \texttt{£toVerify} in modo che la label della issue venga modificata da ToDo a toVerify.
+				\end{enumerate}
+			A questo punto, è possibile verificare la issue e, di conseguenza, il ticket.
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.5, width=\textwidth]{sections/img/lavoroSuIssue.png}
+					\caption{Procedura di creazione e gestione di un ticket}\label{fig:Procedura di creazione e gestione di un ticket - Parte 2} 
 				\end{figure}
 		\subsubsection{Strumenti}
 			\paragraph{Pianificazione} \label{sec: Pianificazione Teamwork}
