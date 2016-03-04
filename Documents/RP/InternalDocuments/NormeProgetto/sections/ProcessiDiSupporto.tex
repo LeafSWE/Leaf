@@ -415,6 +415,23 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 					Sono stati definiti dei comandi \LaTeX\g\ personalizzati al fine di poter rendere più semplice ed immediata l'applicazione delle norme tipografiche. Questi comandi si occupano delle corretta formattazione del testo secondo le norme che sono state definite. La lista dei comandi è presente nella sezione formati.
 				\subparagraph{Rilevamento errori ortografici}
 					Al fine di semplificare l'operazione di individuazione e correzione degli errori ortografici, è stato creato uno script bash \frmfile{OrtographicCheck.sh}.
+					
+\subsection{Qualità}
+	\subsubsection{Metriche}
+					Per garantire la qualità del lavoro del team, gli \amministratori\ hanno definito delle metriche, riportandole nel \pianodiqualifica , che devono rispettare la seguente notazione: \begin{center}\textbf{M[X][Y][Z]}\end{center} dove:
+			\begin{itemize}
+				\item X indica se la metrica si riferisce a prodotti o processi, può assumere i valori:
+				\begin{itemize}
+					\item PC per indicare i processi;
+					\item PR per i prodotti.
+				\end{itemize}
+				\item Y (opzionale) indica se il termine prodotto si riferisce a documenti o al software e può assumere i seguenti valori:
+					\begin{itemize}
+						\item D per i documenti;
+						\item S per il software.
+					\end{itemize}
+				\item Z indica il codice univoco della metrica.
+			\end{itemize}
 
 \subsection{Configurazione}
 	\subsubsection{Controllo di versione}
@@ -509,9 +526,10 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\end{itemize}
 				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraRichiestaModifica.png}
+					\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraAggiornamentoRepository.png}
 					\caption{Procedura di aggiornamento del repository}\label{fig:Procedura di aggiornamento del repository} 
-				\end{figure}	
+				\end{figure}
+			
 		\paragraph{Strumenti}
 			Lo strumento utilizzato per il versionamento di documenti e file sorgenti è Git\g. Nonostante siano presenti varie alternative, come Mercurial, Subversion e Bazaar, è stato scelto Git\g\ in quanto soddisfa appieno le necessità di versionamento dei file per questo progetto e, inoltre, permette di versionare i file localmente, senza bisogno di una connessione internet attiva. Come servizio di hosting per il repository\g\ è stato scelto, invece, GitHub\g. Entrambe le scelte sono state fatte anche perché più membri del gruppo avevano già avuto la possibilità di lavorare con tali servizi. Lo strumento utilizzato per effettuare richieste di modifica è Notebook\g messo a disposizione da Teamwork\g.
 	
