@@ -1,5 +1,4 @@
 \documentclass[../NormeProgetto.tex]{subfiles}
-
 \begin{document}
 \section{Processi primari}
 	\subsection{Fornitura}
@@ -69,7 +68,49 @@
 		\subsubsection{Progettazione}
 			Norme, procedure e strumenti riguardanti la progettazione verranno definiti nelle versioni successive di questo documento.
 		\subsubsection{Codifica}
-			Norme, procedure e strumenti riguardanti la codifica verranno definiti nelle versioni successive di questo documento.
+			\paragraph{Convenzioni}
+				Tutti i file contenenti codice o testo dovranno rispettare la codifica UTF-8 senza BOM.\\
+				I \programmatori, dovendo sviluppare un'applicazione Android, si dovranno seguire le indicazioni fornite dalla guida Google Java Style\footnote{\frmURI{https://google.github.io/styleguide/javaguide.html}}.
+			\paragraph{Nomi}
+				I nomi di variabili, metodi e classi dovranno essere in notazione CamelCase e in lingua inglese. I nomi di variabili e metodi dovranno avere la prima lettera minuscola, mentre per le classi sarà maiuscola.
+			\paragraph{Ricorsione}
+				La ricorsione dovrà essere evitata il più possibile, limitando il suo uso ai soli casi indispensabili, ossia dove sia dimostrato che non è possibile utilizzare un metodo iterativo con complessità computazionale minore. Per ogni metodo ricorsivo, dovrà essere fornita una prova della sua terminazione.
+			\paragraph{Documentazione}
+				\subparagraph{File}
+					I file contenenti codice dovranno avere un'intestazione contenente:
+					\begin{lstlisting}
+						/**
+						 * @author Nome dell'autore
+						 * @version Versione corrente del file 
+						 * @since Versione del file nel momento
+						 *		dell'aggiunta al progetto
+						 *
+						 * Descrizione del file
+						 */
+					\end{lstlisting}
+				\subparagraph{Classi}
+					Poiché in Java è presente una forte dipendenza tra file e classi, prima di ogni classe dovrà essere presente un commento, strutturato come l'intestazione dei file.
+				\subparagraph{Metodi}
+					Per ogni metodo, dovrà essere presente un'intestazione contenente:
+					\begin{lstlisting}
+						/**
+						 * Descrizione del metodo
+						 * @param NomeParametro1 Descrizione del primo parametro
+						 * ...
+						 * @param NomeParametroN Descrizione del N-esimo parametro
+						 * @return TipoDiRitorno Valore ritornato dal metodo (opzionale)
+						 * @throws TipoDiEccezione Motivo di lancio dell'eccezione
+						 */
+					\end{lstlisting}
+					
+					Per i metodi senza valore di ritorno (con tipo di ritorno \texttt{void} e costruttori) la voce \texttt{@return} deve essere omessa.
+				\subparagraph{Casi eccezionali}
+					Qualora fosse necessario documentare parti di codice di difficile comprensione, è permesso l'utilizzo di un commento nelle righe precedenti, che dovrà essere strutturato come segue:
+					\begin{lstlisting}
+						/**
+						 * Descrizione del blocco di codice
+						 */
+					\end{lstlisting}
 		
 		\subsubsection{Strumenti}
 			\paragraph{Strumento per la creazione dei diagrammi UML}
