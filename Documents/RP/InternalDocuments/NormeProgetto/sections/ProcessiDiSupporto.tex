@@ -331,7 +331,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\subparagraph{Nome del verbale}
 				Il nome del verbale deve essere nella forma \begin{center}\textbf{Riunione[X][Y]}\end{center}, dove:
 				\begin{itemize}
-					\item \textbf{X} indica il tipo di verbale. Può assumere solo i seguenti valori:
+					\item \textbf{X} indica il tipo di riunione a cui si riferisce il verbale. Può assumere solo i seguenti valori:
 					\begin{itemize}
 						\item \textbf{Interna}: indica il verbale di una riunione interna;
 						\item \textbf{Esterna}: indica il verbale di una riunione esterna.
@@ -356,7 +356,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 					\item decisioni prese, definite come una lista numerata.
 				\end{enumerate}
 			
-			Di conseguenza, se ci si vuole riferire ad una determinata decisione presa in una riunione, è sufficiente indicare il verbale e il numero della decisione (es. \textit{RiunioneInterna2016-02-01, decisione 3}).
+			Di conseguenza, se ci si vuole riferire ad una determinata decisione presa in una riunione, è sufficiente indicare il verbale e il numero della decisione (es. RiunioneInterna2016-02-01, decisione 3).
 
 			\subparagraph{Verbali di riunioni esterne}
 				Si definisce esterna una riunione che avviene tra i membri del team\g\ e soggetti esterni. Il verbale redatto per questo tipo di incontro è da considerarsi come parte integrante della documentazione ufficiale e per questo motivo può avere un valore normativo o fornire nuovi requisiti. È previsto che ad ogni incontro venga nominata una persona che si occupi della sua stesura.
@@ -586,7 +586,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\item \textbf{ToDo}: identifica una issue\g\ per la quale è stata trovata la soluzione ma questa deve ancora essere applicata;
 				\item \textbf{Working}: identifica una issue\g\ alla quale un membro del gruppo sta lavorando per applicare la soluzione;
 				\item \textbf{Rejected}: identifica una issue\g\ che non è stata accettata poiché risulta essere futile o dannosa;
-				\item \textbf{Done}: identifica una issue\g\ che è stata completata.
+				\item \textbf{toVerify}: identifica una issue\g\ che è stata completata e deve essere verificata.
 			\end{itemize}				
 		\paragraph{Sintassi di una Issue}
 			Ogni issue\g\ avrà un nome che dovrà seguire la seguente notazione: \begin{center}\textbf{[D]:[S]}\end{center} dove:
@@ -607,7 +607,14 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 		
 	\paragraph{Procedure}
 	\subparagraph{Gestione di una issue}
-				Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura per la segnalazione e gestione del ticketing di una issue\g\ è la seguente:
+		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura di gestione di una issue si divide in due casi: verifica di una issue già aperta o verifica generica.Nel caso di verifica di una issue già aperta:
+			\begin{enumerate}
+				\item il \verificatore\ che ha riscontrato delle anomalie dovrà segnalarlo commentando la issue che ha verificato e modificando la label da "toVerify" a "ToDo". Nel caso in cui non vengano riscontrare anomalie, può chiudere l'issue;
+				\item l'assegnatario della issue dovrà provvedere ad apportare le modifiche rilevate dal \verificatore\, nel caso le ritenesse necessarie;
+				\item il \verificatore\ dovrà procedere ad una nuova verifica, ritornando al punto 1.
+			\end{enumerate}
+				
+				In tutti gli altri casi, qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura per la segnalazione e gestione del ticketing di una issue\g\ è la seguente:
 					\begin{enumerate}
 						\item il \verificatore\ che ha riscontrato un'anomalia\g\ dovrà aprire una nuova issue\g\ assegnandole l'etichetta Request;
 						\item il \responsabilediprogetto\ dovrà valutare la issue\g\ e decidere se:			\begin{itemize}
@@ -623,13 +630,13 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale= 0.75, width=\textwidth]{sections/img/gestioneIssueP1.png}
-					\caption{Procedura di gestione di una issue. Parte 1}\label{fig:Procedura di gestione di una issue parte 1} 
+					\caption{Procedura di gestione di una issue. Parte 1}\label{fig:Procedura di gestione di una nuova issue parte 1} 
 				\end{figure}
 
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale= 0.75, width=\textwidth]{sections/img/gestioneIssueP2.png}
-					\caption{Procedura di gestione di una issue. Parte 2}\label{fig:Procedura di gestione di una issue parte 2} 
+					\caption{Procedura di gestione di una issue. Parte 2}\label{fig:Procedura di gestione di una nuova issue parte 2} 
 				\end{figure}
 
 		
