@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{leaf}
+
+\titlepage{}
+
+\author{Nome Autore}
+\date{05/01/2016}
+\intestazioni{template}
+\pagestyle{myfront}
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries CLIPS\par}
+	Communication \& Localization with Indoor Positioning Systems \\*
+	\line(1,0){350} \\
+	{\scshape\LARGE Università di Padova \par}
+	\vspace{1cm}
+	%devono essere cambiato il titolo ogni volta
+	{\scshape\Large Template \par}
+	\logo
+	\newpage
+	%devono essere compilati questi campi ogni volta
+	\begin{tabular}{c|c}
+		{\hfill \textbf{Versione}} 			& 					\\ \\
+		{\hfill\textbf{Data Redazione}} 	&            		\\ \\
+		{\hfill\textbf{Redazione}} 			&  					\\ \\
+		{\hfill\textbf{Verifica}} 			&  					\\ \\
+		{\hfill\textbf{Approvazione}} 		&  					\\ \\
+		{\hfill\textbf{Uso}} 				& 					\\ \\
+		{\hfill\textbf{Distribuzione}} 		& 					\\ \\
+	\end{tabular}
+\end{titlepage}
+	
+	\newpage
+
+	\tableofcontents
+	
+	\label{LastFrontPage}
+	
+
+	\newpage
+	
+	\pagestyle{mymain}
+	
+	 \newpage
+		\subfile{sections/Introduzione}
+
+	\newpage
+		\subfile{sections/TecnologieUtilizzate}
+	
+	\newpage
+		\subfile{sections/DescrizioneArchitettura}
+	
+	\newpage
+		\subfile{sections/DesignPattern}
+
+	%manca ancora roba
+	
+	\newpage
+		\subfile{sections/StimeFattibilita}
+
+	\newpage
+		\subfile{sections/Tracciamento}
+	
+	\newpage
+		\subfile{sections/DescrizioneDesignPattern}
+	
+	\newpage
+		\subfile{sections/Mockup}
+
+		
+	\label{LastPage}
+
+\end{document}
