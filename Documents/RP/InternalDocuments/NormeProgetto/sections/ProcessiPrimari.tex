@@ -48,7 +48,7 @@
 					\end{enumerate}
 				\paragraph{Classificazione dei requisiti}
 					È compito degli \analisti\ redigere e classificare i requisiti.  I requisiti devono essere classificati in base al tipo e alla priorità, utilizzando la seguente notazione:
-					\begin{center}\textbf{R[X][Y][Z]}\end{center} dove:
+					\begin{center}\textbf{R[X][Y][Z]}\end{center}, dove
 						\begin{enumerate}
 							\item \textbf{X} indica l'importanza strategica del requisito. Deve assumere solo i seguenti valori:
 							\begin{itemize}
@@ -66,11 +66,43 @@
 							\item \textbf{Z} rappresenta il codice univoco di ogni requisito in forma gerarchica.
 						\end{enumerate}
 		\subsubsection{Progettazione}
-			Norme, procedure e strumenti riguardanti la progettazione verranno definiti nelle versioni successive di questo documento.
+			Descrizione di cosa si intenda per progettazione.
+		\paragraph{Progettazione architetturale}
+			Descrizione di cosa si intenda per progettazione architetturale e step necessari per perseguirla.
+			\subparagraph{Design pattern}
+				Perché utilizziamo i design pattern e cosa si deve indicare per ognuno di essi.
+			\subparagraph{Diagrammi UML}
+				Esplicitare a cosa servano i diagrammi UML in questa fase.
+				\begin{description}
+					\item[diagramma dei componenti] cos'è e a cosa serve;
+					\item[diagramma delle attività] cos'è e a cosa serve.
+				\end{description}
+			\subparagraph{Classificazione dei componenti}
+				Come vengono identificati i componenti (es. codice degli UC).
+			\subparagraph{Test di integrazione}
+				Perché facciamo i test e chi se ne occupa.
+		\paragraph{Progettazione di dettaglio}
+			Descrizione di cosa si intenda per progettazione architetturale e step necessari per perseguirla.
+			\subparagraph{Design pattern}
+				Perché utilizziamo i design pattern e cosa si deve indicare per ognuno di essi.
+			\subparagraph{Diagrammi UML}
+				Esplicitare a cosa servano i diagrammi UML in questa fase.
+				\begin{description}
+					\item[diagramma delle classi] cos'è e a cosa serve;
+					\item[diagramma delle attività] cos'è e a cosa serve;
+					\item[diagramma di sequenza] cos'è e a cosa serve.
+				\end{description}
+			
+			\subparagraph{Classificazione di una classe}
+				Come vengono identificate le classi (es. codice degli UC).
+			\subparagraph{Descrivere una classe}			
+				Quali proprietà devono essere esplicitate per ogni classe (nome, visibilità, descrizione, ecc).
+			\subparagraph{Test di unità}
+				Perché facciamo i test e chi se ne occupa.
 		\subsubsection{Codifica}
 			\paragraph{Convenzioni}
 				Tutti i file contenenti codice o testo dovranno rispettare la codifica UTF-8 senza BOM.\\
-				I \programmatori, dovendo sviluppare un'applicazione Android, si dovranno seguire le indicazioni fornite dalla guida Google Java Style\footnote{\frmURI{https://google.github.io/styleguide/javaguide.html}}.
+				I \programmatori, dovendo sviluppare un'applicazione Android, dovranno seguire le indicazioni fornite dalla guida Google Java Style\footnote{\frmURI{https://google.github.io/styleguide/javaguide.html}}.
 			\paragraph{Nomi}
 				I nomi di variabili, metodi e classi dovranno essere in notazione CamelCase e in lingua inglese. I nomi di variabili e metodi dovranno avere la prima lettera minuscola, mentre per le classi sarà maiuscola.
 			\paragraph{Ricorsione}
@@ -111,14 +143,31 @@
 						 * Descrizione del blocco di codice
 						 */
 					\end{lstlisting}
-		\subsubsection{Test}
-			Indicare la norma per la codifica dei test	
+				\paragraph{Versionamento dei file di codice}
+					Il numero di versione dei file di codice appare solamente nell'intestazione di ciascuno di essi. Deve seguire il formato:
+					\begin{center}\textbf{[X].[YY]}\end{center}, dove
+					\begin{itemize}
+						\item \textbf{X} è un numero intero, incrementale, corrispondente all'ultima versione stabile del codice;
+						\item \textbf{YY} è un numero intero, incrementale, corrispondente al numero di modifiche apportate al codice, partendo dall'ultima versione stabile.
+					\end{itemize}
+					
+				\paragraph{Test}
+					Indicare la norma per la codifica dei test	
 
+		\subsubsection{Procedure}
+			\paragraph{Tracciamento componenti-requisiti}
+				Qui verrà spiegata la procedura per tracciare (tramite Tracy) ogni requisito su un componente del sistema.
+				\subparagraph{Inserimento di una classe su Tracy}
+					Procedura per inserire un componente  su Tracy.
+			\paragraph{Tracciamento classi-requisiti}
+				Qui verrà spiegata la procedura per tracciare (tramite Tracy) ogni requisito su una classe del sistema.
+				\subparagraph{Inserimento di una classe su Tracy}
+					Procedura per inserire una classe su Tracy.
 		\subsubsection{Strumenti}
-			\paragraph{Strumento per la creazione dei diagrammi UML}
-			Lo strumento per la creazione dei diagrammi UML\g\ utilizzato è Astah\g.
-			\paragraph{Strumento per il tracciamento dei requisiti}
-			Lo strumento scelto per la il tracciamento dei requisiti è Tracy\g. Questo software\g\ è stato sviluppato dal gruppo di Ingegneria del Software Don't Panic. Il software\g\ è stato scelto per le seguenti caratteristiche:
+			\paragraph{Creazione dei diagrammi UML}
+				Lo strumento per la creazione dei diagrammi UML\g\ utilizzato è Astah\g.
+			\paragraph{Tracciamento dei requisiti}
+				Lo strumento scelto per la il tracciamento dei requisiti è Tracy\g. Questo software\g\ è stato sviluppato dal gruppo di Ingegneria del Software Don't Panic. Il software\g\ è stato scelto per le seguenti caratteristiche:
 			\begin{itemize}
 				\item open source\g;
 				\item tracciamento dei requisiti;
@@ -126,9 +175,15 @@
 				\item tracciamento delle fonti;
 				\item stesura automatica in \LaTeX\g\ dei requisiti.
 			\end{itemize}
-                        Poiché questo software\g\ non risulta essere completamente perfetto, il gruppo ha previsto di riadattarlo
+               Poiché questo software\g\ non risulta essere completamente perfetto, il gruppo ha previsto di riadattarlo
  sulla base delle esigenze che sono emerse durante la stesura dell'\analisideirequisiti .
- 		\paragraph{Strumenti per il tracciamento dei test}
+ 			\paragraph{Tracciamento dei test}
+ 				Indicare lo strumento per il tracciamento dei test.
+			\paragraph{Scrittura del codice} 			
+ 				Indicare lo strumento utilizzato per scrivere codice Java (IDE).
+ 			\paragraph{Esecuzione dei test}
+ 				Indicare lo strumento per l'esecuzione dei test.
+ 			
 			
 \end{document}
 
