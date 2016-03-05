@@ -108,13 +108,13 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 					\item \textbf{NomeProdotto} è il nome del prodotto software che i \progettisti\ hanno individuato;
 					\item \textbf{NomeComponente} rappresenta il nome assegnato al componente dai \progettisti.
 				\end{itemize}
-				Inoltre, ogni componente ha associato un codice univoco nella forma \begin{center}\textbf{[X][Y]}\end{center}, dove:
+				Inoltre, ogni componente ha associato un codice univoco nella forma \begin{center}\textbf{[X][Y]}\end{center} dove:
 				\begin{itemize}
-					\item X è l'iniziale del nome del prodotto;
-					\item Y è un numero intero crescente.
+					\item \textbf{X} è l'iniziale del nome del prodotto;
+					\item \textbf{Y} è un numero intero crescente.
 				\end{itemize}
 			\subparagraph{Test di integrazione}
-				Per ottenere ottimizzare l’attività di test, i \progettisti\ devono preoccuparsi di definire delle classi di verifica per accertare il funzionamento dei componenti. L'ideale sarebbe fornire degli strumenti automatici ai \verificatori . La progettazione delle classi per la verifica deve essere svolta nel rispetto della mancata sovrapposizione dei ruoli: chi crea una classe non dovrebbe essere lo stesso individuo che crea la classe per testarla.
+				Per ottenere ottimizzare l'attività di test, i \progettisti\ devono preoccuparsi di definire delle classi di verifica per accertare il funzionamento dei componenti. L'ideale sarebbe fornire degli strumenti automatici ai \verificatori . La progettazione delle classi per la verifica deve essere svolta nel rispetto della mancata sovrapposizione dei ruoli: chi crea una classe non dovrebbe essere lo stesso individuo che crea la classe per testarla.
 		\paragraph{Progettazione di dettaglio}
 			Descrizione di cosa si intenda per progettazione architetturale e step necessari per perseguirla.
 			\subparagraph{Design pattern}
@@ -186,8 +186,21 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 					\end{itemize}
 					
 				\paragraph{Test}
-					Indicare la norma per la codifica dei test	
-
+					\subparagraph{Classificazione dei test}
+					È compito dei \progettisti\ creare test di unità, integrazione, sistema e accettazione al fine di verificare che tutti i requisiti individuati dagli \analisti\ vengano soddisfatti. Ogni test deve essere codificato come:
+					\begin{center}\textbf{T[X][Y]}\end{center}, dove
+						\begin{enumerate}
+							\item \textbf{X} il tipo di test. Deve assumere solo i seguenti valori:
+							\begin{itemize}
+								\item \textbf{A}: indica un test di accettazione;
+								\item \textbf{S}: indica un test di sistema;
+								\item \textbf{I}: indica un test di integrazione;
+								\item \textbf{U}: indica un test di unità.
+							\end{itemize}
+							
+							\item \textbf{Y} rappresenta il codice univoco di ogni test in forma gerarchica.
+						\end{enumerate}
+					
 		\subsubsection{Procedure}
 			\paragraph{Tracciamento componenti-requisiti}
 				Qui verrà spiegata la procedura per tracciare (tramite Tracy) ogni requisito su un componente del sistema.
