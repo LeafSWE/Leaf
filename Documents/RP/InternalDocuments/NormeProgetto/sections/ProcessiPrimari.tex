@@ -116,23 +116,62 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 			\subparagraph{Test di integrazione}
 				Per ottenere ottimizzare l'attività di test, i \progettisti\ devono preoccuparsi di definire delle classi di verifica per accertare il funzionamento dei componenti. L'ideale sarebbe fornire degli strumenti automatici ai \verificatori . La progettazione delle classi per la verifica deve essere svolta nel rispetto della mancata sovrapposizione dei ruoli: chi crea una classe non dovrebbe essere lo stesso individuo che crea la classe per testarla.
 		\paragraph{Progettazione di dettaglio}
-			Descrizione di cosa si intenda per progettazione architetturale e step necessari per perseguirla.
+			Una volta definita l'architettura del sistema, si procede alla progettazione di dettaglio, la quale prevede che i seguenti task:
+			\begin{enumerate}
+				\item individuare le classi che implementano ciascuno dei componenti individuati mediante la progettazione architetturale;
+				\item definire i ruoli e le responsabilità di ogni classe individuata;
+				\item definire nel dettaglio ogni classe;
+				\item assicurarsi che ogni requisito sia soddisfatto da almeno di una delle classi definite;
+				\item assicurarsi che ogni classe soddisfi almeno un requisito;
+				\item realizzare e documentare i test di unità, necessari per verificare il corretto comportamento di ogni classe.
+			\end{enumerate}
+			
 			\subparagraph{Design pattern}
-				Perché utilizziamo i design pattern e cosa si deve indicare per ognuno di essi.
+				Per migliorare la comprensibilità delle scelte progettuali e della progettazione stessa i \progettisti\ dovranno indicare i pattern architetturali utilizzati, fornendo per ciascuno d'essi:
+				\begin{itemize}
+					\item descrizione testuale;
+					\item descrizione grafica;
+					\item motivazione dell'utilizzo;
+					\item descrizione di come viene applicato il pattern al progetto.
+				\end{itemize}
 			\subparagraph{Diagrammi UML}
-				Esplicitare a cosa servano i diagrammi UML in questa fase.
+				Per documentare prodotti e componenti individuati, sarà necessario ricorrere a dei diagrammi UML, necessari per formalizzare gli aspetti descritti in modo testuale. Durante la progettazione architetturale, sarà necessario ricorrere a 
 				\begin{description}
-					\item[diagramma delle classi] cos'è e a cosa serve;
-					\item[diagramma delle attività] cos'è e a cosa serve;
-					\item[diagramma di sequenza] cos'è e a cosa serve.
+					\item[diagramma delle classi] hanno lo scopo di descrivere i tipi di entità, con le loro caratteristiche ed eventuali relazioni fra questi tipi. Questo diagramma viene utilizzato per evidenziare e descrivere in modo dettagliato le classi e le relazioni che esistono fra di loro;
+					\item[diagramma delle attività]  hanno lo scopo di definire le attività da svolgere per realizzare una certa funzionalità. Vengono dunque usati per mostrare come determinate interazioni tra
+componenti (o fra prodotti) realizzino una funzionalità che si intende rendere disponibile.
+				
+					\item[diagramma di sequenza] hanno lo scopo di descrivere scenari, vengono usati per descrivere le relazioni che intercorrono, in termini di messaggi, tra attori, oggetti ed entità del sistema rappresentato.
 				\end{description}
 			
 			\subparagraph{Classificazione di una classe}
-				Come vengono identificate le classi (es. codice degli UC).
+				Le classi vengono univocamente identificate da una descrizione nella forma \begin{center}
+				\textbf{NomeProdotto::NomeComponente::NomeClasse}
+				\end{center} dove
+				\begin{itemize}
+					\item \textbf{NomeProdotto} è il nome del prodotto software che i \progettisti\ hanno individuato;
+					\item \textbf{NomeComponente} rappresenta il nome assegnato al componente dai \progettisti;
+					\item \textbf{NomeClasse} rappresenta il nome che è stato dato dai \progettisti\ alla classe individuata.
+				\end{itemize}
+				Inoltre, ad ogni classe è associato un codice univoco nella forma \begin{center}
+				\textbf{[X][Y]}
+				\end{center} dove
+				\begin{itemize}
+					\item \textbf{X} è l'iniziale del nome del prodotto;
+					\item \textbf{Y} è un numero intero crescente.
+				\end{itemize}
 			\subparagraph{Descrivere una classe}			
-				Quali proprietà devono essere esplicitate per ogni classe (nome, visibilità, descrizione, ecc).
+				Per descrivere una classe, i \progettisti\ devono preoccuparsi di descrivere:
+				\begin{itemize}
+					\item nome;
+					\item visibilità;
+					\item attributi;
+					\item metodi;
+					\item descrizione generica che indichi lo scopo e la responsabilità della classe.
+				\end{itemize}
+				Inoltre, devono essere descritte dettagliatamente (anche attraverso diagrammi) le relazioni con altre classi e le interfacce messe a disposizione.
 			\subparagraph{Test di unità}
-				Perché facciamo i test e chi se ne occupa.
+				Per la realizzazione dei test, i \progettisti\ devono rispettare la regola di sovrapposizione dei ruoli: chi realizza il test non deve essere lo stesso individuo di chi realizza la classe da testare.
 		\subsubsection{Codifica}
 			\paragraph{Convenzioni}
 				Tutti i file contenenti codice o testo dovranno rispettare la codifica UTF-8 senza BOM.\\
@@ -224,7 +263,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 			\end{itemize}
                Poiché questo software\g\ non risulta essere completamente perfetto, il gruppo ha previsto di riadattarlo sulla base delle esigenze che sono emerse durante la stesura dell'\analisideirequisiti .
  			\paragraph{Tracciamento dei test}
- 				Indicare lo strumento per il tracciamento dei test.
+ 				Per il tracciamento dei test, verrà utilizzato Tracy. Il software è stato scelto in modo da non dover utilizzare diverse piattaforme per il tracciamento dei requisiti e dei test.
 			\paragraph{Scrittura del codice} 			
  				Per lo sviluppo dell'applicazione Android, il gruppo ha deciso di utilizzare l'IDE Android Studio per i seguenti motivi:
  				\begin{itemize}
@@ -237,7 +276,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
  				\end{itemize}
  				La versione utilizzata dal gruppo è la 1.5.1.
  			\paragraph{Esecuzione dei test}
- 				Indicare lo strumento per l'esecuzione dei test.
+ 				Per la creazione e l'esecuzione dei test di unità e di integrazione, è possibile utilizzare, in combinazione con Android Studio, il framework JUnit.
  			
 			
 \end{document}
