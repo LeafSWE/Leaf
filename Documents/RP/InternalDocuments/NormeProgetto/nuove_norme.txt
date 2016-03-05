@@ -1,47 +1,4 @@
-﻿Norma per utilizzo di teamwork e GitHub per i task (Organizzativi)
-	Mettere "Not watching" sulla repo per non ricevere e-mail per ogni issue e commento.
-
-	1)[Teamwork][Responabile] Creazione di una 'Lista di task' per ogni fase del ciclo di sviluppo prevista dal PP
-	2)[Teamwork][Responabile] Creazione di un nuovo task, appartenente ad una certa fase. Un task rappresenta una parte del lavoro da portare a termine entro la fase di cui fa parte. Auspicabilmente l'intera mole di lavoro da portare a termine in una fase può essere partizionata in task.
-	3)[Teamwork][Responabile] Assegnazione di un task ai componenti del gruppo deputati a portarlo a termine.
-	4)[Teamwork][Responabile]<opzionale> Partizionamento di un task in subtask. Un subtask rappresenta un compito atomico, ovvero un insieme di azioni che può essere portato a termine da una sola persona in un tempo ragionevolmente breve.
-	5)[Teamwork][Persone assegnate]<opzionale> Partizionamento di un task in subtask.
-	6)[Teamwork][Persone assegnate] Dotare ogni subtask di titolo e descrizione esplicativa.
-	7)[Teamwork][Persone assegnate]<opzionale> Se si desidera partizionare ulteriormente un subtask, inserire la relativa descrizione sottoforma di punti preceduti da "- [ ]". Questo risulterà in una checklist quando verrà creata la issue GitHub relativa a tale subtask.
-	8)[Teamwork][Persone assegnate] Presa in carico dei task attraverso auto-assegnazione degli stessi. Concluso questo passaggio, tutti i subtask appartenenti a tutti i task aperti in (2) devono essere stati assegnati ad almento 1 componente del gruppo.
-	9)Per ogni task aperto in (2), una delle persone assegnate ad i relativi subtask, esegue l'applicativo GitWork che creerà (sul repository GitHub del gruppo Leaf) una issue per ogni subtask figlio di un dato task(le issue saranno aperte con label 'toDo').
-	10)[GitHub] Quando un componente inizia effettivamente il lavoro su una issue, cambiarne la label in 'Working', in modo che il responsabile possa conoscere l'avanzamento dei lavori
-	11)[Git] Ogni commit deve riferire la relativa issue, aggiungento nel messaggio di commit #n_issue, dove n_issue è il numero della issue alla quale si riferisce
-	12)[Git] Una volta completato il lavoro richiesto dalla issue, inserire nel messaggio di commit la stringa '£toVerify' in modo che la label della issue #n_issue venga modificata in 'toVerify'
-	13)[GitHub][Verificatori] Le issue con label 'toVerify' vengono prese in carico dai verificatori designati
-	14)[GitHub][Verificatori] Una volta completata la verifica, l'issue viene chiusa e, automaticamente, viene chiuso marcato come "Done" il relativo task Teamwork.
-		
-Norma per label toVerify (Organizzativi)
-	quando un membro del gruppo completa una issue, aggiunge la label "Done" e crea un commento in cui tagga il responsabile
-	(es. @nomeResponsabile). A quel punto il project manager seleziona un verificatore, gli assegna la issue da verificare e mette
-	la label toVerify. Terminata la verifica, il verificatore commenta con l'esito (ok o da sistemare, con l'elenco delle cose da sistemare).
-	Se l'esito è ok, può chiudere la issue. Altrimenti rimette ToDo e lo assegna al membro che doveva completarla.
-
-Norma per ora da rendicontare e non (Organizzativi)
-	rendicontare se:
-		- produco incremento dei documenti
-		- produco linee di codice
-		- verifico documenti
-
-	non rendicontare se:
-		- formazione personale
-		- non produco (es. itero, scrivo ma cancello perché non andava bene)
-
-Norme per il diario delle modifiche (Supporto)
-	Ogni qual volta si esegue un commit, si attiva l'hook:
-		- richiesta se aggiungere la modifica al diario delle modifiche
-			- se no, esegue il commit
-			- se sì, si richiede se aumentare la versione (es. passare da 1.00 a 2.00)
-				- se sì, aumenta da X.YY a (X+1).00
-				- se no, aumenta da X.YY a X.(YY+1)
-				viene aggiunta la modifica al diario_nomeDoc.xml e viene eseguito un secondo commit automatico per aggiungere le modifiche
-		
-Norme da aggiungere dal PQ (vedi issue #129) (Primari o Organizzativi?)
+﻿Norme da aggiungere dal PQ (vedi issue #129) (Primari o Organizzativi?)
 	Metriche per i processi
 		definire norma per la denominazione delle metriche
 	Metriche per i prodotti
@@ -95,9 +52,5 @@ Norme da aggiungere dal PQ (vedi issue #129) (Primari o Organizzativi?)
 			- test che installa e disinstalla l'app?
 
 Norme per la progettazione (Primari)
-
-Norme per l'IDE (Primari)
-	- decidere l'IDE
-	- decidere la versione di riferimento
 
 Appendice per gli errori comuni
