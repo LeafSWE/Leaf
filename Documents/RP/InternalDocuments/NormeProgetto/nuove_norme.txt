@@ -9,6 +9,7 @@
 	Procedure
 		- copertura requisiti obbligatori
 		- copertura requisiti opzionali
+		* [- copertura requisiti desiderabili ?]
 		- numero di passaggi per operazione
 		- function understandability
 		- task completion
@@ -31,13 +32,17 @@
 			software per il tracciamento dei requisiti (tracy?)
 		- numero di passaggi per operazione
 			prove dell'app ed eventuali riadeguamenti e function understandability
+			*[se un passaggio equivale ad un tap, potremmo associare un grafo ad ogni schermata dell'app e calcolare i cammini]
 		- function understandability
+			*[non oggettivamente misurabile. Android developer design?]
 			- linguaggio semplice
+				*[Gulpease]
 			- nomi parlanti
 			- no funzionalità nascoste (es. easter eggs)
 			- aiuti (guida + descrizioni testuali)
 		- task completion
 			- prove sul campo (laboratorio + test di sistema vari)
+			* [non oggettivamente misurabile]
 		- numero di statement per metodo + numero di campi dati per classe + grado di accoppiamento + cyclomatic number + conditional statement + average module size
 			- https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis#Java
 		- adequacy of variable names
@@ -45,12 +50,16 @@
 		- test passati richiesti
 			- esecuzione test e log degli esiti? O semplicemente trascrivo? (tracy?)
 		- failure avoidance
+			* [cos'è una 'situazione anomala?' manca definizione.]
 			- test "anomali"?
 		- breakdown avoidance
 			- failure avoidance + test sul campo con interruzioni
+
 		- numero di installazioni completate
 			- test che installa e disinstalla l'app?
+			* [non misurabile in quanto non abbiamo utenti a disposizione. Inoltre l'installazione di un app mobile non è a carico dell'utente ma del sistema.]
 
 Norme per la progettazione (Primari)
 
 Appendice per gli errori comuni
+* [vedi ProTech & co.]
