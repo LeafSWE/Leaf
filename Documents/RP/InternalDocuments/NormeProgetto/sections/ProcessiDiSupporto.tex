@@ -466,7 +466,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\subparagraph{Commit}
 				L'esecuzione di ogni comando commit deve sottostare alle seguenti norme:
 				\begin{itemize}
-					\item ad ogni commit è necessario specificare un messaggio nel quale si deve dare una descrizione sintetica e più possibile precisa delle modifiche effettuate;
+					\item ad ogni commit è necessario specificare un messaggio nel quale si deve dare una descrizione sintetica e più possibile precisa delle modifiche effettuate. Dove possibile, indicare anche l'identificatore univoco della issue a cui si riferisce il commit;
 					\item le modifiche apportate devono essere complete e testate con successo;
 					\item è vietato l'utilizzo del comando \texttt{git add *} prima di un comando commit per evitare di includere nel repository\g\ file nascosti, temporanei o non voluti;
 					\item è consigliato specificare il riassunto delle modifiche apportate ad ogni commit tramite il comando \texttt{git commit} rispetto al comando \texttt{git commit -m}, dove il messaggio deve essere scritto inline tra virgolette.
@@ -537,7 +537,14 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 					\includegraphics[scale=0.95]{sections/img/proceduraAggiornamentoRepository.png}
 					\caption{Procedura di aggiornamento del repository}\label{fig:Procedura di aggiornamento del repository} 
 				\end{figure}
-			
+			\subparagraph{Esecuzione di un commit}
+				Per facilitare la stesura del diario delle modifiche, sono stati aggiunti al repository degli hook, che permettono di effettuare operazioni prima e/o dopo l'esecuzione di un comando git. La procedura ridefinita per l'esecuzione di un commit viene descritta dal seguente diagramma.
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraCommit.png}
+					\caption{Procedura di commit sul repository}\label{fig:Procedura di commit sul repository} 
+				\end{figure}
+				
 		\paragraph{Strumenti}
 			Lo strumento utilizzato per il versionamento di documenti e file sorgenti è Git\g. Nonostante siano presenti varie alternative, come Mercurial, Subversion e Bazaar, è stato scelto Git\g\ in quanto soddisfa appieno le necessità di versionamento dei file per questo progetto e, inoltre, permette di versionare i file localmente, senza bisogno di una connessione internet attiva. Come servizio di hosting per il repository\g\ è stato scelto, invece, GitHub\g. Entrambe le scelte sono state fatte anche perché più membri del gruppo avevano già avuto la possibilità di lavorare con tali servizi. Lo strumento utilizzato per effettuare richieste di modifica è Notebook\g messo a disposizione da Teamwork\g.
 	
@@ -642,7 +649,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				
 			\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.5, width=\textwidth]{sections/img/verificaIssue.png}
+					\includegraphics[scale=0.5,  width=\textwidth]{sections/img/verificaIssue.png}
 					\caption{Procedura di gestione di una issue già aperta}\label{fig:Procedura di gestione di una issue già aperta} 
 				\end{figure}				
 				
