@@ -21,24 +21,25 @@
 	\logo
 	\newpage
 	%devono essere compilati questi campi ogni volta
-	\begin{tabular}{c|c}
-		{\hfill \textbf{Versione}} 			& 					\\ \\
-		{\hfill\textbf{Data Redazione}} 	&            		\\ \\
-		{\hfill\textbf{Redazione}} 			&  					\\ \\
-		{\hfill\textbf{Verifica}} 			&  					\\ \\
-		{\hfill\textbf{Approvazione}} 		&  					\\ \\
-		{\hfill\textbf{Uso}} 				& 					\\ \\
-		{\hfill\textbf{Distribuzione}} 		& 					\\ \\
-	\end{tabular}
-\end{titlepage}
+		\begin{tabular}{c|c}
+			{\hfill \textbf{Versione}} 			& 					\\ \\
+			{\hfill\textbf{Data Redazione}} 	&            		\\ \\
+			{\hfill\textbf{Redazione}} 			&  					\\ \\
+			{\hfill\textbf{Verifica}} 			&  					\\ \\
+			{\hfill\textbf{Approvazione}} 		&  					\\ \\
+			{\hfill\textbf{Uso}} 				& 					\\ \\
+			{\hfill\textbf{Distribuzione}} 		& 					\\ \\
+		\end{tabular}
+	\end{titlepage}
 	
 	\newpage
-
-	\tableofcontents
-	
+	\pagestyle{myfront}
+	\include{diarioModificheST}
+	\newpage
+		\tableofcontents
+	\newpage
+		\listoffigures	
 	\label{LastFrontPage}
-	
-
 	\newpage
 	
 	\pagestyle{mymain}
