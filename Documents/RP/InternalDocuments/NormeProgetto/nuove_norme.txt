@@ -59,7 +59,5 @@
 			- test che installa e disinstalla l'app?
 			* [non misurabile in quanto non abbiamo utenti a disposizione. Inoltre l'installazione di un app mobile non è a carico dell'utente ma del sistema.]
 
-Norme per la progettazione (Primari)
-
 Appendice per gli errori comuni
 * [vedi ProTech & co.]

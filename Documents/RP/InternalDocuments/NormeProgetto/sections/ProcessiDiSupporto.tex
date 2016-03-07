@@ -420,6 +420,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 					
 \subsection{Qualità}
 	\subsubsection{Metriche}
+		\paragraph{Classificazione delle metriche}
 					Per garantire la qualità del lavoro del team, gli \amministratori\ hanno definito delle metriche, riportandole nel \pianodiqualifica , che devono rispettare la seguente notazione: \begin{center}\textbf{M[X][Y][Z]}\end{center} dove:
 			\begin{itemize}
 				\item \textbf{X} indica se la metrica si riferisce a prodotti o processi, può assumere i valori:
@@ -432,7 +433,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 						\item \textbf{D} per i documenti;
 						\item \textbf{S} per il software.
 					\end{itemize}
-				\item \textbf{Z} indica il codice univoco della metrica.
+				\item \textbf{Z} indica il codice univoco della metrica (numero intero a partire da 1).
 			\end{itemize}
 			Riassumendo, le possibiltà per le denominazione di una metrica sono le seguenti:
 			\begin{itemize}
@@ -440,7 +441,33 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\item MPRD[Z];
 				\item MPRS[Z].
 			\end{itemize}
-
+		\paragraph{Procedure}
+			Definire le procedure per le metriche 
+		\paragraph{Strumenti}
+			\subparagraph{Cyclomatic number}
+				Per il calcolo della complessità ciclomatica il team ha individuato il plugin SonarQube per Android Studio.
+	\subsubsection{Obiettivi}
+		\paragraph{Classificazione degli obiettivi}
+			Per garantire la qualità del lavoro del team, gli \amministratori\ hanno definito degli obiettivi di qualità, riportandole nel \pianodiqualifica , che devono rispettare la seguente notazione: \begin{center}\textbf{OQ[X][Y][Z]}\end{center} dove:
+			\begin{itemize}
+				\item \textbf{X} indica se la metrica si riferisce a prodotti o processi, può assumere i valori:
+				\begin{itemize}
+					\item \textbf{PC} per indicare i processi;
+					\item \textbf{PR} per i prodotti.
+				\end{itemize}
+				\item \textbf{Y} (opzionale) indica se il termine prodotto si riferisce a documenti o al software e può assumere i seguenti valori:
+					\begin{itemize}
+						\item \textbf{D} per i documenti;
+						\item \textbf{S} per il software.
+					\end{itemize}
+				\item \textbf{Z} indica il codice univoco della metrica (numero intero a partire da 1).
+			\end{itemize}
+			Riassumendo, le possibiltà per le denominazione di una metrica sono le seguenti:
+			\begin{itemize}
+				\item OQPC[Z];
+				\item OQPRD[Z];
+				\item OQPRS[Z].
+			\end{itemize}
 \subsection{Configurazione}
 	\subsubsection{Controllo di versione}
 		Il controllo di versione di documenti e file sorgente viene fatto utilizzando il software\g\ Git\g\ e la piattaforma GitHub\g. Ad ogni modifica sostanziale ad un documento o ad un file sorgente impone che a quest'ultimo venga assegnato nuovo numero di versione. \\ Per quanto riguarda le norme di versionamento dei file inerenti alla documentazione si rimanda alla sezione \hyperref[sec:Versionamento dei documenti]{Versionamento dei documenti} del presente documento.
@@ -642,7 +669,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 	\subparagraph{Gestione di una issue}
 		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura di gestione di una issue si divide in due casi: verifica di una issue già aperta o verifica generica.Nel caso di verifica di una issue già aperta:
 			\begin{enumerate}
-				\item il \verificatore\ che ha riscontrato delle anomalie dovrà segnalarlo commentando la issue che ha verificato e modificando la label da "toVerify" a "ToDo". Nel caso in cui non vengano riscontrare anomalie, può chiudere l'issue;
+				\item il \verificatore\ che ha riscontrato delle anomalie dovrà segnalarlo commentando la issue che ha verificato e modificando la label da "toVerify" a "ToDo". Nel caso in cui non vengano riscontrare anomalie, può chiudere l'issue aggiungendo al messaggio di commit la stringa "close \texttt{\#numeroIssue}";
 				\item l'assegnatario della issue dovrà provvedere ad apportare le modifiche rilevate dal \verificatore\, nel caso le ritenesse necessarie;
 				\item il \verificatore\ dovrà procedere ad una nuova verifica, ritornando al punto 1.
 			\end{enumerate}

@@ -161,6 +161,14 @@
 				\item ciascun membro dovrà assicurare l'esclusivo svolgimento del ruolo a lui assegnato.
 			\end{itemize}				
 	\subsubsection{Ticketing}
+		\paragraph{Task list}
+			Il \pianodiprogetto prevede la divisione del modello di sviluppo in fasi. L'insieme di attività da svolgere in una certa fase è contenuto in una task list. Il \responsabilediprogetto\ deve, per ogni fase del modello, creare la relativa task list su Teamwork. Per ogni task list, valgono le seguenti regole:
+			\begin{itemize}
+				\item può essere creata solamente dal \responsabilediprogetto;
+				\item deve avere lo stesso nome della fase alla quale si riferisce.
+			\end{itemize}
+			
+		\paragraph{Ticket}
 			I ticket\g\ rappresentano l'associazione tra un membro del gruppo ed una attività. Lo strumento scelto per la loro creazione e gestione è Teamwork\g (vedi sezione \hyperref[sec: Pianificazione Teamwork]{Pianificazione}). Per ogni ticket\g\ valgono le seguenti norme:
 			\begin{itemize}
 				\item possono essere creati solamente dal \responsabilediprogetto;
@@ -171,13 +179,15 @@
 
 		\subsubsection{Procedure}
 			\paragraph{Procedura di creazione e gestione di un ticket}
-				Per la creazione di un nuovo ticket\g\ il \responsabilediprogetto, deve accedere a Teamwork\g\ ed entrare nella sezione Tasks. Ogni task sarà associato ad una Task List, per cui nel caso non fosse presente dovrà essere creata. La procedura per la creazione di un task è la seguente:
+				Per la creazione di un nuovo ticket\g\ il \responsabilediprogetto deve accedere alla sezione Tasks di Teamwork\g. La procedura per la creazione di un task è la seguente:
 				\begin{enumerate}
-					\item il \responsabilediprogetto\ crea un nuovo task;
-					\item nel caso in cui il task fosse fuori dalla portata di un singolo membro del gruppo, può suddividerlo il sotto-task, se ha le conoscenze per farlo;
+					\item accedere alla task list relativa alla fase nella quale si desidera che l'attività sia svolta;
+					\item creare un nuovo task;
+					\item se il task viene reputato troppo corposo per essere portato a termine da una singola persona, il \responsabilediprogetto\ può suddividerlo in sotto-task;
 					\item i task e i sotto-task vengono assegnati ai membri del gruppo;
-					\item l'assegnatario del task può a sua volta suddividerlo in sotto-task per organizzare meglio l'attività, assegnandoli a se stesso e dotandoli di titolo e descrizione esplicativa, inserendovi le azioni per portare a termine il task sotto forma di checklist, in cui ogni azione corrisponde ad una checkbox \texttt{- [ ]}.
+					\item l'assegnatario può aggiungere sotto-task al task assegnatogli. 
 				\end{enumerate}
+				Ogni sub-task deve essere dotato di titolo e descrizione esplicativa. Per partizionare ulteriormente un sub-task, inserire ogni partizione sotto forma di item di checklist, in cui ogni item corrisponde ad una checkbox \begin{center}\texttt{- [ ] descrizioneItem}.\end{center}
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale=0.55]{sections/img/creazioneTask.png}
@@ -185,10 +195,10 @@
 				\end{figure}
 			Una volta creato il ticket su Teamwork, i passi da seguire sono i seguenti			
 				\begin{enumerate}
-					\item per ogni task aperto aperto al punto 1, l'assegnatario del task esegue lo script \textit{GitWork.java} che creerà, sul repository del gruppo \leaf\ una issue per ogni subtask del task selezionato, con la label ToDo;
-					\item quando il membro del gruppo inizierà effettivamente a lavorare sulla issue, modificherà la label da ToDo a Working;
-					\item ogni commit eseguito dovrà riferirsi ad una delle issue presenti sul repository, mediante \texttt{\#numeroIssue} all'interno del messaggio di commit. Inoltre, sarà necessario spuntare la relativa checkbox per indicare l'avanzamento del proprio lavoro;
-					\item completato il lavoro, inserire nel messaggio di commit la stringa \texttt{£toVerify} in modo che la label della issue venga modificata da ToDo a toVerify.
+					\item per ogni task aperto nella lista precedente, l'assegnatario del task esegue l'applicativo \textit{GitWork.jar} che crea, sul repository del gruppo \leaf\, una issue per ogni subtask del task selezionato con la label ToDo;
+					\item quando il membro del gruppo inizia a lavorare sulla issue, modificha la label da ToDo a Working;
+					\item ogni commit eseguito deve riferirsi ad una delle issue presenti sul repository mediante \texttt{\#numeroIssue} all'interno del messaggio di commit. Inoltre, è necessario spuntare la relativa checkbox, se presente, per indicare l'avanzamento del proprio lavoro;
+					\item completato il lavoro richiesto dalla issue, inserire nel messaggio di commit la stringa \texttt{£toVerify}, in modo che la label della issue venga modificata da ToDo a toVerify.
 				\end{enumerate}
 			A questo punto, è possibile verificare la issue e, di conseguenza, il ticket.
 				\begin{figure}[H]
@@ -224,9 +234,9 @@
 					\item generazione dei diagrammi nei formati PDF\g, PNG\g, HTML\g.
 				\end{itemize}
 	\subsection{Formazione}
-		\subsection{Formazione dei membri del gruppo}
+		\subsubsection{Formazione dei membri del gruppo}
 			Per poter svolgere il progetto didattico, i singoli membri del gruppo necessitano periodicamente di tempo dedicato alla formazione nei vari ambiti che il progetto copre. Chiaramente, non tutte le ore potranno essere a carico del proponente.
-			\subsubsection{Ore rendicontabili e di investimento}
+			\paragraph{Ore rendicontabili e di investimento}
 				Per distinguere se le ore svolte sono a carico del proponente (\textbf{rendicontabili}) o per formazione personale (\textbf{di investimento}), si può ricorrere al seguente diagramma delle attività.
 			\begin{figure}[H]
 					\centering
