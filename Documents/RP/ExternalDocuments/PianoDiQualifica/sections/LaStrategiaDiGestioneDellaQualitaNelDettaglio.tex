@@ -33,43 +33,7 @@ che permettono di eseguire controlli sui documenti e verificare che essi aderisc
 				Le risorse software\g\ disponibili comprendono editor \LaTeX\g\ con controlli integrati e script per controllare la leggibilità e la complessità dei documenti in riferimento all'indice Gulpease\g.\\
 				Sarà disponibile anche il sistema di sollevamento delle issue\g\ offerto dalla piattaforma GitHub\g. Per maggiori informazioni sulla procedura di sollevamento e gestione delle issue\g\ 
 si veda il documento \normediprogettov.
-		\subsection{Tecniche di controllo della qualità}
-			\subsubsection{Tecniche di controllo della qualità di processo}
-			Il gruppo intende misurare con continuità le caratteristiche di qualità dei vari processi al fine di apportare miglioramenti in modo sistematico. Per mettere in atto ciò:
-			\begin{itemize}
-				\item Ci si basa innanzitutto sul modello CMM\g, quindi sui concetti di "capability" e "maturity" (vedi appendice \ref{appCMM} "Capability Maturity Model").
-				\item Grazie all'uso del modello CMM\g\ è possibile calcolare il livello di maturità di un processo\g\ per confrontare le performance dello stesso in momenti differenti: in questo modo si possono evidenziare eventuali miglioramenti raggiunti (secondo quanto descritto nel presente documento alla sezione \ref{sec3.3} "Misure e metriche").
-				\item Per misurare la qualità di un processo\g\ può essere utile verificare quella del suo prodotto\g: se essa è scarsa, ciò implica che probabilmente anche il processo\g\ 
-dal quale deriva non è per nulla di qualità.
-				\item Per ottenere un miglioramento continuo dei processi si utilizza il modello del miglioramento continuo PDCA\g.
-			\end{itemize}
-			\subsubsection{Tecniche di controllo della qualità di prodotto}
-				\paragraph{Verifica}
-				 Quando si effettuano delle verifiche si usano tanto tecniche di analisi statica quanto di analisi dinamica. L'analisi statica può essere applicata sia alla documentazione che al software\g, mentre l'analisi dinamica solamente al software\g. Il gruppo ha deciso di adottare le tecniche di controllo della qualità descritte in seguito.
-				 \subparagraph{Analisi statica}
-					\begin{description}
-						\item[Inspection] Questa tecnica di analisi presuppone l'esperienza da parte del verificatore nell'individuare gli errori e le anomalie più frequenti. A tal scopo, quando il gruppo riterrà di avere l'esperienza necessaria verrà stilata una lista di controllo nella quale saranno elencati gli errori comuni. Questo ci consentirà una verifica più rapida, impegnando meno risorse umane.
-						\item[Walkthrough] Questa tecnica di analisi prevede una lettura critica del codice o del documento prodotto\g. Tale tecnica è molto dispendiosa in termini di risorse, poiché viene applicata all'intero documento senza avere una precisa idea di quale sia il tipo di anomalia\g\ e di dove ricercarla.
-					\end{description}
-					\subparagraph{Analisi dinamica}
-					\begin{description}
-						\item [Test di unità] Consiste nel verificare ogni singola unità del prodotto software\g, ovvero sia la più piccola parte di software\g\ che conviene testare da sola, attraverso l'utilizzo di strumenti come logger\g, stub\g\ o driver\g. Data la sua natura, la dimensione dell'unità da testare verrà definita al momento del test. Lo scopo dello unit testing\g\ è di verificare il corretto funzionamento di un'unità per permettere una precoce individuazione dei bug\g. Uno unit testing\g\ 
-accurato produce vari vantaggi, ad esempio:
-						\begin{itemize}
-							\item semplifica le modifiche;
-							\item semplifica l'integrazione;
-							\item supporta la documentazione.
-						\end{itemize}
-						\item[Test di integrazione] Consiste nella verifica dei componenti del sistema che sono formati dalla combinazione di più unità. Ha lo scopo di evidenziare gli eventuali errori residui non individuati durante la realizzazione dei singoli moduli.
-						\item[Test di sistema] Consiste nell'eseguire nuovamente i test di unità e integrazione per le componenti che hanno subito modifiche o per le nuove funzionalità. Lo scopo è verificare di avere un prodotto\g\ di alta qualità per ogni nuova funzionalità o modifica importante e di soddisfare tutti i requisiti software\g\ previsti.
-						\item[Test di accettazione] È il collaudo del prodotto software\g\ che viene eseguito in presenza del proponente a dimostrazione del fatto che il prodotto 
-software\g\ 
-soddisfa tutti i requisiti utente. Se tale collaudo viene superato positivamente si può procedere al rilascio ufficiale del prodotto sviluppato. 
-					\end{description}
-				\paragraph{Validazione}
-				La validazione avviene nel momento in cui il prodotto\g\ ha superato i test di verifica ed è pronto al suo rilascio. Il prodotto\g\ 
-dopo aver superato la validazione ci conferma che è conforme alle aspettative e soddisfa tutti i requisiti, di conseguenza è pronto per essere rilasciato.
-		\subsection{Misure e metriche}\label{sec3.3}
+		\subsection{Misure e metriche}\label{MisureMetriche}
 			\subsubsection{Misure}
 			Ogni volta che viene effettuata una misura sui processi o sui prodotti essa va rapportata in una scala. Di seguito vengono riportati i valori della scala:
 			\begin{description}
