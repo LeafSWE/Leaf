@@ -3,14 +3,16 @@
 
 <entry><version>0.01</version><author>Davide Castello</author><role>Analista</role><message>Stesura struttura documento</message><date>2015-12-07</date></entry>
 
-<entry><version>0.02</version><author>Cristian Andrighetto</author><role>Analista</role><message>Stesura studio di fattibilità del capitolato C2</message><date>2015-12-08</date></entry>
+<entry><version>0.02</version><author>Cristian Andrighetto</author><role>Analista</role><message>Stesura studio di fattibilit&#xE0; del capitolato C2</message><date>2015-12-08</date></entry>
 
-<entry><version>0.03</version><author>Davide Castello</author><role>Analista</role><message>Stesura studio di fattibilità degli altri capitolati</message><date>2015-12-09</date></entry>
+<entry><version>0.03</version><author>Davide Castello</author><role>Analista</role><message>Stesura studio di fattibilit&#xE0; degli altri capitolati</message><date>2015-12-09</date></entry>
 
 <entry><version>0.04</version><author>Cristian Andrighetto</author><role>Analista</role><message>Stesura introduzione, conclusione e correzione errori</message><date>2015-12-10</date></entry>
 
-<entry><version>0.05</version><author>Marco Zanella</author><role>Verificatore</role><message>Verifica dello studio di fattibilità</message><date>2015-12-11</date></entry>
+<entry><version>0.05</version><author>Marco Zanella</author><role>Verificatore</role><message>Verifica dello studio di fattibilit&#xE0;</message><date>2015-12-11</date></entry>
 
 <entry><version>1.00</version><author>Federico Tavella</author><role>Responsabile di progetto</role><message>Approvazione del documento</message><date>2015-12-12</date></entry>
 
+
+<entry><version>1.01</version><author>Oscar Elia Conti</author><role>Responsabile di progetto</role><message>Creato diario XML per SF</message><date>2016-03-09</date></entry>
 </registry>
