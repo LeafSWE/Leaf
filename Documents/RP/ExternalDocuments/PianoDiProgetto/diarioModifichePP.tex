@@ -1,71 +1,75 @@
 
-% Da AGGIUNGERE NEL PACCHETTO leaf
-\newcolumntype{V}{>{\hsize=0.40\hsize}X[cm]}
-
+\newcolumntype{V}{>{\hsize=.40\hsize}X[cm]}
 	\section*{Diario delle modifiche}
-	
-\begin{longtabu} to \textwidth {V X[c m 0.8cm] X[c m 0.7cm] X[c m 0.8cm] X[cm]}
+\begin{longtabu} to \textwidth {V X[c m 0.8cm] X[c m 0.6cm] X[c m 0.8cm] X[cm]}
 	\toprule
-	\textbf{Versione} & \textbf{Data}  & \textbf{Autore} & \textbf{Ruolo} & \textbf{Descrizione} \\
+	\textbf{Versione} & \textbf{Data}  & \textbf{Autore} & \textbf{Ruolo} & \textbf{Descrizione}\\
 	\midrule
 	\endhead
-	%aggiungere il comando \midrule dopo ogni riga
 	\arrayrulecolor{gray}
-	2.01 & 2016-03-01 & Marco Zanella & Responsabile di progetto & Aggiunta analisi dei rischi per la fase di progettazione architetturale\\
-	\midrule	
-	2.00 & 2016-02-19 & Cristian Andrighetto & Responsabile di progetto & Approvazione del documento\\
-	\midrule
-	1.06 & 2016-02-19 & Marco Zanella & Verificatore & Verifica del documento\\
-	\midrule
-	1.06 & 2016-02-18 & Cristian Andrighetto & Responsabile di progetto & Incremento Analisi dei Rischi - "Possibili Conseguenze" e "Riscontro Effettivo" - Periodo "Analisi di Dettaglio" per i rischi da 3.1.1 a 3.5.1\\
-	\midrule
-	1.05 & 2016-02-18 & Cristian Andrighetto & Responsabile di progetto & Riformulazione forma della parte introduttiva dell' "Analisi dei rischi", aggiunti riferimenti ipertestuali ad ogni rischio nel registro dei rischi\\
-	\midrule
-	1.04 & 2016-02-17 & Cristian Andrighetto & Responsabile di progetto & Corretta sezione "Analisi dei rischi", aggiunte tabelle analisi per fase e tabelle riscontro effettivo per fase \\
-	\midrule	
-	1.03 & 2016-02-16 & Cristian Andrighetto & Responsabile di progetto & Correzione delle date di consegna nella sezione "Pianificazione" \\
-	\midrule
-	1.02 & 2016-02-16 & Cristian Andrighetto & Responsabile di progetto & Aggiunta esplicitazione della RP in cui si intende consegnare nella sezione "Scadenze" \\
-	\midrule
-	1.01 & 2016-02-16 & Cristian Andrighetto & Responsabile di progetto & Sostituzione termine "Ciclo di sviluppo" con "Modello di sviluppo" nella sezione "Modello di sviluppo" \\
-	\midrule
-	1.00 & 2016-01-20 & Federico Tavella & Responsabile di Progetto & Approvazione del documento \\
-	\midrule
-	0.19 & 2016-01-20 & Davide Castello & Verificatore & Verifica consuntivo \\
-	\midrule
-	0.18 & 2016-01-19 & Federico Tavella & Responsabile di Progetto & Stesura consuntivo \\
-	\midrule	
-	0.17 & 2016-01-10 & Eduard Bicego & Responsabile di Progetto & Inserimento Bar Chart e Pie Chart in Preventivo \\	
-	\midrule
-	0.16 & 2016-01-09 & Eduard Bicego & Responsabile di Progetto & Impaginazione generale documento migliorata \\	
-	\midrule
-	0.15 & 2016-01-07 & Federico Tavella & Responsabile di Progetto & Correzione diagrammi di Gantt nella Pianificazione \\
-	\midrule
-	0.14 & 2016-01-06 & Davide Castello & Verificatore & Verifica intero documento \\
-	\midrule
-	0.13 & 2016-01-03 & Andrea Tombolato & Responsabile di Progetto & Aggiunta sezione Meccanismi di controllo e rendicontazione \\
-	\midrule
-	0.12 & 2016-01-02 & Andrea Tombolato & Responsabile di Progetto & Fine stesura preventivo \\
-	\midrule
-	0.11 & 2015-12-28 & Andrea Tombolato & Responsabile di Progetto & Inizio stesura preventivo \\
-	\midrule
-	0.09 & 2015-12-27 & Federico Tavella & Responsabile di Progetto & Aggiunti diagrammi di Gantt mancanti nella Pianificazione \\
-	\midrule
-	0.08 & 2015-12-23 & Federico Tavella & Responsabile di Progetto & Stesura Pianificazione fase PDRD, PDROP, V  \\
-	\midrule
-	0.07 & 2015-12-20 & Federico Tavella & Responsabile di Progetto & Stesura Pianificazione fase PA, PDROB e aggiunti diagrammi di Gantt fase A, AD, PA e PDROB\\
-	\midrule
-	0.06 & 2015-12-16 & Federico Tavella & Responsabile di Progetto & Stesura Pianificazione fase A, AD \\
-	\midrule
-	0.05 & 2015-12-14 & Federico Tavella & Responsabile di Progetto & Inizio stesura sezione Pianificazione \\
-	\midrule
-	0.04 & 2015-12-11 & Federico Tavella & Responsabile di Progetto & Stesura sezione Analisi dei rischi \\
-	\midrule
-	0.03 & 2015-12-11 & Andrea Tombolato & Responsabile di Progetto & Stesura sezione Ciclo di sviluppo \\
-	\midrule
-	0.02 & 2015-12-10 & Andrea Tombolato & Responsabile di Progetto & Stesura sezione introduttiva del documento e Organigramma\\
-	\midrule
-	0.01 & 2015-12-09 & Andrea Tombolato & Responsabile di Progetto & Stesura struttura documento \\
-	\arrayrulecolor{black}
+
+2.02 & 2016-03-09 & Oscar Elia Conti & Amministratore & Creato diario XML per PP \\ 
+\midrule
+2.01 & 2016-03-01 & Marco Zanella & Responsabile di Progetto & Aggiunta analisi dei rischi per la fase di progettazione architetturale \\ 
+\midrule
+2.00 & 2016-02-19 & Cristian Andrighetto & Responsabile di Progetto & Approvazione del documento \\ 
+\midrule
+1.07 & 2016-02-19 & Marco Zanella & Verificatore & Verifica del documento \\ 
+\midrule
+1.06 & 2016-02-18 & Cristian Andrighetto & Responsabile di Progetto & Incremento Analisi dei Rischi - "Possibili Conseguenze" e "Riscontro Effettivo" - Periodo "Analisi di Dettaglio" per i rischi da 3.1.1 a 3.5.1 \\ 
+\midrule
+1.05 & 2016-02-18 & Cristian Andrighetto & Responsabile di Progetto & Riformulazione forma della parte introduttiva dell' "Analisi dei rischi", aggiunti riferimenti ipertestuali ad ogni rischio nel registro dei rischi \\ 
+\midrule
+1.04 & 2016-02-17 & Cristian Andrighetto & Responsabile di Progetto & Corretta sezione "Analisi dei rischi", aggiunte tabelle analisi per fase e tabelle riscontro effettivo per fase \\ 
+\midrule
+1.03 & 2016-02-16 & Cristian Andrighetto & Responsabile di Progetto & Correzione delle date di consegna nella sezione "Pianificazione" \\ 
+\midrule
+1.02 & 2016-02-16 & Cristian Andrighetto & Responsabile di Progetto & Aggiunta esplicitazione della RP in cui si intende consegnare nella sezione "Scadenze" \\ 
+\midrule
+1.02 & 2016-02-16 & Cristian Andrighetto & Responsabile di Progetto & Aggiunta esplicitazione della RP in cui si intende consegnare nella sezione "Scadenze" \\ 
+\midrule
+1.01 & 2016-02-16 & Cristian Andrighetto & Responsabile di Progetto & Sostituzione termine "Ciclo di sviluppo" con "Modello di sviluppo" nella sezione "Modello di sviluppo" \\ 
+\midrule
+1.00 & 2016-01-20 & Federico Tavella & Responsabile di Progetto & Approvazione del documento \\ 
+\midrule
+0.19 & 2016-01-20 & Davide Castello & Verificatore & Verifica consuntivo \\ 
+\midrule
+0.18 & 2016-01-19 & Federico Tavella & Responsabile di Progetto & Stesura consuntivo \\ 
+\midrule
+0.17 & 2016-01-10 & Eduard Bicego & Responsabile di Progetto & Inserimento Bar Chart e Pie Chart in Preventivo \\ 
+\midrule
+0.16 & 2016-01-09 & Eduard Bicego & Responsabile di Progetto & Impaginazione generale documento migliorata \\ 
+\midrule
+0.15 & 2016-01-07 & Federico Tavella & Responsabile di Progetto & Correzione diagrammi di Gantt nella Pianificazione \\ 
+\midrule
+0.14 & 2016-01-06 & Davide Castello & Verificatore & Verifica intero documento \\ 
+\midrule
+0.13 & 2016-01-03 & Andrea Tombolato & Responsabile di Progetto & Aggiunta sezione Meccanismi di controllo e rendicontazione \\ 
+\midrule
+0.12 & 2016-01-02 & Andrea Tombolato & Responsabile di Progetto & Fine stesura preventivo \\ 
+\midrule
+0.12 & 2016-01-02 & Andrea Tombolato & Responsabile di Progetto & Fine stesura preventivo \\ 
+\midrule
+0.11 & 2015-12-28 & Andrea Tombolato & Responsabile di Progetto & Inizio stesura preventivo \\ 
+\midrule
+0.09 & 2015-12-27 & Federico Tavella & Responsabile di Progetto & Aggiunti diagrammi di Gantt mancanti nella Pianificazione \\ 
+\midrule
+0.08 & 2015-12-23 & Federico Tavella & Responsabile di Progetto & Stesura Pianificazione fase PDRD, PDROP, V \\ 
+\midrule
+0.07 & 2015-12-20 & Federico Tavella & Responsabile di Progetto & Stesura Pianificazione fase PA, PDROB e aggiunti diagrammi di Gantt fase A, AD, PA e PDROB \\ 
+\midrule
+0.06 & 2015-12-16 & Federico Tavella & Responsabile di Progetto & Stesura Pianificazione fase A, AD \\ 
+\midrule
+0.05 & 2015-12-11 & Federico Tavella & Responsabile di Progetto & Inizio stesura sezione Pianificazione \\ 
+\midrule
+0.04 & 2015-12-11 & Federico Tavella & Responsabile di Progetto & Stesura sezione Analisi dei rischi  \\ 
+\midrule
+0.03 & 2015-12-11 & Andrea Tombolato & Responsabile di Progetto & Stesura sezione Ciclo di sviluppo  \\ 
+\midrule
+0.02 & 2015-12-10 & Andrea Tombolato & Responsabile di Progetto & Stesura sezione introduttiva del documento e Organigramma \\ 
+\midrule
+0.01 & 2015-12-09 & Andrea Tombolato & Responsabile di Progetto & Stesura struttura documento \\ 
+
+\arrayrulecolor{black}
 	\bottomrule
 \end{longtabu}
