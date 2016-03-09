@@ -87,6 +87,10 @@ le relazioni tra essi</message><date>2016-02-16</date></entry>
 
 <entry><version>1.21</version><author>Andrea Tombolato</author><role>Analista</role><message>In UC1.1.4 aggiunti esempi di categorie di POI</message><date>2016-02-21</date></entry>
 
+<entry><version>1.22</version><author>Eduard Bicego</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-02-27</date></entry>
+
+<entry><version>1.23</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-02-27</date></entry>
+
 <entry><version>2.00</version><author>Cristian Andrighetto</author><role>Responsabile di Progetto</role><message>Approvazione del documento</message><date>2016-02-22</date></entry>
 
 <entry><version>2.01</version><author>Cristian Andrighetto</author><role>Analista</role><message>Rimodellazione UC3-1 e discendenti</message><date>2016-03-02</date></entry>
