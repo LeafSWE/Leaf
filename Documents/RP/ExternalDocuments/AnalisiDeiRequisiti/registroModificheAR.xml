@@ -109,4 +109,6 @@ le relazioni tra essi</message><date>2016-02-16</date></entry>
 
 <entry><version>2.08</version><author>Eduard Bicego</author><role>Analista</role><message>Corretta tabella contenente associazioni tra UC e Requisiti; aggiunto ROpzF7.4.2.6 e corretto RObbF12</message><date>2016-03-05</date></entry>
 
+
+<entry><version>2.09</version><author>Oscar Elia Conti</author><role>Amministratore</role><message>Aggiunte voci verifica AR</message><date>2016-03-09</date></entry>
 </registry>
