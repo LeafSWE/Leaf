@@ -44,7 +44,14 @@
 					Elenco svantaggi.
 	\subsection{Design pattern creazionali}
 		\subsubsection{Singleton}
-		
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[scale=0.5]{pattern/singleton}
+				\caption{Struttura del pattern Singleton}
+				\label{fig:Struttura_Observer}
+			\end{figure}
+			
+			Lo scopo del pattern Singleton è assicurare l'esistenza di un'unica istanza di una classe fornire un punto di accesso globale ad essa. Questo pattern è nate per rispondere alla necessità di non avere più istanza della stessa glasse, pur dando la possibilità alla classe di tener traccia di quella sua istanza. Il pattern Singleton è applicabile ogni volta in cui debba esistere una sola istanza di una determinata classe in tutta l'applicazione, prestando attenzione al fatto che l'istanza sia estendibile tramite ereditarietà.
 			\paragraph{Vantaggi}
 				Elenco vantaggi.
 			\paragraph{Svantaggi}
@@ -66,10 +73,10 @@
 		\subsubsection{Observer}
 			\begin{figure}[!h]
 				\centering
-				\includegraphics[scale=0.6]{pattern/observer}
+				\includegraphics[scale=0.7]{pattern/observer}
 				\caption{Struttura del pattern Observer}
 				\label{fig:Struttura_Observer}
-				\end{figure}
+			\end{figure}
 			Observer è un pattern comportamentale il cui scopo è quello di tenere sotto controllo lo stato di diversi oggetti legati ad un soggetto (detta anche \textbf{dipendenza uno a molti}). Il paradigma su cui si basa corrisponde al modello \textbf{Publisher and Subscribe}: i sottoscrittori si registrano presso un pubblicatore e quest'ultimo li informa ogni volta che ci sono nuove notizie. Il pattern è composto da:
 				\begin{itemize}
 					\item una classe astratta \textbf{Subject} da cui eredita il soggetto concreto, che mantiene una lista di riferimenti agli oggetti dipendenti per poterli avvisare;
