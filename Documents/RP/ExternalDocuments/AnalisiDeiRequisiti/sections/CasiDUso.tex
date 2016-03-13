@@ -9,10 +9,11 @@
     \includegraphics[scale=0.60]{img/diagramma_attori.png}
     \caption{Attori e relazioni tra essi}\label{fig:attori} 
 \end{figure}
+
 \hypertarget{UCG}{}
 \subsection{Caso d'uso UCG: Utilizzo generale del prototipo}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UCG.png}
             \caption{Caso d'uso UCG: Utilizzo generale del prototipo}\label{fig:UCG} 
@@ -25,56 +26,50 @@
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item L'utente può accedere alla navigazione (\hyperlink{UC1}{UC1});
-          \item L'utente può accedere alle informazioni relative all'intero edificio o a singolo POI dell'edificio (\hyperlink{UC2}{UC2});
+          \item L'utente può accedere alle informazioni relative all'intero edificio o ai singoli POI dell'edificio (\hyperlink{UC2}{UC2});
           \item L'utente può accedere alla gestione dell'applicazione (\hyperlink{UC3}{UC3});
-          \item L'utente non sviluppatore può accedere alla sezione per lo sblocco delle finzionalità di sviluppatore (\hyperlink{UC4}{UC4});
+          \item L'utente non sviluppatore può accedere alla sezione per lo sblocco delle funzionalità di sviluppatore (\hyperlink{UC4}{UC4});
           \item L'utente può accedere alla guida (\hyperlink{UC5}{UC5});
           \item Lo sviluppatore può accedere alle funzionalità avanzate (\hyperlink{UC6}{UC6});
 
       \end{enumerate}
-    \item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente;
-    \item \textbf{Scenari alternativi}:
-      	\begin{itemize}
-      			\item Nel caso in cui l'utente voglia accedere alla navigazione e non abbia attiva una connessione Internet:
-      			\begin{enumerate}
-      				\item Viene presentato un errore esplicativo a riguardo (\hyperlink{UC7}{UC7});
-      			\end{enumerate}
-      			
-    			\item Nel caso in cui l'utente voglia accedere alla navigazione di un edificio la cui mappa non risulti aggiornata nel dispositivo:
-    			\begin{enumerate}
-    				\item Viene presentato un errore esplicativo (\hyperlink{UC8}{UC8});
-            		\item Viene data la possibilità all'utente di aggiornare la mappa dell'edificio (\hyperlink{UC3.1.1.2}{UC3.1.1.2}).
-    			\end{enumerate}
-    			
-    			\item Nel caso in cui l'utente voglia accedere alla navigazione di un edificio la cui mappa non risulti presente nel dispositivo:
-    			\begin{enumerate}
-    				\item Viene presentato un errore esplicativo (\hyperlink{UC9}{UC9});
-            		\item Viene data la possibilità all'utente di scaricare la mappa dell'edificio (\hyperlink{UC3.1.2.2}{UC3.1.2.2}).
-    			\end{enumerate}
-    			
-    			\item Nel caso in cui l'utente voglia accedere alle informazioni di un edificio e non abbia attiva una connessione Internet:
-      			\begin{enumerate}
-      				\item Viene presentato un errore esplicativo a riguardo (\hyperlink{UC7}{UC7});
-      			\end{enumerate}
-    			
-          		\item Nel caso in cui l'utente voglia accedere alle informazioni di un edificio la cui mappa non risulti aggiornata nel dispositivo:
-          \begin{enumerate}
-            \item Viene presentato un errore esplicativo (\hyperlink{UC8}{UC8});
-            \item Viene data la possibilità all'utente di aggiornare la mappa dell'edificio (\hyperlink{UC3.1.1.2}{UC3.1.1.2}).
-          \end{enumerate}
-          
-          		\item Nel caso in cui l'utente voglia accedere alle informazioni di un edificio la cui mappa non risulti presente nel dispositivo:
-    			\begin{enumerate}
-    				\item Viene presentato un errore esplicativo (\hyperlink{UC9}{UC9});
-            		\item Viene data la possibilità all'utente di aggiornare la mappa dell'edificio (\hyperlink{UC3.1.2.2}{UC3.1.2.2}).
-    			\end{enumerate}
-      	\end{itemize}
+    \item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente.
+     \item \textbf{Scenari alternativi}: 
+      \begin{itemize}
+       \item Nel caso in cui l'utente voglia accedere alla navigazione e non abbia attiva una connessione Internet: 
+       \begin{enumerate}
+          \item Viene presentato un errore esplicativo a riguardo (\hyperlink{UC7}{UC7});
+       \end{enumerate}
+       \item Nel caso in cui l'utente voglia accedere alla navigazione di un edificio la cui mappa non risulti aggiornata nel dispositivo: 
+       \begin{enumerate}
+          \item Viene presentato un errore esplicativo (\hyperlink{UC8}{UC8});
+          \item Viene data la possibilità all'utente di aggiornare la mappa dell'edificio (\hyperlink{UC3.1.1.2}{UC3.1.1.2});
+       \end{enumerate}
+       \item Nel caso in cui l'utente voglia accedere alla navigazione di un edificio la cui mappa non risulti presente nel dispositivo: 
+       \begin{enumerate}
+          \item Viene presentato un errore esplicativo (\hyperlink{UC9}{UC9});
+          \item Viene data la possibilità all'utente di scaricare la mappa dell'edificio (\hyperlink{UC3.1.2.2}{UC3.1.2.2});
+       \end{enumerate}
+       \item Nel caso in cui l'utente voglia accedere alle informazioni di un edificio e non abbia attiva una connessione Internet: 
+       \begin{enumerate}
+          \item Viene presentato un errore esplicativo a riguardo (\hyperlink{UC7}{UC7});
+       \end{enumerate}
+       \item Nel caso in cui l'utente voglia accedere alle informazioni di un edificio la cui mappa non risulti aggiornata nel dispositivo: 
+       \begin{enumerate}
+          \item Viene presentato un errore esplicativo (\hyperlink{UC8}{UC8});
+          \item Viene data la possibilità all'utente di aggiornare la mappa dell'edificio (\hyperlink{UC3.1.1.2}{UC3.1.1.2});
+       \end{enumerate}
+       \item Nel caso in cui l'utente voglia accedere alle informazioni di un edificio la cui mappa non risulti presente nel dispositivo: 
+       \begin{enumerate}
+          \item Viene presentato un errore esplicativo (\hyperlink{UC9}{UC9});
+          \item Viene data la possibilità all'utente di aggiungere la mappa non installata dell'edificio (\hyperlink{UC3.1.2.2}{UC3.1.2.2});
+       \end{enumerate}
+      \end{itemize}
   \end{itemize}
-  
 \hypertarget{UC1}{}
 \subsection{Caso d'uso UC1: Navigazione}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC1.png}
             \caption{Caso d'uso UC1: Navigazione}\label{fig:UC1} 
@@ -92,24 +87,23 @@
           \item L'utente può accedere ad indicazioni più dettagliate  (\hyperlink{UC1.4}{UC1.4});
 
       \end{enumerate}
-	\item \textbf{Postcondizione}: l'utente ha raggiunto la destinazione scelta oppure ha interrotto la navigazione;
-    \item \textbf{Scenari alternativi}:
-    	\begin{itemize}
-      		\item Nel caso in cui l'utente segua un percorso diverso da quello consigliato:
-      		\begin{enumerate}
-         		\item Viene presentato un errore esplicativo (\hyperlink{UC1.6}{UC1.6});
-      		\end{enumerate}
-      		\item Nel caso in cui l'utente si trovi in un area non coperta da beacon:
-      		\begin{enumerate}
-         		\item Viene presentato un errore esplicativo (\hyperlink{UC1.7}{UC1.7}).
-      		\end{enumerate}
-      	\end{itemize}
-
+    \item \textbf{Postcondizione}: l'utente ha raggiunto la destinazione scelta oppure ha interrotto la navigazione.
+     \item \textbf{Scenari alternativi}: 
+      \begin{itemize}
+       \item Nel caso in cui l'utente segua un percorso diverso da quello consigliato: 
+       \begin{enumerate}
+          \item Viene presentato un errore esplicativo (\hyperlink{UC1.6}{UC1.6});
+       \end{enumerate}
+       \item Nel caso in cui l'utente si trovi in un'area non coperta da beacon: 
+       \begin{enumerate}
+          \item Viene presentato un errore esplicativo (\hyperlink{UC1.7}{UC1.7});
+       \end{enumerate}
+      \end{itemize}
   \end{itemize}
 \hypertarget{UC1.1}{}
 \subsection{Caso d'uso UC1.1: Inserimento destinazione}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC1-1.png}
             \caption{Caso d'uso UC1.1: Inserimento destinazione}\label{fig:UC1.1} 
@@ -125,25 +119,23 @@
           \item L'utente conferma la destinazione scelta  (\hyperlink{UC1.1.2}{UC1.1.2});
 
       \end{enumerate}
-	 \item \textbf{Postcondizione}: la destinazione da raggiungere è stata impostata e confermata;
-    \item \textbf{Scenari alternativi}:
-    	\begin{itemize}
-    		\item Nel caso in cui l'utente ricerchi per nome un POI non appartenente all'edificio in cui si trova:
-      		\begin{enumerate}
-      			\item la destinazione inserita dall'utente non è riconosciuta dal sistema;
-          		\item viene visualizzato un errore esplicativo (\hyperlink{UC1.1.5}{UC1.1.5});
-          		\item viene data all'utente la possibilità di inserire una nuova destinazione.
-      		\end{enumerate}
-      	\end{itemize}
-   
+    \item \textbf{Postcondizione}: la destinazione da raggiungere è stata impostata e confermata.
+     \item \textbf{Scenari alternativi}: 
+      \begin{itemize}
+       \item Nel caso in cui l'utente ricerchi per nome un POI non appartenente all'edificio in cui si trova: 
+       \begin{enumerate}
+          \item la destinazione inserita dall'utente non è riconosciuta dal sistema;
+          \item viene visualizzato un errore esplicativo (\hyperlink{UC1.1.5}{UC1.1.5});
+          \item viene data all’utente la possibilità di inserire una nuova destinazione;
+       \end{enumerate}
+      \end{itemize}
   \end{itemize}
 \hypertarget{UC1.1.1}{}
 \subsection{Caso d'uso UC1.1.1: Scelta destinazione}
-
 \begin{itemize}
 \item \textbf{Attori}: utente;
 
-        \item \textbf{Generalizzazione di}:
+        \item \textbf{Generalizzazione di:}:
           \begin{enumerate}
           \item l'utente deve poter inserire il nome di un POI che vuole raggiungere (\hyperlink{UC1.1.3}{UC1.1.3});
           \item l'utente deve poter cercare, tra le categorie proposte dal sistema, il POI che vuole raggiungere. Le categorie proposte sono relative all'edificio nel quale si trova l'utente (\hyperlink{UC1.1.4}{UC1.1.4});
@@ -154,8 +146,8 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item UC1.1.3: Ricerca per nome (\hyperlink{UC1.1.3}{UC1.1.3});
-          \item UC1.1.4: Ricerca per categoria (\hyperlink{UC1.1.4}{UC1.1.4});
+          \item Ricerca per nome (\hyperlink{UC1.1.3}{UC1.1.3});
+          \item Ricerca per categoria (\hyperlink{UC1.1.4}{UC1.1.4});
 
       \end{enumerate}
     \item \textbf{Postcondizione}: la destinazione è stata scelta.
@@ -164,7 +156,7 @@
 \subsection{Caso d'uso UC1.1.2: Conferma scelta}
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: l’utente deve poter confermare la destinazione scelta; 
+\item \textbf{Descrizione}: l'utente deve poter confermare la destinazione scelta; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla conferma della destinazione e ha selezionato una destinazione, tra quelle previste dal sistema;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -186,7 +178,6 @@
           \item l'utente inserisce il nome del POI che vuole raggiungere;
 
       \end{enumerate}
-
     \item \textbf{Postcondizione}: l'utente ha scelto la destinazione desiderata.
   \end{itemize}
 \hypertarget{UC1.1.4}{}
@@ -208,7 +199,7 @@
 \subsection{Caso d'uso UC1.1.5: Visualizzazione errore destinazione sconosciuta}
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: viene visualizzato un errore che spiega all’utente che la destinazione da lui inserita non è riconosciuta dal sistema;
+\item \textbf{Descrizione}: viene visualizzato un errore che spiega all'utente che la destinazione da lui inserita non è riconosciuta dal sistema; 
       \item \textbf{Precondizione}: L'utente ha inserito il nome di una destinazione sconosciuta al sistema;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -228,6 +219,7 @@
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item l'utente avvia la navigazione;
+
       \end{enumerate}
     \item \textbf{Inclusioni}:
       \begin{enumerate}
@@ -253,7 +245,7 @@
 \hypertarget{UC1.4}{}
 \subsection{Caso d'uso UC1.4: Accesso a maggiori indicazioni}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC1-4.png}
             \caption{Caso d'uso UC1.4: Accesso a maggiori indicazioni}\label{fig:UC1.4} 
@@ -265,7 +257,7 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item L'utente può accede alle foto del prossimo POI (\hyperlink{UC1.4.1}{UC1.4.1});
+          \item L'utente può accedere alle foto del prossimo POI (\hyperlink{UC1.4.1}{UC1.4.1});
           \item L'utente può accedere alle indicazioni testuali estese (\hyperlink{UC1.4.2}{UC1.4.2});
           \item L'utente può accedere alla lista delle indicazioni utili per raggiungere, dal POI in cui si trova, la destinazione scelta (\hyperlink{UC1.4.3}{UC1.4.3});
 
@@ -316,7 +308,6 @@
   \end{itemize}
 \hypertarget{UC1.5}{}
 \subsection{Caso d'uso UC1.5: Visualizzazione indicazioni}
-
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: il sistema presenta all'utente le indicazioni utili alla navigazione. Tali indicazioni sono istruzioni utili all'utente per seguire il percorso, proposto dall'applicativo, dal POI in cui si trova alla destinazione scelta; 
@@ -327,7 +318,6 @@
           \item l'utente consulta le indicazioni utili alla navigazione;
 
       \end{enumerate}
-
     \item \textbf{Postcondizione}: il sistema ha presentato all'utente le indicazioni per raggiungere la destinazione scelta.
   \end{itemize}
 \hypertarget{UC1.6}{}
@@ -361,7 +351,7 @@
 \hypertarget{UC2}{}
 \subsection{Caso d'uso UC2: Accesso alle informazioni}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC2.png}
             \caption{Caso d'uso UC2: Accesso alle informazioni}\label{fig:UC2} 
@@ -379,13 +369,12 @@
           \item l'utente deve poter accedere alle informazioni relative ad uno specifico POI (\hyperlink{UC2.4}{UC2.4});
 
       \end{enumerate}
-
     \item \textbf{Postcondizione}: il sistema ha presentato all'utente le informazioni richieste.
   \end{itemize}
 \hypertarget{UC2.1}{}
 \subsection{Caso d'uso UC2.1: Accesso alle informazioni dell'edificio}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC2-1.png}
             \caption{Caso d'uso UC2.1: Accesso alle informazioni dell'edificio}\label{fig:UC2.1} 
@@ -407,7 +396,6 @@
   \end{itemize}
 \hypertarget{UC2.1.1}{}
 \subsection{Caso d'uso UC2.1.1: Accesso orari edificio}
-
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter accedere agli orari di apertura dell'edificio in cui si trova; 
@@ -422,10 +410,9 @@
   \end{itemize}
 \hypertarget{UC2.1.2}{}
 \subsection{Caso d'uso UC2.1.2: Accesso indirizzo edificio}
-
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: l’utente deve poter accedere all’indirizzo dell’edificio. L’indirizzo è così composto: via, numero civico, CAP (Codice di avviamento postale), città e provincia.
+\item \textbf{Descrizione}: l'utente deve poter accedere all'indirizzo dell'edificio. L'indirizzo è così composto: via, numero civico, CAP (Codice di avviamento postale), città e provincia; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione adibita all'accesso delle informazioni dell'edificio;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -437,7 +424,6 @@
   \end{itemize}
 \hypertarget{UC2.1.3}{}
 \subsection{Caso d'uso UC2.1.3: Accesso nome edificio}
-
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter accedere al nome dell'edificio in cui si trova. Un edificio riceve un nome identificativo quando viene mappato da sensori beacon e inserito nel sistema CLIPS; 
@@ -456,15 +442,16 @@
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter accedere alla descrizione dell'edificio in cui si trova. La descrizione comprende eventuali informazioni che il gestore dell'edificio vuole mettere a disposizione dell'utente; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione adibita all'accesso delle informazioni dell'edificio;
-      \item \textbf{Flusso principale degli eventi}:
+
+        \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-            \item l'utente accede alla descrizione dell'edificio in cui si trova;
-          \end{enumerate}
+          \item l'utente accede alla descrizione dell'edificio in cui si trova;
+
+      \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha presentato all'utente la descrizione dell'edificio in cui si trova.
   \end{itemize}
 \hypertarget{UC2.2}{}
 \subsection{Caso d'uso UC2.2: Accesso lista POI edificio}
-
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter accedere alla lista di tutti i POI relativi all'edificio in cui si trova; 
@@ -494,7 +481,7 @@
 \hypertarget{UC2.4}{}
 \subsection{Caso d'uso UC2.4: Accesso informazione POI}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC2-4.png}
             \caption{Caso d'uso UC2.4: Accesso informazione POI}\label{fig:UC2.4} 
@@ -514,7 +501,6 @@
   \end{itemize}
 \hypertarget{UC2.4.1}{}
 \subsection{Caso d'uso UC2.4.1: Accesso nome POI}
-
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter accedere al nome di uno specifico POI. Un POI riceve un nome identificativo quando viene mappato con un sensore beacon e inserito nel sistema CLIPS.; 
@@ -522,7 +508,7 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente accede al nome di uno specifico POI;
+          \item l'utente accede alla descrizione dell'edificio in cui si trova;
 
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha presentato all'utente il nome di uno specifico POI.
@@ -544,7 +530,7 @@
 \hypertarget{UC3}{}
 \subsection{Caso d'uso UC3: Gestione dell'applicazione}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC3.png}
             \caption{Caso d'uso UC3: Gestione dell'applicazione}\label{fig:UC3} 
@@ -562,203 +548,195 @@
       \end{enumerate}
     \item \textbf{Postcondizione}: l'utente ha acceduto alla funzionalità richiesta.
   \end{itemize}
-  
-
 \hypertarget{UC3.1}{}
 \subsection{Caso d'uso UC3.1: Gestione mappe}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.95, width=\textwidth]{img/UC3-1.png}
-	\caption{Caso d'uso UC3.1: Gestione mappe}\label{fig:UC3-1} 
-\end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.95, width=\textwidth]{img/UC3-1.png}
+            \caption{Caso d'uso UC3.1: Gestione mappe}\label{fig:UC3.1} 
+        \end{figure}
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: un utente deve poter gestire le mappe installate e non sono installate nel sistema; 
+\item \textbf{Descrizione}: un utente deve poter gestire le mappe installate e non installate nel sistema; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione adibita alla gestione delle mappe;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item L'utente può gestire le mappe installate (\hyperlink{UC3.1.1}{UC3.1.1});
-          \item L'utente può gestire le mappe non installate (\hyperlink{UC3.1.2}{UC3.1.2}).
-      \end{enumerate}
-	    \item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente;
-  \end{itemize}
-  
- \hypertarget{UC3.1.1}{}
-\subsection{Caso d'uso UC3.1.1: Gestione mappe installate}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.95, width=\textwidth]{img/UC3-1-1.png}
-	\caption{Caso d'uso UC3.1.1: Gestione mappe installate}\label{fig:UC3-1-1} 
-\end{figure}
-\begin{itemize}
-	\item \textbf{Attori}: utente;
-	\item \textbf{Descrizione}: l'utente può recuperare le mappe installate nel sistema, può aggiornale, rimuoverle e reperire le informazioni dettagliate di ognuna; 
-	\item \textbf{Precondizione}: l'utente si trova nella sezione adibita alla gestione delle mappe installate e nel sistema è presente almeno una mappa installata;
-	
-	\item \textbf{Flusso principale degli eventi}:
-	\begin{enumerate}
-		\item L'utente può reperire le mappe installate (\hyperlink{UC3.1.1.1}{UC3.1.1.1});
-		\item L'utente può aggiornare una mappa (\hyperlink{UC3.1.1.2}{UC3.1.1.2});
-		\item L'utente può rimuovere una mappa
-		 (\hyperlink{UC3.1.1.3}{UC3.1.1.3});
-		\item L'utente può reperire i dettagli di una mappa
-		(\hyperlink{UC3.1.1.4}{UC3.1.1.4}).
-	\end{enumerate}
-	\item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente;
-\end{itemize}
+          \item L'utente può gestire le mappe non installate (\hyperlink{UC3.1.2}{UC3.1.2});
 
- \hypertarget{UC3.1.1.1}{}
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente.
+  \end{itemize}
+\hypertarget{UC3.1.1}{}
+\subsection{Caso d'uso UC3.1.1: Gestione mappe installate}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.95, width=\textwidth]{img/UC3-1-1.png}
+            \caption{Caso d'uso UC3.1.1: Gestione mappe installate}\label{fig:UC3.1.1} 
+        \end{figure}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può recuperare le mappe installate nel sistema, può aggiornale, rimuoverle e reperire le informazioni dettagliate di ognuna; 
+      \item \textbf{Precondizione}: l'utente si trova nella sezione adibita alla gestione delle mappe installate;
+
+        \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item L'utente può reperire le mappe installate (\hyperlink{UC3.1.1.1}{UC3.1.1.1});
+          \item L'utente può aggiornare una mappa (\hyperlink{UC3.1.1.2}{UC3.1.1.2});
+          \item L'utente può rimuovere una mappa (\hyperlink{UC3.1.1.3}{UC3.1.1.3});
+          \item L'utente può reperire i dettagli di una mappa (\hyperlink{UC3.1.1.4}{UC3.1.1.4});
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente.
+  \end{itemize}
+\hypertarget{UC3.1.1.1}{}
 \subsection{Caso d'uso UC3.1.1.1: Reperimento mappe installate}
 \begin{itemize}
-	\item \textbf{Attori}: utente;
-	\item \textbf{Descrizione}: l'utente può recuperare la lista delle mappe installate nel sistema; 
-	\item \textbf{Precondizione}: nel sistema è installata almeno una mappa;
-	
-	\item \textbf{Flusso principale degli eventi}:
-	\begin{enumerate}
-		\item L'utente può reperire la lista delle mappe installate.
-	\end{enumerate}
-	\item \textbf{Postcondizione}: il sistema presenta all'utente la lista delle mappe installate;
-	\end{itemize}
-	
- \hypertarget{UC3.1.1.2}{}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può recuperare la lista delle mappe installate nel sistema; 
+      \item \textbf{Precondizione}: nel sistema è installata almeno una mappa;
+
+        \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item L'utente può reperire la lista delle mappe installate;
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema presenta all'utente la lista delle mappe installate.
+  \end{itemize}
+\hypertarget{UC3.1.1.2}{}
 \subsection{Caso d'uso UC3.1.1.2: Aggiornamento mappa}
 \begin{itemize}
-	\item \textbf{Attori}: utente;
-	\item \textbf{Descrizione}: l'utente può aggiornare una mappa installata ad una nuova versione; 
-	\item \textbf{Precondizione}: la mappa installata si trova ad una versione non aggiornata, la connessione ad Internet è presente, il sistema ha memoria sufficiente per ottenere un aggiornamento e l'aggiornamento deve essere disponibile;
-	
-	\item \textbf{Flusso principale degli eventi}:
-	\begin{enumerate}
-		\item L'utente può aggiornare la mappa installata.
-	\end{enumerate}
-	\item \textbf{Postcondizione}: il sistema ha aggiornato la mappa installata ad una nuova versione;
-\end{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può aggiornare una mappa installata all'ultima versione disponibile; 
+      \item \textbf{Precondizione}: la mappa installata si trova ad una versione non aggiornata, la connessione ad Internet è presente, il sistema ha memoria sufficiente per scaricare e installare l'aggiornamento e l'aggiornamento deve essere disponibile;
 
- \hypertarget{UC3.1.1.3}{}
+        \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item L'utente può aggiornare la mappa installata;
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema ha aggiornato la mappa installata all'ultima versione disponibile.
+  \end{itemize}
+\hypertarget{UC3.1.1.3}{}
 \subsection{Caso d'uso UC3.1.1.3: Rimozione mappa}
 \begin{itemize}
-	\item \textbf{Attori}: utente;
-	\item \textbf{Descrizione}: l'utente può rimuovere una mappa installata; 
-	\item \textbf{Precondizione}: la mappa è installata nel sistema;
-	
-	\item \textbf{Flusso principale degli eventi}:
-	\begin{enumerate}
-		\item L'utente può rimuovere la mappa installata.
-	\end{enumerate}
-	\item \textbf{Postcondizione}: il sistema ha rimosso la mappa installata;
-\end{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può rimuovere una mappa installata; 
+      \item \textbf{Precondizione}: la mappa è installata nel sistema;
 
- \hypertarget{UC3.1.1.4}{}
+        \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item L'utente può rimuovere la mappa installata;
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema ha rimosso la mappa installata.
+  \end{itemize}
+\hypertarget{UC3.1.1.4}{}
 \subsection{Caso d'uso UC3.1.1.4: Reperimento dettagli mappa installata}
 \begin{itemize}
-	\item \textbf{Attori}: utente;
-	\item \textbf{Descrizione}: l'utente può reperire le informazioni dettagliate riguardanti una mappa. Le informazioni sono: il nome della mappa, la foto che identifica l'edificio associato alla mappa, l'indirizzo dell'edificio, una descrizione dell'edificio, la dimensione della mappa, la versione della mappa.
-	\item \textbf{Precondizione}: la mappa è installata nel sistema;
-	
-	\item \textbf{Flusso principale degli eventi}:
-	\begin{enumerate}
-		\item L'utente può accedere alle informazioni dettagliate di una mappa.
-	\end{enumerate}
-	\item \textbf{Postcondizione}: il sistema ha presentato le informazioni richieste dall'utente;
-\end{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può reperire le informazioni dettagliate riguardanti una mappa. Le informazioni sono: il nome della mappa, la foto che identifica l'edificio associato alla mappa, l'indirizzo dell'edificio, una descrizione dell'edificio, la dimensione della mappa, la versione della mappa; 
+      \item \textbf{Precondizione}: la mappa è installata nel sistema;
 
+        \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item L'utente può accedere alle informazioni dettagliate di una mappa;
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema ha presentato le informazioni richieste dall'utente.
+  \end{itemize}
+\hypertarget{UC3.1.2}{}
 \subsection{Caso d'uso UC3.1.2: Gestione mappe non installate}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.95, width=\textwidth]{img/UC3-1-2.png}
-	\caption{Caso d'uso UC3.1.2: Gestione mappe non installate}\label{fig:UC3-1-2} 
-\end{figure}
-\begin{itemize}
-	\item \textbf{Attori}: utente;
-	\item \textbf{Descrizione} l'utente può gestire le mappe non installate nel sistema; 
-	\item \textbf{Precondizione}: l'utente si trova nella sezione adibita alla gestione delle mappe non installate e la connessione ad Internet è presente ed attiva;
-	
-	\item \textbf{Flusso principale degli eventi}:
-	\begin{enumerate}
-		\item L'utente può ricercare le mappe per nome (\hyperlink{UC3.1.2.1}{UC3.1.2.1});
-		\item L'utente può aggiungere una nuova mappa (\hyperlink{UC3.1.2.2}{UC3.1.2.2});
-		\item L'utente può reperire informazioni dettagliate riguardante una mappa non installata.
-		(\hyperlink{UC3.1.2.3}{UC3.1.2.3}).
-	\end{enumerate}
-	\item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente;
-	\item \textbf{Scenario Alternativo}:
-	\begin{itemize}
-	\item Nel caso in cui la ricerca per nome non restituisca nessun risultato:
-	\begin{enumerate}
-		\item viene visualizzato un errore che indica che non è stata trovata nessuna mappa (\hyperlink{UC3.1.2.4}{UC3.1.2.4});
-	\end{enumerate}
-	\end{itemize}
-\end{itemize}
 
-\subsection{Caso d'uso UC3.1.2.1: Ricerca per nome}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.95, width=\textwidth]{img/UC3-1-2.png}
+            \caption{Caso d'uso UC3.1.2: Gestione mappe non installate}\label{fig:UC3.1.2} 
+        \end{figure}
 \begin{itemize}
-	\item \textbf{Attori}: utente;
-	\item \textbf{Descrizione}: l'utente può ricercare una mappa non installata per nome;
-	\item \textbf{Precondizione}: la mappa non è installata nel sistema;
-	
-	\item \textbf{Flusso principale degli eventi}:
-	\begin{enumerate}
-		\item L'utente può ricercare una mappa non installata per nome.
-	\end{enumerate}
-	\item \textbf{Postcondizione}: il sistema ha restituito un insieme non vuoto di mappe in base al nome inserito;
-\end{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può gestire le mappe non installate nel sistema; 
+      \item \textbf{Precondizione}: l'utente si trova nella sezione adibita alla gestione delle mappe non installate e la connessione ad Internet è presente ed attiva;
 
-\subsection{Caso d'uso UC3.1.2.2: Aggiunta nuova mappa}
+        \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item L'utente può ricercare le mappe per nome (\hyperlink{UC3.1.2.1}{UC3.1.2.1});
+          \item L'utente può aggiungere una nuova mappa (\hyperlink{UC3.1.2.2}{UC3.1.2.2});
+          \item L'utente può reperire informazioni dettagliate riguardante una mappa non installata (\hyperlink{UC3.1.2.3}{UC3.1.2.3});
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema ha erogato le funzionalità richieste dall'utente.
+     \item \textbf{Scenari alternativi}: 
+      \begin{itemize}
+       \item Nel caso in cui la ricerca per nome non restituisca nessun risultato: 
+       \begin{enumerate}
+          \item viene segnalato un messaggio d'errore esplicativo il quale indica che non è stata trovata nessuna mappa corrispondente al nome della mappa cercato (\hyperlink{UC3.1.2.4}{UC3.1.2.4});
+       \end{enumerate}
+      \end{itemize}
+  \end{itemize}
+\hypertarget{UC3.1.2.1}{}
+\subsection{Caso d'uso UC3.1.2.1: Ricerca mappa per nome}
 \begin{itemize}
-	\item \textbf{Attori}: utente;
-	\item \textbf{Descrizione}: l'utente può aggiungere una nuova mappa al sistema.
-	\item \textbf{Precondizione}: la mappa non è installata nel sistema, è disponibile e la memoria risulta sufficiente per ospitare la mappa da aggiungere.
-	
-	\item \textbf{Flusso principale degli eventi}:
-	\begin{enumerate}
-		\item l'utente può aggiungere una nuova mappa al sistema.
-	\end{enumerate}
-	\item \textbf{Postcondizione}: il sistema ha aggiunto la nuova mappa. 
-\end{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente deve poter inserire il nome di una mappa di un edificio che intende installare e utilizzare nel sistema; 
+      \item \textbf{Precondizione}: la mappa non è installata nel sistema;
 
+        \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item L'utente può ricercare una mappa non installata per nome;
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema ha restituito un insieme non vuoto di mappe in base al nome inserito.
+  \end{itemize}
+\hypertarget{UC3.1.2.2}{}
+\subsection{Caso d'uso UC3.1.2.2: Installazione nuova mappa}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente deve poter installare una nuova mappa nel sistema; 
+      \item \textbf{Precondizione}: la mappa non è installata nel sistema, è disponibile e la memoria risulta sufficiente per ospitare la mappa da installare;
+
+        \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item L'utente può aggiungere una nuova mappa al sistema;
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema ha installato la nuova mappa.
+  \end{itemize}
+\hypertarget{UC3.1.2.3}{}
 \subsection{Caso d'uso UC3.1.2.3: Reperimento dettagli mappa non installata}
 \begin{itemize}
-	\item \textbf{Attori}: utente;
-	\item \textbf{Descrizione}: l'utente può richiedere delle informazioni dettagliate dell'ultima versione della mappa non installata.\\
-		Le informazioni sono:
-		\begin{itemize}
-			\item il nome della mappa;
-			\item la foto che identifica l'edificio associato alla mappa;
-			\item l'indirizzo dell'edificio;
-			\item una descrizione dell'edificio;
-			\item la dimensione della mappa;
-			\item versione della mappa.
-		\end{itemize}
-	
-	\item \textbf{Precondizione}:la mappa non è installata;
-	
-	\item \textbf{Flusso principale degli eventi}:
-	\begin{enumerate}
-		\item l'utente può reperire le informazioni dettagliate di una mappa non installata;
-	\end{enumerate}
-	\item \textbf{Postcondizione}: il sistema ha fornito le informazioni dettagliate della mappa non installata.
-\end{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può richiedere delle informazioni dettagliate dell'ultima versione della mappa non installata. Le informazioni sono: il nome della mappa, la foto che identifica l'edificio associato alla mappa, l'indirizzo dell'edificio, una descrizione dell'edificio, la dimensione della mappa, la versione della mappa; 
+      \item \textbf{Precondizione}: la mappa non è installata;
 
+        \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item L'utente può reperire le informazioni dettagliate di una mappa non installata;
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema ha fornito le informazioni dettagliate della mappa non installata.
+  \end{itemize}
+\hypertarget{UC3.1.2.4}{}
 \subsection{Caso d'uso UC3.1.2.4: Nessuna mappa trovata}
 \begin{itemize}
-	\item \textbf{Attori}: utente;
-	\item \textbf{Descrizione}: all'utente viene presentato un messaggio che gli comunica che la mappa richiesta non è stata trovata;
-	
-	\item \textbf{Precondizione}:la ricerca della mappa non installata non ha fornito nessun risultato;
-	
-	\item \textbf{Flusso principale degli eventi}:
-	\begin{enumerate}
-		\item viene comunicato all'utente che non è stata trovata la mappa richiesta;
-	\end{enumerate}
-	\item \textbf{Postcondizione}: il sistema comunica all'utente che non è stata trovata nessuna mappa in base alla ricerca eseguita.
-\end{itemize}
-  
-  
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: all'utente viene presentato un messaggio d'errore esplicativo il quale gli comunica che il nome della mappa cercato non corrisponde a nessuna mappa disponibile; 
+      \item \textbf{Precondizione}: la ricerca della mappa non installata non ha fornito nessun risultato;
+
+        \item \textbf{Flusso principale degli eventi}:
+          \begin{enumerate}
+          \item viene comunicato all'utente che non è stata trovata la mappa richiesta;
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: il sistema comunica all'utente che non è stata trovata nessuna mappa in base alla ricerca eseguita.
+  \end{itemize}
 \hypertarget{UC3.2}{}
 \subsection{Caso d'uso UC3.2: Gestione preferenze navigazione}
-        \begin{figure}[!h]
+
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC3-2.png}
             \caption{Caso d'uso UC3.2: Gestione preferenze navigazione}\label{fig:UC3.2} 
@@ -776,12 +754,10 @@
       \end{enumerate}
     \item \textbf{Postcondizione}: le preferenze indicate dall'utente riguardo la navigazione sono note al sistema e verranno applicate a partire dalla prossima volta che l'utente avvierà la navigazione.
   \end{itemize}
-  
-  
 \hypertarget{UC3.2.1}{}
 \subsection{Caso d'uso UC3.2.1: Gestione fruizione indicazioni}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC3-2-1.png}
             \caption{Caso d'uso UC3.2.1: Gestione fruizione indicazioni}\label{fig:UC3.2.1} 
@@ -797,17 +773,16 @@
           \item L'utente può scegliere di attivare indicazioni sonore (\hyperlink{UC3.2.1.2}{UC3.2.1.2});
           \item L'utente può scegliere di disattivare le indicazioni vocali (\hyperlink{UC3.2.1.3}{UC3.2.1.3});
           \item L'utente può scegliere di disattivare le indicazioni sonore (\hyperlink{UC3.2.1.4}{UC3.2.1.4});
+
       \end{enumerate}
     \item \textbf{Postcondizione}: le preferenze dell'utente rispetto alla fruizione delle indicazioni sono note al sistema e verranno applicate a partire dalla prossima volta che l'utente avvierà la navigazione.
   \end{itemize}
-  
-  
 \hypertarget{UC3.2.1.1}{}
 \subsection{Caso d'uso UC3.2.1.1: Attivazione indicazioni vocali}
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di attivare le indicazioni vocali che lo guidino alla destinazione scelta; 
-      \item \textbf{Precondizione}: le indicazioni vocali sono disponibili e non sono precedentemente state attivate;
+      \item \textbf{Precondizione}: le indicazioni vocali sono disponibili e non sono state precedentemente attivate;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -825,9 +800,11 @@
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-          \item l'utente attiva le indicazioni sonore;
+          \item l'utente può scegliere di attivare le indicazioni sonore;
+          \item l'utente può scegliere di disattivare le indicazioni sonore;
+
       \end{enumerate}
-    \item \textbf{Postcondizione}: il sistema fornirà indicazioni sonore a partire dalla prossima volta in cui l'utente avvierà la navigazione.
+    \item \textbf{Postcondizione}: il sistema fornirà indicazioni sonore partire dalla prossima volta in cui l'utente avvierà la navigazione.
   \end{itemize}
 \hypertarget{UC3.2.1.3}{}
 \subsection{Caso d'uso UC3.2.1.3: Disattivazione indicazioni vocali}
@@ -835,10 +812,6 @@
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di disattivare le indicazioni vocali; 
       \item \textbf{Precondizione}: le indicazioni vocali sono state precedentemente attivate;
-      \item \textbf{Flusso principale degli eventi}:
-          \begin{enumerate}
-          \item l'utente disattiva le indicazioni vocali;
-      \end{enumerate}
     \item \textbf{Postcondizione}: il sistema non fornirà le indicazioni vocali a partire dalla prossima volta che l'utente avvierà la navigazione.
   \end{itemize}
 \hypertarget{UC3.2.1.4}{}
@@ -847,16 +820,18 @@
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di disattivare le indicazioni sonore che lo guidino alla destinazione scelta; 
       \item \textbf{Precondizione}: le indicazioni sonore sono state precedentemente attivate;
-      \item \textbf{Flusso principale degli eventi}:
+
+        \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item l'utente disattiva le indicazioni sonore;
+
       \end{enumerate}
-    \item \textbf{Postcondizione}: il sistema non fornirà le indicazioni sonore a partire dalla prossima volta in cui l'utente avvierà la navigazione.
+    \item \textbf{Postcondizione}: il sistema non fornirà le indicazioni sonore partire dalla prossima volta in cui l'utente avvierà la navigazione.
   \end{itemize}
 \hypertarget{UC3.2.2}{}
 \subsection{Caso d'uso UC3.2.2: Gestione preferenze percorso}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC3-2-2.png}
             \caption{Caso d'uso UC3.2.2: Gestione preferenze percorso}\label{fig:UC3.2.2} 
@@ -880,9 +855,11 @@
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di ricevere indicazioni per il percorso più accessibile. Il percorso più accessibile è quello che presenta meno barriere architettoniche. Questo tipo di indicazioni è pensato per agevolare la navigazione di utenti che presentano disabilità motorie; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla gestione delle preferenze di percorso;
-      \item \textbf{Flusso principale degli eventi}:
+
+        \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item l'utente sceglie il percorso più accessibile;
+
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema calcolerà il percorso più accessibile a partire dalla prossima volta che l'utente avvierà la navigazione.
   \end{itemize}
@@ -892,16 +869,18 @@
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di ricevere indicazioni per il percorso che presenta il minor numero di ascensori. Questo tipo di indicazioni è pensato per agevolare la navigazione di utenti claustrofobici. Il percorso presentato conterrà il minor numero di ascensori possibili poichè non è possibile avere la certezza, per ogni possibile edificio, di evitarli tutti; 
       \item \textbf{Precondizione}: l'utente si trova nella sezione dedicata alla gestione delle preferenze di percorso;
-      \item \textbf{Flusso principale degli eventi}:
+
+        \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item l'utente sceglie il percorso che prevede il minor numero di ascensori;
+
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema calcolerà il percorso col minor numero di ascensori a partire dalla prossima volta che l'utente avvierà la navigazione.
   \end{itemize}
 \hypertarget{UC4}{}
 \subsection{Caso d'uso UC4: Attivazione funzionalità sviluppatore}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC4.png}
             \caption{Caso d'uso UC4: Attivazione funzionalità sviluppatore}\label{fig:UC4} 
@@ -917,22 +896,18 @@
           \item L'utente conferma il codice inserito (\hyperlink{UC4.2}{UC4.2});
 
       \end{enumerate}
-   \item \textbf{Postcondizione}: il sistema rende disponibili le funzionalità avanzate, riservate agli sviluppatori;
-    \item \textbf{Scenari alternativi}:
-    	\begin{itemize}
-    		\item Nel caso in cui l'utente inserisca un codice sviluppatore non valido:
-    		\begin{enumerate}
-    			\item viene visualizzato un errore riguardante il codice inserito (\hyperlink{UC4.3}{UC4.3});
-    			\item viene data la possibilità di inserire nuovamente un codice.
-    			
-    		\end{enumerate}
-    	\end{itemize}
-
- 
+    \item \textbf{Postcondizione}: il sistema rende disponibili le funzionalità avanzate, riservate agli sviluppatori.
+     \item \textbf{Scenari alternativi}: 
+      \begin{itemize}
+       \item Nel caso in cui l'utente inserisca un codice sviluppatore non valido: 
+       \begin{enumerate}
+          \item viene visualizzato un errore riguardante il codice inserito (\hyperlink{UC4.3}{UC4.3});
+          \item viene data la possibilità di inserire nuovamente un codice;
+       \end{enumerate}
+      \end{itemize}
   \end{itemize}
 \hypertarget{UC4.1}{}
 \subsection{Caso d'uso UC4.1: Inserimento codice sviluppatore}
-
 \begin{itemize}
 \item \textbf{Attori}: utente non sviluppatore;
 \item \textbf{Descrizione}: l'utente deve poter inserire un codice così da attivare le funzionalità sviluppatore; 
@@ -947,7 +922,6 @@
   \end{itemize}
 \hypertarget{UC4.2}{}
 \subsection{Caso d'uso UC4.2: Conferma codice}
-
 \begin{itemize}
 \item \textbf{Attori}: utente non sviluppatore;
 \item \textbf{Descrizione}: l'utente deve poter confermare il codice sviluppatore inserito; 
@@ -958,7 +932,6 @@
           \item l'utente conferma il codice di attivazione inserito;
 
       \end{enumerate}
-    
     \item \textbf{Postcondizione}: il sistema permette l'accesso alle funzionalità sviluppatore.
   \end{itemize}
 \hypertarget{UC4.3}{}
@@ -971,6 +944,8 @@
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item viene visualizzato un errore esplicativo;
+          \item viene data la possibilità di inserire nuovamente un codice;
+
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema non permette l'accesso alle funzionalità sviluppatore.
   \end{itemize}
@@ -979,7 +954,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter accedere ad una guida che illustri l'utilizzo del prototipo; 
-      \item \textbf{Precondizione}: "L'utente è nella schermata principale dell'applicazione;
+      \item \textbf{Precondizione}: l'utente è nella schermata principale dell'applicazione;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -991,14 +966,14 @@
 \hypertarget{UC6}{}
 \subsection{Caso d'uso UC6: Accesso funzionalità sviluppatore}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC6.png}
             \caption{Caso d'uso UC6: Accesso funzionalità sviluppatore}\label{fig:UC6} 
         \end{figure}
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle funzionalità avanzate messe a disposizione dall'applicazione. Tali funzionalità sono rivolte a testare e migliorare l'applicazione ed il sistema beacon con cui interagisce; 
+\item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle funzionalità avanzate messe a disposizione dall'applicazione. Tali funzionalità sono rivolte a testare e migliorare l'applicazione ed il sistema dei beacon con cui interagisce; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alle funzionalità avanzate dell'applicazione;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -1011,49 +986,51 @@
   \end{itemize}
 \hypertarget{UC6.1}{}
 \subsection{Caso d'uso UC6.1: Accesso informazioni beacon circostanti}
-\begin{figure}[!h]
+
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC6-1.png}
-            \caption{Caso d'uso UC6: Accesso funzionalità sviluppatore}\label{fig:UC6} 
+            \caption{Caso d'uso UC6.1: Accesso informazioni beacon circostanti}\label{fig:UC6.1} 
         \end{figure}
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: lo sviluppatore deve poter accedere alle informazioni relative ai beacon presenti nelle vicinanze. Tali informazioni riguardano: UUID, Major, Minor, livello di potenza del segnale, livello batteria, distanza approssimativa del beacon dal dispositivo, formato del beacon, area coperta dal segnale di un beacon; 
       \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata alle informazioni sui beacon circostanti, ha il Bluetooth attivato ed il dispositivo rileva almeno un beacon;
-      \item \textbf{Flusso principale degli eventi}:
+
+        \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
-            \item lo sviluppatore può accedere all'UUID di un beacon rilevato(\hyperlink{UC6.1.1}{UC6.1.1});
-            \item lo sviluppatore può accedere al Major di un beacon rilevato(\hyperlink{UC6.1.2}{UC6.1.2});
-            \item lo sviluppatore può accedere al Minor di un beacon rilevato(\hyperlink{UC6.1.3}{UC6.1.3});
-            \item lo sviluppatore può accedere al livello di potenza del segnale di un beacon rilevato(\hyperlink{UC6.1.4}{UC6.1.4});
-            \item lo sviluppatore può accedere al livello della batteria di un beacon rilevato(\hyperlink{UC6.1.5}{UC6.1.5});
-            \item lo sviluppatore può accedere alla distanza approssimativa del dispositivo che sta utilizzando da un beacon rilevato(\hyperlink{UC6.1.6}{UC6.1.6});
-            \item lo sviluppatore può accedere al formato di un beacon rilevato(\hyperlink{UC6.1.7}{UC6.1.7});
-            \item lo sviluppatore può accedere all'area coperta dal segnale di un beacon rilevato(\hyperlink{UC6.1.8}{UC6.1.8});
-          \end{enumerate}
-      \item \textbf{Postcondizione}: lo sviluppatore ha avuto accesso alle informazioni relative ai beacon circostanti.
+          \item lo sviluppatore può accedere all'UUID di un beacon rilevato (\hyperlink{UC6.1.1}{UC6.1.1});
+          \item lo sviluppatore può accedere al Major di un beacon rilevato (\hyperlink{UC6.1.2}{UC6.1.2});
+          \item lo sviluppatore può accedere al Minor di un beacon rilevato (\hyperlink{UC6.1.3}{UC6.1.3});
+          \item lo sviluppatore può accedere al livello di potenza del segnale di un beacon rilevato (\hyperlink{UC6.1.4}{UC6.1.4});
+          \item lo sviluppatore può accedere al livello della batteria di un beacon rilevato (\hyperlink{UC6.1.5}{UC6.1.5});
+          \item lo sviluppatore può accedere alla distanza approssimativa del dispositivo che sta utilizzando da un beacon rilevato (\hyperlink{UC6.1.6}{UC6.1.6});
+          \item lo sviluppatore può accedere al formato di un beacon rilevato (\hyperlink{UC6.1.7}{UC6.1.7});
+          \item lo sviluppatore può accedere all'area coperta dal segnale di un beacon rilevato (\hyperlink{UC6.1.8}{UC6.1.8});
+
+      \end{enumerate}
+    \item \textbf{Postcondizione}: lo sviluppatore ha avuto accesso alle informazioni relative ai beacon circostanti.
   \end{itemize}
 \hypertarget{UC6.1.1}{}
 \subsection{Caso d'uso UC6.1.1: Accesso UUID}
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al UUID di un beacon rilevato; 
-      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
+\item \textbf{Descrizione}: lo sviluppatore deve poter accedere al UUID di un beacon rilevato; 
+      \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti ;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item lo sviluppatore accede all'UUID di un beacon rilevato;
 
       \end{enumerate}
-    \item \textbf{Postcondizione}: Lo sviluppatore ha avuto accesso all'UUID.
+    \item \textbf{Postcondizione}: lo sviluppatore ha avuto accesso all'UUID.
   \end{itemize}
 \hypertarget{UC6.1.2}{}
 \subsection{Caso d'uso UC6.1.2: Accesso Major}
-
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al Major di un beacon rilevato; 
-      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon rilevati;
+      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon circostanti;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -1064,8 +1041,6 @@
   \end{itemize}
 \hypertarget{UC6.1.3}{}
 \subsection{Caso d'uso UC6.1.3: Accesso Minor}
-
-
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al Minor di un beacon rilevato; 
@@ -1094,7 +1069,6 @@
   \end{itemize}
 \hypertarget{UC6.1.5}{}
 \subsection{Caso d'uso UC6.1.5: Accesso livello batteria}
-
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al livello della batteria di un beacon rilevato; 
@@ -1123,7 +1097,6 @@
   \end{itemize}
 \hypertarget{UC6.1.7}{}
 \subsection{Caso d'uso UC6.1.7: Accesso formato del beacon}
-
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: Lo sviluppatore deve poter accedere al formato di un beacon rilevato; 
@@ -1140,20 +1113,20 @@
 \subsection{Caso d'uso UC6.1.8: Accesso area coperta da beacon}
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
-\item \textbf{Descrizione}: Lo sviluppatore deve potere accedere all’area di copertura di un beacon rilevato; 
-      \item \textbf{Precondizione}: Lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon rilevati;
+\item \textbf{Descrizione}: lo sviluppatore deve potere accedere all'area di copertura di un beacon rilevato; 
+      \item \textbf{Precondizione}: lo sviluppatore si trova nella sezione dedicata all'accesso alle informazioni dei beacon rilevati;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
           \item Lo sviluppatore accede all’area di copertura di un beacon rilevato;
 
       \end{enumerate}
-    \item \textbf{Postcondizione}: Lo sviluppatore ha avuto accesso all’area di copertura di un beacon.
+    \item \textbf{Postcondizione}: lo sviluppatore ha avuto accesso all’area di copertura di un beacon.
   \end{itemize}
 \hypertarget{UC6.2}{}
 \subsection{Caso d'uso UC6.2: Gestione log}
 
-        \begin{figure}[!h]
+        \begin{figure}[H]
             \centering
             \includegraphics[scale=0.95, width=\textwidth]{img/UC6-2.png}
             \caption{Caso d'uso UC6.2: Gestione log}\label{fig:UC6.2} 
@@ -1175,7 +1148,6 @@
   \end{itemize}
 \hypertarget{UC6.2.1}{}
 \subsection{Caso d'uso UC6.2.1: Avvio nuovo log}
-
 \begin{itemize}
 \item \textbf{Attori}: utente sviluppatore;
 \item \textbf{Descrizione}: lo sviluppatore deve poter avviare un nuovo log; 
@@ -1188,8 +1160,6 @@
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha creato ed avviato un nuovo log.
   \end{itemize}
-  
-  
 \hypertarget{UC6.2.2}{}
 \subsection{Caso d'uso UC6.2.2: Interruzione log}
 \begin{itemize}
@@ -1218,8 +1188,6 @@
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha cancellato il log da rimuovere.
   \end{itemize}
-  
-  
 \hypertarget{UC6.2.4}{}
 \subsection{Caso d'uso UC6.2.4: Accesso log salvato}
 \begin{itemize}
@@ -1234,8 +1202,6 @@
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha fornito le informazioni contenute nel log.
   \end{itemize}
-  
-  
 \hypertarget{UC7}{}
 \subsection{Caso d'uso UC7: Segnalazione errore nessuna connessione Internet}
 \begin{itemize}
@@ -1250,7 +1216,6 @@
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha segnalato un messaggio di errore riguardante l'assenza di una connessione Internet attiva.
   \end{itemize}
-
 \hypertarget{UC8}{}
 \subsection{Caso d'uso UC8: Segnalazione errore mappa non aggiornata}
 \begin{itemize}
@@ -1265,12 +1230,11 @@
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha segnalato un messaggio di errore riguardante la presenza della mappa in uso non aggiornata.
   \end{itemize}
-
 \hypertarget{UC9}{}
 \subsection{Caso d'uso UC9: Segnalazione errore mappa non installata}
 \begin{itemize}
 \item \textbf{Attori}: utente;
-\item \textbf{Descrizione}: viene segnalato un errore in cui si avvisa l'utente dell'assenza della mappa dell'edificio in cui si trova, installata nel dispositivo; 
+\item \textbf{Descrizione}: viene segnalato un errore in cui si avvisa l'utente dell'assenza della mappa dell'edificio in cui si trova; 
       \item \textbf{Precondizione}: l'utente non possiede la mappa dell'edificio mappato all'interno del quale utilizza l'applicazione;
 
         \item \textbf{Flusso principale degli eventi}:
@@ -1280,6 +1244,5 @@
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha segnalato un messaggio di errore riguardante l'assenza della mappa dell'edificio in cui si trova l'utente.
   \end{itemize}
- 
 
 \end{document}
