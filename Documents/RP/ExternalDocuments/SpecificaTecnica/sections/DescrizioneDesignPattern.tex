@@ -25,7 +25,19 @@
 				\paragraph{Svantaggi}
 					Elenco svantaggi.
 			\subsubsection{Dependency injection}
-			
+				Dependency injection è un pattern architetturale utilizzato nella programmazione object-oriented al fine di separare il comportamento di una componente dalla risoluzione delle sue dipendenze. Di conseguenza, il pattern su basa su tre elementi:
+				\begin{itemize}
+					\item un componente dipendente;
+					\item la dichiarazione delle dipendenze della componente;
+					\item un injector, che crea su richiesta le istanze delle classi che implementano le dipendenze.
+				\end{itemize}
+				
+				Il principio su cui si basa è l'inversione di controllo, secondo il quale il ciclo di vita degli oggetti viene gestito da un'entità esterna, detta container. Nella dependency injection implementata con inversione di controllo, le dipendenze vengono inserite nel container, mentre la componente si limita a dichiararle. In questo modo si limita la dipendenza fra classi. Esistono due tipi di dependency injection:
+				
+				\begin{description}
+					\item[constructor injection:] le dipendenze vengono dichiarate come parametro del costruttore. In questo modo un oggetto è valido appena viene istanziato;
+					\item[setter injection:] le dipendenze vengono dichiarate come metodi setter. In questo modo vengono evidenziate le dipendenze.
+				\end{description}
 				\paragraph{Vantaggi}
 					Elenco vantaggi.
 				\paragraph{Svantaggi}
