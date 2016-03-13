@@ -7,4 +7,7 @@
 <entry><version>0.03</version><author>Federico Tavella</author><role>Progettista</role><message>Stesura descrizione pattern MVP</message><date>2016-03-13</date></entry>
 
 <entry><version>0.04</version><author>Federico Tavella</author><role>Progettista</role><message>Stesura descrizione pattern dependency injection</message><date>2016-03-13</date></entry>
+
+<entry><version>0.05</version><author>Federico Tavella</author><role>Progettista</role><message>Stesura descrizione pattern observer</message><date>2016-03-13</date></entry>
+
 </registry>

@@ -64,7 +64,17 @@
 				Elenco svantaggi.
 	\subsection{Design pattern comportamentali}
 		\subsubsection{Observer}
-		
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[scale=0.6]{pattern/observer}
+				\caption{Struttura del pattern Observer}
+				\label{fig:Struttura_Observer}
+				\end{figure}
+			Observer è un pattern comportamentale il cui scopo è quello di tenere sotto controllo lo stato di diversi oggetti legati ad un soggetto (detta anche \textbf{dipendenza uno a molti}). Il paradigma su cui si basa corrisponde al modello \textbf{Publisher and Subscribe}: i sottoscrittori si registrano presso un pubblicatore e quest'ultimo li informa ogni volta che ci sono nuove notizie. Il pattern è composto da:
+				\begin{itemize}
+					\item una classe astratta \textbf{Subject} da cui eredita il soggetto concreto, che mantiene una lista di riferimenti agli oggetti dipendenti per poterli avvisare;
+					\item un'interfaccia \textbf{Observer} implementata dagli osservatori concreti, che tengono il riferimento al soggetto per poterne leggero lo stato.
+				\end{itemize}
 			\paragraph{Vantaggi}
 				Elenco vantaggi.
 			\paragraph{Svantaggi}
