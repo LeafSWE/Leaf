@@ -69,9 +69,9 @@ exec < /dev/tty
         docPDFName="SpecificaTecnica.pdf"
     fi
 
-    diaryTexPath=$(find . -name "diarioModifiche$doc.tex") #Perocorso del diario in latex
-    docTexPath=$(find . -name "$docTexName") #Percorso del file latex da compilare
-    docPDFPath=$(find . -name "$docPDFName") #Percorso norme db
+    diaryTexPath=$(find .. -name "diarioModifiche$doc.tex") #Perocorso del diario in latex
+    docTexPath=$(find .. -name "$docTexName") #Percorso del file latex da compilare
+    docPDFPath=$(find .. -name "$docPDFName") #Percorso norme db
     path=$(dirname "${docTexPath}") #Percorso della cartella
 
     #Se il file del diario non esiste lo inizializzo
