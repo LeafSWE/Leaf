@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <registry>
 
 <entry><version>0.01</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura struttura documento</message><date>2015-12-07</date></entry>
@@ -29,7 +29,7 @@
 
 <entry><version>0.13</version><author>Federico Tavella</author><role>Verificatore</role><message>Verifica del documento</message><date>2015-12-27</date></entry>
 
-<entry><version>0.14</version><author>Davide Castello</author><role>Amministratore</role><message>Stesura resoconto attivit&#xE0; di verifica Fase A</message><date>2016-01-17</date></entry>
+<entry><version>0.14</version><author>Davide Castello</author><role>Amministratore</role><message>Stesura resoconto attività di verifica Fase A</message><date>2016-01-17</date></entry>
 
 <entry><version>0.15</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Inserimento risultati delle verifiche ai documenti nel resoconto</message><date>2016-01-18</date></entry>
 
@@ -44,9 +44,9 @@
 <entry><version>1.03</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Eliminata sezione 3.3</message><date>2016-02-16</date>
 </entry>
 
-<entry><version>1.04</version><author>Davide Castello</author><role>Amministratore</role><message>Numerati gli obiettivi di qualit&#xE0; e le metriche</message><date>2016-02-17</date></entry>
+<entry><version>1.04</version><author>Davide Castello</author><role>Amministratore</role><message>Numerati gli obiettivi di qualità e le metriche</message><date>2016-02-17</date></entry>
 
-<entry><version>1.05</version><author>Davide Castello</author><role>Amministratore</role><message>Aggiunte label alle metriche per riferimento all'interno dei rispettivi obiettivi di qualit&#xE0;</message><date>2016-02-17</date></entry>
+<entry><version>1.05</version><author>Davide Castello</author><role>Amministratore</role><message>Aggiunte label alle metriche per riferimento all'interno dei rispettivi obiettivi di qualità</message><date>2016-02-17</date></entry>
 
 <entry><version>1.06</version><author>Davide Castello</author><role>Amministratore</role><message>Resi quantitativi e sistemati gli obiettivi di qualit&#xE0; su processi e documenti </message><date>2016-02-18</date></entry>
 

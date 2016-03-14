@@ -696,7 +696,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter installare una nuova mappa nel sistema; 
-      \item \textbf{Precondizione}: la mappa non è installata nel sistema, è disponibile e la memoria risulta sufficiente per ospitare la mappa da installare;
+      \item \textbf{Precondizione}: l'utente ha ricercato la mappa per nome e ha ottenuto un insieme non vuoto di risultati tra cui la mappa cercata, la mappa non è installata nel sistema e la memoria risulta sufficiente per ospitare la mappa da installare;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -782,7 +782,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di attivare le indicazioni vocali che lo guidino alla destinazione scelta; 
-      \item \textbf{Precondizione}: le indicazioni vocali sono disponibili e non sono state precedentemente attivate;
+      \item \textbf{Precondizione}: le indicazioni vocali non sono state precedentemente attivate;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -796,7 +796,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: l'utente deve poter scegliere di attivare le indicazioni sonore che lo guidino alla destinazione scelta. Queste indicazioni consistono nell'emissione di un suono monotono continuo quando l'utente segue il percorso previsto. Quando invece un utente si allontana dal percorso previsto, la frequenza del suono varia. Questo tipo di indicazioni è pensato per agevolare la navigazione di utenti che presentano disabilità visive; 
-      \item \textbf{Precondizione}: le indicazioni sonore sono disponibili e non sono state precedentemente attivate;
+      \item \textbf{Precondizione}: le indicazioni sonore non sono state precedentemente attivate;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -1207,7 +1207,7 @@
 \begin{itemize}
 \item \textbf{Attori}: utente;
 \item \textbf{Descrizione}: viene segnalato un errore in cui si espone la necessità di avere la connessione Internet attiva sul dispositivo in cui è installato l'applicativo; 
-      \item \textbf{Precondizione}: l'utente non ha attivato una connessione a Internet nel dispositivo;
+      \item \textbf{Precondizione}: l'utente non ha una connessione Internet attiva nel dispositivo;
 
         \item \textbf{Flusso principale degli eventi}:
           \begin{enumerate}
@@ -1244,5 +1244,6 @@
       \end{enumerate}
     \item \textbf{Postcondizione}: il sistema ha segnalato un messaggio di errore riguardante l'assenza della mappa dell'edificio in cui si trova l'utente.
   \end{itemize}
+ 
 
 \end{document}
