@@ -89,4 +89,6 @@
 
 <entry><version>2.13</version><author>Andrea Tombolato</author><role>Amministratore</role><message>Aggiunti strumenti per le metriche (sezione 3.2.1.3)</message><date>2016-03-05</date></entry>
 
+
+<entry><version>2.14</version><author>Federico Tavella</author><role>Amministratore</role><message>Stesura procedure tracciamento componenti e classi</message><date>2016-03-14</date></entry>
 </registry>
