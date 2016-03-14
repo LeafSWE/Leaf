@@ -564,7 +564,7 @@
 			POI
 		</termine>
 		<descrizione>
-			Acronimo di Point Of Interest, area o luogo in cui è presente un beacon
+			Acronimo di Point Of Interest, area di un edificio che può risultare interessante per l'utente
 		</descrizione>
 	</voce>
 	<voce>
@@ -581,6 +581,119 @@
 		</termine>
 		<descrizione>
 			Indica il protocollo utilizzato dal sensore beacon
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			IDE
+		</termine>
+		<descrizione>
+			Acronimo di Integrated Development Enviroment, è un software che, in fase di programmazione, aiuta i programmatori nello sviluppo del codice sorgente di un programma
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Espresso
+		</termine>
+		<descrizione>
+			Framework Android per eseguire test su UI, simulando le azioni dell'utente
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			UI
+		</termine>
+		<descrizione>
+			Acronimo di User Interface, ciò che si frappone tra una macchina e un utente, consentendo l'interazione tra i due. Tipicamente si parla di 
+GUI (Graphical UI), ossia un'interfaccia composta da oggetti grafici
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Android Studio
+		</termine>
+		<descrizione>
+			IDE di riferimento per lo sviluppo di applicazioni per Android
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			JUnit
+		</termine>
+		<descrizione>
+			Framework per test d'unità per il linguaggio Java
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			IntelliJIdea
+		</termine>
+		<descrizione>
+			IDE per il linguaggio Java
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			MetricsReloaded
+		</termine>
+		<descrizione>
+			Plugin per Android Studio e IntelliJIdea per il calcolo delle metriche del software
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Design pattern
+		</termine>
+		<descrizione>
+			Soluzione progettuale generale ad un problema ricorrente
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Android testing support library
+		</termine>
+		<descrizione>
+			Framework per il test delle applicazioni Android
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Hooks
+		</termine>
+		<descrizione>
+			Metodo utilizzato da Git per lanciare uno script come conseguenza di una azione
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Task list
+		</termine>
+		<descrizione>
+			Raggruppamento di un insieme di task
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Kernel
+		</termine>
+		<descrizione>
+			Nucleo di un sistema operativo, ovvero il software avente il compito di fornire ai processi in esecuzione sull'elaboratore un accesso sicuro e controllato all'hardware
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			Linux
+		</termine>
+		<descrizione>
+			Famiglia di sistemi operativi di tipo Unix-like
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			ROI
+		</termine>
+		<descrizione>
+			Acronimo di Region of Interest, area coperta dal segnale di un beacon
 		</descrizione>
 	</voce>
 </glossario>
