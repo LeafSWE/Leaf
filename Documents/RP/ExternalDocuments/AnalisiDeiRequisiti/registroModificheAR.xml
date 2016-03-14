@@ -117,4 +117,6 @@ le relazioni tra essi</message><date>2016-02-16</date></entry>
 
 
 <entry><version>2.11</version><author>Eduard Bicego</author><role>Analista</role><message>Corretta sintassi UC3.2.1.1 e UC3.2.1.2</message><date>2016-03-14</date></entry>
+
+<entry><version>2.12</version><author>Eduard Bicego</author><role>Analista</role><message>Corretti RDesF10.2.1.3, RDesF10.2.1.4, RDesF10.2.2.3 e discendenti</message><date>2016-03-14</date></entry>
 </registry>
