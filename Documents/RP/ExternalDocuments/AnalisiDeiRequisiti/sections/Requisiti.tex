@@ -3,28 +3,7 @@
 \hyphenation{beacon}
 \begin{document}
 \section{Requisiti}
-	Di seguito sono riportati tutti i requisiti, i quali sono stati individuati dopo un'attenta analisi sulla base del capitolato, dei casi d’uso, degli incontri con il proponente e delle riunioni interne.
-
-I requisiti, come indica il documento \normediprogettov , sono classificati in base al tipo e alla priorità, utilizzando la seguente notazione:
-				\begin{center}\textbf{R[X][Y][Z]}\end{center} dove:
-					\begin{enumerate}
-						\item \textbf{X} indica l'importanza strategica del requisito. Deve assumere solo i seguenti valori:
-						\begin{itemize}
-							\item \textbf{Obb}: Indica un requisito obbligatorio;
-							\item \textbf{Des}: Indica un requisito desiderabile;
-							\item \textbf{Opz}: Indica un requisito opzionale.
-						\end{itemize}
-						\item \textbf{Y} indica la tipologia del requisito. Deve assumere solo i seguenti valori:
-						\begin{itemize}
-							\item \textbf{F}: Indica un requisito funzionale;
-							\item \textbf{Q}: Indica un requisito di qualità;
-							\item \textbf{P}: Indica un requisito prestazionale;
-							\item \textbf{V}: Indica un requisito vincolo.
-						\end{itemize}
-						\item \textbf{Z} rappresenta il codice univoco di ogni requisito in forma gerarchica.
-					\end{enumerate}
-	\subsection{Elenco dei requisiti}
-		\begin{longtabu} to \textwidth {X X[2] X}
+\begin{longtabu} to \textwidth {X X[2] X}
 \toprule
 \textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonti}\\
 \midrule
@@ -175,7 +154,7 @@ ROpzF7.4.2.4 & L'applicazione deve fornire all'utente indicazioni per raggiunger
 \midrule 
 ROpzF7.4.2.5 & L'applicazione deve avvisare l'utente nel caso in cui si allontani dal percorso ideale per raggiungere il prossimo beacon & UC1.5 \\ 
 \midrule 
-ROpzF7.4.2.6 & L'applicazione deve segnalare all'utente con un messaggio d'errore esplicito se il sistema non rileva beacon nell'area in cui l'utente si trova & UC1.7 \\ 
+ROpzF7.4.2.6 & L'applicazione deve avvisare l'utente con un messaggio d'errore se il sistema non rileva beacon nell'area in cui l'utente si trova & UC1.7 \\ 
 \midrule 
 RDesF7.4.3 & L'applicazione deve fornire le indicazioni dettagliate che lo possano aiutare durante la navigazione & UC1.4 \\ 
 \midrule 
@@ -185,7 +164,7 @@ ROpzF7.4.3.2 & L'applicazione deve fornire l'indicazione da seguire in maniera t
 \midrule 
 ROpzF7.4.3.3 & L'applicazione deve fornire la lista di tutte le prossime indicazioni da seguire per raggiungere la destinazione scelta & UC1.4.3 \\ 
 \midrule 
-RObbF7.5 & L'applicazione deve permettere di interrompere la navigazione & UC1.3 \\ 
+RObbF7.5 & L'applicazione deve permettere di interrompere la navigazione in corso & UC1.3 \\ 
 \midrule 
 RObbF7.6 & L'applicazione deve avvisare l'utente con un messaggio d'errore esplicito nel caso in cui si avvii una navigazione con connessione Internet del dispositivo non attiva & UC7 \\ 
 \midrule 
@@ -274,9 +253,9 @@ RDesF10.2.1.1 & L'applicazione deve permettere di reperire le mappe installate n
 \midrule 
 RDesF10.2.1.2 & L'applicazione deve permettere di aggiornare una mappa presente sul proprio dispositivo che richieda un aggiornamento & UC3.1.1.2 \\ 
 \midrule 
-RDesF10.2.1.3 & L'applicazione deve permettere di rimuovere ogni singola mappa installata nel dispositivo & UC3.1.1.3 \\ 
+RDesF10.2.1.3 & L'applicazione deve permettere di rimuovere una mappa installata nel dispositivo & UC3.1.1.3 \\ 
 \midrule 
-RDesF10.2.1.4 & L'applicazione deve permettere di reperire i dettagli informativi di ogni singola mappa installata nel dispositivo & UC3.1.1.4 \\ 
+RDesF10.2.1.4 & L'applicazione deve permettere di reperire i dettagli informativi di una mappa installata nel dispositivo & UC3.1.1.4 \\ 
 \midrule 
 RDesF10.2.1.4.1 & L'applicazione deve permettere l'accesso al nome di ogni singola mappa installata nel dispositivo & UC3.1.1.4 \\ 
 \midrule 
@@ -298,19 +277,19 @@ RDesF10.2.2.1.1 & L'applicazione deve permettere all'utente l'inserimento di un 
 \midrule 
 RDesF10.2.2.2 & L'applicazione deve permettere l'installazione di una nuova mappa disponibile online non precedentemente installata & UC3.1.2.2 \\ 
 \midrule 
-RDesF10.2.2.3 & L'applicazione deve permettere di reperire i dettagli informativi di ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\ 
+RDesF10.2.2.3 & L'applicazione deve permettere di reperire i dettagli informativi di una mappa non installata nel dispositivo & UC3.1.2.3 \\ 
 \midrule 
-RDesF10.2.2.3.1 & L'applicazione deve permettere l'accesso al nome di ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\ 
+RDesF10.2.2.3.1 & L'applicazione deve permettere l'accesso al nome di una mappa non installata nel dispositivo & UC3.1.2.3 \\ 
 \midrule 
-RDesF10.2.2.3.2 & L'applicazione deve permettere la visualizzazione della foto dell'edificio associato ad ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\ 
+RDesF10.2.2.3.2 & L'applicazione deve permettere la visualizzazione della foto dell'edificio associato di una mappa non installata nel dispositivo & UC3.1.2.3 \\ 
 \midrule 
-RDesF10.2.2.3.3 & L'applicazione deve permettere l'accesso all'indirizzo dell'edificio associato ad ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\ 
+RDesF10.2.2.3.3 & L'applicazione deve permettere l'accesso all'indirizzo dell'edificio associato di una mappa non installata nel dispositivo & UC3.1.2.3 \\ 
 \midrule 
-RDesF10.2.2.3.4 & L'applicazione deve permettere l'accesso alla descrizione dell'edificio associato ad ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\ 
+RDesF10.2.2.3.4 & L'applicazione deve permettere l'accesso alla descrizione dell'edificio associato di una mappa non installata nel dispositivo & UC3.1.2.3 \\ 
 \midrule 
-RDesF10.2.2.3.5 & L'applicazione deve permettere l'accesso alla dimensione in megabyte di ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\ 
+RDesF10.2.2.3.5 & L'applicazione deve permettere l'accesso alla dimensione in megabyte di una mappa non installata nel dispositivo & UC3.1.2.3 \\ 
 \midrule 
-RDesF10.2.2.3.6 & L'applicazione deve permettere l'accesso alla versione di ogni singola mappa non installata nel dispositivo & UC3.1.2.3 \\ 
+RDesF10.2.2.3.6 & L'applicazione deve permettere l'accesso alla versione di una mappa non installata nel dispositivo & UC3.1.2.3 \\ 
 \midrule 
 RDesF10.2.2.4 & L'applicazione deve segnalare che la mappa non è stata trovata nel caso in cui la ricerca per nome non abbia trovato corrispondenze & UC3.1.2.4 \\ 
 \midrule 
@@ -535,22 +514,22 @@ UC9 & UC9 - Segnalazione errore mappa non installata & RObbF7.8 \par RObbF9.11 \
 	\newpage
 	\subsection{Riepilogo}
 		\begin{longtabu} to \textwidth {X X X X}
-		\toprule
-	\textbf{Categoria} & \textbf{Obbligatorio} & \textbf{Opzionale} & \textbf{Desiderabile}\\
-	\midrule
-	\endhead
-	\arrayrulecolor{gray}
-	\midrule 
-	Funzionale & 53 & 15 & 44 \\ 
-	\midrule 
-	Qualità & 9 & 1 & 0 \\ 
-	\midrule 
-	Prestazionali & 0 & 1 & 1 \\ 
-	\midrule 
-	Vincolo & 39 & 2 & 0 \\ 
-	\arrayrulecolor{black}
-	\bottomrule
-	\caption{Riepilogo requisiti} \\
-	\end{longtabu}
+\toprule
+\textbf{Categoria} & \textbf{Obbligatorio} & \textbf{Opzionale} & \textbf{Desiderabile}\\
+\midrule
+\endhead
+\arrayrulecolor{gray}
+\midrule 
+Funzionale & 53 & 15 & 44 \\ 
+\midrule 
+Qualità & 9 & 1 & 0 \\ 
+\midrule 
+Prestazionali & 0 & 1 & 1 \\ 
+\midrule 
+Vincolo & 39 & 2 & 0 \\ 
+\arrayrulecolor{black}
+\bottomrule
+\caption{Riepilogo requisiti} \\
+\end{longtabu}
 
 \end{document}
