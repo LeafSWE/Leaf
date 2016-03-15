@@ -70,7 +70,7 @@
 		\paragraph{Progettazione architetturale}
 			Per poter arrivare alla definizione dell'architettura dei vari prodotti software, è necessario passare attraverso una serie di attività, quali:
 			\begin{enumerate}
-				\item individuare i prodotto che si intendono realizzare;
+				\item individuare i prodotti che si intendono realizzare;
 				\item definire ruoli e responsabilità per ogni prodotto individuato;
 				\item definire le interazioni che i prodotti hanno fra di loro;
 				\item assicurarsi che ogni requisito sia soddisfatto da almeno uno dei prodotti individuati;
@@ -82,7 +82,7 @@
 				\item definire il ruolo di ogni componente individuato;
 				\item definire le interazioni tra i vari componenti;
 				\item definire le interfacce che ogni componente mette a disposizione dell'ambiente esterno;
-				\item assicurarsi che ogni requisito sia soddisfatto da almeno di uno dei componenti
+				\item assicurarsi che ogni requisito sia soddisfatto da almeno uno dei componenti
 				\item assicurarsi che ogni componente soddisfi almeno un requisito;
 				\item realizzare e documentare i test di integrazione, al fine di verificare il corretto funzionamento di più componenti integrati assieme.
 			\end{enumerate}
@@ -98,8 +98,8 @@
 			\subparagraph{Diagrammi UML}
 				Per documentare prodotti e componenti individuati, sarà necessario ricorrere a dei diagrammi UML, necessari per formalizzare gli aspetti descritti in modo testuale. Durante la progettazione architetturale, sarà necessario ricorrere a 
 				\begin{description}
-					\item[diagramma dei componenti]  hanno lo scopo di rappresentare la struttura interna di un prodotto software modellato in termini dei suoi componenti principali e delle relazioni fra di essi. Questo tipo di diagramma viene dunque utilizzato per evidenziare i componenti (e le relazioni che essi hanno fra di loro) individuati all'interno di ciascun prodotto software;
-					\item[diagramma delle attività]  hanno lo scopo di definire le attività da svolgere per realizzare una certa funzionalità. Vengono dunque usati per mostrare come determinate interazioni tra
+					\item[diagrammi dei componenti:]  hanno lo scopo di rappresentare la struttura interna di un prodotto software modellato in termini dei suoi componenti principali e delle relazioni fra di essi. Questo tipo di diagramma viene dunque utilizzato per evidenziare i componenti (e le relazioni che essi hanno fra di loro) individuati all'interno di ciascun prodotto software;
+					\item[diagrammi delle attività:]  hanno lo scopo di definire le attività da svolgere per realizzare una certa funzionalità. Vengono dunque usati per mostrare come determinate interazioni tra
 componenti (o fra prodotti) realizzino una funzionalità che si intende rendere disponibile.
 				\end{description}
 			\subparagraph{Classificazione dei componenti}
@@ -111,10 +111,10 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 				Inoltre, ogni componente ha associato un codice univoco nella forma \begin{center}\textbf{[X][Y]}\end{center} dove:
 				\begin{itemize}
 					\item \textbf{X} è l'iniziale del nome del prodotto;
-					\item \textbf{Y} è un numero intero crescente.
+					\item \textbf{Y} è un numero intero incrementale.
 				\end{itemize}
 			\subparagraph{Test di integrazione}
-				Per ottenere ottimizzare l'attività di test, i \progettisti\ devono preoccuparsi di definire delle classi di verifica per accertare il funzionamento dei componenti. L'ideale sarebbe fornire degli strumenti automatici ai \verificatori . La progettazione delle classi per la verifica deve essere svolta nel rispetto della mancata sovrapposizione dei ruoli: chi crea una classe non dovrebbe essere lo stesso individuo che crea la classe per testarla.
+				Per ottimizzare l'attività di test, i \progettisti\ devono preoccuparsi di definire delle classi di verifica per accertare il funzionamento dei componenti. L'ideale sarebbe fornire degli strumenti automatici ai \verificatori . La progettazione delle classi per la verifica deve essere svolta nel rispetto della mancata sovrapposizione dei ruoli: chi crea una classe non dovrebbe essere lo stesso individuo che crea la classe per testarla.
 		\paragraph{Progettazione di dettaglio}
 			Una volta definita l'architettura del sistema, si procede alla progettazione di dettaglio, la quale prevede che i seguenti task:
 			\begin{enumerate}
@@ -135,13 +135,11 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 					\item descrizione di come viene applicato il pattern al progetto.
 				\end{itemize}
 			\subparagraph{Diagrammi UML}
-				Per documentare prodotti e componenti individuati, sarà necessario ricorrere a dei diagrammi UML, necessari per formalizzare gli aspetti descritti in modo testuale. Durante la progettazione architetturale, sarà necessario ricorrere a 
+				Per documentare prodotti e componenti individuati sarà necessario ricorrere a dei diagrammi UML, necessari per formalizzare gli aspetti descritti in modo testuale. Durante la progettazione architetturale, sarà necessario ricorrere a 
 				\begin{description}
-					\item[diagramma delle classi] hanno lo scopo di descrivere i tipi di entità, con le loro caratteristiche ed eventuali relazioni fra questi tipi. Questo diagramma viene utilizzato per evidenziare e descrivere in modo dettagliato le classi e le relazioni che esistono fra di loro;
-					\item[diagramma delle attività]  hanno lo scopo di definire le attività da svolgere per realizzare una certa funzionalità. Vengono dunque usati per mostrare come determinate interazioni tra
-componenti (o fra prodotti) realizzino una funzionalità che si intende rendere disponibile.
-				
-					\item[diagramma di sequenza] hanno lo scopo di descrivere scenari, vengono usati per descrivere le relazioni che intercorrono, in termini di messaggi, tra attori, oggetti ed entità del sistema rappresentato.
+					\item[diagrammi delle classi:] hanno lo scopo di descrivere i tipi di entità, con le loro caratteristiche ed eventuali relazioni fra questi tipi. Questo diagramma viene utilizzato per evidenziare e descrivere in modo dettagliato le classi e le relazioni che esistono fra di loro;
+					\item[diagrammi delle attività:]  hanno lo scopo di definire le attività da svolgere per realizzare una certa funzionalità. Vengono dunque usati per mostrare come determinate interazioni tra componenti (o fra prodotti) realizzino una funzionalità che si intende rendere disponibile;
+					\item[diagramma di sequenza] hanno lo scopo di descrivere scenari e vengono usati per descrivere le relazioni che intercorrono, in termini di messaggi, tra attori, oggetti ed entità del sistema rappresentato.
 				\end{description}
 			
 			\subparagraph{Classificazione di una classe}
@@ -158,7 +156,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 				\end{center} dove
 				\begin{itemize}
 					\item \textbf{X} è l'iniziale del nome del prodotto;
-					\item \textbf{Y} è un numero intero crescente.
+					\item \textbf{Y} è un numero intero incrementale.
 				\end{itemize}
 			\subparagraph{Descrivere una classe}			
 				Per descrivere una classe, i \progettisti\ devono preoccuparsi di descrivere:
@@ -171,7 +169,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 				\end{itemize}
 				Inoltre, devono essere descritte dettagliatamente (anche attraverso diagrammi) le relazioni con altre classi e le interfacce messe a disposizione.
 			\subparagraph{Test di unità}
-				Per la realizzazione dei test, i \progettisti\ devono rispettare la regola di sovrapposizione dei ruoli: chi realizza il test non deve essere lo stesso individuo di chi realizza la classe da testare.
+				Per la realizzazione dei test di unità, i \progettisti\ devono rispettare la regola di mancata sovrapposizione dei ruoli: chi realizza il test non deve essere lo stesso individuo che realizza la classe da testare.
 		\subsubsection{Codifica}
 			\paragraph{Convenzioni}
 				Tutti i file contenenti codice o testo dovranno rispettare la codifica UTF-8 senza BOM.\\
@@ -194,7 +192,12 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 						 */
 					\end{lstlisting}
 				\subparagraph{Classi}
-					Poiché in Java è presente una forte dipendenza tra file e classi, prima di ogni classe dovrà essere presente un commento, strutturato come l'intestazione dei file.
+					Poiché in Java è presente una forte dipendenza tra file e classi (ogni classe in Java corrisponde ad un file .class), non è necessario aggiungere un ulteriore intestazione. Per le classi interne e quelle anonime dovrà essere aggiunta un'ulteriore intestazione come segue:
+					\begin{lstlisting}
+						/**
+						 * Descrizione della classe
+						 */
+					\end{lstlisting}
 				\subparagraph{Metodi}
 					Per ogni metodo, dovrà essere presente un'intestazione contenente:
 					\begin{lstlisting}
@@ -203,14 +206,14 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 						 * @param NomeParametro1 Descrizione del primo parametro
 						 * ...
 						 * @param NomeParametroN Descrizione del N-esimo parametro
-						 * @return TipoDiRitorno Valore ritornato dal metodo (opzionale)
+						 * @return TipoDiRitorno Valore ritornato dal metodo
 						 * @throws TipoDiEccezione Motivo di lancio dell'eccezione
 						 */
 					\end{lstlisting}
 					
-					Per i metodi senza valore di ritorno (con tipo di ritorno \texttt{void} e costruttori) la voce \texttt{@return} deve essere omessa.
+					Per i costruttori la voce \texttt{@return} deve essere omessa.
 				\subparagraph{Casi eccezionali}
-					Qualora fosse necessario documentare parti di codice di difficile comprensione, è permesso l'utilizzo di un commento nelle righe precedenti, che dovrà essere strutturato come segue:
+					Qualora fosse necessario documentare parti di codice di difficile comprensione è permesso l'utilizzo di un commento nelle righe precedenti, che dovrà essere strutturato come segue:
 					\begin{lstlisting}
 						/**
 						 * Descrizione del blocco di codice
@@ -226,10 +229,10 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 					
 				\paragraph{Test}
 					\subparagraph{Classificazione dei test}
-					È compito dei \progettisti\ creare test di unità, integrazione, sistema e accettazione al fine di verificare che tutti i requisiti individuati dagli \analisti\ vengano soddisfatti. Ogni test deve essere codificato come:
+					È compito dei \programmatori\ creare test di unità e integrazione e degli \analisti\ creare quelli sistema e accettazione al fine di verificare che tutti i requisiti, individuati dagli \analisti\, siano soddisfatti. Ogni test deve essere codificato come:
 					\begin{center}\textbf{T[X][Y]}\end{center}, dove
 						\begin{enumerate}
-							\item \textbf{X} il tipo di test. Deve assumere solo i seguenti valori:
+							\item \textbf{X} rappresenta il tipo di test. Può assumere solo i seguenti valori:
 							\begin{itemize}
 								\item \textbf{A}: indica un test di accettazione;
 								\item \textbf{S}: indica un test di sistema;
@@ -247,7 +250,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 					\item aprire l'homepage di Tracy;
 					\item selezionare la voce "Requirements";
 					\item individuare il requisito che si desidera tracciare e cliccare su "View";
-					\item sotto la voce "Packages", indicare il nome del package e cliccare su "Add".
+					\item sotto la voce "Packages" indicare il nome del package e cliccare su "Add".
 				\end{enumerate}
 				
 				\subparagraph{Inserimento di un componente su Tracy}
@@ -255,7 +258,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 					\begin{enumerate}
 						\item aprire l'homepage di Tracy;
 						\item selezionare la voce "Package";
-						\item dal menù "Operations", selezionare la voce "Create package";
+						\item dal menu "Operations" selezionare la voce "Create package";
 						\item riempire almeno i campi obbligatori della form e cliccare su "Create".
 					\end{enumerate}
 			\paragraph{Tracciamento classi-requisiti}
@@ -264,14 +267,14 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 					\item aprire l'homepage di Tracy;
 					\item selezionare la voce "Requirements";
 					\item individuare il requisito che si desidera tracciare e cliccare su "View";
-					\item sotto la voce "Classes", indicare il nome della classe e cliccare su "Add".
+					\item sotto la voce "Classes" indicare il nome della classe e cliccare su "Add".
 				\end{enumerate}
 				\subparagraph{Inserimento di una classe su Tracy}
 					Per inserire una classe all'interno di Tracy:
 					\begin{enumerate}
 						\item aprire l'homepage di Tracy;
 						\item selezionare la voce "Class";
-						\item dal menù "Operations", selezionare la voce "Create class";
+						\item dal menu "Operations" selezionare la voce "Create class";
 						\item riempire almeno i campi obbligatori della form e cliccare su "Create".
 					\end{enumerate}
 		\subsubsection{Strumenti}
