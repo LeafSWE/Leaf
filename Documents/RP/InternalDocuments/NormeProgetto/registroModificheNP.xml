@@ -93,4 +93,6 @@
 <entry><version>2.14</version><author>Federico Tavella</author><role>Amministratore</role><message>Stesura procedure tracciamento componenti e classi</message><date>2016-03-14</date></entry>
 
 <entry><version>2.15</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-03-14</date></entry>
+
+<entry><version>2.16</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-03-15</date></entry>
 </registry>
