@@ -696,4 +696,28 @@ GUI (Graphical UI), ossia un'interfaccia composta da oggetti grafici
 			Acronimo di Region of Interest, area coperta dal segnale di un beacon
 		</descrizione>
 	</voce>
+	<voce>
+		<termine>
+			modulo
+		</termine>
+		<descrizione>
+			Componente software autonomo e ben identificato. In Java un "modulo" può essere considerato come una classe
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			package
+		</termine>
+		<descrizione>
+			Meccanismo per organizzare classi Java in gruppi logici
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			situazioni anomale
+		</termine>
+		<descrizione>
+			Circostanze non previste dal flusso principale dell'applicazione che possono scatenare malfunzionamenti o interruzioni dell'applicazione stessa
+		</descrizione>
+	</voce>
 </glossario>
