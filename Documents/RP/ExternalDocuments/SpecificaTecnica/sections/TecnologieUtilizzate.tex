@@ -1,19 +1,18 @@
 \documentclass[../SpecificaTecnica.tex]{subfiles}
 \begin{document}
 \section{Tecnologie utilizzate}
-	In questa sezione vengono descritte le tecnologie sulle quali si basa lo sviluppo di BlueWhere.
+	In questa sezione vengono descritte le tecnologie sulle quali si basa lo sviluppo di BlueWhere seguite dai vantaggi e svantaggi riscontrati nel loro uso.
+	
 	\subsection{Android}
 		\subsubsection{Descrizione}
 			Android\g\ è un sistema operativo mobile sviluppato da Google\g\ e basato su kernel\g\ Linux\g. È stato progettato per essere eseguito principalmente su smartphone\g\ e tablet\g\, con interfacce utente specializzate per orologi e televisori. Le versioni di riferimento sono la 4.4 e superiori. L'utilizzo di questa tecnologia è stato richiesto dal proponente.
 		\subsubsection{Vantaggi}
-			I principali vantaggi del sistema operativo Android sono:
 			\begin{itemize}
 				\item possiede una vasta fetta di mercato mobile;
 				\item disponibile su un vasto numero di dispositivi;
 				\item quasi totalmente gratuito ed Open Source\g.
 			\end{itemize}
 		\subsubsection{Svantaggi}
-			I principali svantaggi del sistema operativo Android sono:
 			\begin{itemize}
 				\item essendoci un vasto numero di produttori di smartphone e tablet che non aggiornano la versione di Android che rilasciano all'interno dei loro dispositivi, Android risulta essere estremamente frammentato;
 				\item necessità di sviluppare applicazioni per dispositivi che possono differire per:
@@ -24,4 +23,59 @@
 						\item sensori disponibili.
 					\end{itemize}
 			\end{itemize}
+			
+	\subsection{Java}
+		Java è uno dei più famosi linguaggi di programmazione orientato agli oggetti supportato da una moltitudine di librerie e documentazione. Viene utilizzato per la scrittura e lo sviluppo dell'applicazione.
+		\subsubsection{Vantaggi}
+		\begin{itemize}
+			\item linguaggio più conosciuto, diffuso e utilizzato nell'ambiente di sviluppo Android
+			\item ampia documentazione disponibile;
+			\item dispone di un gran numero di librerie;
+			\item portabilità su diversi sistemi operativi.
+		\end{itemize}
+		\subsubsection{Svantaggi}
+		\begin{itemize}
+			\item linguaggio verboso.
+		\end{itemize}
+		
+	\subsection{SQLite}
+		Libreria che implementa un database SQL transazionale senza la necessità di un server. Viene utilizzata per gestire le mappe scaricate e installate nel dispositivo e il relativo contenuto. Il suo utilizzo è stato consigliato dal proponente.
+		\subsubsection{Vantaggi}
+		\begin{itemize}
+			\item database transazionale leggerissimo e molto veloce;
+			\item consigliato per i dispositivi mobile;
+			\item supporta buona parte dello standard SQL92, già conosciuto dai membri del team;
+			\item sistema diffuso e documentato;
+			\item formato del database multipiattaforma;
+		\end{itemize}
+		\subsubsection{Svantaggi}
+		\begin{itemize}
+			\item non gestisce da sé la concorrenza;
+			\item alcune funzionalità SQL sono limitate.
+		\end{itemize}
+		
+	\subsection{AltBeacon}
+		Libreria che permette ai sistemi operativi mobile di interfacciarsi ai Beacon, offrendo molteplici funzionalità. Viene utilizzata per permettere la comunicazione tra l'applicativo Android e i Beacon. Il suo utilizzo è stato consigliato dal proponente.
+		\subsubsection{Vantaggi}
+			\begin{itemize}
+				\item pieno supporto Android;
+				\item supporta le tipologie di beacon più popolari attualmente in commercio;
+				\item supporta dispositivi Android con versione 4.3 o superiore;
+				\item si propone come nuovo standard open source.
+			\end{itemize}
+		\subsubsection{Svantaggi}
+			\begin{itemize}
+				\item poca documentazione disponibile.
+			\end{itemize}
+			
+	\subsection{JGraphT}
+		JGraphT è una libreria Java che fornisce funzionalità matematiche per modellare grafi. Viene utilizzata per la rappresentazione e l'uso delle mappe.
+
+		\subsubsection{Vantaggi}
+			\begin{itemize}
+				\item progettata per essere semplice e type-safe;
+				\item fornisce la possibilità di visualizzare i grafi attraverso JGraph;
+				\item ben documentata;
+			\end{itemize}							
+			
 \end{document}
