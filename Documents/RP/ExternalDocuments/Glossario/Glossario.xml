@@ -720,4 +720,12 @@ GUI (Graphical UI), ossia un'interfaccia composta da oggetti grafici
 			Circostanze non previste dal flusso principale dell'applicazione che possono scatenare malfunzionamenti o interruzioni dell'applicazione stessa
 		</descrizione>
 	</voce>
+	<voce>
+		<termine>
+			top-down
+		</termine>
+		<descrizione>
+			Nel modello top-down si formula una visione generale del sistema, senza scendere nel dettaglio delle sue parti. Ogni parte del sistema è successivamente rifinita aggiungendo maggiori dettagli della progettazione. Ogni nuova parte così ottenuta può quindi essere nuovamente rifinita, specificando ulteriori dettagli, finché la specifica completa è sufficientemente dettagliata da validare il modello
+		</descrizione>
+	</voce>
 </glossario>
