@@ -52,7 +52,7 @@
 			\paragraph{**NomeApplicazione**::Model::UserSetting::PathPreference}
 				Classe che definisce le preferenze impostabili riguardanti il percorso preferito dall'utente. \\
 				È un semplice enumeratore utile solamente per definire tutti e soli i valori che possono essere utilizzati in **NomeApplicazione**::Model::UserSetting::Setting.
-			\paragraph{**NomeApplicazione**::Model::UserSetting::PathPreference}
+			\paragraph{**NomeApplicazione**::Model::UserSetting::IstructionPreference}
 				Classe che definisce le preferenze impostabili riguardanti la fruizione delle istruzioni di navigazione. \\
 				È un semplice enumeratore utile solamente per definire tutti e soli i valori che possono essere utilizzati in **NomeApplicazione**::Model::UserSetting::Setting.
 	\subsection{**************Manca la parte riguardante il codice sviluppatore**************}
@@ -96,8 +96,8 @@
 					Interfaccia che rappresenta un arco pesato di un grafo. \\ 
 					Viene utilizzata per dare un livello di astrazione molto alto rispetto a ciò che effettivamente utilizzeremo durante la navigazione. Definisce il contratto di metodi molto semplici come metodi per accedere al peso dell'arco, ai nodi iniziali e finali dell'arco, impostare i nodi dell'arco.
 				\paragraph{**NomeApplicazione**::Model::Navigator::PathFinder}
-					Interfaccia che rappresenta un "modo" per calcolare il percorso che l'utente deve seguire. \\ 
-					Viene definita un'interfaccia in modo tale che sia possibile definire differenti implementazioni dell'algoritmo che si vuole utilizzare, implementando uno "Strategy" (Non ho idea se in modo corretto).
+					Interfaccia che espone il contratto della classe che calcola il percorso. \\ 
+					Questa interfaccia viene utilizzata per definire la firma dei metodi per gli algoritmi che possono calcolare il percorso definendo uno "Strategy" (Non ho idea se in modo corretto).
 				\paragraph{**NomeApplicazione**::Model::Navigator::BuildingMap}
 					Interfaccia che rappresenta la mappa di un edificio. \\
 					Viene utilizzata per definire il contratto che le classi devono seguire per poter rappresentare una mappa utilizzabile dal nostro Model.
