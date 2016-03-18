@@ -16,4 +16,14 @@
 
 <entry><version>0.08</version><author>Federico Tavella</author><role>Progettista</role><message>Stesura descrizione pattern strategy</message><date>2016-03-13</date></entry>
 
+
+<entry><version>0.09</version><author>Eduard Bicego</author><role>Progettista</role><message>Stesura tecnologie utilizzate</message><date>2016-03-16</date></entry>
+
+<entry><version>0.10</version><author>Marco Zanella</author><role>Progettista</role><message>Spiegazioni componenti model</message><date>2016-03-18</date></entry>
+
+<entry><version>0.11</version><author>Marco Zanella</author><role>Progettista</role><message>Spiegazione database</message><date>2016-03-18</date></entry>
+
+<entry><version>0.12</version><author>Marco Zanella</author><role>Progettista</role><message>aggiunta immagini</message><date>2016-03-18</date></entry>
+
+<entry><version>0.13</version><author>Marco Zanella</author><role>Progettista</role><message>correzioni</message><date>2016-03-18</date></entry>
 </registry>
