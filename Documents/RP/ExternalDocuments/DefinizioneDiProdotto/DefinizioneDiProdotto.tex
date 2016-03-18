@@ -1,0 +1,57 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{leaf}
+\usepackage{listings}
+\setcounter{table}{-1}
+
+\titlepage{}
+
+\author{}
+\date{03/03/2016}
+\intestazioni{Definizione di prodotto}
+\pagenumbering{gobble}
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries CLIPS\par}
+	Communication \& Localization with Indoor Positioning Systems \\*
+	\line(1,0){350} \\
+	{\scshape\LARGE Università di Padova \par}
+	\vspace{1cm}
+	%deve essere cambiato il titolo ogni volta
+	{\scshape\Large Definizione di prodotto \par}
+	\logo
+	\newpage
+	%devono essere compilati questi campi ogni volta
+		\begin{tabular}{c|c}
+			{\hfill \textbf{Versione}} 			& 					\\ \\
+			{\hfill\textbf{Data Redazione}} 	&            		\\ \\
+			{\hfill\textbf{Redazione}} 			&  					\\ \\
+			{\hfill\textbf{Verifica}} 			&  					\\ \\
+			{\hfill\textbf{Approvazione}} 		&  					\\ \\
+			{\hfill\textbf{Uso}} 				& Esterno			\\ \\
+			{\hfill\textbf{Distribuzione}} 		& Prof. Vardanega Tullio \\
+												& Prof. Cardin Riccardo \\
+												& Miriade S.p.A. \\
+		\end{tabular}
+	\end{titlepage}
+	
+	\newpage
+	\pagestyle{myfront}
+		\include{diarioModificheDP}
+	\newpage
+		\tableofcontents
+	\newpage
+		\listoffigures	
+	\label{LastFrontPage}
+	\newpage
+	
+	\pagestyle{mymain}
+	
+	 \newpage
+		\subfile{sections/Introduzione}
+
+		
+	\label{LastPage}
+
+\end{document}
