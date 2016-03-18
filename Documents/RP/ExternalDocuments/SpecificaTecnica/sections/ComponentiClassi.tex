@@ -9,6 +9,24 @@
 				\item **NomeApplicazione**::View;
 				\item **NomeApplicazione**::Presenter.
 			\end{itemize}
+	\newpage
+	\subsection{**NomeApplicazione**::Model}
+		\subsubsection{Struttura del package}
+				\begin{figure}[!h]
+					\centering
+					\includegraphics[scale=0.12]{diagrammi/Model.png}
+						\caption{Struttura del pacchetto Model}
+					\label{fig:Struttura_MVP}
+				\end{figure} 
+		\subsubsection{Descrizione}
+			Package che contiene tutte le classi e package appartenenti al Model dell'applicazione.
+		\subsubsection{Package contenuti}
+			\begin{itemize}
+				\item **NomeApplicazione**::Model::UserSetting;
+				\item **NomeApplicazione**::Model::Navigator;
+				\item **NomeApplicazione**::Model::Beacon;
+				\item **NomeApplicazione**::Model...
+			\end{itemize}
 		\subsubsection{Descrizione}
 		\subsubsection{Package Contenuti}
 			\begin{itemize}
@@ -16,8 +34,15 @@
 				\item **NomeApplicazione**::Model::Setting
 				\item **NomeApplicazione**::Model::DatabaseServices
 			\end{itemize}
+			\newpage
 	\subsection{**NomeApplicazione**::Model::UserSetting}
 		\subsubsection{Struttura del package}
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[scale=0.6]{diagrammi/UserSetting.png}
+					\caption{Struttura del pacchetto UserSetting}
+				\label{fig:Struttura_MVP}
+			\end{figure} 
 		\subsubsection{Descrizione}
 			Componente del Model per la gestione delle preferenze riguardanti il percorso, le impostazioni di fruizione delle informazioni di navigazione e per gestire se un utente può accedere alle funzioni di sviluppatore oppure no.
 		\subsubsection{Classi}
@@ -31,8 +56,15 @@
 				Classe che definisce le preferenze impostabili riguardanti la fruizione delle istruzioni di navigazione. \\
 				È un semplice enumeratore utile solamente per definire tutti e soli i valori che possono essere utilizzati in **NomeApplicazione**::Model::UserSetting::Setting.
 	\subsection{**************Manca la parte riguardante il codice sviluppatore**************}
+	\newpage
 	\subsection{**NomeApplicazione**::Model::Beacon}
 		\subsubsection{Struttura del package}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.6]{diagrammi/Beacon.png}
+				\caption{Struttura del pacchetto Beacon}
+			\label{fig:Struttura_MVP}
+		\end{figure} 
 		\subsubsection{Descrizione}
 			Componente del Model per la gestione dei beacon.
 		\subsubsection{Interfacce}
@@ -44,8 +76,15 @@
 				Classe che implementa l'interfaccia **NomeApplicazione**::Model::Beacon::MyBeacon. \\
 				Questa classe rappresenta un beacon e permette di accedere alle sue informazioni tramite i metodi definiti nell'interfaccia da cui deriva.
 	\subsection{**************Manca la parte di rilevamento dei beacon**************}
+	\newpage
 	\subsection{**NomeApplicazione**::Model::Navigator}
-		\subsubsection{Struttura del package}
+		\subsubsection{Struttura del package Navigator}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.3]{diagrammi/Navigator.png}
+				\caption{Struttura del pacchetto Navigator}
+			\label{fig:Struttura_MVP}
+		\end{figure} 
 		\subsubsection{Descrizione}
 			Componente del Model che si occupa della parte di navigazione. \\
 			Questo pacchetto ha il compito di calcolare il percorso che l'utente deve seguire ed offrire le classi che permettono di rappresentare la mappa.
