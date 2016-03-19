@@ -26,4 +26,6 @@
 <entry><version>0.12</version><author>Marco Zanella</author><role>Progettista</role><message>aggiunta immagini</message><date>2016-03-18</date></entry>
 
 <entry><version>0.13</version><author>Marco Zanella</author><role>Progettista</role><message>correzioni</message><date>2016-03-18</date></entry>
+
+<entry><version>0.14</version><author>Marco Zanella</author><role>Progettista</role><message>aggiunta gestione codice sviluppatore</message><date>2016-03-19</date></entry>
 </registry>
