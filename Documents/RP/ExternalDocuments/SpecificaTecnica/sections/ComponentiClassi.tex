@@ -55,7 +55,9 @@
 			\paragraph{**NomeApplicazione**::Model::UserSetting::IstructionPreference}
 				Classe che definisce le preferenze impostabili riguardanti la fruizione delle istruzioni di navigazione. \\
 				È un semplice enumeratore utile solamente per definire tutti e soli i valori che possono essere utilizzati in **NomeApplicazione**::Model::UserSetting::Setting.
-	\subsection{**************Manca la parte riguardante il codice sviluppatore**************}
+			\paragraph{**NomeApplicazione**::Model::UserSetting::DeveloperCodeManager}
+				Classe statica per la verifica dei codici sviluppatore. \\
+				Questa classe esporrà un metodo pubblico che ricevuta una stringa ritornerà un booleano che specificherà se il codice passato come parametro è valido oppure no. In prima battuta possiamo fare questo controllo hard-coded, con dei raffinamenti invece possiamo mettere sul server i codici sviluppatore.
 	\newpage
 	\subsection{**NomeApplicazione**::Model::Beacon}
 		\subsubsection{Struttura del package}
@@ -150,9 +152,9 @@
 	\subsection{Dubbi \& ToDo}
 		\begin{itemize}
 			\item manca la parte del model riguardante il rilevamento dei beacon;
-			\item manca la parte del model riguardante la gestione del codice sviluppatore;
 			\item manca la parte del model riguardante database e server;
 			\item manca la parte del model riguardante le fotografie e la loro gestione;
+			\item verifica della parte del model riguardante la gestione del codice sviluppatore;
 			\item manca la parte del presenter;
 			\item manca la parte della view;
 			\item da valutare se il package Beacon è interno o esterno al package Navigator;
