@@ -28,8 +28,8 @@ exec < /dev/tty
     role=""
     currPath="$(pwd)"
     #set which document
-    while [ "$doc" != "ar" ] && [ "$doc" != "gl" ] && [ "$doc" != "np" ] && [ "$doc" != "pp" ] && [ "$doc" != "pq" ] && [ "$doc" != "sf" ] && [ "$doc" != "st" ]  ; do
-        exec < /dev/tty; read -p "Which document? (ar/gl/np/pp/pq/sf/st) " doc;
+    while [ "$doc" != "ar" ] && [ "$doc" != "gl" ] && [ "$doc" != "np" ] && [ "$doc" != "pp" ] && [ "$doc" != "pq" ] && [ "$doc" != "sf" ] && [ "$doc" != "st" ] && [ "$doc" != "dp" ] ; do
+        exec < /dev/tty; read -p "Which document? (ar/gl/np/pp/pq/sf/st/dp) " doc;
     done;
     #Domando il ruolo per poterlo inserire nel diario
     while [ "$role" != "amm" ] && [ "$role" != "rp" ] && [ "$role" != "ver" ] && [ "$role" != "pr" ] && [ "$role" != "anal" ] && [ "$doc" != "cod" ] ; do
@@ -67,11 +67,15 @@ exec < /dev/tty
         doc="ST"
         docTexName="SpecificaTecnica.tex"
         docPDFName="SpecificaTecnica.pdf"
+    elif [ "$doc" = "dp" ]; then
+        doc="DP"
+        docTexName="DefinizioneDiProdotto.tex"
+        docPDFName="DefinizioneDiProdotto.pdf"
     fi
 
-    diaryTexPath=$(find .. -name "diarioModifiche$doc.tex") #Perocorso del diario in latex
-    docTexPath=$(find .. -name "$docTexName") #Percorso del file latex da compilare
-    docPDFPath=$(find .. -name "$docPDFName") #Percorso norme db
+    diaryTexPath=$(find . -name "diarioModifiche$doc.tex") #Perocorso del diario in latex
+    docTexPath=$(find . -name "$docTexName") #Percorso del file latex da compilare
+    docPDFPath=$(find . -name "$docPDFName") #Percorso norme db
     path=$(dirname "${docTexPath}") #Percorso della cartella
 
     #Se il file del diario non esiste lo inizializzo
@@ -112,3 +116,6 @@ exec < /dev/tty
     find . -name "*.out" -type f -delete
     find . -name "*.gz(busy)" -type f -delete
     echo "Deleted.";
+    cd $currPath;
+    #automatic add and commit for registry file
+    git add "$path/registroModifiche$doc.xml" "$diaryTexPath" "$docPDFPath"; git commit -m "Automatic commit for diary update";
