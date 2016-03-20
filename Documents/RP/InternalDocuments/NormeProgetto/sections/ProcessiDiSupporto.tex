@@ -669,7 +669,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\item \textbf{ToDo}: identifica una issue\g\ per la quale è stata trovata la soluzione ma questa deve ancora essere applicata;
 				\item \textbf{Working}: identifica una issue\g\ alla quale un membro del gruppo sta lavorando per applicare la soluzione;
 				\item \textbf{Rejected}: identifica una issue\g\ che non è stata accettata poiché risulta essere futile o dannosa;
-				\item \textbf{toVerify}: identifica una issue\g\ che è stata completata e deve essere verificata.
+				\item \textbf{ToVerify}: identifica una issue\g\ che è stata completata e deve essere verificata.
 			\end{itemize}				
 		\paragraph{Sintassi di una Issue}
 			Ogni issue\g\ avrà un nome che dovrà seguire la seguente notazione: \begin{center}\textbf{[D]:[S]}\end{center} dove:
@@ -692,7 +692,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 	\subparagraph{Gestione di una issue}
 		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura di gestione di una issue si divide in due casi: verifica di una issue già aperta o verifica generica.Nel caso di verifica di una issue già aperta:
 			\begin{enumerate}
-				\item il \verificatore\ che ha riscontrato delle anomalie dovrà segnalarlo commentando la issue che ha verificato e modificando la label da "toVerify" a "ToDo". Nel caso in cui non vengano riscontrare anomalie, può chiudere l'issue aggiungendo al messaggio di commit la stringa "close \texttt{\#numeroIssue}";
+				\item il \verificatore\ che ha riscontrato delle anomalie dovrà segnalarlo commentando la issue che ha verificato e modificando la label da "ToVerify" a "ToDo". Nel caso in cui non vengano riscontrare anomalie, può chiudere l'issue aggiungendo al messaggio di commit la stringa "close \texttt{\#numeroIssue}";
 				\item l'assegnatario della issue dovrà provvedere ad apportare le modifiche rilevate dal \verificatore\, nel caso le ritenesse necessarie;
 				\item il \verificatore\ dovrà procedere ad una nuova verifica, ritornando al punto 1.
 			\end{enumerate}
