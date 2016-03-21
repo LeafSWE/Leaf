@@ -97,4 +97,8 @@
 <entry><version>2.16</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-03-15</date></entry>
 
 <entry><version>3</version><author>Marco Zanella</author><role>Responsabile di progetto</role><message>Approvazione del documento</message><date>2016-03-15</date></entry>
+
+<entry><version>3.01</version><author>Davide Castello</author><role>Amministratore</role><message>Aggiunta procedura e strumenti per calcolo del consuntivo (sezioni 4.1.5.2 e 4.1.6.3)</message><date>2016-03-19</date></entry>
+
+<entry><version>3.02</version><author>Davide Castello</author><role>Amministratore</role><message>Correzioni ortografiche</message><date>2016-03-19</date></entry>
 </registry>

@@ -180,7 +180,7 @@
 
 		\subsubsection{Procedure}
 			\paragraph{Procedura di creazione e gestione di un ticket}
-				Per la creazione di un nuovo ticket\g\ il \responsabilediprogetto deve accedere alla sezione Tasks di Teamwork\g. La procedura per la creazione di un task è la seguente:
+				Per la creazione di un nuovo ticket\g\ il \responsabilediprogetto\ deve accedere alla sezione Tasks di Teamwork\g. La procedura per la creazione di un task è la seguente:
 				\begin{enumerate}
 					\item accedere alla task list relativa alla fase nella quale si desidera che l'attività sia svolta;
 					\item creare un nuovo task;
@@ -191,7 +191,7 @@
 				Ogni sub-task deve essere dotato di titolo e descrizione esplicativa. Per partizionare ulteriormente un sub-task, inserire ogni partizione sotto forma di item di checklist, in cui ogni item corrisponde ad una checkbox \begin{center}\texttt{- [ ] descrizioneItem}.\end{center}
 				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.55]{sections/img/creazioneTask.png}
+					\includegraphics[scale=0.40]{sections/img/creazioneTask.png}
 					\caption{Procedura di creazione e gestione di un ticket - Parte 1}\label{fig:Procedura di creazione e gestione di un ticket - Parte 1} 
 				\end{figure}
 			Una volta creato il ticket su Teamwork, i passi da seguire sono i seguenti			
@@ -199,7 +199,7 @@
 					\item per ogni task aperto nella lista precedente, l'assegnatario del task esegue l'applicativo \textit{GitWork.jar} che crea, sul repository del gruppo \leaf\, una issue per ogni subtask del task selezionato con la label ToDo;
 					\item quando il membro del gruppo inizia a lavorare sulla issue, modificha la label da ToDo a Working;
 					\item ogni commit eseguito deve riferirsi ad una delle issue presenti sul repository mediante \texttt{\#numeroIssue} all'interno del messaggio di commit. Inoltre, è necessario spuntare la relativa checkbox, se presente, per indicare l'avanzamento del proprio lavoro;
-					\item completato il lavoro richiesto dalla issue, inserire nel messaggio di commit la stringa \texttt{£toVerify}, in modo che la label della issue venga modificata da ToDo a toVerify.
+					\item completato il lavoro richiesto dalla issue, inserire nel messaggio di commit la stringa \texttt{£toVerify}, in modo che la label della issue venga modificata da ToDo a ToVerify.
 				\end{enumerate}
 			A questo punto, è possibile verificare la issue e, di conseguenza, il ticket.
 				\begin{figure}[H]
@@ -207,6 +207,23 @@
 					\includegraphics[scale=0.9]{sections/img/lavoroSuIssue.png}
 					\caption{Procedura di creazione e gestione di un ticket - Parte 2}\label{fig:Procedura di creazione e gestione di un ticket - Parte 2} 
 				\end{figure}
+			\paragraph{Stesura del consuntivo} \label{sec: Consuntivo}
+				L'operazione di stesura del consuntivo può essere effettuata solamente dal \responsabilediprogetto\ della fase corrente.\\
+	Le operazioni che il \responsabilediprogetto\ esegue sono le seguenti:
+	\begin{enumerate}
+		\item esporta da TeamWork un foglio di calcolo, in formato Microsoft Excel, che mostra le ore rendicontate nella fase corrente;
+		\item recupera il foglio di calcolo (anch'esso in formato Microsoft Excel) relativo alla fase corrente, precompilato con il relativo preventivo delle ore e già presente su Github; 
+		\item inserisce le ore rendicontate nelle celle previste all'interno del foglio di calcolo contenente il preventivo delle ore della fase corrente, con una semplice operazione di copia-incolla: in questo modo, ottiene la differenza di ore tra il preventivo e le ore rendicontate;
+		\item aggiunge all'interno della sezione 8 "Consuntivo di periodo" del \pianodiprogetto\ una sotto-sezione dove si mostrano i valori ottenuti da questo confronto;
+		\item crea una tabella all'interno di questa sotto-sezione dove mostra:
+		\begin{itemize}
+			\item le ore preventivate, suddivise per ruolo, e la differenza tra queste e quelle rendicontate;
+			\item il budget preventivato, suddiviso per ruolo, e la differenza tra questo e quello ottenuto dalle ore rendicontate;
+			\item il totale delle ore preventivate per la fase corrente, il totale delle ore rendicontate e la loro differenza;
+			\item il totale del budget preventivato per la fase corrente, il totale del budget ottenuto dalle ore rendicontate e la loro differenza.
+		\end{itemize}
+		\item trae infine delle conclusioni dai risultati ottenuti e scrive una valutazione del lavoro effettuato nella fase corrente. 
+	\end{enumerate}
 		\subsubsection{Strumenti}
 			\paragraph{Pianificazione} \label{sec: Pianificazione Teamwork}
 				Lo strumento scelto per la gestione delle attività di pianificazione di progetto è Teamwork\g. Le caratteristiche rilevanti di questo software\g\ sono le seguenti:
@@ -234,6 +251,14 @@
 					\item offre la possibilità di creare grafici di WBS\g;
 					\item generazione dei diagrammi nei formati PDF\g, PNG\g, HTML\g.
 				\end{itemize}
+			\paragraph{Calcolo del consuntivo}
+				Per il calcolo del consuntivo si utilizzano due funzionalità offerte da TeamWork: la rendicontazione delle ore di lavoro da parte di ogni membro del gruppo e l'esportazione delle ore rendicontate tramite un foglio di calcolo in formato Microsoft Excel.\\
+	Il \responsabilediprogetto\ è colui che effettua la stesura del consuntivo e segue la procedura definita nella sezione \ref{sec: Consuntivo} "Stesura del consuntivo" del presente documento.\\
+	Gli strumenti da lui utilizzati sono i seguenti:
+	\begin{itemize}
+		\item TeamWork;
+		\item Microsoft Excel;
+	\end{itemize}
 	\subsection{Formazione}
 		\subsubsection{Formazione dei membri del gruppo}
 			Per poter svolgere il progetto didattico, i singoli membri del gruppo necessitano periodicamente di tempo dedicato alla formazione nei vari ambiti che il progetto copre. Chiaramente, non tutte le ore potranno essere a carico del proponente.
