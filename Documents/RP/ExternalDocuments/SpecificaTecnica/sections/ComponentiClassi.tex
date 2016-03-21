@@ -25,14 +25,8 @@
 				\item **NomeApplicazione**::Model::UserSetting;
 				\item **NomeApplicazione**::Model::Navigator;
 				\item **NomeApplicazione**::Model::Beacon;
-				\item **NomeApplicazione**::Model...
-			\end{itemize}
-		\subsubsection{Descrizione}
-		\subsubsection{Package Contenuti}
-			\begin{itemize}
-				\item **NomeApplicazione**::Model::Beacon
-				\item **NomeApplicazione**::Model::Setting
 				\item **NomeApplicazione**::Model::DatabaseServices
+				\item **NomeApplicazione**::Model::ApplicationManager
 			\end{itemize}
 			\newpage
 	\subsection{**NomeApplicazione**::Model::UserSetting}
@@ -99,7 +93,7 @@
 					Viene utilizzata per dare un livello di astrazione molto alto rispetto a ciò che effettivamente utilizzeremo durante la navigazione. Definisce il contratto di metodi molto semplici come metodi per accedere al peso dell'arco, ai nodi iniziali e finali dell'arco, impostare i nodi dell'arco.
 				\paragraph{**NomeApplicazione**::Model::Navigator::PathFinder}
 					Interfaccia che espone il contratto della classe che calcola il percorso. \\ 
-					Questa interfaccia viene utilizzata per definire la firma dei metodi per gli algoritmi che possono calcolare il percorso definendo uno "Strategy" (Non ho idea se in modo corretto).
+					Questa interfaccia viene utilizzata per definire la firma dei metodi per gli algoritmi che possono calcolare il percorso definendo uno "Strategy".
 				\paragraph{**NomeApplicazione**::Model::Navigator::BuildingMap}
 					Interfaccia che rappresenta la mappa di un edificio. \\
 					Viene utilizzata per definire il contratto che le classi devono seguire per poter rappresentare una mappa utilizzabile dal nostro Model.
@@ -114,7 +108,7 @@
 					Questa classe rappresenta un "punto di navigazione" nel grafo rappresentante l'edificio, ovvero rappresenta un beacon come un vertice nel grafo dell'edificio.
 				\paragraph{**NomeApplicazione**::Model::Navigator::EnrichedEdge}
 					Classe che implementa l'interfaccia **NomeApplicazione**::Model::Navigator::Edge e deriva dalla classe org.jgrapht.graph.DefaultWeightedEdge della libreria JGraphT. \\
-					Viene utilizzata per la navigazione. Infatti questo tipo di arco contiene informazione sia sul peso dell'arco(utile per il calcolo del percorso), sia l'informazioni di attraversamento(informazioni di base, descrizione lunga, url delle photo).
+					Viene utilizzata per la navigazione. Infatti questo tipo di arco contiene informazione sia sul peso dell'arco (utile per il calcolo del percorso), sia l'informazioni di attraversamento (informazioni di base, descrizione lunga, url delle photo).
 				\paragraph{**NomeApplicazione**::Model::Navigator::ElevatorEdge}
 					Classe che estende la classe **NomeApplicazione**::Model::Navigator::EnrichedEdge. \\
 					Rappresenta un arco che prevede un ascensore e viene utilizzata per ridefinire il peso utilizzato per calcolare il percorso sulla base delle preferenze dell'utente in base agli ascensori.
@@ -125,13 +119,13 @@
 					Classe che estende la classe **NomeApplicazione**::Model::Navigator::EnrichedEdge. \\
 					Rappresenta un arco che non contiene particolari ostacoli e viene utilizzata per ridefinire il peso utilizzato per calcolare il percorso nel caso in cui l'utente non imposti alcuna preferenza di percorso.
 				\paragraph{**NomeApplicazione**::Model::Navigator::BasicInstruction}
-					Classe che implementa l'interfaccia **NomeApplicazione**::Model::Navigator::NavigationInstruction. \\
+					Classe che implementa l'interfaccia\\ **NomeApplicazione**::Model::Navigator::NavigationInstruction. \\
 					Rappresenta le indicazioni di base che possono guidare un utente (Navigazione di primo livello).
 				\paragraph{**NomeApplicazione**::Model::Navigator::DetailedInstruction}
-					Classe che implementa l'interfaccia **NomeApplicazione**::Model::Navigator::NavigationInstruction. \\
+					Classe che implementa l'interfaccia\\ **NomeApplicazione**::Model::Navigator::NavigationInstruction. \\
 					Rappresenta delle informazioni aggiuntive che possono essere fornite ad un utente (descrizione lunga).
 				\paragraph{**NomeApplicazione**::Model::Navigator::PhotoInstruction}
-					Classe che implementa l'interfaccia **NomeApplicazione**::Model::Navigator::NavigationInstruction. \\
+					Classe che implementa l'interfaccia\\ **NomeApplicazione**::Model::Navigator::NavigationInstruction. \\
 					Rappresenta delle informazioni visuali del prossimo punto da raggiungere per procedere con la navigazione (fotografie).
 				\paragraph{**NomeApplicazione**::Model::Navigator::PointOfInterest}
 					Classe che rappresenta un POI ovvero un area dell'edificio che può risultare interessante ad un utente a livello sia informativo che di navigazione (una possibile destinazione). \\
@@ -141,7 +135,7 @@
 						\item descrizione del POI (qualcosa che almeno ne descriva le funzionalità);
 					\end{itemize}
 				\paragraph{**NomeApplicazione**::Model::Navigator::BuildingMapIml}
-					Classe che implementa l'interfaccia **NomeApplicazione**::Model::Navigator::BuildingMapIml. \\
+					Classe che implementa l'interfaccia **NomeApplicazione**::Model::Navigator::BuildingMapImplementation. \\
 					Viene utilizzata per rappresentare la mappa dell'edificio, racchiudento le informazioni dell'edificio stesso. in particolare mantiene la corrispondenza tra RegionOfInterest e PointOfInterest (ad un ROI possono essere associati più POI ed un POI può appartenere a più ROI. Esempio 1C150 della Torre Archimede). 
 				\paragraph{**NomeApplicazione**::Model::Navigator::DijktraPathFinder}
 					Classe che implementa l'interfaccia **NomeApplicazione**::Model::Navigator::PathFinder. \\
