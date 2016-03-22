@@ -119,7 +119,7 @@
 					Questa classe rappresenta un "punto di navigazione" nel grafo rappresentante l'edificio, ovvero rappresenta un beacon come un vertice nel grafo dell'edificio.
 				\paragraph{BlueWhere::Model::Navigator::EnrichedEdge}
 					Classe che implementa l'interfaccia BlueWhere::Model::Navigator::Edge e deriva dalla classe org.jgrapht.graph.DefaultWeightedEdge della libreria JGraphT. \\
-					Viene utilizzata per la navigazione. Infatti questo tipo di arco contiene informazione sia sul peso dell'arco(utile per il calcolo del percorso), sia l'informazioni di attraversamento(informazioni di base, descrizione lunga, url delle photo).
+					Viene utilizzata per la navigazione. Infatti questo tipo di arco contiene informazione sia sul peso dell'arco(utile per il calcolo del percorso), sia l'informazioni di attraversamento(informazioni di base, descrizione lunga, URL delle fotografie).
 				\paragraph{BlueWhere::Model::Navigator::ElevatorEdge}
 					Classe che estende la classe BlueWhere::Model::Navigator::EnrichedEdge. \\
 					Rappresenta un arco che prevede un ascensore e viene utilizzata per ridefinire il peso utilizzato per calcolare il percorso sulla base delle preferenze dell'utente in base agli ascensori.
@@ -150,7 +150,7 @@
 					Viene utilizzare per mantenere la descrizione di un POI in modo tale che sia possibile modificare la struttura della stessa, al posto di avere la descrizione internamente alla classe POI e dover, in caso, modificare tale classe.
 				\paragraph{BlueWhere::Model::Navigator::BuildingMapIml}
 					Classe che implementa l'interfaccia BlueWhere::Model::Navigator::BuildingMapIml. \\
-					Viene utilizzata per rappresentare la mappa dell'edificio, racchiudento le informazioni dell'edificio stesso. in particolare mantiene la corrispondenza tra RegionOfInterest e PointOfInterest (ad un ROI possono essere associati più POI ed un POI può appartenere a più ROI. Esempio 1C150 della Torre Archimede).
+					Viene utilizzata per rappresentare la mappa dell'edificio, racchiudendo le informazioni dell'edificio stesso. in particolare mantiene la corrispondenza tra RegionOfInterest e PointOfInterest (ad un ROI possono essere associati più POI ed un POI può appartenere a più ROI. Esempio 1C150 della Torre Archimede).
 				\paragraph{BlueWhere::Model::Navigator::PointOfInterestInformation}
 					Classe che rappresenta le informazioni relative ad un certo edificio. \\
 					Viene utilizzare per mantenere e informazioni di un edificio quali:
@@ -163,7 +163,7 @@
 					Questa classe è utile per mantenere la descrizione di un edificio in modo tale che sia possibile modificarne la struttura senza per forza dover modificare la classe BuildingMapIml. 
 				\paragraph{BlueWhere::Model::Navigator::DijktraPathFinder}
 					Classe che implementa l'interfaccia BlueWhere::Model::Navigator::PathFinder. \\
-					Viene utilizzata per calcolare il percorso per portare un utente in un certo POI (destinazione della navigazione). Questa classe sfrutta gli algoritmi messi a disposizione dalla libreria JGraphT. Essendo che un POI può essere associato a più ROI e la navigazione è possibile solamente tramite i ROI (punti in cui abbiamo i beacon e quindi possiamo controllare se l'utente va nel percorso giusto oppure no) allora sarà necessario calcolare un percorso per ogni ROI associato ad un POI e successivamente scegliere quello con peso minore (in base al percorso stesso e alle preferenze dell'utente). Utilizzando l'algritmo di Dijkstra non sarebbe necessario in generale ma l'implementazione fornita da JGraphT richiede un ricalcolo.
+					Viene utilizzata per calcolare il percorso per portare un utente in un certo POI (destinazione della navigazione). Questa classe sfrutta gli algoritmi messi a disposizione dalla libreria JGraphT. Essendo che un POI può essere associato a più ROI e la navigazione è possibile solamente tramite i ROI (punti in cui abbiamo i beacon e quindi possiamo controllare se l'utente va nel percorso giusto oppure no) allora sarà necessario calcolare un percorso per ogni ROI associato ad un POI e successivamente scegliere quello con peso minore (in base al percorso stesso e alle preferenze dell'utente). Utilizzando l'algoritmo di Dijkstra non sarebbe necessario in generale ma l'implementazione fornita da JGraphT richiede un ricalcolo.
 				\paragraph{BlueWhere::Model::Navigator::Navigator}
 					Classe che si occupa di gestire la navigazione. \\
 					Viene utilizzata per controllare se l'utente segue le indicazioni fornite per la navigazione e gestire in generale i percorsi restituiti da Dijkstra (liste di archi, nel nostro caso possibilmente sarebbe meglio EnrichedEdge).
@@ -177,6 +177,6 @@
 			\item manca la parte del presenter;
 			\item manca la parte della view;
 			\item da valutare la gestione dei valori dei beacon che cambiano velocemente.
-			\item orario una classe a sè stante
+			\item orario una classe a sé stante
 		\end{itemize}
 \end{document}
