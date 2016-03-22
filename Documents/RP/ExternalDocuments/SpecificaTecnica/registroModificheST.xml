@@ -28,4 +28,6 @@
 <entry><version>0.13</version><author>Marco Zanella</author><role>Progettista</role><message>correzioni</message><date>2016-03-18</date></entry>
 
 <entry><version>0.14</version><author>Marco Zanella</author><role>Progettista</role><message>aggiunta gestione codice sviluppatore</message><date>2016-03-19</date></entry>
+
+<entry><version>0.15</version><author>Marco Zanella</author><role>Progettista</role><message>Aggiunta classi per la gestione delle informazioni dell'edificio e del POI, aggiunta valori possibili per PathPreference e InstructionPreference</message><date>2016-03-22</date></entry>
 </registry>
