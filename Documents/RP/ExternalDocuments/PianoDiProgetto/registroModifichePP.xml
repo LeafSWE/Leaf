@@ -61,10 +61,15 @@
 
 <entry><version>2.00</version><author>Cristian Andrighetto</author><role>Responsabile di Progetto</role><message>Approvazione del documento</message><date>2016-02-19</date></entry>
 
-<entry><version>2.01</version><author>Marco Zanella</author><role>Responsabile di Progetto</role><message>Aggiunta analisi dei rischi per la fase di progettazione architetturale</message><date>2016-03-01</date></entry>
+<entry><version>2.01</version><author>Marco Zanella</author><role>Responsabile di Progetto</role><message>Aggiunta analisi dei rischi per la fase di progettazione architetturale</message><date>2016-02-22</date></entry>
 
 
-<entry><version>2.02</version><author>Marco Zanella</author><role>Responsabile di progetto</role><message>Aggiunta riscontro dei rischi fase PA</message><date>2016-03-19</date></entry>
+<entry><version>2.02</version><author>Marco Zanella</author><role>Responsabile di progetto</role><message>Aggiunta riscontro dei rischi fase PA</message><date>2016-03-13</date></entry>
 
-<entry><version>2.03</version><author>Marco Zanella</author><role>Responsabile di progetto</role><message>Aggiunta consuntivo fase PA</message><date>2016-03-19</date></entry>
+<entry><version>2.03</version><author>Marco Zanella</author><role>Responsabile di progetto</role><message>Aggiunta consuntivo fase PA</message><date>2016-03-12</date></entry>
+
+<entry><version>2.04</version><author>Oscar Elia Conti</author><role>Responsabile di progetto</role><message>Verifica del documento</message><date>2016-03-13</date></entry>
+
+<entry><version>3.00</version><author>Marco Zanella</author><role>Responsabile di progetto</role><message>Approvazione documento</message><date>2016-03-13</date></entry>
+
 </registry>

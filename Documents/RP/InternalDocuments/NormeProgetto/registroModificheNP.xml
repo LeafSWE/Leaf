@@ -61,42 +61,42 @@
 
 <entry><version>2.00</version><author>Cristian Andrighetto</author><role>Responsabile di progetto</role><message>Approvazione del documento</message><date>2016-02-20</date></entry>
 
-<entry><version>2.01</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta norma per la nomenclatura del verbali (sezione 3.1.3.4.1)</message><date>2016-03-02</date></entry>
+<entry><version>2.01</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta norma per la nomenclatura del verbali (sezione 3.1.3.4.1)</message><date>2016-02-22</date></entry>
 
 
-<entry><version>2.02</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta norma per il riferimento di una decisione (sezione 3.1.3.4.2)</message><date>2016-03-02</date></entry>
+<entry><version>2.02</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta norma per il riferimento di una decisione (sezione 3.1.3.4.2)</message><date>2016-02-22</date></entry>
 
-<entry><version>2.03</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunte norme per il codice (sezione 2.2.3)</message><date>2016-03-02</date></entry>
+<entry><version>2.03</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunte norme per il codice (sezione 2.2.3)</message><date>2016-02-22</date></entry>
 
-<entry><version>2.04</version><author>Andrea Tombolato</author><role>Amministratore</role><message>Modifica norme per i ticket (sezione 4.1.4.1 e 4.1.4.2)</message><date>2016-03-04</date></entry>
+<entry><version>2.04</version><author>Andrea Tombolato</author><role>Amministratore</role><message>Modifica norme per i ticket (sezione 4.1.4.1 e 4.1.4.2)</message><date>2016-02-22</date></entry>
 
-<entry><version>2.05</version><author>Federico Tavella</author><role>Amministratore</role><message>Creazione diagrammi delle attività per i ticket (figura 9)</message><date>2016-03-04</date></entry>
-
-
-<entry><version>2.06</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta norma sezione Formazione (sezione 4.2)</message><date>2016-03-04</date></entry>
-
-<entry><version>2.07</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunto strumento per la generazione del diario delle modifiche (sezione 3.1.5.2)</message><date>2016-03-04</date></entry>
-
-<entry><version>2.08</version><author>Federico Tavella</author><role>Amministratore</role><message>Stesura scheletro nuove sezioni</message><date>2016-03-05</date></entry>
-
-<entry><version>2.09</version><author>Andrea Tombolato</author><role>Amministratore</role><message>Aggiunta procedura commit (sezione 3.3.1.3.3)</message><date>2016-03-05</date></entry>
-
-<entry><version>2.10</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta norma IDE (sezione 2.2.5.4)</message><date>2016-03-05</date></entry>
-
-<entry><version>2.11</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta sezione Progettazione (sezione 2.2.2)</message><date>2016-03-05</date></entry>
-
-<entry><version>2.12</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta norma classificazione dei test (sezione 2.2.3.6.1)</message><date>2016-03-05</date></entry>
-
-<entry><version>2.13</version><author>Andrea Tombolato</author><role>Amministratore</role><message>Aggiunti strumenti per le metriche (sezione 3.2.1.3)</message><date>2016-03-05</date></entry>
+<entry><version>2.05</version><author>Federico Tavella</author><role>Amministratore</role><message>Creazione diagrammi delle attività per i ticket (figura 9)</message><date>2016-02-22</date></entry>
 
 
-<entry><version>2.14</version><author>Federico Tavella</author><role>Amministratore</role><message>Stesura procedure tracciamento componenti e classi</message><date>2016-03-14</date></entry>
+<entry><version>2.06</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta norma sezione Formazione (sezione 4.2)</message><date>2016-02-22</date></entry>
 
-<entry><version>2.15</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-03-14</date></entry>
+<entry><version>2.07</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunto strumento per la generazione del diario delle modifiche (sezione 3.1.5.2)</message><date>2016-02-22</date></entry>
 
-<entry><version>2.16</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-03-15</date></entry>
+<entry><version>2.08</version><author>Federico Tavella</author><role>Amministratore</role><message>Stesura scheletro nuove sezioni</message><date>2016-02-23</date></entry>
 
-<entry><version>3</version><author>Marco Zanella</author><role>Responsabile di progetto</role><message>Approvazione del documento</message><date>2016-03-15</date></entry>
+<entry><version>2.09</version><author>Andrea Tombolato</author><role>Amministratore</role><message>Aggiunta procedura commit (sezione 3.3.1.3.3)</message><date>2016-02-23</date></entry>
+
+<entry><version>2.10</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta norma IDE (sezione 2.2.5.4)</message><date>2016-02-23</date></entry>
+
+<entry><version>2.11</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta sezione Progettazione (sezione 2.2.2)</message><date>2016-02-23</date></entry>
+
+<entry><version>2.12</version><author>Federico Tavella</author><role>Amministratore</role><message>Aggiunta norma classificazione dei test (sezione 2.2.3.6.1)</message><date>2016-02-24</date></entry>
+
+<entry><version>2.13</version><author>Andrea Tombolato</author><role>Amministratore</role><message>Aggiunti strumenti per le metriche (sezione 3.2.1.3)</message><date>2016-02-24</date></entry>
+
+
+<entry><version>2.14</version><author>Federico Tavella</author><role>Amministratore</role><message>Stesura procedure tracciamento componenti e classi</message><date>2016-02-24</date></entry>
+
+<entry><version>2.15</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-02-25</date></entry>
+
+<entry><version>2.16</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-02-26</date></entry>
+
+<entry><version>3.00</version><author>Marco Zanella</author><role>Responsabile di progetto</role><message>Approvazione del documento</message><date>2016-02-26</date></entry>
 
 <entry><version>3.01</version><author>Davide Castello</author><role>Amministratore</role><message>Aggiunta procedura e strumenti per calcolo del consuntivo (sezioni 4.1.5.2 e 4.1.6.3)</message><date>2016-03-19</date></entry>
 

@@ -626,7 +626,7 @@ GUI (Graphical UI), ossia un'interfaccia composta da oggetti grafici
 	</voce>
 	<voce>
 		<termine>
-			IntelliJIdea
+			IntelliJ Idea
 		</termine>
 		<descrizione>
 			IDE per il linguaggio Java
@@ -637,7 +637,7 @@ GUI (Graphical UI), ossia un'interfaccia composta da oggetti grafici
 			MetricsReloaded
 		</termine>
 		<descrizione>
-			Plugin per Android Studio e IntelliJIdea per il calcolo delle metriche del software
+			Plugin per Android Studio e IntelliJ Idea per il calcolo delle metriche del software
 		</descrizione>
 	</voce>
 	<voce>
