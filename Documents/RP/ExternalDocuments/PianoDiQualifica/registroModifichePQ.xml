@@ -3,11 +3,11 @@
 
 <entry><version>0.01</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura struttura documento</message><date>2015-12-07</date></entry>
 
-<entry><version>0.02</version><author>Davide Castello</author><role>Amministratore</role><message>Stesura visione generale della strategia di gestione della qualit&#xE0;</message><date>2015-12-08</date></entry>
+<entry><version>0.02</version><author>Davide Castello</author><role>Amministratore</role><message>Stesura visione generale della strategia di gestione della qualità</message><date>2015-12-08</date></entry>
 
 <entry><version>0.03</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura sezione riguardante le risorse</message><date>2015-12-11</date></entry>
 
-<entry><version>0.04</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura tecniche di controllo della qualit&#xE0;</message><date>2015-12-13</date></entry>
+<entry><version>0.04</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura tecniche di controllo della qualità</message><date>2015-12-13</date></entry>
 
 <entry><version>0.05</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura sezione riguardante l'organizzazione</message><date>2015-12-15</date></entry>
 
@@ -48,7 +48,7 @@
 
 <entry><version>1.05</version><author>Davide Castello</author><role>Amministratore</role><message>Aggiunte label alle metriche per riferimento all'interno dei rispettivi obiettivi di qualità</message><date>2016-02-17</date></entry>
 
-<entry><version>1.06</version><author>Davide Castello</author><role>Amministratore</role><message>Resi quantitativi e sistemati gli obiettivi di qualit&#xE0; su processi e documenti </message><date>2016-02-18</date></entry>
+<entry><version>1.06</version><author>Davide Castello</author><role>Amministratore</role><message>Resi quantitativi e sistemati gli obiettivi di qualità su processi e documenti </message><date>2016-02-18</date></entry>
 
 <entry><version>1.07</version><author>Davide Castello</author><role>Amministratore</role><message>Aggiunte metriche dei processi Schedule Variance e Budget Variance</message><date>2016-02-19</date></entry>
 
@@ -60,7 +60,7 @@
 
 <entry><version>1.11</version><author>Davide Castello</author><role>Amministratore</role><message>Rimossa sezione 3.2</message><date>2016-02-20</date></entry>
 
-<entry><version>1.12</version><author>Davide Castello</author><role>Amministratore</role><message>Creato Resoconto delle attivit&#xE0; di verifica - Fase AD</message><date>2016-02-21</date></entry>
+<entry><version>1.12</version><author>Davide Castello</author><role>Amministratore</role><message>Creato Resoconto delle attività di verifica - Fase AD</message><date>2016-02-21</date></entry>
 
 <entry><version>1.13</version><author>Andrea Tombolato</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-02-21</date></entry>
 
@@ -68,10 +68,12 @@
 
 <entry><version>2.00</version><author>Cristian Andrighetto</author><role>Responsabile di Progetto</role><message>Approvazione del documento</message><date>2016-02-22</date></entry>
 
-<entry><version>2.01</version><author>Federico Tavella</author><role>Amministratore</role><message>Resoconto delle attivit&#xE0; di verifica - Fase PA</message><date>2016-02-21</date></entry>
+<entry><version>2.01</version><author>Federico Tavella</author><role>Amministratore</role><message>Resoconto delle attività di verifica - Fase PA</message><date>2016-02-21</date></entry>
 
 <entry><version>2.02</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-03-13</date></entry>
 
 <entry><version>3.00</version><author>Marco Zanella</author><role>Verificatore</role><message>Approvazione del documento</message><date>2016-03-13</date></entry>
 
+
+<entry><version>4</version><author>Marco Zanella</author><role>Responsabile di progetto</role><message>Approvazione documento</message><date>2016-03-30</date></entry>
 </registry>
