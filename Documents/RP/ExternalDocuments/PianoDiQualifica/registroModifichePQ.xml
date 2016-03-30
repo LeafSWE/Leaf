@@ -68,4 +68,10 @@
 
 <entry><version>2.00</version><author>Cristian Andrighetto</author><role>Responsabile di Progetto</role><message>Approvazione del documento</message><date>2016-02-22</date></entry>
 
+<entry><version>2.01</version><author>Federico Tavella</author><role>Amministratore</role><message>Resoconto delle attivit&#xE0; di verifica - Fase PA</message><date>2016-02-21</date></entry>
+
+<entry><version>2.02</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-03-13</date></entry>
+
+<entry><version>3.00</version><author>Marco Zanella</author><role>Verificatore</role><message>Approvazione del documento</message><date>2016-03-13</date></entry>
+
 </registry>

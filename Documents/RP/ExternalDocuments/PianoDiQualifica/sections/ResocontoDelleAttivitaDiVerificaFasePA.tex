@@ -2,79 +2,81 @@
 
 \begin{document}
 \begin{appendices}
-\section{Resoconto delle attività di verifica - Fase AD}
+\section{Resoconto delle attività di verifica - Fase PA}
 All'interno di questa fase\g, secondo quanto riportato nel documento \pianodiprogettov, sono previsti più momenti in cui viene attivato il processo\g\ di verifica. Si è cercato di riportare in questa sezione tutti i risultati che sono stati ottenuti durante questi momenti. Ove fosse necessario, si sono tratte anche delle conclusioni sui risultati ottenuti e su come essi possono essere migliorati.
 	
 	\subsection{Verifica sui processi}
 		\subsubsection{Processo di documentazione}
 			\paragraph{Miglioramento costante}
-			All'inizio della fase AD il processo di documentazione si posizionava al livello 2 della scala CMM.\\
-			In seguito alla riorganizzazione delle \normediprogettov\ e grazie ad una maggiore esperienza dei membri del gruppo, i processi e la loro organizzazione sono notevolmente migliorati. Ciò ha permesso di raggiungere il terzo livello CMM.\\
-			In questa fase abbiamo, inoltre, iniziato a misurare la qualità dei processi ampliando le metriche utilizzate e gli obiettivi di qualità scelti, fissandoli in modo quantitativo.
+			All'inizio della fase PA il processo di documentazione si posizionava al livello 3 della scala CMM.\\
+			A causa del carico di lavoro richiesto dagli altri documenti, il gruppo non è riuscito a definire nuove norme e ricercare nuovi strumenti per permettere il passaggio al livello 4 della scala CMM.
 			
 			\paragraph{Rispetto della pianificazione}
-			Per capire se le attività di un processo sono in ritardo rispetto a quanto pianificato all’interno del \pianodiprogetto\ viene utilizzata la seguente metrica: Schedule Variance.\\
+			Per capire se le attività di un processo sono in ritardo rispetto a quanto pianificato all'interno del \pianodiprogetto\ viene utilizzata la seguente metrica: Schedule Variance.\\
 			Si desidera che il ritardo accumulato sia minore del 5\% rispetto al totale pianificato. Sarebbe invece ottimale essere esattamente in linea con quanto prevede il \pianodiprogetto, o essere addirittura in anticipo.\\
-			Di seguito sono riportati i valori ottenuti calcolando la Schedule Variance sui tempi di stesura di ogni documento nella fase AD:
+			Di seguito sono riportati i valori ottenuti calcolando la Schedule Variance sui tempi di stesura di ogni documento nella fase PA:
 			\begin{table}[H]
 				\centering
 				\begin{tabular}{l * {2}{c}}
 					\toprule
 					\textbf{Documento} & \textbf{Schedule Variance} & \textbf{Esito} \\
 					\midrule
-					\textit{Piano di progetto v2.00} & -43\% &  Ottimale \\
-					\textit{Norme di progetto v2.00} & -26\% & Ottimale \\
-					\textit{Analisi dei requisiti v2.00} & 0\% & Ottimale \\
-					\textit{Piano di qualifica v2.00} & 0\% & Ottimale \\
-					\textit{Glossario v2.00} & 0\% & Ottimale \\
+					\textit{Piano di progetto v3.00} & 0\% &  Ottimale \\
+					\textit{Norme di progetto v3.00} & +33\% & Non accettabile \\
+					\textit{Analisi dei requisiti v3.00} & +25\% & Non accettabile \\
+					\textit{Piano di qualifica v3.00} & 0\% & Ottimale \\
+					\textit{Glossario v3.00} & -6\% & Ottimale \\
+					\textit{Specifica tecnica v1.00} & +11\% & Non accettabile \\
 					\bottomrule
 				\end{tabular}
-				\caption{Esiti del calcolo della Schedule Variance sul processo di documentazione durante la fase\g\ AD}
+				\caption{Esiti del calcolo della Schedule Variance sul processo di documentazione durante la fase\g\ PA}
+				Come è possibile osservare dai dati della tabella, c'è stata una sottostima dei giorni necessari a completare i documenti \normediprogetto\ e \analisideirequisiti: ciò è dovuto principalmente al ritardo accumulato nella fase precedente, che ha ritardato la data di inizio delle attività di questa fase e di conseguenza influito negativamente sulla Schedule Variance.
 				\label{tab:esiti_schedule_variance}
 			\end{table}
 			
 			\paragraph{Rispetto del budget}
 			Per capire se i costi di un processo rientrano nel budget previsto dal \pianodiprogetto\ viene utilizzata la seguente metrica: Budget Variance.\\
 			L'obiettivo minimo è quello di avere dei costi che non superano il budget a disposizione per più del 10\%. Sarebbe invece ottimale che i costi fossero esattamente in linea con il preventivo o che addirittura si avesse speso meno.\\
-			Di seguito sono riportati i valori ottenuti calcolando la Budget Variance sui tempi di stesura di ogni documento nella fase AD:
+			Di seguito sono riportati i valori ottenuti calcolando la Budget Variance sui tempi di stesura di ogni documento nella fase PA:
 			\begin{table}[H]
 				\centering
 				\begin{tabular}{l * {2}{c}}
 					\toprule
 					\textbf{Documento} & \textbf{Budget Variance} & \textbf{Esito} \\
 					\midrule
-					\textit{Piano di progetto v2.00} & 0\% &  Ottimale \\
-					\textit{Norme di progetto v2.00} & +14\% & Non accettabile \\
-					\textit{Analisi dei requisiti v2.00} & +50\% & Non accettabile \\
-					\textit{Piano di qualifica v2.00} & +14\% & Non accettabile \\
-					\textit{Glossario v2.00} & 0\% & Ottimale \\
-					Totale processo di documentazione & +32\% & Non accettabile \\
+					\textit{Piano di progetto v3.00} & -10\% &  Ottimale \\
+					\textit{Norme di progetto v3.00} & -6\% & Ottimale \\
+					\textit{Analisi dei requisiti v3.00} & -14\% & Ottimale \\
+					\textit{Piano di qualifica v3.00} & -22\% & Ottimale \\
+					\textit{Glossario v3.00} & 0\% & Ottimale \\
+					\textit{Specifica tecnica v1.00} & +16\% & Non Accettabile \\
+					Totale processo di documentazione & -5\% & Ottimale \\
 					\bottomrule
 				\end{tabular}
-				\caption{Esiti del calcolo della Budget Variance sul processo di documentazione durante la fase\g\ AD}
+				\caption{Esiti del calcolo della Budget Variance sul processo di documentazione durante la fase\g\ PA}
+				Si può notare dalla tabella che il documento \specificatecnica ha richiesto un più ore da \progettista\ di quante ne fossero preventivate, mentre per i restanti documenti c'è stata una sovrastima di ore per i rispettivi ruoli.
 				\label{tab:esiti_budget_variance}
 			\end{table}
-			Si può notare dalla tabella che per il documento \textit{Analisi dei requisiti v2.00} è stato investito un notevole numero di risorse in più rispetto a quanto preventivato: ciò è dovuto al fatto che nella fase corrente sono stati individuati molti nuovi requisiti, oltre alle correzioni che sono state effettuate in seguito alle osservazioni e segnalazioni del committente e del proponente.\\
-			Oltre a ciò, si può notare che anche i documenti \textit{Norme di progetto v2.00} e \textit{Piano di qualifica v2.00} hanno richiesto più risorse di quanto preventivato: ciò è dovuto al fatto che erano necessarie molte correzioni ai documenti in questione e, in alcuni sezioni, addirittura una completa ristrutturazione. 
+			 
 						
 		\subsubsection{Processo di verifica}
 			\paragraph{Miglioramento costante}
-			Nonostante l'adozione di nuove metriche e una maggiore regolamentazione del processo di verifica, il team non è ancora in grado di individuare miglioramenti tali da raggiungere il terzo livello CMM, pertanto il processo di verifica rimane al secondo livello (Ripetibile).
+			A causa delle motivazioni indicate precedentemente, il team non è stato in grado di raggiungere il quarto livello CMM, pertanto il processo di verifica rimane al terzo livello (Defined).
 			
 			\paragraph{Rispetto della pianificazione}
-			Per capire se le attività di un processo sono in ritardo rispetto a quanto pianificato all’interno del \pianodiprogetto\ viene utilizzata la seguente metrica: Schedule Variance.\\
+			Per capire se le attività di un processo sono in ritardo rispetto a quanto pianificato all'interno del \pianodiprogetto\ viene utilizzata la seguente metrica: Schedule Variance.\\
 			Si desidera che il ritardo accumulato sia minore del 5\% rispetto al totale pianificato. Sarebbe invece ottimale essere esattamente in linea con quanto prevede il \pianodiprogetto, o essere addirittura in anticipo.\\
-			Di seguito sono riportati i valori ottenuti calcolando la Schedule Variance sui tempi di verifica nella fase AD:
+			Di seguito sono riportati i valori ottenuti calcolando la Schedule Variance sui tempi di verifica nella fase PA:
 			\begin{table}[H]
 				\centering
 				\begin{tabular}{l * {2}{c}}
 					\toprule
 					\textbf{Processo} & \textbf{Schedule Variance} & \textbf{Esito} \\
 					\midrule
-					Processo di verifica & -15\% &  Ottimale \\
+					Processo di verifica & -42\% &  Ottimale \\
 					\bottomrule
 				\end{tabular}
-				\caption{Esiti del calcolo della Schedule Variance sul processo di verifica durante la fase\g\ AD}
+				\caption{Esiti del calcolo della Schedule Variance sul processo di verifica durante la fase\g\ PA}
 				\label{tab:esiti_schedule_variance}
 			\end{table}
 			
@@ -87,10 +89,10 @@ All'interno di questa fase\g, secondo quanto riportato nel documento \pianodipro
 					\toprule
 					\textbf{Processo} & \textbf{Budget Variance} & \textbf{Esito} \\
 					\midrule
-					Processo di verifica & -29\% &  Ottimale \\
+					Processo di verifica & -22\% &  Ottimale \\
 					\bottomrule
 				\end{tabular}
-				\caption{Esiti del calcolo della Budget Variance sul processo di verifica durante la fase\g\ AD}
+				\caption{Esiti del calcolo della Budget Variance sul processo di verifica durante la fase\g\ PA}
 				\label{tab:esiti_budget_variance}
 			\end{table}
 			
@@ -108,32 +110,32 @@ All'interno di questa fase\g, secondo quanto riportato nel documento \pianodipro
 			
 			\paragraph{Correttezza ortografica}
 			Per capire quanto i documenti siano effettivamente corretti a livello ortografico viene utilizzata la seguente metrica: percentuale di errori ortografici rinvenuti e non corretti.\\
-			Si desidera che tutti gli errori ortografici che sono stati trovati siano corretti. In questo caso, dunque, l'obiettivo minimo coincide con l’obiettivo ottimale.\\
-			Di seguito sono riportati gli errori ortografici trovati tramite verifica automatica dei documenti durante la fase AD.
+			Si desidera che tutti gli errori ortografici che sono stati trovati siano corretti. In questo caso, dunque, l'obiettivo minimo coincide con l'obiettivo ottimale.\\
+			Di seguito sono riportati gli errori ortografici trovati tramite verifica automatica dei documenti durante la fase PA.
 			\begin{table}[H]
 				\centering
 				\begin{tabular}{l * {2}{c}}
 					\midrule
-					Errori ortografici & 11 \\
+					Errori ortografici & 7 \\
 					\midrule
 				\end{tabular}
-				\caption{Errori ortografici trovati tramite verifica automatica dei documenti durante la fase\g\ AD}
+				\caption{Errori ortografici trovati tramite verifica automatica dei documenti durante la fase\g\ PA}
 				\label{tab:errori_automatica}
 			\end{table}
 			Tutti gli errori ortografici rinvenuti sono stati corretti, quindi è stato raggiunto l'obiettivo \textbf{ottimale}.
 			
 			\paragraph{Correttezza concettuale}
 			Per capire quanto i documenti siano effettivamente corretti a livello concettuale viene utilizzata la seguente metrica: percentuale di errori concettuali rinvenuti e non corretti.\\
-			Si desidera che al massimo il 5\% degli errori concettuali rinvenuti non siano corretti. L’obiettivo ottimale sarebbe quello di correggere tutti gli errori trovati. \\
-			Di seguito sono riportati gli errori concettuali trovati dei documenti durante la fase AD.
+			Si desidera che al massimo il 5\% degli errori concettuali rinvenuti non siano corretti. L'obiettivo ottimale sarebbe quello di correggere tutti gli errori trovati. \\
+			Di seguito sono riportati gli errori concettuali trovati dei documenti durante la fase PA.
 			\begin{table}[H]
 				\centering
 				\begin{tabular}{l * {2}{c}}
 					\midrule
-					Errori concettuali & 5 \\
+					Errori concettuali & 9 \\
 					\midrule
 				\end{tabular}
-				\caption{Errori concettuali trovati tramite verifica manuale dei documenti durante la fase\g\ AD}
+				\caption{Errori concettuali trovati tramite verifica manuale dei documenti durante la fase\g\ PA}
 				\label{tab:errori_concettuali}
 			\end{table}
 			Tutti gli errori concettuali rinvenuti sono stati corretti, quindi è stato raggiunto l'obiettivo \textbf{ottimale}.
