@@ -1,1 +1,16 @@
-Il diagramma in figura # rappresenta l’interazione che avviene tra i componenti dell’applicativo nel momento in cui l’utente desidera avviare la navigazione. La sequenza di azioni che portano all'inizio della navigazione viene scatenata dall’utente la scelta e la conferma della destinazione da raggiungere. A questo punto viene invocato il Presenter che si occupa di richiamare NavigatorManager per avviare la navigazione passando a quest'ultimo la destinazione da raggiungere. Di conseguenza viene calcolato il percorso di percorso di navigazione. A questo punto il NavigatorManager recupera le informazioni iniziali di navigazione grazie a Navigator. Per fare ciò viene passato a Navigator una coda contenente i beacon visibili all'ultima scansione. Navigator ha il compito di ricavare da quest'ultimi il beacon il cui segnale è più potente ed in questo modo controllare se tale beacon appartiene ai ROI del percorso previsto. In questo caso vengono create le informazioni di partenza per la navigazione e viene creato un oggetto ProcessedInformation contenente tali informazioni che vengono poi restituite. Successivamente NavigationManager restituisce a tutti suoi listener, tra i quali deve essere registrato il presente, le informazioni così create. A questo punto il Presenter ha tutte le informazioni che possono essere visualizzate e permettere all'utente di iniziare la navigazione.
+Il diagramma in figura # rappresenta l’interazione che avviene tra i componenti dell’applicativo
+nel momento in cui l’utente desidera avviare la navigazione.
+Tramite la scelta e la conferma della destinazione da raggiungere da parte dell'utente vengono innescati i seguenti step:
+1) viene invocato un metodo del Presenter che si occupa di richiamare NavigatorManager per avviare
+	la navigazione, passando a quest'ultimo la destinazione da raggiungere;
+2) viene calcolato il percorso da seguire durante la navigazione;
+3) il NavigatorManager recupera le informazioni preliminari per la navigazione grazie a Navigator;
+4) per fare ciò viene passato a Navigator una coda contenente i beacon visibili all'ultima scansione;
+5) Navigator ha il compito di ricavare da quest'ultimi il beacon il cui segnale è più potente:
+	a questo punto può controllare se il beacon ritenuto più vicino all'utente appartiene alla ROI del percorso previsto;
+6) in questo caso vengono create le informazioni di partenza per la navigazione e
+	viene creato un oggetto ProcessedInformation contenente tali informazioni che vengono poi restituite;
+7) NavigationManager restituisce a i tutti suoi listener, tra i quali deve essere registrato il Presenter,
+	in modo da poter ottenere le informazioni create;
+8) il Presenter riceve tutte le informazioni necessario all'utente per la navigazione;
+9) tramite un'opportuna view vengono fornite le indicazioni all'utente per navigare.
