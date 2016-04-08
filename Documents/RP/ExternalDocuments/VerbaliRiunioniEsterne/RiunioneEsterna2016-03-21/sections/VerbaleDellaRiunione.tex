@@ -1,0 +1,27 @@
+%al posto di template.tex va messo il nome del file del livello superiore
+\documentclass[../Riunione16-01-13.tex]{subfiles}
+
+
+\section{Verbale della riunione}
+
+Dal confronto con il proponente è emerso:
+\begin{itemize}
+	\item Per \textbf{Gestione del server} e della \textbf{comunicazione app-server} il proponente ha elencato i seguenti framework di supporto:
+	\begin{itemize}
+		\item Django, linguaggio Python;
+		\item Spring, linguaggio Java;
+	\end{itemize}
+	Dando disponibilità tramite mail o anche chiamate telefoniche/Skype per supporto se la nostra scelta ricadesse nel framework Spring.
+	Inoltre è disponibile ad offrirci un server AWS tramite l'account dell'azienda con accesso da console. Il server sarà utilizzato per fornire il download delle mappe nei dispositivi e delle immagini.
+	Per quest'ultime ci è stato consigliato l'uso della libreria Picasso per la loro gestione nell'applicativo Android e l'uso di un servizio cloud S3 offerto da AWS anziché l'uso di un database.
+	
+	\item Per quanto riguarda il \textbf{sistema Android} il gruppo ha potuto sostenere un confronto con il programmatore Android dell'azienda il quale ha suggerito alcune azioni da intraprendere per la progettazione dell'applicazione. 
+	Sono stati discussi i nostri dubbi sull'utilizzo del pattern MVC o MVP.
+	Inoltre è stato spiegato, con esempi di codice in Java, l'uso della libreria AltBeacon, in particolare si è chiarita la differenza tra monitoring e ranging:
+	\begin{itemize}
+		\item Monitoring: rilevazione di una region (insieme di beacon) da parte del device. Grazie a questo meccanismo il device può comprendere con un processo in background se è entrato in una zona con potenziali beacon di interesse;
+		\item Ranging: scansione più precisa per identificare tutti i beacon rilevati dal device con relativi dati. Il ranging è la modalità da attivare in seguito al monitoring.
+	\end{itemize}
+	
+	\item Riguardo l'\textbf{integrazione continua} il proponente consiglia l'utilizzo di Jenkins (installabile nello stesso server reso disponibile) affiancato da Gitolite e FindBugs.
+\end{itemize}
