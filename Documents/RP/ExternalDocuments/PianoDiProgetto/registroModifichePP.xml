@@ -273,5 +273,45 @@
 		<message>Approvazione documento</message>
 		<date>2016-03-14</date>
 	</entry>
+	
+	<entry>
+		<version>3.01</version>
+		<author>Federico Tavella</author>
+		<role>Responsabile di progetto</role>
+		<message>Aggiunta analisi rischi fase PDROB</message>
+		<date>2016-03-16</date>
+	</entry>
+	
+	<entry>
+		<version>3.02</version>
+		<author>Cristian Andrighetto</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2016-03-20</date>
+	</entry>
+	
+	<entry>
+		<version>3.03</version>
+		<author>Oscar Elia Conti</author>
+		<role>Responsabile di progetto</role>
+		<message>Aggiunto riscontro effettivo rischi fase PDROB e consuntivo fase PDROB</message>
+		<date>2016-04-10</date>
+	</entry>
+	
+	<entry>
+		<version>3.04</version>
+		<author>Cristian Andrighetto</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2016-04-10</date>
+	</entry>
+	
+	<entry>
+		<version>4.00</version>
+		<author>Oscar Elia Conti</author>
+		<role>Responsabile di progetto</role>
+		<message>Approvazione del documento</message>
+		<date>2016-04-10</date>
+	</entry>
 
 </registry>

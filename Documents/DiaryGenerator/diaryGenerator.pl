@@ -86,7 +86,7 @@ open(my $fileLatex, '>', $fileLatex) or die "Could not open file '$fileLatex' $!
 print $fileLatex "
 \\newcolumntype{V}{>{\\hsize=.40\\hsize}X[cm]}
 	\\section*{Diario delle modifiche}
-\\begin{longtabu} to \\textwidth {V X[c m 0.8cm] X[c m 0.6cm] X[c m 0.8cm] X[cm]}
+\\begin{longtabu} to \\textwidth {V X[c m 0.8cm] X[c m 0.7cm] X[c m 0.8cm] X[cm]}
 	\\toprule
 	\\textbf{Versione} & \\textbf{Data}  & \\textbf{Autore} & \\textbf{Ruolo} & \\textbf{Descrizione}\\\\
 	\\midrule
