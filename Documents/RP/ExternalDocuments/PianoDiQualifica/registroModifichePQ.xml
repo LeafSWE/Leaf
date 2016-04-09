@@ -1,77 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <registry>
 
-<entry><version>0.01</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura struttura documento</message><date>2015-12-07</date></entry>
+	<entry>
+		<version>0.01</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Stesura struttura documento</message>
+		<date>2015-12-07</date>
+	</entry>
 
-<entry><version>0.02</version><author>Davide Castello</author><role>Amministratore</role><message>Stesura visione generale della strategia di gestione della qualità</message><date>2015-12-08</date></entry>
+	<entry>
+		<version>0.02</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Stesura visione generale della strategia di gestione della qualità</message>
+		<date>2015-12-08</date>
+	</entry>
 
-<entry><version>0.03</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura sezione riguardante le risorse</message><date>2015-12-11</date></entry>
+	<entry>
+		<version>0.03</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Stesura sezione riguardante le risorse</message>
+		<date>2015-12-11</date>
+	</entry>
 
-<entry><version>0.04</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura tecniche di controllo della qualità</message><date>2015-12-13</date></entry>
+	<entry>
+		<version>0.04</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Stesura tecniche di controllo della qualità</message>
+		<date>2015-12-13</date>
+	</entry>
 
-<entry><version>0.05</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura sezione riguardante l'organizzazione</message><date>2015-12-15</date></entry>
+	<entry>
+		<version>0.05</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Stesura sezione riguardante l'organizzazione</message>
+		<date>2015-12-15</date>
+	</entry>
 
-<entry><version>0.06</version><author>Davide Castello</author><role>Amministratore</role><message>Stesura metriche per i documenti</message><date>2015-12-17</date></entry>
+	<entry>
+		<version>0.06</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Stesura metriche per i documenti</message>
+		<date>2015-12-17</date>
+	</entry>
 
-<entry><version>0.07</version><author>Davide Castello</author><role>Amministratore</role><message>Fine stesura misure e metriche</message><date>2015-12-20</date></entry>
+	<entry>
+		<version>0.07</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Fine stesura misure e metriche</message>
+		<date>2015-12-20</date>
+	</entry>
 
-<entry><version>0.07</version><author>Davide Castello</author><role>Amministratore</role><message>Fine stesura misure e metriche</message><date>2015-12-20</date></entry>
+	<entry>
+		<version>0.07</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Fine stesura misure e metriche</message>
+		<date>2015-12-20</date>
+	</entry>
 
-<entry><version>0.08</version><author>Davide Castello</author><role>Amministratore</role><message>Riorganizzazione della visione generale della strategia</message><date>2015-12-21</date></entry>
+	<entry>
+		<version>0.08</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Riorganizzazione della visione generale della strategia</message>
+		<date>2015-12-21</date>
+	</entry>
 
-<entry><version>0.09</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Correzione errori sezione visione generale della strategia</message><date>2015-12-22</date></entry>
+	<entry>
+		<version>0.09</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Correzione errori sezione visione generale della strategia</message>
+		<date>2015-12-22</date>
+	</entry>
 
-<entry><version>0.10</version><author>Davide Castello</author><role>Amministratore</role><message>Correzione errori sezione strategia in dettaglio</message><date>2015-12-23</date></entry>
+	<entry>
+		<version>0.10</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Correzione errori sezione strategia in dettaglio</message>
+		<date>2015-12-23</date>
+	</entry>
 
-<entry><version>0.11</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Stesura appendice CMM</message><date>2015-12-24</date></entry>
+	<entry>
+		<version>0.11</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Stesura appendice CMM</message>
+		<date>2015-12-24</date>
+	</entry>
 
-<entry><version>0.12</version><author>Davide Castello</author><role>Amministratore</role><message>Stesura appendice Test</message><date>2015-12-26</date></entry>
+	<entry>
+		<version>0.12</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Stesura appendice Test</message>
+		<date>2015-12-26</date>
+	</entry>
 
-<entry><version>0.13</version><author>Federico Tavella</author><role>Verificatore</role><message>Verifica del documento</message><date>2015-12-27</date></entry>
+	<entry>
+		<version>0.13</version>
+		<author>Federico Tavella</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2015-12-27</date>
+	</entry>
 
-<entry><version>0.14</version><author>Davide Castello</author><role>Amministratore</role><message>Stesura resoconto attività di verifica Fase A</message><date>2016-01-17</date></entry>
+	<entry>
+		<version>0.14</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Stesura resoconto attività di verifica Fase A</message>
+		<date>2016-01-17</date>
+	</entry>
 
-<entry><version>0.15</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Inserimento risultati delle verifiche ai documenti nel resoconto</message><date>2016-01-18</date></entry>
+	<entry>
+		<version>0.15</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Inserimento risultati delle verifiche ai documenti nel resoconto</message>
+		<date>2016-01-18</date>
+	</entry>
 
-<entry><version>0.16</version><author>Federico Tavella</author><role>Verificatore</role><message>Verifica del resoconto</message><date>2016-01-18</date></entry>
+	<entry>
+		<version>0.16</version>
+		<author>Federico Tavella</author>
+		<role>Verificatore</role>
+		<message>Verifica del resoconto</message>
+		<date>2016-01-18</date>
+	</entry>
 
-<entry><version>1.00</version><author>Federico Tavella</author><role>Responsabile di progetto</role><message>Approvazione del documento</message><date>2016-01-20</date></entry>
+	<entry>
+		<version>1.00</version>
+		<author>Federico Tavella</author>
+		<role>Responsabile di progetto</role>
+		<message>Approvazione del documento</message>
+		<date>2016-01-20</date>
+	</entry>
 
-<entry><version>1.01</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Modifica sezione 2.2 aggiunto riferimento al Piano di Progetto</message><date>2016-02-16</date></entry>
+	<entry>
+		<version>1.01</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Modifica sezione 2.2 aggiunto riferimento al Piano di Progetto</message>
+		<date>2016-02-16</date>
+	</entry>
 
-<entry><version>1.02</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Eliminata sezione 2.3</message><date>2016-02-16</date></entry>
+	<entry>
+		<version>1.02</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Eliminata sezione 2.3</message>
+		<date>2016-02-16</date>
+	</entry>
 
-<entry><version>1.03</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Eliminata sezione 3.3</message><date>2016-02-16</date>
-</entry>
+	<entry>
+		<version>1.03</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Eliminata sezione 3.3</message>
+		<date>2016-02-16</date>
+	</entry>
 
-<entry><version>1.04</version><author>Davide Castello</author><role>Amministratore</role><message>Numerati gli obiettivi di qualità e le metriche</message><date>2016-02-17</date></entry>
+	<entry>
+		<version>1.04</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Numerati gli obiettivi di qualità e le metriche</message>
+		<date>2016-02-17</date>
+	</entry>
 
-<entry><version>1.05</version><author>Davide Castello</author><role>Amministratore</role><message>Aggiunte label alle metriche per riferimento all'interno dei rispettivi obiettivi di qualità</message><date>2016-02-17</date></entry>
+	<entry>
+		<version>1.05</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Aggiunte label alle metriche per riferimento all'interno dei rispettivi obiettivi di qualità</message>
+		<date>2016-02-17</date>
+	</entry>
 
-<entry><version>1.06</version><author>Davide Castello</author><role>Amministratore</role><message>Resi quantitativi e sistemati gli obiettivi di qualità su processi e documenti </message><date>2016-02-18</date></entry>
+	<entry>
+		<version>1.06</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Resi quantitativi e sistemati gli obiettivi di qualità su processi e documenti </message>
+		<date>2016-02-18</date>
+	</entry>
 
-<entry><version>1.07</version><author>Davide Castello</author><role>Amministratore</role><message>Aggiunte metriche dei processi Schedule Variance e Budget Variance</message><date>2016-02-19</date></entry>
+	<entry>
+		<version>1.07</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Aggiunte metriche dei processi Schedule Variance e Budget Variance</message>
+		<date>2016-02-19</date>
+	</entry>
 
-<entry><version>1.08</version><author>Davide Castello</author><role>Amministratore</role><message>Sistemate metriche per i documenti</message><date>2016-02-19</date></entry>
+	<entry>
+		<version>1.08</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Sistemate metriche per i documenti</message>
+		<date>2016-02-19</date>
+	</entry>
 
-<entry><version>1.09</version><author>Cristian Andrighetto</author><role>Amministratore</role><message>Modifica paragrafo 2.1.2.2 - Aggiunta sottoparagrafi da 2.2.1.2.1 a 2.2.1.2.9</message><date>2016-02-20</date></entry>
+	<entry>
+		<version>1.09</version>
+		<author>Cristian Andrighetto</author>
+		<role>Amministratore</role>
+		<message>Modifica paragrafo 2.1.2.2 - Aggiunta sottoparagrafi da 2.2.1.2.1 a 2.2.1.2.9</message>
+		<date>2016-02-20</date>
+	</entry>
 
-<entry><version>1.10</version><author>Davide Castello</author><role>Amministratore</role><message>Creazione appendice B e C</message><date>2016-02-20</date></entry>
+	<entry>
+		<version>1.10</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Creazione appendice B e C</message>
+		<date>2016-02-20</date>
+	</entry>
 
-<entry><version>1.11</version><author>Davide Castello</author><role>Amministratore</role><message>Rimossa sezione 3.2</message><date>2016-02-20</date></entry>
+	<entry>
+		<version>1.11</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Rimossa sezione 3.2</message>
+		<date>2016-02-20</date>
+	</entry>
 
-<entry><version>1.12</version><author>Davide Castello</author><role>Amministratore</role><message>Creato Resoconto delle attività di verifica - Fase AD</message><date>2016-02-21</date></entry>
+	<entry>
+		<version>1.12</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Creato Resoconto delle attività di verifica - Fase AD</message>
+		<date>2016-02-21</date>
+	</entry>
 
-<entry><version>1.13</version><author>Andrea Tombolato</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-02-21</date></entry>
+	<entry>
+		<version>1.13</version>
+		<author>Andrea Tombolato</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2016-02-21</date>
+	</entry>
 
-<entry><version>1.14</version><author>Oscar Elia Conti</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-02-21</date></entry>
+	<entry>
+		<version>1.14</version>
+		<author>Oscar Elia Conti</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2016-02-21</date>
+	</entry>
 
-<entry><version>2.00</version><author>Cristian Andrighetto</author><role>Responsabile di Progetto</role><message>Approvazione del documento</message><date>2016-02-22</date></entry>
+	<entry>
+		<version>2.00</version>
+		<author>Cristian Andrighetto</author>
+		<role>Responsabile di Progetto</role>
+		<message>Approvazione del documento</message>
+		<date>2016-02-22</date>
+	</entry>
 
-<entry><version>2.01</version><author>Federico Tavella</author><role>Amministratore</role><message>Resoconto delle attività di verifica - Fase PA</message><date>2016-02-21</date></entry>
+	<entry>
+		<version>2.01</version>
+		<author>Federico Tavella</author>
+		<role>Amministratore</role>
+		<message>Resoconto delle attività di verifica - Fase PA</message>
+		<date>2016-02-13</date>
+	</entry>
 
-<entry><version>2.02</version><author>Davide Castello</author><role>Verificatore</role><message>Verifica del documento</message><date>2016-03-13</date></entry>
+	<entry>
+		<version>2.02</version>
+		<author>Davide Castello</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2016-03-13</date>
+	</entry>
 
-<entry><version>3.00</version><author>Marco Zanella</author><role>Responsabile di progetto</role><message>Approvazione del documento</message><date>2016-03-13</date></entry>
+	<entry>
+		<version>3.00</version>
+		<author>Marco Zanella</author>
+		<role>Responsabile di progetto</role>
+		<message>Approvazione del documento</message>
+		<date>2016-03-13</date>
+	</entry>
 
 </registry>
