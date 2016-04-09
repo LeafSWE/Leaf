@@ -1,0 +1,144 @@
+\documentclass[../PianoDiQualifica.tex]{subfiles}
+
+\begin{document}
+\begin{appendices}
+\section{Resoconto delle attività di verifica - Fase PDROB}
+All'interno di questa fase\g, secondo quanto riportato nel documento \pianodiprogetto, sono previsti più momenti in cui viene attivato il processo\g\ di verifica. Si è cercato di riportare in questa sezione tutti i risultati che sono stati ottenuti durante questi momenti. Ove fosse necessario, si sono tratte anche delle conclusioni sui risultati ottenuti e su come essi possono essere migliorati.
+	
+	\subsection{Verifica sui processi}
+		\subsubsection{Processo di documentazione}
+			\paragraph{Miglioramento costante}
+			All'inizio della fase PDROB il processo di documentazione si posizionava al livello 3 della scala CMM.\\
+			A causa del carico di lavoro richiesto dagli altri documenti, il gruppo non è riuscito a definire nuove norme e ricercare nuovi strumenti tanto da permettere il passaggio al livello 4 della scala CMM.
+			
+			\paragraph{Rispetto della pianificazione}
+			Per capire se le attività di un processo sono in ritardo rispetto a quanto pianificato all'interno del \pianodiprogetto\ viene utilizzata la seguente metrica: Schedule Variance.\\
+			Si desidera che il ritardo accumulato sia minore del 5\% rispetto al totale pianificato. Sarebbe invece ottimale essere esattamente in linea con quanto prevede il \pianodiprogetto, o essere addirittura in anticipo.\\
+			Di seguito sono riportati i valori ottenuti calcolando la Schedule Variance sui tempi di stesura di ogni documento nella fase PDROB:
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{l * {2}{c}}
+					\toprule
+					\textbf{Documento} & \textbf{Schedule Variance} & \textbf{Esito} \\
+					\midrule
+					\textit{Piano di progetto v4.00} & 0\% &  Ottimale \\
+					\textit{Norme di progetto v4.00} & 0\% & Ottimale \\
+					\textit{Analisi dei requisiti v4.00} & 0\% & Ottimale \\
+					\textit{Piano di qualifica v4.00} & 0\% & Ottimale \\
+					\textit{Glossario v4.00} & 0\% & Ottimale \\
+					\textit{Definizione di prodotto v1.00} & +42\% & Non accettabile \\
+					\bottomrule
+				\end{tabular}
+				\caption{Esiti del calcolo della Schedule Variance sul processo di documentazione durante la fase\g\ PDROB}
+				Come è possibile osservare dai dati della tabella, c'è stata una sottostima dei giorni necessari a completare il documento \textit{Definizione di prodotto}: ciò è dovuto principalmente al ritardo accumulato nella fase precedente, che ha ritardato la data di inizio dell'attività di stesura di questo documento e di conseguenza ha influito negativamente sulla Schedule Variance.
+				\label{tab:esiti_schedule_variance}
+			\end{table}
+			
+			\paragraph{Rispetto del budget}
+			Per capire se i costi di un processo rientrano nel budget previsto dal \pianodiprogetto\ viene utilizzata la seguente metrica: Budget Variance.\\
+			L'obiettivo minimo è quello di avere dei costi che non superano il budget a disposizione per più del 10\%. Sarebbe invece ottimale che i costi fossero esattamente in linea con il preventivo o che addirittura si avesse speso meno.\\
+			Di seguito sono riportati i valori ottenuti calcolando la Budget Variance sui tempi di stesura di ogni documento nella fase PDROB:
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{l * {2}{c}}
+					\toprule
+					\textbf{Documento} & \textbf{Budget Variance} & \textbf{Esito} \\
+					\midrule
+					\textit{Piano di progetto v4.00} & -10\% &  Ottimale \\
+					\textit{Norme di progetto v4.00} & -6\% & Ottimale \\
+					\textit{Analisi dei requisiti v4.00} & -14\% & Ottimale \\
+					\textit{Piano di qualifica v4.00} & -22\% & Ottimale \\
+					\textit{Glossario v4.00} & 0\% & Ottimale \\
+					\textit{Definizione di prodotto v1.00} & +16\% & Non Accettabile \\
+					Totale processo di documentazione & -5\% & Ottimale \\
+					\bottomrule
+				\end{tabular}
+				\caption{Esiti del calcolo della Budget Variance sul processo di documentazione durante la fase\g\ PDROB}
+				Si può notare dalla tabella che il documento \specificatecnica ha richiesto più ore da \progettista\ di quante ne fossero state preventivate, mentre per i restanti documenti c'è stata una sovrastima di ore per i rispettivi ruoli.
+				\label{tab:esiti_budget_variance}
+			\end{table}
+			 
+						
+		\subsubsection{Processo di verifica}
+			\paragraph{Miglioramento costante}
+			Il gruppo non ha rilevato miglioramenti tali da raggiungere il quarto livello CMM, pertanto il processo di verifica rimane al terzo livello (Defined).
+			
+			\paragraph{Rispetto della pianificazione}
+			Per capire se le attività di un processo sono in ritardo rispetto a quanto pianificato all'interno del \pianodiprogetto\ viene utilizzata la seguente metrica: Schedule Variance.\\
+			Si desidera che il ritardo accumulato sia minore del 5\% rispetto al totale pianificato. Sarebbe invece ottimale essere esattamente in linea con quanto prevede il \pianodiprogetto, o essere addirittura in anticipo.\\
+			Di seguito sono riportati i valori ottenuti calcolando la Schedule Variance sui tempi di verifica nella fase PDROB:
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{l * {2}{c}}
+					\toprule
+					\textbf{Processo} & \textbf{Schedule Variance} & \textbf{Esito} \\
+					\midrule
+					Processo di verifica & +4\% &  Accettabile \\
+					\bottomrule
+				\end{tabular}
+				\caption{Esiti del calcolo della Schedule Variance sul processo di verifica durante la fase\g\ PDROB}
+				\label{tab:esiti_schedule_variance}
+			\end{table}
+			
+			\paragraph{Rispetto del budget}
+			Per il processo di verifica è stato investito un minor numero di risorse rispetto a quanto preventivato, di conseguenza il valore della Budget Variance risulta \textbf{ottimale}.\\
+			Di seguito sono riportati i valori ottenuti:
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{l * {2}{c}}
+					\toprule
+					\textbf{Processo} & \textbf{Budget Variance} & \textbf{Esito} \\
+					\midrule
+					Processo di verifica & -22\% &  Ottimale \\
+					\bottomrule
+				\end{tabular}
+				\caption{Esiti del calcolo della Budget Variance sul processo di verifica durante la fase\g\ PDROB}
+				\label{tab:esiti_budget_variance}
+			\end{table}
+			
+			
+	\subsection{Verifica sui prodotti}
+	In questa sezione verranno riportati i dati emessi dalle procedure di controllo della qualità di prodotto\g.
+		\subsubsection{Documenti}
+		In questa sezione vengono riportati gli esiti delle attività di verifica svolte sui documenti.\\
+		Tali esiti sono strettamente correlati agli obiettivi di qualità dei documenti enunciati alla sezione \ref{ObiettiviDiQualità} del presente documento.
+			
+			\paragraph{Leggibilità e comprensibilità}
+			Per cercare di capire quanto i documenti siano effettivamente leggibili e comprensibili da persone dotate di una licenza superiore viene utilizzato l’indice Gulpease\g.\\
+			Si desidera che i documenti posseggano costantemente un indice maggiore a 40 (soglia di accettabilità). Si dovrebbe tuttavia cercare di raggiungere un valore più alto, considerato ottimale, ovvero 60.\\
+			Il documento \textit{Glossario v4.00} ha dato esito \textbf{ottimale}, mentre tutti gli altri documenti prodotti hanno dato esito \textbf{accettabile}.
+			
+			\paragraph{Correttezza ortografica}
+			Per capire quanto i documenti siano effettivamente corretti a livello ortografico viene utilizzata la seguente metrica: percentuale di errori ortografici rinvenuti e non corretti.\\
+			Si desidera che tutti gli errori ortografici che sono stati trovati siano corretti. In questo caso, dunque, l'obiettivo minimo coincide con l'obiettivo ottimale.\\
+			Di seguito sono riportati gli errori ortografici trovati tramite verifica automatica dei documenti durante la fase PDROB.
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{l * {2}{c}}
+					\midrule
+					Errori ortografici & 8 \\
+					\midrule
+				\end{tabular}
+				\caption{Errori ortografici trovati tramite verifica automatica dei documenti durante la fase\g\ PDROB}
+				\label{tab:errori_automatica}
+			\end{table}
+			Tutti gli errori ortografici rinvenuti sono stati corretti, quindi è stato raggiunto l'obiettivo \textbf{ottimale}.
+			
+			\paragraph{Correttezza concettuale}
+			Per capire quanto i documenti siano effettivamente corretti a livello concettuale viene utilizzata la seguente metrica: percentuale di errori concettuali rinvenuti e non corretti.\\
+			Si desidera che al massimo il 5\% degli errori concettuali rinvenuti non siano corretti. L'obiettivo ottimale sarebbe quello di correggere tutti gli errori trovati. \\
+			Di seguito sono riportati gli errori concettuali trovati dei documenti durante la fase PDROB.
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{l * {2}{c}}
+					\midrule
+					Errori concettuali & 2 \\
+					\midrule
+				\end{tabular}
+				\caption{Errori concettuali trovati tramite verifica manuale dei documenti durante la fase\g\ PDROB}
+				\label{tab:errori_concettuali}
+			\end{table}
+			Tutti gli errori concettuali rinvenuti sono stati corretti, quindi è stato raggiunto l'obiettivo \textbf{ottimale}.
+			
+\end{appendices}
+\end{document}
