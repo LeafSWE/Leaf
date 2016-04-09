@@ -728,4 +728,20 @@ GUI (Graphical UI), ossia un'interfaccia composta da oggetti grafici
 			Nel modello top-down si formula una visione generale del sistema, senza scendere nel dettaglio delle sue parti. Ogni parte del sistema è successivamente rifinita aggiungendo maggiori dettagli della progettazione. Ogni nuova parte così ottenuta può quindi essere nuovamente rifinita, specificando ulteriori dettagli, finché la specifica completa è sufficientemente dettagliata da validare il modello
 		</descrizione>
 	</voce>
+	<voce>
+		<termine>
+			monitoring
+		</termine>
+		<descrizione>
+			azione scatenata dall'entrata o uscita dal raggio di una Region, permettendo di sapere se in quel determinato raggio sono stati rilevati dei beacon. Il monitoring può avvenire indipendentemente dal fatto che l'applicazione sia nello stato running, suspended o killed
+		</descrizione>
+	</voce>
+	<voce>
+		<termine>
+			ranging
+		</termine>
+		<descrizione>
+			azione scatenata in prossimità di un beacon, permette di ricavarne determinati dati (es. potenza del segnale o distanza). Funziona solamente se l'applicazione è nello stato running
+		</descrizione>
+	</voce>
 </glossario>
