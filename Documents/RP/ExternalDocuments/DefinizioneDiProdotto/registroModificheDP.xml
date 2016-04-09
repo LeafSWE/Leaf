@@ -11,4 +11,6 @@
 <entry><version>0.05</version><author>Eduard Bicego</author><role>Progettista</role><message>Completata sezione Standard di progetto</message><date>2016-04-08</date></entry>
 
 <entry><version>0.06</version><author>Eduard Bicego</author><role>Progettista</role><message>Aggiunto DS Avvio Service</message><date>2016-04-09</date></entry>
+
+<entry><version>0.07</version><author>Eduard Bicego</author><role>Progettista</role><message>Aggunto DS Ranging Beacons</message><date>2016-04-09</date></entry>
 </registry>
