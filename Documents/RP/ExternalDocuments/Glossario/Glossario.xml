@@ -744,4 +744,12 @@ GUI (Graphical UI), ossia un'interfaccia composta da oggetti grafici
 			Azione scatenata in prossimità di un beacon, permette di ricavarne determinati dati (es. potenza del segnale o distanza). Funziona solamente se l'applicazione è nello stato running
 		</descrizione>
 	</voce>
+	<voce>
+		<termine>
+			CRUD
+		</termine>
+		<descrizione>
+			Le operazioni CRUD (Create, Read, Update, Delete) sono le quattro funzionalità di base dei persistent storage. Talvolta CRUD viene esteso con le parole retrieve invece di read, modify invece di update o destroy invece di delete. Ad ogni operazione corrisponde un'equivalente istruzione in linguaggio SQL. All'operazione CRUD Read (Retrieve) corrisponde l'operazione SQL SELECT, alla Update corrisponde UPDATE e a Delete corrisponde DELETE
+		</descrizione>
+	</voce>
 </glossario>
