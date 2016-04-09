@@ -92,7 +92,7 @@
 			diagramma di Gantt
 		</termine>
 		<descrizione>
-			Il diagramma di Gantt è uno strumento che permette di modellizzare la pianificazione dei compiti necessari alla realizzazione di un progetto. È costruito partendo da un asse orizzontale, usato per rappresentare l’arco temporale totale del progetto, e da un asse verticale, usato per rappresentare delle mansioni o attività che costituiscono il progetto
+			Il diagramma di Gantt è uno strumento che permette di modellare la pianificazione dei compiti necessari alla realizzazione di un progetto. È costruito partendo da un asse orizzontale, usato per rappresentare l’arco temporale totale del progetto, e da un asse verticale, usato per rappresentare delle mansioni o attività che costituiscono il progetto
 		</descrizione>
 	</voce>
 	<voce>
@@ -148,7 +148,7 @@
 			beacon
 		</termine>
 		<descrizione>
-			Trasmettitore bluetooth
+			Trasmettitore Bluetooth
 		</descrizione>
 	</voce>
 	<voce>
@@ -733,7 +733,7 @@ GUI (Graphical UI), ossia un'interfaccia composta da oggetti grafici
 			monitoring
 		</termine>
 		<descrizione>
-			azione scatenata dall'entrata o uscita dal raggio di una Region, permettendo di sapere se in quel determinato raggio sono stati rilevati dei beacon. Il monitoring può avvenire indipendentemente dal fatto che l'applicazione sia nello stato running, suspended o killed
+			Azione scatenata dall'entrata o uscita dal raggio di una Region, permettendo di sapere se in quel determinato raggio sono stati rilevati dei beacon. Il monitoring può avvenire indipendentemente dal fatto che l'applicazione sia nello stato running, suspended o killed
 		</descrizione>
 	</voce>
 	<voce>
@@ -741,7 +741,7 @@ GUI (Graphical UI), ossia un'interfaccia composta da oggetti grafici
 			ranging
 		</termine>
 		<descrizione>
-			azione scatenata in prossimità di un beacon, permette di ricavarne determinati dati (es. potenza del segnale o distanza). Funziona solamente se l'applicazione è nello stato running
+			Azione scatenata in prossimità di un beacon, permette di ricavarne determinati dati (es. potenza del segnale o distanza). Funziona solamente se l'applicazione è nello stato running
 		</descrizione>
 	</voce>
 </glossario>
