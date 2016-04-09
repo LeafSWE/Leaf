@@ -1,5 +1,6 @@
 #!/bin/sh
 
+PERL=/c/Perl64/bin/perl.exe
 # Allows us to read user input below, assigns stdin to keyboard
 exec < /dev/tty
     AUTHOR=""
@@ -97,7 +98,7 @@ exec < /dev/tty
     #write on file
     #Generate latex diary
     echo "Updating xml diary and generating new TeX diary..";
-    perl ./diaryGenerator.pl "$diaryTexPath" "$path/registroModifiche$doc.xml" "$AUTHOR" "$role" "$MESSAGE" "$DATE" "$version";
+    $PERL ./diaryGenerator.pl "$diaryTexPath" "$path/registroModifiche$doc.xml" "$AUTHOR" "$role" "$MESSAGE" "$DATE" "$version";
     echo "Generation done.";
     #Turn up and compile the new diary
     cd $path;
