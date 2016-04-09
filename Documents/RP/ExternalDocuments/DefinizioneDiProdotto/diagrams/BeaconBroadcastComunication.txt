@@ -1,6 +1,0 @@
-Il diagramma in figura # rappresenta l’interazione che avviene tra i componenti dell’applicativo allo scopo di rilevare i beacon.
-BeaconManager adapter è un'implementazione di un Service e si occupa di effettuare la scansione dei beacon nelle vicinanze.
-Alla fine di ogni scansione viene creato una coda contentente tutti i beacon rilevati.
-A questo punto viene creato un Intent al quale viene associata la coda di beacon rilevati e,
-utilizzando un oggetto LocalBroadcastManager, viene inviato l'Intent in modo che sia possibile per tutti i BroadcastReceiver,
-che hanno impostato il proprio IntentFilter per ricevere tali messaggi, recuperare la coda di beacon.

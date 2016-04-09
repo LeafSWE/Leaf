@@ -12,11 +12,11 @@
 		
 	Il PRESENTER chiama \verb|startService()| su \verb|AbsBeaconReceiver|, all'interno del metodo quindi verrà istanziato un oggetto \verb|intent| di tipo \verb|Intent| necessario per creare effettivamente un service unbind \verb|BeaconManagerAdapter| attraverso la chiamata del metodo \verb|bindService()|,  passando come parametro \verb|intente| creato precedentemente. Nella fase di creazione del service \verb|BeaconManagerAdapter| viene chiamato il metodo \verb|onCreate()| nel quale viene creata un istanza della classe \verb|BeaconManager| offerta dalla libreria AltBeacon. Si effettuano inoltre diverse chiamate per il settaggio e la configurazione di \verb|beaconManager| che non sono rappresentate per mantenere il diagramma più leggibile. Una volta settato \verb|beaconManager| l'oggetto \verb|beaconManagerAdapter| si mette in ascolto di \verb|beaconManager| chiamando il metodo \verb|setMonitorNotifier| iniziando la fase di monitoring\g.
 	
-	A questo punto \verb|beaconManagerAdapter| è un listener di \verb|beaconManager| il quale una volta rilevata la region\g\ dei beacon in cui il device si trova scatena l'evento \verb|didEnterRegion()| notificando i propri listener, ossia \verb|beaconManagerAdapter|.
+	A questo punto \verb|beaconManagerAdapter| è un listener di \verb|beaconManager| il quale una volta rilevata la region dei beacon in cui il device si trova scatena l'evento \verb|didEnterRegion()| notificando i propri listener, ossia l'oggetto di tipo \verb|beaconManagerAdapter|.
 	
-	Individuata la region\g\ tramite l'evento \verb|beaconManagerAdapter| effettua un controllo per capire se la region\g\ è riconosciuta dall'applicativo, se lo è \verb|beaconManagerAdapter| entra nella fase di ranging\g\ in cui saranno raccolti dettagliatamente i dati di tutti i beacon rilevati. \verb|beaconManagerAdapter| si mette in ascolto in modalità ranging di \verb|beaconManager| tramite la chiamata del metodo \verb|setRangeNotifier()|.
+	Individuata la region tramite l'evento \verb|beaconManagerAdapter| effettua un controllo per capire se la region è riconosciuta dall'applicativo, se lo è \verb|beaconManagerAdapter| entra nella fase di ranging\g\ in cui saranno raccolti dettagliatamente i dati di tutti i beacon rilevati. \verb|beaconManagerAdapter| si mette in ascolto in modalità ranging di \verb|beaconManager| tramite la chiamata del metodo \verb|setRangeNotifier()|.
 	
-	A questo punto \verb|beaconManagerAdapter| riceve l'evento di rilevazione beacon attraverso il metodo \verb|didRangeBeaconsInRegion()| il quale restituisce una \verb|Collection| di \verb|Beacon| e la region\g\ di appartenenza.
+	A questo punto \verb|beaconManagerAdapter| riceve l'evento di rilevazione beacon attraverso il metodo \verb|didRangeBeaconsInRegion()| il quale restituisce una \verb|Collection| di \verb|Beacon| e la \verb|Region| di appartenenza.
 	
 	Per la gestione degli elementi all'interno della \verb|Collection| si rimanda al diagramma successivo.
 	
@@ -37,7 +37,7 @@ L'oggetto di tipo \verb|BeaconManagerAdapter| è un service e implementa il list
 	
 	Una volta elaborati tutti i \verb|Beacon| ricevuti \verb|BeaconManagerAdapter| crea un messaggio \verb|Intent| in cui inserisce la \verb|PriorityQueue| tramite la chiamata del metodo \verb|putExtra()|. Costruisce l'oggetto \verb|LocalBroadcastManager| per utilizzarlo nella chiamata del metodo \verb|sendMessageBroadcast()| che si occuperà di inviare l'\verb|Intent| in altre parti dell'applicazione costruite per ricevere il messaggio ed elaborarlo, queste parti estenderanno la classe \verb|BroadcastReceiver| offerta dal SDK Android\g.
 
-	\begin{figure} [p]
+		\begin{figure} [p]
 			\includegraphics[width=\textwidth]{diagrams/RangingBeacons}
 			\caption{Diagramma di sequenza - Elaborazione beacon rilevati e comunicazione broadcast}
 			\label{RangingBeacons}
@@ -46,6 +46,17 @@ L'oggetto di tipo \verb|BeaconManagerAdapter| è un service e implementa il list
 	
 	\newpage
 	\subsection{Avvio navigazione}
+		
+		Il diagramma in figura \ref{StartNavigation} rappresenta il flusso d'eventi generato nelle classi del model qual'ora si richiedesse l'avvio della navigazione. La richiesta giunge dal PRESENTER con la chiamata del metodo \verb|startNavigation()| sull'oggetto \verb|NavigatiorManagerImp| passando come parametri la destinazione identificata dall'oggetto di tipo \verb|PointOfInterest|. Il \verb|NavigatorManagerImp| si occupa quindi di impostare il grafo all'oggetto di tipo \verb|NavigatorImp| con il metodo \verb|setGraph()| dopodiché invoca il metodo \verb|calculatePAth()| in cui è calcolato il percorso da seguire durante la navigazione attraverso l'oggetto \verb|PathFinder| che restituisce una \verb|List| di \verb|EnrichedEdge| salvata in \verb|Navigator| in un campo dati.
+		A questo punto \verb|Navigator| è pronto per restituire le informazioni (\verb|ProcessedInformation|) richieste da \verb|NavigationManagerImp|, quest'ultimo invoca il metodo \verb|toNextRegion()| passando come parametri la lista di beacon rilevati e ricevuti tramite \verb|BroadcastReceiver|.
+		\verb|Navigator| ricava dai beacon rilevati il beacon il cui segnale è più potente (\verb|getMostPowerfulBEacon()|). Qui controlla che il beacon ritenuto più vicino all'utente appartiene alla ROI del percorso previsto, infine costruisce le \verb|ProcessedInformation| richieste grazie all'oggetto \verb|Edge| identificato come prossimo percorso da percorrere.
+		Le \verb|ProcessedInformation| vengono quindi ritornate a \verb|NavigationManagerImp| che le restituisce al PRESENTER il quale le scompatterà e le restituirà alla view e quindi all'utente.
+	
+		\begin{figure} [h]
+			\includegraphics[width=\textwidth]{diagrams/StartNavigation}
+			\caption{Diagramma di sequenza - Avvio navigazione}
+			\label{StartNavigation}
+		\end{figure}
 		
 		
 \end{document}
