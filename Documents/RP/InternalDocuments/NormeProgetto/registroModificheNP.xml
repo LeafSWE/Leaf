@@ -394,14 +394,47 @@
 		<author>Davide Castello</author>
 		<role>Amministratore</role>
 		<message>Aggiunta procedura e strumenti per calcolo del consuntivo (sezioni 4.1.5.2 e 4.1.6.3)</message>
-		<date>2016-03-19</date>
+		<date>2016-03-16</date>
 	</entry>
-
+	
 	<entry>
 		<version>3.02</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Aggiunta procedura per il calcolo valori delle metriche con Android Studio</message>
+		<date>2016-03-16</date>
+	</entry>
+	
+	<entry>
+		<version>3.04</version>
+		<author>Marco Zanella</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2016-03-19</date>
+	</entry>
+	
+	<entry>
+		<version>3.05</version>
 		<author>Davide Castello</author>
 		<role>Amministratore</role>
 		<message>Correzioni ortografiche</message>
 		<date>2016-03-19</date>
 	</entry>
+	
+	<entry>
+		<version>3.06</version>
+		<author>Marco Zanella</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2016-03-19</date>
+	</entry>
+	
+	<entry>
+		<version>4.00</version>
+		<author>Oscar Elia Conti</author>
+		<role>Responsabile di progetto</role>
+		<message>Approvazione del documento</message>
+		<date>2016-03-20</date>
+	</entry>
+	
 </registry>
