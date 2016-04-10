@@ -442,7 +442,27 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\item MPRS[Z].
 			\end{itemize}
 		\paragraph{Procedure}
-			Definire le procedure per le metriche 
+			 \subparagraph{Calcolo del valore di una metrica con Android Studio}
+			 	Alcune metriche per il software scelte dal gruppo necessitano, per il calcolo dei propri valori, di Android Studio e di un suo plugin, chiamato MetricsReloaded.\\
+				Di seguito viene mostrata la procedura da seguire in queste situazioni:
+				\begin{enumerate}
+					\item aprire Android Studio;
+					\item selezionare in \textit{Metrics scope} il box custom scope;
+					\item nel menu a tendina a fianco selezionare i file su cui effettuare il calcolo delle metriche;
+					\item selezionare in \textit{Metrics profile} il pulsante a fianco del menu identificato da '\dots';
+					\item nella finestra ora aperta selezionare tramite checkbox la metrica da calcolare:
+					\begin{itemize}
+						\item \textit{Number of statements}: per visualizzare il numero di statement per metodo;
+						\item \textit{Class size (attributes)}: per visualizzare il numero di attributi per classe;
+						\item \textit{Coupling factor}: per visualizzare il grado di accoppiamento;
+						\item \textit{Total cyclomatic complexity}: per visualizzare la complessità ciclomatica del codice;
+						\item \textit{Number of parameters}: per visualizzare il numero di parametri per metodo;
+						\item \textit{Average size}: per visualizzare la dimensione media di un modulo in termini di linee di codice.
+					\end{itemize}
+					\item selezionare Apply e in seguito OK;
+					\item selezionare nuovamente OK.
+				\end{enumerate}
+				
 		\paragraph{Strumenti}
 			\subparagraph{Copertura requisiti obbligatori}
 				Lo strumento scelto per il calcolo del valore di questa metrica è Tracy, il quale permette di tracciare i requisiti e mapparli su use case, moduli e classi.
