@@ -147,7 +147,7 @@
 					\end{description}
 					\begin{description}
 						\item [Metrica utilizzata:] Numero di parametri per metodo
-						\item [Soglia di accettabilità:] 4<X<6
+						\item [Soglia di accettabilità:] 4<X<10
 						\item [Soglia di ottimalità:] X<4
 						\item X = numero di parametri per metodo
 					\end{description}
@@ -164,24 +164,17 @@
 						\item X = numero di dipendenze tra classi in un package\g 
 					\end{description}
 					\begin{description}
-						\item [Metrica utilizzata:] Fan-in Fan-out
-						\item [Soglia di accettabilità:] %TODO 
-						\item [Soglia di ottimalità:] %TODO
-						\item X = %TODO
-					\end{description}
-					\begin{description}
 						\item [Metrica utilizzata:] Cyclomatic Number
 						\item [Soglia di accettabilità] 4<X<10
 						\item [Soglia di ottimalità] X<4
 						\item X = numero di complessità ciclomatica
 					\end{description}
-					\begin{description}
-						\item [Metrica utilizzata:] Conditional Statement
-						\item [Soglia di accettabilità:] 20<X<50
-						\item [Soglia di ottimalità:] X<20
-						\item X = numero di statement condizionali in un modulo
-						\item N = numero di moduli
-					\end{description}
+					%\begin{description}
+						%\item [Metrica utilizzata:] Conditional Statement
+						%\item [Soglia di accettabilità:] 20<X<50
+						%\item [Soglia di ottimalità:] X<20
+						%\item X = numero di statement condizionali in un metodo
+					%\end{description}
 					\begin{description}
 					    \item [Metrica utilizzata:] Adequacy of variable names
 						\item [Soglia di accettabilità] 80\%<X<90\%
@@ -202,9 +195,8 @@
 						\item \ref{MPRS5} - MPRS5 - Numero di campi dati per classe
 						\item \ref{MPRS6} - MPRS6 - Grado di accoppiamento
 						\item \ref{MPRS7} - MPRS7 - Cyclomatic Number
-						\item \ref{MPRS8} - MPRS8 - Conditional Statement
-						\item \ref{MPRS9} - MPRS9 - Adequacy of variable names
-						\item \ref{MPRS10} - MPRS10 - Average Module Size
+						\item \ref{MPRS8} - MPRS8 - Adequacy of variable names
+						\item \ref{MPRS9} - MPRS9 - Average Module Size
 					\end{itemize}
 				\subparagraph{Copertura dei test richiesti - OBPRS4}
 				Il prodotto deve essere testato in ogni sua parte per garantirne il funzionamento. I test presi in considerazioni sono quelli che testano le funzionalità previste dai requisiti. 
@@ -214,7 +206,7 @@
 						\item [Soglia di ottimalità:] 90\%<X<98\%
 						\item X = percentuale di test passati su test ricavati dai requisti
 					\end{description}
-			    Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS11 "Test Passati Richiesti" nella sezione \ref{MPRS11}.
+			    Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS10 "Test Passati Richiesti" nella sezione \ref{MPRS10}.
 				\subparagraph{Robustezza -  OBPRS5}	
 				Il prodotto deve essere robusto e non deve interrompere il suo funzionamento in seguito al verificarsi di situazioni anomale. Il prodotto deve essere in grado inoltre di gestire le situazioni di errore.
 					\begin{description}
@@ -223,7 +215,7 @@
 						\item [Soglia di ottimalità:] X>90\%
 						\item X = percentuale di situazioni anomale evitate su situazioni anomale prese in considerazione
 					\end{description}
-					Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS12 "Failure Avoidance" nella sezione \ref{MPRS12}.
+					Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS11 "Failure Avoidance" nella sezione \ref{MPRS11}.
 				\subparagraph{Funzionamento senza interruzioni - OBPRS6}
 					Il prodotto deve garantire un funzionamento senza interruzioni. Questo livello è considerato ottimale ma secondo la metrica scelta possono esserci al massimo il 20\% di interruzioni dovute al verificarsi di situazioni anomale.  
 					\begin{description}
@@ -232,7 +224,7 @@
 						\item [Soglia di ottimalità:] X>90\%
 						\item X = percentuale di interruzioni evitate in base a situazioni anomale presentate
 					\end{description}
-					Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS13 "Breakdown Avoidance" nella sezione \ref{MPRS13}.
+					Per una descrizione dettagliata della metrica qui utilizzata e per una maggiore comprensione degli indici di ottimalità e accettabilità presentati si faccia riferimento alla metrica MPRS12 "Breakdown Avoidance" nella sezione \ref{MPRS12}.
 	\subsection{Scadenze temporali}
 	Le scadenze che il gruppo \leaf\ ha deciso di rispettare sono riportate nel \pianodiprogettov.
 \end{document}
