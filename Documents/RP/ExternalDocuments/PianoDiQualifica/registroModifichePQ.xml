@@ -289,4 +289,28 @@
 		<date>2016-03-13</date>
 	</entry>
 
+	<entry>
+		<version>3.01</version>
+		<author>Davide Castello</author>
+		<role>Amministratore</role>
+		<message>Aggiunto resoconto delle attività  di verifica Fase PDROB</message>
+		<date>2016-04-09</date>
+	</entry>
+
+	<entry>
+		<version>3.02</version>
+		<author>Cristian Andrighetto</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2016-04-10</date>
+	</entry>
+
+	<entry>
+		<version>4.00</version>
+		<author>Oscar Elia Conti</author>
+		<role>Responsabile di progetto</role>
+		<message>Approvazione del documento</message>
+		<date>2016-04-10</date>
+	</entry>
+
 </registry>
