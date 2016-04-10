@@ -442,7 +442,27 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\item MPRS[Z].
 			\end{itemize}
 		\paragraph{Procedure}
-			Definire le procedure per le metriche 
+			 \subparagraph{Calcolo del valore di una metrica con Android Studio}
+			 	Alcune metriche per il software scelte dal gruppo necessitano, per il calcolo dei propri valori, di Android Studio e di un suo plugin, chiamato MetricsReloaded.\\
+				Di seguito viene mostrata la procedura da seguire in queste situazioni:
+				\begin{enumerate}
+					\item aprire Android Studio;
+					\item selezionare in \textit{Metrics scope} il box custom scope;
+					\item nel menu a tendina a fianco selezionare i file su cui effettuare il calcolo delle metriche;
+					\item selezionare in \textit{Metrics profile} il pulsante a fianco del menu identificato da '\dots';
+					\item nella finestra ora aperta selezionare tramite checkbox la metrica da calcolare:
+					\begin{itemize}
+						\item \textit{Number of statements}: per visualizzare il numero di statement per metodo;
+						\item \textit{Class size (attributes)}: per visualizzare il numero di attributi per classe;
+						\item \textit{Coupling factor}: per visualizzare il grado di accoppiamento;
+						\item \textit{Total cyclomatic complexity}: per visualizzare la complessità ciclomatica del codice;
+						\item \textit{Number of parameters}: per visualizzare il numero di parametri per metodo;
+						\item \textit{Average size}: per visualizzare la dimensione media di un modulo in termini di linee di codice.
+					\end{itemize}
+					\item selezionare Apply e in seguito OK;
+					\item selezionare nuovamente OK.
+				\end{enumerate}
+				
 		\paragraph{Strumenti}
 			\subparagraph{Copertura requisiti obbligatori}
 				Lo strumento scelto per il calcolo del valore di questa metrica è Tracy, il quale permette di tracciare i requisiti e mapparli su use case, moduli e classi.
@@ -690,7 +710,8 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 		
 	\paragraph{Procedure}
 	\subparagraph{Gestione di una issue}
-		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura di gestione di una issue si divide in due casi: verifica di una issue già aperta o verifica generica.Nel caso di verifica di una issue già aperta:
+		Ai \verificatori\ viene chiesto di verificare il lavoro fatto da un altro membro del gruppo riportato nel dettaglio in una issue\g.\\
+		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura da seguire è la seguente:
 			\begin{enumerate}
 				\item il \verificatore\ che ha riscontrato delle anomalie dovrà segnalarlo commentando la issue che ha verificato e modificando la label da "ToVerify" a "ToDo". Nel caso in cui non vengano riscontrare anomalie, può chiudere l'issue aggiungendo al messaggio di commit la stringa "close \texttt{\#numeroIssue}";
 				\item l'assegnatario della issue dovrà provvedere ad apportare le modifiche rilevate dal \verificatore\, nel caso le ritenesse necessarie;
@@ -703,7 +724,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 					\caption{Procedura di gestione di una issue già aperta}\label{fig:Procedura di gestione di una issue già aperta} 
 				\end{figure}				
 				
-				In tutti gli altri casi, qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura per la segnalazione e gestione del ticketing di una issue\g\ è la seguente:
+				Nel caso in cui i \verificatori\ dovessero riscontrare delle anomalie che non riguardano una issue\g\ specifica, la procedura da seguire è la seguente:
 					\begin{enumerate}
 						\item il \verificatore\ che ha riscontrato un'anomalia\g\ dovrà aprire una nuova issue\g\ assegnandole l'etichetta Request;
 						\item il \responsabilediprogetto\ dovrà valutare la issue\g\ e decidere se:			\begin{itemize}
@@ -713,8 +734,8 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 						\item i membri del gruppo dovranno discutere e proporre nuove idee al fine di risolvere la issue\g. Questa discussione non dovrà protrarsi per più di tre giorni. Qualora non si dovesse essere trovata una soluzione ottimale, il \responsabilediprogetto\ dovrà decidere quale sia la soluzione migliore.
 						\item il \responsabilediprogetto, trovata la soluzione da applicare,  assegnerà, al membro del gruppo da lui ritenuto opportuno, un ticket\g. L'assegnatario del ticket\g\ è la persona incaricata all'applicazione della soluzione relativa alla issue\g. Inoltre, il \responsabilediprogetto\ dovrà rimuovere dalla issue\g\ l'etichetta Question ed assegnare l'etichetta ToDo.
 						\item quando l'incaricato inizierà a lavorare sulla issue\g\ rimuoverà l'etichetta ToDo ed assegnerà l'etichetta Working. Ad ogni nuovo commit, l'incaricato dovrà riferire, nel messaggio del commit stesso, la issue\g\ sulla quale sta lavorando. Questo permetterà di tener traccia delle modifiche effettuate per risolvere la issue\g.
-						\item una volta che l'incaricato avrà terminato le modifiche, queste dovranno essere caricate nel repository\g\ e l'etichetta della issue\g\ dovrà essere modificata da Working a Done. Dopo che sono state svolte queste operazioni, la issue\g\ verrà chiusa.
-					\end{enumerate}
+						\item l'incaricato dovrà inserire nel messaggio del suo ultimo commit di modifica la stringa \texttt{£toVerify}, in modo che la label della issue\g\ venga modificata da Working a ToVerify. A questo punto, i \verificatori\ potranno verificare il lavoro svolto.
+					\end{enumerate}					
 \newpage
 				\begin{figure}[H]
 					\centering

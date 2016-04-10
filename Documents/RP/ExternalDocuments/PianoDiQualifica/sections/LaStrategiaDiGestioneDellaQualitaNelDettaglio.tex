@@ -136,19 +136,18 @@ si veda il documento \normediprogettov.
 					MPRS5 - Numero di campi dati per classe & Manutenibilità\\
 					MPRS6 - Grado di accoppiamento & Manutenibilità\\
 					MPRS7 - Cyclomatic Number & Manutenibilità\\
-					MPRS8 - Conditional Statement & Manutenibilità\\
-					MPRS9 - Adequacy of variable names & Manutenibilità\\
-					MPRS10 - Average Module Size & Manutenibilità\\
-					MPRS11 - Test Passati Richiesti & Affidabilità\\
-					MPRS12 - Failure Avoidance & Affidabilità\\
-					MPRS13 - Breakdown Avoidance & Affidabilità\\
+					MPRS8 - Adequacy of variable names & Manutenibilità\\
+					MPRS9 - Average Module Size & Manutenibilità\\
+					MPRS10 - Test Passati Richiesti & Affidabilità\\
+					MPRS11 - Failure Avoidance & Affidabilità\\
+					MPRS12 - Breakdown Avoidance & Affidabilità\\
 					\midrule
 				\end{tabular}
 				\caption{Mappa Metriche-Caratteristiche}
 				\label{tab:mappa_metriche_caratteristice}
 			\end{table}
 			\subparagraph{Copertura Requisiti Obbligatori - MPRS1}\label{MPRS1}
-			Questa metrica ci permette di verificare in ogni momento lo stato dei requisiti obbligatori coperti. Essa misura il rapporto tra requisiti obbligatori soddisfatti e il numero totale di requisiti obbligatori ricavati. Per una maggiore comprensione il risultato verrà riportato in percentuale.
+			Questa metrica ci permette di verificare in ogni momento lo stato dei requisiti obbligatori coperti. Essa controlla il rapporto tra i requisiti obbligatori soddisfatti e il numero totale di requisiti obbligatori ricavati. Per una maggiore comprensione il risultato verrà riportato in percentuale.
 			\begin{equation}
 				Copertura \ Requisiti \ Obbligatori = \frac{\#\ requisiti\ obbligatori\ soddisfatti }{\#\ requisiti\ obbligatori\ totali}
 			\end{equation}
@@ -159,7 +158,7 @@ si veda il documento \normediprogettov.
 				\item una percentuale uguale al 100\% ottimale.
 			\end{itemize}
 			\subparagraph{Copertura Requisiti Desiderabili - MPRS2}\label{MPRS2}
-			Questa metrica ci permette di verificare in ogni momento lo stato dei requisiti coperti. Essa misura il rapporto tra requisiti desiderabili soddisfatti e il numero totale di requisiti desiderabili ricavati. Per una maggiore comprensione il risultato verrà riportato in percentuale.
+			Questa metrica ci permette di verificare in ogni momento lo stato dei requisiti desiderabili coperti. Essa controlla il rapporto tra i requisiti desiderabili soddisfatti e il numero totale di requisiti desiderabili ricavati. Per una maggiore comprensione il risultato verrà riportato in percentuale.
 			\begin{equation}
 			Copertura \ Requisiti \ Desiderabili = \frac{\#\ requisiti\ desiderabili\ soddisfatti }{\#\ requisiti\ desiderabili\ totali}
 			\end{equation}
@@ -170,7 +169,7 @@ si veda il documento \normediprogettov.
 				\item una percentuale uguale al 100\% ottimale.
 			\end{itemize}
 			\subparagraph{Numero di statement per metodo - MPRS3}\label{MPRS3}
-			La metrica misura il numero di statement per metodo. Questo ci permette di tenere un grado di manutenibilità del codice accettabile.
+			La metrica è in grado di determinare se il numero di statement per metodo implementati rientri tra i valori definiti. Questo ci permette di tenere un livello di manutenibilità del codice accettabile.
 			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
 			\begin{itemize}
 				\item un valore maggiore di 40 è ritenuto negativo;
@@ -178,15 +177,15 @@ si veda il documento \normediprogettov.
 				\item un valore minore di 30 è ritenuto ottimale.
 			\end{itemize}
 			\subparagraph{Numero di parametri per metodo - MPRS4}\label{MPRS4}
-			La metrica misura il numero di parametri per metodo. Questo ci permette di tenere un grado di manutenibilità del codice accettabile.
+			La metrica è in grado di determinare se il numero di parametri di un metodo rientri tra i valori definiti. Questo ci permette di tenere un grado di manutenibilità del codice accettabile.
 			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
 			\begin{itemize}
-				\item un valore maggiore di 6 è ritenuto negativo;
-				\item un valore compreso tra 4 e 6 è ritenuto accettabile;
+				\item un valore maggiore di 10 è ritenuto negativo;
+				\item un valore compreso tra 4 e 10 è ritenuto accettabile;
 				\item un valore minore di 4 è ritenuto ottimale.
 			\end{itemize}
 			\subparagraph{Numero di campi dati per classe - MPRS5}\label{MPRS5}
-			La metrica misura il numero di campi dati per classe. Questo ci permette di tenere un grado di manutenibilità e comprensibilità del codice accettabile.
+			La metrica permette di verificare che il numero di campi dati per classe rientri tra i valori definiti. Questo ci permette di tenere un grado di manutenibilità e comprensibilità del codice accettabile.
 			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
 			\begin{itemize}
 			\item un valore maggiore di 15 è ritenuto negativo;
@@ -194,7 +193,7 @@ si veda il documento \normediprogettov.
 			\item un valore minore di 10 è ritenuto ottimale.
 			\end{itemize}
 			\subparagraph{Grado di accoppiamento - MPRS6}\label{MPRS6}
-			La metrica misura il numero di dipendenze tra classi di un package\g. Avere poche dipendenze tra classi implica che ci sia un maggiore grado di disaccoppiamento. Questo aumenta molto la manutenibilità e la comprensibilità del codice.\\
+			La metrica determina se il numero di dipendenze tra classi in un package\g rientri tra i valori definiti. Avere poche dipendenze tra classi implica che ci sia un maggiore grado di disaccoppiamento. Questo aumenta molto la manutenibilità e la comprensibilità del codice.\\
 			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
 			\begin{itemize}
 				\item un valore maggiore di 7 è ritenuto negativo;
@@ -202,7 +201,7 @@ si veda il documento \normediprogettov.
 				\item un valore minore di 3 è ritenuto ottimale.
 			\end{itemize}
 			\subparagraph{Cyclomatic Number - MPRS7}\label{MPRS7}
-			La metrica misura la complessità ciclomatica del codice. Essa ci permette di vedere il numero di cammini linearmente indipendenti presenti all'interno del codice. Il numero di cammini è direttamente proporzionale alla complessità ciclomatica del codice.
+			La metrica controlla che la complessità ciclomatica del codice rientri tra i valori definiti. Essa ci permette di vedere il numero di cammini linearmente indipendenti presenti all'interno del codice. Il numero di cammini è direttamente proporzionale alla complessità ciclomatica del codice.
 			\begin{equation}
 			Cyclomatic \ Number = e - n + 2p 
 			\end{equation}
@@ -217,16 +216,16 @@ si veda il documento \normediprogettov.
 				\item un valore compreso tra 4 e 10 è ritenuto accettabile;
 				\item un valore minore di 4 è ritenuto ottimale.
 			\end{itemize}
-			\subparagraph{Conditional Statement - MPRS8}\label{MPRS8}
-			La metrica misura il numero di statement condizionali presenti per modulo. Questo ci permette di valutare la complessità del codice di un modulo.  
-			Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
-			\begin{itemize}
-				\item un valore maggiore di 50 è ritenuto negativo;
-				\item un valore compreso tra 20 e 50 è ritenuto accettabile;
-				\item un valore minore di 20 è ritenuto ottimale.
-			\end{itemize}
-			\subparagraph{Adequacy of variable names - MPRS9}\label{MPRS9}
-			La metrica misura la divergenza dei nomi delle variabili da quanto deciso nella \definizionediprodottov. Questo ci permette di mantenere una buona comprensibilità del codice. 
+			%\subparagraph{Conditional Statement - MPRS8}\label{MPRS8}
+			%La metrica misura il numero di statement condizionali presenti per metodo. Questo ci permette di valutare la complessità del codice di un metodo.  
+			%Vengono di seguito riportati i range stabiliti per la metrica appena introdotta:
+			%\begin{itemize}
+				%\item un valore maggiore di 50 è ritenuto negativo;
+				%\item un valore compreso tra 20 e 50 è ritenuto accettabile;
+				%\item un valore minore di 20 è ritenuto ottimale.
+			%\end{itemize}
+			\subparagraph{Adequacy of variable names - MPRS8}\label{MPRS8}
+			La metrica controlla che la divergenza dei nomi delle variabili da quanto deciso nella \definizionediprodottov rientri tra i valori definiti. Questo ci permette di mantenere una buona comprensibilità del codice. 
 			\begin{equation}
 			Adequacy \ of \ variable \ names=\frac{\#\ variabili \ con \ nomi \ corretti}{\# \ totale \ di \ variabili \ definite \ nella \ DP }
 			\end{equation}
@@ -239,8 +238,8 @@ si veda il documento \normediprogettov.
 				\item un valore compreso tra 80\% e 90\% è ritenuto accettabile;
 				\item un valore maggiore di 90\% è ritenuto ottimale.
 			\end{itemize}
-			\subparagraph{Average Module Size - MPRS10}\label{MPRS10}
-			La metrica misura la dimensione media di un modulo in termini di linee di codice. Avere moduli di grandi dimensioni compromette la manutenibilità del codice.
+			\subparagraph{Average Module Size - MPRS9}\label{MPRS9}
+			La metrica controlla che la dimensione media di un modulo in termini di linee di codice rientri tra i valori definiti. Avere moduli di grandi dimensioni compromette la manutenibilità del codice.
 			\begin{equation}
 			Average \ module \ size  = \frac{\# \ totale \ di \ linee \ di \ codice \ in \ tutti \ i \ moduli  }{\#\ moduli}
 			\end{equation}
@@ -250,8 +249,8 @@ si veda il documento \normediprogettov.
 				\item un valore compreso tra 300 e 400 è ritenuto accettabile;
 				\item un valore compreso tra 200 e 300 è ritenuto ottimale.
 			\end{itemize}
-			\subparagraph{Test Passati Richiesti - MPRS11}\label{MPRS11}
-			La metrica misura la percentuale di successo dei test ricavati dai requisiti. Questo ci permette di valutare se il prodotto supera la maggior parte dei test.
+			\subparagraph{Test Passati Richiesti - MPRS10}\label{MPRS10}
+			La metrica controlla che la percentuale di successo dei test ricavati dai requisiti rientri tra i valori definiti. Questo ci permette di valutare se il prodotto supera la maggior parte dei test.
 			\begin{equation}
 			Test \ Passati \ Richiesti  = \frac{\# \ di \ test \ passati }{\#\ totale \ di \ test \ richiesti}
 			\end{equation}
@@ -262,8 +261,8 @@ si veda il documento \normediprogettov.
 				\item una percentuale compresa tra 90\% e 98\% è ritenuta ottimale.
 			\end{itemize}
 			Da notare che una percentuale maggiore del 98\% è ritenuta negativa, perchè lo scopo dei test è quello di trovare dei problemi. Al raggiungimento del 100\% dei test passati il set di test previsto verrà cambiato. 
-			\subparagraph{Failure Avoidance - MPRS12}\label{MPRS12}
-			La metrica misura la percentuale di situazioni anomale evitate dal prodotto in seguito ad un numero di situazioni anomale presentate. Questo ci permette di valutare se il prodotto è robusto e risponde bene ad eventuali situazioni anomale. 
+			\subparagraph{Failure Avoidance - MPRS11}\label{MPRS11}
+			La metrica controlla che la percentuale di situazioni anomale evitate dal prodotto rientri nei valori definiti. Questo ci permette di valutare se il prodotto è robusto e risponde bene ad eventuali situazioni anomale. 
 			\begin{equation}
 			Failure \ Avoidance  = \frac{\#\ situazioni \ anomale \ evitate }{\#\ totale \ di \ situazioni \ anomale \ presentate }
 			\end{equation}
@@ -273,8 +272,8 @@ si veda il documento \normediprogettov.
 				\item una percentuale compresa tra 80\% e 90\% è ritenuta accettabile;
 				\item una percentuale maggiore di 90\% è ritenuta ottimale.
 			\end{itemize}
-			\subparagraph{Breakdown Avoidance - MPRS13}\label{MPRS13}
-			La metrica misura la percentuale di interruzioni evitate dal prodotto in seguito ad un numero di situazioni anomale presentate. Questo ci permette di valutare se il prodotto lavora senza interruzioni. 
+			\subparagraph{Breakdown Avoidance - MPRS12}\label{MPRS12}
+			La metrica controlla che la percentuale di interruzioni evitate dal prodotto rientri tra i valori definiti. Il valore su cui si applicherà la metrica verrà calcolato come il complemento delle interruzioni verificate. Questa metrica ci permette di controllare che il prodotto lavori senza interruzioni.
 			\begin{equation}
 			Breakdown \ Avoidance  =1 - \frac{\#\ di \ interruzioni}{\#\ di \ situazioni \ anomale \ presentate }
 			\end{equation}

@@ -1,6 +1,35 @@
 \documentclass[../DefinizioneDiProdotto.tex]{subfiles}
 \begin{document}
 \section{Specifica dei componenti}
+
 	\subsection{Metodo e formalismo di specifica}
+
+		L'esposizione dell'architettura in dettaglio dell'applicazione è esposta di seguito seguendo un approccio top-down a livelli. Si descrive quindi l'architettura partendo dal generale esponendo inizialmente le componenti più teoriche: i package fino a quelle più concrete: le classi con i relativi metodi, attributi e relazioni di ereditarietà.
+		
+		Per ogni package si specifica:
+			\begin{itemize}
+				\item il nome;
+				\item una descrizione;
+				\item il package da cui discende;
+				\item le interazioni con gli altri package;
+				\item gli eventuali package contenuti;
+				\item le classi contenute affiancate da un riferimento alla descrizione completa.
+			\end{itemize}
+		Per ogni classe si specifica:
+			\begin{itemize}
+				\item il nome;
+				\item il tipo;
+				\item l'eventuale classe che estende;
+				\item le eventuali interfacce che implementa;
+				\item la visibilità;
+				\item una descrizione;
+				\item la lista dettagliata degli attributi;
+				\item la lista dettagliata dei metodi.
+			\end{itemize}
+		Per i diagrammi dei package e delle classi si utilizza il formalismo \textit{UML 2.0}.
+	
+	% componenti da esportare da Tracy
+	
+	
 	
 \end{document}
