@@ -53,7 +53,7 @@ $newfile = $newfile."\\makeglossaries
 	\\newpage
 		\\begin{tabular}{c|c}
 			{\\hfill \\textbf{Versione}} 			& 4.00				\\\\[1ex]
-			{\\hfill\\textbf{Data Redazione}} 		& 2015-01-20  			\\\\[1ex]
+			{\\hfill\\textbf{Data Redazione}} 		& 2015-04-05  			\\\\[1ex]
 			{\\hfill\\textbf{Redazione}} 			& Davide Castello      		\\\\[1ex]
 			{\\hfill\\textbf{Verifica}} 			& Marco Zanella			\\\\[1ex]
 			{\\hfill\\textbf{Approvazione}} 		& Oscar Elia Conti		\\\\[1ex] 
