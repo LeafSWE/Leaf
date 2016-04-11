@@ -4,9 +4,607 @@
 \section{Tracciamento}
 
 	\subsection{Tracciamento Classi-Requisiti}
-	
+	\begin{longtabu} to \textwidth{X [5cm] X}
+\toprule
+\textbf{Classe} & \textbf{Requisiti}\\
+\midrule
+\endhead
+\arrayrulecolor{gray}
+model::InformationManagerImp & RDesF12.3.5 \par RObbF12.3 \par RObbF7.1 \par RObbF9 \par ROpzF9.2.2 \\ 
+\midrule 
+model::MessageSendType & RDesF12.3.5 \par RDesF7.4.2.3 \par RObbF12.3 \par RObbF7 \par RObbF7.1 \par RObbF7.4 \par RObbF7.4.2 \par RObbF7.5 \par RObbF9 \par ROpzF9.2.2 \\ 
+\midrule 
+model::NavigationManagerImp & RDesF7.4.2.3 \par RObbF7 \par RObbF7.4 \par RObbF7.4.2 \par RObbF7.5 \par ROpzF7.4.2.6 \\ 
+\midrule 
+model::NoBeaconSeenException & ROpzF7.4.2.6 \\ 
+\midrule 
+model::ServiceConnectionImp & RDesF12.3.5 \par RDesF7.4.2.3 \par RObbF12.3 \par RObbF7 \par RObbF7.1 \par RObbF7.4 \par RObbF7.4.2 \par RObbF7.5 \par RObbF9 \par ROpzF9.2.2 \\ 
+\midrule 
+model::beacon::BeaconManagerAdapter & RDesF7.4.2.3 \par RObbF7 \par RObbF8 \par RObbF8.1 \par RObbF8.1.1 \par RObbF8.2 \par RObbF8.3 \par RObbF8.4 \par RObbF8.5 \par RObbF8.6 \par RObbF9.10 \par RObbF9.3 \par RObbF9.4 \par RObbF9.5 \par RObbF9.6 \par RObbF9.9 \par ROpzF7.4.2.5 \par ROpzF7.4.2.6 \par ROpzF9.2.2 \\ 
+\midrule 
+model::beacon::LocalBinder & RDesF12.3.5 \par RDesF7.4.2.3 \par RObbF12.3 \par RObbF7 \par RObbF7.1 \par RObbF7.4 \par RObbF7.4.2 \par RObbF7.5 \par RObbF9 \par ROpzF9.2.2 \\ 
+\midrule 
+model::beacon::LoggerImp & RDesF12.3.1 \par RDesF12.3.2 \par RDesF12.3.3 \par RDesF12.3.5 \par RObbF12.3 \\ 
+\midrule 
+model::beacon::MyBeaconImp & RDesF7.4.2.3 \par RObbF8 \par RObbF8.1.1 \par RObbF8.1.2 \par RObbF8.2 \par RObbF8.3 \par RObbF8.4 \par RObbF8.5 \par RObbF8.6 \\ 
+\midrule 
+model::beacon::MyDistanceCalculator & RObbF8.4 \\ 
+\midrule 
+model::compass::Compass & RObbF7.4.2 \\ 
+\midrule 
+model::dataaccess::dao::BuildingContract & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::BuildingTable & RDesF10.2 \par RObbF7.7 \\ 
+\midrule 
+model::dataaccess::dao::CategoryContract & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::CategoryTable & RDesF10.2 \\ 
+\midrule 
+model::dataaccess::dao::DaoFactoryHelper & RDesF10.2 \par RDesF10.2.1 \par RDesF10.2.2 \\ 
+\midrule 
+model::dataaccess::dao::EdgeContract & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::EdgeTable & RDesF10.2 \\ 
+\midrule 
+model::dataaccess::dao::EdgeTypeContract & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::EdgeTypeTable & RDesF10.2 \\ 
+\midrule 
+model::dataaccess::dao::MapsDbContract & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::MapsDbHelper & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::PhotoContract & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::PhotoTable & RDesF10.2 \\ 
+\midrule 
+model::dataaccess::dao::PointOfInterestContract & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::PointOfInterestTable & RDesF10.2 \\ 
+\midrule 
+model::dataaccess::dao::RegionOfInterestContract & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::RegionOfInterestTable & RDesF10.2 \\ 
+\midrule 
+model::dataaccess::dao::RemoteBuildingDao & RDesF10.2.1.2 \par RDesF10.2.2 \par RDesF10.2.2.1 \par RDesF10.2.2.2 \par RDesF10.2.2.3 \par RDesF10.2.2.3.1 \par RDesF10.2.2.3.2 \par RDesF10.2.2.3.3 \par RDesF10.2.2.3.4 \par RDesF10.2.2.3.5 \\ 
+\midrule 
+model::dataaccess::dao::RemoteCategoryDao & RDesF10.2.1.2 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::RemoteDaoFactory & RDesF10.2.2 \\ 
+\midrule 
+model::dataaccess::dao::RemoteEdgeDao & RDesF10.2.1.2 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::RemoteEdgeTypeDao & RDesF10.2.1.2 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::RemotePhotoDao & RDesF10.2.1.2 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::RemotePointOfInterestDao & RDesF10.2.1.2 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::RemoteRegionOfInterestDao & RDesF10.2.1.2 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::RemoteRoiPoiDao & RDesF10.2.1.2 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::RoiPoiContract & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::RoiPoiTable & RDesF10.2 \\ 
+\midrule 
+model::dataaccess::dao::SQLDao & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::SQLiteBuildingDao & RDesF10.2.1 \par RDesF10.2.1.1 \par RDesF10.2.1.2 \par RDesF10.2.1.3 \par RDesF10.2.1.4 \par RDesF10.2.1.4.1 \par RDesF10.2.1.4.2 \par RDesF10.2.1.4.3 \par RDesF10.2.1.4.4 \par RDesF10.2.1.4.5 \par RDesF10.2.2.2 \par RObbF7.7 \par RObbF7.8 \\ 
+\midrule 
+model::dataaccess::dao::SQLiteCategoryDao & RDesF10.2.1 \par RDesF10.2.1.2 \par RDesF10.2.1.4 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::SQLiteDaoFactory & RDesF10.2.1 \\ 
+\midrule 
+model::dataaccess::dao::SQLiteEdgeDao & RDesF10.2.1 \par RDesF10.2.1.2 \par RDesF10.2.1.4 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::SQLiteEdgeTypeDao & RDesF10.2.1 \par RDesF10.2.1.2 \par RDesF10.2.1.4 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::SQLitePhotoDao & RDesF10.2.1 \par RDesF10.2.1.2 \par RDesF10.2.1.4 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::SQLitePointOfInterestDao & RDesF10.2.1 \par RDesF10.2.1.2 \par RDesF10.2.1.4 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::SQLiteRegionOfInterestDao & RDesF10.2.1 \par RDesF10.2.1.2 \par RDesF10.2.1.4 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::dao::SQLiteRoiPoiDao & RDesF10.2.1 \par RDesF10.2.1.2 \par RDesF10.2.1.4 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::service::BuildingService & RDesF10.2 \par RDesF10.2.1 \par RDesF10.2.1.1 \par RDesF10.2.1.2 \par RDesF10.2.1.3 \par RDesF10.2.1.4 \par RDesF10.2.1.4.1 \par RDesF10.2.1.4.2 \par RDesF10.2.1.4.3 \par RDesF10.2.1.4.4 \par RDesF10.2.1.4.5 \par RDesF10.2.2 \par RDesF10.2.2.1 \par RDesF10.2.2.2 \par RDesF10.2.2.3 \par RDesF10.2.2.3.1 \par RDesF10.2.2.3.2 \par RDesF10.2.2.3.3 \par RDesF10.2.2.3.4 \par RDesF10.2.2.3.5 \par RDesF10.2.2.4 \par RDesF10.2.3 \par RObbF7.7 \par RObbF9.10 \\ 
+\midrule 
+model::dataaccess::service::EdgeService & RDesF10.2 \par RDesF10.2.1 \par RDesF10.2.1.4 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::service::PhotoService & RDesF10.2 \par RDesF10.2.1 \par RDesF10.2.1.4 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::service::PointOfInterestService & RDesF10.2 \par RDesF10.2.1 \par RDesF10.2.1.4 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::service::RegionOfInterestService & RDesF10.2 \par RDesF10.2.1 \par RDesF10.2.1.4 \par RDesF10.2.2 \par RDesF10.2.2.2 \\ 
+\midrule 
+model::dataaccess::service::ServiceHelper & RDesF10.2 \par RDesF10.2.1 \par RDesF10.2.2 \\ 
+\midrule 
+model::navigator::BuildingInformation & RObbF7.1 \par RObbF9 \par RObbF9.10 \par RObbF9.3 \par RObbF9.4 \par RObbF9.5 \par RObbF9.6 \par RObbF9.9 \par ROpzF9.2 \\ 
+\midrule 
+model::navigator::BuildingMapImp & RObbF7.1 \par RObbF9 \par RObbF9.1 \par ROpzF9.2 \par ROpzF9.2.2 \\ 
+\midrule 
+model::navigator::NavigatorImp & RDesF7.1.1 \par RDesF7.3.1 \par RDesF7.3.1.1 \par RDesF7.3.1.2 \par RDesF7.3.1.3 \par RDesF7.4.2.2 \par RDesF7.4.2.3 \par RDesF7.4.3.1 \par RObbF7 \par RObbF7.1.2 \par RObbF7.3 \par RObbF7.4 \par RObbF7.4.2 \par RObbF7.4.2.1 \par RObbF7.5 \par RObbF8.1.1 \par ROpzF7.4.2.4 \par ROpzF7.4.2.5 \par ROpzF7.4.3.2 \par ROpzF7.4.3.3 \\ 
+\midrule 
+model::navigator::NoGraphSetException & RObbF7 \\ 
+\midrule 
+model::navigator::NoNavigationInformationException & RObbF7 \\ 
+\midrule 
+model::navigator::PathException & RDesF7.4.2.3 \\ 
+\midrule 
+model::navigator::ProcessedInformationImp & RObbF10.1.2.1 \par RObbF7.4.2 \par ROpzF7.4.2.4 \\ 
+\midrule 
+model::navigator::algorithm::DijkstraPathFinder & RDesF7.3.1 \par RDesF7.3.1.1 \par RDesF7.3.1.2 \par RDesF7.3.1.3 \par RObbF7.3 \\ 
+\midrule 
+model::navigator::graph::MapGraph & RDesF7.3.1 \par RDesF7.3.1.1 \par RDesF7.3.1.2 \par RObbF7.3 \\ 
+\midrule 
+model::navigator::graph::area::PointOfInterestImp & RDesF7.1.1 \par RObbF7.1 \par RObbF7.1.2 \par RObbF8.1.1 \par RObbF8.1.2 \par RObbF9.2.3 \par RObbF9.2.4 \par ROpzF9.2 \par ROpzF9.2.1 \\ 
+\midrule 
+model::navigator::graph::area::PointOfInterestInformation & RObbF9.2.3 \par RObbF9.2.4 \par ROpzF9.2 \par ROpzF9.2.1 \\ 
+\midrule 
+model::navigator::graph::area::RegionOfInterestImp & RDesF7.3.1 \par RDesF7.3.1.1 \par RObbF7.3 \\ 
+\midrule 
+model::navigator::graph::edge::DefaultEdge & RDesF7.3.1 \par RDesF7.3.1.1 \par RDesF7.3.1.2 \\ 
+\midrule 
+model::navigator::graph::edge::ElevatorEdge & RDesF7.3.1 \par RDesF7.3.1.1 \par RDesF7.3.1.2 \\ 
+\midrule 
+model::navigator::graph::edge::StairEdge & RDesF7.3.1 \par RDesF7.3.1.1 \par RDesF7.3.1.2 \\ 
+\midrule 
+model::navigator::graph::navigationinformation::BasicInformation & RObbF10.1.2.1 \par RObbF7.4.2 \par RObbF7.4.2.1 \\ 
+\midrule 
+model::navigator::graph::navigationinformation::DetailedInformation & RDesF7.4.3 \par RObbF10.1.2.1 \par RObbF7.4.2 \par ROpzF7.4.3.2 \\ 
+\midrule 
+model::navigator::graph::navigationinformation::NavigationInformationImp & RDesF7.1.1 \par RObbF7 \par RObbF7.4.2 \par RObbF7.4.2.1 \\ 
+\midrule 
+model::navigator::graph::navigationinformation::PhotoInformation & RDesF7.4.3.1 \par RObbF7.4.2 \\ 
+\midrule 
+model::navigator::graph::navigationinformation::PhotoRef & RDesF7.4.3.1 \\ 
+\midrule 
+model::navigator::graph::vertex::VertexImp & RDesF7.3.1 \par RDesF7.3.1.1 \par RDesF7.3.1.2 \par RObbF7.3 \\ 
+\midrule 
+model::usersetting::DeveloperCodeManager & RObbF10.3 \\ 
+\midrule 
+model::usersetting::InstructionPreference & RDesF10.1.2 \\ 
+\midrule 
+model::usersetting::PathPreference & RDesF7.3.1 \par ROpzF10.1 \\ 
+\midrule 
+model::usersetting::SettingImp & RDesF10.1.2 \par RDesF10.1.2.2 \par RDesF10.1.2.3 \par RDesF10.1.2.4 \par RDesF10.1.2.5 \par RDesF7.3.1 \par RDesF7.3.1.1 \par RDesF7.3.1.2 \par RObbF10.1.1.3 \par RObbF10.3 \par ROpzF10 \par ROpzF10.1 \par ROpzF10.1.1 \par ROpzF10.1.1.1 \par ROpzF10.1.1.2 \\ 
+\midrule 
+presenter::Checker & RObbF7.4.1 \\ 
+\midrule 
+presenter::DatabaseServiceManager & RObbF9 \\ 
+\midrule 
+presenter::DetailedInformationActivity & RDesF7.4.3.4 \par ROpzF7.4.3.2 \\ 
+\midrule 
+presenter::DeveloperUnlockerActivity & RObbF10.3.3 \\ 
+\midrule 
+presenter::HelpActivity & ROpzF11 \\ 
+\midrule 
+presenter::HomeActivity & RObbF7.1.2 \par RObbF7.1.2.1 \par RObbF7.1.3 \par RObbF7.1.4 \par RObbF7.2 \par RObbF7.4.1 \par RObbF7.4.1.1 \par RObbF7.4.1.2 \par RObbF7.4.1.3 \par RObbF7.4.4 \par RObbF7.8 \par RObbF9.10 \par RObbF9.9 \\ 
+\midrule 
+presenter::ImageAdapter & RDesF7.4.3.1 \\ 
+\midrule 
+presenter::ImageDetailActivity & RDesF7.4.3.1 \\ 
+\midrule 
+presenter::ImageListFragment & RDesF7.4.3.1 \\ 
+\midrule 
+presenter::ImagePageAdapter & RDesF7.4.3.1 \\ 
+\midrule 
+presenter::InformationManagerPresenter & RObbF9 \\ 
+\midrule 
+presenter::LocalMapActivity & RDesF10.2.1.4.1 \par RDesF10.2.1.4.2 \par RDesF10.2.1.4.3 \par RDesF10.2.1.4.4 \par RDesF10.2.1.4.5 \par RDesF10.2.2.4 \\ 
+\midrule 
+presenter::LoggingActivity & RObbF12.6 \par RObbF12.8 \par RObbF12.9 \\ 
+\midrule 
+presenter::LogInformationActivity & RDesF12.3.4 \\ 
+\midrule 
+presenter::MainActivity & RObbF7.4.1 \\ 
+\midrule 
+presenter::MainDeveloperActivity & RObbF12.3 \\ 
+\midrule 
+presenter::MainDeveloperPresenter & RObbF12.3 \\ 
+\midrule 
+presenter::MapDownloaderActivity & RDesF10.2.3 \\ 
+\midrule 
+presenter::NavigationActivity & RDesF7.4.2.3 \par RObbF7.4.1 \par RObbF7.4.1.1 \par RObbF7.4.1.2 \par RObbF7.4.1.3 \par RObbF7.4.2.1 \par RObbF7.6 \par RObbF7.7 \par ROpzF7.4.2.5 \par ROpzF7.4.2.6 \par ROpzF7.4.3.3 \\ 
+\midrule 
+presenter::NavigationAdapter & RObbF7.4.2.1 \\ 
+\midrule 
+presenter::NavigationManagerPresenter & RObbF7.4.2.1 \\ 
+\midrule 
+presenter::NearbyPoiActivity & RObbF12.7 \\ 
+\midrule 
+presenter::PoiCategoryActivity & RObbF7.1 \par RObbF7.1.2 \par RObbF7.2 \par RObbF7.4.4 \\ 
+\midrule 
+presenter::PreferencesActivity & ROpzF10.1.1.1 \\ 
+\midrule 
+presenter::RemoteMapManagerActivity & RDesF10.2.2.1 \par RDesF10.2.2.3 \par RDesF10.2.2.3.1 \par RDesF10.2.2.3.2 \par RDesF10.2.2.3.3 \par RDesF10.2.2.3.4 \par RDesF10.2.2.3.5 \par RDesF10.2.2.4 \par RDesF10.2.3 \\ 
+\midrule 
+presenter::SearchSuggestionsProvider & RDesF7.1.1 \par RDesF7.1.1.1 \\ 
+\midrule 
+presenter::SettingManager & ROpzF10.1.1.1 \\ 
+\midrule 
+view::DetailedInformationViewImp & RDesF7.4.3.4 \par ROpzF7.4.3.2 \\ 
+\midrule 
+view::DeveloperUnlockerViewImp & RObbF10.3.2 \par RObbF10.3.3 \\ 
+\midrule 
+view::HelpViewImp & ROpzF11 \\ 
+\midrule 
+view::HomeViewImp & RDesF7.1.1 \par RDesF7.1.1.1 \par RObbF7.1 \par RObbF7.1.2 \par RObbF7.1.2.1 \par RObbF7.1.3 \par RObbF7.1.4 \par RObbF7.2 \par RObbF7.4.1 \par RObbF7.4.1.1 \par RObbF7.4.1.2 \par RObbF7.4.1.3 \par RObbF7.4.4 \par RObbF7.8 \par RObbF9.10 \\ 
+\midrule 
+view::ImageDetailViewImp & RDesF7.4.3.1 \\ 
+\midrule 
+view::ImageListFragmentViewImp & RDesF7.4.3.1 \\ 
+\midrule 
+view::LocalMapManagerViewImp & RDesF10.2.1.4.1 \par RDesF10.2.1.4.2 \par RDesF10.2.1.4.3 \par RDesF10.2.1.4.4 \par RDesF10.2.1.4.5 \par RDesF10.2.2.4 \\ 
+\midrule 
+view::LoggingViewImp & RObbF12 \par RObbF12.1 \par RObbF12.2 \par RObbF12.5 \par RObbF12.6 \par RObbF12.8 \par RObbF12.9 \par ROpzF12.4 \\ 
+\midrule 
+view::LogInformationViewImp & RDesF12.3.4 \\ 
+\midrule 
+view::MainDeveloperViewImp & RObbF12.3 \\ 
+\midrule 
+view::MainViewImp & RObbF7.4.1 \\ 
+\midrule 
+view::MapDownloaderViewImp & RDesF10.2.3 \\ 
+\midrule 
+view::NavigationViewImp & RDesF7.4.2.3 \par RObbF7.4.1 \par RObbF7.4.1.1 \par RObbF7.4.1.2 \par RObbF7.4.1.3 \par RObbF7.4.2.1 \par RObbF7.6 \par RObbF7.7 \par ROpzF7.4.2.5 \par ROpzF7.4.2.6 \par ROpzF7.4.3.3 \\ 
+\midrule 
+view::NearbyPoiViewImp & RObbF12.7 \\ 
+\midrule 
+view::PoiCategoryViewImp & RObbF7.1 \par RObbF7.1.2 \par RObbF7.2 \par RObbF7.4.4 \\ 
+\midrule 
+view::PreferencesViewImp & ROpzF10.1.1.1 \\ 
+\midrule 
+view::RemoteMapManagerViewImp & RDesF10.2.2.1 \par RDesF10.2.2.1.1 \par RDesF10.2.2.3 \par RDesF10.2.2.3.1 \par RDesF10.2.2.3.2 \par RDesF10.2.2.3.3 \par RDesF10.2.2.3.4 \par RDesF10.2.2.3.5 \par RDesF10.2.2.4 \par RDesF10.2.3 \\ 
+\arrayrulecolor{black}
+\bottomrule
+\caption{Tabella classi / requisiti} \\
+\end{longtabu}
 	
 	\subsection{Requisiti-Classi}
-
+\begin{longtabu} to \textwidth {X[-2cm] X}
+\toprule
+\textbf{Requisito} & \textbf{Classi}\\
+\midrule
+\endhead
+\arrayrulecolor{gray}
+RObbV1 &  \\ 
+\midrule 
+RObbQ2 &  \\ 
+\midrule 
+RObbQ2.1 &  \\ 
+\midrule 
+RObbQ2.2 &  \\ 
+\midrule 
+RObbQ2.3 &  \\ 
+\midrule 
+RObbQ2.4 &  \\ 
+\midrule 
+RObbQ2.5 &  \\ 
+\midrule 
+RObbQ2.6 &  \\ 
+\midrule 
+RObbV3 &  \\ 
+\midrule 
+RObbV3.1 &  \\ 
+\midrule 
+RObbV3.2 &  \\ 
+\midrule 
+RObbV3.3 &  \\ 
+\midrule 
+RObbV3.3.1 &  \\ 
+\midrule 
+ROpzV3.3.1.1 &  \\ 
+\midrule 
+RObbV3.3.1.2 &  \\ 
+\midrule 
+ROpzV3.3.1.3 &  \\ 
+\midrule 
+ROpzV3.3.1.4 &  \\ 
+\midrule 
+RObbV4 &  \\ 
+\midrule 
+RObbV4.1 &  \\ 
+\midrule 
+RObbV4.1.1 &  \\ 
+\midrule 
+RObbV4.1.2 &  \\ 
+\midrule 
+RObbV4.2 &  \\ 
+\midrule 
+RObbV4.2.1 &  \\ 
+\midrule 
+RObbV4.3 &  \\ 
+\midrule 
+RObbV4.3.1 &  \\ 
+\midrule 
+RObbV4.3.2 &  \\ 
+\midrule 
+RObbV4.3.3 &  \\ 
+\midrule 
+RObbV4.4 &  \\ 
+\midrule 
+RObbV4.5 &  \\ 
+\midrule 
+RObbV4.6 &  \\ 
+\midrule 
+RObbV5 &  \\ 
+\midrule 
+RObbV5.1 &  \\ 
+\midrule 
+RObbV5.1.1 &  \\ 
+\midrule 
+RObbV5.1.2 &  \\ 
+\midrule 
+RObbV5.1.3 &  \\ 
+\midrule 
+RObbV5.2 &  \\ 
+\midrule 
+RObbV5.2.1 &  \\ 
+\midrule 
+RObbV5.2.2 &  \\ 
+\midrule 
+RObbV5.3 &  \\ 
+\midrule 
+RObbV5.3.1 &  \\ 
+\midrule 
+RObbV5.3.2 &  \\ 
+\midrule 
+RObbV5.3.3 &  \\ 
+\midrule 
+RObbV5.4 &  \\ 
+\midrule 
+RObbV5.4.1 &  \\ 
+\midrule 
+RObbV5.4.2 &  \\ 
+\midrule 
+RObbV5.4.3 &  \\ 
+\midrule 
+RObbV5.4.4 &  \\ 
+\midrule 
+RObbV5.5 &  \\ 
+\midrule 
+RObbV6 &  \\ 
+\midrule 
+RObbF7 & model::MessageSendType \par model::NavigationManagerImp \par model::ServiceConnectionImp \par model::beacon::BeaconManagerAdapter \par model::beacon::LocalBinder \par model::navigator::NavigatorImp \par model::navigator::NoGraphSetException \par model::navigator::NoNavigationInformationException \par model::navigator::graph::navigationinformation::NavigationInformationImp \\ 
+\midrule 
+RObbF7.1 & model::InformationManagerImp \par model::MessageSendType \par model::ServiceConnectionImp \par model::beacon::LocalBinder \par model::navigator::BuildingInformation \par model::navigator::BuildingMapImp \par model::navigator::graph::area::PointOfInterestImp \par presenter::PoiCategoryActivity \par view::HomeViewImp \par view::PoiCategoryViewImp \\ 
+\midrule 
+RDesF7.1.1 & model::navigator::NavigatorImp \par model::navigator::graph::area::PointOfInterestImp \par model::navigator::graph::navigationinformation::NavigationInformationImp \par presenter::SearchSuggestionsProvider \par view::HomeViewImp \\ 
+\midrule 
+RDesF7.1.1.1 & presenter::SearchSuggestionsProvider \par view::HomeViewImp \\ 
+\midrule 
+RObbF7.1.2 & model::navigator::NavigatorImp \par model::navigator::graph::area::PointOfInterestImp \par presenter::HomeActivity \par presenter::PoiCategoryActivity \par view::HomeViewImp \par view::PoiCategoryViewImp \\ 
+\midrule 
+RObbF7.1.2.1 & presenter::HomeActivity \par view::HomeViewImp \\ 
+\midrule 
+RObbF7.1.3 & presenter::HomeActivity \par view::HomeViewImp \\ 
+\midrule 
+RObbF7.1.4 & presenter::HomeActivity \par view::HomeViewImp \\ 
+\midrule 
+RObbF7.2 & presenter::HomeActivity \par presenter::PoiCategoryActivity \par view::HomeViewImp \par view::PoiCategoryViewImp \\ 
+\midrule 
+RObbF7.3 & model::navigator::NavigatorImp \par model::navigator::algorithm::DijkstraPathFinder \par model::navigator::graph::MapGraph \par model::navigator::graph::area::RegionOfInterestImp \par model::navigator::graph::vertex::VertexImp \\ 
+\midrule 
+RDesF7.3.1 & model::navigator::NavigatorImp \par model::navigator::algorithm::DijkstraPathFinder \par model::navigator::graph::MapGraph \par model::navigator::graph::area::RegionOfInterestImp \par model::navigator::graph::edge::DefaultEdge \par model::navigator::graph::edge::ElevatorEdge \par model::navigator::graph::edge::StairEdge \par model::navigator::graph::vertex::VertexImp \par model::usersetting::PathPreference \par model::usersetting::SettingImp \\ 
+\midrule 
+RDesF7.3.1.1 & model::navigator::NavigatorImp \par model::navigator::algorithm::DijkstraPathFinder \par model::navigator::graph::MapGraph \par model::navigator::graph::area::RegionOfInterestImp \par model::navigator::graph::edge::DefaultEdge \par model::navigator::graph::edge::ElevatorEdge \par model::navigator::graph::edge::StairEdge \par model::navigator::graph::vertex::VertexImp \par model::usersetting::SettingImp \\ 
+\midrule 
+RDesF7.3.1.2 & model::navigator::NavigatorImp \par model::navigator::algorithm::DijkstraPathFinder \par model::navigator::graph::MapGraph \par model::navigator::graph::edge::DefaultEdge \par model::navigator::graph::edge::ElevatorEdge \par model::navigator::graph::edge::StairEdge \par model::navigator::graph::vertex::VertexImp \par model::usersetting::SettingImp \\ 
+\midrule 
+RDesF7.3.1.3 & model::navigator::NavigatorImp \par model::navigator::algorithm::DijkstraPathFinder \\ 
+\midrule 
+RObbF7.4 & model::MessageSendType \par model::NavigationManagerImp \par model::ServiceConnectionImp \par model::beacon::LocalBinder \par model::navigator::NavigatorImp \\ 
+\midrule 
+RObbF7.4.1 & presenter::Checker \par presenter::HomeActivity \par presenter::MainActivity \par presenter::NavigationActivity \par view::HomeViewImp \par view::MainViewImp \par view::NavigationViewImp \\ 
+\midrule 
+RObbF7.4.1.1 & presenter::HomeActivity \par presenter::NavigationActivity \par view::HomeViewImp \par view::NavigationViewImp \\ 
+\midrule 
+RObbF7.4.1.2 & presenter::HomeActivity \par presenter::NavigationActivity \par view::HomeViewImp \par view::NavigationViewImp \\ 
+\midrule 
+RObbF7.4.1.3 & presenter::HomeActivity \par presenter::NavigationActivity \par view::HomeViewImp \par view::NavigationViewImp \\ 
+\midrule 
+RObbF7.4.2 & model::MessageSendType \par model::NavigationManagerImp \par model::ServiceConnectionImp \par model::beacon::LocalBinder \par model::compass::Compass \par model::navigator::NavigatorImp \par model::navigator::ProcessedInformationImp \par model::navigator::graph::navigationinformation::BasicInformation \par model::navigator::graph::navigationinformation::DetailedInformation \par model::navigator::graph::navigationinformation::NavigationInformationImp \par model::navigator::graph::navigationinformation::PhotoInformation \\ 
+\midrule 
+RObbF7.4.2.1 & model::navigator::NavigatorImp \par model::navigator::graph::navigationinformation::BasicInformation \par model::navigator::graph::navigationinformation::NavigationInformationImp \par presenter::NavigationActivity \par presenter::NavigationAdapter \par presenter::NavigationManagerPresenter \par view::NavigationViewImp \\ 
+\midrule 
+RDesF7.4.2.2 & model::navigator::NavigatorImp \par model::navigator::graph::navigationinformation::NavigationInformation \\ 
+\midrule 
+RDesF7.4.2.3 & model::MessageSendType \par model::NavigationManagerImp \par model::ServiceConnectionImp \par model::beacon::BeaconManagerAdapter \par model::beacon::LocalBinder \par model::beacon::MyBeaconImp \par model::navigator::NavigatorImp \par model::navigator::PathException \par presenter::NavigationActivity \par view::NavigationViewImp \\ 
+\midrule 
+ROpzF7.4.2.4 & model::navigator::NavigatorImp \par model::navigator::ProcessedInformationImp \\ 
+\midrule 
+ROpzF7.4.2.5 & model::beacon::BeaconManagerAdapter \par model::navigator::NavigatorImp \par presenter::NavigationActivity \par view::NavigationViewImp \\ 
+\midrule 
+ROpzF7.4.2.6 & model::NavigationManagerImp \par model::NoBeaconSeenException \par model::beacon::BeaconManagerAdapter \par presenter::NavigationActivity \par view::NavigationViewImp \\ 
+\midrule 
+RDesF7.4.3 & model::navigator::Navigator \par model::navigator::graph::navigationinformation::DetailedInformation \\ 
+\midrule 
+RDesF7.4.3.1 & model::navigator::NavigatorImp \par model::navigator::graph::navigationinformation::PhotoInformation \par model::navigator::graph::navigationinformation::PhotoRef \par presenter::ImageAdapter \par presenter::ImageDetailActivity \par presenter::ImageListFragment \par presenter::ImagePageAdapter \par view::ImageDetailViewImp \par view::ImageListFragmentViewImp \\ 
+\midrule 
+ROpzF7.4.3.2 & model::navigator::NavigatorImp \par model::navigator::graph::navigationinformation::DetailedInformation \par presenter::DetailedInformationActivity \par view::DetailedInformationViewImp \\ 
+\midrule 
+ROpzF7.4.3.3 & model::navigator::NavigatorImp \par presenter::NavigationActivity \par view::NavigationViewImp \\ 
+\midrule 
+RDesF7.4.3.4 & presenter::DetailedInformationActivity \par view::DetailedInformationViewImp \\ 
+\midrule 
+RObbF7.4.4 & presenter::HomeActivity \par presenter::PoiCategoryActivity \par view::HomeViewImp \par view::PoiCategoryViewImp \\ 
+\midrule 
+RObbF7.5 & model::MessageSendType \par model::NavigationManagerImp \par model::ServiceConnectionImp \par model::beacon::LocalBinder \par model::navigator::NavigatorImp \\ 
+\midrule 
+RObbF7.6 & presenter::NavigationActivity \par view::NavigationViewImp \\ 
+\midrule 
+RObbF7.7 & model::dataaccess::dao::BuildingTable \par model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::NavigationActivity \par view::NavigationViewImp \\ 
+\midrule 
+RObbF7.8 & model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::service::DatabaseService \par presenter::HomeActivity \par view::HomeViewImp \\ 
+\midrule 
+RObbF8 & model::beacon::BeaconManagerAdapter \par model::beacon::MyBeaconImp \\ 
+\midrule 
+RObbF8.1 & model::beacon::BeaconManagerAdapter \\ 
+\midrule 
+RObbF8.1.1 & model::beacon::BeaconManagerAdapter \par model::beacon::MyBeaconImp \par model::navigator::NavigatorImp \par model::navigator::graph::area::PointOfInterestImp \\ 
+\midrule 
+RObbF8.1.2 & model::beacon::MyBeaconImp \par model::navigator::Navigator \par model::navigator::graph::area::PointOfInterestImp \\ 
+\midrule 
+RObbF8.2 & model::beacon::BeaconManagerAdapter \par model::beacon::MyBeaconImp \\ 
+\midrule 
+RObbF8.3 & model::beacon::BeaconManagerAdapter \par model::beacon::MyBeaconImp \\ 
+\midrule 
+RObbF8.4 & model::beacon::BeaconManagerAdapter \par model::beacon::MyBeaconImp \par model::beacon::MyDistanceCalculator \\ 
+\midrule 
+RObbF8.5 & model::beacon::BeaconManagerAdapter \par model::beacon::MyBeaconImp \\ 
+\midrule 
+RObbF8.6 & model::beacon::BeaconManagerAdapter \par model::beacon::MyBeaconImp \\ 
+\midrule 
+RObbF9 & model::InformationManagerImp \par model::MessageSendType \par model::ServiceConnectionImp \par model::beacon::LocalBinder \par model::navigator::BuildingInformation \par model::navigator::BuildingMapImp \par presenter::DatabaseServiceManager \par presenter::InformationManagerPresenter \\ 
+\midrule 
+RObbF9.1 & model::navigator::BuildingMapImp \\ 
+\midrule 
+ROpzF9.2 & model::navigator::BuildingInformation \par model::navigator::BuildingMapImp \par model::navigator::graph::area::PointOfInterestImp \par model::navigator::graph::area::PointOfInterestInformation \\ 
+\midrule 
+ROpzF9.2.1 & model::navigator::graph::area::PointOfInterestImp \par model::navigator::graph::area::PointOfInterestInformation \\ 
+\midrule 
+ROpzF9.2.2 & model::InformationManagerImp \par model::MessageSendType \par model::ServiceConnectionImp \par model::beacon::BeaconManagerAdapter \par model::beacon::LocalBinder \par model::navigator::BuildingMapImp \\ 
+\midrule 
+RObbF9.2.3 & model::navigator::graph::area::PointOfInterestImp \par model::navigator::graph::area::PointOfInterestInformation \\ 
+\midrule 
+RObbF9.2.4 & model::navigator::graph::area::PointOfInterestImp \par model::navigator::graph::area::PointOfInterestInformation \\ 
+\midrule 
+RObbF9.3 & model::beacon::BeaconManagerAdapter \par model::navigator::BuildingInformation \\ 
+\midrule 
+RObbF9.4 & model::beacon::BeaconManagerAdapter \par model::navigator::BuildingInformation \\ 
+\midrule 
+RObbF9.5 & model::beacon::BeaconManagerAdapter \par model::navigator::BuildingInformation \\ 
+\midrule 
+RObbF9.6 & model::beacon::BeaconManagerAdapter \par model::navigator::BuildingInformation \\ 
+\midrule 
+RObbQ9.7 &  \\ 
+\midrule 
+RObbQ9.8 &  \\ 
+\midrule 
+RObbF9.9 & model::beacon::BeaconManagerAdapter \par model::navigator::BuildingInformation \par presenter::HomeActivity \\ 
+\midrule 
+RObbF9.10 & model::beacon::BeaconManagerAdapter \par model::dataaccess::service::BuildingService \par model::navigator::BuildingInformation \par presenter::HomeActivity \par view::HomeViewImp \\ 
+\midrule 
+ROpzF10 & model::usersetting::SettingImp \\ 
+\midrule 
+ROpzF10.1 & model::usersetting::PathPreference \par model::usersetting::SettingImp \\ 
+\midrule 
+ROpzF10.1.1 & model::usersetting::SettingImp \\ 
+\midrule 
+ROpzF10.1.1.1 & model::usersetting::SettingImp \par presenter::PreferencesActivity \par presenter::SettingManager \par view::PreferencesViewImp \\ 
+\midrule 
+ROpzF10.1.1.2 & model::usersetting::SettingImp \\ 
+\midrule 
+RObbF10.1.1.3 & model::usersetting::SettingImp \\ 
+\midrule 
+RDesF10.1.2 & model::usersetting::InstructionPreference \par model::usersetting::SettingImp \\ 
+\midrule 
+RObbF10.1.2.1 & model::navigator::ProcessedInformationImp \par model::navigator::graph::navigationinformation::BasicInformation \par model::navigator::graph::navigationinformation::DetailedInformation \par model::navigator::graph::navigationinformation::NavigationInformation \\ 
+\midrule 
+RDesF10.1.2.2 & model::usersetting::SettingImp \\ 
+\midrule 
+RDesF10.1.2.3 & model::usersetting::SettingImp \\ 
+\midrule 
+RDesF10.1.2.4 & model::usersetting::SettingImp \\ 
+\midrule 
+RDesF10.1.2.5 & model::usersetting::SettingImp \\ 
+\midrule 
+RDesF10.2 & model::dataaccess::dao::BuildingTable \par model::dataaccess::dao::CategoryTable \par model::dataaccess::dao::DaoFactoryHelper \par model::dataaccess::dao::EdgeTable \par model::dataaccess::dao::EdgeTypeTable \par model::dataaccess::dao::PhotoTable \par model::dataaccess::dao::PointOfInterestTable \par model::dataaccess::dao::RegionOfInterestTable \par model::dataaccess::dao::RoiPoiTable \par model::dataaccess::service::BuildingService \par model::dataaccess::service::EdgeService \par model::dataaccess::service::PhotoService \par model::dataaccess::service::PointOfInterestService \par model::dataaccess::service::RegionOfInterestService \par model::dataaccess::service::ServiceHelper \\ 
+\midrule 
+RDesF10.2.1 & model::dataaccess::dao::BuildingContract \par model::dataaccess::dao::CategoryContract \par model::dataaccess::dao::DaoFactoryHelper \par model::dataaccess::dao::EdgeContract \par model::dataaccess::dao::EdgeTypeContract \par model::dataaccess::dao::MapsDbContract \par model::dataaccess::dao::MapsDbHelper \par model::dataaccess::dao::PhotoContract \par model::dataaccess::dao::PointOfInterestContract \par model::dataaccess::dao::RegionOfInterestContract \par model::dataaccess::dao::RoiPoiContract \par model::dataaccess::dao::SQLDao \par model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::dao::SQLiteCategoryDao \par model::dataaccess::dao::SQLiteDaoFactory \par model::dataaccess::dao::SQLiteEdgeDao \par model::dataaccess::dao::SQLiteEdgeTypeDao \par model::dataaccess::dao::SQLitePhotoDao \par model::dataaccess::dao::SQLitePointOfInterestDao \par model::dataaccess::dao::SQLiteRegionOfInterestDao \par model::dataaccess::dao::SQLiteRoiPoiDao \par model::dataaccess::service::BuildingService \par model::dataaccess::service::EdgeService \par model::dataaccess::service::PhotoService \par model::dataaccess::service::PointOfInterestService \par model::dataaccess::service::RegionOfInterestService \par model::dataaccess::service::ServiceHelper \\ 
+\midrule 
+RDesF10.2.1.1 & model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::service::BuildingService \\ 
+\midrule 
+RDesF10.2.1.2 & model::dataaccess::dao::RemoteBuildingDao \par model::dataaccess::dao::RemoteCategoryDao \par model::dataaccess::dao::RemoteEdgeDao \par model::dataaccess::dao::RemoteEdgeTypeDao \par model::dataaccess::dao::RemotePhotoDao \par model::dataaccess::dao::RemotePointOfInterestDao \par model::dataaccess::dao::RemoteRegionOfInterestDao \par model::dataaccess::dao::RemoteRoiPoiDao \par model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::dao::SQLiteCategoryDao \par model::dataaccess::dao::SQLiteEdgeDao \par model::dataaccess::dao::SQLiteEdgeTypeDao \par model::dataaccess::dao::SQLitePhotoDao \par model::dataaccess::dao::SQLitePointOfInterestDao \par model::dataaccess::dao::SQLiteRegionOfInterestDao \par model::dataaccess::dao::SQLiteRoiPoiDao \par model::dataaccess::service::BuildingService \\ 
+\midrule 
+RDesF10.2.1.3 & model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::service::BuildingService \\ 
+\midrule 
+RDesF10.2.1.4 & model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::dao::SQLiteCategoryDao \par model::dataaccess::dao::SQLiteEdgeDao \par model::dataaccess::dao::SQLiteEdgeTypeDao \par model::dataaccess::dao::SQLitePhotoDao \par model::dataaccess::dao::SQLitePointOfInterestDao \par model::dataaccess::dao::SQLiteRegionOfInterestDao \par model::dataaccess::dao::SQLiteRoiPoiDao \par model::dataaccess::service::BuildingService \par model::dataaccess::service::EdgeService \par model::dataaccess::service::PhotoService \par model::dataaccess::service::PointOfInterestService \par model::dataaccess::service::RegionOfInterestService \\ 
+\midrule 
+RDesF10.2.1.4.1 & model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::LocalMapActivity \par view::LocalMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.1.4.2 & model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::LocalMapActivity \par view::LocalMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.1.4.3 & model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::LocalMapActivity \par view::LocalMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.1.4.4 & model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::LocalMapActivity \par view::LocalMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.1.4.5 & model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::LocalMapActivity \par view::LocalMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.2 & model::dataaccess::dao::DaoFactoryHelper \par model::dataaccess::dao::RemoteBuildingDao \par model::dataaccess::dao::RemoteCategoryDao \par model::dataaccess::dao::RemoteDaoFactory \par model::dataaccess::dao::RemoteEdgeDao \par model::dataaccess::dao::RemoteEdgeTypeDao \par model::dataaccess::dao::RemotePhotoDao \par model::dataaccess::dao::RemotePointOfInterestDao \par model::dataaccess::dao::RemoteRegionOfInterestDao \par model::dataaccess::dao::RemoteRoiPoiDao \par model::dataaccess::service::BuildingService \par model::dataaccess::service::EdgeService \par model::dataaccess::service::PhotoService \par model::dataaccess::service::PointOfInterestService \par model::dataaccess::service::RegionOfInterestService \par model::dataaccess::service::ServiceHelper \\ 
+\midrule 
+RDesF10.2.2.1 & model::dataaccess::dao::RemoteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::RemoteMapManagerActivity \par view::RemoteMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.2.1.1 & view::RemoteMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.2.2 & model::dataaccess::dao::RemoteBuildingDao \par model::dataaccess::dao::RemoteCategoryDao \par model::dataaccess::dao::RemoteEdgeDao \par model::dataaccess::dao::RemoteEdgeTypeDao \par model::dataaccess::dao::RemotePhotoDao \par model::dataaccess::dao::RemotePointOfInterestDao \par model::dataaccess::dao::RemoteRegionOfInterestDao \par model::dataaccess::dao::RemoteRoiPoiDao \par model::dataaccess::dao::SQLiteBuildingDao \par model::dataaccess::dao::SQLiteCategoryDao \par model::dataaccess::dao::SQLiteEdgeDao \par model::dataaccess::dao::SQLiteEdgeTypeDao \par model::dataaccess::dao::SQLitePhotoDao \par model::dataaccess::dao::SQLitePointOfInterestDao \par model::dataaccess::dao::SQLiteRegionOfInterestDao \par model::dataaccess::dao::SQLiteRoiPoiDao \par model::dataaccess::service::BuildingService \par model::dataaccess::service::EdgeService \par model::dataaccess::service::PhotoService \par model::dataaccess::service::PointOfInterestService \par model::dataaccess::service::RegionOfInterestService \\ 
+\midrule 
+RDesF10.2.2.3 & model::dataaccess::dao::RemoteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::RemoteMapManagerActivity \par view::RemoteMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.2.3.1 & model::dataaccess::dao::RemoteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::RemoteMapManagerActivity \par view::RemoteMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.2.3.2 & model::dataaccess::dao::RemoteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::RemoteMapManagerActivity \par view::RemoteMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.2.3.3 & model::dataaccess::dao::RemoteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::RemoteMapManagerActivity \par view::RemoteMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.2.3.4 & model::dataaccess::dao::RemoteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::RemoteMapManagerActivity \par view::RemoteMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.2.3.5 & model::dataaccess::dao::RemoteBuildingDao \par model::dataaccess::service::BuildingService \par presenter::RemoteMapManagerActivity \par view::RemoteMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.2.4 & model::dataaccess::service::BuildingService \par presenter::LocalMapActivity \par presenter::RemoteMapManagerActivity \par view::LocalMapManagerViewImp \par view::RemoteMapManagerViewImp \\ 
+\midrule 
+RDesF10.2.3 & model::dataaccess::service::BuildingService \par presenter::MapDownloaderActivity \par presenter::RemoteMapManagerActivity \par view::MapDownloaderViewImp \par view::RemoteMapManagerViewImp \\ 
+\midrule 
+RObbF10.3 & model::usersetting::DeveloperCodeManager \par model::usersetting::SettingImp \\ 
+\midrule 
+RObbF10.3.1 & view::DeveloperUnlockerView \\ 
+\midrule 
+RObbF10.3.2 & view::DeveloperUnlockerViewImp \\ 
+\midrule 
+RObbF10.3.3 & presenter::DeveloperUnlockerActivity \par view::DeveloperUnlockerViewImp \\ 
+\midrule 
+ROpzF11 & presenter::HelpActivity \par view::HelpViewImp \\ 
+\midrule 
+RObbF12 & view::LoggingViewImp \\ 
+\midrule 
+RObbF12.1 & view::LoggingViewImp \\ 
+\midrule 
+RObbF12.2 & view::LoggingViewImp \\ 
+\midrule 
+RObbF12.3 & model::InformationManagerImp \par model::MessageSendType \par model::ServiceConnectionImp \par model::beacon::LocalBinder \par model::beacon::LoggerImp \par presenter::MainDeveloperActivity \par presenter::MainDeveloperPresenter \par view::MainDeveloperViewImp \\ 
+\midrule 
+RDesF12.3.1 & model::InformationManager \par model::beacon::LoggerImp \\ 
+\midrule 
+RDesF12.3.2 & model::InformationManager \par model::beacon::LoggerImp \\ 
+\midrule 
+RDesF12.3.3 & model::InformationManager \par model::beacon::LoggerImp \\ 
+\midrule 
+RDesF12.3.4 & presenter::LogInformationActivity \par view::LogInformationViewImp \\ 
+\midrule 
+RDesF12.3.5 & model::InformationManagerImp \par model::MessageSendType \par model::ServiceConnectionImp \par model::beacon::LocalBinder \par model::beacon::LoggerImp \\ 
+\midrule 
+ROpzF12.4 & view::LoggingViewImp \\ 
+\midrule 
+RObbF12.5 & view::LoggingViewImp \\ 
+\midrule 
+RObbF12.6 & presenter::LoggingActivity \par view::LoggingViewImp \\ 
+\midrule 
+RObbF12.7 & presenter::NearbyPoiActivity \par view::NearbyPoiViewImp \\ 
+\midrule 
+RObbF12.8 & presenter::LoggingActivity \par view::LoggingViewImp \\ 
+\midrule 
+RObbF12.9 & presenter::LoggingActivity \par view::LoggingViewImp \\ 
+\midrule 
+ROpzQ13 &  \\ 
+\midrule 
+RDesP14 &  \\ 
+\midrule 
+ROpzP15 &  \\ 
+\arrayrulecolor{black}
+\bottomrule
+\caption{Tabella requisiti / classi} \\
+\end{longtabu}
 
 \end{document}

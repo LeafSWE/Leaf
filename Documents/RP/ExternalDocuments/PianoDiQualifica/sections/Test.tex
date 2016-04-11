@@ -494,13 +494,16 @@ view & TI16 \\
 \subsection{Test di unità}
 	Introduzione test di unità
 	
-	\begin{longtabu} to \textwidth {X X X X}
+	\begin{longtabu} to \textwidth {X[0.6cm] X[3cm] X[4cm] X}
 \toprule
 \textbf{Test} & \textbf{Descrizione} & \textbf{Metodi} & \textbf{Stato}\\
 \midrule
 \endhead
 \arrayrulecolor{gray}
-TU1 & Viene testato che tramite un oggetto SettingImp sia possibile salvare e recuperare le informazioni relative alle preferenze dell'utente & model::usersetting::SettingImp::getPathPreference() \par model::usersetting::SettingImp::getInstructionPreference() \par model::usersetting::SettingImp::setPathPreference() \par model::usersetting::SettingImp::setInstructionPreference() & N.I \\ 
+TU1 & \begin{flushleft}Viene testato che tramite un oggetto SettingImp sia possibile salvare e recuperare le informazioni relative alle preferenze dell'utente\end{flushleft} & \begin{flushleft}
+model::\-usersetting::\-SettingImp::\-getPathPreference() \par model::usersetting::SettingImp::getInstructionPreference() \par model::usersetting::SettingImp::setPathPreference() \par model::usersetting::SettingImp::setInstructionPreference()
+\end{flushleft}
+ & N.I \\ 
 \midrule 
 TU2 & Viene testato che tramite la classe DeveloperCodeManager sia possibile riconoscere un codice sviluppatore valida da uno non valido & model::usersetting::DeveloperCodeManager::isValid() & N.I \\ 
 \midrule 
@@ -758,7 +761,7 @@ TU128 & Viene verificato che sia possibile avviare la navigazione & presenter::H
 \midrule 
 TU129 & Viene verificato che sia possibile mostrare le mappe salvate nel databese locale & presenter::HomeActivity::showLocalMaps() & N.I \\ 
 \midrule 
-TU130 & Viene verificato che sia possibile far partire la navigazione utilizzando l'identificativo di un POI appartenente ad una certa categoria & presenter::PoiCategoryActivity::startNavigation() & N.I \\ 
+TU130 & Viene verificato che sia possibile far partire la navigazione utilizzando l'identificativo di un POI appartenente ad una certa categoria & presenter::\allowbreak{}PoiCategoryActivity::startNavigation() & N.I \\ 
 \midrule 
 TU131 & Viene verificato che sia possibile gestire le informazioni di navigazione & presenter::NavigationActivity::pathError() \par presenter::NavigationActivity::informationUpdate() & N.I \\ 
 \midrule 
