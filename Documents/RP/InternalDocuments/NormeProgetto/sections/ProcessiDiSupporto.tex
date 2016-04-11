@@ -1,4 +1,4 @@
-\documentclass[../NormeProgetto.tex]{subfiles}
+\documentclass[../NormeProgetto.text]{subfiles}
 
 \begin{document}
 \section{Processi di supporto}
@@ -421,17 +421,17 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 \subsection{Qualità}
 	\subsubsection{Metriche}
 		\paragraph{Classificazione delle metriche}
-					Per garantire la qualità del lavoro del team gli \amministratori\ hanno definito delle metriche, riportandole nel \pianodiqualifica , che devono rispettare la seguente notazione: \begin{center}\textbf{M[X][Y][Z]}\end{center} dove:
+					Per garantire la qualità del lavoro del team\g\ gli \amministratori\ hanno definito delle metriche, riportandole nel \pianodiqualifica , che devono rispettare la seguente notazione: \begin{center}\textbf{M[X][Y][Z]}\end{center} dove:
 			\begin{itemize}
 				\item \textbf{X} indica se la metrica si riferisce a prodotti o processi e può assumere i valori:
 				\begin{itemize}
 					\item \textbf{PC} per indicare i processi;
 					\item \textbf{PR} per indicare i prodotti.
 				\end{itemize}
-				\item \textbf{Y} presente solo se la metrica è riferita ai prodotti, indica se il termine prodotto si riferisce a documenti o al software e può assumere i seguenti valori:
+				\item \textbf{Y} presente solo se la metrica è riferita ai prodotti, indica se il termine prodotto\g\ si riferisce a documenti o al software\g\ e può assumere i seguenti valori:
 					\begin{itemize}
 						\item \textbf{D} per indicare i documenti;
-						\item \textbf{S} per indicare il software.
+						\item \textbf{S} per indicare il software\g.
 					\end{itemize}
 				\item \textbf{Z} indica il codice univoco della metrica (numero intero incrementale a partire da 1).
 			\end{itemize}
@@ -443,10 +443,10 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\end{itemize}
 		\paragraph{Procedure}
 			 \subparagraph{Calcolo del valore di una metrica con Android Studio}
-			 	Alcune metriche per il software scelte dal gruppo necessitano, per il calcolo dei propri valori, di Android Studio e di un suo plugin, chiamato MetricsReloaded.\\
+			 	Alcune metriche per il software\g\ scelte dal gruppo necessitano, per il calcolo dei propri valori, di Android Studio\g\ e di un suo plugin, chiamato MetricsReloaded\g.\\
 				Di seguito viene mostrata la procedura da seguire in queste situazioni:
 				\begin{enumerate}
-					\item aprire Android Studio;
+					\item aprire Android Studio\g;
 					\item selezionare in \textit{Metrics scope} il box custom scope;
 					\item nel menu a tendina a fianco selezionare i file su cui effettuare il calcolo delle metriche;
 					\item selezionare in \textit{Metrics profile} il pulsante a fianco del menu identificato da '\dots';
@@ -457,7 +457,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 						\item \textit{Coupling factor}: per visualizzare il grado di accoppiamento;
 						\item \textit{Total cyclomatic complexity}: per visualizzare la complessità ciclomatica del codice;
 						\item \textit{Number of parameters}: per visualizzare il numero di parametri per metodo;
-						\item \textit{Average size}: per visualizzare la dimensione media di un modulo in termini di linee di codice.
+						\item \textit{Average size}: per visualizzare la dimensione media di un modulo\g\ in termini di linee di codice.
 					\end{itemize}
 					\item selezionare Apply e in seguito OK;
 					\item selezionare nuovamente OK.
@@ -465,43 +465,43 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				
 		\paragraph{Strumenti}
 			\subparagraph{Copertura requisiti obbligatori}
-				Lo strumento scelto per il calcolo del valore di questa metrica è Tracy, il quale permette di tracciare i requisiti e mapparli su use case, moduli e classi.
+				Lo strumento scelto per il calcolo del valore di questa metrica è Tracy\g, il quale permette di tracciare i requisiti e mapparli su use case, moduli e classi.
 			\subparagraph{Copertura requisiti desiderabili}
-				Lo strumento scelto per il calcolo del valore di questa metrica è Tracy, il quale permette di tracciare i requisiti e mapparli su use case, moduli e classi.
+				Lo strumento scelto per il calcolo del valore di questa metrica è Tracy\g, il quale permette di tracciare i requisiti e mapparli su use case, moduli e classi.
 			\subparagraph{Numero di statement per metodo}
-				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded, plugin di Android Studio.
+				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded\g, plugin di Android Studio\g.
 			\subparagraph{Numero di campi dati per classe}
-				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded, plugin di Android Studio.
+				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded\g, plugin di Android Studio\g.
 			\subparagraph{Grado di accoppiamento}
-				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded, plugin di Android Studio.
+				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded\g, plugin di Android Studio\g.
 			\subparagraph{Cyclomatic number}
-				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded, plugin di Android Studio.
+				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded\g, plugin di Android Studio\g.
 			\subparagraph{Numero di parametri per metodo}
-				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded, plugin di Android Studio.
+				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded\g, plugin di Android Studio\g.
 			\subparagraph{Adequacy of variable name}
-				Lo strumento scelto per il calcolo del valore di questa metrica è Tracy, il quale permette di tracciare i requisiti e mapparli su use case, moduli e classi.
+				Lo strumento scelto per il calcolo del valore di questa metrica è Tracy\g, il quale permette di tracciare i requisiti e mapparli su use case, moduli e classi.
 			\subparagraph{Average module size}
-				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded, plugin di Android Studio.
+				Lo strumento scelto per il calcolo del valore di questa metrica è MetricsReloaded\g, plugin di Android Studio\g.
 			\subparagraph{Test passati richiesti}
-				Lo strumento scelto per il calcolo del valore di questa metrica è Tracy, il quale permette di tracciare i requisiti e mapparli su use case, moduli e classi.
+				Lo strumento scelto per il calcolo del valore di questa metrica è Tracy\g, il quale permette di tracciare i requisiti e mapparli su use case, moduli e classi.
 			\subparagraph{Failure avoidance}
-				Lo strumento scelto per il calcolo del valore di questa metrica è il framework Espresso, fornito dalla Android Testing Support Library.
+				Lo strumento scelto per il calcolo del valore di questa metrica è il Framework\g\ Espresso\g, fornito dalla Android\g\ Testing Support Library.
 			\subparagraph{Breakdown avoidance}
-				Lo strumento scelto per il calcolo del valore di questa metrica è il framework Espresso, fornito dalla Android Testing Support Library.
+				Lo strumento scelto per il calcolo del valore di questa metrica è il Framework\g\ Espresso\g, fornito dalla Android\g\ Testing Support Library.
 							
 	\subsubsection{Obiettivi}
 		\paragraph{Classificazione degli obiettivi}
-			Per garantire la qualità del lavoro del team, gli \amministratori\ hanno definito degli obiettivi di qualità, riportandole nel \pianodiqualifica , che devono rispettare la seguente notazione: \begin{center}\textbf{OQ[X][Y][Z]}\end{center} dove:
+			Per garantire la qualità del lavoro del team\g, gli \amministratori\ hanno definito degli obiettivi di qualità, riportandole nel \pianodiqualifica , che devono rispettare la seguente notazione: \begin{center}\textbf{OQ[X][Y][Z]}\end{center} dove:
 			\begin{itemize}
 				\item \textbf{X} indica se la metrica si riferisce a prodotti o processi, può assumere i valori:
 				\begin{itemize}
 					\item \textbf{PC} per indicare i processi;
 					\item \textbf{PR} per i prodotti.
 				\end{itemize}
-				\item \textbf{Y} (opzionale) indica se il termine prodotto si riferisce a documenti o al software e può assumere i seguenti valori:
+				\item \textbf{Y} (opzionale) indica se il termine prodotto\g\ si riferisce a documenti o al software\g\ e può assumere i seguenti valori:
 					\begin{itemize}
 						\item \textbf{D} per i documenti;
-						\item \textbf{S} per il software.
+						\item \textbf{S} per il software\g.
 					\end{itemize}
 				\item \textbf{Z} indica il codice univoco della metrica (numero intero a partire da 1).
 			\end{itemize}
@@ -536,7 +536,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 			\subparagraph{Commit}
 				L'esecuzione di ogni comando commit deve sottostare alle seguenti norme:
 				\begin{itemize}
-					\item ad ogni commit è necessario specificare un messaggio nel quale si deve dare una descrizione sintetica e più possibile precisa delle modifiche effettuate. Dove possibile, indicare anche l'identificatore univoco della issue a cui si riferisce il commit;
+					\item ad ogni commit è necessario specificare un messaggio nel quale si deve dare una descrizione sintetica e più possibile precisa delle modifiche effettuate. Dove possibile, indicare anche l'identificatore univoco della issue\g\ a cui si riferisce il commit;
 					\item le modifiche apportate devono essere complete e testate con successo;
 					\item è vietato l'utilizzo del comando \texttt{git add *} prima di un comando commit per evitare di includere nel repository\g\ file nascosti, temporanei o non voluti;
 					\item è consigliato specificare il riassunto delle modifiche apportate ad ogni commit tramite il comando \texttt{git commit} rispetto al comando \texttt{git commit -m}, dove il messaggio deve essere scritto inline tra virgolette.
@@ -608,7 +608,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 					\caption{Procedura di aggiornamento del repository}\label{fig:Procedura di aggiornamento del repository} 
 				\end{figure}
 			\subparagraph{Esecuzione di un commit}
-				Per facilitare la stesura del diario delle modifiche, sono stati aggiunti al repository degli hook, che permettono di effettuare operazioni prima e/o dopo l'esecuzione di un comando git. La procedura ridefinita per l'esecuzione di un commit viene descritta dal seguente diagramma.
+				Per facilitare la stesura del diario delle modifiche, sono stati aggiunti al repository\g\ degli hook, che permettono di effettuare operazioni prima e/o dopo l'esecuzione di un comando Git\g. La procedura ridefinita per l'esecuzione di un commit viene descritta dal seguente diagramma.
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale=0.5, width=\textwidth]{sections/img/proceduraCommit.png}
@@ -682,7 +682,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 	\subsubsection{Issue tracking}
 		L'issue\g\ tracking è un'attività di supporto per i \verificatori\ ai quali permette di tenere traccia potenziali errori, segnalandoli al \responsabilediprogetto. Lo strumento scelto per la gestione di questa attività è GitHub(vedi sezione \hyperref[par:IssueTrk GitHub]{Strumenti}). Questo strumento è utile anche al \responsabilediprogetto\ per assegnare i compiti di correzione degli errori. 
 		\paragraph{Sintassi di una label}
-			Le label sono delle etichette che è possibile associare ad ogni issue\g. Ogni etichetta rappresenta lo stato nel quale si trova la issue. Le uniche etichette che sono accettate sono le seguenti:
+			Le label sono delle etichette che è possibile associare ad ogni issue\g. Ogni etichetta rappresenta lo stato nel quale si trova la issue\g. Le uniche etichette che sono accettate sono le seguenti:
 			\begin{itemize}
 				\item \textbf{Request}: rappresenta la richiesta di una issue\g;
 				\item \textbf{Question}: identifica una issue\g\ nella quale si sta discutendo per risolvere il problema;
@@ -713,8 +713,8 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 		Ai \verificatori\ viene chiesto di verificare il lavoro fatto da un altro membro del gruppo riportato nel dettaglio in una issue\g.\\
 		Qualora i \verificatori\ dovessero riscontrare delle anomalie, la procedura da seguire è la seguente:
 			\begin{enumerate}
-				\item il \verificatore\ che ha riscontrato delle anomalie dovrà segnalarlo commentando la issue che ha verificato e modificando la label da "ToVerify" a "ToDo". Nel caso in cui non vengano riscontrare anomalie, può chiudere l'issue aggiungendo al messaggio di commit la stringa "close \texttt{\#numeroIssue}";
-				\item l'assegnatario della issue dovrà provvedere ad apportare le modifiche rilevate dal \verificatore\, nel caso le ritenesse necessarie;
+				\item il \verificatore\ che ha riscontrato delle anomalie dovrà segnalarlo commentando la issue\g\ che ha verificato e modificando la label da "ToVerify" a "ToDo". Nel caso in cui non vengano riscontrare anomalie, può chiudere l'issue\g\ aggiungendo al messaggio di commit la stringa "close \texttt{\#numeroIssue}";
+				\item l'assegnatario della issue\g\ dovrà provvedere ad apportare le modifiche rilevate dal \verificatore\, nel caso le ritenesse necessarie;
 				\item il \verificatore\ dovrà procedere ad una nuova verifica, ritornando al punto 1.
 			\end{enumerate}
 				
@@ -773,14 +773,14 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 		
 	
 \subsection{Validazione}
-		Il processo di validazione ha l'obbiettivo di verificare che: 
+		Il processo\g\ di validazione ha l'obbiettivo di verificare che: 
 		\begin{itemize}
-			\item il prodotto finale sia conforme a quanto è stato pianificato;
-			\item il prodotto finale sia abile nell'isolare e minimizzare gli effetti degli errori.
+			\item il prodotto\g\ finale sia conforme a quanto è stato pianificato;
+			\item il prodotto\g\ finale sia abile nell'isolare e minimizzare gli effetti degli errori.
 		\end{itemize}
 
 		\subsubsection{Responsabilità}
-			Di seguito si elencano le rispettive responsabilità per la validazione del prodotto: 
+			Di seguito si elencano le rispettive responsabilità per la validazione del prodotto\g: 
 			\begin{itemize}
 				\item i \verificatori\ hanno il compito di eseguire con attenzione i test, tracciandone i risultati che andranno poi valutati;
 				\item il \responsabilediprogetto\ revisiona i risultati dei test e decide se accettarli o ripeterli. Ha inoltre il compito di informare il committente dell'esecuzione e risultato dei test, fornendo indicazioni sulla possibilità di eseguirli in modo indipendente.
@@ -789,7 +789,7 @@ In questa sezione sono indicati gli standard riguardanti la struttura e la stesu
 				\paragraph{Procedura per la validazione}
 					I passi per eseguire l'attività di validazione sono i seguenti:
 					\begin{enumerate}
-						\item i \verificatori\ eseguono manualmente i test sul prodotto finale, tracciando accuratamente i risultati ottenuti;
+						\item i \verificatori\ eseguono manualmente i test sul prodotto\g\ finale, tracciando accuratamente i risultati ottenuti;
 						\item il \responsabilediprogetto\ di progetto analizza i risultati e decide se:
 							\begin{enumerate}
 							 	\item accettarli;

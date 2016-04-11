@@ -1,4 +1,4 @@
-\documentclass[../NormeProgetto.tex]{subfiles}
+\documentclass[../NormeProgetto.text]{subfiles}
 \begin{document}
 \section{Processi primari}
 	\subsection{Fornitura}
@@ -66,19 +66,19 @@
 							\item \textbf{Z} rappresenta il codice univoco di ogni requisito in forma gerarchica.
 						\end{enumerate}
 		\subsubsection{Progettazione}
-			Lo scopo dell'attività di progettazione è generare una soluzione soddisfacente per tutti gli individui che fanno parte del progetto. Compresi pienamente quali siano i requisiti del problema e approfondendo la progettazione a moduli abbastanza semplici da essere capiti da una sola persona, si otterranno le istruzioni necessarie ai \programmatori\ per sviluppare il prodotto finito.
+			Lo scopo dell'attività di progettazione è generare una soluzione soddisfacente per tutti gli individui che fanno parte del progetto. Compresi pienamente quali siano i requisiti del problema e approfondendo la progettazione a moduli abbastanza semplici da essere capiti da una sola persona, si otterranno le istruzioni necessarie ai \programmatori\ per sviluppare il prodotto\g\ finito.
 		\paragraph{Progettazione architetturale}
-			Per poter arrivare alla definizione dell'architettura dei vari prodotti software, è necessario passare attraverso una serie di attività, quali:
+			Per poter arrivare alla definizione dell'architettura dei vari prodotti software\g, è necessario passare attraverso una serie di attività, quali:
 			\begin{enumerate}
 				\item individuare i prodotti che si intendono realizzare;
-				\item definire ruoli e responsabilità per ogni prodotto individuato;
+				\item definire ruoli e responsabilità per ogni prodotto\g\ individuato;
 				\item definire le interazioni che i prodotti hanno fra di loro;
 				\item assicurarsi che ogni requisito sia soddisfatto da almeno uno dei prodotti individuati;
-				\item ci si assicura che ogni prodotto soddisfi almeno un requisito.
+				\item ci si assicura che ogni prodotto\g\ soddisfi almeno un requisito.
 			\end{enumerate}
-			A questo punto, è possibile procedere con la progettazione dell'architettura dei prodotti software che devono essere realizzati. Si devono eseguire e documentare i seguenti task per ogni prodotto individuato:
+			A questo punto, è possibile procedere con la progettazione dell'architettura dei prodotti software\g\ che devono essere realizzati. Si devono eseguire e documentare i seguenti task\g\ per ogni prodotto\g\ individuato:
 			\begin{enumerate}
-				\item suddividere il prodotto in componenti;
+				\item suddividere il prodotto\g\ in componenti;
 				\item definire il ruolo di ogni componente individuato;
 				\item definire le interazioni tra i vari componenti;
 				\item definire le interfacce che ogni componente mette a disposizione dell'ambiente esterno;
@@ -86,7 +86,7 @@
 				\item assicurarsi che ogni componente soddisfi almeno un requisito;
 				\item realizzare e documentare i test di integrazione, al fine di verificare il corretto funzionamento di più componenti integrati assieme.
 			\end{enumerate}
-			Durante la suddivisione del prodotto in più componenti i \progettisti\ dovranno utilizzare i design pattern e, nel farlo, dovranno provvedere a descriverli.
+			Durante la suddivisione del prodotto\g\ in più componenti i \progettisti\ dovranno utilizzare i Design pattern\g\ e, nel farlo, dovranno provvedere a descriverli.
 			\subparagraph{Design pattern}
 				Per migliorare la comprensibilità delle scelte progettuali e della progettazione stessa i \progettisti\ dovranno indicare i pattern architetturali utilizzati, fornendo per ciascuno d'essi:
 				\begin{itemize}
@@ -96,27 +96,27 @@
 					\item descrizione di come viene applicato il pattern al progetto.
 				\end{itemize}
 			\subparagraph{Diagrammi UML}
-				Per documentare prodotti e componenti individuati, sarà necessario ricorrere a dei diagrammi UML, necessari per formalizzare gli aspetti descritti in modo testuale. Durante la progettazione architetturale, sarà necessario ricorrere a 
+				Per documentare prodotti e componenti individuati, sarà necessario ricorrere a dei diagrammi UML\g, necessari per formalizzare gli aspetti descritti in modo testuale. Durante la progettazione architetturale, sarà necessario ricorrere a 
 				\begin{description}
-					\item[diagrammi dei componenti:]  hanno lo scopo di rappresentare la struttura interna di un prodotto software modellato in termini dei suoi componenti principali e delle relazioni fra di essi. Questo tipo di diagramma viene dunque utilizzato per evidenziare i componenti (e le relazioni che essi hanno fra di loro) individuati all'interno di ciascun prodotto software;
+					\item[diagrammi dei componenti:]  hanno lo scopo di rappresentare la struttura interna di un prodotto\g\ software\g\ modellato in termini dei suoi componenti principali e delle relazioni fra di essi. Questo tipo di diagramma viene dunque utilizzato per evidenziare i componenti (e le relazioni che essi hanno fra di loro) individuati all'interno di ciascun prodotto\g\ software\g;
 					\item[diagrammi delle attività:]  hanno lo scopo di definire le attività da svolgere per realizzare una certa funzionalità. Vengono dunque usati per mostrare come determinate interazioni tra
 componenti (o fra prodotti) realizzino una funzionalità che si intende rendere disponibile.
 				\end{description}
 			\subparagraph{Classificazione dei componenti}
 				I componenti vengono identificati univocamente da una descrizione nella forma \begin{center}\textbf{NomeProdotto::NomeComponente}\end{center} dove:
 				\begin{itemize}
-					\item \textbf{NomeProdotto} è il nome del prodotto software che i \progettisti\ hanno individuato;
+					\item \textbf{NomeProdotto} è il nome del prodotto\g\ software\g\ che i \progettisti\ hanno individuato;
 					\item \textbf{NomeComponente} rappresenta il nome assegnato al componente dai \progettisti.
 				\end{itemize}
 				Inoltre, ogni componente ha associato un codice univoco nella forma \begin{center}\textbf{[X][Y]}\end{center} dove:
 				\begin{itemize}
-					\item \textbf{X} è l'iniziale del nome del prodotto;
+					\item \textbf{X} è l'iniziale del nome del prodotto\g;
 					\item \textbf{Y} è un numero intero incrementale.
 				\end{itemize}
 			\subparagraph{Test di integrazione}
 				Per ottimizzare l'attività di test, i \progettisti\ devono preoccuparsi di definire delle classi di verifica per accertare il funzionamento dei componenti. L'ideale sarebbe fornire degli strumenti automatici ai \verificatori . La progettazione delle classi per la verifica deve essere svolta nel rispetto della mancata sovrapposizione dei ruoli: chi crea una classe non dovrebbe essere lo stesso individuo che crea la classe per testarla.
 		\paragraph{Progettazione di dettaglio}
-			Una volta definita l'architettura del sistema, si procede alla progettazione di dettaglio, la quale prevede che i seguenti task:
+			Una volta definita l'architettura del sistema, si procede alla progettazione di dettaglio, la quale prevede che i seguenti task\g:
 			\begin{enumerate}
 				\item individuare le classi che implementano ciascuno dei componenti individuati mediante la progettazione architetturale;
 				\item definire i ruoli e le responsabilità di ogni classe individuata;
@@ -135,7 +135,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 					\item descrizione di come viene applicato il pattern al progetto.
 				\end{itemize}
 			\subparagraph{Diagrammi UML}
-				Per documentare prodotti e componenti individuati sarà necessario ricorrere a dei diagrammi UML, necessari per formalizzare gli aspetti descritti in modo testuale. Durante la progettazione architetturale, sarà necessario ricorrere a 
+				Per documentare prodotti e componenti individuati sarà necessario ricorrere a dei diagrammi UML\g, necessari per formalizzare gli aspetti descritti in modo testuale. Durante la progettazione architetturale, sarà necessario ricorrere a 
 				\begin{description}
 					\item[diagrammi delle classi:] hanno lo scopo di descrivere i tipi di entità, con le loro caratteristiche ed eventuali relazioni fra questi tipi. Questo diagramma viene utilizzato per evidenziare e descrivere in modo dettagliato le classi e le relazioni che esistono fra di loro;
 					\item[diagrammi delle attività:]  hanno lo scopo di definire le attività da svolgere per realizzare una certa funzionalità. Vengono dunque usati per mostrare come determinate interazioni tra componenti (o fra prodotti) realizzino una funzionalità che si intende rendere disponibile;
@@ -147,7 +147,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 				\textbf{NomeProdotto::NomeComponente::NomeClasse}
 				\end{center} dove
 				\begin{itemize}
-					\item \textbf{NomeProdotto} è il nome del prodotto software che i \progettisti\ hanno individuato;
+					\item \textbf{NomeProdotto} è il nome del prodotto\g\ software\g\ che i \progettisti\ hanno individuato;
 					\item \textbf{NomeComponente} rappresenta il nome assegnato al componente dai \progettisti;
 					\item \textbf{NomeClasse} rappresenta il nome che è stato dato dai \progettisti\ alla classe individuata.
 				\end{itemize}
@@ -155,7 +155,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 				\textbf{[X][Y]}
 				\end{center} dove
 				\begin{itemize}
-					\item \textbf{X} è l'iniziale del nome del prodotto;
+					\item \textbf{X} è l'iniziale del nome del prodotto\g;
 					\item \textbf{Y} è un numero intero incrementale.
 				\end{itemize}
 			\subparagraph{Descrivere una classe}			
@@ -172,10 +172,10 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 				Per la realizzazione dei test di unità, i \programmatori\ devono rispettare la regola di mancata sovrapposizione dei ruoli: chi realizza il test non deve essere lo stesso individuo che realizza la classe da testare.
 		\subsubsection{Codifica}
 			\paragraph{Convenzioni}
-				Tutti i file contenenti codice o testo dovranno rispettare la codifica UTF-8 senza BOM.\\
-				I \programmatori, dovendo sviluppare un'applicazione Android, dovranno seguire le indicazioni fornite dalla guida Google Java Style\footnote{\frmURI{https://google.github.io/styleguide/javaguide.html}}.
+				Tutti i file contenenti codice o testo dovranno rispettare la codifica UTF-8 senza BOM\g.\\
+				I \programmatori, dovendo sviluppare un'applicazione Android\g, dovranno seguire le indicazioni fornite dalla guida Google\g\ Java\g\ Style\footnote{\frmURI{https://google.github.io/styleguide/javaguide.html}}.
 			\paragraph{Nomi}
-				I nomi di variabili, metodi e classi dovranno essere in notazione CamelCase e in lingua inglese. I nomi di variabili e metodi dovranno avere la prima lettera minuscola, mentre per le classi sarà maiuscola.
+				I nomi di variabili, metodi e classi dovranno essere in notazione CamelCase\g\ e in lingua inglese. I nomi di variabili e metodi dovranno avere la prima lettera minuscola, mentre per le classi sarà maiuscola.
 			\paragraph{Ricorsione}
 				La ricorsione dovrà essere evitata il più possibile, limitando il suo uso ai soli casi indispensabili, ossia dove sia dimostrato che non è possibile utilizzare un metodo iterativo con complessità computazionale minore. Per ogni metodo ricorsivo, dovrà essere fornita una prova della sua terminazione.
 			\paragraph{Documentazione}
@@ -192,7 +192,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 						 */
 					\end{lstlisting}
 				\subparagraph{Classi}
-					Poiché in Java è presente una forte dipendenza tra file e classi (ogni classe in Java corrisponde ad un file .class), non è necessario aggiungere un ulteriore intestazione. Per le classi interne e quelle anonime dovrà essere aggiunta un'ulteriore intestazione come segue:
+					Poiché in Java\g\ è presente una forte dipendenza tra file e classi (ogni classe in Java\g\ corrisponde ad un file .class), non è necessario aggiungere un ulteriore intestazione. Per le classi interne e quelle anonime dovrà essere aggiunta un'ulteriore intestazione come segue:
 					\begin{lstlisting}
 						/**
 						 * Descrizione della classe
@@ -245,34 +245,34 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 					
 		\subsubsection{Procedure}
 			\paragraph{Tracciamento componenti-requisiti}
-				Per tracciare un requisito su un componente dell'applicazione è sufficiente applicare la seguente procedura su Tracy:
+				Per tracciare un requisito su un componente dell'applicazione è sufficiente applicare la seguente procedura su Tracy\g:
 				\begin{enumerate}
-					\item aprire l'homepage di Tracy;
+					\item aprire l'homepage di Tracy\g;
 					\item selezionare la voce "Requirements";
 					\item individuare il requisito che si desidera tracciare e cliccare su "View";
-					\item sotto la voce "Packages" indicare il nome del package e cliccare su "Add".
+					\item sotto la voce "Packages" indicare il nome del package\g\ e cliccare su "Add".
 				\end{enumerate}
 				
 				\subparagraph{Inserimento di un componente su Tracy}
-					Per inserire un componente all'interno di Tracy:
+					Per inserire un componente all'interno di Tracy\g:
 					\begin{enumerate}
-						\item aprire l'homepage di Tracy;
+						\item aprire l'homepage di Tracy\g;
 						\item selezionare la voce "Package";
 						\item dal menu "Operations" selezionare la voce "Create package";
 						\item riempire almeno i campi obbligatori della form e cliccare su "Create".
 					\end{enumerate}
 			\paragraph{Tracciamento classi-requisiti}
-				Per tracciare un requisito su una classe dell'applicazione è sufficiente applicare la seguente procedura su Tracy:
+				Per tracciare un requisito su una classe dell'applicazione è sufficiente applicare la seguente procedura su Tracy\g:
 				\begin{enumerate}
-					\item aprire l'homepage di Tracy;
+					\item aprire l'homepage di Tracy\g;
 					\item selezionare la voce "Requirements";
 					\item individuare il requisito che si desidera tracciare e cliccare su "View";
 					\item sotto la voce "Classes" indicare il nome della classe e cliccare su "Add".
 				\end{enumerate}
 				\subparagraph{Inserimento di una classe su Tracy}
-					Per inserire una classe all'interno di Tracy:
+					Per inserire una classe all'interno di Tracy\g:
 					\begin{enumerate}
-						\item aprire l'homepage di Tracy;
+						\item aprire l'homepage di Tracy\g;
 						\item selezionare la voce "Class";
 						\item dal menu "Operations" selezionare la voce "Create class";
 						\item riempire almeno i campi obbligatori della form e cliccare su "Create".
@@ -281,7 +281,7 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 			\paragraph{Creazione dei diagrammi UML}
 				Lo strumento per la creazione dei diagrammi UML\g\ utilizzato è Astah\g.
 			\paragraph{Tracciamento dei requisiti}
-				Lo strumento scelto per la il tracciamento dei requisiti è Tracy\g. Questo software\g\ è stato sviluppato dal gruppo di Ingegneria del Software Don't Panic. Il software\g\ è stato scelto per le seguenti caratteristiche:
+				Lo strumento scelto per la il tracciamento dei requisiti è Tracy\g. Questo software\g\ è stato sviluppato dal gruppo di Ingegneria del software\g\ Don't Panic. Il software\g\ è stato scelto per le seguenti caratteristiche:
 			\begin{itemize}
 				\item open source\g;
 				\item tracciamento dei requisiti;
@@ -291,20 +291,20 @@ componenti (o fra prodotti) realizzino una funzionalità che si intende rendere 
 			\end{itemize}
                Poiché questo software\g\ non risulta essere completamente perfetto, il gruppo ha previsto di riadattarlo sulla base delle esigenze che sono emerse durante la stesura dell'\analisideirequisiti .
  			\paragraph{Tracciamento dei test}
- 				Per il tracciamento dei test, verrà utilizzato Tracy. Il software è stato scelto in modo da non dover utilizzare diverse piattaforme per il tracciamento dei requisiti e dei test.
+ 				Per il tracciamento dei test, verrà utilizzato Tracy\g. Il software\g\ è stato scelto in modo da non dover utilizzare diverse piattaforme per il tracciamento dei requisiti e dei test.
 			\paragraph{Scrittura del codice} 			
- 				Per lo sviluppo dell'applicazione Android, il gruppo ha deciso di utilizzare l'IDE Android Studio per i seguenti motivi:
+ 				Per lo sviluppo dell'applicazione Android\g, il gruppo ha deciso di utilizzare l'IDE\g\ Android Studio\g\ per i seguenti motivi:
  				\begin{itemize}
  					\item gratis;
  					\item multipiattaforma;
- 					\item IDE di riferimento per lo sviluppo di applicazioni Android;
+ 					\item IDE\g\ di riferimento per lo sviluppo di applicazioni Android\g;
  					\item possibilità di simulare un dispositivo;
- 					\item integrabile con GitHub;
- 					\item basato su IntelliJ IDEA, strumento già utilizzato dai membri del team.
+ 					\item integrabile con GitHub\g;
+ 					\item basato su IntelliJ Idea\g, strumento già utilizzato dai membri del team\g.
  				\end{itemize}
  				La versione utilizzata dal gruppo è la 1.5.1.
  			\paragraph{Esecuzione dei test}
- 				Per la creazione e l'esecuzione dei test di unità e di integrazione, è possibile utilizzare, in combinazione con Android Studio, il framework JUnit.
+ 				Per la creazione e l'esecuzione dei test di unità e di integrazione, è possibile utilizzare, in combinazione con Android Studio\g, il Framework\g\ JUnit\g.
  			
 			
 \end{document}
