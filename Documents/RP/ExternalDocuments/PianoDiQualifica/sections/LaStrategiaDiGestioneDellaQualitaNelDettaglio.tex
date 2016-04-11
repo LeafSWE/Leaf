@@ -21,7 +21,7 @@ che permettono di eseguire controlli sui documenti e verificare che essi aderisc
 			    Gli strumenti software\g\ dovranno avere le seguenti caratteristiche:
 			    \begin{itemize}
 			    	\item rilevare (durante la scrittura) eventuali errori ortografici;
-			    	\item costruire e visualizzare in tempo reale il documento scritto in \LaTeX\g\ (in modo che sia facile accorgersi di errori nell'utilizzo dei comandi).
+			    	\item costruire e visualizzare in tempo reale il documento scritto in \Latex\g\ (in modo che sia facile accorgersi di errori nell'utilizzo dei comandi).
 			    \end{itemize}
 			    Inoltre è necessario disporre di una piattaforma che raccolga i vari errori incontrati e li segnali ai componenti del gruppo che dovranno occuparsene. 
 		    \subsubsection{Risorse disponibili}
@@ -30,7 +30,7 @@ che permettono di eseguire controlli sui documenti e verificare che essi aderisc
 			    \paragraph{Risorse hardware}
 			    Le risorse hardware disponibili sono i vari computer dei componenti del gruppo incaricati di svolgere il ruolo di \responsabilediprogetto\ o \verificatore. Eventualmente sono disponibili anche i computer del Servizio Calcolo dell'Università di Padova.
 				\paragraph{Risorse software}
-				Le risorse software\g\ disponibili comprendono editor \LaTeX\g\ con controlli integrati e script per controllare la leggibilità e la complessità dei documenti in riferimento all'indice Gulpease\g.\\
+				Le risorse software\g\ disponibili comprendono editor \Latex\g\ con controlli integrati e script per controllare la leggibilità e la complessità dei documenti in riferimento all'indice Gulpease\g.\\
 				Sarà disponibile anche il sistema di sollevamento delle issue\g\ offerto dalla piattaforma GitHub\g. Per maggiori informazioni sulla procedura di sollevamento e gestione delle issue\g\ 
 si veda il documento \normediprogettov.
 		\subsection{Misure e metriche}\label{MisureMetriche}
@@ -63,8 +63,8 @@ si veda il documento \normediprogettov.
 			Se la schedule variance è minore di 0 significa che il progetto sta producendo con minor velocità rispetto a quanto pianificato, viceversa se positivo. Se è pari a 0 significa che si è perfettamente in linea con la pianificazione.\\
 			I range di accettazione per questa metrica sono:
 			\begin{itemize}
-				\item un deficit maggiore del 5\% del tempo pianificato per il processo è considerato negativo;
-				\item un deficit minore del 5\% del tempo pianificato per il processo è considerato accettabile;
+				\item un deficit maggiore del 5\% del tempo pianificato per il processo\g\ è considerato negativo;
+				\item un deficit minore del 5\% del tempo pianificato per il processo\g\ è considerato accettabile;
 				\item valori maggiori o uguali a 0 sono considerati ottimali.
 			\end{itemize}
 					
@@ -73,8 +73,8 @@ si veda il documento \normediprogettov.
 			Costituisce un indice di efficienza e si calcola confrontando il preventivo con il consuntivo.\\
 			I range di accettazione per questa metrica sono:
 			\begin{itemize}
-				\item un deficit maggiore del 10\% delle risorse preventivate per il processo è considerato negativo;
-				\item un deficit minore del 10\% delle risorse preventivate per il processo è accettabile;
+				\item un deficit maggiore del 10\% delle risorse preventivate per il processo\g\ è considerato negativo;
+				\item un deficit minore del 10\% delle risorse preventivate per il processo\g\ è accettabile;
 				\item un valore maggiore o uguale a 0 è considerato ottimale.
 			\end{itemize}
 			
@@ -121,7 +121,7 @@ si veda il documento \normediprogettov.
 				\end{itemize}	
 
 			\paragraph{Metriche per il software}
-			Il gruppo \leaf\ per garantire la qualità del software ha deciso di adottare delle metriche. Esse hanno il compito di monitorare la qualità interna, qualità esterna e la qualità in uso. In base alle risorse a disposizione e agli obiettivi di qualità del software preposti il gruppo ha deciso di adottare alcune metriche presenti all'interno dello standard [ISO/IEC 9126:2001].\\
+			Il gruppo \leaf\ per garantire la qualità del software\g\ ha deciso di adottare delle metriche. Esse hanno il compito di monitorare la qualità interna, qualità esterna e la qualità in uso. In base alle risorse a disposizione e agli obiettivi di qualità del software\g\ preposti il gruppo ha deciso di adottare alcune metriche presenti all'interno dello standard [ISO/IEC 9126:2001].\\
 			Ogni metrica scelta viene associata ad una caratteristica di qualità presente all'interno dello standard:
 			\begin{table}[H]
 				\centering
@@ -239,7 +239,7 @@ si veda il documento \normediprogettov.
 				\item un valore maggiore di 90\% è ritenuto ottimale.
 			\end{itemize}
 			\subparagraph{Average Module Size - MPRS9}\label{MPRS9}
-			La metrica controlla che la dimensione media di un modulo in termini di linee di codice rientri tra i valori definiti. Avere moduli di grandi dimensioni compromette la manutenibilità del codice.
+			La metrica controlla che la dimensione media di un modulo\g\ in termini di linee di codice rientri tra i valori definiti. Avere moduli di grandi dimensioni compromette la manutenibilità del codice.
 			\begin{equation}
 			Average \ module \ size  = \frac{\# \ totale \ di \ linee \ di \ codice \ in \ tutti \ i \ moduli  }{\#\ moduli}
 			\end{equation}
@@ -250,7 +250,7 @@ si veda il documento \normediprogettov.
 				\item un valore compreso tra 200 e 300 è ritenuto ottimale.
 			\end{itemize}
 			\subparagraph{Test Passati Richiesti - MPRS10}\label{MPRS10}
-			La metrica controlla che la percentuale di successo dei test ricavati dai requisiti rientri tra i valori definiti. Questo ci permette di valutare se il prodotto supera la maggior parte dei test.
+			La metrica controlla che la percentuale di successo dei test ricavati dai requisiti rientri tra i valori definiti. Questo ci permette di valutare se il prodotto\g\ supera la maggior parte dei test.
 			\begin{equation}
 			Test \ Passati \ Richiesti  = \frac{\# \ di \ test \ passati }{\#\ totale \ di \ test \ richiesti}
 			\end{equation}
@@ -262,7 +262,7 @@ si veda il documento \normediprogettov.
 			\end{itemize}
 			Da notare che una percentuale maggiore del 98\% è ritenuta negativa, perchè lo scopo dei test è quello di trovare dei problemi. Al raggiungimento del 100\% dei test passati il set di test previsto verrà cambiato. 
 			\subparagraph{Failure Avoidance - MPRS11}\label{MPRS11}
-			La metrica controlla che la percentuale di situazioni anomale evitate dal prodotto rientri nei valori definiti. Questo ci permette di valutare se il prodotto è robusto e risponde bene ad eventuali situazioni anomale. 
+			La metrica controlla che la percentuale di situazioni anomale\g\ evitate dal prodotto\g\ rientri nei valori definiti. Questo ci permette di valutare se il prodotto\g\ è robusto e risponde bene ad eventuali situazioni anomale\g. 
 			\begin{equation}
 			Failure \ Avoidance  = \frac{\#\ situazioni \ anomale \ evitate }{\#\ totale \ di \ situazioni \ anomale \ presentate }
 			\end{equation}
@@ -273,7 +273,7 @@ si veda il documento \normediprogettov.
 				\item una percentuale maggiore di 90\% è ritenuta ottimale.
 			\end{itemize}
 			\subparagraph{Breakdown Avoidance - MPRS12}\label{MPRS12}
-			La metrica controlla che la percentuale di interruzioni evitate dal prodotto rientri tra i valori definiti. Il valore su cui si applicherà la metrica verrà calcolato come il complemento delle interruzioni verificate. Questa metrica ci permette di controllare che il prodotto lavori senza interruzioni.
+			La metrica controlla che la percentuale di interruzioni evitate dal prodotto\g\ rientri tra i valori definiti. Il valore su cui si applicherà la metrica verrà calcolato come il complemento delle interruzioni verificate. Questa metrica ci permette di controllare che il prodotto\g\ lavori senza interruzioni.
 			\begin{equation}
 			Breakdown \ Avoidance  =1 - \frac{\#\ di \ interruzioni}{\#\ di \ situazioni \ anomale \ presentate }
 			\end{equation}
