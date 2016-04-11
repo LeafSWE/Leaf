@@ -1523,7 +1523,7 @@ Metodo che ritorna l'identificativo UUID del beacon
 \item[Descrizione:] Classe che implementa l'interfaccia MyBeacon. Offre tutti i metodi per accedere alle informazioni di un beacon. Estende la classe org.altbeacon.beacon.Beacon;
 \item[Attributi:] \
 \begin{itemize}
-\item \texttt{- \underline{CREATOR : List<NavigationInformationImp,Parcelable.Creator<MyBeaconImp> \{readOnly\}}}\\
+\item \texttt{- \underline{CREATOR : List<NavigationInformationImp,}\\\underline{Parcelable.Creator<MyBeaconImp> \{readOnly\}}}\\
 Attributo richiesto per rendere la classe Parcelable
 
 \end{itemize}
@@ -1579,7 +1579,7 @@ Questo metodo permette di fornire una conversione di MyBeaconImp a tipo String
 \end{itemize}
 \item[Visibilità:] \texttt{public};
 \item[Utilizzo:] È utilizzata per calcolare la distanza di un beacon dal dispositivo che lo ho rilevato;
-\item[Descrizione:] Classe che implementa l'interfaccia org.altbeacon.beacon.distance.DistanceCaluclator;
+\item[Descrizione:] Classe che implementa l'interfaccia\\org.altbeacon.beacon.distance.DistanceCalculator;
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ calculateDistance(i : int, v : double) : double}\\
@@ -2630,7 +2630,7 @@ Metodo che permette la rimozione delle informazioni di un edificio dalla tabella
 \item \texttt{id : int}\\
 Identificativo del POI di cui rimuovere le informazioni dal database locale\end{itemize}
 \end{description}
-\item \texttt{+ \textit{findAllPointsWithMajor(major : int) : Collection<PointOfInterestTable>}}\\
+\item \texttt{+ \textit{findAllPointsWithMajor(major : int) :\\Collection<PointOfInterestTable>}}\\
 Metodo che viene utilizzato per recuperare le informazioni di tutti gli edifici presenti nella tabella "POI" del database locale
  \begin{description}
 \item[Argomenti:] \
@@ -2777,7 +2777,7 @@ Metodo che permette la rimozione delle informazioni di una RegionOfInterest dall
 \item \texttt{id : int}\\
 Identificativo della RegionOfInterest di cui rimuovere le informazioni dal database locale\end{itemize}
 \end{description}
-\item \texttt{+ \textit{findAllRegionsWithMajor(major : int) : Collection<RegionOfInterestTable>}}\\
+\item \texttt{+ \textit{findAllRegionsWithMajor(major : int) :\\Collection<RegionOfInterestTable>}}\\
 Metodo che viene utilizzato per recuperare le informazioni di tutte le RegionOfInterest associato ad certo edificio, dato il major dell'edificio
  \begin{description}
 \item[Argomenti:] \
@@ -3931,7 +3931,7 @@ Risultato della query sulla tabella "POI" del database locale\end{itemize}
 \item \texttt{id : int}\\
 Identificativo del POI di cui rimuovere le informazioni dal database locale\end{itemize}
 \end{description}
-\item \texttt{+ findAllPointsWithMajor(major : int) : Collection<PointOfInterestTable>}\\
+\item \texttt{+ findAllPointsWithMajor(major : int) :\\Collection<PointOfInterestTable>}\\
 \textbf{Override} Metodo che viene utilizzato per recuperare le informazioni di tutti gli edifici presenti nella tabella "POI" del database locale
  \begin{description}
 \item[Argomenti:] \
@@ -4011,7 +4011,7 @@ Risultato della query sulla tabella "ROI" del database locale\end{itemize}
 \item \texttt{id : int}\\
 Identificativo della RegionOfInterest di cui rimuovere le informazioni dal database locale\end{itemize}
 \end{description}
-\item \texttt{+ findAllRegionsWithMajor(major : int) : Collection<RegionOfInterestTable>}\\
+\item \texttt{+ findAllRegionsWithMajor(major : int) :\\Collection<RegionOfInterestTable>}\\
 \textbf{Override} Metodo che viene utilizzato per recuperare le informazioni di tutte le RegionOfInterest associato ad certo edificio, dato il major dell'edificio
  \begin{description}
 \item[Argomenti:] \
@@ -4197,7 +4197,7 @@ Oggetto che rappresenta un DAO per la tabella "Building" del database locale
 \end{itemize}
 \item[Metodi:] \
 \begin{itemize}
-\item \texttt{+ BuildingService(dbURL : String, sqliteBuilding : SQLiteDao, remoteBuilding : RemoteBuildingDao, roiService : RegionOfInterestService, poiService : PointOfInterestService, edgeService : EdgeService)}\\
+\item \texttt{+ BuildingService(dbURL : String, sqliteBuilding : SQLiteDao, remoteBuilding : RemoteBuildingDao, roiService :\\RegionOfInterestService, poiService : PointOfInterestService, edgeService : EdgeService)}\\
 Costruttore della classe BuildingService
  \begin{description}
 \item[Argomenti:] \
@@ -4790,7 +4790,7 @@ Oggetto di utility per la conversione da JSON a RoiPoiTable\end{itemize}
 \item[Descrizione:] Classe che rappresenta un aiutante per la costruzione di un DatabaseService;
 \item[Metodi:] \
 \begin{itemize}
-\item \texttt{+ \underline{getService(sqliteDaoFactory : SQLiteDaoFactory, remoteDaoFactory : RemoteDaoFactory, dbURL : String) : DatabaseService}}\\
+\item \texttt{+ \underline{getService(sqliteDaoFactory : SQLiteDaoFactory, remoteDaoFactory :}\\\underline{RemoteDaoFactory, dbURL : String) : DatabaseService}}\\
 Metodo che viene utilizzato per ottenere un'istanza di DatabaseService
  \begin{description}
 \item[Argomenti:] \
@@ -4969,7 +4969,7 @@ Versione corrente della mappa
 \end{itemize}
 \item[Metodi:] \
 \begin{itemize}
-\item \texttt{+ BuildingMapImp(id : int, version : int, pois : Collection<PointOfInterest>, rois : Collection<RegionOfInterest>, buildingInfo : BuildingInformation, size : String)}\\
+\item \texttt{+ BuildingMapImp(id : int, version : int, pois : \\Collection<PointOfInterest>, rois : Collection<RegionOfInterest>, buildingInfo : BuildingInformation, size : String)}\\
 Costruttore della classe BuildingMapImp
  \begin{description}
 \item[Argomenti:] \
@@ -5065,7 +5065,7 @@ Metodo che ritorna una stringa che rappresenta il motivo per cui è stata lancia
 \item[Descrizione:] Interfaccia che espone i metodi per accedere alle funzionalità di navigazione;
 \item[Metodi:] \
 \begin{itemize}
-\item \texttt{+ \textit{calculatePath(startRoi : RegionOfInterest, endRoi : RegionOfInterest) : void}}\\
+\item \texttt{+ \textit{calculatePath(startRoi : RegionOfInterest, endRoi :\\RegionOfInterest) : void}}\\
 Metodo che calcola un percorso tra due RegionOfInterest viste come vertici di un grafo MapGraph utilizzando un oggetto PathFinder. Il punto di partenza e il punto di arrivo sono i parametri richiesti in input dal metodo mentre il grafo è un campo dati. Viene lanciata un eccezione di tipo NoGraphSetException nel caso in cui non sia settato alcun grafo.
  \begin{description}
 \item[Argomenti:] \
@@ -5140,7 +5140,7 @@ Iteratore rappresentante il punto che è stato raggiunto durante la navigazione
 \end{itemize}
 \item[Metodi:] \
 \begin{itemize}
-\item \texttt{+ calculatePath(startRoi : RegionOfInterest, endRoi : RegionOfInterest) : void}\\
+\item \texttt{+ calculatePath(startRoi : RegionOfInterest, endRoi :\\RegionOfInterest) : void}\\
 \textbf{Override} Metodo che calcola un percorso tra due RegionOfInterest viste come vertici di un grafo MapGraph utilizzando un oggetto PathFinder. Il punto di partenza e il punto di arrivo sono i parametri richiesti in input dal metodo mentre il grafo è un campo dati. Viene lanciata un eccezione di tipo NoGraphSetException nel caso in cui non sia settato alcun grafo
  \begin{description}
 \item[Argomenti:] \
@@ -5453,7 +5453,7 @@ Informazioni aggiuntive per costruire le informazioni associate ad un arco del p
 \item \texttt{PathFinder}.
 \end{itemize}
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] È utilizzata per calcolare il percorso di navigazione sfruttando l'algoritmo di Dijkstra. Per fare questo utilizza la classe org.jgrapht.alg.DijkstraShortestPath<V,E>;
+\item[Utilizzo:] È utilizzata per calcolare il percorso di navigazione sfruttando l'algoritmo di Dijkstra. Per fare questo utilizza la classe\\org.jgrapht.alg.DijkstraShortestPath<V,E>;
 \item[Descrizione:] Classe che rappresenta un algoritmo per il calcolo del percorso di navigazione;
 \item[Metodi:] \
 \begin{itemize}
@@ -5511,7 +5511,7 @@ Punto di arrivo del percorso.\end{itemize}
 \item[Nome:] \texttt{MapGraph};
 \item[Tipo:] Classe;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] È utilizzata per rappresentare un grafo sul quale applicare un algoritmo per il calcolo di un percorso nel package algorithm. Al suo interno per la rappresentazione del grafo utilizza la classe org.jgrapht.graph.SimpleDirectedWeightedGraph;
+\item[Utilizzo:] È utilizzata per rappresentare un grafo sul quale applicare un algoritmo per il calcolo di un percorso nel package algorithm. Al suo interno per la rappresentazione del grafo utilizza la classe\\ org.jgrapht.graph.SimpleDirectedWeightedGraph;
 \item[Descrizione:] Classe che rappresenta un grafo da utilizzare per il calcolo del percorso di navigazione;
 \item[Attributi:] \
 \begin{itemize}
@@ -5553,7 +5553,7 @@ Metodo che permette di aggiungere una RegionOfInterest al grafo che rappresenta 
 \item \texttt{roi : RegionOfInterest}\\
 RegionOfInterest da aggiungere al grafo che rappresenta l'edificio\end{itemize}
 \end{description}
-\item \texttt{+ getGraph() : SimpleDirectedWeightedGraph<RegionOfInterest,EnrichedEdge>}\\
+\item \texttt{+ getGraph() : SimpleDirectedWeightedGraph<RegionOfInterest,\\EnrichedEdge>}\\
 Metodo che
  \end{itemize}
 \end{description}
@@ -6203,7 +6203,7 @@ Metodo che ritorna un oggetto PhotoInformation contenente i riferimenti alle fot
  \end{itemize}
 \end{description}
 
-\subsubsection{model::navigator::graph::navigationinformation::NavigationInformationImp}
+\subsubsection[model::navigator::graph::navigationinformation::NavigationInformationImp]{model::navigator::graph::navigationinformation::\\NavigationInformationImp}
 
     \begin{figure}[H]
         \centering
@@ -6452,7 +6452,7 @@ Metodo che ritorna le preferenze riguardanti la modalità di fruizione delle inf
 Metodo che ritorna le preferenze di percorso
  \item \texttt{+ \textit{isDeveloper() : booolean}}\\
 Metodo che verifica se è stato inserito in precedenza un codice sviluppatore valido
- \item \texttt{+ \textit{setInstructionPreference(instructionPreference : InstructionPreference) : void}}\\
+ \item \texttt{+ \textit{setInstructionPreference(instructionPreference :\\InstructionPreference) : void}}\\
 Metodo che permette di modificare le impostazioni riguardanti le preferenze di fruizione delle istruzioni di navigazione
  \begin{description}
 \item[Argomenti:] \
@@ -6515,7 +6515,7 @@ Preferenze di percorso dell'utente
 \textbf{Override} Metodo che ritorna le preferenze di percorso
  \item \texttt{+ isDeveloper() : boolean}\\
 \textbf{Override} Metodo che verifica se è stato inserito in precedenza un codice sviluppatore valido
- \item \texttt{+ setInstructionPreference(instructionPreference : InstructionPreference) : void}\\
+ \item \texttt{+ setInstructionPreference(instructionPreference :\\InstructionPreference) : void}\\
 \textbf{Override} Metodo che permette di modificare le impostazioni riguardanti le preferenze di fruizione delle istruzioni di navigazione
  \begin{description}
 \item[Argomenti:] \
@@ -7025,8 +7025,10 @@ Costruttore della classe ImagePageAdapter
 \item[Argomenti:] \
 \begin{itemize}
 \item \texttt{fm : FragmentManager}\\
-!\item \texttt{size : int}\\
-!\end{itemize}
+Interfaccia che serve per l'interazione con un Fragment 
+\item \texttt{size : int}\\
+Il numero di immagini passate
+\end{itemize}
 \end{description}
 \end{itemize}
 \end{description}
