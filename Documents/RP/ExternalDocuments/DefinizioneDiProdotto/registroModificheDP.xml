@@ -71,9 +71,17 @@
 		<message>Verifica del documento</message>
 		<date>2016-04-07</date>
 	</entry>
-
+	
 	<entry>
 		<version>0.12</version>
+		<author>Cristian Andrighetto</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2016-04-07</date>
+	</entry>
+
+	<entry>
+		<version>0.13</version>
 		<author>Oscar Elia Conti</author>
 		<role>Progettista</role>
 		<message>Aggiunte componenti presenter</message>
@@ -81,7 +89,7 @@
 	</entry>
 
 	<entry>
-		<version>0.13</version>
+		<version>0.14</version>
 		<author>Andrea Tombolato</author>
 		<role>Progettista</role>
 		<message>Aggiunte componenti view</message>
@@ -89,7 +97,7 @@
 	</entry>
 
 	<entry>
-		<version>0.14</version>
+		<version>0.15</version>
 		<author>Marco Zanella</author>
 		<role>Progettista</role>
 		<message>Correzioni generali su compenenti del model</message>
@@ -97,15 +105,24 @@
 	</entry>
 
 	<entry>
-		<version>0.11</version>
+		<version>0.16</version>
 		<author>Cristian Andrighetto</author>
 		<role>Verificatore</role>
 		<message>Verifica del documento</message>
-		<date>2016-04-09</date>
+		<date>2016-04-08</date>
+	</entry>
+	
+	<entry>
+		<version>0.17</version>
+		<author>Federico Tavella</author>
+		<role>Progettista</role>
+		<message>Correzioni nel package beacon</message>
+		<date>2016-04-08</date>
 	</entry>
 
+
 	<entry>
-		<version>0.15</version>
+		<version>0.18</version>
 		<author>Eduard Bicego</author>
 		<role>Progettista</role>
 		<message>Correzioni delle classi ImageDetailActivity, ImageListFragment, ImageListFragmentViewImp, PreferencesViewImp, LoggingView, LoggingViewImp, DeveloperUnlockerViewImp, HelpViewImp, MapDownloaderActivity e LogInformationActivity</message>
@@ -113,7 +130,7 @@
 	</entry>
 
 	<entry>
-		<version>0.16</version>
+		<version>0.19</version>
 		<author>Cristian Andrighetto</author>
 		<role>Verificatore</role>
 		<message>Verifica del documento</message>
