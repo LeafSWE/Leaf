@@ -346,7 +346,7 @@ le relazioni tra essi</message>
 		<message>Verifica del documento</message>
 		<date>2016-02-21</date>
 	</entry>
-	
+
 	<entry>
 		<version>1.23</version>
 		<author>Andrea Tombolato</author>
@@ -515,7 +515,7 @@ le relazioni tra essi</message>
 		<message>Aggiunte sezione 5 "Tracciamento Test" e 5.1 con tabella per il tracciamento dei test di sistema e accettazione</message>
 		<date>2016-03-18</date>
 	</entry>
-	
+
 	<entry>
 		<version>3.04</version>
 		<author>Federico Tavella</author>
@@ -523,7 +523,7 @@ le relazioni tra essi</message>
 		<message>Correzione nei test: TS20, TS15 e discendenti, TS16 e discendenti</message>
 		<date>2016-03-19</date>
 	</entry>
-	
+
 	<entry>
 		<version>3.04</version>
 		<author>Federico Tavella</author>
@@ -531,7 +531,7 @@ le relazioni tra essi</message>
 		<message>Correzione nei test: TS20, TS15 e discendenti, TS16 e discendenti</message>
 		<date>2016-03-19</date>
 	</entry>
-	
+
 	<entry>
 		<version>3.05</version>
 		<author>Andrea Tombolato</author>
@@ -540,7 +540,15 @@ le relazioni tra essi</message>
 		<date>2016-03-20</date>
 	</entry>
 
-	
 
-<entry><version>4</version><author>Eduard Bicego</author><role>Responsabile di progetto</role><message>Approvazione del documento</message><date>2016-04-11</date></entry>
-</registry>
+
+	<entry>
+		<version>4.00</version>
+		<author>Oscar Elia Conti</author>
+		<role>Responsabile di progetto</role>
+		<message>Approvazione del documento</message>
+		<date>2016-03-20</date>
+	</entry>
+
+		</registry>
+		
