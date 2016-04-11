@@ -497,7 +497,7 @@ le relazioni tra essi</message>
 		<author>Cristian Andrighetto</author>
 		<role>Analista</role>
 		<message>Aggiunto UC1.2.1, UC3.2.2.3, UC1.4.4 e scenario alternativo UC1.4</message>
-		<date>2016-03-21</date>
+		<date>2016-03-17</date>
 	</entry>
 
 	<entry>
@@ -505,7 +505,7 @@ le relazioni tra essi</message>
 		<author>Cristian Andrighetto</author>
 		<role>Analista</role>
 		<message>Aggiunti ROpzV3.3.1.4, RDesF7.3.1.4, RDesF7.4.3.4, RObbF7.4.4, RObbF10.1.1.3, Corretti RDesF7.3.1, RObbF8.6</message>
-		<date>2016-03-21</date>
+		<date>2016-03-17</date>
 	</entry>
 
 	<entry>
@@ -513,6 +513,32 @@ le relazioni tra essi</message>
 		<author>Cristian Andrighetto</author>
 		<role>Analista</role>
 		<message>Aggiunte sezione 5 "Tracciamento Test" e 5.1 con tabella per il tracciamento dei test di sistema e accettazione</message>
-		<date>2016-03-21</date>
+		<date>2016-03-18</date>
 	</entry>
+	
+	<entry>
+		<version>3.04</version>
+		<author>Federico Tavella</author>
+		<role>Analista</role>
+		<message>Correzione nei test: TS20, TS15 e discendenti, TS16 e discendenti</message>
+		<date>2016-03-19</date>
+	</entry>
+	
+	<entry>
+		<version>3.04</version>
+		<author>Federico Tavella</author>
+		<role>Analista</role>
+		<message>Correzione nei test: TS20, TS15 e discendenti, TS16 e discendenti</message>
+		<date>2016-03-19</date>
+	</entry>
+	
+	<entry>
+		<version>3.05</version>
+		<author>Andrea Tombolato</author>
+		<role>Verificatore</role>
+		<message>Verifica del documento</message>
+		<date>2016-03-20</date>
+	</entry>
+
+	
 </registry>
