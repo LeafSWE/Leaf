@@ -293,7 +293,7 @@
 		<version>3.01</version>
 		<author>Federico Tavella</author>
 		<role>Programmatore</role>
-		<message>Aggiunta sezione test</message>
+		<message>Aggiunte sottosezioni test di unità e di integrazione</message>
 		<date>2016-04-08</date>
 	</entry>
 	
@@ -301,7 +301,7 @@
 		<version>3.02</version>
 		<author>Davide Castello</author>
 		<role>Amministratore</role>
-		<message>Aggiunto resoconto delle attività  di verifica Fase PDROB</message>
+		<message>Aggiunto resoconto delle attività di verifica Fase PDROB</message>
 		<date>2016-04-09</date>
 	</entry>
 
