@@ -35,6 +35,22 @@
 				\item la lista dettagliata dei metodi.
 			\end{itemize}
 		Per i diagrammi dei package e delle classi si utilizza il formalismo \textit{UML 2.0}.
+		
+	\subsection{Sistema CLIPS}
+		L'architettura dell'applicativo è basata sul pattern Model View Presenter MVP, in questo modo si preserva il mantenimento del componente model se la view cambiasse e viceversa. I package fondamentali sono:
+		\begin{itemize}
+			\item \verb|model|: contiene tutta la business logic dell'applicativo;
+			\item \verb|view|: contiene una serie di classi "passive" ossia assenti di logica e con relazioni minime tra di esse;
+			\item \verb|presenter|: contiene la logica che permette la comunicazione tra \verb|view| e \verb|model|, aggiorna la \verb|view| ed elaborazione i segnali provenienti da essa.
+		\end{itemize}
+		
+		\begin{figure} [h]
+			\centering
+			\includegraphics[scale=0.8]{img/package/CLIPS}
+			\label{CLIPS}
+			\caption{Diagramma dei package - sistema CLIPS}
+		\end{figure}
+		
 	
 	% componenti da esportare da Tracy
 	
