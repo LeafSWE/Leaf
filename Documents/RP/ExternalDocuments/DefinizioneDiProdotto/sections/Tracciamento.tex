@@ -607,4 +607,700 @@ ROpzP15 &  \\
 \caption{Tabella requisiti / classi} \\
 \end{longtabu}
 
+\subsection{Tracciamento Metodi - test di unità}
+
+\begin{longtabu}to \textwidth{X[5] X[0.8]}
+	\toprule
+	\textbf{Metodo} & \textbf{Test}\\
+	\midrule
+	\endhead
+	\arrayrulecolor{gray}
+	model::\-InformationManagerImp::\-getAllVisibleBeacons() & TU41 \\ 
+	\midrule 
+	model::\-InformationManagerImp::\-getBuildingMap() & TU41 \\ 
+	\midrule 
+	model::\-InformationManagerImp::\-getDatabaseService() & TU41 \\ 
+	\midrule 
+	model::\-InformationManagerImp::\-getNearbyPOIs() & TU41 \\ 
+	\midrule 
+	model::\-InformationManagerImp::\-saveRecordedBeaconInformation() & TU43 \\ 
+	\midrule 
+	model::\-InformationManagerImp::\-startRecordingBeacons() & TU43 \\ 
+	\midrule 
+	model::\-NavigationManagerImp::\-addBeaconListener() & TU42 \\ 
+	\midrule 
+	model::\-NavigationManagerImp::\-getAllNavigationInstruction() & TU44 \\ 
+	\midrule 
+	model::\-NavigationManagerImp::\-getNextInstruction() & TU44 \\ 
+	\midrule 
+	model::\-NavigationManagerImp::\-removeBeaconListener() & TU42 \\ 
+	\midrule 
+	model::\-NavigationManagerImp::\-startNavigation() & TU44 \\ 
+	\midrule 
+	model::\-NavigationManagerImp::\-stopNavigation() & TU44 \\ 
+	\midrule 
+	model::\-beacon::\-BeaconManagerAdapter::\-modifyScanPeriod() & TU40 \\ 
+	\midrule 
+	model::\-beacon::\-BeaconManagerAdapter::\-setBackgroundMode() & TU39 \\ 
+	\midrule 
+	model::\-beacon::\-Logger::\-add() & TU37 \\ 
+	\midrule 
+	model::\-beacon::\-Logger::\-save() & TU38 \\ 
+	\midrule 
+	model::\-beacon::\-MyBeacon::\-getBatteryLevel() & TU36 \\ 
+	\midrule 
+	model::\-beacon::\-MyBeacon::\-getBeaconTypeCode() & TU36 \\ 
+	\midrule 
+	model::\-beacon::\-MyBeacon::\-getBluetoothAddress() & TU36 \\ 
+	\midrule 
+	model::\-beacon::\-MyBeacon::\-getDistance() & TU36 \\ 
+	\midrule 
+	model::\-beacon::\-MyBeacon::\-getMajor() & TU36 \\ 
+	\midrule 
+	model::\-beacon::\-MyBeacon::\-getMinor() & TU36 \\ 
+	\midrule 
+	model::\-beacon::\-MyBeacon::\-getRssi() & TU36 \\ 
+	\midrule 
+	model::\-beacon::\-MyBeacon::\-getTxPower() & TU36 \\ 
+	\midrule 
+	model::\-beacon::\-MyBeacon::\-getUUID() & TU36 \\ 
+	\midrule 
+	model::\-compass::\-Compass::\-getLastCoordinate() & TU112 \\ 
+	\midrule 
+	model::\-compass::\-Compass::\-registerListener() & TU110 \\ 
+	\midrule 
+	model::\-compass::\-Compass::\-unregisterListener() & TU111 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-BuildingTable::\-getAddress() & TU79 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-BuildingTable::\-getDescription() & TU79 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-BuildingTable::\-getId() & TU79 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-BuildingTable::\-getMajor() & TU79 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-BuildingTable::\-getName() & TU79 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-BuildingTable::\-getOpeningHours() & TU79 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-BuildingTable::\-getSize() & TU79 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-BuildingTable::\-getUUID() & TU79 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-BuildingTable::\-getVersion() & TU79 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-CategoryTable::\-getDescription() & TU85 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-CategoryTable::\-getId() & TU85 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-DaoFactoryHelper::\-getRemoteDaoFactory() & TU69 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-DaoFactoryHelper::\-getSQLiteDaoFactory() & TU69 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-EdgeTable::\-getAction() & TU83 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-EdgeTable::\-getCoordinate() & TU83 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-EdgeTable::\-getDistance() & TU83 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-EdgeTable::\-getEndROI() & TU83 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-EdgeTable::\-getId() & TU83 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-EdgeTable::\-getLongDescription() & TU83 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-EdgeTable::\-getStartROI() & TU83 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-EdgeTable::\-getTypeId() & TU83 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-EdgeTypeTable::\-getId() & TU84 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-EdgeTypeTable::\-getTypeName() & TU84 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-MapsDbHelper::\-getInstance() & TU106 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-MapsDbHelper::\-getRemoteDatabaseURL() & TU109 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-MapsDbHelper::\-onCreate() & TU107 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-MapsDbHelper::\-onUpgrade() & TU108 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-PhotoTable::\-getEdgeId() & TU86 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-PhotoTable::\-getId() & TU86 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-PhotoTable::\-getUrl() & TU86 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-PointOfInterestTable::\-getCategoryId() & TU80 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-PointOfInterestTable::\-getDescription() & TU80 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-PointOfInterestTable::\-getId() & TU80 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-PointOfInterestTable::\-getName() & TU80 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RegionOfInterestTable::\-getId() & TU81 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RegionOfInterestTable::\-getMajor() & TU81 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RegionOfInterestTable::\-getMinor() & TU81 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RegionOfInterestTable::\-getUUID() & TU81 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteBuildingDao::\-fromJSONToTable() & TU71 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteCategoryDao::\-fromJSONToTable() & TU77 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getBuildingDao() & TU70 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getCategoryDao() & TU70 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getEdgeDao() & TU70 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getEdgeTypeDao() & TU70 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getPhotoDao() & TU70 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getPointOfInterestDao() & TU70 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getRegionOfInterestDao() & TU70 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getRoiPoiDao() & TU70 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteEdgeDao::\-fromJSONToTable() & TU75 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteEdgeTypeDao::\-fromJSONToTable() & TU76 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemotePhotoDao::\-fromJSONToTable() & TU78 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemotePointOfInterestDao::\-fromJSONToTable() & TU72 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteRegionOfInterestDao::\-fromJSONToTable() & TU73 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RemoteRoiPoiDao::\-fromJSONToTable() & TU74 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RoiPoiTable::\-getPoiID() & TU82 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-RoiPoiTable::\-getRoiID() & TU82 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLDao::\-delete() & TU105 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLDao::\-insert() & TU105 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLDao::\-query() & TU105 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLDao::\-rawQuery() & TU105 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLDao::\-update() & TU105 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-cursorToType() & TU89 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-deleteBuilding() & TU88 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-findAllBuildings() & TU88 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-findBuildingById() & TU88 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-findBuildingByMajor() & TU88 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-insertBuilding() & TU88 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-isBuildingMapPresent() & TU90 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-updateBuilding() & TU88 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteCategoryDao::\-cursorToType() & TU100 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteCategoryDao::\-deleteCategory() & TU99 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteCategoryDao::\-findCategory() & TU99 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteCategoryDao::\-insertCategory() & TU99 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteCategoryDao::\-updateCategory() & TU99 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getBuildingDao() & TU87 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getCategoryDao() & TU87 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getEdgeDao() & TU87 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getEdgeTypeDao() & TU87 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getPhotoDao() & TU87 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getPointOfInterestDao() & TU87 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getRegionOfInterestDao() & TU87 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getRoiPoiDao() & TU87 \\  
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-cursorToType() & TU98 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-deleteEdge() & TU97 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-findAllEdgesOfBuilding() & TU97 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-findEdge() & TU97 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-insertEdge() & TU97 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-updateEdge() & TU97 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeTypeDao::\-cursorToType() & TU102 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeTypeDao::\-deleteEdgeType() & TU101 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeTypeDao::\-findEdgeType() & TU101 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeTypeDao::\-insertEdgeType() & TU101 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteEdgeTypeDao::\-updateEdgeType() & TU101 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-cursorToType() & TU104 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-deletePhoto() & TU103 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-findAllPhotosOfEdge() & TU103 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-findPhoto() & TU103 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-insertPhoto() & TU103 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-updatePhoto() & TU103 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-cursorToType() & TU92 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-deletePointOfInterest() & TU91 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-findAllPointsWithMajor() & TU91 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-findPointOfInterest() & TU91 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-insertPointOfInterest() & TU91 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-updatePointOfInterest() & TU91 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-cursorToType() & TU94 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-deleteRegionOfInterest() & TU93 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-findAllRegionsWithMajor() & TU93 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-findRegionOfInterest() & TU93 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-insertRegionOfInterest() & TU93 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-updateRegionOfInterest() & TU93 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-cursorToType() & TU96 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-deleteRoiPoisWherePoi() & TU95 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-deleteRoiPoisWhereRoi() & TU95 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-findAllPointsWithRoi() & TU95 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-findAllRegionsWithPoi() & TU95 \\ 
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-insertRoiPoi() & TU95 \\  
+	\midrule 
+	model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-updateRoiPoi() & TU95 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-convertAndInsert() & TU66 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-deleteBuilding() & TU63 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-findAllBuildings() & TU63 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-findAllRemoteBuildings() & TU64 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-findBuildingByMajor() & TU63 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-findRemoteBuildingByMajor() & TU64 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-fromTableToBo() & TU68 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-isBuildingMapPresent() & TU67 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-isBuildingMapUpdated() & TU67 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-retrieveAndInsertMap() & TU65 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-BuildingService::\-updateBuildingMap() & TU67 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-EdgeService::\-convertAndInsert() & TU53 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-EdgeService::\-convertAndInsertEdgeType() & TU54 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-EdgeService::\-deleteEdge() & TU52 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-EdgeService::\-findAllEdgesOfBuilding() & TU52 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-EdgeService::\-findEdge() & TU52 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-EdgeService::\-fromTableToBo() & TU55 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PhotoService::\-convertAndInsert() & TU48 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PhotoService::\-deletePhoto() & TU46 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PhotoService::\-findAllPhotosOfEdge() & TU46 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PhotoService::\-findPhoto() & TU46 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PhotoService::\-fromTableToBo() & TU47 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PointOfInterestService::\-convertAndInsert() & TU59 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PointOfInterestService::\-convertAndInsertCategory() & TU60 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PointOfInterestService::\-convertAndInsertRoiPoi() & TU61 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PointOfInterestService::\-deletePointOfInterest() & TU58 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PointOfInterestService::\-findAllPointsWithMajor() & TU58 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PointOfInterestService::\-findPointOfInterest() & TU58 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-PointOfInterestService::\-fromTableToBo() & TU62 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-RegionOfInterestService::\-convertAndInsert() & TU51 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-RegionOfInterestService::\-deleteRegionOfInterest() & TU49 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-RegionOfInterestService::\-findAllRegionsWithMajor() & TU49 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-RegionOfInterestService::\-findRegionOfInterest() & TU49 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-RegionOfInterestService::\-fromTableToBo() & TU50 \\ 
+	\midrule 
+	model::\-dataaccess::\-service::\-ServiceHelper::\-getService() & TU45 \\  
+	\midrule 
+	model::\-navigator::\-BuildingInformation::\-getAddress() & TU4 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingInformation::\-getDescription() & TU4 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingInformation::\-getName() & TU4 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingInformation::\-getOpeningHours() & TU4 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingInformation::\-toString() & TU4 \\ 
+
+	model::\-navigator::\-BuildingMapImp::\-getAddress() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getAllBuildingInformation() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getAllEdges() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getAllNearbyPOIs() & TU6 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getAllPOIs() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getAllROIs() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getDescription() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getId() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getName() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getOpeningHours() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getSize() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-BuildingMapImp::\-getVersion() & TU5 \\ 
+	\midrule 
+	model::\-navigator::\-NavigatorImp::\-calculatePath() & TU33 \\ 
+	\midrule 
+	model::\-navigator::\-NavigatorImp::\-getAllInstructions() & TU34 \\ 
+	\midrule 
+	model::\-navigator::\-NavigatorImp::\-getPath() & TU33 \\ 
+	\midrule 
+	model::\-navigator::\-NavigatorImp::\-setGraph() & TU33 \\ 
+	\midrule 
+	model::\-navigator::\-NavigatorImp::\-toNextRegion() & TU35 \\ 
+	\midrule 
+	model::\-navigator::\-ProcessedInformation::\-getDetailedInstruction() & TU7 \\ 
+	\midrule 
+	model::\-navigator::\-ProcessedInformation::\-getPhotoInstruction() & TU7 \\ 
+	\midrule 
+	model::\-navigator::\-ProcessedInformation::\-getProcessedBasicInstruction() & TU7 \\ 
+    \midrule
+	model::\-navigator::\-algorithm::\-DijkstraPathFinder::\-calculatePath() & TU32 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-MapGraph::\-addAllEdges() & TU30 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-MapGraph::\-addAllRegions() & TU30 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-MapGraph::\-addEdge() & TU30 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-MapGraph::\-getGraph() & TU31 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-getAllBelongingROIs() & TU25 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-getCategory() & TU24 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-getDescription() & TU24 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-getId() & TU24 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-getName() & TU24 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-setBelongingROIs() & TU25 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-PointOfInterestInformation::\-getCategory() & TU23 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-PointOfInterestInformation::\-getDescription() & TU23 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-PointOfInterestInformation::\-getName() & TU23 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-contains() & TU28 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-getAllNearbyPOIs() & TU29 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-getFloor() & TU27 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-getMajor() & TU26 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-getMinor() & TU26 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-getUUID() & TU26 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-setNearbyPOIs() & TU29 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getCoordinate() & TU14 \\  
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getEndPoint() & TU14 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getId() & TU14 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getNavigationInformation() & TU16 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getPhotoInformation() & TU14 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getStarterPoint() & TU14 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-setUserPreference() & TU15 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-DefaultEdge::\-getBasicInformation() & TU17 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-DefaultEdge::\-getDetailedInformation() & TU17 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-DefaultEdge::\-getWeight() & TU22 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-ElevatorEdge::\-getBasicInformation() & TU19 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-ElevatorEdge::\-getDetailedInformation() & TU19 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-ElevatorEdge::\-getWeight() & TU21 \\  
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-StairEdge::\-getBasicInformation() & TU18 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-StairEdge::\-getDetailedInformation() & TU18 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-edge::\-StairEdge::\-getWeight() & TU20 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-navigationinformation::\-BasicInformation::\-getBasicInformation() & TU9 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-navigationinformation::\-DetailedInformation::\-getDetailedInformation() & TU10 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-navigationinformation::\-NavigationInformation::\-getBasicInformation() & TU13 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-navigationinformation::\-NavigationInformation::\-getDetailedInformation() & TU13 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-navigationinformation::\-NavigationInformation::\-getPhotoInformation() & TU13 \\  
+	\midrule 
+	model::\-navigator::\-graph::\-navigationinformation::\-PhotoInformation::\-getPhotoInformation() & TU12 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-navigationinformation::\-PhotoRef::\-getPhotoUri() & TU11 \\ 
+	\midrule 
+	model::\-navigator::\-graph::\-vertex::\-VertexImp::\-getId() & TU8 \\ 
+	\midrule 
+	model::\-usersetting::\-DeveloperCodeManager::\-isValid() & TU2 \\ 
+	\midrule 
+	model::\-usersetting::\-SettingImp::\-getInstructionPreference() & TU1 \\ 
+	\midrule 
+	model::\-usersetting::\-SettingImp::\-getPathPreference() & TU1 \\ 
+	\midrule 
+	model::\-usersetting::\-SettingImp::\-isDeveloper() & TU3 \\ 
+	\midrule 
+	model::\-usersetting::\-SettingImp::\-setInstructionPreference() & TU1 \\ 
+	\midrule 
+	model::\-usersetting::\-SettingImp::\-setPathPreference() & TU1 \\ 
+	\midrule 
+	model::\-usersetting::\-SettingImp::\-unlockDeveloper() & TU3 \\ 
+	\midrule 
+	presenter::\-Checker::\-isBeaconDetected() & TU113 \\ 
+	\midrule 
+	presenter::\-Checker::\-isBluetoothEnabled() & TU113 \\ 
+	\midrule 
+	presenter::\-Checker::\-isTheBuildingMapInLocalDB() & TU113 \\ 
+	\midrule 
+	presenter::\-DatabaseServiceManager::\-getDatabaseService() & TU116 \\ 
+	\midrule 
+	presenter::\-DetailedInformationActivity::\-updateDetailedDescription() & TU145 \\ 
+	\midrule 
+	presenter::\-DetailedInformationActivity::\-updatePhoto() & TU145 \\ 
+	\midrule 
+	presenter::\-DeveloperUnlockerActivity::\-unlockDeveloper() & TU136 \\ 
+	\midrule 
+	presenter::\-HelpActivity::\-onCreate() & TU142 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-enableSuggestions() & TU124 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-showHelp() & TU127 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-showLocalMaps() & TU129 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-showPoisCategory() & TU125 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-showPreferences() & TU126 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-startNavigation() & TU128 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-updateBuildingAddress() & TU123 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-updateBuildingDescription() & TU120 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-updateBuildingName() & TU119 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-updateBuildingOpeningHours() & TU121 \\ 
+	\midrule 
+	presenter::\-HomeActivity::\-updatePoiCategoryList() & TU122 \\ 
+	\midrule 
+	presenter::\-ImageAdapter::\-getCount() & TU133 \\ 
+	\midrule 
+	presenter::\-ImageAdapter::\-getItem() & TU133 \\ 
+	\midrule 
+	presenter::\-ImageAdapter::\-getItemId() & TU147 \\ 
+	\midrule 
+	presenter::\-ImageAdapter::\-getView() & TU133 \\ 
+	\midrule 
+	presenter::\-ImageDetailActivity::\-onCreate() & TU143 \\ 
+	\midrule 
+	presenter::\-ImageListFragment::\-newInstance() & TU134 \\ 
+	\midrule 
+	presenter::\-ImageListFragment::\-onCreateView() & TU134 \\ 
+	\midrule 
+	presenter::\-ImageListFragment::\-onItemClick() & TU134 \\ 
+	\midrule 
+	presenter::\-ImagePageAdapter::\-getCount() & TU146 \\ 
+	\midrule 
+	presenter::\-ImagePageAdapter::\-getItem() & TU146 \\ 
+	\midrule 
+	presenter::\-InformationManagerPresenter::\-getInformationManager() & TU115 \\ 
+	\midrule 
+	presenter::\-LocalMapActivity::\-deleteMap() & TU141 \\ 
+	\midrule 
+	presenter::\-LocalMapActivity::\-updateMap() & TU141 \\ 
+	\midrule 
+	presenter::\-LoggingActivity::\-stopLogging() & TU149 \\ 
+	\midrule 
+	presenter::\-LogInformationActivity::\-deleteLog() & TU150 \\ 
+	\midrule 
+	presenter::\-MainActivity::\-onCreate() & TU148 \\ 
+	\midrule 
+	presenter::\-MainDeveloperActivity::\-showDetailedLog() & TU137 \\ 
+	\midrule 
+	presenter::\-MainDeveloperActivity::\-startNewLog() & TU137 \\ 
+	\midrule 
+	presenter::\-MainDeveloperPresenter::\-isDeveloper() & TU135 \\ 
+	\midrule 
+	presenter::\-MainDeveloperPresenter::\-startDeveloperOptions() & TU135 \\ 
+	\midrule 
+	presenter::\-MainDeveloperPresenter::\-startDeveloperUnlocker() & TU135 \\ 
+	\midrule 
+	presenter::\-MapDownloaderActivity::\-downloadFinished() & TU139 \\ 
+	\midrule 
+	presenter::\-NavigationActivity::\-informationUpdate() & TU131 \\ 
+	\midrule 
+	presenter::\-NavigationActivity::\-pathError() & TU131 \\ 
+	\midrule 
+	presenter::\-NavigationActivity::\-showDetailedInformation() & TU132 \\ 
+	\midrule 
+	presenter::\-NavigationAdapter::\-getCount() & TU151 \\ 
+	\midrule 
+	presenter::\-NavigationAdapter::\-getItem() & TU151 \\ 
+	\midrule 
+	presenter::\-NavigationAdapter::\-getItemId() & TU151 \\ 
+	\midrule 
+	presenter::\-NavigationAdapter::\-getView() & TU151 \\ 
+	\midrule 
+	presenter::\-NavigationManagerPresenter::\-getNavigationManager() & TU114 \\ 
+	\midrule 
+	presenter::\-NearbyPoiActivity::\-onCreate() & TU144 \\ 
+	\midrule 
+	presenter::\-PoiCategoryActivity::\-startNavigation() & TU130 \\ 
+	\midrule 
+	presenter::\-PreferencesActivity::\-savePreferences() & TU138 \\ 
+	\midrule 
+	presenter::\-RemoteMapManagerActivity::\-downloadMap() & TU140 \\ 
+	\midrule 
+	presenter::\-SearchSuggestionsProvider::\-getType() & TU118 \\ 
+	\midrule 
+	presenter::\-SearchSuggestionsProvider::\-insert() & TU118 \\ 
+	\midrule 
+	presenter::\-SearchSuggestionsProvider::\-onCreate() & TU118 \\ 
+	\midrule 
+	presenter::\-SearchSuggestionsProvider::\-query() & TU118 \\ 
+	\midrule 
+	presenter::\-SearchSuggestionsProvider::\-update() & TU118 \\ 
+	\midrule 
+	presenter::\-SettingManager::\-getSetting() & TU117 \\  
+	\midrule 
+	view::\-DetailedInformationViewImp::\-setDetailedDescription() & TU155 \\ 
+	\midrule 
+	view::\-DetailedInformationViewImp::\-setPhotos() & TU155 \\ 
+	\midrule 
+	view::\-DeveloperUnlockerViewImp::\-showWrongCode() & TU163 \\ 
+	\midrule 
+	view::\-HelpViewImp::\-setHelp() & TU158 \\  
+	\midrule 
+	view::\-HomeViewImp::\-setBuildingAddress() & TU152 \\ 
+	\midrule 
+	view::\-HomeViewImp::\-setBuildingName() & TU152 \\ 
+	\midrule 
+	view::\-HomeViewImp::\-setBuildingOpeningHours() & TU152 \\ 
+	\midrule 
+	view::\-HomeViewImp::\-setPoiCategoryListAdapter() & TU152 \\ 
+	\midrule 
+	view::\-ImageDetailViewImp::\-setAdapter() & TU157 \\ 
+	\midrule 
+	view::\-ImageListFragmentViewImp::\-setImageAdapter() & TU167 \\  
+	\midrule 
+	view::\-LocalMapManagerViewImp::\-refreshMaps() & TU159 \\ 
+	\midrule 
+	view::\-LocalMapManagerViewImp::\-setAdapter() & TU159 \\ 
+	\midrule 
+	view::\-LoggingViewImp::\-setBeaconListAdapter() & TU165 \\ 
+	\midrule 
+	view::\-LogInformationViewImp::\-setBeaconAdapter() & TU166 \\ 
+	\midrule 
+	view::\-MainDeveloperViewImp::\-setLogsAdapter() & TU164 \\ 
+	\midrule 
+	view::\-MainView::\-setLoadingView() & TU168 \\ 
+	\midrule 
+	view::\-MapDownloaderView::\-setDowloadingMap() & TU161 \\ 
+	\midrule 
+	view::\-MapDownloaderView::\-setProgressDowload() & TU161 \\ 
+	\midrule 
+	view::\-NavigationViewImp::\-refreshInstructions() & TU153 \\ 
+	\midrule 
+	view::\-NavigationViewImp::\-setInstructionAdapter() & TU153 \\ 
+	\midrule 
+	view::\-NearbyPoiViewImp::\-setAdapter() & TU156 \\ 
+	\midrule 
+	view::\-PoiCategoryViewImp::\-setPoiListAdapter() & TU154 \\ 
+	\midrule 
+	view::\-PreferencesViewImp::\-setInstructionPreferences() & TU162 \\ 
+	\midrule 
+	view::\-PreferencesViewImp::\-setPathPreferences() & TU162 \\ 
+	\midrule 
+	view::\-RemoteMapManagerViewImp::\-setRemoteMaps() & TU160 \\ 
+	\arrayrulecolor{black}
+	\bottomrule
+	\caption{Tabella metodi / test unità} \\
+\end{longtabu}
+
 \end{document}
