@@ -401,9 +401,9 @@ TS21 & Viene verificato che il sistema fornisca la possibilità di inserire il p
 \caption{Tabella di tracciamento test di sistema / requisiti} \\
 \end{longtabu}	
 	\subsection{Test di integrazione}
-		Descrizione
+		I test di integrazione servono per verificare il corretto funzionamento di più moduli assemblati insieme. Per una descrizione completa della sintassi utilizzata nella descrizione di tali test si consulti il documento \normediprogettov.
 		\subsubsection{Test-componenti}
-		\begin{longtabu} to \textwidth{X[0.7cm] X[2cm] X[2cm] X}
+		\begin{longtabu} to \textwidth{X [-1cm]X X[1cm] X[-1cm]}
 \toprule
 \textbf{Test} & \textbf{Descrizione} & \textbf{Componenti} & \textbf{Stato}\\
 \midrule
@@ -413,31 +413,31 @@ TI1 & Test di integrazione finale tra tutte le componenti per verificare il corr
 \midrule 
 TI2 & Viene verificato che il sistema gestisca correttamente le componenti relative al package model. In particolare che la navigazione si comporti secondo le esigenze dell'utente, utilizzi correttamente i sensori, si interfacci correttamente con la tecnologia Beacon e vengano recuperate le informazioni dal database & model & N.I. \\ 
 \midrule 
-TI3 & Viene verificato che il sistema gestisca correttamente le componenti relative al package beacon. In particolare che si interfacci correttamente con la libreria AltBeacon e con la tecnologia Beacon & model::beacon & N.I. \\ 
+TI3 & Viene verificato che il sistema gestisca correttamente le componenti relative al package beacon. In particolare che si interfacci correttamente con la libreria AltBeacon e con la tecnologia Beacon & model::\-beacon & N.I. \\ 
 \midrule 
-TI4 & Viene verificato che il sistema gestisca correttamente le componenti relative al package usersetting. In particolare che gestisca correttamente le preferenze dell'utente e le renda persistenti sul dispositivo & model::usersetting & N.I. \\ 
+TI4 & Viene verificato che il sistema gestisca correttamente le componenti relative al package usersetting. In particolare che gestisca correttamente le preferenze dell'utente e le renda persistenti sul dispositivo & model::\-usersetting & N.I. \\ 
 \midrule 
-TI5 & Viene verificato che il sistema gestisca correttamente le componenti relative al package compass. In particolare che sia possibile avviare e fermare la bussola & model::compass & N.I. \\ 
+TI5 & Viene verificato che il sistema gestisca correttamente le componenti relative al package compass. In particolare che sia possibile avviare e fermare la bussola & model::\-compass & N.I. \\ 
 \midrule 
-TI6 & Viene verificato che il sistema gestisca correttamente le componenti relative al package navigator. In particolare che fornisca le funzionalità di navigazione e calcoli il percorso secondo le esigenze dell'utente & model::navigator & N.I. \\ 
+TI6 & Viene verificato che il sistema gestisca correttamente le componenti relative al package navigator. In particolare che fornisca le funzionalità di navigazione e calcoli il percorso secondo le esigenze dell'utente & model::\-navigator & N.I. \\ 
 \midrule 
-TI7 & Viene verificato che il sistema gestisca correttamente le componenti relative al package algorithm. In particolare che, dati un grafo pesato e due nodi, calcoli un percorso dal nodo di partenza al nodo di arrivo & model::navigator::algorithm & N.I. \\ 
+TI7 & Viene verificato che il sistema gestisca correttamente le componenti relative al package algorithm. In particolare che, dati un grafo pesato e due nodi, calcoli un percorso dal nodo di partenza al nodo di arrivo & model::\-navigator::\-algorithm & N.I. \\ 
 \midrule 
-TI8 & Viene verificato che il sistema gestisca correttamente le componenti relative al package graph. In particolare che gestisca la struttura di un grafo e associ delle informazioni ad un PointOfInterest o ad un Edge & model::navigator::graph & N.I. \\ 
+TI8 & Viene verificato che il sistema gestisca correttamente le componenti relative al package graph. In particolare che gestisca la struttura di un grafo e associ delle informazioni ad un PointOfInterest o ad un Edge & model::\-navigator::\-graph & N.I. \\ 
 \midrule 
-TI9 & Viene verificato che il sistema gestisca correttamente le componenti relative al package vertex. In particolare che rappresenti un nodo di un grafo. & model::navigator::graph::vertex & N.I. \\ 
+TI9 & Viene verificato che il sistema gestisca correttamente le componenti relative al package vertex. In particolare che rappresenti un nodo di un grafo. & model::\-navigator::\-graph::\-vertex & N.I. \\ 
 \midrule 
-TI10 & Viene verificato che il sistema gestisca correttamente le componenti relative al package area. In particolare che rappresentino la struttura di un edificio come PointOfInterest e RegionOfInterest & model::navigator::graph::area & N.I. \\ 
+TI10 & Viene verificato che il sistema gestisca correttamente le componenti relative al package area. In particolare che rappresentino la struttura di un edificio come PointOfInterest e RegionOfInterest & model::\-navigator::\-graph::\-area & N.I. \\ 
 \midrule 
-TI11 & Viene verificato che il sistema gestisca correttamente le componenti relative al package navigationInformation. In particolare rappresenti i diversi tipi di istruzione a seconda delle preferenze dell'utente & model::navigator::graph::navigationinformation & N.I. \\ 
+TI11 & Viene verificato che il sistema gestisca correttamente le componenti relative al package navigationInformation. In particolare rappresenti i diversi tipi di istruzione a seconda delle preferenze dell'utente & model::\-navigator::\-graph::\-navigation\-information & N.I. \\ 
 \midrule 
-TI12 & Viene verificato che il sistema gestisca correttamente le componenti relative al package edge. In particolare che rappresenti i diversi tipi di archi e le informazioni ad essi associate & model::navigator::graph::edge & N.I. \\ 
+TI12 & Viene verificato che il sistema gestisca correttamente le componenti relative al package edge. In particolare che rappresenti i diversi tipi di archi e le informazioni ad essi associate & model::\-navigator::\-graph::\-edge & N.I. \\ 
 \midrule 
-TI13 & Viene verificato che il sistema gestisca correttamente le componenti relative al package dataaccess. In particolare che si interfacci in maniera corretta col database remoto e permetta di gestire le informazioni nel database locale & model::dataaccess & N.I. \\ 
+TI13 & Viene verificato che il sistema gestisca correttamente le componenti relative al package dataaccess. In particolare che si interfacci in maniera corretta col database remoto e permetta di gestire le informazioni nel database locale & model::\-dataaccess & N.I. \\ 
 \midrule 
-TI14 & Viene verificato che il sistema gestisca correttamente le componenti relative al package service. In particolare che faccia da tramite per l'accesso al database per il resto del model e costruisca oggetti della Business Logic a partire dagli oggetti che rappresentano le tabelle del database & model::dataaccess::service & N.I. \\ 
+TI14 & Viene verificato che il sistema gestisca correttamente le componenti relative al package service. In particolare che faccia da tramite per l'accesso al database per il resto del model e costruisca oggetti della Business Logic a partire dagli oggetti che rappresentano le tabelle del database & model::\-dataaccess::\-service & N.I. \\ 
 \midrule 
-TI15 & Viene verificato che il sistema gestisca correttamente le componenti relative al package dao. In particolare che sia possibile effettuare le operazioni CRUD sul database locale e tradurre la struttura del database in oggetti, che rappresentano le tabelle, per accedere alle informazioni & model::dataaccess::dao & N.I. \\ 
+TI15 & Viene verificato che il sistema gestisca correttamente le componenti relative al package dao. In particolare che sia possibile effettuare le operazioni CRUD sul database locale e tradurre la struttura del database in oggetti, che rappresentano le tabelle, per accedere alle informazioni & model::\-dataaccess::\-dao & N.I. \\ 
 \midrule 
 TI16 & Viene verificato che il sistema gestisca correttamente le componenti relative al package view. In particolare che riesca a recuperare le informazioni dal package presenter e che le esponga correttamente all'utente & view & N.I. \\ 
 \midrule 
@@ -449,7 +449,7 @@ TI17 & Viene verificato che il sistema gestisca correttamente le componenti rela
 
 \subsubsection{Componente - test}
 
-\begin{longtabu} to \textwidth{X X}
+\begin{longtabu} to \textwidth{X [4cm] X}
 \toprule
 \textbf{Componente} & \textbf{Test}\\
 \midrule
@@ -492,352 +492,349 @@ view & TI16 \\
 \end{longtabu}
 
 \subsection{Test di unità}
-	Introduzione test di unità
+Il test di unità serve per accertare il corretto funzionamento delle singole unità, ovvero le classi. Per una descrizione completa della sintassi utilizzata nella descrizione di tali test si consulti il documento \normediprogettov.
 	
-	\begin{longtabu} to \textwidth {X[0.6cm] X[3cm] X[4cm] X}
+\begin{longtabu} to \textwidth {X[-0.5cm] X X X[-1cm]}
 \toprule
 \textbf{Test} & \textbf{Descrizione} & \textbf{Metodi} & \textbf{Stato}\\
 \midrule
 \endhead
 \arrayrulecolor{gray}
-TU1 & \begin{flushleft}Viene testato che tramite un oggetto SettingImp sia possibile salvare e recuperare le informazioni relative alle preferenze dell'utente\end{flushleft} & \begin{flushleft}
-model::\-usersetting::\-SettingImp::\-getPathPreference() \par model::usersetting::SettingImp::getInstructionPreference() \par model::usersetting::SettingImp::setPathPreference() \par model::usersetting::SettingImp::setInstructionPreference()
-\end{flushleft}
- & N.I \\ 
+TU1 & Viene testato che tramite un oggetto SettingImp sia possibile salvare e recuperare le informazioni relative alle preferenze dell'utente & model::\-usersetting::\-SettingImp::\-getPathPreference() \par model::\-usersetting::\-SettingImp::\-getInstructionPreference() \par model::\-usersetting::\-SettingImp::\-setPathPreference() \par model::\-usersetting::\-SettingImp::\-setInstructionPreference() & N.I \\ 
 \midrule 
-TU2 & Viene testato che tramite la classe DeveloperCodeManager sia possibile riconoscere un codice sviluppatore valida da uno non valido & model::usersetting::DeveloperCodeManager::isValid() & N.I \\ 
+TU2 & Viene testato che tramite la classe DeveloperCodeManager sia possibile riconoscere un codice sviluppatore valida da uno non valido & model::\-usersetting::\-DeveloperCodeManager::\-isValid() & N.I \\ 
 \midrule 
-TU3 & Viene testato che tramite un oggetto della classe SettimgImp sia possibile recuperare e modificare le informazioni riguardanti un eventuale codice sviluppatore inserito. In particolare viene testato se vengono salvate le informazioni relative al fatto che un utente sia o meno sviluppatore & model::usersetting::SettingImp::isDeveloper() \par model::usersetting::SettingImp::unlockDeveloper() & N.I \\ 
+TU3 & Viene testato che tramite un oggetto della classe SettimgImp sia possibile recuperare e modificare le informazioni riguardanti un eventuale codice sviluppatore inserito. In particolare viene testato se vengono salvate le informazioni relative al fatto che un utente sia o meno sviluppatore & model::\-usersetting::\-SettingImp::\-isDeveloper() \par model::\-usersetting::\-SettingImp::\-unlockDeveloper() & N.I \\ 
 \midrule 
-TU4 & Viene testato che sia possibile, utilizzando un oggetto BuildingInformation, accedere alle informazioni relative ad un edificio & model::navigator::BuildingInformation::getName() \par model::navigator::BuildingInformation::getDescription() \par model::navigator::BuildingInformation::getOpeningHours() \par model::navigator::BuildingInformation::getAddress() \par model::navigator::BuildingInformation::toString() & N.I \\ 
+TU4 & Viene testato che sia possibile, utilizzando un oggetto BuildingInformation, accedere alle informazioni relative ad un edificio & model::\-navigator::\-BuildingInformation::\-getName() \par model::\-navigator::\-BuildingInformation::\-getDescription() \par model::\-navigator::\-BuildingInformation::\-getOpeningHours() \par model::\-navigator::\-BuildingInformation::\-getAddress() \par model::\-navigator::\-BuildingInformation::\-toString() & N.I \\ 
 \midrule 
-TU5 & Viene testato che utilizzando un oggetto BuildingMapImp sia possibile accedere alle informazioni dell'edificio, alla versione della mappa della mappa e al suo id all'interno del database, e alle collezioni di PointOfInterest, RegionOfInterest e EnrichedEdge che contiene & model::navigator::BuildingMapImp::getAddress() \par model::navigator::BuildingMapImp::getAllBuildingInformation() \par model::navigator::BuildingMapImp::getAllEdges() \par model::navigator::BuildingMapImp::getAllPOIs() \par model::navigator::BuildingMapImp::getAllROIs() \par model::navigator::BuildingMapImp::getDescription() \par model::navigator::BuildingMapImp::getId() \par model::navigator::BuildingMapImp::getName() \par model::navigator::BuildingMapImp::getOpeningHours() \par model::navigator::BuildingMapImp::getVersion() \par model::navigator::BuildingMapImp::getSize() & N.I \\ 
+TU5 & Viene testato che utilizzando un oggetto BuildingMapImp sia possibile accedere alle informazioni dell'edificio, alla versione della mappa della mappa e al suo id all'interno del database, e alle collezioni di PointOfInterest, RegionOfInterest e EnrichedEdge che contiene & model::\-navigator::\-BuildingMapImp::\-getAddress() \par model::\-navigator::\-BuildingMapImp::\-getAllBuildingInformation() \par model::\-navigator::\-BuildingMapImp::\-getAllEdges() \par model::\-navigator::\-BuildingMapImp::\-getAllPOIs() \par model::\-navigator::\-BuildingMapImp::\-getAllROIs() \par model::\-navigator::\-BuildingMapImp::\-getDescription() \par model::\-navigator::\-BuildingMapImp::\-getId() \par model::\-navigator::\-BuildingMapImp::\-getName() \par model::\-navigator::\-BuildingMapImp::\-getOpeningHours() \par model::\-navigator::\-BuildingMapImp::\-getVersion() \par model::\-navigator::\-BuildingMapImp::\-getSize() & N.I \\ 
 \midrule 
-TU6 & Viene testato che utilizzando un oggetto BuildingMapImp sia possibile accedere alla collezione di PointOfInterest associati ad alla RegionOfInterest che contiene il beacon passato & model::navigator::BuildingMapImp::getAllNearbyPOIs() & N.I \\ 
+TU6 & Viene testato che utilizzando un oggetto BuildingMapImp sia possibile accedere alla collezione di PointOfInterest associati ad alla RegionOfInterest che contiene il beacon passato & model::\-navigator::\-BuildingMapImp::\-getAllNearbyPOIs() & N.I \\ 
 \midrule 
-TU7 & Viene testato che sia possibile accedere a tutte le informazioni contenute in un oggetto ProcessedInformationImp & model::navigator::ProcessedInformation::getProcessedBasicInstruction() \par model::navigator::ProcessedInformation::getDetailedInstruction() \par model::navigator::ProcessedInformation::getPhotoInstruction() & N.I \\ 
+TU7 & Viene testato che sia possibile accedere a tutte le informazioni contenute in un oggetto ProcessedInformationImp & model::\-navigator::\-ProcessedInformation::\-getProcessedBasicInstruction() \par model::\-navigator::\-ProcessedInformation::\-getDetailedInstruction() \par model::\-navigator::\-ProcessedInformation::\-getPhotoInstruction() & N.I \\ 
 \midrule 
-TU8 & Viene testato che sia possibile accedere alle informazioni contenute in un oggetto VertexImp & model::navigator::graph::vertex::VertexImp::getId() & N.I \\ 
+TU8 & Viene testato che sia possibile accedere alle informazioni contenute in un oggetto VertexImp & model::\-navigator::\-graph::\-vertex::\-VertexImp::\-getId() & N.I \\ 
 \midrule 
-TU9 & Viene testato che sia possibile accedere alle informazioni contenute in un oggetto BasicInformation & model::navigator::graph::navigationinformation::BasicInformation::getBasicInformation() & N.I \\ 
+TU9 & Viene testato che sia possibile accedere alle informazioni contenute in un oggetto BasicInformation & model::\-navigator::\-graph::\-navigationinformation::\-BasicInformation::\-getBasicInformation() & N.I \\ 
 \midrule 
-TU10 & Viene testato che sia possibile accedere alle informazioni contenute in un oggetto DetailedInformation & model::navigator::graph::navigationinformation::DetailedInformation::getDetailedInformation() & N.I \\ 
+TU10 & Viene testato che sia possibile accedere alle informazioni contenute in un oggetto DetailedInformation & model::\-navigator::\-graph::\-navigationinformation::\-DetailedInformation::\-getDetailedInformation() & N.I \\ 
 \midrule 
-TU11 & Viene testato che sia possible accedere alle informazioni contenute in un oggetto PhotoRef & model::navigator::graph::navigationinformation::PhotoRef::getPhotoUri() & N.I \\ 
+TU11 & Viene testato che sia possible accedere alle informazioni contenute in un oggetto PhotoRef & model::\-navigator::\-graph::\-navigationinformation::\-PhotoRef::\-getPhotoUri() & N.I \\ 
 \midrule 
-TU12 & Viene testato che sia possibile accedere alla collezione di oggetti PhotoRef contenuta in un oggetto PhotoInformation & model::navigator::graph::navigationinformation::PhotoInformation::getPhotoInformation() & N.I \\ 
+TU12 & Viene testato che sia possibile accedere alla collezione di oggetti PhotoRef contenuta in un oggetto PhotoInformation & model::\-navigator::\-graph::\-navigationinformation::\-PhotoInformation::\-getPhotoInformation() & N.I \\ 
 \midrule 
-TU13 & Viene testato che sia possibile accedere alle informazioni contenute in un oggetto NavigationInformationImp & model::navigator::graph::navigationinformation::NavigationInformation::getBasicInformation() \par model::navigator::graph::navigationinformation::NavigationInformation::getDetailedInformation() \par model::navigator::graph::navigationinformation::NavigationInformation::getPhotoInformation() & N.I \\ 
+TU13 & Viene testato che sia possibile accedere alle informazioni contenute in un oggetto NavigationInformationImp & model::\-navigator::\-graph::\-navigationinformation::\-NavigationInformation::\-getBasicInformation() \par model::\-navigator::\-graph::\-navigationinformation::\-NavigationInformation::\-getDetailedInformation() \par model::\-navigator::\-graph::\-navigationinformation::\-NavigationInformation::\-getPhotoInformation() & N.I \\ 
 \midrule 
-TU14 & Viene testato che sia possibile accedere alle informazioni relative punto di inizio, punto di fine, distanza tra i due punti, l'angolo, rispetto al nord, che c'è tra il primo e il secondo punto, collezione di PhotoRef, id di un oggetto che ha tipo statico AbsEnrichedEdge e tipo dinamico un sottotipo di AbsEnrichedEdge & model::navigator::graph::edge::AbsEnrichedEdge::getStarterPoint() \par model::navigator::graph::edge::AbsEnrichedEdge::getEndPoint() \par model::navigator::graph::edge::AbsEnrichedEdge::getPhotoInformation() \par model::navigator::graph::edge::AbsEnrichedEdge::getCoordinate() \par model::navigator::graph::edge::AbsEnrichedEdge::getId() & N.I \\ 
+TU14 & Viene testato che sia possibile accedere alle informazioni relative punto di inizio, punto di fine, distanza tra i due punti, l'angolo, rispetto al nord, che c'è tra il primo e il secondo punto, collezione di PhotoRef, id di un oggetto che ha tipo statico AbsEnrichedEdge e tipo dinamico un sottotipo di AbsEnrichedEdge & model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getStarterPoint() \par model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getEndPoint() \par model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getPhotoInformation() \par model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getCoordinate() \par model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getId() & N.I \\ 
 \midrule 
-TU15 & Viene testato che sia possibile impostare le preferenze relative agli archi da attraversare & model::navigator::graph::edge::AbsEnrichedEdge::setUserPreference() & N.I \\ 
+TU15 & Viene testato che sia possibile impostare le preferenze relative agli archi da attraversare & model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-setUserPreference() & N.I \\ 
 \midrule 
-TU16 & Viene testato che sia possibile accedere alle informazioni di navigazione all'interno di una sottoclasse di AbsEnrichedEdge & model::navigator::graph::edge::AbsEnrichedEdge::getNavigationInformation() & N.I \\ 
+TU16 & Viene testato che sia possibile accedere alle informazioni di navigazione all'interno di una sottoclasse di AbsEnrichedEdge & model::\-navigator::\-graph::\-edge::\-AbsEnrichedEdge::\-getNavigationInformation() & N.I \\ 
 \midrule 
-TU17 & Viene testato che sia possibile accedere alle informazioni di base per superare tale arco e quelle dettagliate in un oggetto DefaultEdge & model::navigator::graph::edge::DefaultEdge::getBasicInformation() \par model::navigator::graph::edge::DefaultEdge::getDetailedInformation() & N.I \\ 
+TU17 & Viene testato che sia possibile accedere alle informazioni di base per superare tale arco e quelle dettagliate in un oggetto DefaultEdge & model::\-navigator::\-graph::\-edge::\-DefaultEdge::\-getBasicInformation() \par model::\-navigator::\-graph::\-edge::\-DefaultEdge::\-getDetailedInformation() & N.I \\ 
 \midrule 
-TU18 & Viene testato che sia possibile accedere alle informazioni di base per superare tale arco e quelle dettagliate in un oggetto StairEdge & model::navigator::graph::edge::StairEdge::getBasicInformation() \par model::navigator::graph::edge::StairEdge::getDetailedInformation() & N.I \\ 
+TU18 & Viene testato che sia possibile accedere alle informazioni di base per superare tale arco e quelle dettagliate in un oggetto StairEdge & model::\-navigator::\-graph::\-edge::\-StairEdge::\-getBasicInformation() \par model::\-navigator::\-graph::\-edge::\-StairEdge::\-getDetailedInformation() & N.I \\ 
 \midrule 
-TU19 & Viene testato che sia possibile accedere alle informazioni di base per superare tale arco e quelle dettagliate in un oggetto ElevatorEdge & model::navigator::graph::edge::ElevatorEdge::getBasicInformation() \par model::navigator::graph::edge::ElevatorEdge::getDetailedInformation() & N.I \\ 
+TU19 & Viene testato che sia possibile accedere alle informazioni di base per superare tale arco e quelle dettagliate in un oggetto ElevatorEdge & model::\-navigator::\-graph::\-edge::\-ElevatorEdge::\-getBasicInformation() \par model::\-navigator::\-graph::\-edge::\-ElevatorEdge::\-getDetailedInformation() & N.I \\ 
 \midrule 
-TU20 & Viene testato che il peso dell'arco venga calcolato in base alle preferenze impostate tramite il metodo AbsEnrichedEdge.setUserPreference in un oggetto StairEdge & model::navigator::graph::edge::StairEdge::getWeight() & N.I \\ 
+TU20 & Viene testato che il peso dell'arco venga calcolato in base alle preferenze impostate tramite il metodo AbsEnrichedEdge.setUserPreference in un oggetto StairEdge & model::\-navigator::\-graph::\-edge::\-StairEdge::\-getWeight() & N.I \\ 
 \midrule 
-TU21 & Viene testato che il peso dell'arco venga calcolato in base alle preferenze impostate tramite il metodo AbsEnrichedEdge.setUserPreference in un oggetto ElevatorEdge & model::navigator::graph::edge::ElevatorEdge::getWeight() & N.I \\ 
+TU21 & Viene testato che il peso dell'arco venga calcolato in base alle preferenze impostate tramite il metodo AbsEnrichedEdge.setUserPreference in un oggetto ElevatorEdge & model::\-navigator::\-graph::\-edge::\-ElevatorEdge::\-getWeight() & N.I \\ 
 \midrule 
-TU22 & Viene testato che il peso dell'arco venga calcolato in base alle preferenze impostate tramite il metodo AbsEnrichedEdge.setUserPreference in un oggetto DefaultEdge & model::navigator::graph::edge::DefaultEdge::getWeight() & N.I \\ 
+TU22 & Viene testato che il peso dell'arco venga calcolato in base alle preferenze impostate tramite il metodo AbsEnrichedEdge.setUserPreference in un oggetto DefaultEdge & model::\-navigator::\-graph::\-edge::\-DefaultEdge::\-getWeight() & N.I \\ 
 \midrule 
-TU23 & Viene testato che sia possibile accedere a tutte le informazioni contenute in un oggetto PointOfInterestInformation & model::navigator::graph::area::PointOfInterestInformation::getName() \par model::navigator::graph::area::PointOfInterestInformation::getDescription() \par model::navigator::graph::area::PointOfInterestInformation::getCategory() & N.I \\ 
+TU23 & Viene testato che sia possibile accedere a tutte le informazioni contenute in un oggetto PointOfInterestInformation & model::\-navigator::\-graph::\-area::\-PointOfInterestInformation::\-getName() \par model::\-navigator::\-graph::\-area::\-PointOfInterestInformation::\-getDescription() \par model::\-navigator::\-graph::\-area::\-PointOfInterestInformation::\-getCategory() & N.I \\ 
 \midrule 
-TU24 & Viene testato che sia possibile accedere a tutte le informazioni riguardanti il POI e all'id del POI relativo al database in un oggetto PointOfInterestImp & model::navigator::graph::area::PointOfInterestImp::getName() \par model::navigator::graph::area::PointOfInterestImp::getDescription() \par model::navigator::graph::area::PointOfInterestImp::getCategory() \par model::navigator::graph::area::PointOfInterestImp::getId() & N.I \\ 
+TU24 & Viene testato che sia possibile accedere a tutte le informazioni riguardanti il POI e all'id del POI relativo al database in un oggetto PointOfInterestImp & model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-getName() \par model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-getDescription() \par model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-getCategory() \par model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-getId() & N.I \\ 
 \midrule 
-TU25 & Viene testato che sia possibile settare e accedere a tutti i ROI in cui è contenuto il POI rappresentato da un oggetto PointOfInterest & model::navigator::graph::area::PointOfInterestImp::getAllBelongingROIs() \par model::navigator::graph::area::PointOfInterestImp::setBelongingROIs() & N.I \\ 
+TU25 & Viene testato che sia possibile settare e accedere a tutti i ROI in cui è contenuto il POI rappresentato da un oggetto PointOfInterest & model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-getAllBelongingROIs() \par model::\-navigator::\-graph::\-area::\-PointOfInterestImp::\-setBelongingROIs() & N.I \\ 
 \midrule 
-TU26 & Viene testato che sia possibile accedere alle informazioni alle informazioni relative al beacon che è contenuto in una determinata ROI tramite un oggetto RegionOfInterestImp & model::navigator::graph::area::RegionOfInterestImp::getUUID() \par model::navigator::graph::area::RegionOfInterestImp::getMajor() \par model::navigator::graph::area::RegionOfInterestImp::getMinor() & N.I \\ 
+TU26 & Viene testato che sia possibile accedere alle informazioni alle informazioni relative al beacon che è contenuto in una determinata ROI tramite un oggetto RegionOfInterestImp & model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-getUUID() \par model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-getMajor() \par model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-getMinor() & N.I \\ 
 \midrule 
-TU27 & Viene testato che sia possibile ricavare il piano di appartenenza di un oggetto RegionOfInterestImp ricavandolo dal minor & model::navigator::graph::area::RegionOfInterestImp::getFloor() & N.I \\ 
+TU27 & Viene testato che sia possibile ricavare il piano di appartenenza di un oggetto RegionOfInterestImp ricavandolo dal minor & model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-getFloor() & N.I \\ 
 \midrule 
-TU28 & Viene testato che sia possibile verificare tramite la classe RegionOfInterestImp è possibile verificare se un beacon è contenuto o meno in una certa ROI & model::navigator::graph::area::RegionOfInterestImp::contains() & N.I \\ 
+TU28 & Viene testato che sia possibile verificare tramite la classe RegionOfInterestImp è possibile verificare se un beacon è contenuto o meno in una certa ROI & model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-contains() & N.I \\ 
 \midrule 
-TU29 & Viene testato che sia possibile settare e accedere a tutti i POI contenuti nel ROI rappresentato da un oggetto RegionOfInterest & model::navigator::graph::area::RegionOfInterestImp::getAllNearbyPOIs() \par model::navigator::graph::area::RegionOfInterestImp::setNearbyPOIs() & N.I \\ 
+TU29 & Viene testato che sia possibile settare e accedere a tutti i POI contenuti nel ROI rappresentato da un oggetto RegionOfInterest & model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-getAllNearbyPOIs() \par model::\-navigator::\-graph::\-area::\-RegionOfInterestImp::\-setNearbyPOIs() & N.I \\ 
 \midrule 
-TU30 & Viene testato che sia possibile aggiungere EnrichedEdge e RegionOfInterest ad un oggetto MapGraph & model::navigator::graph::MapGraph::addAllRegions() \par model::navigator::graph::MapGraph::addEdge() \par model::navigator::graph::MapGraph::addAllEdges() & N.I \\ 
+TU30 & Viene testato che sia possibile aggiungere EnrichedEdge e RegionOfInterest ad un oggetto MapGraph & model::\-navigator::\-graph::\-MapGraph::\-addAllRegions() \par model::\-navigator::\-graph::\-MapGraph::\-addEdge() \par model::\-navigator::\-graph::\-MapGraph::\-addAllEdges() & N.I \\ 
 \midrule 
-TU31 & Viene testato che un oggetto MapGraph possa ritornare un grafo & model::navigator::graph::MapGraph::getGraph() & N.I \\ 
+TU31 & Viene testato che un oggetto MapGraph possa ritornare un grafo & model::\-navigator::\-graph::\-MapGraph::\-getGraph() & N.I \\ 
 \midrule 
-TU32 & Viene testato che sia possibile calcolare un persorso formato da una lista di Edges utilizzando un oggetto DjikstraPathFinder & model::navigator::algorithm::DijkstraPathFinder::calculatePath() & N.I \\ 
+TU32 & Viene testato che sia possibile calcolare un persorso formato da una lista di Edges utilizzando un oggetto DjikstraPathFinder & model::\-navigator::\-algorithm::\-DijkstraPathFinder::\-calculatePath() & N.I \\ 
 \midrule 
-TU33 & Viene testato che sia passibile settare ad un oggetto Navigator il grafo su cui si vuole effettuare la navigazione e calcolare un percorso da un certo punto ad un altro. In particolare deve essere testato che vengano lanciata l'eccezione NoGraphSetException nel caso in cui venga richiesto di calcolare un percorso e non sia stato settato alcun grafo, mentre deve essere lanciata l'eccezione NoNavigationInformationException nel caso in cui si richieda un percorso e quest'ultimo non è ancora stato calcolato & model::navigator::NavigatorImp::calculatePath() \par model::navigator::NavigatorImp::setGraph() \par model::navigator::NavigatorImp::getPath() & N.I \\ 
+TU33 & Viene testato che sia passibile settare ad un oggetto Navigator il grafo su cui si vuole effettuare la navigazione e calcolare un percorso da un certo punto ad un altro. In particolare deve essere testato che vengano lanciata l'eccezione NoGraphSetException nel caso in cui venga richiesto di calcolare un percorso e non sia stato settato alcun grafo, mentre deve essere lanciata l'eccezione NoNavigationInformationException nel caso in cui si richieda un percorso e quest'ultimo non è ancora stato calcolato & model::\-navigator::\-NavigatorImp::\-calculatePath() \par model::\-navigator::\-NavigatorImp::\-setGraph() \par model::\-navigator::\-NavigatorImp::\-getPath() & N.I \\ 
 \midrule 
-TU34 & Viene testato che sia possibile, settato un grafo e calcolato un percorso, ottenere tutte le istruzioni di navigazione. In particolare deve essere lanciata un'eccezione di tipo NoNavigationInformationException nel caso in cui si richiedano le informazioni riguardanti un percorso ma queste non siano disponibili poichè non è stato settato un grafo o non è ancora stato calcolato un percorso & model::navigator::NavigatorImp::getAllInstructions() & N.I \\ 
+TU34 & Viene testato che sia possibile, settato un grafo e calcolato un percorso, ottenere tutte le istruzioni di navigazione. In particolare deve essere lanciata un'eccezione di tipo NoNavigationInformationException nel caso in cui si richiedano le informazioni riguardanti un percorso ma queste non siano disponibili poichè non è stato settato un grafo o non è ancora stato calcolato un percorso & model::\-navigator::\-NavigatorImp::\-getAllInstructions() & N.I \\ 
 \midrule 
-TU35 & Viene testato che sia possibile, settato un grafo e calcolato un percorso, ottenere le informazioni di navifìgazione una di seguito all'altra. In particolare deve essere lanciata un'eccezione di tipo NoNavigationInformationException nel caso in cui si richiedano le informazioni riguardanti un percorso ma queste non siano disponibili poichè non è stato settato un grafo o non è ancora stato calcolato un percorso. Inoltre viene lanciata un'eccezione PathException nel caso in cui il beacon più potente rilevato non faccia parte del percorso previsto & model::navigator::NavigatorImp::toNextRegion() & N.I \\ 
+TU35 & Viene testato che sia possibile, settato un grafo e calcolato un percorso, ottenere le informazioni di navifìgazione una di seguito all'altra. In particolare deve essere lanciata un'eccezione di tipo NoNavigationInformationException nel caso in cui si richiedano le informazioni riguardanti un percorso ma queste non siano disponibili poichè non è stato settato un grafo o non è ancora stato calcolato un percorso. Inoltre viene lanciata un'eccezione PathException nel caso in cui il beacon più potente rilevato non faccia parte del percorso previsto & model::\-navigator::\-NavigatorImp::\-toNextRegion() & N.I \\ 
 \midrule 
-TU36 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto MyBeacon & model::beacon::MyBeacon::getUUID() \par model::beacon::MyBeacon::getMajor() \par model::beacon::MyBeacon::getBluetoothAddress() \par model::beacon::MyBeacon::getDistance() \par model::beacon::MyBeacon::getTxPower() \par model::beacon::MyBeacon::getRssi() \par model::beacon::MyBeacon::getMinor() \par model::beacon::MyBeacon::getBatteryLevel() \par model::beacon::MyBeacon::getBeaconTypeCode() & N.I \\ 
+TU36 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto MyBeacon & model::\-beacon::\-MyBeacon::\-getUUID() \par model::\-beacon::\-MyBeacon::\-getMajor() \par model::\-beacon::\-MyBeacon::\-getBluetoothAddress() \par model::\-beacon::\-MyBeacon::\-getDistance() \par model::\-beacon::\-MyBeacon::\-getTxPower() \par model::\-beacon::\-MyBeacon::\-getRssi() \par model::\-beacon::\-MyBeacon::\-getMinor() \par model::\-beacon::\-MyBeacon::\-getBatteryLevel() \par model::\-beacon::\-MyBeacon::\-getBeaconTypeCode() & N.I \\ 
 \midrule 
-TU37 & Viene testato che sia possibile aggiungere ad un oggetto Log le informazioni di un beacon & model::beacon::Logger::add() & N.I \\ 
+TU37 & Viene testato che sia possibile aggiungere ad un oggetto Log le informazioni di un beacon & model::\-beacon::\-Logger::\-add() & N.I \\ 
 \midrule 
-TU38 & Viene testato che sia possibile salvare un oggetto Log & model::beacon::Logger::save() & N.I \\ 
+TU38 & Viene testato che sia possibile salvare un oggetto Log & model::\-beacon::\-Logger::\-save() & N.I \\ 
 \midrule 
-TU39 & Viene testato che sia possibile mettere un oggetto BeaconManagerAdapter in background mode & model::beacon::BeaconManagerAdapter::setBackgroundMode() & N.I \\ 
+TU39 & Viene testato che sia possibile mettere un oggetto BeaconManagerAdapter in background mode & model::\-beacon::\-BeaconManagerAdapter::\-setBackgroundMode() & N.I \\ 
 \midrule 
-TU40 & Viene testato che sia possibile modificare il periodo di scansione di un oggetto BeaconManagerAdapter & model::beacon::BeaconManagerAdapter::modifyScanPeriod() & N.I \\ 
+TU40 & Viene testato che sia possibile modificare il periodo di scansione di un oggetto BeaconManagerAdapter & model::\-beacon::\-BeaconManagerAdapter::\-modifyScanPeriod() & N.I \\ 
 \midrule 
-TU41 & Viene testato che sia possibile accedere alle informazioni associate ad un oggetto InformationManagerImp. In particolare nel caso in cui nessuna lista di beacon sia disponibile oppure non sia stato ancora visto un beacon e quindi non sia possibile accedere alla mappa dell'edificio deve essere lanciata un'eccezione di tipo NoBeaconSeenException & model::InformationManagerImp::getBuildingMap() \par model::InformationManagerImp::getNearbyPOIs() \par model::InformationManagerImp::getAllVisibleBeacons() \par model::InformationManagerImp::getDatabaseService() & N.I \\ 
+TU41 & Viene testato che sia possibile accedere alle informazioni associate ad un oggetto InformationManagerImp. In particolare nel caso in cui nessuna lista di beacon sia disponibile oppure non sia stato ancora visto un beacon e quindi non sia possibile accedere alla mappa dell'edificio deve essere lanciata un'eccezione di tipo NoBeaconSeenException & model::\-InformationManagerImp::\-getBuildingMap() \par model::\-InformationManagerImp::\-getNearbyPOIs() \par model::\-InformationManagerImp::\-getAllVisibleBeacons() \par model::\-InformationManagerImp::\-getDatabaseService() & N.I \\ 
 \midrule 
-TU42 & Viene testato che sia possibile aggiungere e rimuovere un listener ad un oggetto NavigationManagerImp. In particolare viene anche testato che nel caso in cui sia registrato almeno un listener venga avvertito nel caso in cui venga settata una nuova lista di beacon & model::NavigationManagerImp::addBeaconListener() \par model::NavigationManagerImp::removeBeaconListener() & N.I \\ 
+TU42 & Viene testato che sia possibile aggiungere e rimuovere un listener ad un oggetto NavigationManagerImp. In particolare viene anche testato che nel caso in cui sia registrato almeno un listener venga avvertito nel caso in cui venga settata una nuova lista di beacon & model::\-NavigationManagerImp::\-addBeaconListener() \par model::\-NavigationManagerImp::\-removeBeaconListener() & N.I \\ 
 \midrule 
-TU43 & Viene testato che sia possibile registrare e salvare informazioni sui beacon rilevati utilizzando un oggetto InformationManagerImp & model::InformationManagerImp::startRecordingBeacons() \par model::InformationManagerImp::saveRecordedBeaconInformation() & N.I \\ 
+TU43 & Viene testato che sia possibile registrare e salvare informazioni sui beacon rilevati utilizzando un oggetto InformationManagerImp & model::\-InformationManagerImp::\-startRecordingBeacons() \par model::\-InformationManagerImp::\-saveRecordedBeaconInformation() & N.I \\ 
 \midrule 
-TU44 & Viene testato che sia possibile gestire la navigazione utilizzando un oggetto della classe NavigationManagerImp & model::NavigationManagerImp::startNavigation() \par model::NavigationManagerImp::getAllNavigationInstruction() \par model::NavigationManagerImp::getNextInstruction() \par model::NavigationManagerImp::stopNavigation() & N.I \\ 
+TU44 & Viene testato che sia possibile gestire la navigazione utilizzando un oggetto della classe NavigationManagerImp & model::\-NavigationManagerImp::\-startNavigation() \par model::\-NavigationManagerImp::\-getAllNavigationInstruction() \par model::\-NavigationManagerImp::\-getNextInstruction() \par model::\-NavigationManagerImp::\-stopNavigation() & N.I \\ 
 \midrule 
-TU45 & Viene testato che sia possibile creare e ritornare un oggetto BuildingService.  & model::dataaccess::service::ServiceHelper::getService() & N.I \\ 
+TU45 & Viene testato che sia possibile creare e ritornare un oggetto BuildingService.  & model::\-dataaccess::\-service::\-ServiceHelper::\-getService() & N.I \\ 
 \midrule 
-TU46 & Viene testato che sia possibile eliminare una foto dal database locale, recuperarne una o tutte quelle riguardanti un Edge. & model::dataaccess::service::PhotoService::deletePhoto() \par model::dataaccess::service::PhotoService::findPhoto() \par model::dataaccess::service::PhotoService::findAllPhotosOfEdge() & N.I \\ 
+TU46 & Viene testato che sia possibile eliminare una foto dal database locale, recuperarne una o tutte quelle riguardanti un Edge. & model::\-dataaccess::\-service::\-PhotoService::\-deletePhoto() \par model::\-dataaccess::\-service::\-PhotoService::\-findPhoto() \par model::\-dataaccess::\-service::\-PhotoService::\-findAllPhotosOfEdge() & N.I \\ 
 \midrule 
-TU47 & Viene testato che sia possibile creare un oggetto PhotoRef dato un oggetto PhotoTable. & model::dataaccess::service::PhotoService::fromTableToBo() & N.I \\ 
+TU47 & Viene testato che sia possibile creare un oggetto PhotoRef dato un oggetto PhotoTable. & model::\-dataaccess::\-service::\-PhotoService::\-fromTableToBo() & N.I \\ 
 \midrule 
-TU48 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto PhotoTable, sia possibile costruire un oggetto PhotoTable e inserirlo nel database locale. & model::dataaccess::service::PhotoService::convertAndInsert() & N.I \\ 
+TU48 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto PhotoTable, sia possibile costruire un oggetto PhotoTable e inserirlo nel database locale. & model::\-dataaccess::\-service::\-PhotoService::\-convertAndInsert() & N.I \\ 
 \midrule 
-TU49 & Viene testato che sia possibile eliminare una RegionOfInterest dal database locale, recuperarne una o tutte quelle riguardanti un edificio, dato il major del suddetto edificio. & model::dataaccess::service::RegionOfInterestService::deleteRegionOfInterest() \par model::dataaccess::service::RegionOfInterestService::findRegionOfInterest() \par model::dataaccess::service::RegionOfInterestService::findAllRegionsWithMajor() & N.I \\ 
+TU49 & Viene testato che sia possibile eliminare una RegionOfInterest dal database locale, recuperarne una o tutte quelle riguardanti un edificio, dato il major del suddetto edificio. & model::\-dataaccess::\-service::\-RegionOfInterestService::\-deleteRegionOfInterest() \par model::\-dataaccess::\-service::\-RegionOfInterestService::\-findRegionOfInterest() \par model::\-dataaccess::\-service::\-RegionOfInterestService::\-findAllRegionsWithMajor() & N.I \\ 
 \midrule 
-TU50 & Viene testato che sia possibile creare un oggetto RegionOfInterestImp dato un oggetto RegionOfInterestTable. & model::dataaccess::service::RegionOfInterestService::fromTableToBo() & N.I \\ 
+TU50 & Viene testato che sia possibile creare un oggetto RegionOfInterestImp dato un oggetto RegionOfInterestTable. & model::\-dataaccess::\-service::\-RegionOfInterestService::\-fromTableToBo() & N.I \\ 
 \midrule 
-TU51 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto RegionOfInterestTable, sia possibile costruire un oggetto RegionOfInterestTable e inserirlo nel database locale. & model::dataaccess::service::RegionOfInterestService::convertAndInsert() & N.I \\ 
+TU51 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto RegionOfInterestTable, sia possibile costruire un oggetto RegionOfInterestTable e inserirlo nel database locale. & model::\-dataaccess::\-service::\-RegionOfInterestService::\-convertAndInsert() & N.I \\ 
 \midrule 
-TU52 & Viene testato che sia possibile eliminare un Edge dal database locale, recuperarne uno o tutti quelli riguardanti un edificio, dato il major del suddetto edificio. & model::dataaccess::service::EdgeService::deleteEdge() \par model::dataaccess::service::EdgeService::findEdge() \par model::dataaccess::service::EdgeService::findAllEdgesOfBuilding() & N.I \\ 
+TU52 & Viene testato che sia possibile eliminare un Edge dal database locale, recuperarne uno o tutti quelli riguardanti un edificio, dato il major del suddetto edificio. & model::\-dataaccess::\-service::\-EdgeService::\-deleteEdge() \par model::\-dataaccess::\-service::\-EdgeService::\-findEdge() \par model::\-dataaccess::\-service::\-EdgeService::\-findAllEdgesOfBuilding() & N.I \\ 
 \midrule 
-TU53 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto EdgeTable, sia possibile costruire un oggetto EdgeTable e inserirlo nel database locale. & model::dataaccess::service::EdgeService::convertAndInsert() & N.I \\ 
+TU53 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto EdgeTable, sia possibile costruire un oggetto EdgeTable e inserirlo nel database locale. & model::\-dataaccess::\-service::\-EdgeService::\-convertAndInsert() & N.I \\ 
 \midrule 
-TU54 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto EdgeTypeTable, sia possibile costruire un oggetto EdgeTypeTable e inserirlo nel database locale. & model::dataaccess::service::EdgeService::convertAndInsertEdgeType() & N.I \\ 
+TU54 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto EdgeTypeTable, sia possibile costruire un oggetto EdgeTypeTable e inserirlo nel database locale. & model::\-dataaccess::\-service::\-EdgeService::\-convertAndInsertEdgeType() & N.I \\ 
 \midrule 
-TU55 & Viene testato che sia possibile creare un oggetto ElevatorEdge dato un oggetto EdgeTable. & model::dataaccess::service::EdgeService::fromTableToBo() & N.I \\ 
+TU55 & Viene testato che sia possibile creare un oggetto ElevatorEdge dato un oggetto EdgeTable. & model::\-dataaccess::\-service::\-EdgeService::\-fromTableToBo() & N.I \\ 
 \midrule 
-TU56 & Viene testato che sia possibile creare un oggetto StairEdge dato un oggetto EdgeTable. & model::dataaccess::service::EdgeService::fromTableToBo() & N.I \\ 
+TU56 & Viene testato che sia possibile creare un oggetto StairEdge dato un oggetto EdgeTable. & model::\-dataaccess::\-service::\-EdgeService::\-fromTableToBo() & N.I \\ 
 \midrule 
-TU57 & Viene testato che sia possibile creare un oggetto DefaultEdge dato un oggetto EdgeTable. & model::dataaccess::service::EdgeService::fromTableToBo() & N.I \\ 
+TU57 & Viene testato che sia possibile creare un oggetto DefaultEdge dato un oggetto EdgeTable. & model::\-dataaccess::\-service::\-EdgeService::\-fromTableToBo() & N.I \\ 
 \midrule 
-TU58 & Viene testato che sia possibile eliminare un PointOfInterest dal database locale, recuperarne uno o tutti quelli riguardanti un edificio, dato il major del suddetto edificio. & model::dataaccess::service::PointOfInterestService::deletePointOfInterest() \par model::dataaccess::service::PointOfInterestService::findPointOfInterest() \par model::dataaccess::service::PointOfInterestService::findAllPointsWithMajor() & N.I \\ 
+TU58 & Viene testato che sia possibile eliminare un PointOfInterest dal database locale, recuperarne uno o tutti quelli riguardanti un edificio, dato il major del suddetto edificio. & model::\-dataaccess::\-service::\-PointOfInterestService::\-deletePointOfInterest() \par model::\-dataaccess::\-service::\-PointOfInterestService::\-findPointOfInterest() \par model::\-dataaccess::\-service::\-PointOfInterestService::\-findAllPointsWithMajor() & N.I \\ 
 \midrule 
-TU59 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto PointOfInterestTable, sia possibile costruire un oggetto PointOfInterestTable e inserirlo nel database locale. & model::dataaccess::service::PointOfInterestService::convertAndInsert() & N.I \\ 
+TU59 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto PointOfInterestTable, sia possibile costruire un oggetto PointOfInterestTable e inserirlo nel database locale. & model::\-dataaccess::\-service::\-PointOfInterestService::\-convertAndInsert() & N.I \\ 
 \midrule 
-TU60 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto CategoryTable, sia possibile costruire un oggetto CategoryTable e inserirlo nel database locale. & model::dataaccess::service::PointOfInterestService::convertAndInsertCategory() & N.I \\ 
+TU60 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto CategoryTable, sia possibile costruire un oggetto CategoryTable e inserirlo nel database locale. & model::\-dataaccess::\-service::\-PointOfInterestService::\-convertAndInsertCategory() & N.I \\ 
 \midrule 
-TU61 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto RoiPoiTable, sia possibile costruire un oggetto RoiPoiTable e inserirlo nel database locale. & model::dataaccess::service::PointOfInterestService::convertAndInsertRoiPoi() & N.I \\ 
+TU61 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto RoiPoiTable, sia possibile costruire un oggetto RoiPoiTable e inserirlo nel database locale. & model::\-dataaccess::\-service::\-PointOfInterestService::\-convertAndInsertRoiPoi() & N.I \\ 
 \midrule 
-TU62 & Viene testato che sia possibile creare un oggetto PointOfInterestImp, dato un oggetto PointOfInterestTable. & model::dataaccess::service::PointOfInterestService::fromTableToBo() & N.I \\ 
+TU62 & Viene testato che sia possibile creare un oggetto PointOfInterestImp, dato un oggetto PointOfInterestTable. & model::\-dataaccess::\-service::\-PointOfInterestService::\-fromTableToBo() & N.I \\ 
 \midrule 
-TU63 & Viene testato che sia possibile eliminare una BuildingMap dal database locale, recuperarne una o tutte quelle presenti nel database locale. & model::dataaccess::service::BuildingService::deleteBuilding() \par model::dataaccess::service::BuildingService::findBuildingByMajor() \par model::dataaccess::service::BuildingService::findAllBuildings() & N.I \\ 
+TU63 & Viene testato che sia possibile eliminare una BuildingMap dal database locale, recuperarne una o tutte quelle presenti nel database locale. & model::\-dataaccess::\-service::\-BuildingService::\-deleteBuilding() \par model::\-dataaccess::\-service::\-BuildingService::\-findBuildingByMajor() \par model::\-dataaccess::\-service::\-BuildingService::\-findAllBuildings() & N.I \\ 
 \midrule 
-TU64 & Viene testato che sia possibile recuperare una BuildingMap dal database remoto o le informazioni di tutte quelle presenti nel database remoto. & model::dataaccess::service::BuildingService::findAllRemoteBuildings() \par model::dataaccess::service::BuildingService::findRemoteBuildingByMajor() & N.I \\ 
+TU64 & Viene testato che sia possibile recuperare una BuildingMap dal database remoto o le informazioni di tutte quelle presenti nel database remoto. & model::\-dataaccess::\-service::\-BuildingService::\-findAllRemoteBuildings() \par model::\-dataaccess::\-service::\-BuildingService::\-findRemoteBuildingByMajor() & N.I \\ 
 \midrule 
-TU65 & Viene testato che sia possibile recuperare una BuildingMap dal database remoto e inserirla nel database locale. & model::dataaccess::service::BuildingService::retrieveAndInsertMap() & N.I \\ 
+TU65 & Viene testato che sia possibile recuperare una BuildingMap dal database remoto e inserirla nel database locale. & model::\-dataaccess::\-service::\-BuildingService::\-retrieveAndInsertMap() & N.I \\ 
 \midrule 
-TU66 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto BuildingTable, sia possibile costruire un oggetto BuildingTable e inserirlo nel database locale. & model::dataaccess::service::BuildingService::convertAndInsert() & N.I \\ 
+TU66 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto BuildingTable, sia possibile costruire un oggetto BuildingTable e inserirlo nel database locale. & model::\-dataaccess::\-service::\-BuildingService::\-convertAndInsert() & N.I \\ 
 \midrule 
-TU67 & Viene testato che, dato il major di un edificio, sia possibile verificare la presenza della BuildingMap nel database locale, verificare se è aggiornata all'ultima versione disponibile e aggiornarla. & model::dataaccess::service::BuildingService::isBuildingMapPresent() \par model::dataaccess::service::BuildingService::isBuildingMapUpdated() \par model::dataaccess::service::BuildingService::updateBuildingMap() & N.I \\ 
+TU67 & Viene testato che, dato il major di un edificio, sia possibile verificare la presenza della BuildingMap nel database locale, verificare se è aggiornata all'ultima versione disponibile e aggiornarla. & model::\-dataaccess::\-service::\-BuildingService::\-isBuildingMapPresent() \par model::\-dataaccess::\-service::\-BuildingService::\-isBuildingMapUpdated() \par model::\-dataaccess::\-service::\-BuildingService::\-updateBuildingMap() & N.I \\ 
 \midrule 
-TU68 & Viene testato che sia possibile creare un oggetto BuildingMapImp, dato un oggetto BuildingTable. & model::dataaccess::service::BuildingService::fromTableToBo() & N.I \\ 
+TU68 & Viene testato che sia possibile creare un oggetto BuildingMapImp, dato un oggetto BuildingTable. & model::\-dataaccess::\-service::\-BuildingService::\-fromTableToBo() & N.I \\ 
 \midrule 
-TU69 & Viene testato che sia possibile creare e ritornare un oggetto SQLiteDaoFactory dato un oggetto SQLiteDatabase. Viene inoltre testato che sia possibile creare e ritornare un oggetto RemoteDaoFactory.  & model::dataaccess::dao::DaoFactoryHelper::getSQLiteDaoFactory() \par model::dataaccess::dao::DaoFactoryHelper::getRemoteDaoFactory() & N.I \\ 
+TU69 & Viene testato che sia possibile creare e ritornare un oggetto SQLiteDaoFactory dato un oggetto SQLiteDatabase. Viene inoltre testato che sia possibile creare e ritornare un oggetto RemoteDaoFactory.  & model::\-dataaccess::\-dao::\-DaoFactoryHelper::\-getSQLiteDaoFactory() \par model::\-dataaccess::\-dao::\-DaoFactoryHelper::\-getRemoteDaoFactory() & N.I \\ 
 \midrule 
-TU70 & Viene testato che sia possibile creare e ritornare: un oggetto RemoteBuildingDao, un oggetto RemotePointOfInterestDao, un oggetto RemoteRegionOfInterestDao, un oggetto RemoteRoiPoiDao, un oggetto RemoteEdgeDao, un oggetto RemoteEdgeTypeDao, un oggetto RemoteCategoryDao, un oggetto RemotePhotoDao.  & model::dataaccess::dao::RemoteDaoFactory::getBuildingDao() \par model::dataaccess::dao::RemoteDaoFactory::getPointOfInterestDao() \par model::dataaccess::dao::RemoteDaoFactory::getRoiPoiDao() \par model::dataaccess::dao::RemoteDaoFactory::getEdgeDao() \par model::dataaccess::dao::RemoteDaoFactory::getCategoryDao() \par model::dataaccess::dao::RemoteDaoFactory::getEdgeTypeDao() \par model::dataaccess::dao::RemoteDaoFactory::getPhotoDao() \par model::dataaccess::dao::RemoteDaoFactory::getRegionOfInterestDao() & N.I \\ 
+TU70 & Viene testato che sia possibile creare e ritornare: un oggetto RemoteBuildingDao, un oggetto RemotePointOfInterestDao, un oggetto RemoteRegionOfInterestDao, un oggetto RemoteRoiPoiDao, un oggetto RemoteEdgeDao, un oggetto RemoteEdgeTypeDao, un oggetto RemoteCategoryDao, un oggetto RemotePhotoDao.  & model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getBuildingDao() \par model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getPointOfInterestDao() \par model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getRoiPoiDao() \par model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getEdgeDao() \par model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getCategoryDao() \par model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getEdgeTypeDao() \par model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getPhotoDao() \par model::\-dataaccess::\-dao::\-RemoteDaoFactory::\-getRegionOfInterestDao() & N.I \\ 
 \midrule 
-TU71 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto BuildingTable, sia possibile costruire un oggetto BuildingTable e ritornarlo. & model::dataaccess::dao::RemoteBuildingDao::fromJSONToTable() & N.I \\ 
+TU71 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto BuildingTable, sia possibile costruire un oggetto BuildingTable e ritornarlo. & model::\-dataaccess::\-dao::\-RemoteBuildingDao::\-fromJSONToTable() & N.I \\ 
 \midrule 
-TU72 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto PointOfInterestTable, sia possibile costruire un oggetto PointOfInterestTable e ritornarlo. & model::dataaccess::dao::RemotePointOfInterestDao::fromJSONToTable() & N.I \\ 
+TU72 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto PointOfInterestTable, sia possibile costruire un oggetto PointOfInterestTable e ritornarlo. & model::\-dataaccess::\-dao::\-RemotePointOfInterestDao::\-fromJSONToTable() & N.I \\ 
 \midrule 
-TU73 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto RegionOfInterestTable, sia possibile costruire un oggetto RegionOfInterestTable e ritornarlo. & model::dataaccess::dao::RemoteRegionOfInterestDao::fromJSONToTable() & N.I \\ 
+TU73 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto RegionOfInterestTable, sia possibile costruire un oggetto RegionOfInterestTable e ritornarlo. & model::\-dataaccess::\-dao::\-RemoteRegionOfInterestDao::\-fromJSONToTable() & N.I \\ 
 \midrule 
-TU74 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto RoiPoiTable, sia possibile costruire un oggetto RoiPoiTable e ritornarlo. & model::dataaccess::dao::RemoteRoiPoiDao::fromJSONToTable() & N.I \\ 
+TU74 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto RoiPoiTable, sia possibile costruire un oggetto RoiPoiTable e ritornarlo. & model::\-dataaccess::\-dao::\-RemoteRoiPoiDao::\-fromJSONToTable() & N.I \\ 
 \midrule 
-TU75 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto EdgeTable, sia possibile costruire un oggetto EdgeTable e ritornarlo. & model::dataaccess::dao::RemoteEdgeDao::fromJSONToTable() & N.I \\ 
+TU75 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto EdgeTable, sia possibile costruire un oggetto EdgeTable e ritornarlo. & model::\-dataaccess::\-dao::\-RemoteEdgeDao::\-fromJSONToTable() & N.I \\ 
 \midrule 
-TU76 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto EdgeTypeTable, sia possibile costruire un oggetto EdgeTypeTable e ritornarlo. & model::dataaccess::dao::RemoteEdgeTypeDao::fromJSONToTable() & N.I \\ 
+TU76 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto EdgeTypeTable, sia possibile costruire un oggetto EdgeTypeTable e ritornarlo. & model::\-dataaccess::\-dao::\-RemoteEdgeTypeDao::\-fromJSONToTable() & N.I \\ 
 \midrule 
-TU77 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto CategoryTable, sia possibile costruire un oggetto CategoryTable e ritornarlo. & model::dataaccess::dao::RemoteCategoryDao::fromJSONToTable() & N.I \\ 
+TU77 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto CategoryTable, sia possibile costruire un oggetto CategoryTable e ritornarlo. & model::\-dataaccess::\-dao::\-RemoteCategoryDao::\-fromJSONToTable() & N.I \\ 
 \midrule 
-TU78 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto PhotoTable, sia possibile costruire un oggetto PhotoTable e ritornarlo. & model::dataaccess::dao::RemotePhotoDao::fromJSONToTable() & N.I \\ 
+TU78 & Viene testato che, dato un oggetto JsonObject che possiede gli stessi valori di un oggetto PhotoTable, sia possibile costruire un oggetto PhotoTable e ritornarlo. & model::\-dataaccess::\-dao::\-RemotePhotoDao::\-fromJSONToTable() & N.I \\ 
 \midrule 
-TU79 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto BuildingTable. & model::dataaccess::dao::BuildingTable::getId() \par model::dataaccess::dao::BuildingTable::getUUID() \par model::dataaccess::dao::BuildingTable::getMajor() \par model::dataaccess::dao::BuildingTable::getVersion() \par model::dataaccess::dao::BuildingTable::getName() \par model::dataaccess::dao::BuildingTable::getDescription() \par model::dataaccess::dao::BuildingTable::getOpeningHours() \par model::dataaccess::dao::BuildingTable::getAddress() \par model::dataaccess::dao::BuildingTable::getSize() & N.I \\ 
+TU79 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto BuildingTable. & model::\-dataaccess::\-dao::\-BuildingTable::\-getId() \par model::\-dataaccess::\-dao::\-BuildingTable::\-getUUID() \par model::\-dataaccess::\-dao::\-BuildingTable::\-getMajor() \par model::\-dataaccess::\-dao::\-BuildingTable::\-getVersion() \par model::\-dataaccess::\-dao::\-BuildingTable::\-getName() \par model::\-dataaccess::\-dao::\-BuildingTable::\-getDescription() \par model::\-dataaccess::\-dao::\-BuildingTable::\-getOpeningHours() \par model::\-dataaccess::\-dao::\-BuildingTable::\-getAddress() \par model::\-dataaccess::\-dao::\-BuildingTable::\-getSize() & N.I \\ 
 \midrule 
-TU80 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto PointOfInterestTable. & model::dataaccess::dao::PointOfInterestTable::getId() \par model::dataaccess::dao::PointOfInterestTable::getName() \par model::dataaccess::dao::PointOfInterestTable::getDescription() \par model::dataaccess::dao::PointOfInterestTable::getCategoryId() & N.I \\ 
+TU80 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto PointOfInterestTable. & model::\-dataaccess::\-dao::\-PointOfInterestTable::\-getId() \par model::\-dataaccess::\-dao::\-PointOfInterestTable::\-getName() \par model::\-dataaccess::\-dao::\-PointOfInterestTable::\-getDescription() \par model::\-dataaccess::\-dao::\-PointOfInterestTable::\-getCategoryId() & N.I \\ 
 \midrule 
-TU81 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto RegionOfInterestTable. & model::dataaccess::dao::RegionOfInterestTable::getId() \par model::dataaccess::dao::RegionOfInterestTable::getUUID() \par model::dataaccess::dao::RegionOfInterestTable::getMajor() \par model::dataaccess::dao::RegionOfInterestTable::getMinor() & N.I \\ 
+TU81 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto RegionOfInterestTable. & model::\-dataaccess::\-dao::\-RegionOfInterestTable::\-getId() \par model::\-dataaccess::\-dao::\-RegionOfInterestTable::\-getUUID() \par model::\-dataaccess::\-dao::\-RegionOfInterestTable::\-getMajor() \par model::\-dataaccess::\-dao::\-RegionOfInterestTable::\-getMinor() & N.I \\ 
 \midrule 
-TU82 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto RoiPoiTable. & model::dataaccess::dao::RoiPoiTable::getRoiID() \par model::dataaccess::dao::RoiPoiTable::getPoiID() & N.I \\ 
+TU82 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto RoiPoiTable. & model::\-dataaccess::\-dao::\-RoiPoiTable::\-getRoiID() \par model::\-dataaccess::\-dao::\-RoiPoiTable::\-getPoiID() & N.I \\ 
 \midrule 
-TU83 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto EdgeTable. & model::dataaccess::dao::EdgeTable::getId() \par model::dataaccess::dao::EdgeTable::getStartROI() \par model::dataaccess::dao::EdgeTable::getEndROI() \par model::dataaccess::dao::EdgeTable::getDistance() \par model::dataaccess::dao::EdgeTable::getCoordinate() \par model::dataaccess::dao::EdgeTable::getTypeId() \par model::dataaccess::dao::EdgeTable::getAction() \par model::dataaccess::dao::EdgeTable::getLongDescription() & N.I \\ 
+TU83 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto EdgeTable. & model::\-dataaccess::\-dao::\-EdgeTable::\-getId() \par model::\-dataaccess::\-dao::\-EdgeTable::\-getStartROI() \par model::\-dataaccess::\-dao::\-EdgeTable::\-getEndROI() \par model::\-dataaccess::\-dao::\-EdgeTable::\-getDistance() \par model::\-dataaccess::\-dao::\-EdgeTable::\-getCoordinate() \par model::\-dataaccess::\-dao::\-EdgeTable::\-getTypeId() \par model::\-dataaccess::\-dao::\-EdgeTable::\-getAction() \par model::\-dataaccess::\-dao::\-EdgeTable::\-getLongDescription() & N.I \\ 
 \midrule 
-TU84 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto EdgeTypeTable. & model::dataaccess::dao::EdgeTypeTable::getId() \par model::dataaccess::dao::EdgeTypeTable::getTypeName() & N.I \\ 
+TU84 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto EdgeTypeTable. & model::\-dataaccess::\-dao::\-EdgeTypeTable::\-getId() \par model::\-dataaccess::\-dao::\-EdgeTypeTable::\-getTypeName() & N.I \\ 
 \midrule 
-TU85 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto CategoryTable. & model::dataaccess::dao::CategoryTable::getId() \par model::dataaccess::dao::CategoryTable::getDescription() & N.I \\ 
+TU85 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto CategoryTable. & model::\-dataaccess::\-dao::\-CategoryTable::\-getId() \par model::\-dataaccess::\-dao::\-CategoryTable::\-getDescription() & N.I \\ 
 \midrule 
-TU86 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto PhotoTable. & model::dataaccess::dao::PhotoTable::getId() \par model::dataaccess::dao::PhotoTable::getUrl() \par model::dataaccess::dao::PhotoTable::getEdgeId() & N.I \\ 
+TU86 & Viene testato che sia possibile accedere a tutte le informazioni relative ad un oggetto PhotoTable. & model::\-dataaccess::\-dao::\-PhotoTable::\-getId() \par model::\-dataaccess::\-dao::\-PhotoTable::\-getUrl() \par model::\-dataaccess::\-dao::\-PhotoTable::\-getEdgeId() & N.I \\ 
 \midrule 
-TU87 & Viene testato che sia possibile creare e ritornare: un oggetto SQLiteBuildingDao, un oggetto SQLitePointOfInterestDao, un oggetto SQLiteRegionOfInterestDao, un oggetto SQLiteRoiPoiDao, un oggetto SQLiteEdgeDao, un oggetto SQLiteEdgeTypeDao, un oggetto SQLiteCategoryDao, un oggetto SQLitePhotoDao.  & model::dataaccess::dao::SQLiteDaoFactory::getBuildingDao() \par model::dataaccess::dao::SQLiteDaoFactory::getPointOfInterestDao() \par model::dataaccess::dao::SQLiteDaoFactory::getRegionOfInterestDao() \par model::dataaccess::dao::SQLiteDaoFactory::getRoiPoiDao() \par model::dataaccess::dao::SQLiteDaoFactory::getEdgeDao() \par model::dataaccess::dao::SQLiteDaoFactory::getCategoryDao() \par model::dataaccess::dao::SQLiteDaoFactory::getEdgeTypeDao() \par model::dataaccess::dao::SQLiteDaoFactory::getPhotoDao() & N.I \\ 
+TU87 & Viene testato che sia possibile creare e ritornare: un oggetto SQLiteBuildingDao, un oggetto SQLitePointOfInterestDao, un oggetto SQLiteRegionOfInterestDao, un oggetto SQLiteRoiPoiDao, un oggetto SQLiteEdgeDao, un oggetto SQLiteEdgeTypeDao, un oggetto SQLiteCategoryDao, un oggetto SQLitePhotoDao.  & model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getBuildingDao() \par model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getPointOfInterestDao() \par model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getRegionOfInterestDao() \par model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getRoiPoiDao() \par model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getEdgeDao() \par model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getCategoryDao() \par model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getEdgeTypeDao() \par model::\-dataaccess::\-dao::\-SQLiteDaoFactory::\-getPhotoDao() & N.I \\ 
 \midrule 
-TU88 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "Building" del database locale. In particolare, nel caso della ricerca viene testato che sia possibile effettuarla sia tramite identificativo che tramite major dell'edificio e che sia possibile ottenere le informazioni di tutte le mappe presenti sul database locale. & model::dataaccess::dao::SQLiteBuildingDao::insertBuilding() \par model::dataaccess::dao::SQLiteBuildingDao::deleteBuilding() \par model::dataaccess::dao::SQLiteBuildingDao::findBuildingById() \par model::dataaccess::dao::SQLiteBuildingDao::findBuildingByMajor() \par model::dataaccess::dao::SQLiteBuildingDao::findAllBuildings() \par model::dataaccess::dao::SQLiteBuildingDao::updateBuilding() & N.I \\ 
+TU88 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "Building" del database locale. In particolare, nel caso della ricerca viene testato che sia possibile effettuarla sia tramite identificativo che tramite major dell'edificio e che sia possibile ottenere le informazioni di tutte le mappe presenti sul database locale. & model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-insertBuilding() \par model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-deleteBuilding() \par model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-findBuildingById() \par model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-findBuildingByMajor() \par model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-findAllBuildings() \par model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-updateBuilding() & N.I \\ 
 \midrule 
-TU89 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto BuildingTable. & model::dataaccess::dao::SQLiteBuildingDao::cursorToType() & N.I \\ 
+TU89 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto BuildingTable. & model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-cursorToType() & N.I \\ 
 \midrule 
-TU90 & Viene verificato che, dato il major di un edificio, sia possibile verificare se la sua mappa è presente nel database locale. & model::dataaccess::dao::SQLiteBuildingDao::isBuildingMapPresent() & N.I \\ 
+TU90 & Viene verificato che, dato il major di un edificio, sia possibile verificare se la sua mappa è presente nel database locale. & model::\-dataaccess::\-dao::\-SQLiteBuildingDao::\-isBuildingMapPresent() & N.I \\ 
 \midrule 
-TU91 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "POI" del database locale. In particolare, nel caso della ricerca viene testato che, dato il major di un edificio, sia possibile recuperare tutti gli oggetti PointOfInterestTable che rappresentano i PointOfInterest di quell'edificio. & model::dataaccess::dao::SQLitePointOfInterestDao::insertPointOfInterest() \par model::dataaccess::dao::SQLitePointOfInterestDao::deletePointOfInterest() \par model::dataaccess::dao::SQLitePointOfInterestDao::findPointOfInterest() \par model::dataaccess::dao::SQLitePointOfInterestDao::findAllPointsWithMajor() \par model::dataaccess::dao::SQLitePointOfInterestDao::updatePointOfInterest() & N.I \\ 
+TU91 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "POI" del database locale. In particolare, nel caso della ricerca viene testato che, dato il major di un edificio, sia possibile recuperare tutti gli oggetti PointOfInterestTable che rappresentano i PointOfInterest di quell'edificio. & model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-insertPointOfInterest() \par model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-deletePointOfInterest() \par model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-findPointOfInterest() \par model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-findAllPointsWithMajor() \par model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-updatePointOfInterest() & N.I \\ 
 \midrule 
-TU92 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto PointOfInterestTable. & model::dataaccess::dao::SQLitePointOfInterestDao::cursorToType() & N.I \\ 
+TU92 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto PointOfInterestTable. & model::\-dataaccess::\-dao::\-SQLitePointOfInterestDao::\-cursorToType() & N.I \\ 
 \midrule 
-TU93 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "ROI" del database locale. In particolare, nel caso della ricerca viene testato che, dato il major di un edificio, sia possibile recuperare tutti gli oggetti RegionOfInterestTable che rappresentano le RegionOfinterest di quell'edificio. & model::dataaccess::dao::SQLiteRegionOfInterestDao::insertRegionOfInterest() \par model::dataaccess::dao::SQLiteRegionOfInterestDao::deleteRegionOfInterest() \par model::dataaccess::dao::SQLiteRegionOfInterestDao::findRegionOfInterest() \par model::dataaccess::dao::SQLiteRegionOfInterestDao::findAllRegionsWithMajor() \par model::dataaccess::dao::SQLiteRegionOfInterestDao::updateRegionOfInterest() & N.I \\ 
+TU93 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "ROI" del database locale. In particolare, nel caso della ricerca viene testato che, dato il major di un edificio, sia possibile recuperare tutti gli oggetti RegionOfInterestTable che rappresentano le RegionOfinterest di quell'edificio. & model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-insertRegionOfInterest() \par model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-deleteRegionOfInterest() \par model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-findRegionOfInterest() \par model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-findAllRegionsWithMajor() \par model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-updateRegionOfInterest() & N.I \\ 
 \midrule 
-TU94 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto RegionOfInterestTable. & model::dataaccess::dao::SQLiteRegionOfInterestDao::cursorToType() & N.I \\ 
+TU94 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto RegionOfInterestTable. & model::\-dataaccess::\-dao::\-SQLiteRegionOfInterestDao::\-cursorToType() & N.I \\ 
 \midrule 
-TU95 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "ROIPOI" del database locale. In particolare, nel caso della ricerca o della rimozione viene testato che, dato l'identificativo di un PointOfInterest, sia possibile recuperare o eliminare tutti gli oggetti RegionOfInterestTable che rappresentano tutte le RegionOfInterest che lo contengono e viceversa.  & model::dataaccess::dao::SQLiteRoiPoiDao::insertRoiPoi() \par model::dataaccess::dao::SQLiteRoiPoiDao::deleteRoiPoisWherePoi() \par model::dataaccess::dao::SQLiteRoiPoiDao::deleteRoiPoisWhereRoi() \par model::dataaccess::dao::SQLiteRoiPoiDao::findAllRegionsWithPoi() \par model::dataaccess::dao::SQLiteRoiPoiDao::findAllPointsWithRoi() \par model::dataaccess::dao::SQLiteRoiPoiDao::updateRoiPoi() & N.I \\ 
+TU95 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "ROIPOI" del database locale. In particolare, nel caso della ricerca o della rimozione viene testato che, dato l'identificativo di un PointOfInterest, sia possibile recuperare o eliminare tutti gli oggetti RegionOfInterestTable che rappresentano tutte le RegionOfInterest che lo contengono e viceversa.  & model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-insertRoiPoi() \par model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-deleteRoiPoisWherePoi() \par model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-deleteRoiPoisWhereRoi() \par model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-findAllRegionsWithPoi() \par model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-findAllPointsWithRoi() \par model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-updateRoiPoi() & N.I \\ 
 \midrule 
-TU96 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto RoiPoiTable. & model::dataaccess::dao::SQLiteRoiPoiDao::cursorToType() & N.I \\ 
+TU96 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto RoiPoiTable. & model::\-dataaccess::\-dao::\-SQLiteRoiPoiDao::\-cursorToType() & N.I \\ 
 \midrule 
-TU97 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "Edge" del database locale. In particolare, nel caso della ricerca viene testato che, dato il major di un edificio, sia possibile recuperare tutti gli oggetti EdgeTable che rappresentano gli Edge di quell'edificio. & model::dataaccess::dao::SQLiteEdgeDao::insertEdge() \par model::dataaccess::dao::SQLiteEdgeDao::deleteEdge() \par model::dataaccess::dao::SQLiteEdgeDao::findEdge() \par model::dataaccess::dao::SQLiteEdgeDao::findAllEdgesOfBuilding() \par model::dataaccess::dao::SQLiteEdgeDao::updateEdge() & N.I \\ 
+TU97 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "Edge" del database locale. In particolare, nel caso della ricerca viene testato che, dato il major di un edificio, sia possibile recuperare tutti gli oggetti EdgeTable che rappresentano gli Edge di quell'edificio. & model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-insertEdge() \par model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-deleteEdge() \par model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-findEdge() \par model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-findAllEdgesOfBuilding() \par model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-updateEdge() & N.I \\ 
 \midrule 
-TU98 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto EdgeTable. & model::dataaccess::dao::SQLiteEdgeDao::cursorToType() & N.I \\ 
+TU98 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto EdgeTable. & model::\-dataaccess::\-dao::\-SQLiteEdgeDao::\-cursorToType() & N.I \\ 
 \midrule 
-TU99 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "Category" del database locale. & model::dataaccess::dao::SQLiteCategoryDao::insertCategory() \par model::dataaccess::dao::SQLiteCategoryDao::deleteCategory() \par model::dataaccess::dao::SQLiteCategoryDao::findCategory() \par model::dataaccess::dao::SQLiteCategoryDao::updateCategory() & N.I \\ 
+TU99 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "Category" del database locale. & model::\-dataaccess::\-dao::\-SQLiteCategoryDao::\-insertCategory() \par model::\-dataaccess::\-dao::\-SQLiteCategoryDao::\-deleteCategory() \par model::\-dataaccess::\-dao::\-SQLiteCategoryDao::\-findCategory() \par model::\-dataaccess::\-dao::\-SQLiteCategoryDao::\-updateCategory() & N.I \\ 
 \midrule 
-TU100 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto CategoryTable. & model::dataaccess::dao::SQLiteCategoryDao::cursorToType() & N.I \\ 
+TU100 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto CategoryTable. & model::\-dataaccess::\-dao::\-SQLiteCategoryDao::\-cursorToType() & N.I \\ 
 \midrule 
-TU101 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "EdgeType" del database locale. & model::dataaccess::dao::SQLiteEdgeTypeDao::insertEdgeType() \par model::dataaccess::dao::SQLiteEdgeTypeDao::deleteEdgeType() \par model::dataaccess::dao::SQLiteEdgeTypeDao::findEdgeType() \par model::dataaccess::dao::SQLiteEdgeTypeDao::updateEdgeType() & N.I \\ 
+TU101 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "EdgeType" del database locale. & model::\-dataaccess::\-dao::\-SQLiteEdgeTypeDao::\-insertEdgeType() \par model::\-dataaccess::\-dao::\-SQLiteEdgeTypeDao::\-deleteEdgeType() \par model::\-dataaccess::\-dao::\-SQLiteEdgeTypeDao::\-findEdgeType() \par model::\-dataaccess::\-dao::\-SQLiteEdgeTypeDao::\-updateEdgeType() & N.I \\ 
 \midrule 
-TU102 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto EdgeTypeTable. & model::dataaccess::dao::SQLiteEdgeTypeDao::cursorToType() & N.I \\ 
+TU102 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto EdgeTypeTable. & model::\-dataaccess::\-dao::\-SQLiteEdgeTypeDao::\-cursorToType() & N.I \\ 
 \midrule 
-TU103 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "Photo" del database locale. In particolare, nel caso della ricerca viene testato che, dato l'identificativo di un Edge, sia possibile recuperare tutti gli oggetti PhotoTable che rappresentano le foto di quell'Edge. & model::dataaccess::dao::SQLitePhotoDao::insertPhoto() \par model::dataaccess::dao::SQLitePhotoDao::deletePhoto() \par model::dataaccess::dao::SQLitePhotoDao::findPhoto() \par model::dataaccess::dao::SQLitePhotoDao::findAllPhotosOfEdge() \par model::dataaccess::dao::SQLitePhotoDao::updatePhoto() & N.I \\ 
+TU103 & Viene testato che sia possibile effettuare le operazioni CRUD sulla tabella "Photo" del database locale. In particolare, nel caso della ricerca viene testato che, dato l'identificativo di un Edge, sia possibile recuperare tutti gli oggetti PhotoTable che rappresentano le foto di quell'Edge. & model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-insertPhoto() \par model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-deletePhoto() \par model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-findPhoto() \par model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-findAllPhotosOfEdge() \par model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-updatePhoto() & N.I \\ 
 \midrule 
-TU104 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto PhotoTable. & model::dataaccess::dao::SQLitePhotoDao::cursorToType() & N.I \\ 
+TU104 & Viene testato che, dato un oggetto di tipo Cursor che rappresenta il risultato della query sul database locale, sia possibile creare un oggetto PhotoTable. & model::\-dataaccess::\-dao::\-SQLitePhotoDao::\-cursorToType() & N.I \\ 
 \midrule 
-TU105 & Viene testato che sia possibile effettuare le operazioni CRUD sull'intero database locale. & model::dataaccess::dao::SQLDao::insert() \par model::dataaccess::dao::SQLDao::delete() \par model::dataaccess::dao::SQLDao::query() \par model::dataaccess::dao::SQLDao::update() \par model::dataaccess::dao::SQLDao::rawQuery() & N.I \\ 
+TU105 & Viene testato che sia possibile effettuare le operazioni CRUD sull'intero database locale. & model::\-dataaccess::\-dao::\-SQLDao::\-insert() \par model::\-dataaccess::\-dao::\-SQLDao::\-delete() \par model::\-dataaccess::\-dao::\-SQLDao::\-query() \par model::\-dataaccess::\-dao::\-SQLDao::\-update() \par model::\-dataaccess::\-dao::\-SQLDao::\-rawQuery() & N.I \\ 
 \midrule 
-TU106 & Viene testato che sia possibile creare e ritornare un'istanza di MapsDbHelper. & model::dataaccess::dao::MapsDbHelper::getInstance() & N.I \\ 
+TU106 & Viene testato che sia possibile creare e ritornare un'istanza di MapsDbHelper. & model::\-dataaccess::\-dao::\-MapsDbHelper::\-getInstance() & N.I \\ 
 \midrule 
-TU107 & Viene testato che vengano creati il database e le sue tabelle e che venga effettuata la popolazione iniziale delle tabelle. & model::dataaccess::dao::MapsDbHelper::onCreate() & N.I \\ 
+TU107 & Viene testato che vengano creati il database e le sue tabelle e che venga effettuata la popolazione iniziale delle tabelle. & model::\-dataaccess::\-dao::\-MapsDbHelper::\-onCreate() & N.I \\ 
 \midrule 
-TU108 & Viene testato che venga aggiornato il database in seguito all'aggiunta o alla rimozione di una tabella. & model::dataaccess::dao::MapsDbHelper::onUpgrade() & N.I \\ 
+TU108 & Viene testato che venga aggiornato il database in seguito all'aggiunta o alla rimozione di una tabella. & model::\-dataaccess::\-dao::\-MapsDbHelper::\-onUpgrade() & N.I \\ 
 \midrule 
-TU109 & Viene testato che sia possibile recuperare l'URL del database remoto. & model::dataaccess::dao::MapsDbHelper::getRemoteDatabaseURL() & N.I \\ 
+TU109 & Viene testato che sia possibile recuperare l'URL del database remoto. & model::\-dataaccess::\-dao::\-MapsDbHelper::\-getRemoteDatabaseURL() & N.I \\ 
 \midrule 
-TU110 & Viene testato che Compass sia effettivamente un in ascolto dei sensori & model::compass::Compass::registerListener() & N.I \\ 
+TU110 & Viene testato che Compass sia effettivamente un in ascolto dei sensori & model::\-compass::\-Compass::\-registerListener() & N.I \\ 
 \midrule 
-TU111 & Viene testato che Compass possa terminare l'ascolto dei sensori & model::compass::Compass::unregisterListener() & N.I \\ 
+TU111 & Viene testato che Compass possa terminare l'ascolto dei sensori & model::\-compass::\-Compass::\-unregisterListener() & N.I \\ 
 \midrule 
-TU112 & Viene testato che il valore lastCoordinate nel tempo non cambi con i sensori spenti e cambi con i sensori attivi & model::compass::Compass::getLastCoordinate() & N.I \\ 
+TU112 & Viene testato che il valore lastCoordinate nel tempo non cambi con i sensori spenti e cambi con i sensori attivi & model::\-compass::\-Compass::\-getLastCoordinate() & N.I \\ 
 \midrule 
-TU113 & Viene verificato che sia possibile verificare la possibilità di utilizzare il bluetooth e se grazie al quale sia possibile ricevere il segnale dei beacon, leggendo I suoi dati & presenter::Checker::isBluetoothEnabled() \par presenter::Checker::isBeaconDetected() \par presenter::Checker::isTheBuildingMapInLocalDB() & N.I \\ 
+TU113 & Viene verificato che sia possibile verificare la possibilità di utilizzare il bluetooth e se grazie al quale sia possibile ricevere il segnale dei beacon, leggendo I suoi dati & presenter::\-Checker::\-isBluetoothEnabled() \par presenter::\-Checker::\-isBeaconDetected() \par presenter::\-Checker::\-isTheBuildingMapInLocalDB() & N.I \\ 
 \midrule 
-TU114 & Viene verificato che sia possibile accedere ad un oggetto NavigationManager utilizzando la classe NavigationManagerPresenter & presenter::NavigationManagerPresenter::getNavigationManager() & N.I \\ 
+TU114 & Viene verificato che sia possibile accedere ad un oggetto NavigationManager utilizzando la classe NavigationManagerPresenter & presenter::\-NavigationManagerPresenter::\-getNavigationManager() & N.I \\ 
 \midrule 
-TU115 & Viene verificato che sia possibile accedere ad un oggetto InformationManager utilizzando la classe InformationManagerPresenter & presenter::InformationManagerPresenter::getInformationManager() & N.I \\ 
+TU115 & Viene verificato che sia possibile accedere ad un oggetto InformationManager utilizzando la classe InformationManagerPresenter & presenter::\-InformationManagerPresenter::\-getInformationManager() & N.I \\ 
 \midrule 
-TU116 & Viene verificato che sia possibile accedere ad un oggetto DatabaseService utilizzando la classe DatabaseServiceManager & presenter::DatabaseServiceManager::getDatabaseService() & N.I \\ 
+TU116 & Viene verificato che sia possibile accedere ad un oggetto DatabaseService utilizzando la classe DatabaseServiceManager & presenter::\-DatabaseServiceManager::\-getDatabaseService() & N.I \\ 
 \midrule 
-TU117 & Viene verificato che sia possibile accedere ad un oggetto Setting utilizzando la classe SettingManger & presenter::SettingManager::getSetting() & N.I \\ 
+TU117 & Viene verificato che sia possibile accedere ad un oggetto Setting utilizzando la classe SettingManger & presenter::\-SettingManager::\-getSetting() & N.I \\ 
 \midrule 
-TU118 & Viene verificato che sia possibile recuperare le informazioni di un ContentProvider per effettuare una ricerca utilizzando la classe SearchSuggestionProvider & presenter::SearchSuggestionsProvider::query() \par presenter::SearchSuggestionsProvider::getType() \par presenter::SearchSuggestionsProvider::insert() \par presenter::SearchSuggestionsProvider::update() \par presenter::SearchSuggestionsProvider::onCreate() & N.I \\ 
+TU118 & Viene verificato che sia possibile recuperare le informazioni di un ContentProvider per effettuare una ricerca utilizzando la classe SearchSuggestionProvider & presenter::\-SearchSuggestionsProvider::\-query() \par presenter::\-SearchSuggestionsProvider::\-getType() \par presenter::\-SearchSuggestionsProvider::\-insert() \par presenter::\-SearchSuggestionsProvider::\-update() \par presenter::\-SearchSuggestionsProvider::\-onCreate() & N.I \\ 
 \midrule 
-TU119 & Viene verificato che sia possibile recuperare il nome dell'edificio da InformationManager e che tale nome sia passato ad HomeView & presenter::HomeActivity::updateBuildingName() & N.I \\ 
+TU119 & Viene verificato che sia possibile recuperare il nome dell'edificio da InformationManager e che tale nome sia passato ad HomeView & presenter::\-HomeActivity::\-updateBuildingName() & N.I \\ 
 \midrule 
-TU120 & Viene verificato che sia possibile recuperare la descrizione dell'edificio da InformationManager e che tale descrizione sia passata ad HomeView & presenter::HomeActivity::updateBuildingDescription() & N.I \\ 
+TU120 & Viene verificato che sia possibile recuperare la descrizione dell'edificio da InformationManager e che tale descrizione sia passata ad HomeView & presenter::\-HomeActivity::\-updateBuildingDescription() & N.I \\ 
 \midrule 
-TU121 & Viene verificato che sia possibile recuperare le ore di apertura dell'edificio da InformationManager e che tale orario sia passato ad HomeView & presenter::HomeActivity::updateBuildingOpeningHours() & N.I \\ 
+TU121 & Viene verificato che sia possibile recuperare le ore di apertura dell'edificio da InformationManager e che tale orario sia passato ad HomeView & presenter::\-HomeActivity::\-updateBuildingOpeningHours() & N.I \\ 
 \midrule 
-TU122 & Viene verificato che sia possibile recuperare le categorie di POI dell'edificio da InformationManager e che tali categorie siano passate ad HomeView & presenter::HomeActivity::updatePoiCategoryList() & N.I \\ 
+TU122 & Viene verificato che sia possibile recuperare le categorie di POI dell'edificio da InformationManager e che tali categorie siano passate ad HomeView & presenter::\-HomeActivity::\-updatePoiCategoryList() & N.I \\ 
 \midrule 
-TU123 & Viene verificato che sia possibile recuperare l'indirizzo dell'edificio da InformationManager e che tale indirizzo sia passato ad HomeView & presenter::HomeActivity::updateBuildingAddress() & N.I \\ 
+TU123 & Viene verificato che sia possibile recuperare l'indirizzo dell'edificio da InformationManager e che tale indirizzo sia passato ad HomeView & presenter::\-HomeActivity::\-updateBuildingAddress() & N.I \\ 
 \midrule 
-TU124 & Viene verificato che sia possibile recuperare i nomi dei POI dell'edificio da InformationManager & presenter::HomeActivity::enableSuggestions() & N.I \\ 
+TU124 & Viene verificato che sia possibile recuperare i nomi dei POI dell'edificio da InformationManager & presenter::\-HomeActivity::\-enableSuggestions() & N.I \\ 
 \midrule 
-TU125 & Viene verificato che sia possibile mostrare le categorie di POI & presenter::HomeActivity::showPoisCategory() & N.I \\ 
+TU125 & Viene verificato che sia possibile mostrare le categorie di POI & presenter::\-HomeActivity::\-showPoisCategory() & N.I \\ 
 \midrule 
-TU126 & Viene verificato che sia possibile mostrare le prefrenze utente & presenter::HomeActivity::showPreferences() & N.I \\ 
+TU126 & Viene verificato che sia possibile mostrare le prefrenze utente & presenter::\-HomeActivity::\-showPreferences() & N.I \\ 
 \midrule 
-TU127 & Viene verificato che sia possibile mostrare la guida dell'applicazione & presenter::HomeActivity::showHelp() & N.I \\ 
+TU127 & Viene verificato che sia possibile mostrare la guida dell'applicazione & presenter::\-HomeActivity::\-showHelp() & N.I \\ 
 \midrule 
-TU128 & Viene verificato che sia possibile avviare la navigazione & presenter::HomeActivity::startNavigation() & N.I \\ 
+TU128 & Viene verificato che sia possibile avviare la navigazione & presenter::\-HomeActivity::\-startNavigation() & N.I \\ 
 \midrule 
-TU129 & Viene verificato che sia possibile mostrare le mappe salvate nel databese locale & presenter::HomeActivity::showLocalMaps() & N.I \\ 
+TU129 & Viene verificato che sia possibile mostrare le mappe salvate nel databese locale & presenter::\-HomeActivity::\-showLocalMaps() & N.I \\ 
 \midrule 
-TU130 & Viene verificato che sia possibile far partire la navigazione utilizzando l'identificativo di un POI appartenente ad una certa categoria & presenter::\allowbreak{}PoiCategoryActivity::startNavigation() & N.I \\ 
+TU130 & Viene verificato che sia possibile far partire la navigazione utilizzando l'identificativo di un POI appartenente ad una certa categoria & presenter::\-PoiCategoryActivity::\-startNavigation() & N.I \\ 
 \midrule 
-TU131 & Viene verificato che sia possibile gestire le informazioni di navigazione & presenter::NavigationActivity::pathError() \par presenter::NavigationActivity::informationUpdate() & N.I \\ 
+TU131 & Viene verificato che sia possibile gestire le informazioni di navigazione & presenter::\-NavigationActivity::\-pathError() \par presenter::\-NavigationActivity::\-informationUpdate() & N.I \\ 
 \midrule 
-TU132 & Viiene verificato che sia possibile visualizzare le informazioni dettagliate di navigazione & presenter::NavigationActivity::showDetailedInformation() & N.I \\ 
+TU132 & Viiene verificato che sia possibile visualizzare le informazioni dettagliate di navigazione & presenter::\-NavigationActivity::\-showDetailedInformation() & N.I \\ 
 \midrule 
-TU133 & Viene verificato che sia possibile gestire un'immagine utilizzando la classe ImageAdapter & presenter::ImageAdapter::getCount() \par presenter::ImageAdapter::getItem() \par presenter::ImageAdapter::getView() & N.I \\ 
+TU133 & Viene verificato che sia possibile gestire un'immagine utilizzando la classe ImageAdapter & presenter::\-ImageAdapter::\-getCount() \par presenter::\-ImageAdapter::\-getItem() \par presenter::\-ImageAdapter::\-getView() & N.I \\ 
 \midrule 
-TU134 & Viene verificato che sia possibile gestire un insieme di immagini utilizzando la classe ImageListFragment & presenter::ImageListFragment::onItemClick() \par presenter::ImageListFragment::newInstance() \par presenter::ImageListFragment::onCreateView() & N.I \\ 
+TU134 & Viene verificato che sia possibile gestire un insieme di immagini utilizzando la classe ImageListFragment & presenter::\-ImageListFragment::\-onItemClick() \par presenter::\-ImageListFragment::\-newInstance() \par presenter::\-ImageListFragment::\-onCreateView() & N.I \\ 
 \midrule 
-TU135 & Viene verificato che sia possibile gestire le opzioni sviluppatore utilizzando la classe MainDeveloperPresenter & presenter::MainDeveloperPresenter::isDeveloper() \par presenter::MainDeveloperPresenter::startDeveloperUnlocker() \par presenter::MainDeveloperPresenter::startDeveloperOptions() & N.I \\ 
+TU135 & Viene verificato che sia possibile gestire le opzioni sviluppatore utilizzando la classe MainDeveloperPresenter & presenter::\-MainDeveloperPresenter::\-isDeveloper() \par presenter::\-MainDeveloperPresenter::\-startDeveloperUnlocker() \par presenter::\-MainDeveloperPresenter::\-startDeveloperOptions() & N.I \\ 
 \midrule 
-TU136 & Viene verificato che sia possibile gestire lo sblocco delle opzioni sviluppatore utilizzando la classe DeveloperUnlockerActivity & presenter::DeveloperUnlockerActivity::unlockDeveloper() & N.I \\ 
+TU136 & Viene verificato che sia possibile gestire lo sblocco delle opzioni sviluppatore utilizzando la classe DeveloperUnlockerActivity & presenter::\-DeveloperUnlockerActivity::\-unlockDeveloper() & N.I \\ 
 \midrule 
-TU137 & Viene verificato che sia possibile avviare un nuovo log e accedere ai log salvati sul dispositivo utilizzando la classe MainDeveloperActivity & presenter::MainDeveloperActivity::showDetailedLog() \par presenter::MainDeveloperActivity::startNewLog() & N.I \\ 
+TU137 & Viene verificato che sia possibile avviare un nuovo log e accedere ai log salvati sul dispositivo utilizzando la classe MainDeveloperActivity & presenter::\-MainDeveloperActivity::\-showDetailedLog() \par presenter::\-MainDeveloperActivity::\-startNewLog() & N.I \\ 
 \midrule 
-TU138 & Viene verificato che sia possibile salvare le preferenze utente utilizzando la classe PreferencesActivity & presenter::PreferencesActivity::savePreferences() & N.I \\ 
+TU138 & Viene verificato che sia possibile salvare le preferenze utente utilizzando la classe PreferencesActivity & presenter::\-PreferencesActivity::\-savePreferences() & N.I \\ 
 \midrule 
-TU139 & Viene verificato che vengano visualizzate le mappe locali terminato il download di una mappa utilizzando la classe MapDownloaderActivity & presenter::MapDownloaderActivity::downloadFinished() & N.I \\ 
+TU139 & Viene verificato che vengano visualizzate le mappe locali terminato il download di una mappa utilizzando la classe MapDownloaderActivity & presenter::\-MapDownloaderActivity::\-downloadFinished() & N.I \\ 
 \midrule 
-TU140 & Viene verificato che sia possibile effettuare il download di una mappa utilizzando la classe Remote MapManager & presenter::RemoteMapManagerActivity::downloadMap() & N.I \\ 
+TU140 & Viene verificato che sia possibile effettuare il download di una mappa utilizzando la classe Remote MapManager & presenter::\-RemoteMapManagerActivity::\-downloadMap() & N.I \\ 
 \midrule 
-TU141 & Viene verificato che sia possibile aggiornare o rimuovere una mappa già presente sul dispostivo utilizzando la classe LocalMapActvitiy utilizzando LocalMapActivity & presenter::LocalMapActivity::updateMap() \par presenter::LocalMapActivity::deleteMap() & N.I \\ 
+TU141 & Viene verificato che sia possibile aggiornare o rimuovere una mappa già presente sul dispostivo utilizzando la classe LocalMapActvitiy utilizzando LocalMapActivity & presenter::\-LocalMapActivity::\-updateMap() \par presenter::\-LocalMapActivity::\-deleteMap() & N.I \\ 
 \midrule 
-TU142 & Viene verificato che venga visualizzata la guida dell'applicativo utilizzando HelpActivity & presenter::HelpActivity::onCreate() & N.I \\ 
+TU142 & Viene verificato che venga visualizzata la guida dell'applicativo utilizzando HelpActivity & presenter::\-HelpActivity::\-onCreate() & N.I \\ 
 \midrule 
-TU143 & Viene verificato che venga visualizzata la foto selezionata dall'utente utizzando ImageDetailActivity & presenter::ImageDetailActivity::onCreate() & N.I \\ 
+TU143 & Viene verificato che venga visualizzata la foto selezionata dall'utente utizzando ImageDetailActivity & presenter::\-ImageDetailActivity::\-onCreate() & N.I \\ 
 \midrule 
-TU144 & Viene verificato che venga visualizzata la lista di POI rilevati dal dispositivo utilizzando la classe NearbyPoiActivity & presenter::NearbyPoiActivity::onCreate() & N.I \\ 
+TU144 & Viene verificato che venga visualizzata la lista di POI rilevati dal dispositivo utilizzando la classe NearbyPoiActivity & presenter::\-NearbyPoiActivity::\-onCreate() & N.I \\ 
 \midrule 
-TU145 & Viene verificato che sia possibile gestire le foto e la descrizione dettagliata relativa ad una certa istruzione utilizzando la classe DetailedInformationActivity & presenter::DetailedInformationActivity::updatePhoto() \par presenter::DetailedInformationActivity::updateDetailedDescription() & N.I \\ 
+TU145 & Viene verificato che sia possibile gestire le foto e la descrizione dettagliata relativa ad una certa istruzione utilizzando la classe DetailedInformationActivity & presenter::\-DetailedInformationActivity::\-updatePhoto() \par presenter::\-DetailedInformationActivity::\-updateDetailedDescription() & N.I \\ 
 \midrule 
-TU146 & Viene verificato che sia possibile gestire la lista di anteprime delle immagini di un certo POI utilizzando la classe ImagePageAdapter & presenter::ImagePageAdapter::getCount() \par presenter::ImagePageAdapter::getItem() & N.I \\ 
+TU146 & Viene verificato che sia possibile gestire la lista di anteprime delle immagini di un certo POI utilizzando la classe ImagePageAdapter & presenter::\-ImagePageAdapter::\-getCount() \par presenter::\-ImagePageAdapter::\-getItem() & N.I \\ 
 \midrule 
-TU147 & Viene verificato che sia possibile gestire la lista di immagini di un certo POI utilizzando la classe ImageAdapter & presenter::ImageAdapter::getCount() \par presenter::ImageAdapter::getItem() \par presenter::ImageAdapter::getItemId() \par presenter::ImageAdapter::getView() & N.I \\ 
+TU147 & Viene verificato che sia possibile gestire la lista di immagini di un certo POI utilizzando la classe ImageAdapter & presenter::\-ImageAdapter::\-getCount() \par presenter::\-ImageAdapter::\-getItem() \par presenter::\-ImageAdapter::\-getItemId() \par presenter::\-ImageAdapter::\-getView() & N.I \\ 
 \midrule 
-TU148 & Viene verificato che venga visualizzata la schermata iniziale dell'applicazione utilizzando la classe MainActivity & presenter::MainActivity::onCreate() & N.I \\ 
+TU148 & Viene verificato che venga visualizzata la schermata iniziale dell'applicazione utilizzando la classe MainActivity & presenter::\-MainActivity::\-onCreate() & N.I \\ 
 \midrule 
-TU149 & Viene verificato che venga arrestata l'attività di log e che venga salvato il log utilizzando la classe LogginActivity & presenter::LoggingActivity::stopLogging() & N.I \\ 
+TU149 & Viene verificato che venga arrestata l'attività di log e che venga salvato il log utilizzando la classe LogginActivity & presenter::\-LoggingActivity::\-stopLogging() & N.I \\ 
 \midrule 
-TU150 & Viene verificato che sia possibile eliminare un log salvato utilizzando la classe LogInformationActivity & presenter::LogInformationActivity::deleteLog() & N.I \\ 
+TU150 & Viene verificato che sia possibile eliminare un log salvato utilizzando la classe LogInformationActivity & presenter::\-LogInformationActivity::\-deleteLog() & N.I \\ 
 \midrule 
-TU151 & Viene verificato che sia possibile gesitre la lista di indicazioni utili per raggiungere una certa destinazione utilizzando la classe NavigationAdapter & presenter::NavigationAdapter::getCount() \par presenter::NavigationAdapter::getItem() \par presenter::NavigationAdapter::getItemId() \par presenter::NavigationAdapter::getView() & N.I \\ 
+TU151 & Viene verificato che sia possibile gesitre la lista di indicazioni utili per raggiungere una certa destinazione utilizzando la classe NavigationAdapter & presenter::\-NavigationAdapter::\-getCount() \par presenter::\-NavigationAdapter::\-getItem() \par presenter::\-NavigationAdapter::\-getItemId() \par presenter::\-NavigationAdapter::\-getView() & N.I \\ 
 \midrule 
-TU152 & Viene verificato che vengano visualizzate le informazioni di un edificio & view::HomeViewImp::setBuildingName() \par view::HomeViewImp::setBuildingOpeningHours() \par view::HomeViewImp::setPoiCategoryListAdapter() \par view::HomeViewImp::setBuildingAddress() & N.I \\ 
+TU152 & Viene verificato che vengano visualizzate le informazioni di un edificio & view::\-HomeViewImp::\-setBuildingName() \par view::\-HomeViewImp::\-setBuildingOpeningHours() \par view::\-HomeViewImp::\-setPoiCategoryListAdapter() \par view::\-HomeViewImp::\-setBuildingAddress() & N.I \\ 
 \midrule 
-TU153 & Viene verificato che sia possibile visualizzare le istruzioni di navigazione & view::NavigationViewImp::setInstructionAdapter() \par view::NavigationViewImp::refreshInstructions() & N.I \\ 
+TU153 & Viene verificato che sia possibile visualizzare le istruzioni di navigazione & view::\-NavigationViewImp::\-setInstructionAdapter() \par view::\-NavigationViewImp::\-refreshInstructions() & N.I \\ 
 \midrule 
-TU154 & Viene verificato che vengano visualizzate le categorie dei POI & view::PoiCategoryViewImp::setPoiListAdapter() & N.I \\ 
+TU154 & Viene verificato che vengano visualizzate le categorie dei POI & view::\-PoiCategoryViewImp::\-setPoiListAdapter() & N.I \\ 
 \midrule 
-TU155 & Viene verificato che vengano visualizzate le indicazioni dettagliate e le foto associate ad un arco & view::DetailedInformationViewImp::setPhotos() \par view::DetailedInformationViewImp::setDetailedDescription() & N.I \\ 
+TU155 & Viene verificato che vengano visualizzate le indicazioni dettagliate e le foto associate ad un arco & view::\-DetailedInformationViewImp::\-setPhotos() \par view::\-DetailedInformationViewImp::\-setDetailedDescription() & N.I \\ 
 \midrule 
-TU156 & Viene verificato che vengano visualizzati tutti i POI associati ad un certo ROI & view::NearbyPoiViewImp::setAdapter() & N.I \\ 
+TU156 & Viene verificato che vengano visualizzati tutti i POI associati ad un certo ROI & view::\-NearbyPoiViewImp::\-setAdapter() & N.I \\ 
 \midrule 
-TU157 & Viene verificato che sia possibile viasualizzare una immagine & view::ImageDetailViewImp::setAdapter() & N.I \\ 
+TU157 & Viene verificato che sia possibile viasualizzare una immagine & view::\-ImageDetailViewImp::\-setAdapter() & N.I \\ 
 \midrule 
-TU158 & Viene verificato che sia possibile visualizzare la guida & view::HelpViewImp::setHelp() & N.I \\ 
+TU158 & Viene verificato che sia possibile visualizzare la guida & view::\-HelpViewImp::\-setHelp() & N.I \\ 
 \midrule 
-TU159 & Viene verificato che siano visualizzate le impostazioni per gestire le mappe locali & view::LocalMapManagerViewImp::refreshMaps() \par view::LocalMapManagerViewImp::setAdapter() & N.I \\ 
+TU159 & Viene verificato che siano visualizzate le impostazioni per gestire le mappe locali & view::\-LocalMapManagerViewImp::\-refreshMaps() \par view::\-LocalMapManagerViewImp::\-setAdapter() & N.I \\ 
 \midrule 
-TU160 & Viene verificato che siano visualizzate le impostazioni per gestire le mappe remote & view::RemoteMapManagerViewImp::setRemoteMaps() & N.I \\ 
+TU160 & Viene verificato che siano visualizzate le impostazioni per gestire le mappe remote & view::\-RemoteMapManagerViewImp::\-setRemoteMaps() & N.I \\ 
 \midrule 
-TU161 & Viene verificato che sia visualizzata la schermata di dowload di una mappa & view::MapDownloaderView::setDowloadingMap() \par view::MapDownloaderView::setProgressDowload() & N.I \\ 
+TU161 & Viene verificato che sia visualizzata la schermata di dowload di una mappa & view::\-MapDownloaderView::\-setDowloadingMap() \par view::\-MapDownloaderView::\-setProgressDowload() & N.I \\ 
 \midrule 
-TU162 & Viene verificato che siano visualizzate le impostazioni per gestire le preferenze riguardanti l'applicazione & view::PreferencesViewImp::setPathPreferences() \par view::PreferencesViewImp::setInstructionPreferences() & N.I \\ 
+TU162 & Viene verificato che siano visualizzate le impostazioni per gestire le preferenze riguardanti l'applicazione & view::\-PreferencesViewImp::\-setPathPreferences() \par view::\-PreferencesViewImp::\-setInstructionPreferences() & N.I \\ 
 \midrule 
-TU163 & Viene verificato che sia possibile inserire un codice per sbloccare le funzionalità sviluppatore e visualizzare un messaggio di errore in caso di codice errato & view::DeveloperUnlockerViewImp::showWrongCode() & N.I \\ 
+TU163 & Viene verificato che sia possibile inserire un codice per sbloccare le funzionalità sviluppatore e visualizzare un messaggio di errore in caso di codice errato & view::\-DeveloperUnlockerViewImp::\-showWrongCode() & N.I \\ 
 \midrule 
-TU164 & Viene verificato che vengano visualizzati i log salvati & view::MainDeveloperViewImp::setLogsAdapter() & N.I \\ 
+TU164 & Viene verificato che vengano visualizzati i log salvati & view::\-MainDeveloperViewImp::\-setLogsAdapter() & N.I \\ 
 \midrule 
-TU165 & Viene verificato che vengano visualizzati gli identificati dei beacon circostanti & view::LoggingViewImp::setBeaconListAdapter() & N.I \\ 
+TU165 & Viene verificato che vengano visualizzati gli identificati dei beacon circostanti & view::\-LoggingViewImp::\-setBeaconListAdapter() & N.I \\ 
 \midrule 
-TU166 & Viene verificato che vengano visualizzato il dettaglio di un log e che questo possa essere eliminato & view::LogInformationViewImp::setBeaconAdapter() & N.I \\ 
+TU166 & Viene verificato che vengano visualizzato il dettaglio di un log e che questo possa essere eliminato & view::\-LogInformationViewImp::\-setBeaconAdapter() & N.I \\ 
 \midrule 
-TU167 & Viene verificato che venga visualizzata la lista di anteprime delle immagini relative ad una certa istruzione di navigazione & view::ImageListFragmentViewImp::setImageAdapter() & N.I \\ 
+TU167 & Viene verificato che venga visualizzata la lista di anteprime delle immagini relative ad una certa istruzione di navigazione & view::\-ImageListFragmentViewImp::\-setImageAdapter() & N.I \\ 
 \midrule 
-TU168 & Viene verificato che venga visualizzata la schermata di caricamento dell'applicazione & view::MainView::setLoadingView() & N.I \\ 
+TU168 & Viene verificato che venga visualizzata la schermata di caricamento dell'applicazione & view::\-MainView::\-setLoadingView() & N.I \\ 
 \arrayrulecolor{black}
 \bottomrule
 \caption{Tabella descrizione test unità} \\
