@@ -291,6 +291,14 @@
 
 	<entry>
 		<version>3.01</version>
+		<author>Federico Tavella</author>
+		<role>Programmatore</role>
+		<message>Aggiunta sezione test</message>
+		<date>2016-04-08</date>
+	</entry>
+	
+	<entry>
+		<version>3.02</version>
 		<author>Davide Castello</author>
 		<role>Amministratore</role>
 		<message>Aggiunto resoconto delle attività  di verifica Fase PDROB</message>
@@ -298,7 +306,7 @@
 	</entry>
 
 	<entry>
-		<version>3.02</version>
+		<version>3.03</version>
 		<author>Cristian Andrighetto</author>
 		<role>Verificatore</role>
 		<message>Verifica del documento</message>
