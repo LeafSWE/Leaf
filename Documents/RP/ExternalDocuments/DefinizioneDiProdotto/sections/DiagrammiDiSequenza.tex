@@ -8,9 +8,10 @@
 	\subsection{Avvio Service per il rilevamento beacon}
 	
 	
-		Il diagramma in figura \ref{StartService} rappresenta l'avvio del Service che si occupa del rilevamento dei beacon\g\, funzionalità focale dell'intero applicativo.
+		Il diagramma in figura \ref{StartService} rappresenta l'avvio del service\g\ che si occupa del rilevamento dei beacon\g\, funzionalità focale dell'intero applicativo.
 		
-	Il PRESENTER chiama \verb|startService()| su \verb|AbsBeaconReceiver|, all'interno del metodo quindi verrà istanziato un oggetto \verb|intent| di tipo \verb|Intent| necessario per creare effettivamente un service unbind \verb|BeaconManagerAdapter| attraverso la chiamata del metodo \verb|bindService()|,  passando come parametro \verb|intente| creato precedentemente. Nella fase di creazione del service \verb|BeaconManagerAdapter| viene chiamato il metodo \verb|onCreate()| nel quale viene creata un istanza della classe \verb|BeaconManager| offerta dalla libreria AltBeacon. Si effettuano inoltre diverse chiamate per il settaggio e la configurazione di \verb|beaconManager| che non sono rappresentate per mantenere il diagramma più leggibile. Una volta settato \verb|beaconManager| l'oggetto \verb|beaconManagerAdapter| si mette in ascolto di \verb|beaconManager| chiamando il metodo \verb|setMonitorNotifier| iniziando la fase di monitoring\g.
+	La classe \verb|NavigationManagerPresenter| invoca il metodo \verb|startService()| su \verb|NavigationManagerImp|, all'interno del metodo viene istanziato un oggetto \verb|intent| di tipo \verb|Intent| necessario per creare effettivamente un unbind service\g\, \verb|BeaconManagerAdapter|, attraverso la chiamata del metodo \verb|bindService()|,  passando come parametro \verb|intent|. 
+	Nella fase di creazione del service\g\ \verb|BeaconManagerAdapter| viene chiamato il metodo \verb|onCreate()| nel quale viene creata un istanza della classe \verb|BeaconManager| offerta dalla libreria AltBeacon\g. Si effettuano inoltre diverse chiamate per il settaggio e la configurazione di \verb|beaconManager| che non sono rappresentate per mantenere il diagramma più leggibile. Una volta settato \verb|beaconManager| l'oggetto \verb|beaconManagerAdapter| si mette in ascolto di \verb|beaconManager| chiamando il metodo \verb|setMonitorNotifier| iniziando la fase di monitoring\g.
 	
 	A questo punto \verb|beaconManagerAdapter| è un listener di \verb|beaconManager| il quale una volta rilevata la region dei beacon in cui il device si trova scatena l'evento \verb|didEnterRegion()| notificando i propri listener, ossia l'oggetto di tipo \verb|beaconManagerAdapter|.
 	
@@ -22,7 +23,7 @@
 	
 		\begin{figure} [p]
 			\includegraphics[width=\textwidth]{diagrams/StartService}
-			\caption{Diagramma di sequenza - Avvio di un Service per il rilevamento beacon}
+			\caption{Diagramma di sequenza - Avvio di un service\g\ per il rilevamento beacon}
 			\label{StartService}
 		\end{figure}
 		
@@ -32,10 +33,10 @@
 	
 		Il diagramma in figura \ref{RangingBeacons} rappresenta l'interazione che avviene tra i componenti dell'applicativo allo scopo di rilevare dettagliatamente i dati trasmessi dai beacon circostanti al device.
 		
-L'oggetto di tipo \verb|BeaconManagerAdapter| è un service e implementa il listener di \verb|BeaconManager|: \verb|RangeNotifier| il quale scatenerà, dopo una scansione, l'evento  \verb|didRangBeaconsInRegion()| passando come parametri una \verb|Collection| di \verb|Beacon| rilevati e la \verb|Region| di appartenenza. 
-	I parametri vengono elaborati da \verb|BeaconManagerAdapter| il quale dopo aver creato una \verb|PriorityQueue| costruisce un wrapper (\verb|MyBEacon|) di ogni \verb|Beacon| aggiungendolo alla \verb|PriorityQueue| tramite \verb|add()|.
+L'oggetto di tipo \verb|BeaconManagerAdapter| è un service\g\ e implementa il listener di \verb|BeaconManager|: \verb|RangeNotifier| il quale scatenerà, dopo una scansione, l'evento  \verb|didRangBeaconsInRegion()| passando come parametri una \verb|Collection| di \verb|Beacon| rilevati e la \verb|Region| di appartenenza. 
+	I parametri vengono elaborati da \verb|BeaconManagerAdapter| il quale dopo aver creato una \verb|PriorityQueue| costruisce un wrapper\g\ (\verb|MyBeacon|) di ogni \verb|Beacon| aggiungendolo alla \verb|PriorityQueue| tramite \verb|add()|.
 	
-	Una volta elaborati tutti i \verb|Beacon| ricevuti \verb|BeaconManagerAdapter| crea un messaggio \verb|Intent| in cui inserisce la \verb|PriorityQueue| tramite la chiamata del metodo \verb|putExtra()|. Costruisce l'oggetto \verb|LocalBroadcastManager| per utilizzarlo nella chiamata del metodo \verb|sendMessageBroadcast()| che si occuperà di inviare l'\verb|Intent| in altre parti dell'applicazione costruite per ricevere il messaggio ed elaborarlo, queste parti estenderanno la classe \verb|BroadcastReceiver| offerta dal SDK Android\g.
+	Una volta elaborati tutti i \verb|Beacon| ricevuti \verb|BeaconManagerAdapter| crea un messaggio \verb|Intent| in cui inserisce la \verb|PriorityQueue| tramite la chiamata del metodo \verb|putExtra()|. Costruisce l'oggetto \verb|LocalBroadcastManager| per utilizzarlo nella chiamata del metodo \verb|sendMessageBroadcast()| che si occuperà di inviare l'\verb|Intent| in altre parti dell'applicazione costruite appositamente per ricevere il messaggio ed elaborarlo, queste parti estenderanno la classe \verb|BroadcastReceiver| offerta dal SDK Android\g.
 
 		\begin{figure} [p]
 			\includegraphics[width=\textwidth]{diagrams/RangingBeacons}
@@ -47,10 +48,10 @@ L'oggetto di tipo \verb|BeaconManagerAdapter| è un service e implementa il list
 	\newpage
 	\subsection{Avvio navigazione}
 		
-		Il diagramma in figura \ref{StartNavigation} rappresenta il flusso d'eventi generato nelle classi del model qual'ora si richiedesse l'avvio della navigazione. La richiesta giunge dal PRESENTER con la chiamata del metodo \verb|startNavigation()| sull'oggetto \verb|NavigatiorManagerImp| passando come parametri la destinazione identificata dall'oggetto di tipo \verb|PointOfInterest|. Il \verb|NavigatorManagerImp| si occupa quindi di impostare il grafo all'oggetto di tipo \verb|NavigatorImp| con il metodo \verb|setGraph()| dopodiché invoca il metodo \verb|calculatePAth()| in cui è calcolato il percorso da seguire durante la navigazione attraverso l'oggetto \verb|PathFinder| che restituisce una \verb|List| di \verb|EnrichedEdge| salvata in \verb|Navigator| in un campo dati.
-		A questo punto \verb|Navigator| è pronto per restituire le informazioni (\verb|ProcessedInformation|) richieste da \verb|NavigationManagerImp|, quest'ultimo invoca il metodo \verb|toNextRegion()| passando come parametri la lista di beacon rilevati e ricevuti tramite \verb|BroadcastReceiver|.
-		\verb|Navigator| ricava dai beacon rilevati il beacon il cui segnale è più potente (\verb|getMostPowerfulBEacon()|). Qui controlla che il beacon ritenuto più vicino all'utente appartiene alla ROI del percorso previsto, infine costruisce le \verb|ProcessedInformation| richieste grazie all'oggetto \verb|Edge| identificato come prossimo percorso da percorrere.
-		Le \verb|ProcessedInformation| vengono quindi ritornate a \verb|NavigationManagerImp| che le restituisce al PRESENTER il quale le scompatterà e le restituirà alla view e quindi all'utente.
+		Il diagramma in figura \ref{StartNavigation} rappresenta il flusso d'eventi generato nelle classi del model qualora si richiedesse l'avvio della navigazione. La richiesta parte da \verb|NavigationManagerPresenter| con la chiamata del metodo \verb|startNavigation()| sull'oggetto \verb|NavigatiorManagerImp| passando come parametri la destinazione identificata dall'oggetto di tipo \verb|PointOfInterest|. Il \verb|NavigatorManagerImp| si occupa quindi di impostare il grafo all'oggetto di tipo \verb|NavigatorImp| con il metodo \verb|setGraph()| dopodiché invoca il metodo \verb|calculatePath()| in cui è calcolato il percorso da seguire durante la navigazione attraverso l'oggetto \verb|DijkstraPathFinder| che restituisce una \verb|List| di \verb|EnrichedEdge| salvata in \verb|navigator| in un campo dati.
+		A questo punto \verb|navigator| è pronto per restituire le informazioni (\verb|ProcessedInformation|) richieste dalla classe \verb|NavigationManagerImp|, quest'ultimo invoca il metodo \verb|toNextRegion()| passando come parametri la lista di beacon\g\ rilevati e ricevuti tramite l'oggetto \verb|BroadcastReceiver|.
+		\verb|navigator| ricava dai beacon\g\ rilevati il beacon\g\ il cui segnale risulta essere il più potente (\verb|getMostPowerfulBEacon()|), quindi controlla che il beacon ritenuto più vicino all'utente appartiene alla region of interest (ROI\g) del percorso previsto, infine costruisce le \verb|ProcessedInformation| richieste grazie all'oggetto \verb|Edge| identificato come prossimo tratto di percorso da percorrere.
+		Le \verb|ProcessedInformation| vengono quindi ritornate a \verb|NavigationManagerImp| che le restituisce a \verb|NavigationManagerImp| il quale le scompatterà e le restituirà alla view e quindi all'utente.
 	
 		\begin{figure} [h]
 			\includegraphics[width=\textwidth]{diagrams/StartNavigation}
