@@ -150,15 +150,15 @@ model::navigator::graph::edge::ElevatorEdge & RDesF7.3.1 \par RDesF7.3.1.1 \par 
 \midrule 
 model::navigator::graph::edge::StairEdge & RDesF7.3.1 \par RDesF7.3.1.1 \par RDesF7.3.1.2 \\ 
 \midrule 
-model::navigator::graph::navigationinformation::BasicInformation & RObbF10.1.2.1 \par RObbF7.4.2 \par RObbF7.4.2.1 \\ 
+model::navigator::graph::-navigationinformation::BasicInformation & RObbF10.1.2.1 \par RObbF7.4.2 \par RObbF7.4.2.1 \\ 
 \midrule 
-model::navigator::graph::navigationinformation::DetailedInformation & RDesF7.4.3 \par RObbF10.1.2.1 \par RObbF7.4.2 \par ROpzF7.4.3.2 \\ 
+model::navigator::graph::-navigationinformation::DetailedInformation & RDesF7.4.3 \par RObbF10.1.2.1 \par RObbF7.4.2 \par ROpzF7.4.3.2 \\ 
 \midrule 
-model::navigator::graph::navigationinformation::NavigationInformationImp & RDesF7.1.1 \par RObbF7 \par RObbF7.4.2 \par RObbF7.4.2.1 \\ 
+model::navigator::graph::-navigationinformation::NavigationInformationImp & RDesF7.1.1 \par RObbF7 \par RObbF7.4.2 \par RObbF7.4.2.1 \\ 
 \midrule 
-model::navigator::graph::navigationinformation::PhotoInformation & RDesF7.4.3.1 \par RObbF7.4.2 \\ 
+model::navigator::graph::-navigationinformation::PhotoInformation & RDesF7.4.3.1 \par RObbF7.4.2 \\ 
 \midrule 
-model::navigator::graph::navigationinformation::PhotoRef & RDesF7.4.3.1 \\ 
+model::navigator::graph::-navigationinformation::PhotoRef & RDesF7.4.3.1 \\ 
 \midrule 
 model::navigator::graph::vertex::VertexImp & RDesF7.3.1 \par RDesF7.3.1.1 \par RDesF7.3.1.2 \par RObbF7.3 \\ 
 \midrule 
@@ -367,11 +367,11 @@ RObbV5.5 &  \\
 \midrule 
 RObbV6 &  \\ 
 \midrule 
-RObbF7 & model::MessageSendType \par model::NavigationManagerImp \par model::ServiceConnectionImp \par model::beacon::BeaconManagerAdapter \par model::beacon::LocalBinder \par model::navigator::NavigatorImp \par model::navigator::NoGraphSetException \par model::navigator::NoNavigationInformationException \par model::navigator::graph::navigationinformation::NavigationInformationImp \\ 
+RObbF7 & model::MessageSendType \par model::NavigationManagerImp \par model::ServiceConnectionImp \par model::beacon::BeaconManagerAdapter \par model::beacon::LocalBinder \par model::navigator::NavigatorImp \par model::navigator::NoGraphSetException \par model::navigator::NoNavigationInformationException \par model::navigator::graph::-navigationinformation::NavigationInformationImp \\ 
 \midrule 
 RObbF7.1 & model::InformationManagerImp \par model::MessageSendType \par model::ServiceConnectionImp \par model::beacon::LocalBinder \par model::navigator::BuildingInformation \par model::navigator::BuildingMapImp \par model::navigator::graph::area::PointOfInterestImp \par presenter::PoiCategoryActivity \par view::HomeViewImp \par view::PoiCategoryViewImp \\ 
 \midrule 
-RDesF7.1.1 & model::navigator::NavigatorImp \par model::navigator::graph::area::PointOfInterestImp \par model::navigator::graph::navigationinformation::NavigationInformationImp \par presenter::SearchSuggestionsProvider \par view::HomeViewImp \\ 
+RDesF7.1.1 & model::navigator::NavigatorImp \par model::navigator::graph::area::PointOfInterestImp \par model::navigator::graph::-navigationinformation::NavigationInformationImp \par presenter::SearchSuggestionsProvider \par view::HomeViewImp \\ 
 \midrule 
 RDesF7.1.1.1 & presenter::SearchSuggestionsProvider \par view::HomeViewImp \\ 
 \midrule 
@@ -405,11 +405,11 @@ RObbF7.4.1.2 & presenter::HomeActivity \par presenter::NavigationActivity \par v
 \midrule 
 RObbF7.4.1.3 & presenter::HomeActivity \par presenter::NavigationActivity \par view::HomeViewImp \par view::NavigationViewImp \\ 
 \midrule 
-RObbF7.4.2 & model::MessageSendType \par model::NavigationManagerImp \par model::ServiceConnectionImp \par model::beacon::LocalBinder \par model::compass::Compass \par model::navigator::NavigatorImp \par model::navigator::ProcessedInformationImp \par model::navigator::graph::navigationinformation::BasicInformation \par model::navigator::graph::navigationinformation::DetailedInformation \par model::navigator::graph::navigationinformation::NavigationInformationImp \par model::navigator::graph::navigationinformation::PhotoInformation \\ 
+RObbF7.4.2 & model::MessageSendType \par model::NavigationManagerImp \par model::ServiceConnectionImp \par model::beacon::LocalBinder \par model::compass::Compass \par model::navigator::NavigatorImp \par model::navigator::ProcessedInformationImp \par model::navigator::graph::-navigationinformation::BasicInformation \par model::navigator::graph::-navigationinformation::DetailedInformation \par model::navigator::graph::-navigationinformation::NavigationInformationImp \par model::navigator::graph::-navigationinformation::PhotoInformation \\ 
 \midrule 
-RObbF7.4.2.1 & model::navigator::NavigatorImp \par model::navigator::graph::navigationinformation::BasicInformation \par model::navigator::graph::navigationinformation::NavigationInformationImp \par presenter::NavigationActivity \par presenter::NavigationAdapter \par presenter::NavigationManagerPresenter \par view::NavigationViewImp \\ 
+RObbF7.4.2.1 & model::navigator::NavigatorImp \par model::navigator::graph::-navigationinformation::BasicInformation \par model::navigator::graph::-navigationinformation::NavigationInformationImp \par presenter::NavigationActivity \par presenter::NavigationAdapter \par presenter::NavigationManagerPresenter \par view::NavigationViewImp \\ 
 \midrule 
-RDesF7.4.2.2 & model::navigator::NavigatorImp \par model::navigator::graph::navigationinformation::NavigationInformation \\ 
+RDesF7.4.2.2 & model::navigator::NavigatorImp \par model::navigator::graph::-navigationinformation::NavigationInformation \\ 
 \midrule 
 RDesF7.4.2.3 & model::MessageSendType \par model::NavigationManagerImp \par model::ServiceConnectionImp \par model::beacon::BeaconManagerAdapter \par model::beacon::LocalBinder \par model::beacon::MyBeaconImp \par model::navigator::NavigatorImp \par model::navigator::PathException \par presenter::NavigationActivity \par view::NavigationViewImp \\ 
 \midrule 
@@ -419,11 +419,11 @@ ROpzF7.4.2.5 & model::beacon::BeaconManagerAdapter \par model::navigator::Naviga
 \midrule 
 ROpzF7.4.2.6 & model::NavigationManagerImp \par model::NoBeaconSeenException \par model::beacon::BeaconManagerAdapter \par presenter::NavigationActivity \par view::NavigationViewImp \\ 
 \midrule 
-RDesF7.4.3 & model::navigator::Navigator \par model::navigator::graph::navigationinformation::DetailedInformation \\ 
+RDesF7.4.3 & model::navigator::Navigator \par model::navigator::graph::-navigationinformation::DetailedInformation \\ 
 \midrule 
-RDesF7.4.3.1 & model::navigator::NavigatorImp \par model::navigator::graph::navigationinformation::PhotoInformation \par model::navigator::graph::navigationinformation::PhotoRef \par presenter::ImageAdapter \par presenter::ImageDetailActivity \par presenter::ImageListFragment \par presenter::ImagePageAdapter \par view::ImageDetailViewImp \par view::ImageListFragmentViewImp \\ 
+RDesF7.4.3.1 & model::navigator::NavigatorImp \par model::navigator::graph::-navigationinformation::PhotoInformation \par model::navigator::graph::-navigationinformation::PhotoRef \par presenter::ImageAdapter \par presenter::ImageDetailActivity \par presenter::ImageListFragment \par presenter::ImagePageAdapter \par view::ImageDetailViewImp \par view::ImageListFragmentViewImp \\ 
 \midrule 
-ROpzF7.4.3.2 & model::navigator::NavigatorImp \par model::navigator::graph::navigationinformation::DetailedInformation \par presenter::DetailedInformationActivity \par view::DetailedInformationViewImp \\ 
+ROpzF7.4.3.2 & model::navigator::NavigatorImp \par model::navigator::graph::-navigationinformation::DetailedInformation \par presenter::DetailedInformationActivity \par view::DetailedInformationViewImp \\ 
 \midrule 
 ROpzF7.4.3.3 & model::navigator::NavigatorImp \par presenter::NavigationActivity \par view::NavigationViewImp \\ 
 \midrule 
@@ -501,7 +501,7 @@ RObbF10.1.1.3 & model::usersetting::SettingImp \\
 \midrule 
 RDesF10.1.2 & model::usersetting::InstructionPreference \par model::usersetting::SettingImp \\ 
 \midrule 
-RObbF10.1.2.1 & model::navigator::ProcessedInformationImp \par model::navigator::graph::navigationinformation::BasicInformation \par model::navigator::graph::navigationinformation::DetailedInformation \par model::navigator::graph::navigationinformation::NavigationInformation \\ 
+RObbF10.1.2.1 & model::navigator::ProcessedInformationImp \par model::navigator::graph::-navigationinformation::BasicInformation \par model::navigator::graph::-navigationinformation::DetailedInformation \par model::navigator::graph::-navigationinformation::NavigationInformation \\ 
 \midrule 
 RDesF10.1.2.2 & model::usersetting::SettingImp \\ 
 \midrule 

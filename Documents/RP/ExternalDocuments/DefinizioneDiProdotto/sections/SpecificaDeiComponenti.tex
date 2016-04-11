@@ -634,7 +634,7 @@
         \caption{Componente view}\label{fig:view} 
     \end{figure}
     \begin{itemize}
-\item \textbf{Descrizione:} Package per il componente View del pattern architetturale MVP. Questo pacchetto contiene tutte le classi che compongono la presentation logic;
+\item \textbf{Descrizione:} Package per il componente View del pattern architetturale MVP. Questo pacchetto contiene tutte le classi che compongono l'application logic;
 \item \textbf{Classi Contenute}:
 \begin{itemize}
 \item \texttt{DetailedInformationViewImp};
@@ -760,7 +760,7 @@ Costruttore della classe AbsBeaconReceiverManager
  \item \texttt{\# getContext() : Context}\\
 Metodo che ritorna il contesto dell'applicazione
  \item \texttt{+ modifyScanningPeriod(p : long, backOrFore : boolean, betweenOrNot : boolean) : void}\\
-Metodo che permette di modificare il tempo tra una scansione per la ricerca dei beaccon e la successiva
+Metodo che permette di modificare il tempo tra una scansione per la ricerca dei beacon e la successiva
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -770,7 +770,7 @@ Scelta se modificare il periodo di scansione quando l'applicazione è in backgro
 Scelta se modificare il periodo di scansione o la pausa tra due scansioni\end{itemize}
 \end{description}
 \item \texttt{+ \textit{onReceive() : void}}\\
-Metodo astratto che permette di eseguire delle azioni alla ricezione di una PriorityQueue<MyBeacon> contenente l'insieme dei beacon visibili in un determinato momento
+\textbf{Override} Metodo astratto che permette di eseguire delle azioni alla ricezione di una PriorityQueue<MyBeacon> contenente l'insieme dei beacon visibili in un determinato momento
  \item \texttt{+ startService() : void}\\
 Metodo che permette di attivare il service che si occupa di fare le scansioni per trovare I beacon
  \item \texttt{+ stopService() : void}\\
@@ -798,7 +798,7 @@ Metodo che ritorna tutte le categorie di POI all'interno dell'edificio
  \item \texttt{+ \textit{getAllVisibleBeacons() : PriorityQueue<MyBeacon>}}\\
 Metodo che ritorna la PriorityQueue<MyBeacon>, eventualmente vuota, dei beacon visibili
  \item \texttt{+ \textit{getBuildingMap() : BuildingMap}}\\
-Metodo che ritorna la mappa dell'edificio se questa è già stata caricata dal database locale. Viene lanciata una eccezione di tipo NoBeaconSeenException nel caso in cui non sia stata caricata la mappa poichè non è stato ancora ricevuto alcun beacon
+Metodo che ritorna la mappa dell'edificio se questa è già stata caricata dal database locale. Viene lanciata una eccezione di tipo NoBeaconSeenException nel caso in cui non sia stata caricata la mappa poiché non è stato ancora ricevuto alcun beacon
  \item \texttt{+ \textit{getDatabaseService() : DatabaseService}}\\
 Metodo che ritorna un oggetto DatabaseService che permette di interrogare il database
  \item \texttt{+ \textit{getLogInfo(name : String) : String}}\\
@@ -872,15 +872,15 @@ Mappa dell'edificio di cui sono stati rilevati I beacon
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getAllCategories() : Collection<String>}\\
-Metodo che ritorna tutte le categorie di POI presenti all'interno dell'edificio
+\textbf{Override} Metodo che ritorna tutte le categorie di POI presenti all'interno dell'edificio
  \item \texttt{+ getAllVisibleBeacons() : PriorityQueue<MyBeacon>}\\
-Metodo che ritorna la PriorityQueue<MyBeacon>, eventualmente vuota, dei beacon visibili
+\textbf{Override} Metodo che ritorna la PriorityQueue<MyBeacon>, eventualmente vuota, dei beacon visibili
  \item \texttt{+ getBuildingMap() : BuildingMap}\\
-Metodo che ritorna la mappa dell'edificio se questa è già stata caricata dal database locale. Viene lanciata una eccezione di tipo NoBeaconSeenException nel caso in cui non sia stata caricata la mappa poichè non è stato ancora ricevuto alcun beacon
+\textbf{Override} Metodo che ritorna la mappa dell'edificio se questa è già stata caricata dal database locale. Viene lanciata una eccezione di tipo NoBeaconSeenException nel caso in cui non sia stata caricata la mappa poiché non è stato ancora ricevuto alcun beacon
  \item \texttt{+ getDatabaseService() : DatabaseService}\\
-Metodo che ritorna un oggetto DatabaseService che permette di interrogare il database
+\textbf{Override} Metodo che ritorna un oggetto DatabaseService che permette di interrogare il database
  \item \texttt{+ getLogInfo(name : String) : String}\\
-Metodo che, dato il nome di un log, ritorna l'informazione in esso contenuta sotto forma di stringa
+\textbf{Override} Metodo che, dato il nome di un log, ritorna l'informazione in esso contenuta sotto forma di stringa
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -888,9 +888,9 @@ Metodo che, dato il nome di un log, ritorna l'informazione in esso contenuta sot
 Nome del log da cui reperire l'informazione\end{itemize}
 \end{description}
 \item \texttt{+ getNearbyPOIs() : Collection<PointOfInterest>}\\
-Metodo che ritorna l'insieme di POI associati al beacon rilevato con il segnale più potente. Viene lanciata una eccezione di tipo NoBeaconSeenException nel caso in cui venga invocato il metodo ma non è stato rilevato ancora alcun beacon
+\textbf{Override} Metodo che ritorna l'insieme di POI associati al beacon rilevato con il segnale più potente. Viene lanciata una eccezione di tipo NoBeaconSeenException nel caso in cui venga invocato il metodo ma non è stato rilevato ancora alcun beacon
  \item \texttt{+ InformationManagerImp(dbService : DatabaseService, context : Context)}\\
-Costruttore della classe InformationManagerImp
+\textbf{Override} Costruttore della classe InformationManagerImp
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -899,11 +899,11 @@ Oggetto per la gestione delle mappe nel database locale e per il recupero delle 
 Contesto dell'applicazione\end{itemize}
 \end{description}
 \item \texttt{- loadMap() : BuildingMap}\\
-Metodo che permette di recuperare una mappa dal database in base al major dei beacon rilevati
+\textbf{Override} Metodo che permette di recuperare una mappa dal database in base al major dei beacon rilevati
  \item \texttt{+ onReceive() : void}\\
-Metodo che si occupa di settare il campo dati lastBeaconsSeen con la PriorityQueue<MyBeacon> contenente gli ultimi beacon rilevati. Nel caso in cui non sia stata ancora caricata una mappa dal database locale si occupa di caricare la mappa dell'edificio che contiene I beaccon rilevati
+\textbf{Override} Metodo che si occupa di settare il campo dati lastBeaconsSeen con la PriorityQueue<MyBeacon> contenente gli ultimi beacon rilevati. Nel caso in cui non sia stata ancora caricata una mappa dal database locale si occupa di caricare la mappa dell'edificio che contiene I beacon rilevati
  \item \texttt{+ removeBeaconInformationFile(filename : String) : void}\\
-Metodo che permette di rimuovere un log delle informazioni dei beacon visibili
+\textbf{Override} Metodo che permette di rimuovere un log delle informazioni dei beacon visibili
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -911,7 +911,7 @@ Metodo che permette di rimuovere un log delle informazioni dei beacon visibili
 Nome del file da rimuovere\end{itemize}
 \end{description}
 \item \texttt{+ saveRecordedBeaconInformation(filename : String) : void}\\
-Metodo che permette di salvare il log delle informazioni dei beacon visibili su file
+\textbf{Override} Metodo che permette di salvare il log delle informazioni dei beacon visibili su file
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -919,7 +919,7 @@ Metodo che permette di salvare il log delle informazioni dei beacon visibili su 
 Nome del file in cui salvare le informazioni dei beacon\end{itemize}
 \end{description}
 \item \texttt{- setVisibleBeacon(beacons : PriorityQueue<MyBeacon>) : void}\\
-Metodo che setta il campo dati lastBeaconsSeen
+\textbf{Override} Metodo che setta il campo dati lastBeaconsSeen
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -927,7 +927,7 @@ Metodo che setta il campo dati lastBeaconsSeen
 Lista dei beacon visibili\end{itemize}
 \end{description}
 \item \texttt{+ startRecordingBeacons() : void}\\
-Metodo che permette di avviare il log delle informazioni dei beacon visibili
+\textbf{Override} Metodo che permette di avviare il log delle informazioni dei beacon visibili
  \end{itemize}
 \end{description}
 
@@ -946,7 +946,7 @@ Metodo che permette di avviare il log delle informazioni dei beacon visibili
 \item[Descrizione:] Classe che rappresenta l'etichetta di un messaggio scambiato all'interno dell'applicazione contenente una lista di beacon;
 \item[Attributi:] \
 \begin{itemize}
-\item \texttt{- VISIBLE\_BEACON : String}\\
+\item \texttt{- \underline{VISIBLE\_BEACON : String \{readOnly\}}}\\
 Rappresenta il messaggio che viene scambiato all'interno dell'applicazione
 
 \end{itemize}
@@ -963,7 +963,7 @@ Rappresenta il messaggio che viene scambiato all'interno dell'applicazione
 \item[Nome:] \texttt{\textit{NavigationManager}};
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] È utilizzata per rendere indipedente il modo in cui la navigazione è utilizzata da come questi metodi sono implementati;
+\item[Utilizzo:] È utilizzata per rendere indipendente il modo in cui la navigazione è utilizzata da come questi metodi sono implementati;
 \item[Descrizione:] Interfaccia che si occupa di esporre tutti i metodi utili alla navigazione;
 \item[Metodi:] \
 \begin{itemize}
@@ -1047,7 +1047,7 @@ Oggetto per la navigazione
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ addBeaconListener(listener : NavigationListener) : void}\\
-Metodo che permette di registrare un listener
+\textbf{Override} Metodo che permette di registrare un listener
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1055,11 +1055,11 @@ Metodo che permette di registrare un listener
 Listener che deve essere aggiunto alla lista di NavigationListener\end{itemize}
 \end{description}
 \item \texttt{+ getAllNavigationInstruction() : List<ProcessedInformation>}\\
-Metodo che permette di recuperare tutte le istruzioni di navigazione per un percorso calcolato. Viene lanciata una eccezione di tipo NoNavigationInformationException nel caso in cui venga richiamato questo metodo senza aver prima avviato la navigazione
+\textbf{Override} Metodo che permette di recuperare tutte le istruzioni di navigazione per un percorso calcolato. Viene lanciata una eccezione di tipo NoNavigationInformationException nel caso in cui venga richiamato questo metodo senza aver prima avviato la navigazione
  \item \texttt{+ getNextInstruction() : ProcessedInformation}\\
-Metodo che permette di recuperare tutte le istruzioni di navigazione per un percorso calcolato ion base al beacon più potente ricavato dalla PriorityQueue<MyBeacon> passata come argomento. Viene lanciata una eccezione di tipo NoNavigationInformationException nel caso in cui venga richiamato questo metodo senza aver prima avviato la navigazione.
+\textbf{Override} Metodo che permette di recuperare tutte le istruzioni di navigazione per un percorso calcolato in base al beacon più potente ricavato dalla PriorityQueue<MyBeacon> passata come argomento. Viene lanciata una eccezione di tipo NoNavigationInformationException nel caso in cui venga richiamato questo metodo senza aver prima avviato la navigazione.
  \item \texttt{+ NavigationManagerImp(graph : MapGraph, context : Context)}\\
-Costruttore della classe NavigationManagerImp
+\textbf{Override} Costruttore della classe NavigationManagerImp
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1068,9 +1068,9 @@ Grafo dell'edificio in cui si desidera navigare\item \texttt{context : Context}\
 Contesto dell'applicazione\end{itemize}
 \end{description}
 \item \texttt{+ onReceive() : void}\\
-Metodo che si occupa di settare il campo dati lastBeaconsSeen con la PriorityQueue<MyBeacon> contenente gli ultimi beacon rilevati e di aggiornare tutti I listeners con le ultime istruzioni di navigazione
+\textbf{Override} Metodo che si occupa di settare il campo dati lastBeaconsSeen con la PriorityQueue<MyBeacon> contenente gli ultimi beacon rilevati e di aggiornare tutti I listeners con le ultime istruzioni di navigazione
  \item \texttt{+ removeBeaconListener(listener : NavigationListener) : void}\\
-Metodo che permette di rimuovere un listener
+\textbf{Override} Metodo che permette di rimuovere un listener
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1078,7 +1078,7 @@ Metodo che permette di rimuovere un listener
 Listener che deve essere rimosso dalla lista di NavigationListener\end{itemize}
 \end{description}
 \item \texttt{- setVisibleBeacon(beacons : PriorityQueue<MyBeacon>) : void}\\
-Metodo che setta il campo dati lastBeaconsSeen
+\textbf{Override} Metodo che setta il campo dati lastBeaconsSeen
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1086,13 +1086,13 @@ Metodo che setta il campo dati lastBeaconsSeen
 Collection di beacon rilevati nell'area circostante\end{itemize}
 \end{description}
 \item \texttt{+ startCompass() : void}\\
-Metodo che permette di fermare il rilevamento dei dati ottenuti dalla bussola
+\textbf{Override} Metodo che permette di fermare il rilevamento dei dati ottenuti dalla bussola
  \item \texttt{+ startNavigation() : ProcessedInformation}\\
-Metodo che permette di avviare la navigazione verso uno specifico POI
+\textbf{Override} Metodo che permette di avviare la navigazione verso uno specifico POI
  \item \texttt{+ stopCompass() : void}\\
-Metodo che permette di attivare il rilevamento dei dati dalla bussola
+\textbf{Override} Metodo che permette di attivare il rilevamento dei dati dalla bussola
  \item \texttt{+ stopNavigation() : void}\\
-Metodo che permette di fermare la navigazione
+\textbf{Override} Metodo che permette di fermare la navigazione
  \end{itemize}
 \end{description}
 
@@ -1149,12 +1149,12 @@ Questo parametro richiede che un messaggio di tipo  String\end{itemize}
 
 \end{itemize}
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] È utilizzata per comunicare con un'istanzza della classe BeaconManagerAdapter, per dare la possibilità di ridurre il periodo di scansione per la ricerca dei beacon e per mettere in pausa la scansione qualora l'applicazione venisse messa in background;
+\item[Utilizzo:] È utilizzata per comunicare con un'istanza della classe BeaconManagerAdapter, per dare la possibilità di ridurre il periodo di scansione per la ricerca dei beacon e per mettere in pausa la scansione qualora l'applicazione venisse messa in background;
 \item[Descrizione:] Classe che implementa android.content.ServiceConnection, utile al fine di comunicare con la classe che si occupa del rilevamento dei beacon;
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ onServiceConnected(className : ComponentName, service : IBinder) : void}\\
-Questo metodo permette di specificare determinate azioni nel momento in cui un servizio(Service) viene connesso ad un componente
+\textbf{Override} Questo metodo permette di specificare determinate azioni nel momento in cui un servizio(Service) viene connesso ad un componente
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1163,7 +1163,7 @@ Questo parametro richiede il nome del servizio su cui si vuole eseguire la conne
 Questo parametro richiede l'IBinder del servizio con cui si vuole effettuare la connessione\end{itemize}
 \end{description}
 \item \texttt{+ onServiceDisconneted(className : ComponentName) : void}\\
-Questo metodo permette di eseguire delle azioni nel momento in cui un servizio (Service) viene interrotto o termina in seguito ad un errore.
+\textbf{Override} Questo metodo permette di eseguire delle azioni nel momento in cui un servizio (Service) viene interrotto o termina in seguito ad un errore.
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1214,7 +1214,7 @@ Rappresenta un criterio che serve ad eseguire il match con un beacon
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ didDeterminateStateForRegion(i : int , region : Region) : void}\\
-Metodo che determina se un dispositivo è presente all'interno di una Region
+\textbf{Override} Metodo che determina se un dispositivo è presente all'interno di una Region
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1223,7 +1223,7 @@ Stato della Region che può essere MonitorNotifier.INSIDE o MonitorNotifier.OUTS
 Criterio che serve ad eseguire il match con un beacon\end{itemize}
 \end{description}
 \item \texttt{+ didEnterRegion(region : Region) : void}\\
-Metodo che definisce delle azioni da eseguire nel momento in cui il dispositivo rileva uno o più beacon nella Region
+\textbf{Override} Metodo che definisce delle azioni da eseguire nel momento in cui il dispositivo rileva uno o più beacon nella Region
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1231,7 +1231,7 @@ Metodo che definisce delle azioni da eseguire nel momento in cui il dispositivo 
 Criterio che serve ad eseguire il match con un beacon\end{itemize}
 \end{description}
 \item \texttt{+ didExitRegion(region : Region) : void}\\
-Metodo che definisce delle azioni da eseguire nel momento in cui il dispositivo non rileva più beacon nella Region
+\textbf{Override} Metodo che definisce delle azioni da eseguire nel momento in cui il dispositivo non rileva più beacon nella Region
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1249,7 +1249,7 @@ Parametro per decidere se cambiare il periodo di scansione in Foreground o in Ba
 Parametro che serve a decidere se modificare il periodo di scansione o di non scansione\end{itemize}
 \end{description}
 \item \texttt{+ onBind(intent : Intent) : IBinder}\\
-Metodo che serve a definire determinate azioni nel momento in cui una classe viene collegata ad un Service 
+\textbf{Override} Metodo che serve a definire determinate azioni nel momento in cui una classe viene collegata ad un Service 
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1257,9 +1257,9 @@ Metodo che serve a definire determinate azioni nel momento in cui una classe vie
 Intent del Service di cui  si vuole fare il collegamento  \end{itemize}
 \end{description}
 \item \texttt{+ onCreate() : void}\\
-Metodo che inizializza i parametri della classe alla creaziione di un'istanza
+\textbf{Override} Metodo che inizializza i parametri della classe alla creazione di un'istanza
  \item \texttt{+ onDestroy() : void}\\
-Metodo che esegue le azioni necessarie alla distruzione del Service
+\textbf{Override} Metodo che esegue le azioni necessarie alla distruzione del Service
  \item \texttt{+ setBackgroundMode(mode : boolean) : void}\\
 Metodo per notificare al Service che l'applicazione sta andando in background 
  \begin{description}
@@ -1422,7 +1422,7 @@ Path della directory in cui vengono salvati i log
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ add(beacons : PriorityQueue<MyBeacon>) : void}\\
-Metodo che aggiunge all'insieme di informazioni di beacon già eventualmente presenti le informazioni riguardanti i beacon passati in ingresso
+\textbf{Override} Metodo che aggiunge all'insieme di informazioni di beacon già eventualmente presenti le informazioni riguardanti i beacon passati in ingresso
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1432,9 +1432,9 @@ Questo parametro richiede una lista di beacons\end{itemize}
 \item \texttt{+ \underline{getDirectory() : String}}\\
 Metodo che restituisce il path della directory in cui vengono salvati i log
  \item \texttt{+ log() : void}\\
-Metodo che salva le informazioni contenute nell'oggetto su di un file
+\textbf{Override} Metodo che salva le informazioni contenute nell'oggetto su di un file
  \item \texttt{+ open(name : String) : String}\\
-Metodo che, dato il nome di un log, ritorna sotto forma di stringa l'informazione in esso contenuta
+\textbf{Override} Metodo che, dato il nome di un log, ritorna sotto forma di stringa l'informazione in esso contenuta
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1442,7 +1442,7 @@ Metodo che, dato il nome di un log, ritorna sotto forma di stringa l'informazion
 Nome del log da cui reperire le informazioni\end{itemize}
 \end{description}
 \item \texttt{+ remove(name : String) : void}\\
-Metodo per la rimozione di un log precedentemente salvato
+\textbf{Override} Metodo per la rimozione di un log precedentemente salvato
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1450,7 +1450,7 @@ Metodo per la rimozione di un log precedentemente salvato
 Nome del log da rimuovere\end{itemize}
 \end{description}
 \item \texttt{+ save(name : String) : void}\\
-Metodo che salva le informazioni contenute nell'oggetto su di un file con nome uguale alla stringa passata come parametro
+\textbf{Override} Metodo che salva le informazioni contenute nell'oggetto su di un file con nome uguale alla stringa passata come parametro
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1530,23 +1530,23 @@ Attributo richiesto per rendere la classe Parcelable
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getBatteryLevel() : long}\\
-Metodo che ritorna il livello di batteria del beacon rilevato
+\textbf{Override} Metodo che ritorna il livello di batteria del beacon rilevato
  \item \texttt{+ getBeaconTypeCode() : int}\\
-Metodo che ritorna il codice rappresentante il tipo di beacon che è stato rilevato
+\textbf{Override} Metodo che ritorna il codice rappresentante il tipo di beacon che è stato rilevato
  \item \texttt{+ getBluetoothAddress() : String}\\
-Metodo che ritorna l'indirizzo Bluetooth del beacon
+\textbf{Override} Metodo che ritorna l'indirizzo Bluetooth del beacon
  \item \texttt{+ getDistance() : double}\\
-Metodo che ritorna la distanza del beacon dal dispositivo che lo ha rilevato
+\textbf{Override} Metodo che ritorna la distanza del beacon dal dispositivo che lo ha rilevato
  \item \texttt{+ getMajor() : int}\\
-Metodo che ritorna l'identificativo Major del beacon
+\textbf{Override} Metodo che ritorna l'identificativo Major del beacon
  \item \texttt{+ getMinor() : int}\\
-Metodo che ritorna l'identificativo Minor del beacon
+\textbf{Override} Metodo che ritorna l'identificativo Minor del beacon
  \item \texttt{+ getRssi() : int}\\
-Metodo che ritorna la potenza ricevuta del segnale del beacon
+\textbf{Override} Metodo che ritorna la potenza ricevuta del segnale del beacon
  \item \texttt{+ getTxPower() : int}\\
-Metodo che ritorna la potenza di trasmissione del beacon
+\textbf{Override} Metodo che ritorna la potenza di trasmissione del beacon
  \item \texttt{+ getUUID() : String}\\
-Metodo che ritorna l'identificativo UUID del beacon
+\textbf{Override} Metodo che ritorna l'identificativo UUID del beacon
  \item \texttt{+ MyBeaconImp(beacon : Beacon)}\\
 Costruttore della classe
  \begin{description}
@@ -1579,7 +1579,7 @@ Questo metodo permette di fornire una conversione di MyBeaconImp a tipo String
 \end{itemize}
 \item[Visibilità:] \texttt{public};
 \item[Utilizzo:] È utilizzata per calcolare la distanza di un beacon dal dispositivo che lo ho rilevato;
-\item[Descrizione:] Classe che implementa l'intefaccia org.altbeacon.beacon.distance.DistanceCaluclator;
+\item[Descrizione:] Classe che implementa l'interfaccia org.altbeacon.beacon.distance.DistanceCaluclator;
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ calculateDistance(i : int, v : double) : double}\\
@@ -1619,10 +1619,10 @@ Questo parametro richiede il valore rssi del beacon di cui si vuole calcolare la
 \item[Attributi:] \
 \begin{itemize}
 \item \texttt{- accelerometer : Sensor}\\
-Sensore che misura l'accellerazione del device sui tre assi fisici
+Sensore che misura l'accelerazione del device sui tre assi fisici
 
 \item \texttt{- lastAccelerometerSet : boolean}\\
-variabile di guardia per accertarsi il reperimento di almeno un dato dall'accellerometro
+variabile di guardia per accertarsi il reperimento di almeno un dato dall'accelerometro
 
 \item \texttt{- lastMagnetometerSet : boolean}\\
 variabile di guardia per accertarsi il reperimento di almeno un dato dal magnetometro
@@ -1647,7 +1647,7 @@ Costruttore della classe Compass
  \item \texttt{+ getLastCoordinate() : float}\\
 Metodo che restituisce l'ultimo dato calcolato dai dati ricavati dai sensori che indica l'orientamento del dispositivo.
  \item \texttt{+ onAccuracyChanged(sensor : Sensor, accuracy : int) : void}\\
-Metodo che viene chiamato nel caso in cui l'accuratezza dei sensori è cambiata. Attualmente non viene utilizzato dall'applicativo
+\textbf{Override} Metodo che viene chiamato nel caso in cui l'accuratezza dei sensori è cambiata. Attualmente non viene utilizzato dall'applicativo
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1656,7 +1656,7 @@ Riferimento al sensore che ha scatenato l'evento\item \texttt{accuracy : int}\\
 Nuova accuratezza impostata al sensore \end{itemize}
 \end{description}
 \item \texttt{+ onSensorChanged(event : SensorEvent) : void}\\
-Metodo invocato ad ogni evento generato dai sensori attivi di Compass. Fornisce quindi i dati misurati dal sensore e elaborandoli ne ricava l'orientamento del device
+\textbf{Override} Metodo invocato ad ogni evento generato dai sensori attivi di Compass. Fornisce quindi i dati misurati dal sensore e elaborandoli ne ricava l'orientamento del device
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -1726,7 +1726,7 @@ Nome della tabella.Valore di default "Building"
 \item[Nome:] \texttt{BuildingDao};
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazioni dei metodi per effettuare le operazioni CRUD sulla tabella "Building" del database locale dalla loro implementazione;
+\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazione dei metodi per effettuare le operazioni CRUD sulla tabella "Building" del database locale dalla loro implementazione;
 \item[Descrizione:] Interfaccia che espone i metodi per un DAO per accedere alla tabella "Building" del database locale;
 \item[Metodi:] \
 \begin{itemize}
@@ -1907,7 +1907,7 @@ Nome della tabella. Valore di default "Category"
 \item[Nome:] \texttt{CategoryDao};
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazioni dei metodi per effettuare le operazioni CRUD sulla tabella "Category" del database locale dalla loro implementazione;
+\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazione dei metodi per effettuare le operazioni CRUD sulla tabella "Category" del database locale dalla loro implementazione;
 \item[Descrizione:] .Interfaccia che espone i metodi per un DAO per accedere alla tabella "Category" del database locale;
 \item[Metodi:] \
 \begin{itemize}
@@ -2008,7 +2008,7 @@ Metodo che restituisce l'identificativo numerico dell'oggetto CategoryTable
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ \textit{cursorToType(cursor : Cursor) : Object}}\\
-Metodo che viene utilizzato per convertire il risultato di una qury sul database locale in un oggetto
+Metodo che viene utilizzato per convertire il risultato di una query sul database locale in un oggetto
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -2105,7 +2105,7 @@ Nome della tabella. Valore di default "Edge"
 \item[Nome:] \texttt{EdgeDao};
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazioni dei metodi per effettuare le operazioni CRUD sulla tabella "Edge" del database locale dalla loro implementazione;
+\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazione dei metodi per effettuare le operazioni CRUD sulla tabella "Edge" del database locale dalla loro implementazione;
 \item[Descrizione:] Interfaccia che espone i metodi per un DAO per accedere alla tabella "Edge" del database locale;
 \item[Metodi:] \
 \begin{itemize}
@@ -2270,7 +2270,7 @@ Nome della tabella. Valore di default "EdgeType"
 \item[Nome:] \texttt{EdgeTypeDao};
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazioni dei metodi per effettuare le operazioni CRUD sulla tabella "EdgeType" del database locale dalla loro implementazione;
+\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazione dei metodi per effettuare le operazioni CRUD sulla tabella "EdgeType" del database locale dalla loro implementazione;
 \item[Descrizione:] Interfaccia che espone i metodi per un DAO per accedere alla tabella "EdgeType" del database locale;
 \item[Metodi:] \
 \begin{itemize}
@@ -2413,7 +2413,7 @@ Metodo che ritorna l'URL del database remoto
  \item \texttt{- MapsDbHelper()}\\
 Costruttore della classe MapsDbHelper
  \item \texttt{+ onCreate(db : SQLiteDatabase) : void}\\
-Metodo che viene chiamato la prima volta che viene creato il database
+\textbf{Override} Metodo che viene chiamato la prima volta che viene creato il database
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -2421,7 +2421,7 @@ Metodo che viene chiamato la prima volta che viene creato il database
 Riferimento al database\end{itemize}
 \end{description}
 \item \texttt{+ onUpgrade(db : SQLiteDatabase, oldVersion : int, newVersione : int) : void}\\
-Metodo che viene chiamato per effettuare l'upgrade del database
+\textbf{Override} Metodo che viene chiamato per effettuare l'upgrade del database
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -2477,7 +2477,7 @@ Nome della tabella.Valore di default "Photo"
 \item[Nome:] \texttt{PhotoDao};
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazioni dei metodi per effettuare le operazioni CRUD sulla tabella "Photo" del database locale dalla loro implementazione;
+\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazione dei metodi per effettuare le operazioni CRUD sulla tabella "Photo" del database locale dalla loro implementazione;
 \item[Descrizione:] Interfaccia che espone i metodi per un DAO per accedere alla tabella "Photo" del database locale;
 \item[Metodi:] \
 \begin{itemize}
@@ -2618,7 +2618,7 @@ Nome della tabella.Valore di default "POI"
 \item[Nome:] \texttt{PointOfInterestDao};
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazioni dei metodi per effettuare le operazioni CRUD sulla tabella "POI" del database locale dalla loro implementazione;
+\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazione dei metodi per effettuare le operazioni CRUD sulla tabella "POI" del database locale dalla loro implementazione;
 \item[Descrizione:] Interfaccia che espone i metodi per un DAO per accedere alla tabella "POI" del database locale;
 \item[Metodi:] \
 \begin{itemize}
@@ -2765,7 +2765,7 @@ Nome della tabella. Valore di default "ROI"
 \item[Nome:] \texttt{RegionOfInterestDao};
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazioni dei metodi per effettuare le operazioni CRUD sulla tabella "ROI" del database locale dalla loro implementazione;
+\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazione dei metodi per effettuare le operazioni CRUD sulla tabella "ROI" del database locale dalla loro implementazione;
 \item[Descrizione:] Interfaccia che espone i metodi per un DAO per accedere alla tabella "ROI" del database locale;
 \item[Metodi:] \
 \begin{itemize}
@@ -3262,7 +3262,7 @@ Nome della tabella. Valore di default "ROIPOI"
 \item[Nome:] \texttt{RoiPoiDao};
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazioni dei metodi per effettuare le operazioni CRUD sulla tabella "ROIPOI" del database locale dalla loro implementazione;
+\item[Utilizzo:] Viene utilizzata per rendere indipendenti l'invocazione dei metodi per effettuare le operazioni CRUD sulla tabella "ROIPOI" del database locale dalla loro implementazione;
 \item[Descrizione:] Interfaccia che espone i metodi per un DAO per accedere alla tabella "ROIPOI" del database locale;
 \item[Metodi:] \
 \begin{itemize}
@@ -3412,7 +3412,7 @@ Metodo per effettuare una query sul database locale
 \item[Argomenti:] \
 \begin{itemize}
 \item \texttt{distinct : boolean}\\
-Parametro che indica se applicare o meno la clause DISTINCT alla query\item \texttt{tableName : String}\\
+Parametro che indica se applicare o meno la clausola DISTINCT alla query\item \texttt{tableName : String}\\
 Nome della tabella si cui effettuare la query\item \texttt{columns : String[]}\\
 Lista delle colonne da ritornare\item \texttt{where : String}\\
 Condizioni utilizzate per filtrare le righe su cui effettuare l'operazione\item \texttt{whereArgs : String[]}\\
@@ -3474,7 +3474,7 @@ Valori delle condizioni where\end{itemize}
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ cursorToType(cursor : Cursor) : BuildingTable}\\
-Metodo che viene utilizzato per convertire il risultato della query sulla tabella "Building" del database locale in un oggetto BuildingTable
+\textbf{Override} Metodo che viene utilizzato per convertire il risultato della query sulla tabella "Building" del database locale in un oggetto BuildingTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3482,7 +3482,7 @@ Metodo che viene utilizzato per convertire il risultato della query sulla tabell
 Risultato della query sulla tabella "Building" del database locale\end{itemize}
 \end{description}
 \item \texttt{+ deleteBuilding(id : int) : void}\\
-Metodo che permette la rimozione delle informazioni di un edificio dalla tabella "Building" del database locale 
+\textbf{Override} Metodo che permette la rimozione delle informazioni di un edificio dalla tabella "Building" del database locale 
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3490,9 +3490,9 @@ Metodo che permette la rimozione delle informazioni di un edificio dalla tabella
 Identificativo dell'edificio di cui rimuovere le informazioni dal database locale\end{itemize}
 \end{description}
 \item \texttt{+ findAllBuildings() : Collection<BuildingTable>}\\
-Metodo che viene utilizzato per recuperare le informazioni di tutti gli edifici presenti nella tabella "Building" del database locale
+\textbf{Override} Metodo che viene utilizzato per recuperare le informazioni di tutti gli edifici presenti nella tabella "Building" del database locale
  \item \texttt{+ findBuildingById(id : int) : BuildingTable}\\
-Metodo per recuperare le informazioni di un edificio dal database locale tramite il suo identificativo, sotto forma di oggetto BuildingTable
+\textbf{Override} Metodo per recuperare le informazioni di un edificio dal database locale tramite il suo identificativo, sotto forma di oggetto BuildingTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3500,7 +3500,7 @@ Metodo per recuperare le informazioni di un edificio dal database locale tramite
 Identificativo dell'edificio di cui recuperare le informazioni\end{itemize}
 \end{description}
 \item \texttt{+ findBuildingByMajor(major : int) : BuildingTable}\\
-Metodo per recuperare le informazioni di un edificio dal database locale tramite il suo major, sotto forma di oggetto BuildingTable
+\textbf{Override} Metodo per recuperare le informazioni di un edificio dal database locale tramite il suo major, sotto forma di oggetto BuildingTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3508,7 +3508,7 @@ Metodo per recuperare le informazioni di un edificio dal database locale tramite
 Major dell'edificio di cui recuperare le informazioni\end{itemize}
 \end{description}
 \item \texttt{+ insertBuilding(toInsert : BuildingTable) : int}\\
-Metodo che permette l'inserimento delle informazioni di un edificio in una entry della tabella "Building" del database locale
+\textbf{Override} Metodo che permette l'inserimento delle informazioni di un edificio in una entry della tabella "Building" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3532,7 +3532,7 @@ Costruttore della classe SQLiteBuildingDao
 Il database locale\end{itemize}
 \end{description}
 \item \texttt{+ updateBuilding(id : int, toUpdate : BuildingTable) : boolean}\\
-Metodo per aggiornare le informazioni di un edificio nella tabella "Building" del database locale
+\textbf{Override} Metodo per aggiornare le informazioni di un edificio nella tabella "Building" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3564,7 +3564,7 @@ Oggetto che contiene le informazioni aggiornate dell'edificio\end{itemize}
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ cursorToType(cursor : Cursor) : CategoryTable}\\
-Metodo che viene utilizzato per convertire il risultato della query sulla tabella "Category" del database locale in un oggetto CategoryTable
+\textbf{Override} Metodo che viene utilizzato per convertire il risultato della query sulla tabella "Category" del database locale in un oggetto CategoryTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3572,7 +3572,7 @@ Metodo che viene utilizzato per convertire il risultato della query sulla tabell
 Risultato della query sulla tabella "Category" del database locale\end{itemize}
 \end{description}
 \item \texttt{+ deleteCategory(id : int) : void}\\
-Metodo che permette la rimozione delle informazioni di un edificio dalla tabella "Category" del database locale
+\textbf{Override} Metodo che permette la rimozione delle informazioni di un edificio dalla tabella "Category" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3580,7 +3580,7 @@ Metodo che permette la rimozione delle informazioni di un edificio dalla tabella
 Identificativo della categoria da rimuovere dal database locale\end{itemize}
 \end{description}
 \item \texttt{+ findCategory(id : int) : CategoryTable}\\
-Metodo per recuperare le informazioni di una categoria dal database locale tramite il suo identificativo, sotto forma di oggetto CategoryTable
+\textbf{Override} Metodo per recuperare le informazioni di una categoria dal database locale tramite il suo identificativo, sotto forma di oggetto CategoryTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3588,7 +3588,7 @@ Metodo per recuperare le informazioni di una categoria dal database locale trami
 Identificativo della categoria di cui recuperare le informazioni\end{itemize}
 \end{description}
 \item \texttt{+ insertCategory(toInsert : CategoryTable) : int}\\
-Metodo che permette l'inserimento di una categoria nella tabella "Category" del database locale
+\textbf{Override} Metodo che permette l'inserimento di una categoria nella tabella "Category" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3604,7 +3604,7 @@ Costruttore della classe SQLiteCategoryDao
 Il database locale\end{itemize}
 \end{description}
 \item \texttt{+ updateCategory(id : int, toUpdate : CategoryTable) : boolean}\\
-Metodo per aggiornare le informazioni di una categoria nella tabella "Category" del database locale
+\textbf{Override} Metodo per aggiornare le informazioni di una categoria nella tabella "Category" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3684,7 +3684,7 @@ Il database locale \end{itemize}
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ cursorToType(cursor : Cursor) : EdgeTable}\\
-Metodo che viene utilizzato per convertire il risultato della query sulla tabella "Edge" del database locale in un oggetto EdgeTable
+\textbf{Override} Metodo che viene utilizzato per convertire il risultato della query sulla tabella "Edge" del database locale in un oggetto EdgeTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3692,7 +3692,7 @@ Metodo che viene utilizzato per convertire il risultato della query sulla tabell
 Risultato della query sulla tabella "Edge" del database locale\end{itemize}
 \end{description}
 \item \texttt{+ deleteEdge(id : int) : void}\\
-Metodo che permette la rimozione delle informazioni di un edificio dalla tabella "Edge" del database locale 
+\textbf{Override} Metodo che permette la rimozione delle informazioni di un edificio dalla tabella "Edge" del database locale 
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3700,7 +3700,7 @@ Metodo che permette la rimozione delle informazioni di un edificio dalla tabella
 Identificativo dell'arco di cui rimuovere le informazioni dal database locale\end{itemize}
 \end{description}
 \item \texttt{+ findAllEdgesOfBuilding(major : int) : Collection<EdgeTable>}\\
-Metodo che viene utilizzato per recuperare le informazioni di tutti gli archi presenti nella tabella "Edge" del database locale
+\textbf{Override} Metodo che viene utilizzato per recuperare le informazioni di tutti gli archi presenti nella tabella "Edge" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3708,7 +3708,7 @@ Metodo che viene utilizzato per recuperare le informazioni di tutti gli archi pr
 Identificativo major dell'edificio di cui si vogliono recuperare tutti gli archi\end{itemize}
 \end{description}
 \item \texttt{+ findEdge(id : int) : EdgeTable}\\
-Metodo per recuperare le informazioni di un arco dal database locale tramite il suo identificativo, sotto forma di oggetto EdgeTable
+\textbf{Override} Metodo per recuperare le informazioni di un arco dal database locale tramite il suo identificativo, sotto forma di oggetto EdgeTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3716,7 +3716,7 @@ Metodo per recuperare le informazioni di un arco dal database locale tramite il 
 Identificativo dell'arco di cui recuperare le informazioni\end{itemize}
 \end{description}
 \item \texttt{+ insertEdge(toInsert : EdgeTable) : int}\\
-Metodo che permette l'inserimento delle informazioni di un edificio in una entry della tabella "Edge" del database locale
+\textbf{Override} Metodo che permette l'inserimento delle informazioni di un edificio in una entry della tabella "Edge" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3732,7 +3732,7 @@ Costruttore della classe SQLiteEdgeDao
 Il database locale\end{itemize}
 \end{description}
 \item \texttt{+ updateEdge(id : int, toUpdate : EdgeTable) : boolean}\\
-Metodo per aggiornare le informazioni di un edificio nella tabella "Edge" del database locale
+\textbf{Override} Metodo per aggiornare le informazioni di un edificio nella tabella "Edge" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3764,7 +3764,7 @@ Oggetto che contiene le informazioni aggiornate dell'arco\end{itemize}
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ cursorToType(cursor : Cursor) : EdgeTypeTable}\\
-Metodo che viene utilizzato per convertire il risultato della query sulla tabella "EdgeType" del database locale in un oggetto EdgeTypeTable
+\textbf{Override} Metodo che viene utilizzato per convertire il risultato della query sulla tabella "EdgeType" del database locale in un oggetto EdgeTypeTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3772,7 +3772,7 @@ Metodo che viene utilizzato per convertire il risultato della query sulla tabell
 Risultato della query sulla tabella "EdgeType" del database locale\end{itemize}
 \end{description}
 \item \texttt{+ deleteEdgeType(id : int) : void}\\
-Metodo che permette la rimozione delle informazioni di un tipo di Edge dalla tabella "EdgeType" del database locale
+\textbf{Override} Metodo che permette la rimozione delle informazioni di un tipo di Edge dalla tabella "EdgeType" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3780,7 +3780,7 @@ Metodo che permette la rimozione delle informazioni di un tipo di Edge dalla tab
 Identificativo del tipo di Edge di cui rimuovere le informazioni dal database locale\end{itemize}
 \end{description}
 \item \texttt{+ findEdgeType(id : int) : EdgeTypeTable}\\
-Metodo per recuperare le informazioni di un tipo di Edge dal database locale tramite il suo identificativo, sotto forma di oggetto EdgeTypeTable
+\textbf{Override} Metodo per recuperare le informazioni di un tipo di Edge dal database locale tramite il suo identificativo, sotto forma di oggetto EdgeTypeTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3788,7 +3788,7 @@ Metodo per recuperare le informazioni di un tipo di Edge dal database locale tra
 Identificativo del tipo di Edge di cui recuperare le informazioni\end{itemize}
 \end{description}
 \item \texttt{+ insertEdgeType(toInsert : EdgeTypeTable) : int}\\
-Metodo che permette l'inserimento delle informazioni del tipo di Edge in una entry della tabella "EdgeType" del database locale
+\textbf{Override} Metodo che permette l'inserimento delle informazioni del tipo di Edge in una entry della tabella "EdgeType" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3804,7 +3804,7 @@ Costruttore della classe SQLiteEdgeTypeDao
 Il database locale\end{itemize}
 \end{description}
 \item \texttt{+ updateEdgeType(id : int, toUpdate : EdgeTypeTable) : boolean}\\
-Metodo per aggiornare le informazioni di un tipo di Edge nella tabella "EdgeType" del database locale
+\textbf{Override} Metodo per aggiornare le informazioni di un tipo di Edge nella tabella "EdgeType" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3836,7 +3836,7 @@ Oggetto che contiene le informazioni aggiornate del tipo di Edge\end{itemize}
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ cursorToType(cursor : Cursor) : PhotoTable}\\
-Metodo che viene utilizzato per convertire il risultato della query sulla tabella "Photo" del database locale in un oggetto PhotoTable
+\textbf{Override} Metodo che viene utilizzato per convertire il risultato della query sulla tabella "Photo" del database locale in un oggetto PhotoTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3844,7 +3844,7 @@ Metodo che viene utilizzato per convertire il risultato della query sulla tabell
 Risultato della query sulla tabella "Photo" del database locale\end{itemize}
 \end{description}
 \item \texttt{+ deletePhoto(id : int) : void}\\
-Metodo che permette la rimozione delle informazioni di una foto dalla tabella "Photo" del database locale
+\textbf{Override} Metodo che permette la rimozione delle informazioni di una foto dalla tabella "Photo" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3852,7 +3852,7 @@ Metodo che permette la rimozione delle informazioni di una foto dalla tabella "P
 Identificativo della foto di cui rimuovere le informazioni dal database locale\end{itemize}
 \end{description}
 \item \texttt{+ findAllPhotosOfEdge(id : int) : Collection<PhotoTable>}\\
-Metodo che viene utilizzato per recuperare le informazioni di tutte foto associate ad un Edge presenti nella tabella "Photo" del database locale
+\textbf{Override} Metodo che viene utilizzato per recuperare le informazioni di tutte foto associate ad un Edge presenti nella tabella "Photo" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3860,7 +3860,7 @@ Metodo che viene utilizzato per recuperare le informazioni di tutte foto associa
 Identificativo dell'Edge\end{itemize}
 \end{description}
 \item \texttt{+ findPhoto(id : int) : PhotoTable}\\
-Metodo per recuperare le informazioni di una foto dal database locale tramite il suo identificativo, sotto forma di oggetto PhotoTable
+\textbf{Override} Metodo per recuperare le informazioni di una foto dal database locale tramite il suo identificativo, sotto forma di oggetto PhotoTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3868,7 +3868,7 @@ Metodo per recuperare le informazioni di una foto dal database locale tramite il
 Identificativo della foto\end{itemize}
 \end{description}
 \item \texttt{+ insertPhoto(toInsert : PhotoTable) : int}\\
-Metodo che permette l'inserimento delle informazioni di una foto in una entry della tabella "Photo" del database locale
+\textbf{Override} Metodo che permette l'inserimento delle informazioni di una foto in una entry della tabella "Photo" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3884,7 +3884,7 @@ Costruttore della classe SQLitePhotoDao
 Il database locale\end{itemize}
 \end{description}
 \item \texttt{+ updatePhoto(id : int, toUpdate : PhotoTable) : boolean}\\
-Metodo per aggiornare le informazioni di una foto nella tabella "Photo" del database locale
+\textbf{Override} Metodo per aggiornare le informazioni di una foto nella tabella "Photo" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3916,7 +3916,7 @@ Oggetto che contiene le informazioni aggiornate della foto\end{itemize}
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ cursorToType(cursor : Cursor) : PointOfInterestTable}\\
-Metodo che viene utilizzato per convertire il risultato della query sulla tabella "POI" del database locale in un oggetto PointOfInterestTable
+\textbf{Override} Metodo che viene utilizzato per convertire il risultato della query sulla tabella "POI" del database locale in un oggetto PointOfInterestTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3924,7 +3924,7 @@ Metodo che viene utilizzato per convertire il risultato della query sulla tabell
 Risultato della query sulla tabella "POI" del database locale\end{itemize}
 \end{description}
 \item \texttt{+ deletePointOfInterest(id : int) : void}\\
-Metodo che permette la rimozione delle informazioni di un edificio dalla tabella "POI" del database locale 
+\textbf{Override} Metodo che permette la rimozione delle informazioni di un edificio dalla tabella "POI" del database locale 
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3932,7 +3932,7 @@ Metodo che permette la rimozione delle informazioni di un edificio dalla tabella
 Identificativo del POI di cui rimuovere le informazioni dal database locale\end{itemize}
 \end{description}
 \item \texttt{+ findAllPointsWithMajor(major : int) : Collection<PointOfInterestTable>}\\
-Metodo che viene utilizzato per recuperare le informazioni di tutti gli edifici presenti nella tabella "POI" del database locale
+\textbf{Override} Metodo che viene utilizzato per recuperare le informazioni di tutti gli edifici presenti nella tabella "POI" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3940,7 +3940,7 @@ Metodo che viene utilizzato per recuperare le informazioni di tutti gli edifici 
 Identificativo Major associato a tutti i beacon presenti in uno stesso edificio\end{itemize}
 \end{description}
 \item \texttt{+ findPointOfInterest(id : int) : PointOfInterestTable}\\
-Metodo per recuperare le informazioni di un edificio dal database locale tramite il suo identificativo, sotto forma di oggetto PointOfInterestTable
+\textbf{Override} Metodo per recuperare le informazioni di un edificio dal database locale tramite il suo identificativo, sotto forma di oggetto PointOfInterestTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3948,7 +3948,7 @@ Metodo per recuperare le informazioni di un edificio dal database locale tramite
 Identificativo del POI di cui recuperare le informazioni\end{itemize}
 \end{description}
 \item \texttt{+ insertPointOfInterest(toInsert : PointOfInterestTable) : int}\\
-Metodo che permette l'inserimento delle informazioni di un edificio in una entry della tabella "POI" del database locale
+\textbf{Override} Metodo che permette l'inserimento delle informazioni di un edificio in una entry della tabella "POI" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3964,7 +3964,7 @@ Costruttore della classe SQLitePointOfInterestDao
 Il database locale\end{itemize}
 \end{description}
 \item \texttt{+ updatePointOfInterest(id : int, toUpdate : PointOfInterestTable) : boolean}\\
-Metodo per aggiornare le informazioni di un edificio nella tabella "POI" del database locale
+\textbf{Override} Metodo per aggiornare le informazioni di un edificio nella tabella "POI" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -3996,7 +3996,7 @@ Oggetto che contiene le informazioni aggiornate del POI\end{itemize}
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ cursorToType(cursor : Cursor) : RegionOfInterestTable}\\
-Metodo che viene utilizzato per convertire il risultato della query sulla tabella "ROI" del database locale in un oggetto RegionOfInterestTable
+\textbf{Override} Metodo che viene utilizzato per convertire il risultato della query sulla tabella "ROI" del database locale in un oggetto RegionOfInterestTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4004,7 +4004,7 @@ Metodo che viene utilizzato per convertire il risultato della query sulla tabell
 Risultato della query sulla tabella "ROI" del database locale\end{itemize}
 \end{description}
 \item \texttt{+ deleteRegionOfInterest(id : int) : void}\\
-Metodo che permette la rimozione delle informazioni di una RegionOfInterest dalla tabella "ROI" del database locale
+\textbf{Override} Metodo che permette la rimozione delle informazioni di una RegionOfInterest dalla tabella "ROI" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4012,7 +4012,7 @@ Metodo che permette la rimozione delle informazioni di una RegionOfInterest dall
 Identificativo della RegionOfInterest di cui rimuovere le informazioni dal database locale\end{itemize}
 \end{description}
 \item \texttt{+ findAllRegionsWithMajor(major : int) : Collection<RegionOfInterestTable>}\\
-Metodo che viene utilizzato per recuperare le informazioni di tutte le RegionOfInterest associato ad certo edificio, dato il major dell'edificio
+\textbf{Override} Metodo che viene utilizzato per recuperare le informazioni di tutte le RegionOfInterest associato ad certo edificio, dato il major dell'edificio
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4020,7 +4020,7 @@ Metodo che viene utilizzato per recuperare le informazioni di tutte le RegionOfI
 Major dell'edificio\end{itemize}
 \end{description}
 \item \texttt{+ findRegionOfInterest(id : int) : RegionOfInterestTable}\\
-Metodo per recuperare le informazioni di una RegionOfInterest dal database locale tramite il suo identificativo, sotto forma di oggetto RegionOfInterestTable
+\textbf{Override} Metodo per recuperare le informazioni di una RegionOfInterest dal database locale tramite il suo identificativo, sotto forma di oggetto RegionOfInterestTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4028,7 +4028,7 @@ Metodo per recuperare le informazioni di una RegionOfInterest dal database local
 Identificativo della RegionOfInterest di cui recuperare le informazioni\end{itemize}
 \end{description}
 \item \texttt{+ insertRegionOfInterest(toInsert : RegionOfInterestTable) : int}\\
-Metodo che permette l'inserimento delle informazioni di una RegionOfInterest in una entry della tabella "ROI" del database locale
+\textbf{Override} Metodo che permette l'inserimento delle informazioni di una RegionOfInterest in una entry della tabella "ROI" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4044,7 +4044,7 @@ Costruttore della classe SQLiteRegionOfInterestDao
 Il database locale\end{itemize}
 \end{description}
 \item \texttt{+ updateRegionOfInterest(id : int, toUpdate : RegionOfInterestTable) : boolean}\\
-Metodo per aggiornare le informazioni di una RegionOfInterest nella tabella "ROI" del database locale
+\textbf{Override} Metodo per aggiornare le informazioni di una RegionOfInterest nella tabella "ROI" del database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4076,7 +4076,7 @@ Oggetto che contiene le informazioni aggiornate della RegionOfInterest\end{itemi
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ cursorToType(cursor : Cursor) : RoiPoiTable}\\
-Metodo che viene utilizzato per convertire il risultato della query sulla tabella "ROIPOI" del database locale in un oggetto RoiPoiTable
+\textbf{Override} Metodo che viene utilizzato per convertire il risultato della query sulla tabella "ROIPOI" del database locale in un oggetto RoiPoiTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4084,7 +4084,7 @@ Metodo che viene utilizzato per convertire il risultato della query sulla tabell
 Risultato della query sulla tabella "ROIPOI" del database locale\end{itemize}
 \end{description}
 \item \texttt{+ deleteRoiPoisWherePoi(poi : int) : void}\\
-Metodo che permette la rimozione delle associazioni tra un ROI e i POI ad esso associato dalla tabella "ROIPOI" del database locale 
+\textbf{Override} Metodo che permette la rimozione delle associazioni tra un ROI e i POI ad esso associato dalla tabella "ROIPOI" del database locale 
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4092,7 +4092,7 @@ Metodo che permette la rimozione delle associazioni tra un ROI e i POI ad esso a
 Identificativo del POI di cui rimuovere le associazioni con i ROI dal database locale\end{itemize}
 \end{description}
 \item \texttt{+ deleteRoiPoisWhereRoi(roi : int) : void}\\
-Metodo che permette la rimozione delle associazioni tra un POI e i ROI ad esso associato dalla tabella "ROIPOI" del database locale 
+\textbf{Override} Metodo che permette la rimozione delle associazioni tra un POI e i ROI ad esso associato dalla tabella "ROIPOI" del database locale 
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4100,7 +4100,7 @@ Metodo che permette la rimozione delle associazioni tra un POI e i ROI ad esso a
 Identificativo del ROI di cui rimuovere le associazioni con i POI dal database locale\end{itemize}
 \end{description}
 \item \texttt{+ findAllPointsWithRoi(roi : int) : int[]}\\
-Metodo per recuperare tutti gli identificativi dei POI associati ad un ROI 
+\textbf{Override} Metodo per recuperare tutti gli identificativi dei POI associati ad un ROI 
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4108,7 +4108,7 @@ Metodo per recuperare tutti gli identificativi dei POI associati ad un ROI
 Identificativo del ROI di cui recuperare gli identificativi di tutti i POI associati\end{itemize}
 \end{description}
 \item \texttt{+ findAllRegionsWithPoi(poi : int) : int[]}\\
-Metodo per recuperare tutti gli identificativi dei ROI associati ad un POI 
+\textbf{Override} Metodo per recuperare tutti gli identificativi dei ROI associati ad un POI 
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4116,7 +4116,7 @@ Metodo per recuperare tutti gli identificativi dei ROI associati ad un POI
 Identificativo del POI di cui recuperare gli identificativi di tutti i ROI associati\end{itemize}
 \end{description}
 \item \texttt{+ insertRoiPoi(toInsert : RoiPoiTable) : int}\\
-Metodo che permette l'inserimento tra ROI ed POI nel database locale utilizzando un oggetto RoiPoiTable
+\textbf{Override} Metodo che permette l'inserimento tra ROI ed POI nel database locale utilizzando un oggetto RoiPoiTable
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4132,7 +4132,7 @@ Costruttore della classe SQLiteRoiPoiDao
 Il database locale\end{itemize}
 \end{description}
 \item \texttt{+ updateRoiPoi(poi : int, roi : int, toUpdate : RoiPoiTable) : boolean}\\
-Metodo per aggiornare le associazioni tra POI e ROI
+\textbf{Override} Metodo per aggiornare le associazioni tra POI e ROI
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4219,7 +4219,7 @@ Metodo per la conversione di un JsonObject in un oggetto BuildingTable, che verr
 Oggetto JsonObject che contiene le informazioni di un edificio\end{itemize}
 \end{description}
 \item \texttt{+ deleteBuilding(id : int) : void}\\
-Metodo per rimuovere la mappa di un edificio dal database locale
+\textbf{Override} Metodo per rimuovere la mappa di un edificio dal database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4227,11 +4227,11 @@ Metodo per rimuovere la mappa di un edificio dal database locale
 Identificativo dell'edificio da rimuovere\end{itemize}
 \end{description}
 \item \texttt{+ findAllBuildings() : Collection<BuildingTable>}\\
-Metodo per recuperare le informazioni di tutte le mappe degli edifici presenti nel database locale
+\textbf{Override} Metodo per recuperare le informazioni di tutte le mappe degli edifici presenti nel database locale
  \item \texttt{+ findAllRemoteBuildings() : Collection<BuildingTable>}\\
-Metodo per recuperare le informazioni di tutte le mappe degli edifici presenti nel database remoto
+\textbf{Override} Metodo per recuperare le informazioni di tutte le mappe degli edifici presenti nel database remoto
  \item \texttt{+ findBuildingByMajor(major : int) : BuildingMap}\\
-Metodo per recuperare la mappa di un edificio ricercandola nel database locale
+\textbf{Override} Metodo per recuperare la mappa di un edificio ricercandola nel database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4239,7 +4239,7 @@ Metodo per recuperare la mappa di un edificio ricercandola nel database locale
 Major dell'edificio\end{itemize}
 \end{description}
 \item \texttt{+ findRemoteBuildingByMajor(major : int) : BuildingMap}\\
-Metodo per recuperare la mappa di un edificio ricercandola nel database remoto
+\textbf{Override} Metodo per recuperare la mappa di un edificio ricercandola nel database remoto
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4255,7 +4255,7 @@ Metodo per la costruzione di oggetto BuildingMap a partire da un BuildingTable
 Oggetto contenente le informazioni dell'edificio\end{itemize}
 \end{description}
 \item \texttt{+ isBuildingMapPresent(major : int) : boolean}\\
-Metodo per verificare la presenza di una mappa di un edificio nel database locale
+\textbf{Override} Metodo per verificare la presenza di una mappa di un edificio nel database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4263,7 +4263,7 @@ Metodo per verificare la presenza di una mappa di un edificio nel database local
 Major dell'edificio\end{itemize}
 \end{description}
 \item \texttt{+ isBuildingMapUpdated(major : int) : boolean}\\
-Metodo per verificare se la mappa di un edificio è aggiornata all'ultima versione
+\textbf{Override} Metodo per verificare se la mappa di un edificio è aggiornata all'ultima versione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4279,7 +4279,7 @@ Metodo per scaricare la mappa di un edificio dal database remoto ed inserirla ne
 Major dell'edificio\end{itemize}
 \end{description}
 \item \texttt{+ updateBuildingMap(major : int) : void}\\
-Metodo per aggiornare la mappa di un edificio all'ultima versione disponibile
+\textbf{Override} Metodo per aggiornare la mappa di un edificio all'ultima versione disponibile
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4856,7 +4856,7 @@ Metodo che ritorna la descrizione dell'edificio al quale tale oggetto è associa
  \item \texttt{+ getName() : String}\\
 Metodo che ritorna il nome dell'edificio al quale tale oggetto è associato
  \item \texttt{+ getOpeningHours() : String}\\
-Metodo che ritorna gli orari dell'edificio al quale rale oggetto è associato
+Metodo che ritorna gli orari dell'edificio al quale tale oggetto è associato
  \item \texttt{+ toString() : String}\\
 Metodo che ritorna tutte le informazioni dell'edificio al quale tale oggetto è associato sottoforma di stringa
  \end{itemize}
@@ -4880,7 +4880,7 @@ Metodo che ritorna tutte le informazioni dell'edificio al quale tale oggetto è 
 \item \texttt{+ \textit{getAddress() : String}}\\
 Metodo che ritorna l'indirizzo dell'edificio a cui l'oggetto è associato.
  \item \texttt{+ \textit{getAllBuildingInformation() : BuildingInformation}}\\
-Metodo che ritornna un oggetto BuildingInformation contenente tutte le informazioni dell'edificio a cui è associato.
+Metodo che ritorna un oggetto BuildingInformation contenente tutte le informazioni dell'edificio a cui è associato.
  \item \texttt{+ \textit{getAllEdges() : Collection<EnrichedEdge>}}\\
 Metodo che ritorna la collezione di tutti gli archi previsti nella rappresentazione a grafo di un edificio.
  \item \texttt{+ \textit{getAllPOIs() : Collection<PointOfInterest>}}\\
@@ -4983,13 +4983,13 @@ Informazioni dell'edificio\item \texttt{size : String}\\
 Dimensione della mappa dell'edificio (espressa in MB)\end{itemize}
 \end{description}
 \item \texttt{+ getAddress() : String}\\
-Metodo che ritorna l'indirizzo dell'edificio a cui l'oggetto è associato
+\textbf{Override} Metodo che ritorna l'indirizzo dell'edificio a cui l'oggetto è associato
  \item \texttt{+ getAllBuildingInformation() : BuildingInformation}\\
-Metodo che ritornna un oggetto BuildingInformation contenente tutte le informazioni dell'edificio a cui è associato.
+\textbf{Override} Metodo che ritorna un oggetto BuildingInformation contenente tutte le informazioni dell'edificio a cui è associato.
  \item \texttt{+ getAllEdges() : Collection<EnrichedEdge>}\\
-Metodo che ritorna la collezione di tutti gli archi previsti nella rappresentazione a grafo di un edificio
+\textbf{Override} Metodo che ritorna la collezione di tutti gli archi previsti nella rappresentazione a grafo di un edificio
  \item \texttt{+ getAllNearbyPOIs(beacon : MyBeacon) : Collection<PointOfInterest>}\\
-Metodo che ritorna la collezione di POI associati alla ROI che contiene il beacon passato come argomento
+\textbf{Override} Metodo che ritorna la collezione di POI associati alla ROI che contiene il beacon passato come argomento
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -4997,25 +4997,25 @@ Metodo che ritorna la collezione di POI associati alla ROI che contiene il beaco
 Beacon associato alla RegionOfInterest di cui si vogliono conoscere l'insieme di POI che contiene\end{itemize}
 \end{description}
 \item \texttt{+ getAllPOIs() : Collection<PointOfInterest>}\\
-Metodo che ritorna la collezione di tutti i POI presenti in un edificio
+\textbf{Override} Metodo che ritorna la collezione di tutti i POI presenti in un edificio
  \item \texttt{+ getAllPOIsCategories() : Collection<String>}\\
-Metodo che ritorna una collezione di stringhe, eventualmente vuota, che rappresentano le categorie di appartenenza dei POI
+\textbf{Override} Metodo che ritorna una collezione di stringhe, eventualmente vuota, che rappresentano le categorie di appartenenza dei POI
  \item \texttt{+ getAllROIs() : Collection<RegionOfInterest>}\\
-Metodo che ritorna la collezione di tutti i ROI presenti in un edificio
+\textbf{Override} Metodo che ritorna la collezione di tutti i ROI presenti in un edificio
  \item \texttt{+ getDescription() : String}\\
-Metodo che ritorna una descrizione dell'edificio a cui l'oggetto è associato
+\textbf{Override} Metodo che ritorna una descrizione dell'edificio a cui l'oggetto è associato
  \item \texttt{+ getId() : int}\\
-Metodo che l'identificativo numerico della mappa all'interno di un database
+\textbf{Override} Metodo che l'identificativo numerico della mappa all'interno di un database
  \item \texttt{+ getName() : String}\\
-Metodo che restituisce il nome dell'edificio a cui è associato tale oggetto
+\textbf{Override} Metodo che restituisce il nome dell'edificio a cui è associato tale oggetto
  \item \texttt{+ getOpeningHours() : String}\\
-Metodo che ritornagli orari di apertura dell'edificio a cui l'oggetto è associato
+\textbf{Override} Metodo che ritornagli orari di apertura dell'edificio a cui l'oggetto è associato
  \item \texttt{+ getSize() : String}\\
-Metodo che ritorna la dimensione della mappa dell'edificio (espressa in MB)
+\textbf{Override} Metodo che ritorna la dimensione della mappa dell'edificio (espressa in MB)
  \item \texttt{+ getVersion() : int}\\
-Metodo che ritorna l'identificativo numerico della mappa
+\textbf{Override} Metodo che ritorna l'identificativo numerico della mappa
  \item \texttt{+ searchPOIByName(name : String) : Collection<PointOfInterest>}\\
-Metodo che permette di cercare i POI di un edificio in cui nome contiene la stringa passata come parametro. Ritorna una collezione, eventualmente vuota,  di oggetti PointOfInterest nel cui nome contengono la stringa passata come parametro
+\textbf{Override} Metodo che permette di cercare i POI di un edificio in cui nome contiene la stringa passata come parametro. Ritorna una collezione, eventualmente vuota,  di oggetti PointOfInterest nel cui nome contengono la stringa passata come parametro
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -5141,7 +5141,7 @@ Iteratore rappresentante il punto che è stato raggiunto durante la navigazione
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ calculatePath(startRoi : RegionOfInterest, endRoi : RegionOfInterest) : void}\\
-Metodo che calcola un percorso tra due RegionOfInterest viste come vertici di un grafo MapGraph utilizzando un oggetto PathFinder. Il punto di partenza e il punto di arrivo sono i parametri richiesti in input dal metodo mentre il grafo è un campo dati. Viene lanciata un eccezione di tipo NoGraphSetException nel caso in cui non sia settato alcun grafo
+\textbf{Override} Metodo che calcola un percorso tra due RegionOfInterest viste come vertici di un grafo MapGraph utilizzando un oggetto PathFinder. Il punto di partenza e il punto di arrivo sono i parametri richiesti in input dal metodo mentre il grafo è un campo dati. Viene lanciata un eccezione di tipo NoGraphSetException nel caso in cui non sia settato alcun grafo
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -5158,7 +5158,7 @@ Metodo che crea le ProcessedInformation in base al tipo di arco e in base alle i
 Edge di cui devono essere recuperate le informazioni\end{itemize}
 \end{description}
 \item \texttt{+ getAllInstructions() : List<ProcessedInformation>}\\
-Metodo che ritorna la lista completa delle ProcessedInstruction da seguire per percorrere un percorso calcolato
+\textbf{Override} Metodo che ritorna la lista completa delle ProcessedInstruction da seguire per percorrere un percorso calcolato
  \item \texttt{- getMostPowerfullBeacon(beacons : PriorityQueue<MyBeacon>) : MyBeacon}\\
 Metodo che ritorna il beacon con potenza maggiore tra quelli rilevati
  \begin{description}
@@ -5189,7 +5189,7 @@ Costruttore della classe NavigatorImp
 Sensore di tipo Compass utilizzato durante la navigazione\end{itemize}
 \end{description}
 \item \texttt{+ setGraph(graph : MapGraph) : void}\\
-Metodo per settare il grafo sul quale calcolare il percorso
+\textbf{Override} Metodo per settare il grafo sul quale calcolare il percorso
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -5197,7 +5197,7 @@ Metodo per settare il grafo sul quale calcolare il percorso
 Grafo sul quale si vogliono calcolare dei percorsi\end{itemize}
 \end{description}
 \item \texttt{+ toNextRegion(visibleBeacons : PriorityQueue<MyBeacon>) : ProcessedInformation}\\
-Metodo che ritorna le informazioni da seguire per raggiungere la prossima RegionOfInterest. Le informazioni fornite dipendono dalla lista di beacon passata come parametro in ingrasso e dal beacon più potente tra quelli in essa contenuti. Viene lanciata una eccezione di tipo NoNavigationInformationException nel caso in cui si cerchi di accedere a tale metodo senza prima aver calcolato un percorso di navigazione. Viene lanciata una eccezione di tipo PathException nel caso in cui il beacon più potente nella lista di beacon in ingrasso sia associato ad una RegionOfInterest non appartenente ad una di quelle presenti nel percorso calcolato
+\textbf{Override} Metodo che ritorna le informazioni da seguire per raggiungere la prossima RegionOfInterest. Le informazioni fornite dipendono dalla lista di beacon passata come parametro in ingrasso e dal beacon più potente tra quelli in essa contenuti. Viene lanciata una eccezione di tipo NoNavigationInformationException nel caso in cui si cerchi di accedere a tale metodo senza prima aver calcolato un percorso di navigazione. Viene lanciata una eccezione di tipo PathException nel caso in cui il beacon più potente nella lista di beacon in ingrasso sia associato ad una RegionOfInterest non appartenente ad una di quelle presenti nel percorso calcolato
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -5241,7 +5241,7 @@ Stringa che rappresenta l'eccezione
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getException() : String}\\
-Metodo che ritorna il messaggio che rappresenta l'eccezione
+\textbf{Override} Metodo che ritorna il messaggio che rappresenta l'eccezione
  \item \texttt{+ NoGraphSetException()}\\
 Costruttore di default della classe NoGraphSetException
  \item \texttt{+ NoGraphSetException(message : String)}\\
@@ -5289,7 +5289,7 @@ Stringa che rappresenta l'eccezione
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getException() : String}\\
-Metodo che ritorna il messaggio che rappresenta l'eccezione
+\textbf{Override} Metodo che ritorna il messaggio che rappresenta l'eccezione
  \item \texttt{+ NoNavigationInformatioonException()}\\
 Costruttore di default della classe NoNavigationInformationException
  \item \texttt{+ NoNavigationInformatioonException(message : String)}\\
@@ -5337,7 +5337,7 @@ Stringa che rappresenta l'eccezione
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getException() : String}\\
-Metodo che ritorna il messaggio che rappresenta l'eccezione
+\textbf{Override} Metodo che ritorna il messaggio che rappresenta l'eccezione
  \item \texttt{+ PathException()}\\
 Costruttore di default della classe PathException
  \item \texttt{+ PathException(message : String)}\\
@@ -5396,7 +5396,7 @@ Metodo che ritorna le istruzioni basilari per superare un certo arco nel percors
 
 \end{itemize}
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] È utilizzata per accedere ai vari tipi di informazioni forniti quali informazioni di base, informazioni dettagliate e le foto dei luoghi da raggiugere;
+\item[Utilizzo:] È utilizzata per accedere ai vari tipi di informazioni forniti quali informazioni di base, informazioni dettagliate e le foto dei luoghi da raggiungere;
 \item[Descrizione:] Classe che rappresenta le informazioni di navigazione pronte per essere restituite ad un eventuale utilizzatore;
 \item[Attributi:] \
 \begin{itemize}
@@ -5413,11 +5413,11 @@ Lista di foto di un Edge
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getDetailedInstruction() : String}\\
-Metodo che ritorna le istruzioni dettagliate per superare un certo arco nel percorso calcolato
+\textbf{Override} Metodo che ritorna le istruzioni dettagliate per superare un certo arco nel percorso calcolato
  \item \texttt{+ getPhotoInstruction() : PhotoInformation}\\
-Metodo che ritorna un oggetto PhotoInformation con il quale è possibile accedere alle fotografie che ritraggono l'arco da superare nel percorso calcolato
+\textbf{Override} Metodo che ritorna un oggetto PhotoInformation con il quale è possibile accedere alle fotografie che ritraggono l'arco da superare nel percorso calcolato
  \item \texttt{+ getProcessedBasicInstruction() : String}\\
-Metodo che ritorna le istruzioni basilari per superare un certo arco nel percorso calcolato
+\textbf{Override} Metodo che ritorna le istruzioni basilari per superare un certo arco nel percorso calcolato
  \item \texttt{+ ProcessedInformationImp(edge : EnrichedEdge)}\\
 Costruttore della classe ProcessedInformationImp
  \begin{description}
@@ -5458,7 +5458,7 @@ Informazioni aggiuntive per costruire le informazioni associate ad un arco del p
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ calculatePath(graph : MapGraph, startROI : RegionOfInterest, endROI : RegionOfInterest) : List<EnrichedEdge>}\\
-Metodo che calcola un percorso tra due RegionOfInterest viste come vertici di un grafo MapGraph. Il grafo, il punto di partenza e il punto di arrivo sono i parametri richiesti in input dal metodo
+\textbf{Override} Metodo che calcola un percorso tra due RegionOfInterest viste come vertici di un grafo MapGraph. Il grafo, il punto di partenza e il punto di arrivo sono i parametri richiesti in input dal metodo
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -5511,7 +5511,7 @@ Punto di arrivo del percorso.\end{itemize}
 \item[Nome:] \texttt{MapGraph};
 \item[Tipo:] Classe;
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] È utilizzata per rappresentare un grafo sul quale applicare un algoritmo per il calcolo di un percorso nel package algorith. Al suo interno per la rappresentazione del grafo utilizza la classe org.jgrapht.graph.SimpleDirectedWeightedGraph;
+\item[Utilizzo:] È utilizzata per rappresentare un grafo sul quale applicare un algoritmo per il calcolo di un percorso nel package algorithm. Al suo interno per la rappresentazione del grafo utilizza la classe org.jgrapht.graph.SimpleDirectedWeightedGraph;
 \item[Descrizione:] Classe che rappresenta un grafo da utilizzare per il calcolo del percorso di navigazione;
 \item[Attributi:] \
 \begin{itemize}
@@ -5570,7 +5570,7 @@ Metodo che
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
 \item[Utilizzo:] È utilizzata per rendere indipendente l'implementazione delle informazioni di un POI dal loro utilizzo;
-\item[Descrizione:] Interfaccia che reppresenta un'area di interesse all'interno di un edificio. Espone i metodi per accedere alle informazioni di quest'area e per settare a quali aree coperte dal segnale di beacon appartiene;
+\item[Descrizione:] Interfaccia che rappresenta un'area di interesse all'interno di un edificio. Espone i metodi per accedere alle informazioni di quest'area e per settare a quali aree coperte dal segnale di beacon appartiene;
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ \textit{getBelongingROIs() : Collection<RegionOfInterest>}}\\
@@ -5627,15 +5627,15 @@ Collezione degli oggetti RegionOfInterest alle quali appartiene l'oggetto
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getAllBelongingROIs() : Collection<RegionOfInterest>}\\
-Metodo che ritorna la collezione di RegionOfInterest alle quali tale oggetto appartiene
+\textbf{Override} Metodo che ritorna la collezione di RegionOfInterest alle quali tale oggetto appartiene
  \item \texttt{+ getCategory() : String}\\
-Metodo che ritorna il nome della categoria di appartenenza del PointOfInterestImp.
+\textbf{Override} Metodo che ritorna il nome della categoria di appartenenza del PointOfInterestImp.
  \item \texttt{+ getDescription() : String}\\
-Metodo che ritorna una descrizione del PointOfInterestImp.
+\textbf{Override} Metodo che ritorna una descrizione del PointOfInterestImp.
  \item \texttt{+ getId() : int}\\
-Metodo che ritorna l'identificativo numerico associato al PointOfInterestImp.
+\textbf{Override} Metodo che ritorna l'identificativo numerico associato al PointOfInterestImp.
  \item \texttt{+ getName() : String}\\
-Metodo che ritorna il nome associato al PointOfInterestImp
+\textbf{Override} Metodo che ritorna il nome associato al PointOfInterestImp
  \item \texttt{+ PointOfInterestImp(id  : int, info : PointOfInterestInformation)}\\
 Costruttore della classe PointOfInterestImp
  \begin{description}
@@ -5646,7 +5646,7 @@ Identificativo numerico della classe PointOfInterestImp.\item \texttt{info : Poi
 Informazioni relative ad un POI\end{itemize}
 \end{description}
 \item \texttt{+ setBelongingROIs(rois : Collection<RegionOfInterest>) : void}\\
-Metodo che permette di settare l'insieme di RegionOfInterest nelle quali tale PointOfInterestImp è contenuto
+\textbf{Override} Metodo che permette di settare l'insieme di RegionOfInterest nelle quali tale PointOfInterestImp è contenuto
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -5714,7 +5714,7 @@ Categoria di appartenenza del POI\end{itemize}
 \item[Tipo:] Interfaccia;
 \item[Visibilità:] \texttt{public};
 \item[Utilizzo:] È utilizzata per rendere indipendente l'implementazione delle informazioni di un ROI dall'utilizzo di quest'ultime;
-\item[Descrizione:] Interfaccia che serve per descrivere un'area coperta dla segnale di un beacon. Espone i metodi per accedere alle informazioni riguardanti a quale beacon è associata tale area, che POI appartengono a tale area e per impostare tali POI;
+\item[Descrizione:] Interfaccia che serve per descrivere un'area coperta dal segnale di un beacon. Espone i metodi per accedere alle informazioni riguardanti a quale beacon è associata tale area, che POI appartengono a tale area e per impostare tali POI;
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ \textit{contains(beacon : MyBeacon) : boolean}}\\
@@ -5791,7 +5791,7 @@ Identificativo UUID del beacon associato alla ROI rappresentata dall'oggetto
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ contains(beacon : MyBeacon) : boolean}\\
-Metodo utilizzato per verificare se il beacon passato come paramentro è il beacon associato alla RegionOfInterest
+\textbf{Override} Metodo utilizzato per verificare se il beacon passato come paramentro è il beacon associato alla RegionOfInterest
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -5799,15 +5799,15 @@ Metodo utilizzato per verificare se il beacon passato come paramentro è il beac
 Beacon di cui si vuole verificare l'associazione con la RegionOfInterest\end{itemize}
 \end{description}
 \item \texttt{+ getAllNearbyPOIs() : Collection<PointOfInterest>}\\
-Metodo che ritorna la collezione di PointOfInterest appartenenti a tale RegionOfInterestImp
+\textbf{Override} Metodo che ritorna la collezione di PointOfInterest appartenenti a tale RegionOfInterestImp
  \item \texttt{+ getFloor() : int}\\
-Metodo che ritorna il piano dell'edificio nel quale la ROI rappresentata da tale oggetto si trova
+\textbf{Override} Metodo che ritorna il piano dell'edificio nel quale la ROI rappresentata da tale oggetto si trova
  \item \texttt{+ getMajor() : int}\\
-Metodo che ritorna l'identificativo Major del beacon associato al ROI rappresentato da tale RegionOfInterestImp
+\textbf{Override} Metodo che ritorna l'identificativo Major del beacon associato al ROI rappresentato da tale RegionOfInterestImp
  \item \texttt{+ getMinor() : int}\\
-Metodo che ritorna l'identificativo Minor del beacon associato al ROI rappresentato da tale RegionOfInterestImp
+\textbf{Override} Metodo che ritorna l'identificativo Minor del beacon associato al ROI rappresentato da tale RegionOfInterestImp
  \item \texttt{+ getUUID() : String}\\
-Metodo che ritorna l'identificativo UUID del beacon associato al ROI rappresentato da tale RegionOfInterestImp
+\textbf{Override} Metodo che ritorna l'identificativo UUID del beacon associato al ROI rappresentato da tale RegionOfInterestImp
  \item \texttt{+ RegionOfInterestImp(id  : int, uuid : String, major : int, minor : int)}\\
 Costruttore della classe RegionOfInterestImp
  \begin{description}
@@ -5820,7 +5820,7 @@ Identificativo Major del beacon associato alla ROI rappresentata dall'oggetto\it
 Identificativo Minor del beacon associato alla ROI rappresentata dall'oggetto\end{itemize}
 \end{description}
 \item \texttt{+ setNearbyPOIs() : void}\\
-Metodo utilizzato per settare l'insieme di PointOfInterest associato a tale RegionOfInterestImp
+\textbf{Override} Metodo utilizzato per settare l'insieme di PointOfInterest associato a tale RegionOfInterestImp
  \end{itemize}
 \end{description}
 
@@ -5885,25 +5885,25 @@ Identificativo numerico dell'arco\item \texttt{navInfo : NavigationInformation}\
 Informazioni associate ad un arco per il superamento dello stesso\end{itemize}
 \end{description}
 \item \texttt{+ \textit{getBasicInformation() : String}}\\
-Metodo astratto che ritorna le informazioni di base associate all'arco
+\textbf{Override} Metodo astratto che ritorna le informazioni di base associate all'arco
  \item \texttt{+ getCoordinate() : int}\\
-Metodo che ritorna le coordinate di un arco
+\textbf{Override} Metodo che ritorna le coordinate di un arco
  \item \texttt{+ \textit{getDetailedInformation() : String}}\\
-Metodo astratto che ritorna le informazioni di base associate all'arco
+\textbf{Override} Metodo astratto che ritorna le informazioni di base associate all'arco
  \item \texttt{+ getDistance() : double}\\
-Metodo che ritorna la lunghezza di un arco
+\textbf{Override} Metodo che ritorna la lunghezza di un arco
  \item \texttt{+ getEndPoint() : RegionOfInterest}\\
-Metodo che ritorna la RegionOfInterest di arrivo dell'arco
+\textbf{Override} Metodo che ritorna la RegionOfInterest di arrivo dell'arco
  \item \texttt{+ getId() : int}\\
-Metodo che ritorna l'identificativo numerico associato all'oggetto AbsEnrichedEdge
+\textbf{Override} Metodo che ritorna l'identificativo numerico associato all'oggetto AbsEnrichedEdge
  \item \texttt{\# getNavigationInformation() : NavigationInformation}\\
 Metodo che ritorna le informazioni di navigazione associate ad un arco
  \item \texttt{+ getPhotoInformation() : PhotoInformation}\\
-Metodo che ritorna la un oggetto PhotoInformation contente un riferimento alle fotografie associate all'arco
+\textbf{Override} Metodo che ritorna la un oggetto PhotoInformation contente un riferimento alle fotografie associate all'arco
  \item \texttt{+ getStarterPoint() : RegionOfInterest}\\
-Metodo che ritorna la RegionOfInterest di partenza dell'arco
+\textbf{Override} Metodo che ritorna la RegionOfInterest di partenza dell'arco
  \item \texttt{+ \textit{getWeight() : int}}\\
-Metodo astratto che ritorna il peso dell'arco
+\textbf{Override} Metodo astratto che ritorna il peso dell'arco
  \item \texttt{+ \underline{setUserPreference(setting : Setting) : void}}\\
 Metodo che permette di impostare le preferenze di un utente per il calcolo del peso dell'arco
  \begin{description}
@@ -5948,11 +5948,11 @@ Identificativo numerico dell'arco\item \texttt{navInfo : NavigationInformation}\
 Informazioni di navigazione associate all'arco\end{itemize}
 \end{description}
 \item \texttt{+ getBasicInformation() : String}\\
-Metodo che ritorna le informazioni di base per attraversare l'arco
+\textbf{Override} Metodo che ritorna le informazioni di base per attraversare l'arco
  \item \texttt{+ getDetailedInformation() : String}\\
-Metodo che ritorna le informazioni di base per attraversare l'arco
+\textbf{Override} Metodo che ritorna le informazioni di base per attraversare l'arco
  \item \texttt{+ getWeight() : int}\\
-Metodo che ritorna il peso dell'arco calcolato in base al tipo e alle preferenze dell'utente
+\textbf{Override} Metodo che ritorna il peso dell'arco calcolato in base al tipo e alle preferenze dell'utente
  \end{itemize}
 \end{description}
 
@@ -6021,11 +6021,11 @@ Identificativo numerico dell'arco\item \texttt{navInfo : NavigationInformation}\
 Informazioni di navigazione associate all'arco\end{itemize}
 \end{description}
 \item \texttt{+ getBasicInformation() : String}\\
-Metodo che ritorna le informazioni di base per attraversare l'arco
+\textbf{Override} Metodo che ritorna le informazioni di base per attraversare l'arco
  \item \texttt{+ getDetailedInformation() : String}\\
-Metodo che ritorna le informazioni di base per attraversare l'arco
+\textbf{Override} Metodo che ritorna le informazioni di base per attraversare l'arco
  \item \texttt{+ getWeight() : int}\\
-Metodo che ritorna il peso dell'arco calcolato in base al tipo e alle preferenze dell'utente
+\textbf{Override} Metodo che ritorna il peso dell'arco calcolato in base al tipo e alle preferenze dell'utente
  \end{itemize}
 \end{description}
 
@@ -6090,11 +6090,11 @@ Fattore da aggiungere al peso dell'arco in base alle preferenze di navigazione
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getBasicInformation() : String}\\
-Metodo che ritorna le informazioni dettagliate per attraversare l'arco
+\textbf{Override} Metodo che ritorna le informazioni dettagliate per attraversare l'arco
  \item \texttt{+ getDetailedInformation() : String}\\
-Metodo che ritorna le informazioni dettagliate per attraversare l'arco
+\textbf{Override} Metodo che ritorna le informazioni dettagliate per attraversare l'arco
  \item \texttt{+ getWeight() : int}\\
-Metodo che ritorna il peso dell'arco calcolato in base al tipo e alle preferenze dell'utente
+\textbf{Override} Metodo che ritorna il peso dell'arco calcolato in base al tipo e alle preferenze dell'utente
  \item \texttt{+ StairEdge(startROI : RegionOfInterest, endROI : RegionOfInterest, distance : double, coordinate : int, id : int, navInfo : NavigationInformation)}\\
 Costruttore della classe StairEdge
  \begin{description}
@@ -6236,11 +6236,11 @@ Fotografie associate ad un EnrichedEdge
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getBasicInformation() : String}\\
-Metodo che ritorna le informazioni di base per il superamento dell'arco al quale tale oggetto è associato
+\textbf{Override} Metodo che ritorna le informazioni di base per il superamento dell'arco al quale tale oggetto è associato
  \item \texttt{+ getDetailedInformation() : String}\\
-Metodo che ritorna delle informazioni dettagliate per il superamento dell'arco al quale tale oggetto è associato
+\textbf{Override} Metodo che ritorna delle informazioni dettagliate per il superamento dell'arco al quale tale oggetto è associato
  \item \texttt{+ getPhotoInformation() : PhotoInformation}\\
-Metodo che ritorna un oggetto PhotoInformation contenente i riferimenti alle fotografie riguardanti l'arco al quale tale oggetto è associato
+\textbf{Override} Metodo che ritorna un oggetto PhotoInformation contenente i riferimenti alle fotografie riguardanti l'arco al quale tale oggetto è associato
  \item \texttt{+ NavigationInformationImp(basicInformation : BasicInformation, detailedInformation : DetailedInformation, photoInformation : PhotoInformation)}\\
 Costruttore della classe NavigationInformationImp
  \begin{description}
@@ -6276,7 +6276,7 @@ Collezione di oggetti PhotoRef rappresentanti le fotografie dell'arco a cui l'og
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getPhotoInformation() : Collection<PhotoRef>}\\
-Metodo che restituisce una collezione di oggetti PhotoRef rapprefìsentanti le fotografie dell'arco a cui l'oggetto è associato
+Metodo che restituisce una collezione di oggetti PhotoRef rappresentanti le fotografie dell'arco a cui l'oggetto è associato
  \item \texttt{+ PhotoInformation()}\\
 Costruttore della classe PhotoInformation
  \end{itemize}
@@ -6363,7 +6363,7 @@ Identificativo numerico di un VertexImp
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getId() : int}\\
-Metodo che ritorna l'identificativo numerico associato all'oggetto VertexImp
+\textbf{Override} Metodo che ritorna l'identificativo numerico associato all'oggetto VertexImp
  \item \texttt{+ VertexImp(id : int )}\\
 Costruttore della classe VertexImp
  \begin{description}
@@ -6510,13 +6510,13 @@ Preferenze di percorso dell'utente
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getInstructionPreference() : InstructionPreference}\\
-Metodo che ritorna le preferenze riguardanti la modalità di fruizione delle informazioni
+\textbf{Override} Metodo che ritorna le preferenze riguardanti la modalità di fruizione delle informazioni
  \item \texttt{+ getPathPreference() : PathPreference}\\
-Metodo che ritorna le preferenze di percorso
+\textbf{Override} Metodo che ritorna le preferenze di percorso
  \item \texttt{+ isDeveloper() : boolean}\\
-Metodo che verifica se è stato inserito in precedenza un codice sviluppatore valido
+\textbf{Override} Metodo che verifica se è stato inserito in precedenza un codice sviluppatore valido
  \item \texttt{+ setInstructionPreference(instructionPreference : InstructionPreference) : void}\\
-Metodo che permette di modificare le impostazioni riguardanti le preferenze di fruizione delle istruzioni di navigazione
+\textbf{Override} Metodo che permette di modificare le impostazioni riguardanti le preferenze di fruizione delle istruzioni di navigazione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6524,7 +6524,7 @@ Metodo che permette di modificare le impostazioni riguardanti le preferenze di f
 Questo parametro richiede il tipo di istruzioni che si vuole ricevere durante la navigazione \end{itemize}
 \end{description}
 \item \texttt{+ setPathPreference(pathPreference : PathPreference) : void}\\
-Metodo che permette di modificare le impostazioni riguardanti le preferenze sul percorso di navigazione
+\textbf{Override} Metodo che permette di modificare le impostazioni riguardanti le preferenze sul percorso di navigazione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6532,7 +6532,7 @@ Metodo che permette di modificare le impostazioni riguardanti le preferenze sul 
 Questo parametro richiede le preferenze di percorso che un utente vuole impostare\end{itemize}
 \end{description}
 \item \texttt{+ unlockDeveloper(code : String) : boolean}\\
-Metodo che passato una stringa in ingresso controlla se tale stringa rappresenta un codice sviluppatore valido
+\textbf{Override} Metodo che passato una stringa in ingresso controlla se tale stringa rappresenta un codice sviluppatore valido
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6571,7 +6571,7 @@ Utilizzato per accedere al Bluetooth del dispositivo
 \item \texttt{+ \underline{isBeaconDetected() : boolean}}\\
 Metodo che controlla se sono stati rilevati dei beacon
  \item \texttt{+ \underline{isBluetoothEnabled() : boolean}}\\
-Metodo che controla se è stato attivato il Bluetooth del dispositivo
+Metodo che controlla se è stato attivato il Bluetooth del dispositivo
  \item \texttt{+ \underline{isTheBuildingMapInLocalDB() : boolean}}\\
 Metodo che controlla se una mappa è presente sul database locale
  \end{itemize}
@@ -6641,7 +6641,7 @@ View associata a tale Activity
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza la DetailedInformationView
+\textbf{Override} Metodo che inizializza la DetailedInformationView
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6685,7 +6685,7 @@ View associata a tale Activity
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza la View associata e recupera un riferimento alle impostazioni dell'utente
+\textbf{Override} Metodo che inizializza la View associata e recupera un riferimento alle impostazioni dell'utente
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6730,7 +6730,7 @@ View associata a tale Activity
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza la HelpView
+\textbf{Override} Metodo che inizializza la HelpView
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6772,7 +6772,7 @@ View associata a tale Activity
 \item \texttt{+ enableSuggestions() : void}\\
 Metodo che permette di attivare la lista dei possibili POI raggiungibili a partire da una stringa
  \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza la View associata e recupera un riferimento all'InformationManager
+\textbf{Override} Metodo che inizializza la View associata e recupera un riferimento all'InformationManager
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6843,9 +6843,9 @@ Contesto dell'applicativo
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getCount() : int}\\
-Metodo che viene utilizzato per ottenere il numero di immagini relative a quel POI
+\textbf{Override} Metodo che viene utilizzato per ottenere il numero di immagini relative a quel POI
  \item \texttt{+ getItem(position : int) : Object}\\
-Metodo che ritorna l'URL di una foto in una certa posizione
+\textbf{Override} Metodo che ritorna l'URL di una foto in una certa posizione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6853,7 +6853,7 @@ Metodo che ritorna l'URL di una foto in una certa posizione
 Posizione della foto di cui si vuole recuperare l'URL\end{itemize}
 \end{description}
 \item \texttt{+ getItemId(position  : int) : long}\\
-Metodo che ritorna l'identificativo numerico di una foto in una certa posizione
+\textbf{Override} Metodo che ritorna l'identificativo numerico di una foto in una certa posizione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6861,7 +6861,7 @@ Metodo che ritorna l'identificativo numerico di una foto in una certa posizione
 Posizione della foto di cui si vuole recuperare l'identificativo numerico\end{itemize}
 \end{description}
 \item \texttt{+ getView(position  : int, convertView : View, parent : ViewGroup) : View}\\
-Metodo che restituisce la foto in una certa posizione
+\textbf{Override} Metodo che restituisce la foto in una certa posizione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6911,7 +6911,7 @@ View associata a tale Activity
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza ImageDetailView
+\textbf{Override} Metodo che inizializza ImageDetailView
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6937,8 +6937,8 @@ Componente per salvare lo stato dell'applicazione\end{itemize}
 
 \end{itemize}
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] È utilizzata per la gestione dell'interazione tra lista di immagini associate ad una istuzione e le possibili azioni che è possibile effettuare su di esse;
-\item[Descrizione:] Classe che estende BaseAdapter per la gestione della lista di immagini relative ad una istuzione di navigazione;
+\item[Utilizzo:] È utilizzata per la gestione dell'interazione tra lista di immagini associate ad una istruzione e le possibili azioni che è possibile effettuare su di esse;
+\item[Descrizione:] Classe che estende BaseAdapter per la gestione della lista di immagini relative ad una istruzione di navigazione;
 \item[Attributi:] \
 \begin{itemize}
 \item \texttt{- imgAdapter : ImageAdapter}\\
@@ -6961,7 +6961,7 @@ Metodo che ritorna una nuova istanza di un ImageListFragment a partire da una li
 Lista di URL delle foto\end{itemize}
 \end{description}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza ImageListView
+\textbf{Override} Metodo che inizializza ImageListView
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6969,7 +6969,7 @@ Metodo che inizializza ImageListView
 Componente per salvare lo stato dell'applicazione\end{itemize}
 \end{description}
 \item \texttt{+ onCreateView(lay : LayoutInflater, viewGr : ViewGroup, bundle : Bundle) : View}\\
-Metodo che crea il layout di un fragment
+\textbf{Override} Metodo che crea il layout di un fragment
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -6979,7 +6979,7 @@ Layout della lista di anteprime\item \texttt{bundle : Bundle}\\
 Componente per salvare lo stato dell'applicazione\end{itemize}
 \end{description}
 \item \texttt{+ onItemClick() : void}\\
-Metodo che viene invocato alla pressione di un bottone
+\textbf{Override} Metodo che viene invocato alla pressione di un bottone
  \end{itemize}
 \end{description}
 
@@ -7047,7 +7047,7 @@ Costruttore della classe ImagePageAdapter
 
 \end{itemize}
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] È utilizzata per resituire un riferimento al NavigationManager del model;
+\item[Utilizzo:] È utilizzata per restituire un riferimento al NavigationManager del model;
 \item[Descrizione:] Classe che estende Application e recupera il riferimento a InformationManager del model;
 \item[Attributi:] \
 \begin{itemize}
@@ -7058,7 +7058,7 @@ Riferimento utilizzato per accedere alle informazioni trattate dal model
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getInformationManager() : InformationManager}\\
-Metodo che restituisce un InformationManger per accedere alle informazioni del presenter
+\textbf{Override} Metodo che restituisce un InformationManger per accedere alle informazioni del presenter
  \end{itemize}
 \end{description}
 
@@ -7097,7 +7097,7 @@ Metodo che permettere di rimuovere una mappa del database locale
 Posizione occupata dalla mappa da rimuovere\end{itemize}
 \end{description}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza la View associata a tale Activity
+\textbf{Override} Metodo che inizializza la View associata a tale Activity
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7216,7 +7216,7 @@ View associata a tale Activity
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza la HomeView
+\textbf{Override} Metodo che inizializza la HomeView
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7256,7 +7256,7 @@ View associata a tale Activity
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza MainDeveloperView
+\textbf{Override} Metodo che inizializza MainDeveloperView
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7332,7 +7332,7 @@ View associata a tale Activity
 \item \texttt{+ downloadFinished() : void}\\
 Metodo che gestisce la View per visualizzare il completamento del download di una mappa
  \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza la View associata
+\textbf{Override} Metodo che inizializza la View associata
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7380,7 +7380,7 @@ Metodo che permette di aggiornare le informazioni
 Informazioni utili alla navigazione\end{itemize}
 \end{description}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza NavigationView
+\textbf{Override} Metodo che inizializza NavigationView
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7423,9 +7423,9 @@ Metodo che permette di interrompere la navigazione
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getCount() : int}\\
-Metodo che ritorna il numero di istruzioni relative alla tua destinazione
+\textbf{Override} Metodo che ritorna il numero di istruzioni relative alla tua destinazione
  \item \texttt{+ getItem(position : int) : Object}\\
-Metodo che viene utilizzato per recuperare un'istruzione in una certa posizione della lista di istruzioni
+\textbf{Override} Metodo che viene utilizzato per recuperare un'istruzione in una certa posizione della lista di istruzioni
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7433,7 +7433,7 @@ Metodo che viene utilizzato per recuperare un'istruzione in una certa posizione 
 Posizione dell'istruzione da recuperare\end{itemize}
 \end{description}
 \item \texttt{+ getItemId(position : int) : long}\\
-Metodo che viene utilizzato per recuperare l'id di un'istruzione in una certa posizione nella lista di istruzioni
+\textbf{Override} Metodo che viene utilizzato per recuperare l'id di un'istruzione in una certa posizione nella lista di istruzioni
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7441,7 +7441,7 @@ Metodo che viene utilizzato per recuperare l'id di un'istruzione in una certa po
 Posizione dell'istruzione di cui recuperare l'identificativo numerico\end{itemize}
 \end{description}
 \item \texttt{+ getView(position : int, convertView : View, parent : ViewGroup) : View}\\
-Metodo che viene utilizzare per recuperare un'istruzione in una certa posizione
+\textbf{Override} Metodo che viene utilizzare per recuperare un'istruzione in una certa posizione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7516,7 +7516,7 @@ View associata a tale Activity
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che istanzia NearbyPoiView
+\textbf{Override} Metodo che istanzia NearbyPoiView
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7556,7 +7556,7 @@ View associata a tale Activity
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che implementa la PoiCategoryView
+\textbf{Override} Metodo che implementa la PoiCategoryView
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7601,7 +7601,7 @@ View associata a tale Activity
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza la View associata
+\textbf{Override} Metodo che inizializza la View associata
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7648,7 +7648,7 @@ Metodo che permette di eseguire il download di una mappa da un database remoto
 Posizione della mappa di cui fare il download\end{itemize}
 \end{description}
 \item \texttt{+ onCreate(bundle : Bundle) : void}\\
-Metodo che inizializza la View associata
+\textbf{Override} Metodo che inizializza la View associata
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7688,7 +7688,7 @@ Riferimento all'activity che gestisce la ricerca dei POI in base al nome
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ getType(uri : Uri) : String}\\
-Metodo che ritorna il MIME type associato al parametro passato
+\textbf{Override} Metodo che ritorna il MIME type associato al parametro passato
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7696,7 +7696,7 @@ Metodo che ritorna il MIME type associato al parametro passato
 URI su cui fare la query\end{itemize}
 \end{description}
 \item \texttt{+ insert(uri : Uri, values : ContentValues) : Uri}\\
-Metodo che serve per inserire i suggerimenti nel content provider
+\textbf{Override} Metodo che serve per inserire i suggerimenti nel content provider
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7705,9 +7705,9 @@ URI in cui fare l'inserimento\item \texttt{values : ContentValues}\\
 Insieme di coppie nome-colonna/valore da inserire nel content provider \end{itemize}
 \end{description}
 \item \texttt{+ onCreate() : void}\\
-Metodo che inizializza un oggetto di tipo SearchSuggestionProvider
+\textbf{Override} Metodo che inizializza un oggetto di tipo SearchSuggestionProvider
  \item \texttt{+ query(uri : Uri, projection : String[], selection : String, selectionArgs : String[], sortOrder : String) : Cursor}\\
-Metodo che serve per popolare i suggerimenti della SearchView in base al testo inserito
+\textbf{Override} Metodo che serve per popolare i suggerimenti della SearchView in base al testo inserito
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7719,7 +7719,7 @@ Insieme di argomenti su cui fare la selezione\item \texttt{sortOrder : String}\\
 Ordine dei risultati\end{itemize}
 \end{description}
 \item \texttt{+ update(uri : Uri, values : ContentValues, selection : String, selectionArgs : String[]) : int}\\
-Metodo utilizzato per aggiornare il content provider
+\textbf{Override} Metodo utilizzato per aggiornare il content provider
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7827,7 +7827,7 @@ Costruttore della classe DetailedInformationViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setDetailedDescription(detailedInst : String) : void}\\
-Metodo utilizzato per visualizzare la descrizione dettagliata relativa ad una certa istruzione
+\textbf{Override} Metodo utilizzato per visualizzare la descrizione dettagliata relativa ad una certa istruzione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7835,7 +7835,7 @@ Metodo utilizzato per visualizzare la descrizione dettagliata relativa ad una ce
 Descrizione dettagliata relativa ad una certa istruzione di navigazione\end{itemize}
 \end{description}
 \item \texttt{+ setPhotos(urls : List<String>) : void}\\
-Metodo utilizzato per visualizzare la lista delle anteprime delle foto relative ad un certo POI
+\textbf{Override} Metodo utilizzato per visualizzare la lista delle anteprime delle foto relative ad un certo POI
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -7881,7 +7881,7 @@ Metodo utilizzato per visualizzare un errore relativo all'errato inserimento del
 
 \end{itemize}
 \item[Visibilità:] \texttt{public};
-\item[Utilizzo:] Mantiene i riferimenti agli elementi di layout che compongono la UI dell'isenrimento. Tramite questi riferimenti è possibile invocare i metodi propri dei vari elementi di layout. Ogni bottone presente deve essere legato ad un oggetto anonimo di tipo View.OnClickListener, in modo da poter reagire alla pressione su di esso;
+\item[Utilizzo:] Mantiene i riferimenti agli elementi di layout che compongono la UI dell'inserimento. Tramite questi riferimenti è possibile invocare i metodi propri dei vari elementi di layout. Ogni bottone presente deve essere legato ad un oggetto anonimo di tipo View.OnClickListener, in modo da poter reagire alla pressione su di esso;
 \item[Descrizione:] Classe che si occupa di mostrare i campi utili all'inserimento del codice sviluppatore
 ;
 \item[Attributi:] \
@@ -7910,7 +7910,7 @@ Costruttore della classe DeveloperUnlockerViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ showWrongCode() : void}\\
-Metodo utilizzato per visualizzare un errore relativo all'errato inserimento del codice sviluppatore
+\textbf{Override} Metodo utilizzato per visualizzare un errore relativo all'errato inserimento del codice sviluppatore
  \end{itemize}
 \end{description}
 
@@ -7986,7 +7986,7 @@ Costruttore della classe HelpViewImp che richiede un'istanza di HomeActivity
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setHelp(url : String) : void}\\
-Metodo utilizzato per visualizzare la guida dell'applicazione
+\textbf{Override} Metodo utilizzato per visualizzare la guida dell'applicazione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8120,7 +8120,7 @@ Costruttore della classe HomeViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setBuildingAddress(address : String) : void}\\
-Metodo utilizzato per visualizzare l'indirizzo di un edificio
+\textbf{Override} Metodo utilizzato per visualizzare l'indirizzo di un edificio
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8128,7 +8128,7 @@ Metodo utilizzato per visualizzare l'indirizzo di un edificio
 Indirizzo dell'edificio\end{itemize}
 \end{description}
 \item \texttt{+ setBuildingDescription(description : String) : void}\\
-Metodo utilizzato per visualizzare la descrizione di un edificio
+\textbf{Override} Metodo utilizzato per visualizzare la descrizione di un edificio
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8136,7 +8136,7 @@ Metodo utilizzato per visualizzare la descrizione di un edificio
 Descrizione dell'edificio\end{itemize}
 \end{description}
 \item \texttt{+ setBuildingName(name : String) : void}\\
-Metodo utilizzato per visualizzare il nome di un edificio
+\textbf{Override} Metodo utilizzato per visualizzare il nome di un edificio
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8144,7 +8144,7 @@ Metodo utilizzato per visualizzare il nome di un edificio
 Nome dell'edificio\end{itemize}
 \end{description}
 \item \texttt{+ setBuildingOpeningHours(hours : String) : void}\\
-Metodo utilizzato per visualizzare gli orari di apertura di un edificio
+\textbf{Override} Metodo utilizzato per visualizzare gli orari di apertura di un edificio
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8152,7 +8152,7 @@ Metodo utilizzato per visualizzare gli orari di apertura di un edificio
 Orari di apertura dell'edificio\end{itemize}
 \end{description}
 \item \texttt{+ setPoiCategoryListAdapter(adapter : ListAdapter) : void}\\
-Metodo utilizzato per visualizzare la lista di categorie dei POI dell'edificio
+\textbf{Override} Metodo utilizzato per visualizzare la lista di categorie dei POI dell'edificio
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8178,7 +8178,7 @@ Collegamento tra la lista delle categorie di POI dell'edificio e la view in cui 
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ \textit{setAdapter(adp : Adapter) : void}}\\
-Metodo utilizzato per visualizzare una slideshow di immagiini relative al POI da raggiungere
+Metodo utilizzato per visualizzare una slideshow di immagini relative al POI da raggiungere
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8226,7 +8226,7 @@ Costruttore della classe ImageDetailViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setAdapter(adp : Adapter) : void}\\
-Metodo utilizzato per visualizzare una slideshow di immagiini relative al POI da raggiungere
+\textbf{Override} Metodo utilizzato per visualizzare una slideshow di immagini relative al POI da raggiungere
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8253,7 +8253,7 @@ Collegamento tra la lista delle immagini e la view in cui esse devono essere mos
 \end{itemize}
 \item[Visibilità:] \texttt{public};
 \item[Utilizzo:] Utilizzata per visualizzare le immagini di un arco necessarie per passare dal nodo di partenza a quello di arrivo;
-\item[Descrizione:] Interfaccia che espone i metodi per aggiornare la UI contenente le thumbnail delle immagini relative al prossimo POI;
+\item[Descrizione:] Interfaccia che espone i metodi per aggiornare la UI contenente le anteprime delle immagini relative al prossimo POI;
 \item[Metodi:] \
 \begin{itemize}
 \item \texttt{+ \textit{setImageAdapter(adp : Adapter) : void}}\\
@@ -8305,7 +8305,7 @@ Costruttore della classe ImageListFragmentViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setImageAdapter(adp : Adapter) : void}\\
-Metodo utilizzato per visualizzare la lista delle anteprime delle immagine relative ad un certo POI
+\textbf{Override} Metodo utilizzato per visualizzare la lista delle anteprime delle immagine relative ad un certo POI
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8378,9 +8378,9 @@ Costruttore della classe LocalMapManagerViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ refreshMaps() : void}\\
-Metodo che aggiorna la lista delle mappe salvate nel database locale
+\textbf{Override} Metodo che aggiorna la lista delle mappe salvate nel database locale
  \item \texttt{+ setAdapter(adp : Adapter) : void}\\
-Metodo utilizzato per visualizzare la lista delle mappe salvate nel database locale
+\textbf{Override} Metodo utilizzato per visualizzare la lista delle mappe salvate nel database locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8457,7 +8457,7 @@ Costruttore della classe LoggingViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setBeaconListAdapter(adp : Adapter) : void}\\
-Metodo utilizzato per visualizzare la lista dei beacon rilevati 
+\textbf{Override} Metodo utilizzato per visualizzare la lista dei beacon rilevati 
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8534,7 +8534,7 @@ Costruttore della classe LogInformationViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setBeaconAdapter(logInfo : String) : void}\\
-Metodo utilizzato per visualizzare la lista delle informazioni di un certo beacon
+\textbf{Override} Metodo utilizzato per visualizzare la lista delle informazioni di un certo beacon
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8612,7 +8612,7 @@ Costruttore della classe MainDeveloperViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setLogsAdapter(adp : Adapter) : void}\\
-Metodo utilizzato per visualizzare la lista di tutti i log salvati in locale
+\textbf{Override} Metodo utilizzato per visualizzare la lista di tutti i log salvati in locale
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8683,7 +8683,7 @@ Costruttore della classe MainViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setLoadingView(message : String) : void}\\
-Metodo utilizzato per visualizzare la schermata di caricamento dell'applicazione
+\textbf{Override} Metodo utilizzato per visualizzare la schermata di caricamento dell'applicazione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8762,7 +8762,7 @@ Costruttore della classe MapDownloaderViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setDowloadingMap(adp : Adapter) : void}\\
-Metodo utilizzato per visualizzare la mappa che si sta scaricando
+\textbf{Override} Metodo utilizzato per visualizzare la mappa che si sta scaricando
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8770,7 +8770,7 @@ Metodo utilizzato per visualizzare la mappa che si sta scaricando
 Collegamento tra la mappa che si sta scaricando e la view in cui essa deve essere mostrata\end{itemize}
 \end{description}
 \item \texttt{+ setProgressDowload(prg : int) : void}\\
-Metodo utilizzato per visualizzare il progresso nel download di una mappa
+\textbf{Override} Metodo utilizzato per visualizzare il progresso nel download di una mappa
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8846,9 +8846,9 @@ Costruttore della classe NavigationViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ refreshInstructions() : void}\\
-Metodo utilizzato per aggiornare la lista di istruzioni
+\textbf{Override} Metodo utilizzato per aggiornare la lista di istruzioni
  \item \texttt{+ setInstructionAdapter(adapter : NavigationAdapter) : void}\\
-Metodo utilizzato per visualizzare la lista di istruzioni utili a raggiungere un certo POI
+\textbf{Override} Metodo utilizzato per visualizzare la lista di istruzioni utili a raggiungere un certo POI
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8922,7 +8922,7 @@ Costruttore della classe NearbyPoiViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setAdapter(adp : Adapter) : void}\\
-Metodo utilizzato per visualizzare tutti i POI nelle circostanze dell'utente
+\textbf{Override} Metodo utilizzato per visualizzare tutti i POI nelle circostanze dell'utente
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -8996,7 +8996,7 @@ Costruttore della classe PoiCategoryViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setPoiListAdapter(adapter : ListAdapter) : void}\\
-Metodo utilizzato per visualizzare tutti i POI appartenenti ad una certa categoria
+\textbf{Override} Metodo utilizzato per visualizzare tutti i POI appartenenti ad una certa categoria
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -9076,7 +9076,7 @@ Presenter della View che viene creata\item \texttt{presenter : PreferencesActivi
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setInstructionPreferences(adp : Adapter) : void}\\
-Metodo utilizzato per visualizzare le preferenze dell'utente riguardo la fruizione delle istruzioni di navigazione
+\textbf{Override} Metodo utilizzato per visualizzare le preferenze dell'utente riguardo la fruizione delle istruzioni di navigazione
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -9084,7 +9084,7 @@ Metodo utilizzato per visualizzare le preferenze dell'utente riguardo la fruizio
 Collegamento tra le preferenze riguardanti la fruizione delle istruzioni di navigazione e la view in cui esse devono essere mostrate\end{itemize}
 \end{description}
 \item \texttt{+ setPathPreferences(adp : Adapter) : void}\\
-Metodo utilizzato per visualizzare le preferenze dell'utente relative al percorso proposto
+\textbf{Override} Metodo utilizzato per visualizzare le preferenze dell'utente relative al percorso proposto
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -9155,7 +9155,7 @@ Costruttore della classe RemoteMapManagerViewImp
 Presenter della View che viene creata\end{itemize}
 \end{description}
 \item \texttt{+ setRemoteMaps(adp : Adapter) : void}\\
-Metodo utilizzate per visualizzare le mappe che è possibile scaricare da un server remoto
+\textbf{Override} Metodo utilizzate per visualizzare le mappe che è possibile scaricare da un server remoto
  \begin{description}
 \item[Argomenti:] \
 \begin{itemize}
@@ -9164,6 +9164,7 @@ Collegamento tra la lista delle mappe che è possibile scaricare e la view in cu
 \end{description}
 \end{itemize}
 \end{description}
+ 
  
 	
 	
