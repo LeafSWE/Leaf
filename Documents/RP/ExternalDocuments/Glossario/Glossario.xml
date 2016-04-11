@@ -752,4 +752,68 @@ GUI (Graphical UI), ossia un'interfaccia composta da oggetti grafici
 			Le operazioni CRUD (Create, Read, Update, Delete) sono le quattro funzionalità di base dei persistent storage. Talvolta CRUD viene esteso con le parole retrieve invece di read, modify invece di update o destroy invece di delete. Ad ogni operazione corrisponde un'equivalente istruzione in linguaggio SQL. All'operazione CRUD Read (Retrieve) corrisponde l'operazione SQL SELECT, alla Update corrisponde UPDATE e a Delete corrisponde DELETE
 		</descrizione>
 	</voce>
+	
+	<voce>
+		<termine>
+			AltBeacon
+		</termine>
+		<descrizione>
+			Framework open source che offre potenti strumenti al fine di utilizzare il protocollo BLE utilizzato dai dispositivi beacon.
+		</descrizione>
+	</voce>
+	
+	<voce>
+		<termine>
+			Framework
+		</termine>
+		<descrizione>
+			Architettura logica di supporto su cui un software può essere progettato e realizzato facilitandone lo sviluppo da parte del programmatore.
+		</descrizione>
+	</voce>
+	
+	<voce>
+		<termine>
+			Libreria (software)
+		</termine>
+		<descrizione>
+			Vedi framework.
+		</descrizione>
+	</voce>
+	
+	<voce>
+		<termine>
+			Region (AltBeacon)
+		</termine>
+		<descrizione>
+			Nel framework AltBeacon, definisce un insieme di beacon aventi tutti lo stesso identificativo o campo uniqueid.
+		</descrizione>
+	</voce>
+	
+	<voce>
+		<termine>
+			Service (Android SDK)
+		</termine>
+		<descrizione>
+			Nel framework Android, definisce un componente dell'applicazione Android con lo scopo di eseguire lunghe operazioni che non hanno interazioni con l'utente oppure che si relazionano con altre applicazioni installate nel device. Come la documentazione ufficiale specifica il Service non è un Thread ma un Task.
+		</descrizione>
+	</voce>
+	
+	<voce>
+		<termine>
+			Unbind Service (Android SDK)
+		</termine>
+		<descrizione>
+			Nel framework Android, definisce un service che non è più controllato interamente dal sistema Android. Infatti si ha un riferimento ad esso per poter effettuare chiamate dei suoi metodi, per esempio onDestroy() per distruggerlo.
+		</descrizione>
+	</voce>
+	
+	<voce>
+		<termine>
+			Wrapper
+		</termine>
+		<descrizione>
+			Modulo software che ne avvolge un altro per evitare le dipendenze su quest'ultimo.
+		</descrizione>
+	</voce>
+	
 </glossario>
