@@ -9,199 +9,193 @@
 sviluppato.\\
 	Di seguito vengono riportati i test di accettazione definiti dal gruppo \leaf.
 	
-	\begin{longtabu} to \textwidth{X[0.9] X[1.5] X[2.5] X}
-		\toprule
-		\textbf{Codice} & \textbf{Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
-		\midrule
-		\endhead
-		\arrayrulecolor{gray}
-		TA1 & L'utente deve poter verificare che sia possibile navigare all'interno di un edificio utilizzando l'applicazione. & All'utente è chiesto di: \begin{itemize} \item attivare il bluetooth; \item accedere alla sezione preposta alla navigazione; \item scegliere la destinazione all'interno dell'edificio; \item confermare la destinazione scelta; \item verificare che venga data la possibilità di avviare la navigazione. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.1 & L'utente deve poter verificare che sia possibile ricercare una destinazione per la navigazione. & All'utente è chiesto di: \begin{itemize} \item scegliere di ricercare la destinazione per nome; \item scegliere di ricercare la destinazione per categoria. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.1.1 & L'utente deve poter verificare che sia possibile ricercare una destinazione per nome. & All'utente è chiesto di: \begin{itemize} \item inserire il nome di una destinazione; \item verificare che sia possibile confermare l'inserimento fatto. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.1.1.1 & L'utente deve poter verificare che sia possibile inserire il nome di una destinazione. & All'utente è chiesto di: \begin{itemize} \item inserire il nome di una destinazione; \item verificare che la destinazione voluta sia stata inserita. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.1.1.2 & L'utente deve poter verificare che venga segnalato un errore qualore venga inserita una destinazione non prevista dal sistema. & All'utente è chiesto di: \begin{itemize} \item inserire una destinazione non prevista dal sistema; \item verificare che venga visualizzato un errore che spieghi che la destinazione inserita non è presente tra quelle disponibili; \item verificare che venga data la possibilità di inserire un'altra destinazione. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.1.2 & L'utente deve poter verificare che sia possibile ricercare una destinazione per categoria. & All'utente è chiesto di: \begin{itemize} \item scegliere una delle categorie proposte \item scegliere una delle destinazioni presenti all'interno della categoria scelta; \item verificare che sia possibile confermare la scelta fatta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.1.2.1 & L'utente deve verificare che sia possibile scegliere una categoria tra quelle proposte. & All'utente è chiesto di: \begin{itemize} \item verificare che l'applicazione fornisca una o più categorie di destinazioni; \item verificare che sia possibile scegliere una di queste categorie. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.1.2.2 & L'utente deve verificare che sia possibile scegliere una destinazione tra i risultati di una ricerca. & All'utente è chiesto di: \begin{itemize} \item verificare che all'interno di una categoria siano proposte una o più destinazioni; \item verificare che sia possibile scegliere una di queste destinazioni; \item effettuare la ricerca di una destinazione (prevista dal sistema) per nome; \item verificare che sia possibile scegliere una delle destinazioni restituite dalla ricerca. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.1.3 & L'utente deve poter verificare che sia possibile confermare una destinazione. & All'utente è chiesto di: \begin{itemize} \item confermare la destinazione scelta; \item verificare che venga data la possibilità di avviare la navigazione verso la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.2 & L'utente deve poter verificare che sia possibile avviare la navigazione. & All'utente è chiesto di: \begin{itemize} \item confermare l'avvio della navigazione; \item verificare che venga fornita un'indicazione testuale per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.2.1 & L'utente deve poter verificare che l'indicazione sia fornita in forma testuale. & All'utente è chiesto di: \begin{itemize} \item verificare che l'indicazione fornita sia un testo scritto. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.2.2 & L'utente deve poter verificare che l'indicazione testuale fornita per raggiungere la destinazione scelta, quando è stata avviata la navigazione, sia corretta. & All'utente è chiesto di: \begin{itemize} \item seguire l'indicazione testuale data; \item verificare di essere arrivato alla destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.2.3 & L'utente deve poter verificare che l'indicazione testuale fornita dall'applicazione abbia come punto di partenza il POI in cui l'utente si trova. & All'utente è chiesto di: \begin{itemize} \item avviare la navigazione; \item verificare che l'indicazione testuale fornita dall'applicazione abbia come punto di partenza il POI in cui l'utente si trova. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.3 & L'utente deve verificare che sia possibile interrompere la navigazione. & All'utente è chiesto di: \begin{itemize} \item scegliere di interrompere la navigazione; \item verificare che la navigazione si interrompa. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.4 & L'utente deve verificare che sia possibile accedere a delle informazioni più dettagliate riguardanti il percorso da seguire per raggiungere la destinazione. & All'utente è chiesto di: \begin{itemize} \item scegliere di visualizzare le fotografie della prossima area; \item scegliere di ricevere delle indicazioni testuali estese per raggiungere la prossima area; \item scegliere di accedere alla lista completa delle indicazioni per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.4.1 & L'utente deve verificare che sia possibile visualizzare le fotografie della prossima area da raggiungere. & All'utente è chiesto di: \begin{itemize} \item verificare che siano visualizzate le fotografie che ritraggono la prossima area da raggiungere. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.4.2 & L'utente deve verificare che sia possibile visualizzare delle indicazioni testuali estese dettagliate riguardanti le azioni da compiere per raggiungere la prossima area. & All'utente è chiesto di: \begin{itemize} \item verificare che sia visualizzata una descrizione tesuale estesa che descriva in modo dettagliato le azioni da compiere per raggiungere la prossima area. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.4.3 & L'utente deve verificare che sia possibile visualizzare la lista completa delle indicazioni da seguire per raggiungere la destinazione scelta. & All'utente è chiesto di: \begin{itemize} \item verificare che sia visualizzata la lista completa delle indicazioni da seguire per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.4.4 & L'utente deve verificare che venga visualizzato un errore nel caso in cui acceda alla foto del prossimo POI con connessione Internet non attiva. & All'utente è chiesto di: \begin{itemize} \item disattivare la connessione Internet \item accedere alle fotografie del prossimo POI \item verificare che venga segnalato un errore che spieghi che il dispositivo non ha la connessione Internet attiva. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.5 & L'utente deve poter verificare che venga segnalato un errore qualora segua un percorso differente da quello calcolato dall'applicazione. & All'utente è chiesto di: \begin{itemize} \item avviare la navigazione; \item seguire un percorso differente da quello proposto dall'applicazione; \item verificare che venga segnalato un errore che spieghi che il percorso che si sta seguendo non è quello previsto. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.6 & L'utente deve poter verificare che venga segnalato un errore nel caso in cui voglia avviare la navigazione all'interno di un'area dove non è presente il segnale di alcun beacon. & All'utente è chiesto di: \begin{itemize} \item posizionarsi in un'area dove non è presente il segnale di alcun beacon; \item avviare la navigazione; \item verificare che venga segnalato un errore che spieghi che in quell'area non è stato rilevato il segnale di alcun beacon. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.7 & L'utente deve poter verificare che venga segnalato un errore nel caso in cui voglia avviare la navigazione con la connessione Internet del proprio dispositivo non attiva. & All'utente è chiesto di: \begin{itemize} \item disattivare la connessione internet; \item avviare la navigazione; \item verificare che venga segnalato un errore che spieghi che il dispositivo non ha la connessione Internet attiva. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.8 & L'utente deve poter verificare che venga segnalato un errore nel caso in cui voglia avviare la navigazione e la mappa installata nel proprio dispositivo differisce dall'ultima versione online della mappa. & All'utente è chiesto di: \begin{itemize} \item non aggiornare una mappa che richieda un aggiornamento; \item avviare la navigazione; \item verificare che venga segnalato un errore che spieghi che la mappa presente nel dispositivo non è l'ultima versione della mappa per quell'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA1.9 & L'utente deve poter verificare che venga segnalato un errore nel caso in cui voglia avviare la navigazione e non sia installata la mappa per quell'edificio. & All'utente è chiesto di: \begin{itemize} \item entrare in un edificio di cui non dispone della mappa; \item avviare la navigazione; \item verificare che venga segnalato un errore che spieghi che non è presente nel dispositivo una mappa per quell'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2 & L'utente deve poter verificare che sia possibile accedere alle informazioni dell'edificio in cui ci si trova. & All'utente è chiesto di: \begin{itemize} \item scegliere di accedere alle informazioni generali sull'edificio in cui ci si trova; \item scegliere di accedere alla lista completa di tutti i POI presenti nell'edificio in cui si trova; \item scegliere di accedere alla lista dei POI associati ai beacon rilevati alla posizione dell’utente. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.1 & L'utente deve poter verificare che sia possibile accedere al nome dell'edificio. & All'utente è chiesto di: \begin{itemize} \item verificare che sia presente un nome per l'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.2 & L'utente deve poter verificare che sia possibile accedere alla descrizione dell'edificio dell'edificio. & All'utente è chiesto di: \begin{itemize} \item verificare che sia presente una descrizione per l'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.3 & L'utente deve verificare che sia possibile accedere all'indirizzo dell'edificio. & All'utente è chiesto di: \begin{itemize} \item verificare che sia presente l'indirizzo per l'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.4 & L'utente deve verificare che sia possibile accedere aglio orari dell'edificio. & All'utente è chiesto di: \begin{itemize} \item verificare che siano presenti gli orari di apertura dell'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.5 & L'utente deve poter verificare che sia possibile accedere alla lista completa di tutti i POI presenti nell'edificio in cui si trova. & All'utente è chiesto di: \begin{itemize} \item verificare che venga visualizzata la lista completa di tutti i POI presenti nell'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.6 & L'utente deve poter verificare che sia possibile accedere alla lista dei POI associati ai beacon rilevati alla posizione dell’utente. & All'utente è chiesto di: \begin{itemize} \item verificare che venga visualizzata la lista dei POI associati ai beacon rilevati alla posizione dell’utente; \item verificare che sia possibile accedere alle informazioni riguardanti uno specifico POI nella lista. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.6.1 & L'utente deve poter verificare che sia possibile accedere alle informazioni riguardanti uno specifico POI. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere all'identificativo del POI; \item verificare che sia possibile accedere alla descrizione del POI. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.6.1.1 & L'utente deve poter verificare che sia possibile accedere all'identificativo di uno specifico POI. & All'utente è chiesto di: \begin{itemize} \item verificare che sia presente un identificativo per il POI. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.6.1.2 & L'utente deve poter verificare che sia possibile accedere alla descrizione di uno specifico POI. & All'utente è chiesto di: \begin{itemize} \item verificare che sia presente una descrizione per il POI. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.7 & L'utente deve verificare che venga visualizzato un errore nel caso in cui acceda alle informazioni di un edificio con connessione internet non attiva. & All'utente è chiesto di: \begin{itemize} \item disattivare la connessione internet; \item accedere alle informazioni di un edificio; \item verificare che venga segnalato un errore che spieghi che il dispositivo non ha la connessione Internet attiva. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.8 & L'utente deve verificare che venga visualizzato un errore nel caso in cui acceda alle informazioni dell'edificio e la versione della mappa non coincida con l'ultima versione disponibile. & All'utente è chiesto di: \begin{itemize} \item non aggiornare una mappa che richieda un aggiornamento; \item accedere alle informazioni di un edificio; \item verificare che venga segnalato un errore che spieghi che il dispositivo non è presenta l'ultima versione di mappa disponibile. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA2.9 & L'utente deve verificare che venga visualizzato un errore nel caso in cui acceda alle informazioni dell'edificio e la mappa dell'edificio non sia presente sul dispositivo. & All'utente è chiesto di: \begin{itemize} \item entrare in un edificio di cui non dispone della mappa; \item accedere alle informazioni di un edificio; \item verificare che venga segnalato un errore che spieghi che non è presente nel dispositivo la mappa dell'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3 & L'utente deve poter verificare che sia possibile gestire gli aspetti relativi all'applicazione. & All'utente è chiesto di: \begin{itemize} \item gestire le mappe dell'applicazione; \item gestire le preferenze di navigazione. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1 & L'utente deve poter verificare che sia possibile gestire le mappe dall'applicazione. & All'utente è chiesto di: \begin{itemize} \item scegliere di gestire le mappe installate sul proprio dispositivo; \item scegliere di gestire le mappe non presenti sul proprio dispositivo. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1 & l'utente deve poter verificare che sia possibile gestire le mappe presenti sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item scegliere di accedere alle mappe installate; \item scegliere di aggiornare una mappa installata; \item scegliere di rimuovere una mappa installata; \item scegliere di accedere alle informazioni riguardanti una mappa. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1.1 & L'utente deve poter verificare che sia possibile accedere alle mappe installate sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item accedere alle mappe installate; \item se l'utente non ha installato alcuna mappa in precedenza verificare che la sezione sia vuota, in caso contrario verificare che la sezione contenga le mappe installate in precedenza. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1.2 & L'utente deve poter verificare che sia possibile aggiornare una mappa (che richieda un aggiornamento) presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item scegliere una mappa (che richieda un aggiornamento) presente sul proprio dispositivo; \item aggiornare tale mappa; \item verificare che sia possibile avviare la navigazione all'interno dell'edificio di cui è stata aggiornata la mappa. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1.3 & L'utente deve poter verificare che sia possibile rimuovere una mappa dal proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item scegliere una mappa tra quelle presenti sul proprio dispositivo; \item rimuovere la mappa scelta; \item verificare che la mappa rimossa non sia più presente sul proprio dispositivo. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1.4 & L'utente deve poter verificare che sia possibile accedere alle informazioni riguardanti una mappa presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item scegliere una mappa presente sul proprio dispositivo; \item scegliere di accedere al nome di una mappa; \item scegliere di accedere alla foto associata ad una mappa; \item scegliere di accedere all'indirizzo dell'edificio; \item scegliere di accedere alla descrizione dell'edificio; \item scegliere di accedere alla dimensione in megabyte della mappa; \item scegliere di accedere alla versione della mappa. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1.4.1 & L'utente deve poter verificare che sia possibile accedere al nome di una mappa presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere al nome di una mappa. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1.4.2 & L'utente deve poter verificare che sia possibile accedere alla foto associata ad una mappa presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla foto dell'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1.4.3 & L'utente deve poter verificare che sia possibile accedere all'indirizzo dell'edificio dalla mappa presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere all'indirizzo dell'edificio (dalla mappa). \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1.4.4 & L'utente deve poter verificare che sia possibile accedere alla descrizione dell'edificio dalla mappa presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla descrizione dell'edificio (dalla mappa). \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1.4.5 & L'utente deve poter verificare che sia possibile accedere alla dimensione in megabyte della mappa di un edificio presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla dimensione in megabyte della mappa di un edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.1.4.6 & L'utente deve poter verificare che sia possibile accedere alla versione della mappa di un edificio presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla versione della mappa di un edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2 & L'utente deve poter verificare che sia possibile gestire le mappe non presenti sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item scegliere di ricercare una mappa non presente sul proprio dispositivo; \item scegliere di installare una mappa non presente sul proprio dispositivo; \item scegliere di accedere alle informazioni riguardanti una mappa non presente sul proprio dispositivo. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.1 & L'utente deve poter verificare che sia possibile ricercare per nome (dell'edificio) una mappa non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item inserire il nome dell'edificio di cui cerca la mappa; \item scegliere la mappa tra quelle proposte come risultati della ricerca. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.1.1 & L'utente deve poter verificare che venga segnalato un messaggio di errore nel caso in cui l'utente voglia scaricare una mappa non prevista. & All'utente è chiesto di: \begin{itemize} \item inserire una mappa non prevista dal sistema; \item verificare che venga visualizzato un messaggio di errore che spieghi che tale mappa non è prevista. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.1.2 & L'utente deve poter verificare che sia possibile inserire il possibile nome di una mappa. & All'utente è chiesto di: \begin{itemize} \item inserire il possibile nome di una mappa; \item verificare che il nome voluto sia stato inserito. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.2 & L'utente deve poter verificare che sia possibile installare una nuova mappa. & All'utente è chiesto di: \begin{itemize} \item ricercare una mappa; \item scegliere una mappa tra quelle proposte nei risultati della ricerca; \item eseguire il download della mappa; \item verificare che la mappa sia presente tra quelle disponibili nel dispositivo; \item verificare che sia possibile avviare la navigazione all'interno dell'edificio di cui è stato eseguito il download della mappa. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.3 & L'utente deve poter verificare che sia possibile accedere alle informazioni riguardanti una mappa non ancora scaricata. & All'utente è chiesto di: \begin{itemize} \item effettuare la ricerca di una mappa; \item scegliere una mappa tra i risultati della ricerca; \item scegliere di accedere al nome dell'edificio; \item scegliere di accedere alle foto riguardanti l'edificio; \item scegliere di accedere all'indirizzo dell'edificio; \item scegliere di accedere alla descrizione dell'edificio; \item scegliere di accedere alla dimensione in megabyte della mappa; \item scegliere di accedere alla versione della mappa. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.3.1 & L'utente deve poter verificare che sia possibile accedere al nome dell'edificio dalla mappa non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere al nome dell'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.3.2 & L'utente deve poter verificare che sia possibile accedere alle foto dell'edificio dalla mappa non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alle foto dell'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.3.3 & L'utente deve poter verificare che sia possibile accedere all'indirizzo dell'edificio dalla mappa non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere all'indirizzo dell'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.3.4 & L'utente deve poter verificare che sia possibile accedere alla descrizione dell'edificio dalla mappa non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla descrizione dell'edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.3.5 & L'utente deve poter verificare che sia possibile accedere alla dimensione in megabyte della mappa di un edificio non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla dimensione in megabyte della mappa di un edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.1.2.3.6 & L'utente deve poter verificare che sia possibile accedere alla versione della mappa di un edificio non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla versione della mappa di un edificio. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.2 & L'utente deve poter verificare che sia possibile gestire le preferenze di navigazione. & All'utente è chiesto di: \begin{itemize} \item modificare le preferenze riguardanti la modalità di fruizione delle indicazioni; \item modificare le preferenze riguardanti il percorso. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.2.1 & L'utente deve poter verificare che sia possibile gestire le preferenze riguardanti la modalità di fruizione delle indicazioni. & All'utente è chiesto di: \begin{itemize} \item modificare le impostazioni riguardanti le indicazioni vocali; \item modificare le impostazioni riguardanti le inidicazioni sonore. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.2.1.1 & L'utente deve poter verificare che sia possibile attivare le indicazioni vocali, se queste sono disattivate. & All'utente è chiesto di: \begin{itemize} \item attivare le indicazioni vocali; \item verificare che all'avvio della navigazione vengano fornite le indicazioni vocali per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.2.1.2 & L'utente deve poter verificare che sia possibile disattivare le indicazioni vocali, se queste sono attivate. & All'utente è chiesto di: \begin{itemize} \item disattivare le indicazioni vocali; \item verificare che all'avvio della navigazione non vengano fornite le indicazioni vocali per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.2.1.3 & L'utente deve poter verificare che sia possibile attivare le inidcazioni sonore, se queste sono disattivate. & All'utente è chiesto di: \begin{itemize} \item attivare le indicazioni sonore; \item verificare che all'avvio della navigazione vengano fornite le indicazioni sonore per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.2.1.4 & L'utente deve poter verificare che sia possibile disattivare le indicazioni sonore, se queste sono attivate. & All'utente è chiesto di: \begin{itemize} \item disattivare le indicazioni sonore; \item verificare che all'avvio della navigazione non vengano fornite le indicazioni sonore per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.2.2 & L'utente deve poter verificare che sia possibile gestire le preferenze riguardanti il percorso da seguire. & All'utente viene chiesto di: \begin{itemize} \item modificare le impostazioni riguardanti il percorso più accessibile; \item modificare le impostazioni riguardanti il percorso con meno ascensori. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.2.2.1 & L'utente deve poter verificare che sia possibile scegliere di seguire il percorso più accessibile per arrivare alla destinazione desiderata. & All'utente viene chiesto di: \begin{itemize} \item attivare l'impostazione riguardante il percorso più accessibile; \item verificare che all'avvio della navigazione l'applicazione fornisca un percorso che prediliga gli ascensori rispetto altre soluzioni per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.2.2.2 & L'utente deve poter verificare che sia possibile scegliere di seguire il percorso con il minor numero di ascensori possibile. & All'utente viene chiesto di: \begin{itemize} \item attivare l'impostazione riguardante il percorso con il minor numero di ascensori possibile; \item verificare che all'avvio della navigazione l'applicazione fornisca un percorso che prediliga soluzioni alternative rispetto gli ascensori per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA3.2.2.3 & L'utente deve poter verificare che sia possibile scegliere di seguire il percorso più veloce in assoluto. & All'utente viene chiesto di: \begin{itemize} \item attivare l'impostazione riguardante il percorso che è ritenuto più veloce; \item verificare che all'avvio della navigazione l'applicazione fornisca un percorso che prediliga soluzioni alternative rispetto al percorso più veloce per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA4 & L'utente deve poter verificare che sia possibile accedere alla guida. & All'utente viene chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla guida; \item verificare che la guida spieghi il funzionamento dell'applicazione. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA5 & L'utente non sviluppatore deve poter verificare che sia possibile attivare le funzionalità sviluppatore. & All'utente non sviluppatore viene chiesto di: \begin{itemize} \item inserire un codice sviluppatore valido; \item confermare il codice inserito; \item verificare che siano state attivate le funzionalità sviluppatore. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA5.1 & L'utente non sviluppatore deve poter verificare che venga segnalato un errore nel caso in cui venga inserito un codice sviluppatore non valido. & All'utente non sviluppatore viene chiesto di: \begin{itemize} \item inserire un codice sviluppatore non valido; \item confermare il codice inserito; \item verificare che venga visualizzato un errore che spieghi che il codice inserito non è valido; \item verificare che non siano state attivate le funzionalità di sviluppatore. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA5.2 & L'utente non sviluppatore deve poter verificare che sia possibile inserire un codice sviluppatore. & All'utente non sviluppatore viene chiesto di: \begin{itemize} \item inserire un codice sviluppatore; \item verificare che il codice voluto sia stato inserito. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA5.3 & L'utente non sviluppatore deve poter verificare che sia possibile confermare il codice inserito. & All'utente non sviluppatore viene chiesto di: \begin{itemize} \item inserire un codice sviluppatore; \item confermare il codice inserito; \item verificare che, se il codice inserito è valido, sono ora attive le funzionalità sviluppatore, altrimenti se non è valido viene segnalato un errore. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA6 & Lo sviluppatore deve verificare che sia possibile accedere alle informazioni riguardanti i beacon rilevati. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere all'UUID di un beacon rilevato; \item accedere al Major di un beacon rilevato; \item accedere al Minor di un beacon rilevato; \item accedere al livello di potenza del segnale di un beacon rilevato; \item accedere al livello di batteria di un beacon rilevato; \item accedere alla distanza approssimativa dal dispositivo utilizzato al beacon rilevato; \item accedere al formato di un beacon rilevato; \item accedere all'area coperta da un beacon rilevato. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA6.1 & Lo sviluppatore deve verificare che sia possibile accedere all'UUID di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere all'UUID di un beacon rilevato; \item verificare che l'UUID rilevato corrisponda al valore corretto. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA6.2 & Lo sviluppatore deve verificare che sia possibile accedere al Major di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere al Major di un beacon rilevato; \item verificare che il Major rilevato corrisponda al valore corretto. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA6.3 & Lo sviluppatore deve verificare che sia possibile accedere al Minor di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere al Minor di un beacon rilevato; \item verificare che il Minor rilevato corrisponda al valore corretto. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA6.4 & Lo sviluppatore deve verificare che sia possibile accedere al formato di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere al formato di un beacon rilevato; \item verificare che il formato rilevato corrisponda al valore corretto. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA6.5 & Lo sviluppatore deve verificare che sia possibile accedere al livello di potenza del segnale di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere al livello di potenza del segnale di un beacon rilevato. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA6.6 & Lo sviluppatore deve verificare che sia possibile accedere al livello di batteria di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere al livello di batteria di un beacon rilevato. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA6.7 & Lo sviluppatore deve verificare che sia possibile accedere alla distanza approssimativa dal dispositivo utilizzato al beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere alla distanza approssimativa dal dispositivo utilizzato al beacon rilevato. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA6.8 & Lo sviluppatore deve verificare che sia possibile accedere all'area coperta da beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere all'area coperta da beacon rilevato. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA7 & Lo sviluppatore deve poter verificare che sia possibile gestire i log. & Allo sviluppatore viene chiesto di: \begin{itemize} \item Avviare un nuovo log; \item Interrompere un log precedentemente avviato; \item Accedere ad un log salvato in precedenza; \item rimuovere un log salvato in precedenza; \item salvare un log appena interrotto. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA7.1 & Lo sviluppatore deve poter verificare che sia possibile avviare un nuovo log. & Allo sviluppatore viene chiesto di: \begin{itemize} \item avviare un nuovo log; \item verificare che il log sia stato avviato. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA7.2 & Lo sviluppatore deve poter verificare che sia possibile interrompere precedentemente avviato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item scegliere di interrompere un log precedentemente avviato; \item verificare che il log non sia più avviato. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA7.3 & Lo sviluppatore deve poter verificare che sia possibile accedere ad un log salvato in precedenza. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere ad un log salvato in precedenza; \item verificare che riesca a accedere al contenuto del log scelto. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA7.4 & Lo sviluppatore deve poter verificare che sia possibile rimuovere un log salvato in precedenza. & Allo sviluppatore viene chiesto di: \begin{itemize} \item rimuovere un log salvato in precedenza; \item verificare che il log rimosso non sia più presente nella lista dei log salvati. \end{itemize} & N.I. \\ 
-		\midrule 
-		TA7.5 & Lo sviluppatore deve poter verificare che sia possibile salvare un log appena interrotto. & Allo sviluppatore viene chiesto di: \begin{itemize} \item avviare un nuovo log; \item interrompere il log precedentemente avviato; \item salvare il log appena interrotto; \item verificare che sia possibile accedere al log appena salvato. \end{itemize} & N.I. \\ 
-		\arrayrulecolor{black}
-		\bottomrule
-		\caption{Tabella test di accettazione} \\
-	\end{longtabu}
+\begin{longtabu} to \textwidth{X[0.9] X[1.5] X[2.5] X}
+	\toprule
+	\textbf{Codice} & \textbf{Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
+	\midrule
+	\endhead
+	\arrayrulecolor{gray}
+	TA1 & L'utente deve poter verificare che sia possibile navigare all'interno di un edificio utilizzando l'applicazione. & All'utente è chiesto di: \begin{itemize} \item attivare il bluetooth; \item accedere alla sezione preposta alla navigazione; \item scegliere la destinazione all'interno dell'edificio; \item confermare la destinazione scelta; \item verificare che venga data la possibilità di avviare la navigazione. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.1 & L'utente deve poter verificare che sia possibile ricercare una destinazione per la navigazione. & All'utente è chiesto di: \begin{itemize} \item scegliere di ricercare la destinazione per nome; \item scegliere di ricercare la destinazione per categoria. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.1.1 & L'utente deve poter verificare che sia possibile ricercare una destinazione per nome. & All'utente è chiesto di: \begin{itemize} \item inserire il nome di una destinazione; \item verificare che sia possibile confermare l'inserimento fatto. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.1.1.1 & L'utente deve poter verificare che sia possibile inserire il nome di una destinazione. & All'utente è chiesto di: \begin{itemize} \item inserire il nome di una destinazione; \item verificare che la destinazione voluta sia stata inserita. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.1.1.2 & L'utente deve poter verificare che venga segnalato un errore qualore venga inserita una destinazione non prevista dal sistema. & All'utente è chiesto di: \begin{itemize} \item inserire una destinazione non prevista dal sistema; \item verificare che venga visualizzato un errore che spieghi che la destinazione inserita non è presente tra quelle disponibili; \item verificare che venga data la possibilità di inserire un'altra destinazione. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.1.2 & L'utente deve poter verificare che sia possibile ricercare una destinazione per categoria. & All'utente è chiesto di: \begin{itemize} \item scegliere una delle categorie proposte \item scegliere una delle destinazioni presenti all'interno della categoria scelta; \item verificare che sia possibile confermare la scelta fatta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.1.2.1 & L'utente deve verificare che sia possibile scegliere una categoria tra quelle proposte. & All'utente è chiesto di: \begin{itemize} \item verificare che l'applicazione fornisca una o più categorie di destinazioni; \item verificare che sia possibile scegliere una di queste categorie. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.1.2.2 & L'utente deve verificare che sia possibile scegliere una destinazione tra i risultati di una ricerca. & All'utente è chiesto di: \begin{itemize} \item verificare che all'interno di una categoria siano proposte una o più destinazioni; \item verificare che sia possibile scegliere una di queste destinazioni; \item effettuare la ricerca di una destinazione (prevista dal sistema) per nome; \item verificare che sia possibile scegliere una delle destinazioni restituite dalla ricerca. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.1.3 & L'utente deve poter verificare che sia possibile confermare una destinazione. & All'utente è chiesto di: \begin{itemize} \item confermare la destinazione scelta; \item verificare che venga data la possibilità di avviare la navigazione verso la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.2 & L'utente deve poter verificare che sia possibile avviare la navigazione. & All'utente è chiesto di: \begin{itemize} \item confermare l'avvio della navigazione; \item verificare che venga fornita un'indicazione testuale per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.2.1 & L'utente deve poter verificare che l'indicazione sia fornita in forma testuale. & All'utente è chiesto di: \begin{itemize} \item verificare che l'indicazione fornita sia un testo scritto. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.2.2 & L'utente deve poter verificare che l'indicazione testuale fornita per raggiungere la destinazione scelta, quando è stata avviata la navigazione, sia corretta. & All'utente è chiesto di: \begin{itemize} \item seguire l'indicazione testuale data; \item verificare di essere arrivato alla destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.2.3 & L'utente deve poter verificare che l'indicazione testuale fornita dall'applicazione abbia come punto di partenza il POI in cui l'utente si trova. & All'utente è chiesto di: \begin{itemize} \item avviare la navigazione; \item verificare che l'indicazione testuale fornita dall'applicazione abbia come punto di partenza il POI in cui l'utente si trova. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.3 & L'utente deve verificare che sia possibile interrompere la navigazione. & All'utente è chiesto di: \begin{itemize} \item scegliere di interrompere la navigazione; \item verificare che la navigazione si interrompa. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.4 & L'utente deve verificare che sia possibile accedere a delle informazioni più dettagliate riguardanti il percorso da seguire per raggiungere la destinazione. & All'utente è chiesto di: \begin{itemize} \item scegliere di visualizzare le fotografie della prossima area; \item scegliere di ricevere delle indicazioni testuali estese per raggiungere la prossima area; \item scegliere di accedere alla lista completa delle indicazioni per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.4.1 & L'utente deve verificare che sia possibile visualizzare le fotografie della prossima area da raggiungere. & All'utente è chiesto di: \begin{itemize} \item verificare che siano visualizzate le fotografie che ritraggono la prossima area da raggiungere. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.4.2 & L'utente deve verificare che sia possibile visualizzare delle indicazioni testuali estese dettagliate riguardanti le azioni da compiere per raggiungere la prossima area. & All'utente è chiesto di: \begin{itemize} \item verificare che sia visualizzata una descrizione tesuale estesa che descriva in modo dettagliato le azioni da compiere per raggiungere la prossima area. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.4.3 & L'utente deve verificare che sia possibile visualizzare la lista completa delle indicazioni da seguire per raggiungere la destinazione scelta. & All'utente è chiesto di: \begin{itemize} \item verificare che sia visualizzata la lista completa delle indicazioni da seguire per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.4.4 & L'utente deve verificare che venga visualizzato un errore nel caso in cui acceda alla foto del prossimo POI con connessione Internet non attiva. & All'utente è chiesto di: \begin{itemize} \item disattivare la connessione Internet \item accedere alle fotografie del prossimo POI \item verificare che venga segnalato un errore che spieghi che il dispositivo non ha la connessione Internet attiva. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.5 & L'utente deve poter verificare che venga segnalato un errore qualora segua un percorso differente da quello calcolato dall'applicazione. & All'utente è chiesto di: \begin{itemize} \item avviare la navigazione; \item seguire un percorso differente da quello proposto dall'applicazione; \item verificare che venga segnalato un errore che spieghi che il percorso che si sta seguendo non è quello previsto. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.6 & L'utente deve poter verificare che venga segnalato un errore nel caso in cui voglia avviare la navigazione all'interno di un'area dove non è presente il segnale di alcun beacon. & All'utente è chiesto di: \begin{itemize} \item posizionarsi in un'area dove non è presente il segnale di alcun beacon; \item avviare la navigazione; \item verificare che venga segnalato un errore che spieghi che in quell'area non è stato rilevato il segnale di alcun beacon. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.7 & L'utente deve poter verificare che venga segnalato un errore nel caso in cui voglia avviare la navigazione con la connessione Internet del proprio dispositivo non attiva. & All'utente è chiesto di: \begin{itemize} \item disattivare la connessione internet; \item avviare la navigazione; \item verificare che venga segnalato un errore che spieghi che il dispositivo non ha la connessione Internet attiva. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.8 & L'utente deve poter verificare che venga segnalato un errore nel caso in cui voglia avviare la navigazione e la mappa installata nel proprio dispositivo differisce dall'ultima versione online della mappa. & All'utente è chiesto di: \begin{itemize} \item non aggiornare una mappa che richieda un aggiornamento; \item avviare la navigazione; \item verificare che venga segnalato un errore che spieghi che la mappa presente nel dispositivo non è l'ultima versione della mappa per quell'edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA1.9 & L'utente deve poter verificare che venga segnalato un errore nel caso in cui si rilevi un beacon all'interno di un edificio mappato e non sia installata la mappa per quell'edificio. & All'utente è chiesto di: \begin{itemize} \item entrare in un edificio di cui non dispone della mappa; \item avviare l'applicazione; \item verificare che venga segnalato un errore che spieghi che non è presente nel dispositivo una mappa per quell'edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2 & L'utente deve poter verificare che sia possibile accedere alle informazioni dell'edificio in cui ci si trova. & All'utente è chiesto di: \begin{itemize} \item scegliere di accedere alle informazioni generali sull'edificio in cui ci si trova; \item scegliere di accedere alla lista completa di tutti i POI presenti nell'edificio in cui si trova; \item scegliere di accedere alla lista dei POI associati ai beacon rilevati alla posizione dell’utente. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.1 & L'utente deve poter verificare che sia possibile accedere al nome dell'edificio. & All'utente è chiesto di: \begin{itemize} \item verificare che sia presente un nome per l'edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.2 & L'utente deve poter verificare che sia possibile accedere alla descrizione dell'edificio dell'edificio. & All'utente è chiesto di: \begin{itemize} \item verificare che sia presente una descrizione per l'edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.3 & L'utente deve verificare che sia possibile accedere all'indirizzo dell'edificio. & All'utente è chiesto di: \begin{itemize} \item verificare che sia presente l'indirizzo per l'edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.4 & L'utente deve verificare che sia possibile accedere aglio orari dell'edificio. & All'utente è chiesto di: \begin{itemize} \item verificare che siano presenti gli orari di apertura dell'edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.5 & L'utente deve poter verificare che sia possibile accedere alla lista completa di tutti i POI presenti nell'edificio in cui si trova. & All'utente è chiesto di: \begin{itemize} \item verificare che venga visualizzata la lista completa di tutti i POI presenti nell'edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.6 & L'utente deve poter verificare che sia possibile accedere alla lista dei POI associati ai beacon rilevati alla posizione dell’utente. & All'utente è chiesto di: \begin{itemize} \item verificare che venga visualizzata la lista dei POI associati ai beacon rilevati alla posizione dell’utente; \item verificare che sia possibile accedere alle informazioni riguardanti uno specifico POI nella lista. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.6.1 & L'utente deve poter verificare che sia possibile accedere alle informazioni riguardanti uno specifico POI. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere all'identificativo del POI; \item verificare che sia possibile accedere alla descrizione del POI. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.6.1.1 & L'utente deve poter verificare che sia possibile accedere all'identificativo di uno specifico POI. & All'utente è chiesto di: \begin{itemize} \item verificare che sia presente un identificativo per il POI. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.6.1.2 & L'utente deve poter verificare che sia possibile accedere alla descrizione di uno specifico POI. & All'utente è chiesto di: \begin{itemize} \item verificare che sia presente una descrizione per il POI. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.7 & L'utente deve verificare che venga visualizzato un errore nel caso in cui acceda alle informazioni di un edificio con connessione internet non attiva. & All'utente è chiesto di: \begin{itemize} \item disattivare la connessione internet; \item accedere alle informazioni di un edificio; \item verificare che venga segnalato un errore che spieghi che il dispositivo non ha la connessione Internet attiva. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA2.8 & L'utente deve verificare che venga visualizzato un errore nel caso in cui acceda alle informazioni dell'edificio e la versione della mappa non coincida con l'ultima versione disponibile. & All'utente è chiesto di: \begin{itemize} \item non aggiornare una mappa che richieda un aggiornamento; \item accedere alle informazioni di un edificio; \item verificare che venga segnalato un errore che spieghi che il dispositivo non è presenta l'ultima versione di mappa disponibile. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3 & L'utente deve poter verificare che sia possibile gestire gli aspetti relativi all'applicazione. & All'utente è chiesto di: \begin{itemize} \item gestire le mappe dell'applicazione; \item gestire le preferenze di navigazione. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1 & L'utente deve poter verificare che sia possibile gestire le mappe dall'applicazione. & All'utente è chiesto di: \begin{itemize} \item scegliere di gestire le mappe installate sul proprio dispositivo; \item scegliere di gestire le mappe non presenti sul proprio dispositivo. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.1 & l'utente deve poter verificare che sia possibile gestire le mappe presenti sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item scegliere di accedere alle mappe installate; \item scegliere di aggiornare una mappa installata; \item scegliere di rimuovere una mappa installata; \item scegliere di accedere alle informazioni riguardanti una mappa. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.1.1 & L'utente deve poter verificare che sia possibile accedere alle mappe installate sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item accedere alle mappe installate; \item se l'utente non ha installato alcuna mappa in precedenza verificare che la sezione sia vuota, in caso contrario verificare che la sezione contenga le mappe installate in precedenza. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.1.2 & L'utente deve poter verificare che sia possibile aggiornare una mappa (che richieda un aggiornamento) presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item scegliere una mappa (che richieda un aggiornamento) presente sul proprio dispositivo; \item aggiornare tale mappa; \item verificare che sia possibile avviare la navigazione all'interno dell'edificio di cui è stata aggiornata la mappa. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.1.3 & L'utente deve poter verificare che sia possibile rimuovere una mappa dal proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item scegliere una mappa tra quelle presenti sul proprio dispositivo; \item rimuovere la mappa scelta; \item verificare che la mappa rimossa non sia più presente sul proprio dispositivo. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.1.4 & L'utente deve poter verificare che sia possibile accedere alle informazioni riguardanti una mappa presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item scegliere una mappa presente sul proprio dispositivo; \item scegliere di accedere al nome di una mappa; \item scegliere di accedere alla foto associata ad una mappa; \item scegliere di accedere all'indirizzo dell'edificio; \item scegliere di accedere alla descrizione dell'edificio; \item scegliere di accedere alla dimensione in megabyte della mappa; \item scegliere di accedere alla versione della mappa. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.1.4.1 & L'utente deve poter verificare che sia possibile accedere al nome di una mappa presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere al nome di una mappa. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.1.4.2 & L'utente deve poter verificare che sia possibile accedere all'indirizzo dell'edificio dalla mappa presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere all'indirizzo dell'edificio (dalla mappa). \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.1.4.3 & L'utente deve poter verificare che sia possibile accedere alla descrizione dell'edificio dalla mappa presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla descrizione dell'edificio (dalla mappa). \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.1.4.4 & L'utente deve poter verificare che sia possibile accedere alla dimensione in megabyte della mappa di un edificio presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla dimensione in megabyte della mappa di un edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.1.4.5 & L'utente deve poter verificare che sia possibile accedere alla versione della mappa di un edificio presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla versione della mappa di un edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2 & L'utente deve poter verificare che sia possibile gestire le mappe non presenti sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item scegliere di ricercare una mappa non presente sul proprio dispositivo; \item scegliere di installare una mappa non presente sul proprio dispositivo; \item scegliere di accedere alle informazioni riguardanti una mappa non presente sul proprio dispositivo. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2.1 & L'utente deve poter verificare che sia possibile ricercare per nome (dell'edificio) una mappa non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item inserire il nome dell'edificio di cui cerca la mappa; \item scegliere la mappa tra quelle proposte come risultati della ricerca. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2.1.1 & L'utente deve poter verificare che venga segnalato un messaggio di errore nel caso in cui l'utente voglia scaricare una mappa non prevista. & All'utente è chiesto di: \begin{itemize} \item inserire il nome di una mappa non prevista dal sistema; \item verificare che venga visualizzato un messaggio di errore che spieghi che tale mappa non è prevista. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2.1.2 & L'utente deve poter verificare che sia possibile inserire il possibile nome di una mappa. & All'utente è chiesto di: \begin{itemize} \item inserire il possibile nome di una mappa; \item verificare che il nome voluto sia stato inserito. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2.2 & L'utente deve poter verificare che sia possibile installare una nuova mappa. & All'utente è chiesto di: \begin{itemize} \item ricercare una mappa; \item scegliere una mappa tra quelle proposte nei risultati della ricerca; \item eseguire il download della mappa; \item verificare che la mappa sia presente tra quelle disponibili nel dispositivo; \item verificare che sia possibile avviare la navigazione all'interno dell'edificio di cui è stato eseguito il download della mappa. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2.3 & L'utente deve poter verificare che sia possibile accedere alle informazioni riguardanti una mappa non ancora scaricata. & All'utente è chiesto di: \begin{itemize} \item effettuare la ricerca di una mappa; \item scegliere una mappa tra i risultati della ricerca; \item scegliere di accedere al nome dell'edificio; \item scegliere di accedere alle foto riguardanti l'edificio; \item scegliere di accedere all'indirizzo dell'edificio; \item scegliere di accedere alla descrizione dell'edificio; \item scegliere di accedere alla dimensione in megabyte della mappa; \item scegliere di accedere alla versione della mappa. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2.3.1 & L'utente deve poter verificare che sia possibile accedere al nome dell'edificio dalla mappa non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere al nome dell'edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2.3.2 & L'utente deve poter verificare che sia possibile accedere all'indirizzo dell'edificio dalla mappa non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere all'indirizzo dell'edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2.3.3 & L'utente deve poter verificare che sia possibile accedere alla descrizione dell'edificio dalla mappa non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla descrizione dell'edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2.3.4 & L'utente deve poter verificare che sia possibile accedere alla dimensione in megabyte della mappa di un edificio non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla dimensione in megabyte della mappa di un edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.1.2.3.5 & L'utente deve poter verificare che sia possibile accedere alla versione della mappa di un edificio non presente sul proprio dispositivo. & All'utente è chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla versione della mappa di un edificio. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.2 & L'utente deve poter verificare che sia possibile gestire le preferenze di navigazione. & All'utente è chiesto di: \begin{itemize} \item modificare le preferenze riguardanti la modalità di fruizione delle indicazioni; \item modificare le preferenze riguardanti il percorso. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.2.1 & L'utente deve poter verificare che sia possibile gestire le preferenze riguardanti la modalità di fruizione delle indicazioni. & All'utente è chiesto di: \begin{itemize} \item modificare le impostazioni riguardanti le indicazioni vocali; \item modificare le impostazioni riguardanti le inidicazioni sonore. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.2.1.1 & L'utente deve poter verificare che sia possibile attivare le indicazioni vocali, se queste sono disattivate. & All'utente è chiesto di: \begin{itemize} \item attivare le indicazioni vocali; \item verificare che all'avvio della navigazione vengano fornite le indicazioni vocali per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.2.1.2 & L'utente deve poter verificare che sia possibile disattivare le indicazioni vocali, se queste sono attivate. & All'utente è chiesto di: \begin{itemize} \item disattivare le indicazioni vocali; \item verificare che all'avvio della navigazione non vengano fornite le indicazioni vocali per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.2.1.3 & L'utente deve poter verificare che sia possibile attivare le inidcazioni sonore, se queste sono disattivate. & All'utente è chiesto di: \begin{itemize} \item attivare le indicazioni sonore; \item verificare che all'avvio della navigazione vengano fornite le indicazioni sonore per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.2.1.4 & L'utente deve poter verificare che sia possibile disattivare le indicazioni sonore, se queste sono attivate. & All'utente è chiesto di: \begin{itemize} \item disattivare le indicazioni sonore; \item verificare che all'avvio della navigazione non vengano fornite le indicazioni sonore per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.2.2 & L'utente deve poter verificare che sia possibile gestire le preferenze riguardanti il percorso da seguire. & All'utente viene chiesto di: \begin{itemize} \item modificare le impostazioni riguardanti il percorso più accessibile; \item modificare le impostazioni riguardanti il percorso con meno ascensori. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.2.2.1 & L'utente deve poter verificare che sia possibile scegliere di seguire il percorso più accessibile per arrivare alla destinazione desiderata. & All'utente viene chiesto di: \begin{itemize} \item attivare l'impostazione riguardante il percorso più accessibile; \item verificare che all'avvio della navigazione l'applicazione fornisca un percorso che prediliga gli ascensori rispetto altre soluzioni per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.2.2.2 & L'utente deve poter verificare che sia possibile scegliere di seguire il percorso con il minor numero di ascensori possibile. & All'utente viene chiesto di: \begin{itemize} \item attivare l'impostazione riguardante il percorso con il minor numero di ascensori possibile; \item verificare che all'avvio della navigazione l'applicazione fornisca un percorso che prediliga soluzioni alternative rispetto gli ascensori per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA3.2.2.3 & L'utente deve poter verificare che sia possibile scegliere di seguire il percorso più veloce in assoluto. & All'utente viene chiesto di: \begin{itemize} \item attivare l'impostazione riguardante il percorso che è ritenuto più veloce; \item verificare che all'avvio della navigazione l'applicazione fornisca un percorso che prediliga soluzioni alternative rispetto al percorso più veloce per raggiungere la destinazione scelta. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA4 & L'utente deve poter verificare che sia possibile accedere alla guida. & All'utente viene chiesto di: \begin{itemize} \item verificare che sia possibile accedere alla guida; \item verificare che la guida spieghi il funzionamento dell'applicazione. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA5 & L'utente non sviluppatore deve poter verificare che sia possibile attivare le funzionalità sviluppatore. & All'utente non sviluppatore viene chiesto di: \begin{itemize} \item inserire un codice sviluppatore valido; \item confermare il codice inserito; \item verificare che siano state attivate le funzionalità sviluppatore. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA5.1 & L'utente non sviluppatore deve poter verificare che venga segnalato un errore nel caso in cui venga inserito un codice sviluppatore non valido. & All'utente non sviluppatore viene chiesto di: \begin{itemize} \item inserire un codice sviluppatore non valido; \item confermare il codice inserito; \item verificare che venga visualizzato un errore che spieghi che il codice inserito non è valido; \item verificare che non siano state attivate le funzionalità di sviluppatore. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA5.2 & L'utente non sviluppatore deve poter verificare che sia possibile inserire un codice sviluppatore. & All'utente non sviluppatore viene chiesto di: \begin{itemize} \item inserire un codice sviluppatore; \item verificare che il codice voluto sia stato inserito. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA5.3 & L'utente non sviluppatore deve poter verificare che sia possibile confermare il codice inserito. & All'utente non sviluppatore viene chiesto di: \begin{itemize} \item inserire un codice sviluppatore; \item confermare il codice inserito; \item verificare che, se il codice inserito è valido, sono ora attive le funzionalità sviluppatore, altrimenti se non è valido viene segnalato un errore. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA6 & Lo sviluppatore deve verificare che sia possibile accedere alle informazioni riguardanti i beacon rilevati. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere all'UUID di un beacon rilevato; \item accedere al Major di un beacon rilevato; \item accedere al Minor di un beacon rilevato; \item accedere al livello di potenza del segnale di un beacon rilevato; \item accedere al livello di batteria di un beacon rilevato; \item accedere alla distanza approssimativa dal dispositivo utilizzato al beacon rilevato; \item accedere al formato di un beacon rilevato; \item accedere all'area coperta da un beacon rilevato. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA6.1 & Lo sviluppatore deve verificare che sia possibile accedere all'UUID di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere all'UUID di un beacon rilevato; \item verificare che l'UUID rilevato corrisponda al valore corretto. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA6.2 & Lo sviluppatore deve verificare che sia possibile accedere al Major di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere al Major di un beacon rilevato; \item verificare che il Major rilevato corrisponda al valore corretto. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA6.3 & Lo sviluppatore deve verificare che sia possibile accedere al Minor di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere al Minor di un beacon rilevato; \item verificare che il Minor rilevato corrisponda al valore corretto. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA6.4 & Lo sviluppatore deve verificare che sia possibile accedere al formato di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere al formato di un beacon rilevato; \item verificare che il formato rilevato corrisponda al valore corretto. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA6.5 & Lo sviluppatore deve verificare che sia possibile accedere al livello di potenza del segnale di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere al livello di potenza del segnale di un beacon rilevato. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA6.6 & Lo sviluppatore deve verificare che sia possibile accedere al livello di batteria di un beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere al livello di batteria di un beacon rilevato. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA6.7 & Lo sviluppatore deve verificare che sia possibile accedere alla distanza approssimativa dal dispositivo utilizzato al beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere alla distanza approssimativa dal dispositivo utilizzato al beacon rilevato. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA6.8 & Lo sviluppatore deve verificare che sia possibile accedere all'area coperta da beacon rilevato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere all'area coperta da beacon rilevato. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA7 & Lo sviluppatore deve poter verificare che sia possibile gestire i log. & Allo sviluppatore viene chiesto di: \begin{itemize} \item Avviare un nuovo log; \item Interrompere un log precedentemente avviato; \item Accedere ad un log salvato in precedenza; \item rimuovere un log salvato in precedenza; \item salvare un log appena interrotto. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA7.1 & Lo sviluppatore deve poter verificare che sia possibile avviare un nuovo log. & Allo sviluppatore viene chiesto di: \begin{itemize} \item avviare un nuovo log; \item verificare che il log sia stato avviato. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA7.2 & Lo sviluppatore deve poter verificare che sia possibile interrompere precedentemente avviato. & Allo sviluppatore viene chiesto di: \begin{itemize} \item scegliere di interrompere un log precedentemente avviato; \item verificare che il log non sia più avviato. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA7.3 & Lo sviluppatore deve poter verificare che sia possibile accedere ad un log salvato in precedenza. & Allo sviluppatore viene chiesto di: \begin{itemize} \item accedere ad un log salvato in precedenza; \item verificare che riesca a accedere al contenuto del log scelto. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA7.4 & Lo sviluppatore deve poter verificare che sia possibile rimuovere un log salvato in precedenza. & Allo sviluppatore viene chiesto di: \begin{itemize} \item rimuovere un log salvato in precedenza; \item verificare che il log rimosso non sia più presente nella lista dei log salvati. \end{itemize} & N.I. \\ 
+	\midrule 
+	TA7.5 & Lo sviluppatore deve poter verificare che sia possibile salvare un log appena interrotto. & Allo sviluppatore viene chiesto di: \begin{itemize} \item avviare un nuovo log; \item interrompere il log precedentemente avviato; \item salvare il log appena interrotto; \item verificare che sia possibile accedere al log appena salvato. \end{itemize} & N.I. \\ 
+	\arrayrulecolor{black}
+	\bottomrule
+	\caption{Tabella test di accettazione} \\
+\end{longtabu}
 	
 	\subsection{Test di sistema}
 	Il test di sistema verifica il comportamento dinamico del sistema completo al fine di verificare il soddisfacimento dei \textbf{requisiti software}. La maggior parte degli errori dovrebbe essere già stata identificata durante i test di unità e di integrazione. Il test di sistema viene di solito considerato appropriato per verificare il sistema anche rispetto ai requisiti non funzionali, come quelli prestazionali, di qualità e di vincolo. A questo livello, viene effettuata anche una serie di test in una struttura opportunamente mappata da beacon\g\ per verificare il corretto funzionamento del software\g\ ed evidenziare eventuali bug\g\ o mancanze a livello di performance e precisione.\\
@@ -249,7 +243,7 @@ sviluppato.\\
 		\midrule 
 		TS1.11 & Viene verificato che il sistema avverta l'utente qualora volesse avviare la navigazione e la mappa installata sul suo dispositivo differisce dall'ultima versione disponibile per quell'edificio. & RObbF7.7 & N.I. \\ 
 		\midrule 
-		TS1.12 & Viene verificato che il sistema avverta l'utente qualora volesse avviare la navigazione e la mappa dell’edificio non fosse installata nel dispositivo. & RObbF7.8 & N.I. \\ 
+		TS1.12 & Viene verificato che il sistema avverta l'utente qualora rilevasse un beacon all'interno di un edificio e la mappa dell’edificio non fosse installata nel dispositivo. & RObbF7.8 & N.I. \\ 
 		\midrule 
 		TS1.13 & Viene verificato che il sistema fornisca la possibilità di ricercare una destinazione per nome. & RDesF7.1.1 & N.I. \\ 
 		\midrule 
@@ -309,105 +303,99 @@ sviluppato.\\
 		\midrule 
 		TS13 & Viene verificato che il sistema avverta l'utente qualora volesse accedere alle informazioni dell'edificio in cui si trova e la versione della mappa presente sul dispositivo non coincidesse con l'ultima versione della mappa disponibile. & RObbF9.10 & N.I. \\ 
 		\midrule 
-		TS14 & Viene verificato che il sistema avverta l'utente qualora volesse accedere alle informazioni dell'edificio in cui si trova e la mappa dell'edificio non fosse presente sul dispositivo. & RObbF9.11 & N.I. \\ 
+		TS14 & Viene verificato che il sistema permetta di impostare le preferenze di navigazione. & ROpzF10.1 & N.I. \\ 
 		\midrule 
-		TS15 & Viene verificato che il sistema permetta di impostare le preferenze di navigazione. & ROpzF10.1 & N.I. \\ 
+		TS14.1 & Viene verificato che il sistema permetta di fornire le indicazioni in forma testuale. & RObbF10.1.2.1 & N.I. \\ 
 		\midrule 
-		TS15.1 & Viene verificato che il sistema permetta di fornire le indicazioni in forma testuale. & RObbF10.1.2.1 & N.I. \\ 
+		TS14.2 & Viene verificato che il sistema permetta di attivare le indicazioni sonore. & RDesF10.1.2.3 & N.I. \\ 
 		\midrule 
-		TS15.2 & Viene verificato che il sistema permetta di attivare le indicazioni sonore. & RDesF10.1.2.3 & N.I. \\ 
+		TS14.3 & Viene verificato che il sistema permetta di attivare le indicazioni vocali. & RDesF10.1.2.2 & N.I. \\ 
 		\midrule 
-		TS15.3 & Viene verificato che il sistema permetta di attivare le indicazioni vocali. & RDesF10.1.2.2 & N.I. \\ 
+		TS14.4 & Viene verificato che il sistema permetta di disattivare le indicazioni sonore. & RDesF10.1.2.5 & N.I. \\ 
 		\midrule 
-		TS15.4 & Viene verificato che il sistema permetta di disattivare le indicazioni sonore. & RDesF10.1.2.5 & N.I. \\ 
+		TS14.5 & Viene verificato che il sistema permetta di disattivare le indicazioni vocali. & RDesF10.1.2.4 & N.I. \\ 
 		\midrule 
-		TS15.5 & Viene verificato che il sistema permetta di disattivare le indicazioni vocali. & RDesF10.1.2.4 & N.I. \\ 
+		TS14.6 & Viene verificato che il sistema permetta di scegliere il percorso più accessibile. & ROpzF10.1.1.1 & N.I. \\ 
 		\midrule 
-		TS15.6 & Viene verificato che il sistema permetta di scegliere il percorso più accessibile. & ROpzF10.1.1.1 & N.I. \\ 
+		TS14.7 & Viene verificato che il sistema permetta di scegliere il percorso con il minor numero di ascensori. & ROpzF10.1.1.2 & N.I. \\ 
 		\midrule 
-		TS15.7 & Viene verificato che il sistema permetta di scegliere il percorso con il minor numero di ascensori. & ROpzF10.1.1.2 & N.I. \\ 
+		TS14.8 & Viene verificato che il sistema permetta di scegliere il percorso più veloce. & RObbF10.1.1.3 & N.I. \\ 
 		\midrule 
-		TS15.8 & Viene verificato che il sistema permetta di scegliere il percorso più veloce. & RObbF10.1.1.3 & N.I. \\ 
+		TS15 & Viene verificato che il sistema permetta la gestione delle mappe. & RDesF10.2 & N.I. \\ 
 		\midrule 
-		TS16 & Viene verificato che il sistema permetta la gestione delle mappe. & RDesF10.2 & N.I. \\ 
+		TS15.1 & Viene verificato che il sistema permetta di accedere alle mappe installate nel proprio dispositivo. & RDesF10.2.1.1 & N.I. \\ 
 		\midrule 
-		TS16.1 & Viene verificato che il sistema permetta di accedere alle mappe installate nel proprio dispositivo. & RDesF10.2.1.1 & N.I. \\ 
+		TS15.2 & Viene verificato che il sistema permetta di installare una mappa disponibile online non precedentemente installata. & RDesF10.2.2.2 & N.I. \\ 
 		\midrule 
-		TS16.2 & Viene verificato che il sistema permetta di installare una mappa disponibile online non precedentemente installata. & RDesF10.2.2.2 & N.I. \\ 
+		TS15.3 & Viene verificato che il sistema permetta di ricercare una mappa. & RDesF10.2.2.1 & N.I. \\ 
 		\midrule 
-		TS16.3 & Viene verificato che il sistema permetta di ricercare una mappa. & RDesF10.2.2.1 & N.I. \\ 
+		TS15.4 & Viene verificato che il sistema permetta di rimuovere una mappa. & RDesF10.2.1.3 & N.I. \\ 
 		\midrule 
-		TS16.4 & Viene verificato che il sistema permetta di rimuovere una mappa. & RDesF10.2.1.3 & N.I. \\ 
+		TS15.5 & Viene verificato che il sistema permetta di aggiornare una mappa. & RDesF10.2.1.2 & N.I. \\ 
 		\midrule 
-		TS16.5 & Viene verificato che il sistema permetta di aggiornare una mappa. & RDesF10.2.1.2 & N.I. \\ 
+		TS15.6 & Viene verificato che il sistema permetta di accedere al nome di una mappa presente sul dispositivo. & RDesF10.2.1.4.1 & N.I. \\ 
 		\midrule 
-		TS16.6 & Viene verificato che il sistema permetta di accedere al nome di una mappa presente sul dispositivo. & RDesF10.2.1.4.1 & N.I. \\ 
+		TS15.7 & Viene verificato che il sistema permetta di accedere all'indirizzo dell'edificio a cui si riferisce una mappa presente sul proprio dispositivo. & RDesF10.2.1.4.2 & N.I. \\ 
 		\midrule 
-		TS16.7 & Viene verificato che il sistema permetta di accedere alle foto relative ad una mappa presente sul dispositivo. & RDesF10.2.1.4.2 & N.I. \\ 
+		TS15.8 & Viene verificato che il sistema permetta di accedere alla descrizione dell'edificio a cui si riferisce una mappa presente sul proprio dispositivo. & RDesF10.2.1.4.3 & N.I. \\ 
 		\midrule 
-		TS16.8 & Viene verificato che il sistema permetta di accedere all'indirizzo dell'edificio a cui si riferisce una mappa presente sul proprio dispositivo. & RDesF10.2.1.4.3 & N.I. \\ 
+		TS15.9 & Viene verificato che il sistema permetta di accedere alla dimensione in megabyte di una mappa presente sul proprio dispositivo. & RDesF10.2.1.4.4 & N.I. \\ 
 		\midrule 
-		TS16.9 & Viene verificato che il sistema permetta di accedere alla descrizione dell'edificio a cui si riferisce una mappa presente sul proprio dispositivo. & RDesF10.2.1.4.4 & N.I. \\ 
+		TS15.10 & Viene verificato che il sistema permetta di accedere alla versione di una mappa presente sul proprio dispositivo. & RDesF10.2.1.4.5 & N.I. \\ 
 		\midrule 
-		TS16.10 & Viene verificato che il sistema permetta di accedere alla dimensione in megabyte di una mappa presente sul proprio dispositivo. & RDesF10.2.1.4.5 & N.I. \\ 
+		TS15.11 & Viene verificato che il sistema permetta di accedere al nome di una mappa non presente sul dispositivo. & RDesF10.2.2.3.1 & N.I. \\ 
 		\midrule 
-		TS16.11 & Viene verificato che il sistema permetta di accedere alla versione di una mappa presente sul proprio dispositivo. & RDesF10.2.1.4.6 & N.I. \\ 
+		TS15.12 & Viene verificato che il sistema permetta di accedere all'indirizzo dell'edificio a cui si riferisce una mappa non presente sul proprio dispositivo. & RDesF10.2.2.3.2 & N.I. \\ 
 		\midrule 
-		TS16.12 & Viene verificato che il sistema permetta di accedere al nome di una mappa non presente sul dispositivo. & RDesF10.2.2.3.1 & N.I. \\ 
+		TS15.13 & Viene verificato che il sistema permetta di accedere alla descrizione dell'edificio a cui si riferisce una mappa non presente sul proprio dispositivo. & RDesF10.2.2.3.3 & N.I. \\ 
 		\midrule 
-		TS16.13 & Viene verificato che il sistema permetta di accedere alle foto relative ad una mappa non presente sul dispositivo. & RDesF10.2.2.3.2 & N.I. \\ 
+		TS15.14 & Viene verificato che il sistema permetta di accedere alla dimensione in megabyte di una mappa non presente sul proprio dispositivo. & RDesF10.2.2.3.4 & N.I. \\ 
 		\midrule 
-		TS16.14 & Viene verificato che il sistema permetta di accedere all'indirizzo dell'edificio a cui si riferisce una mappa non presente sul proprio dispositivo. & RDesF10.2.2.3.3 & N.I. \\ 
+		TS15.15 & Viene verificato che il sistema permetta di accedere alla versione di una mappa non presente sul proprio dispositivo. & RDesF10.2.2.3.5 & N.I. \\ 
 		\midrule 
-		TS16.15 & Viene verificato che il sistema permetta di accedere alla descrizione dell'edificio a cui si riferisce una mappa non presente sul proprio dispositivo. & RDesF10.2.2.3.4 & N.I. \\ 
+		TS15.16 & Viene verificato che il sistema segnali all'utente qualora la ricerca per nome non abbia trovato corrispondenza tra le mappe disponibili online.. & RDesF10.2.2.4 & N.I. \\ 
 		\midrule 
-		TS16.16 & Viene verificato che il sistema permetta di accedere alla dimensione in megabyte di una mappa non presente sul proprio dispositivo. & RDesF10.2.2.3.5 & N.I. \\ 
+		TS16 & Viene verificato che il sistema permetta di inserire il codice sviluppatore. & RObbF10.3.1 & N.I. \\ 
 		\midrule 
-		TS16.17 & Viene verificato che il sistema permetta di accedere alla versione di una mappa non presente sul proprio dispositivo. & RDesF10.2.2.3.6 & N.I. \\ 
+		TS16.1 & Viene verificato che il sistema permetta di confermare il codice sviluppatore. & RObbF10.3.2 & N.I. \\ 
 		\midrule 
-		TS16.18 & Viene verificato che il sistema segnali all'utente qualora la ricerca per nome non abbia trovato corrispondenza tra le mappe disponibili online.. & RDesF10.2.2.4 & N.I. \\ 
+		TS17 & Viene verificato che il sistema metta a disposizione una sezione per la guida. & ROpzF11 & N.I. \\ 
 		\midrule 
-		TS17 & Viene verificato che il sistema permetta di inserire il codice sviluppatore. & RObbF10.3.1 & N.I. \\ 
+		TS18 & Viene verificato che il sistema permetta di accedere alle informazioni di un beacon rilevato. & RObbF12 & N.I. \\ 
 		\midrule 
-		TS17.1 & Viene verificato che il sistema permetta di confermare il codice sviluppatore. & RObbF10.3.2 & N.I. \\ 
+		TS18.1 & Viene verificato che il sistema permetta di accedere al UUID di un beacon rilevato. & RObbF12.1 & N.I. \\ 
 		\midrule 
-		TS18 & Viene verificato che il sistema metta a disposizione una sezione per la guida. & ROpzF11 & N.I. \\ 
+		TS18.2 & Viene verificato che il sistema permetta di accedere al Major di un beacon rilevato. & RObbF12.8 & N.I. \\ 
 		\midrule 
-		TS19 & Viene verificato che il sistema permetta di accedere alle informazioni di un beacon rilevato. & RObbF12 & N.I. \\ 
+		TS18.3 & Viene verificato che il sistema permetta di accedere al Minor di un beacon rilevato. & RObbF12.9 & N.I. \\ 
 		\midrule 
-		TS19.1 & Viene verificato che il sistema permetta di accedere al UUID di un beacon rilevato. & RObbF12.1 & N.I. \\ 
+		TS18.4 & Viene verificato che il sistema permetta di accedere al livello di potenza del segnale di un beacon rilevato. & RObbF12.2 & N.I. \\ 
 		\midrule 
-		TS19.2 & Viene verificato che il sistema permetta di accedere al Major di un beacon rilevato. & RObbF12.8 & N.I. \\ 
+		TS18.5 & Viene verificato che il sistema permetta di accedere al livello di batteria di un beacon rilevato. & ROpzF12.4 & N.I. \\ 
 		\midrule 
-		TS19.3 & Viene verificato che il sistema permetta di accedere al Minor di un beacon rilevato. & RObbF12.9 & N.I. \\ 
+		TS18.6 & Viene verificato che il sistema permetta di accedere alla distanza approssimativa di un beacon rilevato dal dispositivo utilizzato. & RObbF12.5 & N.I. \\ 
 		\midrule 
-		TS19.4 & Viene verificato che il sistema permetta di accedere al livello di potenza del segnale di un beacon rilevato. & RObbF12.2 & N.I. \\ 
+		TS18.7 & Viene verificato che il sistema permetta di accedere al formato di un beacon rilevato. & RObbF12.6 & N.I. \\ 
 		\midrule 
-		TS19.5 & Viene verificato che il sistema permetta di accedere al livello di batteria di un beacon rilevato. & ROpzF12.4 & N.I. \\ 
+		TS18.8 & Viene verificato che il sistema permetta di accedere all'area coperta da un beacon rilevato. & RObbF12.7 & N.I. \\ 
 		\midrule 
-		TS19.6 & Viene verificato che il sistema permetta di accedere alla distanza approssimativa di un beacon rilevato dal dispositivo utilizzato. & RObbF12.5 & N.I. \\ 
+		TS18.9 & Viene verificato che il sistema permetta di gestire un log. & RObbF12.3 & N.I. \\ 
 		\midrule 
-		TS19.7 & Viene verificato che il sistema permetta di accedere al formato di un beacon rilevato. & RObbF12.6 & N.I. \\ 
+		TS18.9.1 & Viene verificato che il sistema permetta di avviare un log. & RDesF12.3.2 & N.I. \\ 
 		\midrule 
-		TS19.8 & Viene verificato che il sistema permetta di accedere all'area coperta da un beacon rilevato. & RObbF12.7 & N.I. \\ 
+		TS18.9.2 & Viene verificato che il sistema permetta di interrompere un log. & RDesF12.3.1 & N.I. \\ 
 		\midrule 
-		TS19.9 & Viene verificato che il sistema permetta di gestire un log. & RObbF12.3 & N.I. \\ 
+		TS18.9.3 & Viene verificato che il sistema permetta di salvare un log. & RDesF12.3.3 & N.I. \\ 
 		\midrule 
-		TS19.9.1 & Viene verificato che il sistema permetta di avviare un log. & RDesF12.3.2 & N.I. \\ 
+		TS18.9.4 & Viene verificato che il sistema permetta di rimuovere un log. & RDesF12.3.5 & N.I. \\ 
 		\midrule 
-		TS19.9.2 & Viene verificato che il sistema permetta di interrompere un log. & RDesF12.3.1 & N.I. \\ 
+		TS18.9.5 & Viene verificato che il sistema permetta di accedere ad un log salvato. & RDesF12.3.4 & N.I. \\ 
 		\midrule 
-		TS19.9.3 & Viene verificato che il sistema permetta di salvare un log. & RDesF12.3.3 & N.I. \\ 
+		TS19 & Viene verificato che il sistema avverta l'utente qualora venga inserita una destinazione non prevista dal sistema. & RObbF7.1.4 & N.I. \\ 
 		\midrule 
-		TS19.9.4 & Viene verificato che il sistema permetta di rimuovere un log. & RDesF12.3.5 & N.I. \\ 
+		TS20 & Viene verificato che il sistema avverta l'utente qualora il codice inserito per sbloccare le funzionalità sviluppatore non sia corretto. & RObbF10.3.3 & N.I. \\ 
 		\midrule 
-		TS19.9.5 & Viene verificato che il sistema permetta di accedere ad un log salvato. & RDesF12.3.4 & N.I. \\ 
-		\midrule 
-		TS20 & Viene verificato che il sistema avverta l'utente qualora venga inserita una destinazione non prevista dal sistema. & RObbF7.1.4 & N.I. \\ 
-		\midrule 
-		TS21 & Viene verificato che il sistema avverta l'utente qualora il codice inserito per sbloccare le funzionalità sviluppatore non sia corretto. & RObbF10.3.3 & N.I. \\ 
-		\midrule 
-		TS22 & Viene verificato che il sistema fornisca la possibilità di inserire il possibile nome di una mappa. & RDesF10.2.2.1.1 & N.I \\ 
+		TS21 & Viene verificato che il sistema fornisca la possibilità di inserire il possibile nome di una mappa. & RDesF10.2.2.1.1 & N.I. \\ 
 		\arrayrulecolor{black}
 		\bottomrule
 		\caption{Tabella di tracciamento test di sistema / requisiti} \\
