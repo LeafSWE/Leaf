@@ -1,0 +1,24 @@
+PRESENTAZIONE PP
+
+	[slide Norme di codifica]
+		Sono state introdotte norme riguardanti il processo primario di sviluppo, ossia la codifica.
+		poiché l'applicativo è sviluppato su sistema Android ci siamo appoggiati alle best practice di codifica Java individuate da Google nella guida disponibile online Google Java Style.
+		Inoltre è possibile impostare questo stile di codifica sul Android Studio in modo facile impostando il file che Google offre online.
+	
+	[slide ore totali]
+		Dall'ultima revisione lo sviluppo del progetto ha attraversato tre fasi che qui vediamo rappresentate nell'asse orizzontale in ordine temporale da sinistra a destra. 
+		
+		Le ore totali in più per la fase AD derivano principalmente da una pianificazione errata che non ha tenuto conto degli impegni universitari dei componenti del team (la sessione dei secondi appelli).
+		
+	[slide Prospetto economico]
+		Il prospetto economico è stato negativo per l'analisi di dettaglio mentre positivo per le altre due. Nel complesso quindi abbiamo 348,00 euro risparmiati da investire nelle prossime fasi.
+	
+	[slide Ore ruoli]
+		Ma non bisogna per questo ingannarsi dal risultato positivo. Infatti ciò deriva dall'aver posticipato gran parte dell'attività di codifica da svolgere nella fase attuale in conclusione alla fase successiva poiché il lavoro da effettuare nella definizione di prodotto è stato sottostimato.
+	[compaiono cerchi rossi su ore ruoli]
+		Dall'istogramma dei ruoli infatti possiamo notare come le ore da progettista siano state sottostimate nel preventivo mentre le ore da programmatore siano invece dimezzate.
+		
+	[stessa slide compare Preventivo a finire]
+		Infatti abbiamo già previsto che nella prossima fase bisognerà considerare le 20 ore tolte dalla fase di codifica dei requisiti obbligatori. Le quali corrisponderebbero al risultato positivo ottenuto attualmente.
+	
+	Grazie dell'attenzione!
