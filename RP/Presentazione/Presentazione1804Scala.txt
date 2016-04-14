@@ -12,7 +12,7 @@ Presentazione 18/04
 
 2.2.1) Presentation layer
 
-2.2.1.1) View + Presenter -> Diagrammi packgage -> classi 
+2.2.1.1) View + Presenter -> Diagrammi packgage -> classi
 
 2.2.2) Business layer
 2.2.2.1) Tutto apparte data access  
@@ -27,3 +27,6 @@ Presentazione 18/04
 2.2.5.1) Database sqlite + dblocal + dbremoto( db relazionale)
 
 3) Strumenti test + Metriche
+3.1) Modello a V -> test 
+3.2) Strumenti per i test
+3.3) 
