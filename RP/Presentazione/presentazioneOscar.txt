@@ -1,19 +1,22 @@
 All'interno della fase di progettazione architetturale si è reso necessario decidere quale pattern architetturale fosse il più adatto allo sviluppo della nostra applicazione. Dopo aver effettuato diverse ricerche, Il pattern che più si adatta ai nostri scopi, ovvero lo sviluppo di un applicativo Android, è risultato essere il Model-View-Presenter.
-I principali vantaggi che offre il seguente pattern sono i seguenti:
-- Separazione totale tra l'application logic e GUI
-- Facilità di testing
-- Possibilità di poter cambiare l'interfaccia grafica senza modificare la parte di model.
 
-Per implementare l'MVP abbiamo suddiviso la nostra architettura in 3 macro pacchetti, ovvero (spiegazione):
+
+Il model view presenter prevede la suddivisione dell'architettura in 3 macro pacchetti:
 - Model
 - View
 - Presenter
 
 Il model rappresenta tutta la parte di application logic.
-Il pachetto view rappresenta l'interfaccia grafica della nostra applicazione.
-Il pachetto presenter funge da man in the middle, consentendo alla view di potern comunicare con il model.
+Il pacchetto view rappresenta l'interfaccia grafica della nostra applicazione mentre
+Il pacchetto presenter funge da man in the middle, consentendo alla view di poter comunicare con il model.
 
-Una delle peculiarità del SDK android sono le Activities. L'activity è l'oggetto Android che detiene il controllo dell'applicazione. Per questo motivo ci è sembrato opportuno associare alle activity il ruolo di presenter. Ad ogni activity infattti abbiamo associato una o più, che sono gli oggetti che rappresentano la nostra interfaccia grafica.
-Le view sono degli oggetti completamente "passivi", che detengono un riferimento all'activity alla quale fanno riferimento. La view infatti, per ogni evento scatenato dall'utente, invoca un metodo all'interno del presenter che si occupa della gestione dell'evento stesso.
-Il presenter, che possiede sempre un riferimento al nostro model, decide cosa fare e successivamente, se necessario andrà ad aggiornare la view, o a costruire un nuovo presenter che si occupare della gestione della sua view.
-Per evitare dipenze circolari tra view e presener, abbiamo adottato il principio dell'inversione delle dipendenze. Ogni oggetto view, deriva da un'interfaccia, e il presenter possiede un riferimento ad essa. In questo modo il presenter comunicherà sempre con l'interfaccia della view, mentre la view comunica direttamente con il presenter.
+I principali vantaggi che questa suddivisione offre sono i seguenti:
+- Disaccoppiamento totale tra Business Logic e interfaccia utente e quindi maggiore 
+- Facilità nel testing delle componenti
+
+Presenter
+
+Per poter discutere del presenter, dobbiamo introdurre il concetto di Activity. In Android il flusso principale dell'applicazione è gestito dalle activity ovvero un oggetto che detiene il controllo dell'applicazione e che si preoccupa di costruire l'interfaccia grafica. Per questo motivo ci è sembrato opportuno associare alle Activity il ruolo di Presenter. Ad ogni activity infatti abbiamo associato una o più view, che sono gli oggetti che rappresentano l'interfaccia grafica.
+Le view sono degli oggetti completamente "passivi", che detengono un riferimento alla activity alla quale sono associate. La view infatti, per ogni evento scatenato dall'utente, invoca un metodo all'interno del presenter che si occupa della gestione dell'evento stesso.
+Il presenter, che possiede sempre un riferimento al model, decide cosa fare e successivamente, aggiorna la view.
+Per evitare dipendenze circolari tra view e presenter, abbiamo adottato il PRINCIPIO DI INVERSIONE DELLE DIPENDENZE. Ogni oggetto view, deriva da un'interfaccia, e il presenter possiede un riferimento ad essa. In questo modo il presenter comunicherà sempre con l'interfaccia della view, mentre la view comunica direttamente con il presenter.
