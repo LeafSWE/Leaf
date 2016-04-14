@@ -1,4 +1,4 @@
-All'interno della fase di progettazione architetturale si è reso necessario decidere quale pattern architetturale fosse il più adatto allo sviluppo della nostra applicazione. Dopo aver effettuato diverse ricerche, Il pattern che più si adatta ai nostri scopi, ovvero lo sviluppo di un applicativo Android, è risultato essere il Model-View-Presenter.
+All'interno della fase di progettazione architetturale si è reso necessario decidere quale pattern architetturale fosse il più adatto allo sviluppo della nostra applicazione. Dopo aver effettuato diverse ricerche, il pattern che più si adatta ai nostri scopi, ovvero lo sviluppo di un applicativo Android, è risultato essere il Model-View-Presenter.
 
 
 Il model view presenter prevede la suddivisione dell'architettura in 3 macro pacchetti:
@@ -11,10 +11,9 @@ Il pacchetto view rappresenta l'interfaccia grafica della nostra applicazione me
 Il pacchetto presenter funge da man in the middle, consentendo alla view di poter comunicare con il model.
 
 I principali vantaggi che questa suddivisione offre sono i seguenti:
-- Disaccoppiamento totale tra Business Logic e interfaccia utente e quindi maggiore 
-- Facilità nel testing delle componenti
-
-Presenter
+- Disaccoppiamento totale tra Business Logic e interfaccia utente
+	- Questo porta innumerevoli vantaggi, consentendo ad esempio di poter cambiare l'interfaccia utente senza intaccare il modello sul quale si basa 
+- Inoltre, l'MVP rende più facile il test delle componenti (Facilità nel testing delle componenti)
 
 Per poter discutere del presenter, dobbiamo introdurre il concetto di Activity. In Android il flusso principale dell'applicazione è gestito dalle activity ovvero un oggetto che detiene il controllo dell'applicazione e che si preoccupa di costruire l'interfaccia grafica. Per questo motivo ci è sembrato opportuno associare alle Activity il ruolo di Presenter. Ad ogni activity infatti abbiamo associato una o più view, che sono gli oggetti che rappresentano l'interfaccia grafica.
 Le view sono degli oggetti completamente "passivi", che detengono un riferimento alla activity alla quale sono associate. La view infatti, per ogni evento scatenato dall'utente, invoca un metodo all'interno del presenter che si occupa della gestione dell'evento stesso.
