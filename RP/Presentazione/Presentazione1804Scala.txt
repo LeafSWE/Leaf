@@ -2,7 +2,7 @@ Presentazione 18/04
 
 1) Introduzione (1min) (Federico)
 
-1.1) Laboratori
+1.1) Perchè RPmax? Per poter fare i laboratori e i test
 1.2) Tecnologie adottate: Framework Android, Sqlite, Jgrapht, picasso, android-studio
 
 
