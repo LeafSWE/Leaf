@@ -1,32 +1,39 @@
 Presentazione 18/04
 
-1) Introduzione ( - 1min)
+1) Introduzione (1min) (Federico)
 
-1.1.) Tecnologie adottate: Framework android, sqlite, jgrapht, picasso, android-studio
+1.1) Laboratori
+1.2) Tecnologie adottate: Framework Android, Sqlite, Jgrapht, picasso, android-studio
+
 
 
 2) Architettura
 
-2.1) Layer  -> Presenter tyer, Layer tyer
+2.1) Layer (Andrea Oscar) 
 2.2) Descrizione singoli layer
 
-2.2.1) Presentation layer
+2.2.1) Presentation layer (Andrea Oscar)
 
 2.2.1.1) View + Presenter -> Diagrammi packgage -> classi
 
-2.2.2) Business layer
+2.2.2) Business layer (Marco) 
 2.2.2.1) Tutto apparte data access  
 
-2.2.3) Service layer
+2.2.3) Service layer (Davide)
 2.2.3.1) Package service
 
-2.2.4) persistence layer
+2.2.4) persistence layer (Davide)
 2.2.4.1) Package DAO 
 
-2.2.5) database layer
+2.2.5) database layer (Davide)
 2.2.5.1) Database sqlite + dblocal + dbremoto( db relazionale)
 
-3) Strumenti test + Metriche
+
+3) Strumenti test + Metriche (Cristian)
 3.1) Modello a V -> test 
 3.2) Strumenti per i test
-3.3) 
+3.3) Metriche -> Strumenti per le metriche
+
+4) Norme per la codifica (Eduard)
+
+5) Piano di progetto (Eduard)
