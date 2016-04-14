@@ -1,0 +1,58 @@
+﻿Tutto ciò è basato sul model del nostro applicativo che deve rispondere a tre esigenze:
+
+La prima è offrire le funzionalità di navigazione
+
+per questo è necessario:
+
+- rappresentare un edificio nell'applicativo
+
+- e gestire l'interazione con i beacon
+
+Per permettere di navigare all'interno di un edificio è neccessario dare informazioni contestuali al punto in cui un utente si trova. 
+Tale problema è strattamente collegato alla rappresentazione di un edificio.
+
+------------------SLIDE----------------------------
+ 
+La nostra idea è stata di rappresentare un edificio come un grafo dove un nodo rappresenta un beacon ed un arco rappresenta 
+un passaggio tra luoghi adiacenti dove è presente un beacon.
+
+Un edificio è quindi decomposto in:
+Region Of Interest che rappresenta l'area del raggio d'azione di un beacon, ovvero dove si trova un utente
+Point Of Interest che rappresenta una possibile destinazione della navigazione. Esempi di POI sono bagni, aule o laboratori
+Archi che rappresentano un passaggio tra due Region Of Interest che possono essere corridoi scale o ascensori.
+
+-----------------SLIDE----------------------------
+
+Per spiegare tale soluzione prendiamo come esempio il primo piano della torre archimede. 
+
+-----------------SLIDE----------------------------
+
+I pallini blu disegnati rappresentano i nodi del grafo mentre le linee rosse gli archi. 
+Ogniuno di questi beacon avrà il proprio raggio d'azione che determinerà una certa Region Of Interest.
+I Point of interest possono essere i bagni e le aule.
+
+Agli archi invece sarà essere associato un peso, differente in base alle preferenze di un utente. 
+Queste saranno utili sapratutto per archi che collegano piani differenti quindi che prevedono scale o ascensori ed ad ogni arco 
+saranno associate le informazioni necessarie per il transito nei passaggi che rappresentano sottoforma di 
+indicazioni testuali oppure fotografie.
+Utilizzando tale grafo quindi è possibile calcolare il percorso da fornire all'utente.
+
+-----------------SLIDE----------------------------
+
+Nel model questi problemi sono risolti da quattro pacchetti :
+
+- beacon
+
+- navigator
+
+- usersetting
+
+- compass
+
+beacon si occupa di rilevare i beacon e le informazioni portate dal loro segnale otre a rappresentarli come oggetti trattabili dal nostro applicativo. 
+Compass è di supporto alla navigazione e serve per ricevere i dati dalla bussola
+usersetting si occupa della gestione delle preferenze 
+Infine navigator si occupa della navigazione in generale: esso contiene i pacchetti che permettono di calcolare un percorso tra due punti 
+interni ad un edificio, il pacchetto necessario alla rappresentazione di una mappa ed infine il pacchetto per 
+la rappresentazione di PointOfInterest e RegionOfInterest.
+
