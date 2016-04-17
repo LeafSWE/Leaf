@@ -1,0 +1,38 @@
+RPmax
+
+	Scadenze temporali
+		Diversi membri del gruppo desiderano laurearsi a Luglio e l'unico modo
+		per riuscirci è consegnare la RPmax
+	Tempo per le sperimentazioni
+		Vista la natura sperimentale del capitolato è necessario svolgere diverse
+		prove che verifichino l'attuabilità dell'idea sviluppata
+Tecnologie utilizzate
+
+	Android
+		- Uno tra i 2 OS mobile richiesti dal propontente
+		- Sistema operativo mobile più diffuso al mondo,
+		partendo dalla 4.4 (KitKat) e arrivando alla 6.0 copriamo il 73,8% del mercato
+		(senza KitKat perdiamo il 33.4% del mercato)
+	SQLite
+		Database locale implementato senza la necessità di un sever fisico,
+		molto leggero
+	PostgreSQL
+		Open source e molto piu robusto di mysql,
+		consigliato dal proponente
+		gestisce la conversione delle informazioni dal mondo SQL a quello della
+		programmazione orientata agli oggetti
+	Picasso
+		libreria molto utilizzata con Android e che permette,
+		con una sola riga di codice, di scaricare un'immagine e mostrarla in una ImageView
+	Java
+		Linguaggio ad oggetti utilizzato per sviluppare app native android
+	JGraphT
+		libreria Java che fornisce funzionalità matematiche per modellare
+		grafi, viene utilizzata per la rappresentazione e l’uso delle mappe
+	AltBeacon
+		libreria che permette ai sistemi operativi mobile di interfacciarsi ai beacon,
+		viene utilizzata per permettere la comunicazione tra l’applicativo Android e
+		i beacon. Il suo utilizzo è stato consigliato dal proponente
+	Beacon indoor e outdoor
+		due diversi tipi di beacon, uno da interno e uno da esterno,
+		anche se concretamente cambia solo il tipo di contenitore

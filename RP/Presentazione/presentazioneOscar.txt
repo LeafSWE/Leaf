@@ -1,4 +1,4 @@
-All'interno della fase di progettazione architetturale si è reso necessario decidere quale pattern architetturale fosse il più adatto allo sviluppo della nostra applicazione. Dopo aver effettuato diverse ricerche, il pattern che più si adatta ai nostri scopi, ovvero lo sviluppo di un applicativo Android, è risultato essere il Model-View-Presenter.
+All'interno della fase di progettazione si è reso necessario decidere quale pattern architetturale fosse il più adatto allo sviluppo della nostra applicazione. Dopo aver effettuato diverse ricerche, il pattern che più si adatta ai nostri scopi, ovvero lo sviluppo di un applicativo Android, è risultato essere il Model-View-Presenter.
 
 
 Il model view presenter prevede la suddivisione dell'architettura in 3 macro pacchetti:
@@ -6,7 +6,7 @@ Il model view presenter prevede la suddivisione dell'architettura in 3 macro pac
 - View
 - Presenter
 
-Il model rappresenta tutta la parte di application logic.
+Il model rappresenta tutta la parte di Business logic.
 Il pacchetto view rappresenta l'interfaccia grafica della nostra applicazione mentre
 Il pacchetto presenter funge da man in the middle, consentendo alla view di poter comunicare con il model.
 
