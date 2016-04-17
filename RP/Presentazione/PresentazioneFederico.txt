@@ -1,5 +1,4 @@
 RPmax
-
 	Scadenze temporali
 		Diversi membri del gruppo desiderano laurearsi a Luglio e l'unico modo
 		per riuscirci è consegnare la RPmax
@@ -11,21 +10,21 @@ Tecnologie utilizzate
 	Android
 		- Uno tra i 2 OS mobile richiesti dal propontente
 		- Sistema operativo mobile più diffuso al mondo,
-		partendo dalla 4.4 (KitKat) e arrivando alla 6.0 copriamo il 73,8% del mercato
+		partendo dalla 4.4 (KitKat) e arrivando alla 6.0 copriamo il 73,8% del mercato Android
 		(senza KitKat perdiamo il 33.4% del mercato)
 	SQLite
-		Database locale implementato senza la necessità di un sever fisico,
-		molto leggero
+		libreria software che implementa un DBMS SQL di tipo
+		ACID incorporabile all'interno di applicazioni.
 	PostgreSQL
-		Open source e molto piu robusto di mysql,
+		- per il db remoto posto su un server fornitoci da Miriade
+			o
+		- DBMS ad oggetti rilasciato con licenza libera. Molto piu robusto di mysql,
 		consigliato dal proponente
-		gestisce la conversione delle informazioni dal mondo SQL a quello della
-		programmazione orientata agli oggetti
 	Picasso
 		libreria molto utilizzata con Android e che permette,
 		con una sola riga di codice, di scaricare un'immagine e mostrarla in una ImageView
 	Java
-		Linguaggio ad oggetti utilizzato per sviluppare app native android
+		Linguaggio orientato agli oggetti utilizzato per sviluppare app native android
 	JGraphT
 		libreria Java che fornisce funzionalità matematiche per modellare
 		grafi, viene utilizzata per la rappresentazione e l’uso delle mappe
