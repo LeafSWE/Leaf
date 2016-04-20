@@ -1,0 +1,21 @@
+Adesso parleremo della pianificazione dei test del prodotto.
+Il modello che abbiamo seguito per pianificare i test è il modello a V.
+Seguendo questo modello abbiamo definito i seguenti test:
+
+-Test di Accettazione
+-Test di Sistema
+-Test di Integrazione
+-Test di Unità
+
+Per quanto riguarda i test di integrazione e i test di unità è stato previsto l'utilizzo del testing framework JUnit.
+
+Per il tracciamento dei test invece abbiamo utilizzato Tracy. 
+
+Dopo la fase A sono state definite le metriche per il software.
+Tutte le metriche software sono nate per soddisfare degli obiettivi di qualità fissati.
+Inoltre alcune metriche sono state scelte direttamente dallo Standard 9126.
+Qui in elenco abbiamo le metriche più importanti da noi scelte.
+La maggior parte di queste soddisfano le caratteristiche di qualità come Manutenibilità e Comprensibilità.
+Ricordiamo che per ognuna di queste metriche sono state definite delle soglie di ottimalità e di accettabilità
+
+Gli strumenti previsti per la gestione delle metriche sono Tracy e un plugin chiamato "Metrics Reloaded" di Android Studio.
